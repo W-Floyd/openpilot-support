@@ -247,6 +247,7 @@ vehicles = [
         'years':       sorted(set(v['years'])),
         'description': v['description'],
         'support':     re.sub(r'\s+', ' ', v['support']).strip(),
+        'all_trims':      'all packages and trims' in v['support'],
         'harness':     v['harness'].strip(),
         'shop_url':    v['shop_url'],
     }
