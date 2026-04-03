@@ -3,9 +3,11 @@
 
 Usage:
   python3 scrape_vehicles.py [output.json]
+  python3 scrape_vehicles.py [output.json] --html [file.html]
   python3 scrape_vehicles.py [output.json] --serve [--port 8080]
 """
 import argparse
+import datetime
 import http.server
 import json
 import os
@@ -249,21 +251,22 @@ def fetch_html():
                 with open(CACHE_ETAG, 'w') as f:
                     f.write(etag)
             print("Fetched fresh HTML", file=sys.stderr)
-            return html
+            return html, etag
     except urllib.request.HTTPError as e:
         if e.code == 304 and os.path.exists(CACHE_HTML):
             with open(CACHE_HTML) as f:
                 html = f.read()
             print("Using cached HTML (ETag matched)", file=sys.stderr)
-            return html
+            return html, cached_etag
         raise
 
 
 def scrape():
-    html = fetch_html()
+    html, etag = fetch_html()
+    timestamp = datetime.datetime.now(datetime.timezone.utc).strftime('%Y-%m-%d %H:%M UTC')
     parser = VehicleParser()
     parser.feed(html)
-    return [
+    vehicles = [
         {
             'make':                      v['make'],
             'model':                     v['model'].strip(),
@@ -282,10 +285,12 @@ def scrape():
         }
         for v in parser.vehicles
     ]
+    return vehicles, etag, timestamp
 
 
-def build_html(vehicles):
+def build_html(vehicles, etag=None, timestamp=None):
     data_json = json.dumps(vehicles)
+    meta = ' · '.join(filter(None, [timestamp, f'ETag: {etag}' if etag else None]))
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -371,6 +376,8 @@ def build_html(vehicles):
 <div id="header">
   <h1>comma.ai — Vehicle Compatibility</h1>
   <a href="{URL}" target="_blank">source ↗</a>
+  <a href="https://github.com/W-Floyd/openpilot-support" target="_blank">github ↗</a>
+  <span style="margin-left:auto; font-size:12px; color:#888;">{meta}</span>
 </div>
 
 <div id="filters">
@@ -556,7 +563,7 @@ def main():
                     help="Port for --serve (default: 8080)")
     args = ap.parse_args()
 
-    vehicles = scrape()
+    vehicles, etag, timestamp = scrape()
 
     with open(args.output, 'w') as f:
         json.dump(vehicles, f, indent=2)
@@ -564,11 +571,11 @@ def main():
 
     if args.html:
         with open(args.html, 'w') as f:
-            f.write(build_html(vehicles))
+            f.write(build_html(vehicles, etag, timestamp))
         print(f"Wrote HTML to {args.html}", file=sys.stderr)
 
     if args.serve:
-        page = build_html(vehicles).encode()
+        page = build_html(vehicles, etag, timestamp).encode()
 
         class Handler(http.server.BaseHTTPRequestHandler):
             def do_GET(self):
