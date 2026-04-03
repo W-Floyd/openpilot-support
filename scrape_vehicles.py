@@ -365,6 +365,14 @@ def build_html(vehicles, etag=None, timestamp=None):
     th.desc .si::after {{ content: "▼"; color: #333; }}
     th:not(.asc):not(.desc) .si::after {{ content: "⇅"; }}
 
+    #filter-row th {{ background: #ececec; padding: 0.2rem 0.4rem; cursor: default; border-bottom: 1px solid #e0e0e0; }}
+    #filter-row th:hover {{ background: #ececec; }}
+    #filter-row select, #filter-row input[type=text] {{
+      width: 100%; padding: 0.15rem 0.25rem; font-size: 11px;
+      border: 1px solid #ddd; border-radius: 3px; background: #fff; box-sizing: border-box;
+    }}
+    #filter-row select:focus, #filter-row input[type=text]:focus {{ outline: none; border-color: #888; }}
+
     td {{ padding: 0.25rem 0.75rem; border-bottom: 1px solid #f0f0f0; vertical-align: middle; }}
     tr:last-child td {{ border-bottom: none; }}
     tr:hover td {{ background: #fafafa; }}
@@ -426,13 +434,27 @@ def build_html(vehicles, etag=None, timestamp=None):
         <th data-col="years">Years<span class="si"></span></th>
         <th data-col="min_speed_mph">Min Speed<span class="si"></span></th>
         <th data-col="trims">Trims<span class="si"></span></th>
-        <th data-col="acc_resumes_from_stop">ACC Stop<span class="si"></span></th>
+        <th data-col="acc_resumes_from_stop">ACC From Stop<span class="si"></span></th>
         <th data-col="no_tight_turns">Tight Turns<span class="si"></span></th>
         <th data-col="traffic_light_support">Traffic Lights<span class="si"></span></th>
         <th data-col="traffic_light_experimental">Experimental<span class="si"></span></th>
         <th data-col="harness">Harness<span class="si"></span></th>
         <th>Shop</th>
         <th>eBay</th>
+      </tr>
+      <tr id="filter-row">
+        <th><select id="fcol-make"><option value="">All</option></select></th>
+        <th><input id="fcol-model" type="text" placeholder="filter…"></th>
+        <th><input id="fcol-years" type="text" placeholder="year…"></th>
+        <th><select id="fcol-min_speed_mph"><option value="">Any</option></select></th>
+        <th><select id="fcol-trims"><option value="">Any</option></select></th>
+        <th><select id="fcol-acc_resumes_from_stop"><option value="">Any</option><option value="true">✓</option><option value="false">✗</option></select></th>
+        <th><select id="fcol-no_tight_turns"><option value="">Any</option><option value="true">✓</option><option value="false">✗</option></select></th>
+        <th><select id="fcol-traffic_light_support"><option value="">Any</option><option value="true">✓</option><option value="false">✗</option></select></th>
+        <th><select id="fcol-traffic_light_experimental"><option value="">Any</option><option value="true">✓</option><option value="false">✗</option></select></th>
+        <th><select id="fcol-harness"><option value="">All</option></select></th>
+        <th></th>
+        <th></th>
       </tr>
     </thead>
     <tbody id="tbody"></tbody>
@@ -452,12 +474,28 @@ harnesses.forEach(h => {{
   selHarness.appendChild(o);
 }});
 
+// Populate column filter dropdowns
+function populateCatFilter(id, field) {{
+  const sel = document.getElementById(id);
+  [...new Set(DATA.map(v => v[field]).filter(Boolean))].sort().forEach(val => {{
+    const o = document.createElement('option');
+    o.value = o.textContent = val;
+    sel.appendChild(o);
+  }});
+}}
+populateCatFilter('fcol-make', 'make');
+populateCatFilter('fcol-trims', 'trims');
+populateCatFilter('fcol-harness', 'harness');
+[...new Set(DATA.map(v => v.min_speed_mph).filter(v => v !== null && v !== undefined))].sort((a, b) => a - b).forEach(v => {{
+  const o = document.createElement('option');
+  o.value = v;
+  o.textContent = v === 0 ? 'All speeds' : v + ' mph+';
+  document.getElementById('fcol-min_speed_mph').appendChild(o);
+}});
+
 // Sort state
 let sortCol = 'make', sortDir = 1;
 
-// Toggle state: field -> true (require true) | false (require false)
-const toggleState = {{}};
-let filterAllTrims = false;
 
 function years(v) {{
   if (!v.years.length) return '';
@@ -479,16 +517,33 @@ function render() {{
   const harness = selHarness.value;
   const spd = document.getElementById('sel-speed').value;
 
+  const cfMake    = document.getElementById('fcol-make').value;
+  const cfModel   = document.getElementById('fcol-model').value.toLowerCase();
+  const cfYears   = document.getElementById('fcol-years').value.trim();
+  const cfSpeed   = document.getElementById('fcol-min_speed_mph').value;
+  const cfTrims   = document.getElementById('fcol-trims').value;
+  const cfAcc     = document.getElementById('fcol-acc_resumes_from_stop').value;
+  const cfTurns   = document.getElementById('fcol-no_tight_turns').value;
+  const cfTL      = document.getElementById('fcol-traffic_light_support').value;
+  const cfTLExp   = document.getElementById('fcol-traffic_light_experimental').value;
+  const cfHarness = document.getElementById('fcol-harness').value;
+
   let rows = DATA.filter(v => {{
     if (search && !(v.make + ' ' + v.model).toLowerCase().includes(search)) return false;
     if (harness && v.harness !== harness) return false;
     if (spd === '0' && v.min_speed_mph !== 0) return false;
     if (spd === 'low' && (v.min_speed_mph === null || v.min_speed_mph > 15)) return false;
     if (spd === 'high' && (v.min_speed_mph === null || v.min_speed_mph <= 15)) return false;
-    if (filterAllTrims && v.trims !== 'All') return false;
-    for (const [field, req] of Object.entries(toggleState)) {{
-      if (v[field] !== req) return false;
-    }}
+    if (cfMake    && v.make !== cfMake) return false;
+    if (cfModel   && !v.model.toLowerCase().includes(cfModel)) return false;
+    if (cfYears   && !v.years.includes(parseInt(cfYears))) return false;
+    if (cfSpeed   !== '' && v.min_speed_mph !== parseInt(cfSpeed)) return false;
+    if (cfTrims   && v.trims !== cfTrims) return false;
+    if (cfAcc     !== '' && v.acc_resumes_from_stop !== (cfAcc === 'true')) return false;
+    if (cfTurns   !== '' && v.no_tight_turns !== (cfTurns === 'true')) return false;
+    if (cfTL      !== '' && v.traffic_light_support !== (cfTL === 'true')) return false;
+    if (cfTLExp   !== '' && v.traffic_light_experimental !== (cfTLExp === 'true')) return false;
+    if (cfHarness && v.harness !== cfHarness) return false;
     return true;
   }});
 
@@ -527,24 +582,25 @@ selHarness.addEventListener('change', render);
 document.getElementById('sel-speed').addEventListener('change', render);
 
 document.getElementById('toggle-all-trims').addEventListener('click', function() {{
-  filterAllTrims = !filterAllTrims;
-  this.classList.toggle('active', filterAllTrims);
+  const sel = document.getElementById('fcol-trims');
+  const active = !this.classList.contains('active');
+  this.classList.toggle('active', active);
+  sel.value = active ? 'All' : '';
   render();
 }});
 
 document.querySelectorAll('.toggle[data-field]').forEach(el => {{
   el.addEventListener('click', () => {{
-    const field = el.dataset.field;
-    const neg = 'neg' in el.dataset;
-    if (!el.classList.contains('active')) {{
-      el.classList.add('active');
-      toggleState[field] = !neg;
-    }} else {{
-      el.classList.remove('active');
-      delete toggleState[field];
-    }}
+    const sel = document.getElementById('fcol-' + el.dataset.field);
+    const active = !el.classList.contains('active');
+    el.classList.toggle('active', active);
+    sel.value = active ? String('neg' in el.dataset ? false : true) : '';
     render();
   }});
+}});
+
+document.querySelectorAll('#filter-row select, #filter-row input').forEach(el => {{
+  el.addEventListener(el.tagName === 'INPUT' ? 'input' : 'change', render);
 }});
 
 document.querySelectorAll('th[data-col]').forEach(th => {{
