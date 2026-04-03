@@ -7,6 +7,7 @@ Usage:
   python3 scrape_vehicles.py [output.json] --serve [--port 8080]
 """
 import argparse
+import base64
 import datetime
 import http.server
 import json
@@ -240,6 +241,14 @@ class VehicleParser(HTMLParser):
                 self._harness_text += data
 
 
+def fetch_favicon():
+    req = urllib.request.Request('https://comma.ai/favicon.png',
+                                 headers={'User-Agent': 'Mozilla/5.0'})
+    with urllib.request.urlopen(req) as resp:
+        data = resp.read()
+    return 'data:image/png;base64,' + base64.b64encode(data).decode()
+
+
 def fetch_html():
     cached_etag = None
     if os.path.exists(CACHE_ETAG):
@@ -273,6 +282,7 @@ def fetch_html():
 
 def scrape():
     html, etag = fetch_html()
+    favicon = fetch_favicon()
     timestamp = datetime.datetime.now(datetime.timezone.utc).strftime('%Y-%m-%d %H:%M UTC')
     parser = VehicleParser()
     parser.feed(html)
@@ -296,10 +306,10 @@ def scrape():
         }
         for v in parser.vehicles
     ]
-    return vehicles, etag, timestamp
+    return vehicles, etag, timestamp, favicon
 
 
-def build_html(vehicles, etag=None, timestamp=None):
+def build_html(vehicles, etag=None, timestamp=None, favicon=None):
     data_json = json.dumps(vehicles)
     meta = ' · '.join(filter(None, [timestamp, f'ETag: {etag}' if etag else None]))
     return f"""<!DOCTYPE html>
@@ -307,7 +317,8 @@ def build_html(vehicles, etag=None, timestamp=None):
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>comma.ai — Vehicle Compatibility</title>
+  <title>Vehicle Compatibility for comma.ai</title>
+  {f'<link rel="icon" href="{favicon}">' if favicon else ''}
   <style>
     *, *::before, *::after {{ box-sizing: border-box; margin: 0; padding: 0; }}
     body {{ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 14px; background: #f5f5f5; color: #111; }}
@@ -632,7 +643,7 @@ def main():
                     help="Port for --serve (default: 8080)")
     args = ap.parse_args()
 
-    vehicles, etag, timestamp = scrape()
+    vehicles, etag, timestamp, favicon = scrape()
 
     with open(args.output, 'w') as f:
         json.dump(vehicles, f, indent=2)
@@ -640,11 +651,11 @@ def main():
 
     if args.html:
         with open(args.html, 'w') as f:
-            f.write(build_html(vehicles, etag, timestamp))
+            f.write(build_html(vehicles, etag, timestamp, favicon))
         print(f"Wrote HTML to {args.html}", file=sys.stderr)
 
     if args.serve:
-        page = build_html(vehicles, etag, timestamp).encode()
+        page = build_html(vehicles, etag, timestamp, favicon).encode()
 
         class Handler(http.server.BaseHTTPRequestHandler):
             def do_GET(self):
