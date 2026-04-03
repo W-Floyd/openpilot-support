@@ -25,6 +25,13 @@ VOID_ELEMENTS = {
 }
 
 
+def parse_trims(support):
+    if 'all packages and trims' in support:
+        return 'All'
+    m = re.search(r'come equipped with (.+?)\.', support)
+    return m.group(1) if m else support
+
+
 def parse_min_speed(description):
     if 'at all speeds' in description:
         return 0
@@ -262,7 +269,7 @@ def scrape():
             'years':                     sorted(set(v['years'])),
             'description':               v['description'],
             'support':                   re.sub(r'\s+', ' ', v['support']).strip(),
-            'all_trims':                 'all packages and trims' in v['support'],
+            'trims':                     parse_trims(v['support']),
             'min_speed_mph':             parse_min_speed(v['description']),
             'acc_resumes_from_stop':     'resumes from a stop' in v['description'],
             'no_tight_turns':            'may not be able to take tight turns' in v['description'],
@@ -380,7 +387,7 @@ def build_html(vehicles):
 
   <span class="sep">|</span>
 
-  <span class="toggle" data-field="all_trims">All trims</span>
+  <span class="toggle" id="toggle-all-trims">All trims</span>
   <span class="toggle" data-field="acc_resumes_from_stop">ACC from stop</span>
   <span class="toggle" data-field="traffic_light_support">Traffic lights</span>
   <span class="toggle" data-field="no_tight_turns" data-neg>No tight turn warning</span>
@@ -396,7 +403,7 @@ def build_html(vehicles):
         <th data-col="model">Model<span class="si"></span></th>
         <th data-col="years">Years<span class="si"></span></th>
         <th data-col="min_speed_mph">Min Speed<span class="si"></span></th>
-        <th data-col="all_trims">All Trims<span class="si"></span></th>
+        <th data-col="trims">Trims<span class="si"></span></th>
         <th data-col="acc_resumes_from_stop">ACC Stop<span class="si"></span></th>
         <th data-col="no_tight_turns">Tight Turns<span class="si"></span></th>
         <th data-col="traffic_light_support">Traffic Lights<span class="si"></span></th>
@@ -427,6 +434,7 @@ let sortCol = 'make', sortDir = 1;
 
 // Toggle state: field -> true (require true) | false (require false)
 const toggleState = {{}};
+let filterAllTrims = false;
 
 function years(v) {{
   if (!v.years.length) return '';
@@ -454,8 +462,9 @@ function render() {{
     if (spd === '0' && v.min_speed_mph !== 0) return false;
     if (spd === 'low' && (v.min_speed_mph === null || v.min_speed_mph > 15)) return false;
     if (spd === 'high' && (v.min_speed_mph === null || v.min_speed_mph <= 15)) return false;
+    if (filterAllTrims && v.trims !== 'All') return false;
     for (const [field, req] of Object.entries(toggleState)) {{
-      if (req && !v[field]) return false;
+      if (v[field] !== req) return false;
     }}
     return true;
   }});
@@ -475,7 +484,7 @@ function render() {{
       <td>${{v.model}}</td>
       <td class="years">${{years(v)}}</td>
       <td class="speed">${{speed(v)}}</td>
-      <td>${{bool(v.all_trims)}}</td>
+      <td>${{v.trims}}</td>
       <td>${{bool(v.acc_resumes_from_stop)}}</td>
       <td>${{bool(!v.no_tight_turns)}}</td>
       <td>${{bool(v.traffic_light_support)}}</td>
@@ -493,7 +502,13 @@ document.getElementById('search').addEventListener('input', render);
 selHarness.addEventListener('change', render);
 document.getElementById('sel-speed').addEventListener('change', render);
 
-document.querySelectorAll('.toggle').forEach(el => {{
+document.getElementById('toggle-all-trims').addEventListener('click', function() {{
+  filterAllTrims = !filterAllTrims;
+  this.classList.toggle('active', filterAllTrims);
+  render();
+}});
+
+document.querySelectorAll('.toggle[data-field]').forEach(el => {{
   el.addEventListener('click', () => {{
     const field = el.dataset.field;
     const neg = 'neg' in el.dataset;
