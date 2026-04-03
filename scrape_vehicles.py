@@ -55,6 +55,7 @@ class VehicleParser(HTMLParser):
         super().__init__(convert_charrefs=True)
         self.vehicles = []
         self.current_make = None
+        self.current_make_img = None
         self._depth = 0  # only non-void elements
 
         # Section entry depths (set when we enter each section)
@@ -103,11 +104,20 @@ class VehicleParser(HTMLParser):
 
         if 'car-make-header' in classes:
             self._make_header_depth = d
+            self.current_make = None
+            self.current_make_img = None
+
+        if self._in_make_header and tag == 'img' and self.current_make_img is None:
+            src = attrs.get('src', '')
+            if src:
+                self.current_make_img = ('https://comma.ai' + src
+                                         if src.startswith('/') else src)
 
         if 'car-row' in classes:
             self._car_row_depth = d
             self._row = {
-                'make': self.current_make, 'model': '', 'years': [],
+                'make': self.current_make, 'make_img': self.current_make_img,
+                'model': '', 'years': [],
                 'description': '', 'support': '', 'harness': '', 'shop_url': ''
             }
             self._tier_html = ''
@@ -269,6 +279,7 @@ def scrape():
     vehicles = [
         {
             'make':                      v['make'],
+            'make_img':                  v['make_img'],
             'model':                     v['model'].strip(),
             'years':                     sorted(set(v['years'])),
             'description':               v['description'],
@@ -354,14 +365,16 @@ def build_html(vehicles, etag=None, timestamp=None):
     th.desc .si::after {{ content: "▼"; color: #333; }}
     th:not(.asc):not(.desc) .si::after {{ content: "⇅"; }}
 
-    td {{ padding: 0.5rem 0.75rem; border-bottom: 1px solid #f0f0f0; vertical-align: middle; }}
+    td {{ padding: 0.25rem 0.75rem; border-bottom: 1px solid #f0f0f0; vertical-align: middle; }}
     tr:last-child td {{ border-bottom: none; }}
     tr:hover td {{ background: #fafafa; }}
 
     .t {{ color: #16a34a; font-weight: 700; }}
     .f {{ color: #d1d5db; }}
 
-    td.make {{ font-weight: 600; white-space: nowrap; }}
+    td.make {{ font-weight: 600; white-space: nowrap; padding: 0; }}
+    td.make > div {{ display: flex; align-items: center; gap: 0.4em; padding: 0.25rem 0.75rem; }}
+    td.make img {{ height: calc(1em + 0.5rem); width: auto; display: block; object-fit: contain; }}
     td.years {{ white-space: nowrap; color: #555; font-size: 13px; }}
     td.speed {{ white-space: nowrap; }}
     td.harness {{ font-size: 12px; color: #555; white-space: nowrap; }}
@@ -490,7 +503,7 @@ function render() {{
 
   document.getElementById('tbody').innerHTML = rows.map(v => `
     <tr>
-      <td class="make">${{v.make}}</td>
+      <td class="make"><div>${{v.make_img ? `<img src="${{v.make_img}}" alt="${{v.make}}">` : ''}}${{v.make}}</div></td>
       <td>${{v.model}}</td>
       <td class="years">${{years(v)}}</td>
       <td class="speed">${{speed(v)}}</td>
