@@ -548,6 +548,8 @@ def main():
     ap = argparse.ArgumentParser(description="Scrape comma.ai/vehicles")
     ap.add_argument('output', nargs='?', default='vehicles.json',
                     help="JSON output path (default: vehicles.json)")
+    ap.add_argument('--html', metavar='FILE', nargs='?', const='index.html',
+                    help="Write HTML output (default: index.html)")
     ap.add_argument('--serve', action='store_true',
                     help="Start a web server after scraping")
     ap.add_argument('--port', type=int, default=8080,
@@ -559,6 +561,11 @@ def main():
     with open(args.output, 'w') as f:
         json.dump(vehicles, f, indent=2)
     print(f"Wrote {len(vehicles)} vehicles to {args.output}", file=sys.stderr)
+
+    if args.html:
+        with open(args.html, 'w') as f:
+            f.write(build_html(vehicles))
+        print(f"Wrote HTML to {args.html}", file=sys.stderr)
 
     if args.serve:
         page = build_html(vehicles).encode()
@@ -576,8 +583,16 @@ def main():
 
         server = http.server.HTTPServer(('', args.port), Handler)
         print(f"Serving at http://localhost:{args.port}", file=sys.stderr)
-        server.serve_forever()
+        try:
+            server.serve_forever()
+        except KeyboardInterrupt:
+            print("\nShutting down.", file=sys.stderr)
+            server.server_close()
 
 
 if __name__ == '__main__':
-    main()
+    try:
+        main()
+    except KeyboardInterrupt:
+        print("\nInterrupted.", file=sys.stderr)
+        sys.exit(0)
