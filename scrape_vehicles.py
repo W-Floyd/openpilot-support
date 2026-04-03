@@ -4,6 +4,7 @@
 Usage: python3 scrape_vehicles.py [output.json]
 """
 import json
+import os
 import re
 import sys
 import urllib.request
@@ -205,9 +206,36 @@ class VehicleParser(HTMLParser):
                 self._harness_text += data
 
 
-req = urllib.request.Request(URL, headers={'User-Agent': 'Mozilla/5.0'})
-with urllib.request.urlopen(req) as resp:
-    html = resp.read().decode('utf-8')
+CACHE_HTML = ".vehicles_cache.html"
+CACHE_ETAG = ".vehicles_cache.etag"
+
+cached_etag = None
+if os.path.exists(CACHE_ETAG):
+    with open(CACHE_ETAG) as f:
+        cached_etag = f.read().strip()
+
+headers = {'User-Agent': 'Mozilla/5.0'}
+if cached_etag:
+    headers['If-None-Match'] = cached_etag
+
+req = urllib.request.Request(URL, headers=headers)
+try:
+    with urllib.request.urlopen(req) as resp:
+        html = resp.read().decode('utf-8')
+        etag = resp.headers.get('ETag')
+        with open(CACHE_HTML, 'w') as f:
+            f.write(html)
+        if etag:
+            with open(CACHE_ETAG, 'w') as f:
+                f.write(etag)
+        print("Fetched fresh HTML", file=sys.stderr)
+except urllib.request.HTTPError as e:
+    if e.code == 304 and os.path.exists(CACHE_HTML):
+        with open(CACHE_HTML) as f:
+            html = f.read()
+        print("Using cached HTML (ETag matched)", file=sys.stderr)
+    else:
+        raise
 
 parser = VehicleParser()
 parser.feed(html)
