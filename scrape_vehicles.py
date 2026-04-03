@@ -300,7 +300,7 @@ def scrape():
             'no_tight_turns':            'may not be able to take tight turns' in v['description'],
             'traffic_light_support':     'traffic light and stop sign' in v['description'].lower(),
             'traffic_light_experimental': 'traffic light and stop sign handling is also available in experimental mode' in v['description'].lower(),
-            'ebay_url':                  'https://www.ebay.com/sch/6001/i.html?_nkw=' + urllib.parse.quote_plus(f"{v['make']} {v['model'].strip()} ({','.join(str(y) for y in sorted(set(v['years'])))})") + '&_sop=2',
+            'ebay_url':                  'https://www.ebay.com/sch/6001/i.html?_nkw=' + urllib.parse.quote_plus(f"{v['make']} {v['model'].strip()} ({','.join(str(y) for y in sorted(set(v['years'])))})") + '&_sop=2&_blrs=category_constraint',
             'harness':                   v['harness'].strip(),
             'shop_url':                  v['shop_url'],
         }
