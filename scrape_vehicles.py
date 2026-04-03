@@ -248,6 +248,10 @@ vehicles = [
         'description': v['description'],
         'support':     re.sub(r'\s+', ' ', v['support']).strip(),
         'all_trims':      'all packages and trims' in v['support'],
+        'no_tight_turns':            'may not be able to take tight turns' in v['description'],
+        'acc_resumes_from_stop':      'resumes from a stop' in v['description'],
+        'traffic_light_support':     'traffic light and stop sign' in v['description'].lower(),
+        'traffic_light_experimental': 'traffic light and stop sign handling is also available in experimental mode' in v['description'].lower(),
         'harness':     v['harness'].strip(),
         'shop_url':    v['shop_url'],
     }
