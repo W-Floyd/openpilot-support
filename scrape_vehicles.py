@@ -460,7 +460,7 @@ def build_html(vehicles, etag=None, timestamp=None, favicon=None):
         <th><select id="fcol-min_speed_mph"><option value="">Any</option></select></th>
         <th><select id="fcol-trims"><option value="">Any</option></select></th>
         <th><select id="fcol-acc_resumes_from_stop"><option value="">Any</option><option value="true">✓</option><option value="false">✗</option></select></th>
-        <th><select id="fcol-no_tight_turns"><option value="">Any</option><option value="true">✓</option><option value="false">✗</option></select></th>
+        <th><select id="fcol-no_tight_turns"><option value="">Any</option><option value="false">✓</option><option value="true">✗</option></select></th>
         <th><select id="fcol-traffic_light_support"><option value="">Any</option><option value="true">✓</option><option value="false">✗</option></select></th>
         <th><select id="fcol-traffic_light_experimental"><option value="">Any</option><option value="true">✓</option><option value="false">✗</option></select></th>
         <th><select id="fcol-harness"><option value="">All</option></select></th>
