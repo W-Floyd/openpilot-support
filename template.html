@@ -62,7 +62,7 @@
       <thead class="sticky top-0 z-10 bg-gray-800 text-white">
         <tr>
           <template x-for="col in columns" :key="col.key">
-            <th class="px-4 py-3 font-semibold whitespace-nowrap select-none">
+            <th class="px-4 py-2 font-semibold whitespace-nowrap select-none">
               <div class="flex items-center gap-1">
 
                 <!-- Sort button -->
@@ -227,7 +227,7 @@
         <template x-for="car in filteredCars" :key="car.name">
           <tr class="transition-colors hover:bg-gray-50">
             <template x-for="col in columns" :key="col.key">
-              <td class="px-4 py-3 whitespace-nowrap">
+              <td class="px-4 py-1.5 whitespace-nowrap">
 
                 <!-- support_type badge -->
                 <template x-if="col.key === 'support_type'">
