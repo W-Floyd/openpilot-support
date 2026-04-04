@@ -120,13 +120,18 @@
                 <div class="flex items-center gap-1">
 
                   <!-- Sort button -->
-                  <button @click="toggleSort(col.key)"
-                    class="flex items-center gap-1 transition-colors hover:text-blue-300">
+                  <template x-if="!col.ebay && !col.cargurus">
+                    <button @click="toggleSort(col.key)"
+                      class="flex items-center gap-1 transition-colors hover:text-blue-300">
+                      <span x-text="colLabel(col)"></span>
+                      <span class="text-xs opacity-50" x-show="sortCol !== col.key">⇅</span>
+                      <span class="text-xs text-blue-300" x-show="sortCol === col.key && sortDir === 'asc'">↑</span>
+                      <span class="text-xs text-blue-300" x-show="sortCol === col.key && sortDir === 'desc'">↓</span>
+                    </button>
+                  </template>
+                  <template x-if="col.ebay || col.cargurus">
                     <span x-text="colLabel(col)"></span>
-                    <span class="text-xs opacity-50" x-show="sortCol !== col.key">⇅</span>
-                    <span class="text-xs text-blue-300" x-show="sortCol === col.key && sortDir === 'asc'">↑</span>
-                    <span class="text-xs text-blue-300" x-show="sortCol === col.key && sortDir === 'desc'">↓</span>
-                  </button>
+                  </template>
 
                   <!-- Filter button + dropdown -->
                   <div class="relative" x-show="col.filterable">
