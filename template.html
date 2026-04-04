@@ -566,17 +566,18 @@
 
         formatYears(years) {
           if (!years || years.length === 0) return '—';
+          const fmt = (start, end) => start === end ? String(start) : `${start}–${String(end).slice(-2)}`;
           const ranges = [];
           let start = years[0], end = years[0];
           for (let i = 1; i < years.length; i++) {
             if (years[i] === end + 1) {
               end = years[i];
             } else {
-              ranges.push(start === end ? String(start) : `${start}–${end}`);
+              ranges.push(fmt(start, end));
               start = end = years[i];
             }
           }
-          ranges.push(start === end ? String(start) : `${start}–${end}`);
+          ranges.push(fmt(start, end));
           return ranges.join(', ');
         },
 
