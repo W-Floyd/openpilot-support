@@ -168,6 +168,7 @@
                           <div class="border-b border-gray-100 px-2 py-1.5">
                             <input type="text" :placeholder="'Search ' + col.label.toLowerCase() + '…'"
                               x-model="filterSearch[col.key]" @click.stop
+                              x-effect="if (openFilter === col.key) $nextTick(() => $el.focus())"
                               class="w-full rounded border border-gray-200 px-2 py-1 text-xs text-gray-700 placeholder-gray-400 focus:border-blue-400 focus:outline-none">
                           </div>
                           <div class="border-b border-gray-100 px-2 py-1">
