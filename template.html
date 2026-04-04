@@ -345,7 +345,7 @@
                   <template x-if="col.cc_seal">
                     <span>
                       <template x-if="car.cc_seal">
-                        <span class="flex flex-col gap-0.5">
+                        <span class="relative flex flex-col gap-0.5" x-data="{ ccOpen: false }" @mouseenter="ccOpen = true" @mouseleave="ccOpen = false">
                           <template x-for="s in car.cc_seal" :key="s.seal">
                             <a :href="ccSealUrl(car, s.seal)" target="_blank" rel="noopener"
                               class="text-xs font-medium hover:underline"
@@ -354,6 +354,18 @@
                               <span class="text-gray-400 font-normal" x-text="' (' + s.years + ')'"></span>
                             </a>
                           </template>
+                          <div x-show="ccOpen" x-cloak
+                            class="absolute bottom-full right-0 z-50 mb-1.5 whitespace-nowrap rounded-lg border border-gray-200 bg-white py-1.5 shadow-lg text-xs">
+                            <template x-for="row in ccYearRows(car)" :key="row.year">
+                              <div class="flex items-baseline gap-1.5 px-3 py-0.5">
+                                <span class="w-9 shrink-0 font-medium text-gray-700" x-text="row.year"></span>
+                                <span class="tabular-nums text-red-500" x-text="row.complaints + ' complaints'"></span>
+                                <span class="tabular-nums text-amber-500" x-text="row.recalls + ' recalls'"></span>
+                                <span class="tabular-nums text-blue-500" x-text="row.tsbs + ' TSBs'"></span>
+                                <span x-show="row.seal" class="ml-auto font-medium" :class="ccSealClass(row.seal)" x-text="' - ' + ccSealShort(row.seal)"></span>
+                              </div>
+                            </template>
+                          </div>
                         </span>
                       </template>
                       <template x-if="!car.cc_seal">
@@ -809,6 +821,14 @@
 
         toAscii(str) {
           return str.normalize('NFKD').replace(/[\u0300-\u036f]/g, '').replace(/[^\x00-\x7F]/g, '');
+        },
+
+        ccYearRows(car) {
+          const years = [...new Set(car.years)].sort((a, b) => a - b);
+          return years.map(y => {
+            const d = this.ccCache[`${this.toAscii(car.make)}|${this.toAscii(car.model)}|${y}`];
+            return d ? { year: y, complaints: d.complaints ?? 0, recalls: d.recalls ?? 0, tsbs: d.tsbs ?? 0, seal: d.seal } : null;
+          }).filter(Boolean);
         },
 
         ccSealUrl(car, seal) {
