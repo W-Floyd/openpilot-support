@@ -467,7 +467,7 @@ function carTable() {
     },
 
     presets: [
-      { label: 'All features', filters: { auto_resume: [true], good_steering_torque: [true], openpilot_longitudinal: ["!Stock"] },
+      { label: 'All features', filters: { auto_resume: [true], good_steering_torque: [true], openpilot_longitudinal: ["!Stock"], support_type: ["!Not compatible", "!Dashcam mode"] },
         speedFilters: {
           min_steer_speed:  { min: null, max: 'dataMin' },
           min_enable_speed: { min: null, max: 'dataMin' },
