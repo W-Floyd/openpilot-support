@@ -459,7 +459,8 @@
               if (seal) (bySeal[seal] ??= []).push(y);
             }
             const seals = Object.entries(bySeal).map(([seal, ys]) => ({ seal, years: fmtRanges(ys) }));
-            return { ...car, cc_seal: seals.length > 0 ? seals : null };
+            const cc_has_none = years.some(y => !ccCache[ccKey(car.make, car.model, y)]?.seal);
+            return { ...car, cc_seal: seals.length > 0 ? seals : null, cc_has_none };
           });
         })(),
         sortCol: null,
@@ -506,7 +507,7 @@
             for (const [key, selected] of Object.entries(this.filters)) {
               if (selected.length === 0) continue;
               if (key === 'cc_seal') {
-                const seals = car.cc_seal?.length ? car.cc_seal.map(s => s.seal) : [''];
+                const seals = car.cc_seal?.length ? [...car.cc_seal.map(s => s.seal), ...(car.cc_has_none ? [''] : [])] : [''];
                 if (!seals.some(v => selected.includes(v))) return false;
               } else if (Array.isArray(car[key])) {
                 if (!car[key].some(v => selected.includes(v))) return false;
@@ -569,7 +570,7 @@
               if (key === excludeColKey) continue;
               if (selected.length === 0) continue;
               if (key === 'cc_seal') {
-                const seals = car.cc_seal?.length ? car.cc_seal.map(s => s.seal) : [''];
+                const seals = car.cc_seal?.length ? [...car.cc_seal.map(s => s.seal), ...(car.cc_has_none ? [''] : [])] : [''];
                 if (!seals.some(v => selected.includes(v))) return false;
               } else if (Array.isArray(car[key])) {
                 if (!car[key].some(v => selected.includes(v))) return false;
@@ -592,7 +593,7 @@
         },
 
         extractVals(colKey, cars) {
-          if (colKey === 'cc_seal') return cars.flatMap(c => c.cc_seal?.length ? c.cc_seal.map(s => s.seal) : ['']);
+          if (colKey === 'cc_seal') return cars.flatMap(c => c.cc_seal?.length ? [...c.cc_seal.map(s => s.seal), ...(c.cc_has_none ? [''] : [])] : ['']);
           return cars.flatMap(c => Array.isArray(c[colKey]) ? c[colKey] : [c[colKey]]);
         },
 
