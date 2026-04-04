@@ -244,6 +244,19 @@
                       class="text-blue-600 hover:underline text-xs">Search</a>
                   </template>
 
+                  <!-- cargurus link -->
+                  <template x-if="col.cargurus">
+                    <span>
+                      <template x-if="carGurusCache[carGurusKey(car)]?.url">
+                        <a :href="carGurusCache[carGurusKey(car)].url" target="_blank" rel="noopener"
+                          class="text-blue-600 hover:underline text-xs">Search</a>
+                      </template>
+                      <template x-if="!carGurusCache[carGurusKey(car)]?.url">
+                        <span class="text-gray-300">—</span>
+                      </template>
+                    </span>
+                  </template>
+
                   <!-- default string/number -->
                   <template
                     x-if="!col.speed && !col.ebay && col.key !== 'support_type' && col.key !== 'years' && car[col.key] !== null && typeof car[col.key] !== 'boolean'">
@@ -268,6 +281,7 @@
   </div>
 
   <script type="application/json" id="cars-data">{{ cars_json }}</script>
+  <script type="application/json" id="cargurus-cache">{{ cargurus_cache_json }}</script>
   <script>
     function carTable() {
       const filterableCols = ['make', 'model', 'support_type', 'openpilot_longitudinal', 'merged', 'auto_resume', 'good_steering_torque', 'years', 'package'];
@@ -284,6 +298,7 @@
           min_steer_speed: { min: null, max: null },
           min_enable_speed: { min: null, max: null },
         },
+        carGurusCache: JSON.parse(document.getElementById('cargurus-cache').textContent),
 
         columns: [
           { key: 'make', label: 'Make' },
@@ -298,6 +313,7 @@
           { key: 'min_steer_speed', label: 'Min Steer', speed: true },
           { key: 'min_enable_speed', label: 'Min Enable', speed: true },
           { key: 'ebay', label: 'eBay', ebay: true },
+          { key: 'cargurus', label: 'CarGurus', cargurus: true },
         ].map(col => ({ ...col, filterable: filterableCols.includes(col.key) })),
 
         get filteredCars() {
@@ -592,6 +608,15 @@
           }
           ranges.push(fmt(start, end));
           return ranges.join(', ');
+        },
+
+        toAscii(str) {
+          return str.normalize('NFKD').replace(/[\u0300-\u036f]/g, '').replace(/[^\x00-\x7F]/g, '');
+        },
+
+        carGurusKey(car) {
+          const years = [...new Set(car.years)].sort((a, b) => a - b);
+          return `${this.toAscii(car.make)}|${this.toAscii(car.model)}|${years[0]}-${years[years.length - 1]}`;
         },
 
         openAllEbayLinks() {
