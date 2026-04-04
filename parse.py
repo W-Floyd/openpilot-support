@@ -10,6 +10,7 @@ import urllib.parse
 import urllib.request
 
 import jinja2
+import minify_html
 
 # Add opendbc to path
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "openpilot", "opendbc_repo"))
@@ -168,10 +169,11 @@ def generate_html(cars: list[dict], cargurus_js_cache: dict | None = None) -> st
   here = os.path.dirname(__file__)
   env = jinja2.Environment(loader=jinja2.FileSystemLoader(here))
   template = env.get_template("template.html")
-  return template.render(
-    cars_json=json.dumps(cars),
-    cargurus_cache_json=json.dumps(cargurus_js_cache or {}),
+  html = template.render(
+    cars_json=json.dumps(cars, separators=(',', ':')),
+    cargurus_cache_json=json.dumps(cargurus_js_cache or {}, separators=(',', ':')),
   )
+  return minify_html.minify(html, minify_js=True, minify_css=True)
 
 
 def main():
