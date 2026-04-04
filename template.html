@@ -340,7 +340,10 @@ function carTable() {
         }
         for (const [key, range] of Object.entries(this.speedFilters)) {
           const val = car[key];
-          if (val === null) continue;
+          if (val === null) {
+            if (range.min !== null || range.max !== null) return false;
+            continue;
+          }
           if (range.min !== null && val < range.min) return false;
           if (range.max !== null && val > range.max) return false;
         }
