@@ -165,7 +165,7 @@
 <script type="application/json" id="cars-data">{{ cars_json }}</script>
 <script>
 function carTable() {
-  const filterableCols = ['make', 'support_type', 'openpilot_longitudinal', 'merged', 'auto_resume', 'good_steering_torque'];
+  const filterableCols = ['make', 'support_type', 'openpilot_longitudinal', 'merged', 'auto_resume', 'good_steering_torque', 'years'];
 
   return {
     cars: JSON.parse(document.getElementById('cars-data').textContent),
@@ -177,7 +177,7 @@ function carTable() {
     columns: [
       { key: 'make',                   label: 'Make',            filterable: true  },
       { key: 'model',                  label: 'Model',           filterable: false },
-      { key: 'years',                  label: 'Years',           filterable: false },
+      { key: 'years',                  label: 'Years',           filterable: true  },
       { key: 'package',                label: 'Package',         filterable: false },
       { key: 'support_type',           label: 'Support Level',   filterable: true  },
       { key: 'merged',                 label: 'Merged',          filterable: true  },
@@ -192,7 +192,11 @@ function carTable() {
       let result = this.cars.filter(car => {
         for (const [key, selected] of Object.entries(this.filters)) {
           if (selected.length === 0) continue;
-          if (!selected.includes(String(car[key]))) return false;
+          if (Array.isArray(car[key])) {
+            if (!car[key].some(v => selected.includes(v))) return false;
+          } else {
+            if (!selected.includes(String(car[key]))) return false;
+          }
         }
         return true;
       });
@@ -215,7 +219,8 @@ function carTable() {
     },
 
     uniqueValues(colKey) {
-      return [...new Set(this.cars.map(c => String(c[colKey])))].sort();
+      const vals = this.cars.flatMap(c => Array.isArray(c[colKey]) ? c[colKey] : [c[colKey]]);
+      return [...new Set(vals)].sort((a, b) => typeof a === 'number' ? a - b : String(a).localeCompare(String(b)));
     },
 
     toggleSort(colKey) {
