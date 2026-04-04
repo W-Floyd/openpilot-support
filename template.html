@@ -464,8 +464,20 @@ function carTable() {
     },
 
     presets: [
-      { label: 'All featured', filters: { auto_resume: [true], good_steering_torque: [true] } },
+      { label: 'All features', filters: { auto_resume: [true], good_steering_torque: [true], openpilot_longitudinal: ["!Stock"] },
+        speedFilters: {
+          min_steer_speed:  { min: null, max: 'dataMin' },
+          min_enable_speed: { min: null, max: 'dataMin' },
+        },
+      },
     ],
+
+    resolveSpeedFilter(key, range) {
+      return {
+        min: range.min === 'dataMin' ? this.speedRange(key).min : range.min,
+        max: range.max === 'dataMin' ? this.speedRange(key).min : range.max,
+      };
+    },
 
     applyPreset(preset) {
       if (this.isPresetActive(preset)) {
@@ -473,16 +485,39 @@ function carTable() {
       } else {
         this.clearAllFilters();
         for (const [key, vals] of Object.entries(preset.filters)) {
-          this.filters[key] = [...vals];
+          const excluded = vals.filter(v => String(v).startsWith('!')).map(v => String(v).slice(1));
+          if (excluded.length > 0) {
+            this.filters[key] = this.uniqueValues(key).filter(v => !excluded.includes(String(v)));
+          } else {
+            this.filters[key] = [...vals];
+          }
+        }
+        if (preset.speedFilters) {
+          for (const [key, range] of Object.entries(preset.speedFilters)) {
+            this.speedFilters[key] = this.resolveSpeedFilter(key, range);
+          }
         }
       }
     },
 
     isPresetActive(preset) {
-      return Object.entries(preset.filters).every(([key, vals]) =>
-        vals.length === this.filters[key]?.length &&
-        vals.every(v => this.filters[key].includes(v))
-      );
+      const filtersMatch = Object.entries(preset.filters).every(([key, vals]) => {
+        const excluded = vals.filter(v => String(v).startsWith('!')).map(v => String(v).slice(1));
+        if (excluded.length > 0) {
+          const expected = this.uniqueValues(key).filter(v => !excluded.includes(String(v)));
+          return expected.length === this.filters[key]?.length &&
+            expected.every(v => this.filters[key].includes(v));
+        }
+        return vals.length === this.filters[key]?.length &&
+          vals.every(v => this.filters[key].includes(v));
+      });
+      if (!filtersMatch) return false;
+      if (!preset.speedFilters) return true;
+      return Object.entries(preset.speedFilters).every(([key, range]) => {
+        const resolved = this.resolveSpeedFilter(key, range);
+        return this.speedFilters[key]?.min === resolved.min &&
+          this.speedFilters[key]?.max === resolved.max;
+      });
     },
 
     columnLabel(key) {
