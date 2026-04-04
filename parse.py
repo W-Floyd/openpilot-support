@@ -5,6 +5,8 @@ import json
 import math
 import os
 import sys
+import concurrent.futures
+import html.parser
 import unicodedata
 import urllib.parse
 import urllib.request
@@ -146,14 +148,19 @@ def save_cargurus_cache(cache: dict) -> None:
 def fetch_cargurus_cache(cars: list[dict]) -> dict:
     """Fetch CarGurus data for all cars, updating the cache file. Returns raw response cache."""
     cache = load_cargurus_cache()
-    for i, car in enumerate(cars):
-        query = cargurus_query(car)
-        if query is None or query in cache:
-            continue
-        print(f"  [{i + 1}/{len(cars)}] Fetching: {query}", file=sys.stderr)
-        response = fetch_cargurus_response(query)
-        cache[query] = response  # store None on failure so we don't retry
-        save_cargurus_cache(cache)
+    pending = [q for car in cars if (q := cargurus_query(car)) is not None and q not in cache]
+    total = len(pending)
+
+    def fetch_one(query: str, idx: int) -> tuple[str, object]:
+        print(f"  [{idx}/{total}] Fetching CarGurus: {query}", file=sys.stderr)
+        return query, fetch_cargurus_response(query)
+
+    with concurrent.futures.ThreadPoolExecutor(max_workers=5) as pool:
+        futures = {pool.submit(fetch_one, q, i + 1): q for i, q in enumerate(pending)}
+        for future in concurrent.futures.as_completed(futures):
+            query, response = future.result()
+            cache[query] = response
+            save_cargurus_cache(cache)
     return cache
 
 
@@ -177,15 +184,125 @@ def build_cargurus_js_cache(cars: list[dict], raw_cache: dict) -> dict:
     return result
 
 
-def generate_html(cars: list[dict], cargurus_js_cache: dict | None = None) -> str:
+ARI_CACHE_FILE = os.path.join(os.path.dirname(__file__), ".ari_cache.json")
+
+
+class JsonLdExtractor(html.parser.HTMLParser):
+    def __init__(self):
+        super().__init__()
+        self._in_ld = False
+        self._blocks: list[str] = []
+        self._buf = ""
+
+    def handle_starttag(self, tag, attrs):
+        if tag == "script" and ("type", "application/ld+json") in attrs:
+            self._in_ld = True
+            self._buf = ""
+
+    def handle_endtag(self, tag):
+        if tag == "script" and self._in_ld:
+            self._blocks.append(self._buf)
+            self._in_ld = False
+
+    def handle_data(self, data):
+        if self._in_ld:
+            self._buf += data
+
+    @property
+    def blocks(self) -> list[dict]:
+        result = []
+        for b in self._blocks:
+            try:
+                result.append(json.loads(b))
+            except json.JSONDecodeError:
+                pass
+        return result
+
+
+def ari_slug(text: str) -> str:
+    return to_ascii(text).lower().replace(" ", "-")
+
+
+def ari_url(make: str, model: str, year: int) -> str:
+    return f"https://autoreliabilityindex.com/{ari_slug(make)}/{ari_slug(model)}/{year}"
+
+
+def fetch_ari_response(make: str, model: str, year: int) -> dict | None:
+    url = ari_url(make, model, year)
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+        with urllib.request.urlopen(req, timeout=10) as resp:
+            body = resp.read().decode("utf-8", errors="replace")
+    except Exception as e:
+        print(f"  Error fetching '{url}': {e}", file=sys.stderr)
+        return None
+
+    parser = JsonLdExtractor()
+    parser.feed(body)
+    for block in parser.blocks:
+        entity = block.get("mainEntity", {})
+        review = entity.get("review", {})
+        rating = review.get("reviewRating", {})
+        score = rating.get("ratingValue")
+        if score is not None:
+            return {"score": score, "url": url}
+    return None
+
+
+def load_ari_cache() -> dict:
+    if os.path.exists(ARI_CACHE_FILE):
+        try:
+            with open(ARI_CACHE_FILE) as f:
+                return json.load(f)
+        except (json.JSONDecodeError, ValueError):
+            pass
+    return {}
+
+
+def save_ari_cache(cache: dict) -> None:
+    with open(ARI_CACHE_FILE, "w") as f:
+        json.dump(dict(sorted(cache.items())), f, indent=2)
+
+
+def ari_cache_key(make: str, model: str, year: int) -> str:
+    return f"{to_ascii(make)}|{to_ascii(model)}|{year}"
+
+
+def fetch_ari_cache(cars: list[dict]) -> dict:
+    """Fetch ARI data for all car/year combinations, updating the cache file."""
+    cache = load_ari_cache()
+    pending = [
+        (car["make"], car["model"], year)
+        for car in cars
+        for year in sorted(set(car["years"]))
+        if ari_cache_key(car["make"], car["model"], year) not in cache
+    ]
+    total = len(pending)
+
+    def fetch_one(entry: tuple[str, str, int], idx: int) -> tuple[str, object]:
+        make, model, year = entry
+        print(f"  [{idx}/{total}] Fetching ARI: {make} {model} {year}", file=sys.stderr)
+        return ari_cache_key(make, model, year), fetch_ari_response(make, model, year)
+
+    with concurrent.futures.ThreadPoolExecutor(max_workers=5) as pool:
+        futures = {pool.submit(fetch_one, entry, i + 1): entry for i, entry in enumerate(pending)}
+        for future in concurrent.futures.as_completed(futures):
+            key, result = future.result()
+            cache[key] = result
+            save_ari_cache(cache)
+    return cache
+
+
+def generate_html(cars: list[dict], cargurus_js_cache: dict | None = None, ari_cache: dict | None = None) -> str:
     here = os.path.dirname(__file__)
     env = jinja2.Environment(loader=jinja2.FileSystemLoader(here))
     template = env.get_template("template.html")
-    html = template.render(
+    rendered = template.render(
         cars_json=json.dumps(cars, separators=(",", ":")),
         cargurus_cache_json=json.dumps(cargurus_js_cache or {}, separators=(",", ":")),
+        ari_cache_json=json.dumps(ari_cache or {}, separators=(",", ":")),
     )
-    return minify_html.minify(html, minify_js=True, minify_css=True)
+    return minify_html.minify(rendered, minify_js=True, minify_css=True)
 
 
 def main():
@@ -211,6 +328,11 @@ def main():
         action="store_true",
         help="Skip fetching CarGurus data for all cars.",
     )
+    parser.add_argument(
+        "--no-fetch-ari",
+        action="store_true",
+        help="Skip fetching Auto Reliability Index data for all cars.",
+    )
     args = parser.parse_args()
 
     print("Loading car docs...", file=sys.stderr)
@@ -227,6 +349,12 @@ def main():
 
     cargurus_js_cache = build_cargurus_js_cache(cars, raw_cache)
 
+    if not args.no_fetch_ari:
+        print("Fetching Auto Reliability Index data...", file=sys.stderr)
+        ari_cache = fetch_ari_cache(cars)
+    else:
+        ari_cache = load_ari_cache()
+
     if args.json_out:
         os.makedirs(os.path.dirname(os.path.abspath(args.json_out)), exist_ok=True)
         with open(args.json_out, "w") as f:
@@ -236,7 +364,7 @@ def main():
     if args.html_out:
         os.makedirs(os.path.dirname(os.path.abspath(args.html_out)), exist_ok=True)
         with open(args.html_out, "w") as f:
-            f.write(generate_html(cars, cargurus_js_cache))
+            f.write(generate_html(cars, cargurus_js_cache, ari_cache))
         print(f"Written to {args.html_out}", file=sys.stderr)
 
     if args.serve:

@@ -56,7 +56,7 @@
     </div>
 
     <!-- Active filter chips -->
-    <div class="mb-4 flex flex-wrap gap-2" x-show="activeFilters.length > 0 || activeSpeedFilters.length > 0">
+    <div class="mb-4 flex flex-wrap gap-2" x-show="activeFilters.length > 0 || activeSpeedFilters.length > 0 || isAriFilterActive()">
       <template x-for="f in activeFilters" :key="f.key + ':' + f.val">
         <span class="inline-flex items-center gap-1 rounded-full bg-blue-100 px-3 py-1 text-sm text-blue-800">
           <span x-text="columnLabel(f.key) + ': ' + f.val"></span>
@@ -68,6 +68,12 @@
         <span class="inline-flex items-center gap-1 rounded-full bg-blue-100 px-3 py-1 text-sm text-blue-800">
           <span x-text="f.label"></span>
           <button @click="clearFilter(f.key)" class="ml-1 font-bold leading-none hover:text-blue-600">&times;</button>
+        </span>
+      </template>
+      <template x-if="isAriFilterActive()">
+        <span class="inline-flex items-center gap-1 rounded-full bg-blue-100 px-3 py-1 text-sm text-blue-800">
+          <span x-text="`Reliability: ${ariFilter.min ?? 0}–${ariFilter.max ?? 100}`"></span>
+          <button @click="clearFilter('ari')" class="ml-1 font-bold leading-none hover:text-blue-600">&times;</button>
         </span>
       </template>
       <button @click="clearAllFilters()"
@@ -100,7 +106,7 @@
                     <button
                       @click.stop="openFilter = openFilter === col.key ? (filterSearch[col.key] = '', null) : col.key"
                       class="rounded p-0.5 transition-colors hover:bg-gray-700"
-                      :class="(filters[col.key] && filters[col.key].length > 0) || isSpeedFilterActive(col.key) ? 'text-blue-300' : 'text-gray-400'">
+                      :class="(filters[col.key] && filters[col.key].length > 0) || isSpeedFilterActive(col.key) || (col.key === 'ari' && isAriFilterActive()) ? 'text-blue-300' : 'text-gray-400'">
                       <svg class="h-3 w-3" fill="currentColor" viewBox="0 0 20 20">
                         <path fill-rule="evenodd"
                           d="M3 3a1 1 0 011-1h12a1 1 0 011 1v3a1 1 0 01-.293.707L12 11.414V15a1 1 0 01-.553.894l-4 2A1 1 0 016 17v-5.586L3.293 6.707A1 1 0 013 6V3z"
@@ -173,8 +179,34 @@
                         </div>
                       </template>
 
+                      <!-- ARI range filter -->
+                      <template x-if="col.ari">
+                        <div class="p-3 space-y-3 min-w-56">
+                          <div>
+                            <div class="mb-1 flex justify-between text-xs text-gray-500">
+                              <span>Min score</span>
+                              <span x-text="ariFilter.min ?? 0"></span>
+                            </div>
+                            <input type="range" min="0" max="100" step="1"
+                              :value="ariFilter.min ?? 0"
+                              @input="ariFilter.min = parseInt($event.target.value) || null; if (ariFilter.min === 0) ariFilter.min = null"
+                              @click.stop class="w-full accent-blue-600">
+                          </div>
+                          <div>
+                            <div class="mb-1 flex justify-between text-xs text-gray-500">
+                              <span>Max score</span>
+                              <span x-text="ariFilter.max ?? 100"></span>
+                            </div>
+                            <input type="range" min="0" max="100" step="1"
+                              :value="ariFilter.max ?? 100"
+                              @input="ariFilter.max = parseInt($event.target.value); if (ariFilter.max === 100) ariFilter.max = null"
+                              @click.stop class="w-full accent-blue-600">
+                          </div>
+                        </div>
+                      </template>
+
                       <!-- Checkbox filter -->
-                      <template x-if="!col.speed">
+                      <template x-if="!col.speed && !col.ari">
                         <div>
                           <div class="border-b border-gray-100 px-2 py-1.5">
                             <input type="text" :placeholder="'Search ' + col.label.toLowerCase() + '…'"
@@ -247,6 +279,30 @@
                     <span x-text="formatSpeed(car[col.key])"></span>
                   </template>
 
+                  <!-- ari score -->
+                  <template x-if="col.ari">
+                    <span>
+                      <template x-if="ariScore(car) !== null">
+                        <a :href="ariLink(car)" target="_blank" rel="noopener"
+                          class="text-xs font-medium hover:underline tabular-nums">
+                          <template x-if="ariScore(car).min === ariScore(car).max">
+                            <span :style="`color: ${ariColor(ariScore(car).min)}`" x-text="ariScore(car).min"></span>
+                          </template>
+                          <template x-if="ariScore(car).min !== ariScore(car).max">
+                            <span>
+                              <span :style="`color: ${ariColor(ariScore(car).min)}`" x-text="ariScore(car).min"></span>
+                              <span class="text-gray-400">–</span>
+                              <span :style="`color: ${ariColor(ariScore(car).max)}`" x-text="ariScore(car).max"></span>
+                            </span>
+                          </template>
+                        </a>
+                      </template>
+                      <template x-if="ariScore(car) === null">
+                        <span class="text-gray-300">—</span>
+                      </template>
+                    </span>
+                  </template>
+
                   <!-- ebay link -->
                   <template x-if="col.ebay">
                     <a :href="ebayUrl(car)" target="_blank" rel="noopener"
@@ -291,9 +347,10 @@
 
   <script type="application/json" id="cars-data">{{ cars_json }}</script>
   <script type="application/json" id="cargurus-cache">{{ cargurus_cache_json }}</script>
+  <script type="application/json" id="ari-cache">{{ ari_cache_json }}</script>
   <script>
     function carTable() {
-      const filterableCols = ['make', 'model', 'support_type', 'openpilot_longitudinal', 'merged', 'auto_resume', 'good_steering_torque', 'years', 'package'];
+      const filterableCols = ['make', 'model', 'support_type', 'openpilot_longitudinal', 'merged', 'auto_resume', 'good_steering_torque', 'years', 'package', 'ari'];
 
       return {
         cars: JSON.parse(document.getElementById('cars-data').textContent),
@@ -308,6 +365,8 @@
           min_enable_speed: { min: null, max: null },
         },
         carGurusCache: JSON.parse(document.getElementById('cargurus-cache').textContent),
+        ariCache: JSON.parse(document.getElementById('ari-cache').textContent),
+        ariFilter: { min: null, max: null },
 
         columns: [
           { key: 'make', label: 'Make' },
@@ -317,13 +376,14 @@
           { key: 'support_type', label: 'Support Level' },
           { key: 'merged', label: 'Merged' },
           { key: 'openpilot_longitudinal', label: 'Longitudinal' },
-          { key: 'auto_resume', label: 'Auto Resume' },
-          { key: 'good_steering_torque', label: 'Good Torque' },
+          { key: 'auto_resume', label: 'Resume' },
+          { key: 'good_steering_torque', label: 'Torque' },
           { key: 'min_steer_speed', label: 'Min Steer', speed: true },
           { key: 'min_enable_speed', label: 'Min Enable', speed: true },
+          { key: 'ari', label: 'Reliability', ari: true },
           { key: 'ebay', label: 'eBay', ebay: true },
           { key: 'cargurus', label: 'CarGurus', cargurus: true },
-        ].map(col => ({ ...col, filterable: filterableCols.includes(col.key) })),
+        ].map(col => ({ ...col, filterable: col.filterable ?? filterableCols.includes(col.key) })),
 
         get filteredCars() {
           let result = this.cars.filter(car => {
@@ -344,13 +404,28 @@
               if (range.min !== null && val < range.min) return false;
               if (range.max !== null && val > range.max) return false;
             }
+            if (this.ariFilter.min !== null || this.ariFilter.max !== null) {
+              const s = this.ariScore(car);
+              if (s === null) return false;
+              const avg = (s.min + s.max) / 2;
+              if (this.ariFilter.min !== null && avg < this.ariFilter.min) return false;
+              if (this.ariFilter.max !== null && avg > this.ariFilter.max) return false;
+            }
             return true;
           });
 
           if (this.sortCol) {
             const dir = this.sortDir === 'asc' ? 1 : -1;
             result = [...result].sort((a, b) => {
-              let av = a[this.sortCol], bv = b[this.sortCol];
+              let av, bv;
+              if (this.sortCol === 'ari') {
+                const sa = this.ariScore(a), sb = this.ariScore(b);
+                av = sa !== null ? (sa.min + sa.max) / 2 : null;
+                bv = sb !== null ? (sb.min + sb.max) / 2 : null;
+              } else {
+                av = a[this.sortCol];
+                bv = b[this.sortCol];
+              }
               if (Array.isArray(av)) av = av[0] ?? null;
               if (Array.isArray(bv)) bv = bv[0] ?? null;
               if (av === null && bv === null) return 0;
@@ -448,7 +523,9 @@
         },
 
         clearFilter(colKey) {
-          if (this.speedFilters[colKey]) {
+          if (colKey === 'ari') {
+            this.ariFilter = { min: null, max: null };
+          } else if (this.speedFilters[colKey]) {
             this.speedFilters[colKey] = { min: null, max: null };
           } else {
             this.filters[colKey] = [];
@@ -463,6 +540,7 @@
           for (const key of Object.keys(this.speedFilters)) {
             this.speedFilters[key] = { min: null, max: null };
           }
+          this.ariFilter = { min: null, max: null };
         },
 
         get activeFilters() {
@@ -589,6 +667,10 @@
           return { min: vals[0] ?? 0, max: vals[vals.length - 1] ?? 0, values: vals };
         },
 
+        isAriFilterActive() {
+          return this.ariFilter.min !== null || this.ariFilter.max !== null;
+        },
+
         isSpeedFilterActive(colKey) {
           const f = this.speedFilters[colKey];
           if (!f) return false;
@@ -626,6 +708,28 @@
         carGurusKey(car) {
           const years = [...new Set(car.years)].sort((a, b) => a - b);
           return `${this.toAscii(car.make)}|${this.toAscii(car.model)}|${years[0]}-${years[years.length - 1]}`;
+        },
+
+        ariKey(make, model, year) {
+          return `${this.toAscii(make)}|${this.toAscii(model)}|${year}`;
+        },
+
+        ariScore(car) {
+          const years = [...new Set(car.years)];
+          const scores = years.map(y => this.ariCache[this.ariKey(car.make, car.model, y)]?.score).filter(s => s != null);
+          if (scores.length === 0) return null;
+          const min = Math.min(...scores), max = Math.max(...scores);
+          return { min, max };
+        },
+
+        ariLink(car) {
+          const years = [...new Set(car.years)].sort((a, b) => a - b);
+          const year = [...years].reverse().find(y => this.ariCache[this.ariKey(car.make, car.model, y)]?.score != null) ?? years[years.length - 1];
+          return this.ariCache[this.ariKey(car.make, car.model, year)]?.url ?? `https://autoreliabilityindex.com/${this.toAscii(car.make).toLowerCase().replace(/ /g, '-')}/${this.toAscii(car.model).toLowerCase().replace(/ /g, '-')}/${year}`;
+        },
+
+        ariColor(score) {
+          return `hsl(${score * 1.2}, 70%, 38%)`;
         },
 
         openAllEbayLinks() {

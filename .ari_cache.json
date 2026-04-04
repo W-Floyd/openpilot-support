@@ -1,0 +1,2151 @@
+{
+  "Acura|ADX|2025": null,
+  "Acura|ADX|2026": null,
+  "Acura|ILX|2016": null,
+  "Acura|ILX|2017": null,
+  "Acura|ILX|2018": null,
+  "Acura|ILX|2019": null,
+  "Acura|Integra|2023": null,
+  "Acura|Integra|2024": null,
+  "Acura|Integra|2025": null,
+  "Acura|MDX Hybrid|2017": null,
+  "Acura|MDX Hybrid|2018": null,
+  "Acura|MDX Hybrid|2019": null,
+  "Acura|MDX Hybrid|2020": null,
+  "Acura|MDX|2015": null,
+  "Acura|MDX|2016": null,
+  "Acura|MDX|2017": null,
+  "Acura|MDX|2018": {
+    "score": 64,
+    "url": "https://autoreliabilityindex.com/acura/mdx/2018"
+  },
+  "Acura|MDX|2019": {
+    "score": 64,
+    "url": "https://autoreliabilityindex.com/acura/mdx/2019"
+  },
+  "Acura|MDX|2020": {
+    "score": 62,
+    "url": "https://autoreliabilityindex.com/acura/mdx/2020"
+  },
+  "Acura|MDX|2022": {
+    "score": 73,
+    "url": "https://autoreliabilityindex.com/acura/mdx/2022"
+  },
+  "Acura|MDX|2023": {
+    "score": 79,
+    "url": "https://autoreliabilityindex.com/acura/mdx/2023"
+  },
+  "Acura|MDX|2024": {
+    "score": 79,
+    "url": "https://autoreliabilityindex.com/acura/mdx/2024"
+  },
+  "Acura|MDX|2025": {
+    "score": 76,
+    "url": "https://autoreliabilityindex.com/acura/mdx/2025"
+  },
+  "Acura|MDX|2026": {
+    "score": 79,
+    "url": "https://autoreliabilityindex.com/acura/mdx/2026"
+  },
+  "Acura|RDX|2016": null,
+  "Acura|RDX|2017": null,
+  "Acura|RDX|2018": null,
+  "Acura|RDX|2019": null,
+  "Acura|RDX|2020": null,
+  "Acura|RDX|2021": null,
+  "Acura|RDX|2022": null,
+  "Acura|RDX|2023": null,
+  "Acura|RDX|2024": null,
+  "Acura|RDX|2025": null,
+  "Acura|RLX|2017": null,
+  "Acura|TLX|2015": null,
+  "Acura|TLX|2016": null,
+  "Acura|TLX|2017": null,
+  "Acura|TLX|2018": null,
+  "Acura|TLX|2019": null,
+  "Acura|TLX|2020": null,
+  "Acura|TLX|2021": null,
+  "Acura|TLX|2022": null,
+  "Acura|TLX|2023": null,
+  "Acura|TLX|2025": null,
+  "Acura|ZDX|2024": null,
+  "Audi|A3 Sportback e-tron|2017": null,
+  "Audi|A3 Sportback e-tron|2018": null,
+  "Audi|A3|2014": null,
+  "Audi|A3|2015": null,
+  "Audi|A3|2016": null,
+  "Audi|A3|2017": null,
+  "Audi|A3|2018": null,
+  "Audi|A3|2019": null,
+  "Audi|A4|2016": null,
+  "Audi|A4|2017": null,
+  "Audi|A4|2018": {
+    "score": 71,
+    "url": "https://autoreliabilityindex.com/audi/a4/2018"
+  },
+  "Audi|A4|2019": null,
+  "Audi|A4|2020": {
+    "score": 65,
+    "url": "https://autoreliabilityindex.com/audi/a4/2020"
+  },
+  "Audi|A4|2021": {
+    "score": 71,
+    "url": "https://autoreliabilityindex.com/audi/a4/2021"
+  },
+  "Audi|A4|2022": {
+    "score": 72,
+    "url": "https://autoreliabilityindex.com/audi/a4/2022"
+  },
+  "Audi|A4|2023": {
+    "score": 77,
+    "url": "https://autoreliabilityindex.com/audi/a4/2023"
+  },
+  "Audi|A4|2024": null,
+  "Audi|A5|2016": null,
+  "Audi|A5|2017": null,
+  "Audi|A5|2018": {
+    "score": 77,
+    "url": "https://autoreliabilityindex.com/audi/a5/2018"
+  },
+  "Audi|A5|2019": {
+    "score": 73,
+    "url": "https://autoreliabilityindex.com/audi/a5/2019"
+  },
+  "Audi|A5|2020": {
+    "score": 70,
+    "url": "https://autoreliabilityindex.com/audi/a5/2020"
+  },
+  "Audi|A5|2021": {
+    "score": 71,
+    "url": "https://autoreliabilityindex.com/audi/a5/2021"
+  },
+  "Audi|A5|2022": {
+    "score": 74,
+    "url": "https://autoreliabilityindex.com/audi/a5/2022"
+  },
+  "Audi|A5|2023": {
+    "score": 81,
+    "url": "https://autoreliabilityindex.com/audi/a5/2023"
+  },
+  "Audi|A5|2024": null,
+  "Audi|Q2|2018": null,
+  "Audi|Q3|2019": {
+    "score": 72,
+    "url": "https://autoreliabilityindex.com/audi/q3/2019"
+  },
+  "Audi|Q3|2020": {
+    "score": 69,
+    "url": "https://autoreliabilityindex.com/audi/q3/2020"
+  },
+  "Audi|Q3|2021": {
+    "score": 74,
+    "url": "https://autoreliabilityindex.com/audi/q3/2021"
+  },
+  "Audi|Q3|2022": {
+    "score": 70,
+    "url": "https://autoreliabilityindex.com/audi/q3/2022"
+  },
+  "Audi|Q3|2023": {
+    "score": 74,
+    "url": "https://autoreliabilityindex.com/audi/q3/2023"
+  },
+  "Audi|Q3|2024": {
+    "score": 75,
+    "url": "https://autoreliabilityindex.com/audi/q3/2024"
+  },
+  "Audi|Q5|2013": null,
+  "Audi|Q5|2014": null,
+  "Audi|Q5|2015": null,
+  "Audi|Q5|2016": null,
+  "Audi|Q5|2017": null,
+  "Audi|Q5|2018": {
+    "score": 60,
+    "url": "https://autoreliabilityindex.com/audi/q5/2018"
+  },
+  "Audi|Q5|2019": {
+    "score": 69,
+    "url": "https://autoreliabilityindex.com/audi/q5/2019"
+  },
+  "Audi|Q5|2020": {
+    "score": 69,
+    "url": "https://autoreliabilityindex.com/audi/q5/2020"
+  },
+  "Audi|Q5|2021": {
+    "score": 66,
+    "url": "https://autoreliabilityindex.com/audi/q5/2021"
+  },
+  "Audi|Q5|2022": {
+    "score": 68,
+    "url": "https://autoreliabilityindex.com/audi/q5/2022"
+  },
+  "Audi|Q5|2023": {
+    "score": 71,
+    "url": "https://autoreliabilityindex.com/audi/q5/2023"
+  },
+  "Audi|Q5|2024": {
+    "score": 70,
+    "url": "https://autoreliabilityindex.com/audi/q5/2024"
+  },
+  "Audi|RS3|2018": null,
+  "Audi|S3|2015": null,
+  "Audi|S3|2016": null,
+  "Audi|S3|2017": null,
+  "CUPRA|Ateca|2018": null,
+  "CUPRA|Ateca|2019": null,
+  "CUPRA|Ateca|2020": null,
+  "CUPRA|Ateca|2021": null,
+  "CUPRA|Ateca|2022": null,
+  "CUPRA|Ateca|2023": null,
+  "Chevrolet|Bolt EUV|2022": null,
+  "Chevrolet|Bolt EUV|2023": null,
+  "Chevrolet|Bolt EV|2022": null,
+  "Chevrolet|Bolt EV|2023": null,
+  "Chevrolet|Equinox|2019": {
+    "score": 71,
+    "url": "https://autoreliabilityindex.com/chevrolet/equinox/2019"
+  },
+  "Chevrolet|Equinox|2020": {
+    "score": 70,
+    "url": "https://autoreliabilityindex.com/chevrolet/equinox/2020"
+  },
+  "Chevrolet|Equinox|2021": {
+    "score": 74,
+    "url": "https://autoreliabilityindex.com/chevrolet/equinox/2021"
+  },
+  "Chevrolet|Equinox|2022": {
+    "score": 71,
+    "url": "https://autoreliabilityindex.com/chevrolet/equinox/2022"
+  },
+  "Chevrolet|Silverado 1500|2020": null,
+  "Chevrolet|Silverado 1500|2021": null,
+  "Chevrolet|Trailblazer|2021": null,
+  "Chevrolet|Trailblazer|2022": null,
+  "Chrysler|Pacifica Hybrid|2017": null,
+  "Chrysler|Pacifica Hybrid|2018": null,
+  "Chrysler|Pacifica Hybrid|2019": null,
+  "Chrysler|Pacifica Hybrid|2020": null,
+  "Chrysler|Pacifica Hybrid|2021": null,
+  "Chrysler|Pacifica Hybrid|2022": null,
+  "Chrysler|Pacifica Hybrid|2023": null,
+  "Chrysler|Pacifica Hybrid|2024": null,
+  "Chrysler|Pacifica Hybrid|2025": null,
+  "Chrysler|Pacifica|2017": null,
+  "Chrysler|Pacifica|2018": {
+    "score": 51,
+    "url": "https://autoreliabilityindex.com/chrysler/pacifica/2018"
+  },
+  "Chrysler|Pacifica|2019": {
+    "score": 60,
+    "url": "https://autoreliabilityindex.com/chrysler/pacifica/2019"
+  },
+  "Chrysler|Pacifica|2020": {
+    "score": 64,
+    "url": "https://autoreliabilityindex.com/chrysler/pacifica/2020"
+  },
+  "Chrysler|Pacifica|2021": {
+    "score": 57,
+    "url": "https://autoreliabilityindex.com/chrysler/pacifica/2021"
+  },
+  "Chrysler|Pacifica|2022": {
+    "score": 62,
+    "url": "https://autoreliabilityindex.com/chrysler/pacifica/2022"
+  },
+  "Chrysler|Pacifica|2023": {
+    "score": 65,
+    "url": "https://autoreliabilityindex.com/chrysler/pacifica/2023"
+  },
+  "Dodge|Durango|2020": {
+    "score": 72,
+    "url": "https://autoreliabilityindex.com/dodge/durango/2020"
+  },
+  "Dodge|Durango|2021": {
+    "score": 65,
+    "url": "https://autoreliabilityindex.com/dodge/durango/2021"
+  },
+  "Ford|Bronco Sport|2021": null,
+  "Ford|Bronco Sport|2022": null,
+  "Ford|Bronco Sport|2023": null,
+  "Ford|Bronco Sport|2024": null,
+  "Ford|Escape Hybrid|2020": null,
+  "Ford|Escape Hybrid|2021": null,
+  "Ford|Escape Hybrid|2022": null,
+  "Ford|Escape Hybrid|2023": null,
+  "Ford|Escape Hybrid|2024": null,
+  "Ford|Escape Plug-in Hybrid|2020": null,
+  "Ford|Escape Plug-in Hybrid|2021": null,
+  "Ford|Escape Plug-in Hybrid|2022": null,
+  "Ford|Escape Plug-in Hybrid|2023": null,
+  "Ford|Escape Plug-in Hybrid|2024": null,
+  "Ford|Escape|2020": null,
+  "Ford|Escape|2021": null,
+  "Ford|Escape|2022": null,
+  "Ford|Escape|2023": null,
+  "Ford|Escape|2024": null,
+  "Ford|Expedition|2022": null,
+  "Ford|Expedition|2023": null,
+  "Ford|Expedition|2024": null,
+  "Ford|Explorer Hybrid|2020": null,
+  "Ford|Explorer Hybrid|2021": null,
+  "Ford|Explorer Hybrid|2022": null,
+  "Ford|Explorer Hybrid|2023": null,
+  "Ford|Explorer Hybrid|2024": null,
+  "Ford|Explorer|2020": {
+    "score": 54,
+    "url": "https://autoreliabilityindex.com/ford/explorer/2020"
+  },
+  "Ford|Explorer|2021": {
+    "score": 62,
+    "url": "https://autoreliabilityindex.com/ford/explorer/2021"
+  },
+  "Ford|Explorer|2022": {
+    "score": 65,
+    "url": "https://autoreliabilityindex.com/ford/explorer/2022"
+  },
+  "Ford|Explorer|2023": {
+    "score": 71,
+    "url": "https://autoreliabilityindex.com/ford/explorer/2023"
+  },
+  "Ford|Explorer|2024": {
+    "score": 73,
+    "url": "https://autoreliabilityindex.com/ford/explorer/2024"
+  },
+  "Ford|F-150 Hybrid|2021": null,
+  "Ford|F-150 Hybrid|2022": null,
+  "Ford|F-150 Hybrid|2023": null,
+  "Ford|F-150|2021": {
+    "score": 58,
+    "url": "https://autoreliabilityindex.com/ford/f-150/2021"
+  },
+  "Ford|F-150|2022": {
+    "score": 62,
+    "url": "https://autoreliabilityindex.com/ford/f-150/2022"
+  },
+  "Ford|F-150|2023": {
+    "score": 68,
+    "url": "https://autoreliabilityindex.com/ford/f-150/2023"
+  },
+  "Ford|Focus Hybrid|2018": null,
+  "Ford|Focus|2018": null,
+  "Ford|Kuga Hybrid|2020": null,
+  "Ford|Kuga Hybrid|2021": null,
+  "Ford|Kuga Hybrid|2022": null,
+  "Ford|Kuga Hybrid|2023": null,
+  "Ford|Kuga Hybrid|2024": null,
+  "Ford|Kuga Plug-in Hybrid|2020": null,
+  "Ford|Kuga Plug-in Hybrid|2021": null,
+  "Ford|Kuga Plug-in Hybrid|2022": null,
+  "Ford|Kuga Plug-in Hybrid|2023": null,
+  "Ford|Kuga Plug-in Hybrid|2024": null,
+  "Ford|Kuga|2020": null,
+  "Ford|Kuga|2021": null,
+  "Ford|Kuga|2022": null,
+  "Ford|Kuga|2023": null,
+  "Ford|Maverick Hybrid|2022": null,
+  "Ford|Maverick Hybrid|2023": null,
+  "Ford|Maverick Hybrid|2024": null,
+  "Ford|Maverick|2022": {
+    "score": 54,
+    "url": "https://autoreliabilityindex.com/ford/maverick/2022"
+  },
+  "Ford|Maverick|2023": {
+    "score": 60,
+    "url": "https://autoreliabilityindex.com/ford/maverick/2023"
+  },
+  "Ford|Maverick|2024": {
+    "score": 71,
+    "url": "https://autoreliabilityindex.com/ford/maverick/2024"
+  },
+  "Ford|Mustang Mach-E|2021": null,
+  "Ford|Mustang Mach-E|2022": null,
+  "Ford|Mustang Mach-E|2023": {
+    "score": 66,
+    "url": "https://autoreliabilityindex.com/ford/mustang-mach-e/2023"
+  },
+  "Ford|Mustang Mach-E|2024": {
+    "score": 74,
+    "url": "https://autoreliabilityindex.com/ford/mustang-mach-e/2024"
+  },
+  "Ford|Ranger|2024": {
+    "score": 72,
+    "url": "https://autoreliabilityindex.com/ford/ranger/2024"
+  },
+  "GMC|Sierra 1500|2020": {
+    "score": 63,
+    "url": "https://autoreliabilityindex.com/gmc/sierra-1500/2020"
+  },
+  "GMC|Sierra 1500|2021": {
+    "score": 63,
+    "url": "https://autoreliabilityindex.com/gmc/sierra-1500/2021"
+  },
+  "GMC|Yukon|2019": {
+    "score": 71,
+    "url": "https://autoreliabilityindex.com/gmc/yukon/2019"
+  },
+  "GMC|Yukon|2020": {
+    "score": 71,
+    "url": "https://autoreliabilityindex.com/gmc/yukon/2020"
+  },
+  "Genesis|G70|2018": null,
+  "Genesis|G70|2019": null,
+  "Genesis|G70|2020": null,
+  "Genesis|G70|2021": null,
+  "Genesis|G70|2022": null,
+  "Genesis|G70|2023": null,
+  "Genesis|G80 (2.5T Advanced Trim, with HDA II)|2024": null,
+  "Genesis|G80|2017": null,
+  "Genesis|G80|2018": null,
+  "Genesis|G80|2019": null,
+  "Genesis|G90|2017": null,
+  "Genesis|G90|2018": null,
+  "Genesis|G90|2019": null,
+  "Genesis|G90|2020": null,
+  "Genesis|GV60 (Advanced Trim)|2023": null,
+  "Genesis|GV60 (Performance Trim)|2022": null,
+  "Genesis|GV60 (Performance Trim)|2023": null,
+  "Genesis|GV70 (2.5T Trim, without HDA II)|2022": null,
+  "Genesis|GV70 (2.5T Trim, without HDA II)|2023": null,
+  "Genesis|GV70 (2.5T Trim, without HDA II)|2024": null,
+  "Genesis|GV70 (3.5T Trim, without HDA II)|2022": null,
+  "Genesis|GV70 (3.5T Trim, without HDA II)|2023": null,
+  "Genesis|GV70 Electrified (Australia Only)|2022": null,
+  "Genesis|GV70 Electrified (with HDA II)|2023": null,
+  "Genesis|GV70 Electrified (with HDA II)|2024": null,
+  "Genesis|GV80|2023": null,
+  "Honda|Accord Hybrid|2017": null,
+  "Honda|Accord Hybrid|2018": null,
+  "Honda|Accord Hybrid|2019": null,
+  "Honda|Accord Hybrid|2020": null,
+  "Honda|Accord Hybrid|2021": null,
+  "Honda|Accord Hybrid|2022": null,
+  "Honda|Accord Hybrid|2023": null,
+  "Honda|Accord Hybrid|2024": null,
+  "Honda|Accord Hybrid|2025": null,
+  "Honda|Accord|2016": null,
+  "Honda|Accord|2017": null,
+  "Honda|Accord|2018": {
+    "score": 63,
+    "url": "https://autoreliabilityindex.com/honda/accord/2018"
+  },
+  "Honda|Accord|2019": {
+    "score": 70,
+    "url": "https://autoreliabilityindex.com/honda/accord/2019"
+  },
+  "Honda|Accord|2020": {
+    "score": 73,
+    "url": "https://autoreliabilityindex.com/honda/accord/2020"
+  },
+  "Honda|Accord|2021": {
+    "score": 78,
+    "url": "https://autoreliabilityindex.com/honda/accord/2021"
+  },
+  "Honda|Accord|2022": {
+    "score": 77,
+    "url": "https://autoreliabilityindex.com/honda/accord/2022"
+  },
+  "Honda|Accord|2023": {
+    "score": 74,
+    "url": "https://autoreliabilityindex.com/honda/accord/2023"
+  },
+  "Honda|Accord|2024": {
+    "score": 76,
+    "url": "https://autoreliabilityindex.com/honda/accord/2024"
+  },
+  "Honda|Accord|2025": {
+    "score": 84,
+    "url": "https://autoreliabilityindex.com/honda/accord/2025"
+  },
+  "Honda|CR-V Hybrid|2017": null,
+  "Honda|CR-V Hybrid|2018": null,
+  "Honda|CR-V Hybrid|2019": null,
+  "Honda|CR-V Hybrid|2020": null,
+  "Honda|CR-V Hybrid|2021": null,
+  "Honda|CR-V Hybrid|2022": null,
+  "Honda|CR-V Hybrid|2023": null,
+  "Honda|CR-V Hybrid|2024": null,
+  "Honda|CR-V Hybrid|2025": null,
+  "Honda|CR-V Hybrid|2026": null,
+  "Honda|CR-V|2015": null,
+  "Honda|CR-V|2016": null,
+  "Honda|CR-V|2017": null,
+  "Honda|CR-V|2018": {
+    "score": 65,
+    "url": "https://autoreliabilityindex.com/honda/cr-v/2018"
+  },
+  "Honda|CR-V|2019": {
+    "score": 69,
+    "url": "https://autoreliabilityindex.com/honda/cr-v/2019"
+  },
+  "Honda|CR-V|2020": {
+    "score": 74,
+    "url": "https://autoreliabilityindex.com/honda/cr-v/2020"
+  },
+  "Honda|CR-V|2021": {
+    "score": 77,
+    "url": "https://autoreliabilityindex.com/honda/cr-v/2021"
+  },
+  "Honda|CR-V|2022": {
+    "score": 76,
+    "url": "https://autoreliabilityindex.com/honda/cr-v/2022"
+  },
+  "Honda|CR-V|2023": {
+    "score": 72,
+    "url": "https://autoreliabilityindex.com/honda/cr-v/2023"
+  },
+  "Honda|CR-V|2024": {
+    "score": 77,
+    "url": "https://autoreliabilityindex.com/honda/cr-v/2024"
+  },
+  "Honda|CR-V|2025": {
+    "score": 80,
+    "url": "https://autoreliabilityindex.com/honda/cr-v/2025"
+  },
+  "Honda|CR-V|2026": {
+    "score": 83,
+    "url": "https://autoreliabilityindex.com/honda/cr-v/2026"
+  },
+  "Honda|City (Brazil only)|2023": null,
+  "Honda|Civic Hatchback Hybrid (Europe only)|2023": null,
+  "Honda|Civic Hatchback Hybrid|2025": null,
+  "Honda|Civic Hatchback Hybrid|2026": null,
+  "Honda|Civic Hatchback|2017": null,
+  "Honda|Civic Hatchback|2018": null,
+  "Honda|Civic Hatchback|2019": null,
+  "Honda|Civic Hatchback|2020": null,
+  "Honda|Civic Hatchback|2021": null,
+  "Honda|Civic Hatchback|2022": null,
+  "Honda|Civic Hatchback|2023": null,
+  "Honda|Civic Hatchback|2024": null,
+  "Honda|Civic Hybrid|2025": null,
+  "Honda|Civic Hybrid|2026": null,
+  "Honda|Civic|2016": null,
+  "Honda|Civic|2017": null,
+  "Honda|Civic|2018": {
+    "score": 71,
+    "url": "https://autoreliabilityindex.com/honda/civic/2018"
+  },
+  "Honda|Civic|2019": {
+    "score": 75,
+    "url": "https://autoreliabilityindex.com/honda/civic/2019"
+  },
+  "Honda|Civic|2020": {
+    "score": 78,
+    "url": "https://autoreliabilityindex.com/honda/civic/2020"
+  },
+  "Honda|Civic|2021": {
+    "score": 81,
+    "url": "https://autoreliabilityindex.com/honda/civic/2021"
+  },
+  "Honda|Civic|2022": {
+    "score": 66,
+    "url": "https://autoreliabilityindex.com/honda/civic/2022"
+  },
+  "Honda|Civic|2023": {
+    "score": 74,
+    "url": "https://autoreliabilityindex.com/honda/civic/2023"
+  },
+  "Honda|Civic|2024": {
+    "score": 81,
+    "url": "https://autoreliabilityindex.com/honda/civic/2024"
+  },
+  "Honda|Clarity|2018": null,
+  "Honda|Clarity|2019": null,
+  "Honda|Clarity|2020": null,
+  "Honda|Clarity|2021": null,
+  "Honda|Fit|2018": null,
+  "Honda|Fit|2019": null,
+  "Honda|Fit|2020": null,
+  "Honda|Freed|2020": null,
+  "Honda|HR-V|2019": {
+    "score": 75,
+    "url": "https://autoreliabilityindex.com/honda/hr-v/2019"
+  },
+  "Honda|HR-V|2020": {
+    "score": 80,
+    "url": "https://autoreliabilityindex.com/honda/hr-v/2020"
+  },
+  "Honda|HR-V|2021": {
+    "score": 86,
+    "url": "https://autoreliabilityindex.com/honda/hr-v/2021"
+  },
+  "Honda|HR-V|2022": {
+    "score": 83,
+    "url": "https://autoreliabilityindex.com/honda/hr-v/2022"
+  },
+  "Honda|HR-V|2023": {
+    "score": 73,
+    "url": "https://autoreliabilityindex.com/honda/hr-v/2023"
+  },
+  "Honda|HR-V|2024": {
+    "score": 83,
+    "url": "https://autoreliabilityindex.com/honda/hr-v/2024"
+  },
+  "Honda|HR-V|2025": {
+    "score": 88,
+    "url": "https://autoreliabilityindex.com/honda/hr-v/2025"
+  },
+  "Honda|Insight|2019": null,
+  "Honda|Insight|2020": null,
+  "Honda|Insight|2021": null,
+  "Honda|Insight|2022": null,
+  "Honda|Inspire|2018": null,
+  "Honda|N-Box|2018": null,
+  "Honda|Odyssey (Singapore)|2021": null,
+  "Honda|Odyssey (Taiwan)|2018": null,
+  "Honda|Odyssey (Taiwan)|2019": null,
+  "Honda|Odyssey|2018": {
+    "score": 53,
+    "url": "https://autoreliabilityindex.com/honda/odyssey/2018"
+  },
+  "Honda|Odyssey|2019": {
+    "score": 53,
+    "url": "https://autoreliabilityindex.com/honda/odyssey/2019"
+  },
+  "Honda|Odyssey|2020": {
+    "score": 60,
+    "url": "https://autoreliabilityindex.com/honda/odyssey/2020"
+  },
+  "Honda|Odyssey|2021": {
+    "score": 69,
+    "url": "https://autoreliabilityindex.com/honda/odyssey/2021"
+  },
+  "Honda|Odyssey|2022": {
+    "score": 65,
+    "url": "https://autoreliabilityindex.com/honda/odyssey/2022"
+  },
+  "Honda|Odyssey|2023": {
+    "score": 70,
+    "url": "https://autoreliabilityindex.com/honda/odyssey/2023"
+  },
+  "Honda|Odyssey|2024": {
+    "score": 73,
+    "url": "https://autoreliabilityindex.com/honda/odyssey/2024"
+  },
+  "Honda|Odyssey|2025": {
+    "score": 73,
+    "url": "https://autoreliabilityindex.com/honda/odyssey/2025"
+  },
+  "Honda|Odyssey|2026": {
+    "score": 74,
+    "url": "https://autoreliabilityindex.com/honda/odyssey/2026"
+  },
+  "Honda|Passport|2019": {
+    "score": 59,
+    "url": "https://autoreliabilityindex.com/honda/passport/2019"
+  },
+  "Honda|Passport|2020": {
+    "score": 68,
+    "url": "https://autoreliabilityindex.com/honda/passport/2020"
+  },
+  "Honda|Passport|2021": {
+    "score": 68,
+    "url": "https://autoreliabilityindex.com/honda/passport/2021"
+  },
+  "Honda|Passport|2022": {
+    "score": 74,
+    "url": "https://autoreliabilityindex.com/honda/passport/2022"
+  },
+  "Honda|Passport|2023": {
+    "score": 75,
+    "url": "https://autoreliabilityindex.com/honda/passport/2023"
+  },
+  "Honda|Passport|2024": {
+    "score": 79,
+    "url": "https://autoreliabilityindex.com/honda/passport/2024"
+  },
+  "Honda|Passport|2025": {
+    "score": 82,
+    "url": "https://autoreliabilityindex.com/honda/passport/2025"
+  },
+  "Honda|Passport|2026": {
+    "score": 84,
+    "url": "https://autoreliabilityindex.com/honda/passport/2026"
+  },
+  "Honda|Pilot|2016": null,
+  "Honda|Pilot|2017": null,
+  "Honda|Pilot|2018": {
+    "score": 63,
+    "url": "https://autoreliabilityindex.com/honda/pilot/2018"
+  },
+  "Honda|Pilot|2019": {
+    "score": 56,
+    "url": "https://autoreliabilityindex.com/honda/pilot/2019"
+  },
+  "Honda|Pilot|2020": {
+    "score": 60,
+    "url": "https://autoreliabilityindex.com/honda/pilot/2020"
+  },
+  "Honda|Pilot|2021": {
+    "score": 63,
+    "url": "https://autoreliabilityindex.com/honda/pilot/2021"
+  },
+  "Honda|Pilot|2022": {
+    "score": 72,
+    "url": "https://autoreliabilityindex.com/honda/pilot/2022"
+  },
+  "Honda|Pilot|2023": {
+    "score": 72,
+    "url": "https://autoreliabilityindex.com/honda/pilot/2023"
+  },
+  "Honda|Pilot|2024": {
+    "score": 72,
+    "url": "https://autoreliabilityindex.com/honda/pilot/2024"
+  },
+  "Honda|Pilot|2025": {
+    "score": 71,
+    "url": "https://autoreliabilityindex.com/honda/pilot/2025"
+  },
+  "Honda|Prologue|2024": {
+    "score": 72,
+    "url": "https://autoreliabilityindex.com/honda/prologue/2024"
+  },
+  "Honda|Prologue|2025": {
+    "score": 63,
+    "url": "https://autoreliabilityindex.com/honda/prologue/2025"
+  },
+  "Honda|Ridgeline|2017": null,
+  "Honda|Ridgeline|2018": {
+    "score": 70,
+    "url": "https://autoreliabilityindex.com/honda/ridgeline/2018"
+  },
+  "Honda|Ridgeline|2019": {
+    "score": 65,
+    "url": "https://autoreliabilityindex.com/honda/ridgeline/2019"
+  },
+  "Honda|Ridgeline|2020": {
+    "score": 70,
+    "url": "https://autoreliabilityindex.com/honda/ridgeline/2020"
+  },
+  "Honda|Ridgeline|2021": {
+    "score": 75,
+    "url": "https://autoreliabilityindex.com/honda/ridgeline/2021"
+  },
+  "Honda|Ridgeline|2022": {
+    "score": 78,
+    "url": "https://autoreliabilityindex.com/honda/ridgeline/2022"
+  },
+  "Honda|Ridgeline|2023": {
+    "score": 78,
+    "url": "https://autoreliabilityindex.com/honda/ridgeline/2023"
+  },
+  "Honda|Ridgeline|2024": {
+    "score": 85,
+    "url": "https://autoreliabilityindex.com/honda/ridgeline/2024"
+  },
+  "Honda|Ridgeline|2025": {
+    "score": 85,
+    "url": "https://autoreliabilityindex.com/honda/ridgeline/2025"
+  },
+  "Honda|e|2020": null,
+  "Hyundai|Azera Hybrid|2019": null,
+  "Hyundai|Azera Hybrid|2020": null,
+  "Hyundai|Azera|2022": null,
+  "Hyundai|Custin|2023": null,
+  "Hyundai|Elantra GT|2017": null,
+  "Hyundai|Elantra GT|2018": null,
+  "Hyundai|Elantra GT|2019": null,
+  "Hyundai|Elantra GT|2020": null,
+  "Hyundai|Elantra Hybrid|2021": null,
+  "Hyundai|Elantra Hybrid|2022": null,
+  "Hyundai|Elantra Hybrid|2023": null,
+  "Hyundai|Elantra|2017": null,
+  "Hyundai|Elantra|2018": {
+    "score": 76,
+    "url": "https://autoreliabilityindex.com/hyundai/elantra/2018"
+  },
+  "Hyundai|Elantra|2019": {
+    "score": 78,
+    "url": "https://autoreliabilityindex.com/hyundai/elantra/2019"
+  },
+  "Hyundai|Elantra|2021": {
+    "score": 75,
+    "url": "https://autoreliabilityindex.com/hyundai/elantra/2021"
+  },
+  "Hyundai|Elantra|2022": {
+    "score": 74,
+    "url": "https://autoreliabilityindex.com/hyundai/elantra/2022"
+  },
+  "Hyundai|Elantra|2023": {
+    "score": 75,
+    "url": "https://autoreliabilityindex.com/hyundai/elantra/2023"
+  },
+  "Hyundai|Genesis|2015": null,
+  "Hyundai|Genesis|2016": null,
+  "Hyundai|Ioniq 5 (Southeast Asia and Europe only)|2022": null,
+  "Hyundai|Ioniq 5 (Southeast Asia and Europe only)|2023": null,
+  "Hyundai|Ioniq 5 (Southeast Asia and Europe only)|2024": null,
+  "Hyundai|Ioniq 5 (with HDA II)|2022": null,
+  "Hyundai|Ioniq 5 (with HDA II)|2023": null,
+  "Hyundai|Ioniq 5 (with HDA II)|2024": null,
+  "Hyundai|Ioniq 5 (without HDA II)|2022": null,
+  "Hyundai|Ioniq 5 (without HDA II)|2023": null,
+  "Hyundai|Ioniq 5 (without HDA II)|2024": null,
+  "Hyundai|Ioniq 6 (with HDA II)|2023": null,
+  "Hyundai|Ioniq 6 (with HDA II)|2024": null,
+  "Hyundai|Ioniq Electric|2019": null,
+  "Hyundai|Ioniq Electric|2020": null,
+  "Hyundai|Ioniq Hybrid|2017": null,
+  "Hyundai|Ioniq Hybrid|2018": null,
+  "Hyundai|Ioniq Hybrid|2019": null,
+  "Hyundai|Ioniq Hybrid|2020": null,
+  "Hyundai|Ioniq Hybrid|2021": null,
+  "Hyundai|Ioniq Hybrid|2022": null,
+  "Hyundai|Ioniq Plug-in Hybrid|2019": null,
+  "Hyundai|Ioniq Plug-in Hybrid|2020": null,
+  "Hyundai|Ioniq Plug-in Hybrid|2021": null,
+  "Hyundai|Ioniq Plug-in Hybrid|2022": null,
+  "Hyundai|Kona Electric (with HDA II, Korea only)|2023": null,
+  "Hyundai|Kona Electric|2018": null,
+  "Hyundai|Kona Electric|2019": null,
+  "Hyundai|Kona Electric|2020": null,
+  "Hyundai|Kona Electric|2021": null,
+  "Hyundai|Kona Electric|2022": null,
+  "Hyundai|Kona Electric|2023": null,
+  "Hyundai|Kona Hybrid|2020": null,
+  "Hyundai|Kona|2020": {
+    "score": 57,
+    "url": "https://autoreliabilityindex.com/hyundai/kona/2020"
+  },
+  "Hyundai|Kona|2022": {
+    "score": 64,
+    "url": "https://autoreliabilityindex.com/hyundai/kona/2022"
+  },
+  "Hyundai|Kona|2023": {
+    "score": 66,
+    "url": "https://autoreliabilityindex.com/hyundai/kona/2023"
+  },
+  "Hyundai|Nexo|2021": null,
+  "Hyundai|Palisade|2020": {
+    "score": 59,
+    "url": "https://autoreliabilityindex.com/hyundai/palisade/2020"
+  },
+  "Hyundai|Palisade|2021": {
+    "score": 61,
+    "url": "https://autoreliabilityindex.com/hyundai/palisade/2021"
+  },
+  "Hyundai|Palisade|2022": {
+    "score": 65,
+    "url": "https://autoreliabilityindex.com/hyundai/palisade/2022"
+  },
+  "Hyundai|Palisade|2023": {
+    "score": 62,
+    "url": "https://autoreliabilityindex.com/hyundai/palisade/2023"
+  },
+  "Hyundai|Palisade|2024": {
+    "score": 63,
+    "url": "https://autoreliabilityindex.com/hyundai/palisade/2024"
+  },
+  "Hyundai|Santa Cruz|2022": null,
+  "Hyundai|Santa Cruz|2023": null,
+  "Hyundai|Santa Cruz|2024": null,
+  "Hyundai|Santa Fe Hybrid|2022": null,
+  "Hyundai|Santa Fe Hybrid|2023": null,
+  "Hyundai|Santa Fe Plug-in Hybrid|2022": null,
+  "Hyundai|Santa Fe Plug-in Hybrid|2023": null,
+  "Hyundai|Santa Fe|2019": {
+    "score": 69,
+    "url": "https://autoreliabilityindex.com/hyundai/santa-fe/2019"
+  },
+  "Hyundai|Santa Fe|2020": {
+    "score": 70,
+    "url": "https://autoreliabilityindex.com/hyundai/santa-fe/2020"
+  },
+  "Hyundai|Santa Fe|2021": {
+    "score": 69,
+    "url": "https://autoreliabilityindex.com/hyundai/santa-fe/2021"
+  },
+  "Hyundai|Santa Fe|2022": {
+    "score": 66,
+    "url": "https://autoreliabilityindex.com/hyundai/santa-fe/2022"
+  },
+  "Hyundai|Santa Fe|2023": {
+    "score": 70,
+    "url": "https://autoreliabilityindex.com/hyundai/santa-fe/2023"
+  },
+  "Hyundai|Sonata Hybrid|2020": null,
+  "Hyundai|Sonata Hybrid|2021": null,
+  "Hyundai|Sonata Hybrid|2022": null,
+  "Hyundai|Sonata Hybrid|2023": null,
+  "Hyundai|Sonata|2018": {
+    "score": 61,
+    "url": "https://autoreliabilityindex.com/hyundai/sonata/2018"
+  },
+  "Hyundai|Sonata|2019": {
+    "score": 71,
+    "url": "https://autoreliabilityindex.com/hyundai/sonata/2019"
+  },
+  "Hyundai|Sonata|2020": {
+    "score": 62,
+    "url": "https://autoreliabilityindex.com/hyundai/sonata/2020"
+  },
+  "Hyundai|Sonata|2021": {
+    "score": 64,
+    "url": "https://autoreliabilityindex.com/hyundai/sonata/2021"
+  },
+  "Hyundai|Sonata|2022": {
+    "score": 65,
+    "url": "https://autoreliabilityindex.com/hyundai/sonata/2022"
+  },
+  "Hyundai|Sonata|2023": {
+    "score": 62,
+    "url": "https://autoreliabilityindex.com/hyundai/sonata/2023"
+  },
+  "Hyundai|Staria|2023": null,
+  "Hyundai|Tucson Diesel|2019": null,
+  "Hyundai|Tucson Hybrid|2022": null,
+  "Hyundai|Tucson Hybrid|2023": null,
+  "Hyundai|Tucson Hybrid|2024": null,
+  "Hyundai|Tucson Plug-in Hybrid|2024": null,
+  "Hyundai|Tucson|2021": {
+    "score": 78,
+    "url": "https://autoreliabilityindex.com/hyundai/tucson/2021"
+  },
+  "Hyundai|Tucson|2022": {
+    "score": 66,
+    "url": "https://autoreliabilityindex.com/hyundai/tucson/2022"
+  },
+  "Hyundai|Tucson|2023": {
+    "score": 75,
+    "url": "https://autoreliabilityindex.com/hyundai/tucson/2023"
+  },
+  "Hyundai|Tucson|2024": {
+    "score": 77,
+    "url": "https://autoreliabilityindex.com/hyundai/tucson/2024"
+  },
+  "Hyundai|Veloster|2019": null,
+  "Hyundai|Veloster|2020": null,
+  "Hyundai|i30|2017": null,
+  "Hyundai|i30|2018": null,
+  "Hyundai|i30|2019": null,
+  "Jeep|Cherokee|2019": {
+    "score": 67,
+    "url": "https://autoreliabilityindex.com/jeep/cherokee/2019"
+  },
+  "Jeep|Cherokee|2020": {
+    "score": 76,
+    "url": "https://autoreliabilityindex.com/jeep/cherokee/2020"
+  },
+  "Jeep|Cherokee|2021": {
+    "score": 67,
+    "url": "https://autoreliabilityindex.com/jeep/cherokee/2021"
+  },
+  "Jeep|Cherokee|2022": null,
+  "Jeep|Cherokee|2023": {
+    "score": 66,
+    "url": "https://autoreliabilityindex.com/jeep/cherokee/2023"
+  },
+  "Jeep|Grand Cherokee|2016": null,
+  "Jeep|Grand Cherokee|2017": null,
+  "Jeep|Grand Cherokee|2018": {
+    "score": 60,
+    "url": "https://autoreliabilityindex.com/jeep/grand-cherokee/2018"
+  },
+  "Jeep|Grand Cherokee|2019": {
+    "score": 67,
+    "url": "https://autoreliabilityindex.com/jeep/grand-cherokee/2019"
+  },
+  "Jeep|Grand Cherokee|2020": {
+    "score": 72,
+    "url": "https://autoreliabilityindex.com/jeep/grand-cherokee/2020"
+  },
+  "Jeep|Grand Cherokee|2021": {
+    "score": 63,
+    "url": "https://autoreliabilityindex.com/jeep/grand-cherokee/2021"
+  },
+  "Kia|Carnival (China only)|2023": null,
+  "Kia|Carnival|2022": {
+    "score": 80,
+    "url": "https://autoreliabilityindex.com/kia/carnival/2022"
+  },
+  "Kia|Carnival|2023": {
+    "score": 82,
+    "url": "https://autoreliabilityindex.com/kia/carnival/2023"
+  },
+  "Kia|Carnival|2024": null,
+  "Kia|Ceed|2019": null,
+  "Kia|Ceed|2020": null,
+  "Kia|Ceed|2021": null,
+  "Kia|EV6 (Southeast Asia only)|2022": null,
+  "Kia|EV6 (Southeast Asia only)|2023": null,
+  "Kia|EV6 (Southeast Asia only)|2024": null,
+  "Kia|EV6 (with HDA II)|2022": null,
+  "Kia|EV6 (with HDA II)|2023": null,
+  "Kia|EV6 (with HDA II)|2024": null,
+  "Kia|EV6 (without HDA II)|2022": null,
+  "Kia|EV6 (without HDA II)|2023": null,
+  "Kia|EV6 (without HDA II)|2024": null,
+  "Kia|Forte|2019": null,
+  "Kia|Forte|2020": null,
+  "Kia|Forte|2021": null,
+  "Kia|Forte|2022": null,
+  "Kia|Forte|2023": null,
+  "Kia|K5 Hybrid|2020": null,
+  "Kia|K5 Hybrid|2021": null,
+  "Kia|K5 Hybrid|2022": null,
+  "Kia|K5|2021": {
+    "score": 71,
+    "url": "https://autoreliabilityindex.com/kia/k5/2021"
+  },
+  "Kia|K5|2022": {
+    "score": 69,
+    "url": "https://autoreliabilityindex.com/kia/k5/2022"
+  },
+  "Kia|K5|2023": {
+    "score": 71,
+    "url": "https://autoreliabilityindex.com/kia/k5/2023"
+  },
+  "Kia|K5|2024": {
+    "score": 77,
+    "url": "https://autoreliabilityindex.com/kia/k5/2024"
+  },
+  "Kia|K7|2017": null,
+  "Kia|K8 Hybrid (with HDA II)|2023": null,
+  "Kia|Niro EV (with HDA II)|2024": null,
+  "Kia|Niro EV (with HDA II)|2025": null,
+  "Kia|Niro EV (without HDA II)|2023": null,
+  "Kia|Niro EV (without HDA II)|2024": null,
+  "Kia|Niro EV (without HDA II)|2025": null,
+  "Kia|Niro EV|2019": null,
+  "Kia|Niro EV|2020": null,
+  "Kia|Niro EV|2021": null,
+  "Kia|Niro EV|2022": null,
+  "Kia|Niro Hybrid|2018": null,
+  "Kia|Niro Hybrid|2021": null,
+  "Kia|Niro Hybrid|2022": null,
+  "Kia|Niro Hybrid|2023": null,
+  "Kia|Niro Hybrid|2024": null,
+  "Kia|Niro Plug-in Hybrid|2018": null,
+  "Kia|Niro Plug-in Hybrid|2019": null,
+  "Kia|Niro Plug-in Hybrid|2020": null,
+  "Kia|Niro Plug-in Hybrid|2021": null,
+  "Kia|Niro Plug-in Hybrid|2022": null,
+  "Kia|Optima Hybrid|2017": null,
+  "Kia|Optima Hybrid|2019": null,
+  "Kia|Optima|2017": null,
+  "Kia|Optima|2019": null,
+  "Kia|Optima|2020": null,
+  "Kia|Seltos|2021": null,
+  "Kia|Sorento Hybrid|2021": null,
+  "Kia|Sorento Hybrid|2022": null,
+  "Kia|Sorento Hybrid|2023": null,
+  "Kia|Sorento Plug-in Hybrid|2022": null,
+  "Kia|Sorento Plug-in Hybrid|2023": null,
+  "Kia|Sorento|2018": {
+    "score": 68,
+    "url": "https://autoreliabilityindex.com/kia/sorento/2018"
+  },
+  "Kia|Sorento|2019": {
+    "score": 64,
+    "url": "https://autoreliabilityindex.com/kia/sorento/2019"
+  },
+  "Kia|Sorento|2021": {
+    "score": 66,
+    "url": "https://autoreliabilityindex.com/kia/sorento/2021"
+  },
+  "Kia|Sorento|2022": {
+    "score": 66,
+    "url": "https://autoreliabilityindex.com/kia/sorento/2022"
+  },
+  "Kia|Sorento|2023": {
+    "score": 70,
+    "url": "https://autoreliabilityindex.com/kia/sorento/2023"
+  },
+  "Kia|Sportage Hybrid|2023": null,
+  "Kia|Sportage|2023": {
+    "score": 67,
+    "url": "https://autoreliabilityindex.com/kia/sportage/2023"
+  },
+  "Kia|Sportage|2024": {
+    "score": 78,
+    "url": "https://autoreliabilityindex.com/kia/sportage/2024"
+  },
+  "Kia|Stinger|2018": null,
+  "Kia|Stinger|2019": null,
+  "Kia|Stinger|2020": null,
+  "Kia|Stinger|2022": null,
+  "Kia|Stinger|2023": null,
+  "Kia|Telluride|2020": {
+    "score": 55,
+    "url": "https://autoreliabilityindex.com/kia/telluride/2020"
+  },
+  "Kia|Telluride|2021": {
+    "score": 63,
+    "url": "https://autoreliabilityindex.com/kia/telluride/2021"
+  },
+  "Kia|Telluride|2022": {
+    "score": 63,
+    "url": "https://autoreliabilityindex.com/kia/telluride/2022"
+  },
+  "Kia|Telluride|2023": {
+    "score": 68,
+    "url": "https://autoreliabilityindex.com/kia/telluride/2023"
+  },
+  "Kia|Telluride|2024": {
+    "score": 69,
+    "url": "https://autoreliabilityindex.com/kia/telluride/2024"
+  },
+  "Lexus|CT Hybrid|2017": null,
+  "Lexus|CT Hybrid|2018": null,
+  "Lexus|ES Hybrid|2017": null,
+  "Lexus|ES Hybrid|2018": null,
+  "Lexus|ES Hybrid|2019": null,
+  "Lexus|ES Hybrid|2020": null,
+  "Lexus|ES Hybrid|2021": null,
+  "Lexus|ES Hybrid|2022": null,
+  "Lexus|ES Hybrid|2023": null,
+  "Lexus|ES Hybrid|2024": null,
+  "Lexus|ES Hybrid|2025": null,
+  "Lexus|ES|2017": null,
+  "Lexus|ES|2018": null,
+  "Lexus|ES|2019": null,
+  "Lexus|ES|2020": null,
+  "Lexus|ES|2021": null,
+  "Lexus|ES|2022": null,
+  "Lexus|ES|2023": null,
+  "Lexus|ES|2024": null,
+  "Lexus|ES|2025": null,
+  "Lexus|GS F|2016": null,
+  "Lexus|IS|2017": null,
+  "Lexus|IS|2018": {
+    "score": 81,
+    "url": "https://autoreliabilityindex.com/lexus/is/2018"
+  },
+  "Lexus|IS|2019": {
+    "score": 79,
+    "url": "https://autoreliabilityindex.com/lexus/is/2019"
+  },
+  "Lexus|IS|2022": {
+    "score": 83,
+    "url": "https://autoreliabilityindex.com/lexus/is/2022"
+  },
+  "Lexus|IS|2023": {
+    "score": 83,
+    "url": "https://autoreliabilityindex.com/lexus/is/2023"
+  },
+  "Lexus|IS|2024": {
+    "score": 83,
+    "url": "https://autoreliabilityindex.com/lexus/is/2024"
+  },
+  "Lexus|LC|2024": null,
+  "Lexus|LC|2025": null,
+  "Lexus|LS|2018": null,
+  "Lexus|NS|2022": null,
+  "Lexus|NS|2023": null,
+  "Lexus|NS|2024": null,
+  "Lexus|NS|2025": null,
+  "Lexus|NX Hybrid|2018": null,
+  "Lexus|NX Hybrid|2019": null,
+  "Lexus|NX Hybrid|2020": null,
+  "Lexus|NX Hybrid|2021": null,
+  "Lexus|NX|2018": {
+    "score": 79,
+    "url": "https://autoreliabilityindex.com/lexus/nx/2018"
+  },
+  "Lexus|NX|2019": {
+    "score": 77,
+    "url": "https://autoreliabilityindex.com/lexus/nx/2019"
+  },
+  "Lexus|NX|2020": {
+    "score": 82,
+    "url": "https://autoreliabilityindex.com/lexus/nx/2020"
+  },
+  "Lexus|NX|2021": {
+    "score": 82,
+    "url": "https://autoreliabilityindex.com/lexus/nx/2021"
+  },
+  "Lexus|RC|2018": null,
+  "Lexus|RC|2019": null,
+  "Lexus|RC|2020": null,
+  "Lexus|RC|2023": null,
+  "Lexus|RX Hybrid|2016": null,
+  "Lexus|RX Hybrid|2017": null,
+  "Lexus|RX Hybrid|2018": null,
+  "Lexus|RX Hybrid|2019": null,
+  "Lexus|RX Hybrid|2020": null,
+  "Lexus|RX Hybrid|2021": null,
+  "Lexus|RX Hybrid|2022": null,
+  "Lexus|RX|2016": null,
+  "Lexus|RX|2017": null,
+  "Lexus|RX|2018": {
+    "score": 85,
+    "url": "https://autoreliabilityindex.com/lexus/rx/2018"
+  },
+  "Lexus|RX|2019": {
+    "score": 82,
+    "url": "https://autoreliabilityindex.com/lexus/rx/2019"
+  },
+  "Lexus|RX|2020": {
+    "score": 86,
+    "url": "https://autoreliabilityindex.com/lexus/rx/2020"
+  },
+  "Lexus|RX|2021": {
+    "score": 86,
+    "url": "https://autoreliabilityindex.com/lexus/rx/2021"
+  },
+  "Lexus|RX|2022": {
+    "score": 90,
+    "url": "https://autoreliabilityindex.com/lexus/rx/2022"
+  },
+  "Lexus|UX Hybrid|2019": null,
+  "Lexus|UX Hybrid|2020": null,
+  "Lexus|UX Hybrid|2021": null,
+  "Lexus|UX Hybrid|2022": null,
+  "Lexus|UX Hybrid|2023": null,
+  "Lexus|UX Hybrid|2024": null,
+  "Lincoln|Aviator Plug-in Hybrid|2020": null,
+  "Lincoln|Aviator Plug-in Hybrid|2021": null,
+  "Lincoln|Aviator Plug-in Hybrid|2022": null,
+  "Lincoln|Aviator Plug-in Hybrid|2023": null,
+  "Lincoln|Aviator Plug-in Hybrid|2024": null,
+  "Lincoln|Aviator|2020": null,
+  "Lincoln|Aviator|2021": null,
+  "Lincoln|Aviator|2022": null,
+  "Lincoln|Aviator|2023": null,
+  "Lincoln|Aviator|2024": null,
+  "MAN|TGE|2017": null,
+  "MAN|TGE|2018": null,
+  "MAN|TGE|2019": null,
+  "MAN|TGE|2020": null,
+  "MAN|TGE|2021": null,
+  "MAN|TGE|2022": null,
+  "MAN|TGE|2023": null,
+  "MAN|TGE|2024": null,
+  "MAN|eTGE|2020": null,
+  "MAN|eTGE|2021": null,
+  "MAN|eTGE|2022": null,
+  "MAN|eTGE|2023": null,
+  "MAN|eTGE|2024": null,
+  "Mazda|3|2017": null,
+  "Mazda|3|2018": {
+    "score": 79,
+    "url": "https://autoreliabilityindex.com/mazda/3/2018"
+  },
+  "Mazda|6|2017": null,
+  "Mazda|6|2018": null,
+  "Mazda|6|2019": null,
+  "Mazda|6|2020": null,
+  "Mazda|CX-5|2017": null,
+  "Mazda|CX-5|2018": {
+    "score": 71,
+    "url": "https://autoreliabilityindex.com/mazda/cx-5/2018"
+  },
+  "Mazda|CX-5|2019": {
+    "score": 75,
+    "url": "https://autoreliabilityindex.com/mazda/cx-5/2019"
+  },
+  "Mazda|CX-5|2020": {
+    "score": 86,
+    "url": "https://autoreliabilityindex.com/mazda/cx-5/2020"
+  },
+  "Mazda|CX-5|2021": {
+    "score": 83,
+    "url": "https://autoreliabilityindex.com/mazda/cx-5/2021"
+  },
+  "Mazda|CX-5|2022": {
+    "score": 87,
+    "url": "https://autoreliabilityindex.com/mazda/cx-5/2022"
+  },
+  "Mazda|CX-5|2023": {
+    "score": 81,
+    "url": "https://autoreliabilityindex.com/mazda/cx-5/2023"
+  },
+  "Mazda|CX-5|2024": {
+    "score": 84,
+    "url": "https://autoreliabilityindex.com/mazda/cx-5/2024"
+  },
+  "Mazda|CX-5|2025": {
+    "score": 82,
+    "url": "https://autoreliabilityindex.com/mazda/cx-5/2025"
+  },
+  "Mazda|CX-9|2016": null,
+  "Mazda|CX-9|2017": null,
+  "Mazda|CX-9|2018": null,
+  "Mazda|CX-9|2019": null,
+  "Mazda|CX-9|2020": null,
+  "Mazda|CX-9|2021": null,
+  "Mazda|CX-9|2022": null,
+  "Mazda|CX-9|2023": null,
+  "Nissan|Altima|2019": {
+    "score": 72,
+    "url": "https://autoreliabilityindex.com/nissan/altima/2019"
+  },
+  "Nissan|Altima|2020": {
+    "score": 71,
+    "url": "https://autoreliabilityindex.com/nissan/altima/2020"
+  },
+  "Nissan|Altima|2024": {
+    "score": 82,
+    "url": "https://autoreliabilityindex.com/nissan/altima/2024"
+  },
+  "Nissan|Leaf|2018": null,
+  "Nissan|Leaf|2019": null,
+  "Nissan|Leaf|2020": null,
+  "Nissan|Leaf|2021": null,
+  "Nissan|Leaf|2022": null,
+  "Nissan|Leaf|2023": null,
+  "Nissan|Rogue|2018": {
+    "score": 70,
+    "url": "https://autoreliabilityindex.com/nissan/rogue/2018"
+  },
+  "Nissan|Rogue|2019": {
+    "score": 73,
+    "url": "https://autoreliabilityindex.com/nissan/rogue/2019"
+  },
+  "Nissan|Rogue|2020": {
+    "score": 79,
+    "url": "https://autoreliabilityindex.com/nissan/rogue/2020"
+  },
+  "Nissan|X-Trail|2017": null,
+  "Peugeot|208|2019": null,
+  "Peugeot|208|2020": null,
+  "Peugeot|208|2021": null,
+  "Peugeot|208|2022": null,
+  "Peugeot|208|2023": null,
+  "Peugeot|208|2024": null,
+  "Peugeot|208|2025": null,
+  "Porsche|Macan|2017": null,
+  "Porsche|Macan|2018": {
+    "score": 57,
+    "url": "https://autoreliabilityindex.com/porsche/macan/2018"
+  },
+  "Porsche|Macan|2019": {
+    "score": 64,
+    "url": "https://autoreliabilityindex.com/porsche/macan/2019"
+  },
+  "Porsche|Macan|2020": {
+    "score": 62,
+    "url": "https://autoreliabilityindex.com/porsche/macan/2020"
+  },
+  "Porsche|Macan|2021": {
+    "score": 59,
+    "url": "https://autoreliabilityindex.com/porsche/macan/2021"
+  },
+  "Porsche|Macan|2022": {
+    "score": 65,
+    "url": "https://autoreliabilityindex.com/porsche/macan/2022"
+  },
+  "Porsche|Macan|2023": {
+    "score": 66,
+    "url": "https://autoreliabilityindex.com/porsche/macan/2023"
+  },
+  "Porsche|Macan|2024": {
+    "score": 66,
+    "url": "https://autoreliabilityindex.com/porsche/macan/2024"
+  },
+  "Ram|1500|2019": {
+    "score": 58,
+    "url": "https://autoreliabilityindex.com/ram/1500/2019"
+  },
+  "Ram|1500|2020": {
+    "score": 65,
+    "url": "https://autoreliabilityindex.com/ram/1500/2020"
+  },
+  "Ram|1500|2021": {
+    "score": 63,
+    "url": "https://autoreliabilityindex.com/ram/1500/2021"
+  },
+  "Ram|1500|2022": {
+    "score": 64,
+    "url": "https://autoreliabilityindex.com/ram/1500/2022"
+  },
+  "Ram|1500|2023": {
+    "score": 72,
+    "url": "https://autoreliabilityindex.com/ram/1500/2023"
+  },
+  "Ram|1500|2024": {
+    "score": 77,
+    "url": "https://autoreliabilityindex.com/ram/1500/2024"
+  },
+  "Ram|2500|2020": null,
+  "Ram|2500|2021": null,
+  "Ram|2500|2022": null,
+  "Ram|2500|2023": null,
+  "Ram|2500|2024": null,
+  "Ram|3500|2019": null,
+  "Ram|3500|2020": null,
+  "Ram|3500|2021": null,
+  "Ram|3500|2022": null,
+  "Rivian|R1S|2022": null,
+  "Rivian|R1S|2023": {
+    "score": 57,
+    "url": "https://autoreliabilityindex.com/rivian/r1s/2023"
+  },
+  "Rivian|R1S|2024": {
+    "score": 62,
+    "url": "https://autoreliabilityindex.com/rivian/r1s/2024"
+  },
+  "Rivian|R1S|2025": {
+    "score": 56,
+    "url": "https://autoreliabilityindex.com/rivian/r1s/2025"
+  },
+  "Rivian|R1T|2022": null,
+  "Rivian|R1T|2023": null,
+  "Rivian|R1T|2024": null,
+  "Rivian|R1T|2025": null,
+  "SEAT|Alhambra|2018": null,
+  "SEAT|Alhambra|2019": null,
+  "SEAT|Alhambra|2020": null,
+  "SEAT|Ateca|2016": null,
+  "SEAT|Ateca|2017": null,
+  "SEAT|Ateca|2018": null,
+  "SEAT|Ateca|2019": null,
+  "SEAT|Ateca|2020": null,
+  "SEAT|Ateca|2021": null,
+  "SEAT|Ateca|2022": null,
+  "SEAT|Ateca|2023": null,
+  "SEAT|Leon|2014": null,
+  "SEAT|Leon|2015": null,
+  "SEAT|Leon|2016": null,
+  "SEAT|Leon|2017": null,
+  "SEAT|Leon|2018": null,
+  "SEAT|Leon|2019": null,
+  "SEAT|Leon|2020": null,
+  "Skoda|Fabia|2022": null,
+  "Skoda|Fabia|2023": null,
+  "Skoda|Kamiq|2021": null,
+  "Skoda|Kamiq|2022": null,
+  "Skoda|Kamiq|2023": null,
+  "Skoda|Karoq|2019": null,
+  "Skoda|Karoq|2020": null,
+  "Skoda|Karoq|2021": null,
+  "Skoda|Karoq|2022": null,
+  "Skoda|Karoq|2023": null,
+  "Skoda|Kodiaq|2017": null,
+  "Skoda|Kodiaq|2018": null,
+  "Skoda|Kodiaq|2019": null,
+  "Skoda|Kodiaq|2020": null,
+  "Skoda|Kodiaq|2021": null,
+  "Skoda|Kodiaq|2022": null,
+  "Skoda|Kodiaq|2023": null,
+  "Skoda|Octavia RS|2016": null,
+  "Skoda|Octavia Scout|2017": null,
+  "Skoda|Octavia Scout|2018": null,
+  "Skoda|Octavia Scout|2019": null,
+  "Skoda|Octavia|2015": null,
+  "Skoda|Octavia|2016": null,
+  "Skoda|Octavia|2017": null,
+  "Skoda|Octavia|2018": null,
+  "Skoda|Octavia|2019": null,
+  "Skoda|Scala|2020": null,
+  "Skoda|Scala|2021": null,
+  "Skoda|Scala|2022": null,
+  "Skoda|Scala|2023": null,
+  "Skoda|Superb|2015": null,
+  "Skoda|Superb|2016": null,
+  "Skoda|Superb|2017": null,
+  "Skoda|Superb|2018": null,
+  "Skoda|Superb|2019": null,
+  "Skoda|Superb|2020": null,
+  "Skoda|Superb|2021": null,
+  "Skoda|Superb|2022": null,
+  "Subaru|Ascent|2019": null,
+  "Subaru|Ascent|2020": null,
+  "Subaru|Ascent|2021": null,
+  "Subaru|Ascent|2023": null,
+  "Subaru|Crosstrek Hybrid|2020": null,
+  "Subaru|Crosstrek|2018": {
+    "score": 60,
+    "url": "https://autoreliabilityindex.com/subaru/crosstrek/2018"
+  },
+  "Subaru|Crosstrek|2019": {
+    "score": 56,
+    "url": "https://autoreliabilityindex.com/subaru/crosstrek/2019"
+  },
+  "Subaru|Crosstrek|2020": {
+    "score": 72,
+    "url": "https://autoreliabilityindex.com/subaru/crosstrek/2020"
+  },
+  "Subaru|Crosstrek|2021": {
+    "score": 67,
+    "url": "https://autoreliabilityindex.com/subaru/crosstrek/2021"
+  },
+  "Subaru|Crosstrek|2022": {
+    "score": 78,
+    "url": "https://autoreliabilityindex.com/subaru/crosstrek/2022"
+  },
+  "Subaru|Crosstrek|2023": {
+    "score": 81,
+    "url": "https://autoreliabilityindex.com/subaru/crosstrek/2023"
+  },
+  "Subaru|Forester Hybrid|2020": null,
+  "Subaru|Forester|2017": null,
+  "Subaru|Forester|2018": {
+    "score": 66,
+    "url": "https://autoreliabilityindex.com/subaru/forester/2018"
+  },
+  "Subaru|Forester|2019": {
+    "score": 63,
+    "url": "https://autoreliabilityindex.com/subaru/forester/2019"
+  },
+  "Subaru|Forester|2020": {
+    "score": 71,
+    "url": "https://autoreliabilityindex.com/subaru/forester/2020"
+  },
+  "Subaru|Forester|2021": {
+    "score": 76,
+    "url": "https://autoreliabilityindex.com/subaru/forester/2021"
+  },
+  "Subaru|Forester|2022": {
+    "score": 77,
+    "url": "https://autoreliabilityindex.com/subaru/forester/2022"
+  },
+  "Subaru|Forester|2023": {
+    "score": 79,
+    "url": "https://autoreliabilityindex.com/subaru/forester/2023"
+  },
+  "Subaru|Forester|2024": {
+    "score": 78,
+    "url": "https://autoreliabilityindex.com/subaru/forester/2024"
+  },
+  "Subaru|Impreza|2017": null,
+  "Subaru|Impreza|2018": {
+    "score": 69,
+    "url": "https://autoreliabilityindex.com/subaru/impreza/2018"
+  },
+  "Subaru|Impreza|2019": {
+    "score": 66,
+    "url": "https://autoreliabilityindex.com/subaru/impreza/2019"
+  },
+  "Subaru|Impreza|2020": {
+    "score": 74,
+    "url": "https://autoreliabilityindex.com/subaru/impreza/2020"
+  },
+  "Subaru|Impreza|2021": {
+    "score": 71,
+    "url": "https://autoreliabilityindex.com/subaru/impreza/2021"
+  },
+  "Subaru|Impreza|2022": {
+    "score": 76,
+    "url": "https://autoreliabilityindex.com/subaru/impreza/2022"
+  },
+  "Subaru|Legacy|2015": null,
+  "Subaru|Legacy|2016": null,
+  "Subaru|Legacy|2017": null,
+  "Subaru|Legacy|2018": null,
+  "Subaru|Legacy|2020": null,
+  "Subaru|Legacy|2021": null,
+  "Subaru|Legacy|2022": null,
+  "Subaru|Outback|2015": null,
+  "Subaru|Outback|2016": null,
+  "Subaru|Outback|2017": null,
+  "Subaru|Outback|2018": {
+    "score": 64,
+    "url": "https://autoreliabilityindex.com/subaru/outback/2018"
+  },
+  "Subaru|Outback|2019": {
+    "score": 63,
+    "url": "https://autoreliabilityindex.com/subaru/outback/2019"
+  },
+  "Subaru|Outback|2020": {
+    "score": 60,
+    "url": "https://autoreliabilityindex.com/subaru/outback/2020"
+  },
+  "Subaru|Outback|2021": {
+    "score": 69,
+    "url": "https://autoreliabilityindex.com/subaru/outback/2021"
+  },
+  "Subaru|Outback|2022": {
+    "score": 67,
+    "url": "https://autoreliabilityindex.com/subaru/outback/2022"
+  },
+  "Subaru|Outback|2023": {
+    "score": 77,
+    "url": "https://autoreliabilityindex.com/subaru/outback/2023"
+  },
+  "Subaru|Solterra|2023": null,
+  "Subaru|Solterra|2024": null,
+  "Subaru|Solterra|2025": null,
+  "Subaru|XV|2018": null,
+  "Subaru|XV|2019": null,
+  "Subaru|XV|2020": null,
+  "Subaru|XV|2021": null,
+  "Tesla|Model 3 (with HW3)|2019": null,
+  "Tesla|Model 3 (with HW3)|2020": null,
+  "Tesla|Model 3 (with HW3)|2021": null,
+  "Tesla|Model 3 (with HW3)|2022": null,
+  "Tesla|Model 3 (with HW3)|2023": null,
+  "Tesla|Model 3 (with HW4)|2024": null,
+  "Tesla|Model 3 (with HW4)|2025": null,
+  "Tesla|Model X (with HW4)|2024": null,
+  "Tesla|Model Y (with HW3)|2020": null,
+  "Tesla|Model Y (with HW3)|2021": null,
+  "Tesla|Model Y (with HW3)|2022": null,
+  "Tesla|Model Y (with HW3)|2023": null,
+  "Tesla|Model Y (with HW4)|2024": null,
+  "Tesla|Model Y (with HW4)|2025": null,
+  "Toyota|Alphard Hybrid|2021": null,
+  "Toyota|Alphard|2019": null,
+  "Toyota|Alphard|2020": null,
+  "Toyota|Avalon Hybrid|2019": null,
+  "Toyota|Avalon Hybrid|2020": null,
+  "Toyota|Avalon Hybrid|2021": null,
+  "Toyota|Avalon Hybrid|2022": null,
+  "Toyota|Avalon|2016": null,
+  "Toyota|Avalon|2017": null,
+  "Toyota|Avalon|2018": null,
+  "Toyota|Avalon|2019": null,
+  "Toyota|Avalon|2020": null,
+  "Toyota|Avalon|2021": null,
+  "Toyota|Avalon|2022": null,
+  "Toyota|C-HR Hybrid|2017": null,
+  "Toyota|C-HR Hybrid|2018": null,
+  "Toyota|C-HR Hybrid|2019": null,
+  "Toyota|C-HR Hybrid|2020": null,
+  "Toyota|C-HR Hybrid|2021": null,
+  "Toyota|C-HR Hybrid|2022": null,
+  "Toyota|C-HR|2017": null,
+  "Toyota|C-HR|2018": null,
+  "Toyota|C-HR|2019": null,
+  "Toyota|C-HR|2020": null,
+  "Toyota|C-HR|2021": null,
+  "Toyota|Camry Hybrid|2018": null,
+  "Toyota|Camry Hybrid|2019": null,
+  "Toyota|Camry Hybrid|2020": null,
+  "Toyota|Camry Hybrid|2021": null,
+  "Toyota|Camry Hybrid|2022": null,
+  "Toyota|Camry Hybrid|2023": null,
+  "Toyota|Camry Hybrid|2024": null,
+  "Toyota|Camry|2018": {
+    "score": 65,
+    "url": "https://autoreliabilityindex.com/toyota/camry/2018"
+  },
+  "Toyota|Camry|2019": {
+    "score": 70,
+    "url": "https://autoreliabilityindex.com/toyota/camry/2019"
+  },
+  "Toyota|Camry|2020": {
+    "score": 75,
+    "url": "https://autoreliabilityindex.com/toyota/camry/2020"
+  },
+  "Toyota|Camry|2021": {
+    "score": 82,
+    "url": "https://autoreliabilityindex.com/toyota/camry/2021"
+  },
+  "Toyota|Camry|2022": {
+    "score": 84,
+    "url": "https://autoreliabilityindex.com/toyota/camry/2022"
+  },
+  "Toyota|Camry|2023": {
+    "score": 79,
+    "url": "https://autoreliabilityindex.com/toyota/camry/2023"
+  },
+  "Toyota|Camry|2024": {
+    "score": 83,
+    "url": "https://autoreliabilityindex.com/toyota/camry/2024"
+  },
+  "Toyota|Camry|2025": {
+    "score": 76,
+    "url": "https://autoreliabilityindex.com/toyota/camry/2025"
+  },
+  "Toyota|Corolla Cross (Non-US only)|2020": null,
+  "Toyota|Corolla Cross (Non-US only)|2021": null,
+  "Toyota|Corolla Cross (Non-US only)|2022": null,
+  "Toyota|Corolla Cross (Non-US only)|2023": null,
+  "Toyota|Corolla Cross Hybrid (Non-US only)|2020": null,
+  "Toyota|Corolla Cross Hybrid (Non-US only)|2021": null,
+  "Toyota|Corolla Cross Hybrid (Non-US only)|2022": null,
+  "Toyota|Corolla Cross|2022": {
+    "score": 80,
+    "url": "https://autoreliabilityindex.com/toyota/corolla-cross/2022"
+  },
+  "Toyota|Corolla Cross|2023": {
+    "score": 69,
+    "url": "https://autoreliabilityindex.com/toyota/corolla-cross/2023"
+  },
+  "Toyota|Corolla Cross|2024": {
+    "score": 82,
+    "url": "https://autoreliabilityindex.com/toyota/corolla-cross/2024"
+  },
+  "Toyota|Corolla Cross|2025": {
+    "score": 86,
+    "url": "https://autoreliabilityindex.com/toyota/corolla-cross/2025"
+  },
+  "Toyota|Corolla Hatchback|2019": null,
+  "Toyota|Corolla Hatchback|2020": null,
+  "Toyota|Corolla Hatchback|2021": null,
+  "Toyota|Corolla Hatchback|2022": null,
+  "Toyota|Corolla Hybrid (South America only)|2020": null,
+  "Toyota|Corolla Hybrid (South America only)|2021": null,
+  "Toyota|Corolla Hybrid (South America only)|2022": null,
+  "Toyota|Corolla Hybrid (South America only)|2023": null,
+  "Toyota|Corolla Hybrid|2020": null,
+  "Toyota|Corolla Hybrid|2021": null,
+  "Toyota|Corolla Hybrid|2022": null,
+  "Toyota|Corolla|2017": null,
+  "Toyota|Corolla|2018": {
+    "score": 80,
+    "url": "https://autoreliabilityindex.com/toyota/corolla/2018"
+  },
+  "Toyota|Corolla|2019": {
+    "score": 77,
+    "url": "https://autoreliabilityindex.com/toyota/corolla/2019"
+  },
+  "Toyota|Corolla|2020": {
+    "score": 74,
+    "url": "https://autoreliabilityindex.com/toyota/corolla/2020"
+  },
+  "Toyota|Corolla|2021": {
+    "score": 83,
+    "url": "https://autoreliabilityindex.com/toyota/corolla/2021"
+  },
+  "Toyota|Corolla|2022": {
+    "score": 82,
+    "url": "https://autoreliabilityindex.com/toyota/corolla/2022"
+  },
+  "Toyota|Highlander Hybrid|2017": null,
+  "Toyota|Highlander Hybrid|2018": null,
+  "Toyota|Highlander Hybrid|2019": null,
+  "Toyota|Highlander Hybrid|2020": null,
+  "Toyota|Highlander Hybrid|2021": null,
+  "Toyota|Highlander Hybrid|2022": null,
+  "Toyota|Highlander Hybrid|2023": null,
+  "Toyota|Highlander|2017": null,
+  "Toyota|Highlander|2018": {
+    "score": 72,
+    "url": "https://autoreliabilityindex.com/toyota/highlander/2018"
+  },
+  "Toyota|Highlander|2019": {
+    "score": 70,
+    "url": "https://autoreliabilityindex.com/toyota/highlander/2019"
+  },
+  "Toyota|Highlander|2020": {
+    "score": 71,
+    "url": "https://autoreliabilityindex.com/toyota/highlander/2020"
+  },
+  "Toyota|Highlander|2021": {
+    "score": 70,
+    "url": "https://autoreliabilityindex.com/toyota/highlander/2021"
+  },
+  "Toyota|Highlander|2022": {
+    "score": 74,
+    "url": "https://autoreliabilityindex.com/toyota/highlander/2022"
+  },
+  "Toyota|Highlander|2023": {
+    "score": 73,
+    "url": "https://autoreliabilityindex.com/toyota/highlander/2023"
+  },
+  "Toyota|Highlander|2025": {
+    "score": 76,
+    "url": "https://autoreliabilityindex.com/toyota/highlander/2025"
+  },
+  "Toyota|Mirai|2021": null,
+  "Toyota|Prius Prime|2017": null,
+  "Toyota|Prius Prime|2018": null,
+  "Toyota|Prius Prime|2019": null,
+  "Toyota|Prius Prime|2020": null,
+  "Toyota|Prius Prime|2021": null,
+  "Toyota|Prius Prime|2022": null,
+  "Toyota|Prius v|2017": null,
+  "Toyota|Prius|2016": null,
+  "Toyota|Prius|2017": null,
+  "Toyota|Prius|2018": {
+    "score": 78,
+    "url": "https://autoreliabilityindex.com/toyota/prius/2018"
+  },
+  "Toyota|Prius|2019": {
+    "score": 77,
+    "url": "https://autoreliabilityindex.com/toyota/prius/2019"
+  },
+  "Toyota|Prius|2020": {
+    "score": 79,
+    "url": "https://autoreliabilityindex.com/toyota/prius/2020"
+  },
+  "Toyota|Prius|2021": {
+    "score": 82,
+    "url": "https://autoreliabilityindex.com/toyota/prius/2021"
+  },
+  "Toyota|Prius|2022": {
+    "score": 78,
+    "url": "https://autoreliabilityindex.com/toyota/prius/2022"
+  },
+  "Toyota|RAV4 Hybrid|2016": null,
+  "Toyota|RAV4 Hybrid|2017": null,
+  "Toyota|RAV4 Hybrid|2018": null,
+  "Toyota|RAV4 Hybrid|2019": null,
+  "Toyota|RAV4 Hybrid|2020": null,
+  "Toyota|RAV4 Hybrid|2021": null,
+  "Toyota|RAV4 Hybrid|2022": null,
+  "Toyota|RAV4 Hybrid|2023": null,
+  "Toyota|RAV4 Hybrid|2024": null,
+  "Toyota|RAV4 Hybrid|2025": null,
+  "Toyota|RAV4 Prime|2021": null,
+  "Toyota|RAV4 Prime|2022": null,
+  "Toyota|RAV4 Prime|2023": null,
+  "Toyota|RAV4 Prime|2024": null,
+  "Toyota|RAV4 Prime|2025": null,
+  "Toyota|RAV4|2016": null,
+  "Toyota|RAV4|2017": null,
+  "Toyota|RAV4|2018": {
+    "score": 76,
+    "url": "https://autoreliabilityindex.com/toyota/rav4/2018"
+  },
+  "Toyota|RAV4|2019": {
+    "score": 66,
+    "url": "https://autoreliabilityindex.com/toyota/rav4/2019"
+  },
+  "Toyota|RAV4|2020": {
+    "score": 70,
+    "url": "https://autoreliabilityindex.com/toyota/rav4/2020"
+  },
+  "Toyota|RAV4|2021": {
+    "score": 73,
+    "url": "https://autoreliabilityindex.com/toyota/rav4/2021"
+  },
+  "Toyota|RAV4|2022": {
+    "score": 80,
+    "url": "https://autoreliabilityindex.com/toyota/rav4/2022"
+  },
+  "Toyota|RAV4|2023": {
+    "score": 80,
+    "url": "https://autoreliabilityindex.com/toyota/rav4/2023"
+  },
+  "Toyota|RAV4|2024": {
+    "score": 80,
+    "url": "https://autoreliabilityindex.com/toyota/rav4/2024"
+  },
+  "Toyota|RAV4|2025": {
+    "score": 84,
+    "url": "https://autoreliabilityindex.com/toyota/rav4/2025"
+  },
+  "Toyota|Sequoia|2023": null,
+  "Toyota|Sequoia|2024": null,
+  "Toyota|Sequoia|2025": null,
+  "Toyota|Sienna|2018": {
+    "score": 70,
+    "url": "https://autoreliabilityindex.com/toyota/sienna/2018"
+  },
+  "Toyota|Sienna|2019": {
+    "score": 71,
+    "url": "https://autoreliabilityindex.com/toyota/sienna/2019"
+  },
+  "Toyota|Sienna|2020": {
+    "score": 73,
+    "url": "https://autoreliabilityindex.com/toyota/sienna/2020"
+  },
+  "Toyota|Sienna|2021": {
+    "score": 72,
+    "url": "https://autoreliabilityindex.com/toyota/sienna/2021"
+  },
+  "Toyota|Sienna|2022": {
+    "score": 74,
+    "url": "https://autoreliabilityindex.com/toyota/sienna/2022"
+  },
+  "Toyota|Sienna|2023": {
+    "score": 76,
+    "url": "https://autoreliabilityindex.com/toyota/sienna/2023"
+  },
+  "Toyota|Sienna|2024": {
+    "score": 74,
+    "url": "https://autoreliabilityindex.com/toyota/sienna/2024"
+  },
+  "Toyota|Sienna|2025": {
+    "score": 72,
+    "url": "https://autoreliabilityindex.com/toyota/sienna/2025"
+  },
+  "Toyota|Tundra|2022": {
+    "score": 57,
+    "url": "https://autoreliabilityindex.com/toyota/tundra/2022"
+  },
+  "Toyota|Tundra|2023": {
+    "score": 59,
+    "url": "https://autoreliabilityindex.com/toyota/tundra/2023"
+  },
+  "Toyota|Tundra|2024": {
+    "score": 65,
+    "url": "https://autoreliabilityindex.com/toyota/tundra/2024"
+  },
+  "Toyota|Tundra|2025": {
+    "score": 73,
+    "url": "https://autoreliabilityindex.com/toyota/tundra/2025"
+  },
+  "Toyota|Venza|2021": {
+    "score": 79,
+    "url": "https://autoreliabilityindex.com/toyota/venza/2021"
+  },
+  "Toyota|Venza|2022": {
+    "score": 80,
+    "url": "https://autoreliabilityindex.com/toyota/venza/2022"
+  },
+  "Toyota|Venza|2023": {
+    "score": 80,
+    "url": "https://autoreliabilityindex.com/toyota/venza/2023"
+  },
+  "Toyota|Venza|2024": {
+    "score": 80,
+    "url": "https://autoreliabilityindex.com/toyota/venza/2024"
+  },
+  "Toyota|Venza|2025": null,
+  "Toyota|Yaris (Non-US only)|2020": null,
+  "Toyota|Yaris (Non-US only)|2023": null,
+  "Toyota|bZ4x|2023": null,
+  "Toyota|bZ4x|2024": null,
+  "Toyota|bZ4x|2025": null,
+  "Volkswagen|Arteon R|2020": null,
+  "Volkswagen|Arteon R|2021": null,
+  "Volkswagen|Arteon R|2022": null,
+  "Volkswagen|Arteon R|2023": null,
+  "Volkswagen|Arteon Shooting Brake|2020": null,
+  "Volkswagen|Arteon Shooting Brake|2021": null,
+  "Volkswagen|Arteon Shooting Brake|2022": null,
+  "Volkswagen|Arteon Shooting Brake|2023": null,
+  "Volkswagen|Arteon eHybrid|2020": null,
+  "Volkswagen|Arteon eHybrid|2021": null,
+  "Volkswagen|Arteon eHybrid|2022": null,
+  "Volkswagen|Arteon eHybrid|2023": null,
+  "Volkswagen|Arteon|2018": null,
+  "Volkswagen|Arteon|2019": null,
+  "Volkswagen|Arteon|2020": null,
+  "Volkswagen|Arteon|2021": null,
+  "Volkswagen|Arteon|2022": null,
+  "Volkswagen|Arteon|2023": null,
+  "Volkswagen|Atlas Cross Sport|2020": null,
+  "Volkswagen|Atlas Cross Sport|2021": null,
+  "Volkswagen|Atlas Cross Sport|2022": null,
+  "Volkswagen|Atlas|2018": {
+    "score": 44,
+    "url": "https://autoreliabilityindex.com/volkswagen/atlas/2018"
+  },
+  "Volkswagen|Atlas|2019": {
+    "score": 48,
+    "url": "https://autoreliabilityindex.com/volkswagen/atlas/2019"
+  },
+  "Volkswagen|Atlas|2020": {
+    "score": 57,
+    "url": "https://autoreliabilityindex.com/volkswagen/atlas/2020"
+  },
+  "Volkswagen|Atlas|2021": {
+    "score": 44,
+    "url": "https://autoreliabilityindex.com/volkswagen/atlas/2021"
+  },
+  "Volkswagen|Atlas|2022": {
+    "score": 50,
+    "url": "https://autoreliabilityindex.com/volkswagen/atlas/2022"
+  },
+  "Volkswagen|Atlas|2023": {
+    "score": 58,
+    "url": "https://autoreliabilityindex.com/volkswagen/atlas/2023"
+  },
+  "Volkswagen|CC|2018": null,
+  "Volkswagen|CC|2019": null,
+  "Volkswagen|CC|2020": null,
+  "Volkswagen|CC|2021": null,
+  "Volkswagen|CC|2022": null,
+  "Volkswagen|Caddy Maxi|2019": null,
+  "Volkswagen|Caddy|2019": null,
+  "Volkswagen|California|2021": null,
+  "Volkswagen|California|2022": null,
+  "Volkswagen|California|2023": null,
+  "Volkswagen|Caravelle|2020": null,
+  "Volkswagen|Crafter|2017": null,
+  "Volkswagen|Crafter|2018": null,
+  "Volkswagen|Crafter|2019": null,
+  "Volkswagen|Crafter|2020": null,
+  "Volkswagen|Crafter|2021": null,
+  "Volkswagen|Crafter|2022": null,
+  "Volkswagen|Crafter|2023": null,
+  "Volkswagen|Crafter|2024": null,
+  "Volkswagen|Golf Alltrack|2015": null,
+  "Volkswagen|Golf Alltrack|2016": null,
+  "Volkswagen|Golf Alltrack|2017": null,
+  "Volkswagen|Golf Alltrack|2018": null,
+  "Volkswagen|Golf Alltrack|2019": null,
+  "Volkswagen|Golf GTD|2015": null,
+  "Volkswagen|Golf GTD|2016": null,
+  "Volkswagen|Golf GTD|2017": null,
+  "Volkswagen|Golf GTD|2018": null,
+  "Volkswagen|Golf GTD|2019": null,
+  "Volkswagen|Golf GTD|2020": null,
+  "Volkswagen|Golf GTE|2015": null,
+  "Volkswagen|Golf GTE|2016": null,
+  "Volkswagen|Golf GTE|2017": null,
+  "Volkswagen|Golf GTE|2018": null,
+  "Volkswagen|Golf GTE|2019": null,
+  "Volkswagen|Golf GTE|2020": null,
+  "Volkswagen|Golf GTI|2015": null,
+  "Volkswagen|Golf GTI|2016": null,
+  "Volkswagen|Golf GTI|2017": null,
+  "Volkswagen|Golf GTI|2018": null,
+  "Volkswagen|Golf GTI|2019": null,
+  "Volkswagen|Golf GTI|2020": null,
+  "Volkswagen|Golf GTI|2021": null,
+  "Volkswagen|Golf R|2015": null,
+  "Volkswagen|Golf R|2016": null,
+  "Volkswagen|Golf R|2017": null,
+  "Volkswagen|Golf R|2018": null,
+  "Volkswagen|Golf R|2019": null,
+  "Volkswagen|Golf SportsVan|2015": null,
+  "Volkswagen|Golf SportsVan|2016": null,
+  "Volkswagen|Golf SportsVan|2017": null,
+  "Volkswagen|Golf SportsVan|2018": null,
+  "Volkswagen|Golf SportsVan|2019": null,
+  "Volkswagen|Golf SportsVan|2020": null,
+  "Volkswagen|Golf|2015": null,
+  "Volkswagen|Golf|2016": null,
+  "Volkswagen|Golf|2017": null,
+  "Volkswagen|Golf|2018": null,
+  "Volkswagen|Golf|2019": null,
+  "Volkswagen|Golf|2020": null,
+  "Volkswagen|Grand California|2019": null,
+  "Volkswagen|Grand California|2020": null,
+  "Volkswagen|Grand California|2021": null,
+  "Volkswagen|Grand California|2022": null,
+  "Volkswagen|Grand California|2023": null,
+  "Volkswagen|Grand California|2024": null,
+  "Volkswagen|Jetta GLI|2021": null,
+  "Volkswagen|Jetta GLI|2022": null,
+  "Volkswagen|Jetta GLI|2023": null,
+  "Volkswagen|Jetta|2015": null,
+  "Volkswagen|Jetta|2016": null,
+  "Volkswagen|Jetta|2017": null,
+  "Volkswagen|Jetta|2018": {
+    "score": 79,
+    "url": "https://autoreliabilityindex.com/volkswagen/jetta/2018"
+  },
+  "Volkswagen|Jetta|2019": {
+    "score": 58,
+    "url": "https://autoreliabilityindex.com/volkswagen/jetta/2019"
+  },
+  "Volkswagen|Jetta|2020": {
+    "score": 75,
+    "url": "https://autoreliabilityindex.com/volkswagen/jetta/2020"
+  },
+  "Volkswagen|Jetta|2021": {
+    "score": 74,
+    "url": "https://autoreliabilityindex.com/volkswagen/jetta/2021"
+  },
+  "Volkswagen|Jetta|2022": {
+    "score": 77,
+    "url": "https://autoreliabilityindex.com/volkswagen/jetta/2022"
+  },
+  "Volkswagen|Jetta|2023": {
+    "score": 81,
+    "url": "https://autoreliabilityindex.com/volkswagen/jetta/2023"
+  },
+  "Volkswagen|Passat Alltrack|2015": null,
+  "Volkswagen|Passat Alltrack|2016": null,
+  "Volkswagen|Passat Alltrack|2017": null,
+  "Volkswagen|Passat Alltrack|2018": null,
+  "Volkswagen|Passat Alltrack|2019": null,
+  "Volkswagen|Passat Alltrack|2020": null,
+  "Volkswagen|Passat Alltrack|2021": null,
+  "Volkswagen|Passat Alltrack|2022": null,
+  "Volkswagen|Passat GTE|2015": null,
+  "Volkswagen|Passat GTE|2016": null,
+  "Volkswagen|Passat GTE|2017": null,
+  "Volkswagen|Passat GTE|2018": null,
+  "Volkswagen|Passat GTE|2019": null,
+  "Volkswagen|Passat GTE|2020": null,
+  "Volkswagen|Passat GTE|2021": null,
+  "Volkswagen|Passat GTE|2022": null,
+  "Volkswagen|Passat NMS|2017": null,
+  "Volkswagen|Passat NMS|2018": null,
+  "Volkswagen|Passat NMS|2019": null,
+  "Volkswagen|Passat NMS|2020": null,
+  "Volkswagen|Passat NMS|2021": null,
+  "Volkswagen|Passat NMS|2022": null,
+  "Volkswagen|Passat|2015": null,
+  "Volkswagen|Passat|2016": null,
+  "Volkswagen|Passat|2017": null,
+  "Volkswagen|Passat|2018": null,
+  "Volkswagen|Passat|2019": null,
+  "Volkswagen|Passat|2020": null,
+  "Volkswagen|Passat|2021": null,
+  "Volkswagen|Passat|2022": null,
+  "Volkswagen|Polo GTI|2018": null,
+  "Volkswagen|Polo GTI|2019": null,
+  "Volkswagen|Polo GTI|2020": null,
+  "Volkswagen|Polo GTI|2021": null,
+  "Volkswagen|Polo GTI|2022": null,
+  "Volkswagen|Polo GTI|2023": null,
+  "Volkswagen|Polo|2018": null,
+  "Volkswagen|Polo|2019": null,
+  "Volkswagen|Polo|2020": null,
+  "Volkswagen|Polo|2021": null,
+  "Volkswagen|Polo|2022": null,
+  "Volkswagen|Polo|2023": null,
+  "Volkswagen|Sharan|2018": null,
+  "Volkswagen|Sharan|2019": null,
+  "Volkswagen|Sharan|2020": null,
+  "Volkswagen|Sharan|2021": null,
+  "Volkswagen|Sharan|2022": null,
+  "Volkswagen|T-Cross|2021": null,
+  "Volkswagen|T-Roc|2018": null,
+  "Volkswagen|T-Roc|2019": null,
+  "Volkswagen|T-Roc|2020": null,
+  "Volkswagen|T-Roc|2021": null,
+  "Volkswagen|T-Roc|2022": null,
+  "Volkswagen|T-Roc|2023": null,
+  "Volkswagen|Taos|2022": {
+    "score": 59,
+    "url": "https://autoreliabilityindex.com/volkswagen/taos/2022"
+  },
+  "Volkswagen|Taos|2023": {
+    "score": 73,
+    "url": "https://autoreliabilityindex.com/volkswagen/taos/2023"
+  },
+  "Volkswagen|Taos|2024": {
+    "score": 74,
+    "url": "https://autoreliabilityindex.com/volkswagen/taos/2024"
+  },
+  "Volkswagen|Teramont Cross Sport|2021": null,
+  "Volkswagen|Teramont Cross Sport|2022": null,
+  "Volkswagen|Teramont X|2021": null,
+  "Volkswagen|Teramont X|2022": null,
+  "Volkswagen|Teramont|2018": null,
+  "Volkswagen|Teramont|2019": null,
+  "Volkswagen|Teramont|2020": null,
+  "Volkswagen|Teramont|2021": null,
+  "Volkswagen|Teramont|2022": null,
+  "Volkswagen|Tiguan eHybrid|2021": null,
+  "Volkswagen|Tiguan eHybrid|2022": null,
+  "Volkswagen|Tiguan eHybrid|2023": null,
+  "Volkswagen|Tiguan|2018": {
+    "score": 57,
+    "url": "https://autoreliabilityindex.com/volkswagen/tiguan/2018"
+  },
+  "Volkswagen|Tiguan|2019": {
+    "score": 65,
+    "url": "https://autoreliabilityindex.com/volkswagen/tiguan/2019"
+  },
+  "Volkswagen|Tiguan|2020": {
+    "score": 69,
+    "url": "https://autoreliabilityindex.com/volkswagen/tiguan/2020"
+  },
+  "Volkswagen|Tiguan|2021": {
+    "score": 67,
+    "url": "https://autoreliabilityindex.com/volkswagen/tiguan/2021"
+  },
+  "Volkswagen|Tiguan|2022": {
+    "score": 61,
+    "url": "https://autoreliabilityindex.com/volkswagen/tiguan/2022"
+  },
+  "Volkswagen|Tiguan|2023": {
+    "score": 73,
+    "url": "https://autoreliabilityindex.com/volkswagen/tiguan/2023"
+  },
+  "Volkswagen|Tiguan|2024": {
+    "score": 75,
+    "url": "https://autoreliabilityindex.com/volkswagen/tiguan/2024"
+  },
+  "Volkswagen|Touran|2016": null,
+  "Volkswagen|Touran|2017": null,
+  "Volkswagen|Touran|2018": null,
+  "Volkswagen|Touran|2019": null,
+  "Volkswagen|Touran|2020": null,
+  "Volkswagen|Touran|2021": null,
+  "Volkswagen|Touran|2022": null,
+  "Volkswagen|Touran|2023": null,
+  "Volkswagen|e-Crafter|2018": null,
+  "Volkswagen|e-Crafter|2019": null,
+  "Volkswagen|e-Crafter|2020": null,
+  "Volkswagen|e-Crafter|2021": null,
+  "Volkswagen|e-Crafter|2022": null,
+  "Volkswagen|e-Crafter|2023": null,
+  "Volkswagen|e-Crafter|2024": null,
+  "Volkswagen|e-Golf|2014": null,
+  "Volkswagen|e-Golf|2015": null,
+  "Volkswagen|e-Golf|2016": null,
+  "Volkswagen|e-Golf|2017": null,
+  "Volkswagen|e-Golf|2018": null,
+  "Volkswagen|e-Golf|2019": null,
+  "Volkswagen|e-Golf|2020": null
+}
