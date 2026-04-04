@@ -326,8 +326,39 @@
           return result;
         },
 
-        uniqueValues(colKey) {
+        filteredCarsExcluding(excludeColKey) {
+          return this.cars.filter(car => {
+            for (const [key, selected] of Object.entries(this.filters)) {
+              if (key === excludeColKey) continue;
+              if (selected.length === 0) continue;
+              if (Array.isArray(car[key])) {
+                if (!car[key].some(v => selected.includes(v))) return false;
+              } else {
+                if (!selected.some(s => String(s) === String(car[key]))) return false;
+              }
+            }
+            for (const [key, range] of Object.entries(this.speedFilters)) {
+              if (key === excludeColKey) continue;
+              const val = car[key];
+              if (val === null) {
+                if (range.min !== null || range.max !== null) return false;
+                continue;
+              }
+              if (range.min !== null && val < range.min) return false;
+              if (range.max !== null && val > range.max) return false;
+            }
+            return true;
+          });
+        },
+
+        allUniqueValues(colKey) {
           const vals = this.cars.flatMap(c => Array.isArray(c[colKey]) ? c[colKey] : [c[colKey]]);
+          return [...new Set(vals)].sort((a, b) => typeof a === 'number' ? a - b : String(a).localeCompare(String(b)));
+        },
+
+        uniqueValues(colKey) {
+          const source = this.filteredCarsExcluding(colKey);
+          const vals = source.flatMap(c => Array.isArray(c[colKey]) ? c[colKey] : [c[colKey]]);
           return [...new Set(vals)].sort((a, b) => typeof a === 'number' ? a - b : String(a).localeCompare(String(b)));
         },
 
@@ -450,7 +481,7 @@
             for (const [key, vals] of Object.entries(preset.filters)) {
               const excluded = vals.filter(v => String(v).startsWith('!')).map(v => String(v).slice(1));
               if (excluded.length > 0) {
-                this.filters[key] = this.uniqueValues(key).filter(v => !excluded.includes(String(v)));
+                this.filters[key] = this.allUniqueValues(key).filter(v => !excluded.includes(String(v)));
               } else {
                 this.filters[key] = [...vals];
               }
@@ -467,7 +498,7 @@
           const filtersMatch = Object.entries(preset.filters).every(([key, vals]) => {
             const excluded = vals.filter(v => String(v).startsWith('!')).map(v => String(v).slice(1));
             if (excluded.length > 0) {
-              const expected = this.uniqueValues(key).filter(v => !excluded.includes(String(v)));
+              const expected = this.allUniqueValues(key).filter(v => !excluded.includes(String(v)));
               return expected.length === this.filters[key]?.length &&
                 expected.every(v => this.filters[key].includes(v));
             }
