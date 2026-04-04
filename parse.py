@@ -75,7 +75,9 @@ def generate_html(cars: list[dict]) -> str:
 
 def main():
   parser = argparse.ArgumentParser(description="Generate openpilot car support files.")
-  parser.add_argument("--serve", action="store_true", help="Serve cars.html on a local HTTP server after building.")
+  parser.add_argument("--html-out", default=None, help="Path for generated HTML file.")
+  parser.add_argument("--json-out", default=None, help="Path for generated JSON file.")
+  parser.add_argument("--serve", action="store_true", help="Serve the HTML file on a local HTTP server after building.")
   parser.add_argument("--port", type=int, default=8000, help="Port for --serve (default: 8000).")
   args = parser.parse_args()
 
@@ -85,36 +87,42 @@ def main():
 
   cars = [car_docs_to_dict(cd) for cd in all_car_docs]
 
-  here = os.path.dirname(__file__) or "."
+  if args.json_out:
+    os.makedirs(os.path.dirname(os.path.abspath(args.json_out)), exist_ok=True)
+    with open(args.json_out, "w") as f:
+      json.dump(cars, f, indent=2)
+    print(f"Written to {args.json_out}", file=sys.stderr)
 
-  json_path = os.path.join(here, "cars.json")
-  with open(json_path, "w") as f:
-    json.dump(cars, f, indent=2)
-  print(f"Written to {json_path}", file=sys.stderr)
-
-  html_path = os.path.join(here, "index.html")
-  with open(html_path, "w") as f:
-    f.write(generate_html(cars))
-  print(f"Written to {html_path}", file=sys.stderr)
+  if args.html_out:
+    os.makedirs(os.path.dirname(os.path.abspath(args.html_out)), exist_ok=True)
+    with open(args.html_out, "w") as f:
+      f.write(generate_html(cars))
+    print(f"Written to {args.html_out}", file=sys.stderr)
 
   if args.serve:
+    if not args.html_out:
+      print("Error: --serve requires --html-out", file=sys.stderr)
+      sys.exit(1)
+
+    serve_dir = os.path.dirname(os.path.abspath(args.html_out))
+    serve_file = os.path.basename(args.html_out)
+
     class Handler(http.server.SimpleHTTPRequestHandler):
       def translate_path(self, path):
         if path == "/":
-          path = "/index.html"
+          path = f"/{serve_file}"
         return super().translate_path(path)
 
       def log_message(self, format, *a):
         print(format % a, file=sys.stderr)
 
-    os.chdir(here)
+    os.chdir(serve_dir)
     with http.server.HTTPServer(("", args.port), Handler) as httpd:
       print(f"Serving at http://localhost:{args.port}/", file=sys.stderr)
       try:
         httpd.serve_forever()
       except KeyboardInterrupt:
         print("\nStopped.", file=sys.stderr)
-
 
 if __name__ == "__main__":
   main()
