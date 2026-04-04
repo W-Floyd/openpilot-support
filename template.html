@@ -646,8 +646,9 @@
         },
 
         ebayUrl(car) {
-          const years = [...new Set(car.years)].sort((a, b) => a - b).join(',');
-          const query = encodeURIComponent(`${car.make} ${car.model.trim()} (${years})`);
+          const years = [...new Set(car.years)].sort((a, b) => a - b);
+          const yearStr = years.length === 1 ? `${years[0]}` : `(${years.join(',')})`;
+          const query = encodeURIComponent(`${car.make} ${car.model.trim()} ${yearStr}`);
           return `https://www.ebay.com/sch/6001/i.html?_nkw=${query}&_sop=2`;
         },
 
