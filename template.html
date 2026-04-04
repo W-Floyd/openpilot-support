@@ -24,6 +24,8 @@
             class="hover:underline">Github</a>
           &middot;
           <button @click="openAllEbayLinks()" class="hover:underline">Open all eBay links</button>
+          &middot;
+          <button @click="openAllCarGurusLinks()" class="hover:underline">Open all CarGurus links</button>
         </p>
       </div>
       <div class="flex items-center gap-1 rounded-lg border border-gray-200 bg-white p-1 shadow-sm">
@@ -631,6 +633,15 @@
           if (cars.length > 10 && !confirm(`Open ${cars.length} eBay links?`)) return;
           for (const car of cars) {
             window.open(this.ebayUrl(car), '_blank', 'noopener');
+          }
+        },
+
+        openAllCarGurusLinks() {
+          const cars = this.filteredCars.filter(car => this.carGurusCache[this.carGurusKey(car)]?.url);
+          if (cars.length === 0) return;
+          if (cars.length > 10 && !confirm(`Open ${cars.length} CarGurus links?`)) return;
+          for (const car of cars) {
+            window.open(this.carGurusCache[this.carGurusKey(car)].url, '_blank', 'noopener');
           }
         },
 
