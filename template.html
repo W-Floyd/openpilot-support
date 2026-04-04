@@ -315,19 +315,32 @@
                   <template x-if="col.ari">
                     <span>
                       <template x-if="ariScore(car) !== null">
-                        <a :href="ariLink(car)" target="_blank" rel="noopener"
-                          class="text-xs font-medium hover:underline tabular-nums">
-                          <template x-if="ariScore(car).min === ariScore(car).max">
-                            <span :style="`color: ${ariColor(ariScore(car).min)}`" x-text="ariScore(car).min"></span>
-                          </template>
-                          <template x-if="ariScore(car).min !== ariScore(car).max">
-                            <span>
+                        <span class="relative" x-data="{ ariOpen: false }" @mouseenter="ariOpen = true" @mouseleave="ariOpen = false">
+                          <a :href="ariLink(car)" target="_blank" rel="noopener"
+                            class="text-xs font-medium hover:underline tabular-nums">
+                            <template x-if="ariScore(car).min === ariScore(car).max">
                               <span :style="`color: ${ariColor(ariScore(car).min)}`" x-text="ariScore(car).min"></span>
-                              <span class="text-gray-400">–</span>
-                              <span :style="`color: ${ariColor(ariScore(car).max)}`" x-text="ariScore(car).max"></span>
-                            </span>
-                          </template>
-                        </a>
+                            </template>
+                            <template x-if="ariScore(car).min !== ariScore(car).max">
+                              <span>
+                                <span :style="`color: ${ariColor(ariScore(car).min)}`" x-text="ariScore(car).min"></span>
+                                <span class="text-gray-400">–</span>
+                                <span :style="`color: ${ariColor(ariScore(car).max)}`" x-text="ariScore(car).max"></span>
+                              </span>
+                            </template>
+                          </a>
+                          <div x-show="ariOpen" x-cloak
+                            class="absolute bottom-full right-0 z-50 mb-1.5 whitespace-nowrap rounded-lg border border-gray-200 bg-white py-1.5 shadow-lg text-xs">
+                            <template x-for="row in ariYearRows(car)" :key="row.year">
+                              <div class="flex items-baseline gap-1.5 px-3 py-0.5">
+                                <span class="w-9 shrink-0 font-medium text-gray-700" x-text="row.year"></span>
+                                <a :href="row.url" target="_blank" rel="noopener"
+                                  class="tabular-nums font-medium hover:underline"
+                                  :style="`color: ${ariColor(row.score)}`" x-text="row.score"></a>
+                              </div>
+                            </template>
+                          </div>
+                        </span>
                       </template>
                       <template x-if="ariScore(car) === null">
                         <span class="text-gray-300">—</span>
@@ -881,6 +894,16 @@
 
         ariColor(score) {
           return `hsl(${score * 1.2}, 70%, 38%)`;
+        },
+
+        ariYearRows(car) {
+          const years = [...new Set(car.years)].sort((a, b) => a - b);
+          return years.map(y => {
+            const d = this.ariCache[this.ariKey(car.make, car.model, y)];
+            if (d?.score == null) return null;
+            const url = d.url ?? `https://autoreliabilityindex.com/${this.toAscii(car.make).toLowerCase().replace(/ /g, '-')}/${this.toAscii(car.model).toLowerCase().replace(/ /g, '-')}/${y}`;
+            return { year: y, score: d.score, url };
+          }).filter(Boolean);
         },
 
         setSpeedUnit(unit) {
