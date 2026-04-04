@@ -238,6 +238,7 @@ def build_html(vehicles, etag=None, timestamp=None, favicon=None):
   <span class="sep">|</span>
 
   <span class="toggle" id="toggle-all-trims">All trims</span>
+  <span class="toggle" id="toggle-all-speeds">All speeds</span>
   <span class="toggle" data-field="acc_resumes_from_stop">ACC from stop</span>
   <span class="toggle" data-field="traffic_light_support">Traffic lights</span>
   <span class="toggle" data-field="no_tight_turns" data-neg>No tight turn warning</span>
@@ -406,6 +407,14 @@ document.getElementById('toggle-all-trims').addEventListener('click', function()
   const active = !this.classList.contains('active');
   this.classList.toggle('active', active);
   sel.value = active ? 'All' : '';
+  render();
+}});
+
+document.getElementById('toggle-all-speeds').addEventListener('click', function() {{
+  const sel = document.getElementById('fcol-min_speed_mph');
+  const active = !this.classList.contains('active');
+  this.classList.toggle('active', active);
+  sel.value = active ? '0' : '';
   render();
 }});
 
