@@ -34,11 +34,17 @@
   </div>
 
   <!-- Active filter chips -->
-  <div class="mb-4 flex flex-wrap gap-2" x-show="activeFilters.length > 0">
+  <div class="mb-4 flex flex-wrap gap-2" x-show="activeFilters.length > 0 || activeSpeedFilters.length > 0">
     <template x-for="f in activeFilters" :key="f.key + ':' + f.val">
       <span class="inline-flex items-center gap-1 rounded-full bg-blue-100 px-3 py-1 text-sm text-blue-800">
         <span x-text="columnLabel(f.key) + ': ' + f.val"></span>
         <button @click="removeFilter(f.key, f.val)" class="ml-1 font-bold leading-none hover:text-blue-600">&times;</button>
+      </span>
+    </template>
+    <template x-for="f in activeSpeedFilters" :key="f.key">
+      <span class="inline-flex items-center gap-1 rounded-full bg-blue-100 px-3 py-1 text-sm text-blue-800">
+        <span x-text="f.label"></span>
+        <button @click="clearFilter(f.key)" class="ml-1 font-bold leading-none hover:text-blue-600">&times;</button>
       </span>
     </template>
     <button
@@ -358,6 +364,20 @@ function carTable() {
         for (const val of selected) {
           result.push({ key, val });
         }
+      }
+      return result;
+    },
+
+    get activeSpeedFilters() {
+      const result = [];
+      for (const [key, range] of Object.entries(this.speedFilters)) {
+        if (!this.isSpeedFilterActive(key)) continue;
+        const col = this.columns.find(c => c.key === key);
+        const dataRange = this.speedRange(key);
+        const parts = [];
+        if (range.min !== null && range.min > dataRange.min) parts.push(`≥ ${this.formatSpeed(range.min)}`);
+        if (range.max !== null && range.max < dataRange.max) parts.push(`≤ ${this.formatSpeed(range.max)}`);
+        result.push({ key, label: `${col?.label ?? key}: ${parts.join(', ')}` });
       }
       return result;
     },
