@@ -309,6 +309,27 @@
                       class="text-blue-600 hover:underline text-xs">Search</a>
                   </template>
 
+                  <!-- carcomplaints seal -->
+                  <template x-if="col.cc_seal">
+                    <span>
+                      <template x-if="car.cc_seal">
+                        <span class="flex flex-col gap-0.5">
+                          <template x-for="s in car.cc_seal" :key="s.seal">
+                            <a :href="ccSealUrl(car, s.seal)" target="_blank" rel="noopener"
+                              class="text-xs font-medium hover:underline"
+                              :class="ccSealClass(s.seal)">
+                              <span x-text="ccSealShort(s.seal)"></span>
+                              <span class="text-gray-400 font-normal" x-text="' (' + s.years + ')'"></span>
+                            </a>
+                          </template>
+                        </span>
+                      </template>
+                      <template x-if="!car.cc_seal">
+                        <span class="text-gray-300">—</span>
+                      </template>
+                    </span>
+                  </template>
+
                   <!-- cargurus link -->
                   <template x-if="col.cargurus">
                     <span>
@@ -324,7 +345,7 @@
 
                   <!-- default string/number -->
                   <template
-                    x-if="!col.speed && !col.ebay && col.key !== 'support_type' && col.key !== 'years' && car[col.key] !== null && typeof car[col.key] !== 'boolean'">
+                    x-if="!col.speed && !col.ebay && !col.cargurus && !col.ari && !col.cc_seal && col.key !== 'support_type' && col.key !== 'years' && car[col.key] !== null && typeof car[col.key] !== 'boolean'">
                     <span x-text="car[col.key]"></span>
                   </template>
 
@@ -348,12 +369,37 @@
   <script type="application/json" id="cars-data">{{ cars_json }}</script>
   <script type="application/json" id="cargurus-cache">{{ cargurus_cache_json }}</script>
   <script type="application/json" id="ari-cache">{{ ari_cache_json }}</script>
+  <script type="application/json" id="cc-cache">{{ cc_cache_json }}</script>
   <script>
     function carTable() {
-      const filterableCols = ['make', 'model', 'support_type', 'openpilot_longitudinal', 'merged', 'auto_resume', 'good_steering_torque', 'years', 'package', 'ari'];
+      const filterableCols = ['make', 'model', 'support_type', 'openpilot_longitudinal', 'merged', 'auto_resume', 'good_steering_torque', 'years', 'package', 'ari', 'cc_seal'];
 
       return {
-        cars: JSON.parse(document.getElementById('cars-data').textContent),
+        cars: (() => {
+          const ccCache = JSON.parse(document.getElementById('cc-cache').textContent);
+          const toAscii = str => str.normalize('NFKD').replace(/[\u0300-\u036f]/g, '').replace(/[^\x00-\x7F]/g, '');
+          const ccKey = (make, model, year) => `${toAscii(make)}|${toAscii(model)}|${year}`;
+          const fmtRanges = years => {
+            const ranges = [];
+            let start = years[0], end = years[0];
+            for (let i = 1; i < years.length; i++) {
+              if (years[i] === end + 1) { end = years[i]; }
+              else { ranges.push(start === end ? `${start}` : `${start}–${String(end).slice(-2)}`); start = end = years[i]; }
+            }
+            ranges.push(start === end ? `${start}` : `${start}–${String(end).slice(-2)}`);
+            return ranges.join(', ');
+          };
+          return JSON.parse(document.getElementById('cars-data').textContent).map(car => {
+            const years = [...new Set(car.years)].sort((a, b) => a - b);
+            const bySeal = {};
+            for (const y of years) {
+              const seal = ccCache[ccKey(car.make, car.model, y)]?.seal;
+              if (seal) (bySeal[seal] ??= []).push(y);
+            }
+            const seals = Object.entries(bySeal).map(([seal, ys]) => ({ seal, years: fmtRanges(ys) }));
+            return { ...car, cc_seal: seals.length > 0 ? seals : null };
+          });
+        })(),
         sortCol: null,
         sortDir: 'asc',
         filters: Object.fromEntries(filterableCols.map(k => [k, []])),
@@ -366,6 +412,7 @@
         },
         carGurusCache: JSON.parse(document.getElementById('cargurus-cache').textContent),
         ariCache: JSON.parse(document.getElementById('ari-cache').textContent),
+        ccCache: JSON.parse(document.getElementById('cc-cache').textContent),
         ariFilter: { min: null, max: null },
 
         columns: [
@@ -381,6 +428,7 @@
           { key: 'min_steer_speed', label: 'Min Steer', speed: true },
           { key: 'min_enable_speed', label: 'Min Enable', speed: true },
           { key: 'ari', label: 'Reliability', ari: true },
+          { key: 'cc_seal', label: 'CC Rating', cc_seal: true, filterable: true },
           { key: 'ebay', label: 'eBay', ebay: true },
           { key: 'cargurus', label: 'CarGurus', cargurus: true },
         ].map(col => ({ ...col, filterable: col.filterable ?? filterableCols.includes(col.key) })),
@@ -389,7 +437,10 @@
           let result = this.cars.filter(car => {
             for (const [key, selected] of Object.entries(this.filters)) {
               if (selected.length === 0) continue;
-              if (Array.isArray(car[key])) {
+              if (key === 'cc_seal') {
+                const seals = (car.cc_seal ?? []).map(s => s.seal);
+                if (!seals.some(v => selected.includes(v))) return false;
+              } else if (Array.isArray(car[key])) {
                 if (!car[key].some(v => selected.includes(v))) return false;
               } else {
                 if (!selected.some(s => String(s) === String(car[key]))) return false;
@@ -444,7 +495,10 @@
             for (const [key, selected] of Object.entries(this.filters)) {
               if (key === excludeColKey) continue;
               if (selected.length === 0) continue;
-              if (Array.isArray(car[key])) {
+              if (key === 'cc_seal') {
+                const seals = (car.cc_seal ?? []).map(s => s.seal);
+                if (!seals.some(v => selected.includes(v))) return false;
+              } else if (Array.isArray(car[key])) {
                 if (!car[key].some(v => selected.includes(v))) return false;
               } else {
                 if (!selected.some(s => String(s) === String(car[key]))) return false;
@@ -464,14 +518,18 @@
           });
         },
 
+        extractVals(colKey, cars) {
+          if (colKey === 'cc_seal') return cars.flatMap(c => (c.cc_seal ?? []).map(s => s.seal));
+          return cars.flatMap(c => Array.isArray(c[colKey]) ? c[colKey] : [c[colKey]]);
+        },
+
         allUniqueValues(colKey) {
-          const vals = this.cars.flatMap(c => Array.isArray(c[colKey]) ? c[colKey] : [c[colKey]]);
+          const vals = this.extractVals(colKey, this.cars);
           return [...new Set(vals)].sort((a, b) => typeof a === 'number' ? a - b : String(a).localeCompare(String(b)));
         },
 
         uniqueValues(colKey) {
-          const source = this.filteredCarsExcluding(colKey);
-          const vals = source.flatMap(c => Array.isArray(c[colKey]) ? c[colKey] : [c[colKey]]);
+          const vals = this.extractVals(colKey, this.filteredCarsExcluding(colKey));
           return [...new Set(vals)].sort((a, b) => typeof a === 'number' ? a - b : String(a).localeCompare(String(b)));
         },
 
@@ -703,6 +761,31 @@
 
         toAscii(str) {
           return str.normalize('NFKD').replace(/[\u0300-\u036f]/g, '').replace(/[^\x00-\x7F]/g, '');
+        },
+
+        ccSealUrl(car, seal) {
+          const slug = s => this.toAscii(s).replace(/ /g, '_');
+          const years = [...new Set(car.years)].sort((a, b) => a - b);
+          const year = years.find(y => this.ccCache[`${this.toAscii(car.make)}|${this.toAscii(car.model)}|${y}`]?.seal === seal) ?? years[years.length - 1];
+          return `https://www.carcomplaints.com/${slug(car.make)}/${slug(car.model)}/${year}/`;
+        },
+
+        ccSealShort(seal) {
+          return {
+            'Seal of Awesome': 'Best',
+            'Seal of Pretty Good': 'Good',
+            'Beware of the Clunker': 'Bad',
+            'Avoid Like The Plague': 'Worst',
+          }[seal] ?? seal;
+        },
+
+        ccSealClass(seal) {
+          return {
+            'Seal of Awesome': 'text-green-600',
+            'Seal of Pretty Good': 'text-lime-600',
+            'Beware of the Clunker': 'text-orange-500',
+            'Avoid Like The Plague': 'text-red-600',
+          }[seal] ?? 'text-gray-500';
         },
 
         carGurusKey(car) {

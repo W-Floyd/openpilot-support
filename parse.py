@@ -293,7 +293,174 @@ def fetch_ari_cache(cars: list[dict]) -> dict:
     return cache
 
 
-def generate_html(cars: list[dict], cargurus_js_cache: dict | None = None, ari_cache: dict | None = None) -> str:
+CC_CACHE_FILE = os.path.join(os.path.dirname(__file__), ".carcomplaints_cache.json")
+
+
+CC_SEALS = {
+    "best.png": "Seal of Awesome",
+    "good.png": "Seal of Pretty Good",
+    "bad.png": "Beware of the Clunker",
+    "worst.png": "Avoid Like The Plague",
+}
+
+
+class CcParser(html.parser.HTMLParser):
+    """Extracts subnav counts, seal, and JSON-LD from a carcomplaints.com page."""
+
+    def __init__(self):
+        super().__init__()
+        self._in_ld = False
+        self._ld_buf = ""
+        self.ld_blocks: list[str] = []
+        self._current_li_id: str | None = None
+        self._in_cnt = False
+        self.counts: dict[str, str] = {}
+        self.seal: str | None = None
+
+    def handle_starttag(self, tag, attrs):
+        attrs_dict = dict(attrs)
+        if tag == "script" and attrs_dict.get("type") == "application/ld+json":
+            self._in_ld = True
+            self._ld_buf = ""
+        elif tag == "li" and attrs_dict.get("id"):
+            self._current_li_id = attrs_dict["id"]
+        elif tag == "span" and attrs_dict.get("class") == "cnt" and self._current_li_id:
+            self._in_cnt = True
+        elif tag == "img" and self.seal is None:
+            src = attrs_dict.get("src", "")
+            filename = src.rsplit("/", 1)[-1]
+            if filename in CC_SEALS:
+                self.seal = CC_SEALS[filename]
+
+    def handle_endtag(self, tag):
+        if tag == "script" and self._in_ld:
+            self.ld_blocks.append(self._ld_buf)
+            self._in_ld = False
+        elif tag == "span" and self._in_cnt:
+            self._in_cnt = False
+        elif tag == "li":
+            self._current_li_id = None
+
+    def handle_data(self, data):
+        if self._in_ld:
+            self._ld_buf += data
+        elif self._in_cnt and self._current_li_id:
+            self.counts[self._current_li_id] = data.strip()
+
+
+def _parse_cc_count(val: str) -> int | None:
+    """Convert '8K', '262', etc. to int."""
+    val = val.strip().upper()
+    if not val:
+        return None
+    try:
+        if val.endswith("K"):
+            return int(float(val[:-1]) * 1000)
+        return int(val)
+    except ValueError:
+        return None
+
+
+def cc_slug(text: str) -> str:
+    return to_ascii(text).replace(" ", "_")
+
+
+def cc_url(make: str, model: str, year: int) -> str:
+    return f"https://www.carcomplaints.com/{cc_slug(make)}/{cc_slug(model)}/{year}/"
+
+
+def cc_cache_key(make: str, model: str, year: int) -> str:
+    return f"{to_ascii(make)}|{to_ascii(model)}|{year}"
+
+
+def fetch_cc_response(make: str, model: str, year: int) -> dict | None:
+    url = cc_url(make, model, year)
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+        with urllib.request.urlopen(req, timeout=10) as resp:
+            body = resp.read().decode("utf-8", errors="replace")
+    except Exception as e:
+        print(f"  Error fetching '{url}': {e}", file=sys.stderr)
+        return None
+
+    p = CcParser()
+    p.feed(body)
+
+    complaints = _parse_cc_count(p.counts.get("prbNav", ""))
+    recalls = _parse_cc_count(p.counts.get("rclNav", ""))
+    tsbs = _parse_cc_count(p.counts.get("tsbNav", ""))
+    investigations = _parse_cc_count(p.counts.get("invNav", ""))
+
+    # Top problems from JSON-LD ItemList
+    top_problems: list[str] = []
+    for raw in p.ld_blocks:
+        try:
+            data = json.loads(raw)
+        except json.JSONDecodeError:
+            continue
+        items = data if isinstance(data, list) else [data]
+        for item in items:
+            if item.get("@type") == "ItemList":
+                for el in item.get("itemListElement", []):
+                    headline = el.get("headline", "")
+                    if headline:
+                        top_problems.append(headline)
+
+    if complaints is None and not top_problems:
+        return None
+
+    return {
+        "url": url,
+        "complaints": complaints,
+        "recalls": recalls,
+        "tsbs": tsbs,
+        "investigations": investigations,
+        "top_problems": top_problems,
+        "seal": p.seal,
+    }
+
+
+def load_cc_cache() -> dict:
+    if os.path.exists(CC_CACHE_FILE):
+        try:
+            with open(CC_CACHE_FILE) as f:
+                return json.load(f)
+        except (json.JSONDecodeError, ValueError):
+            pass
+    return {}
+
+
+def save_cc_cache(cache: dict) -> None:
+    with open(CC_CACHE_FILE, "w") as f:
+        json.dump(dict(sorted(cache.items())), f, indent=2)
+
+
+def fetch_cc_cache(cars: list[dict]) -> dict:
+    """Fetch CarComplaints data for all car/year combinations, updating the cache file."""
+    cache = load_cc_cache()
+    pending = [
+        (car["make"], car["model"], year)
+        for car in cars
+        for year in sorted(set(car["years"]))
+        if cc_cache_key(car["make"], car["model"], year) not in cache
+    ]
+    total = len(pending)
+
+    def fetch_one(entry: tuple[str, str, int], idx: int) -> tuple[str, object]:
+        make, model, year = entry
+        print(f"  [{idx}/{total}] Fetching CarComplaints: {make} {model} {year}", file=sys.stderr)
+        return cc_cache_key(make, model, year), fetch_cc_response(make, model, year)
+
+    with concurrent.futures.ThreadPoolExecutor(max_workers=5) as pool:
+        futures = {pool.submit(fetch_one, entry, i + 1): entry for i, entry in enumerate(pending)}
+        for future in concurrent.futures.as_completed(futures):
+            key, result = future.result()
+            cache[key] = result
+            save_cc_cache(cache)
+    return cache
+
+
+def generate_html(cars: list[dict], cargurus_js_cache: dict | None = None, ari_cache: dict | None = None, cc_cache: dict | None = None) -> str:
     here = os.path.dirname(__file__)
     env = jinja2.Environment(loader=jinja2.FileSystemLoader(here))
     template = env.get_template("template.html")
@@ -301,6 +468,7 @@ def generate_html(cars: list[dict], cargurus_js_cache: dict | None = None, ari_c
         cars_json=json.dumps(cars, separators=(",", ":")),
         cargurus_cache_json=json.dumps(cargurus_js_cache or {}, separators=(",", ":")),
         ari_cache_json=json.dumps(ari_cache or {}, separators=(",", ":")),
+        cc_cache_json=json.dumps(cc_cache or {}, separators=(",", ":")),
     )
     return minify_html.minify(rendered, minify_js=True, minify_css=True)
 
@@ -333,6 +501,11 @@ def main():
         action="store_true",
         help="Skip fetching Auto Reliability Index data for all cars.",
     )
+    parser.add_argument(
+        "--no-fetch-cc",
+        action="store_true",
+        help="Skip fetching CarComplaints data for all cars.",
+    )
     args = parser.parse_args()
 
     print("Loading car docs...", file=sys.stderr)
@@ -355,6 +528,12 @@ def main():
     else:
         ari_cache = load_ari_cache()
 
+    if not args.no_fetch_cc:
+        print("Fetching CarComplaints data...", file=sys.stderr)
+        cc_cache = fetch_cc_cache(cars)
+    else:
+        cc_cache = load_cc_cache()
+
     if args.json_out:
         os.makedirs(os.path.dirname(os.path.abspath(args.json_out)), exist_ok=True)
         with open(args.json_out, "w") as f:
@@ -364,7 +543,7 @@ def main():
     if args.html_out:
         os.makedirs(os.path.dirname(os.path.abspath(args.html_out)), exist_ok=True)
         with open(args.html_out, "w") as f:
-            f.write(generate_html(cars, cargurus_js_cache, ari_cache))
+            f.write(generate_html(cars, cargurus_js_cache, ari_cache, cc_cache))
         print(f"Written to {args.html_out}", file=sys.stderr)
 
     if args.serve:
