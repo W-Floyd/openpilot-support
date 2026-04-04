@@ -409,7 +409,7 @@
   <script type="application/json" id="cc-cache">{{ cc_cache_json }}</script>
   <script>
     function carTable() {
-      const filterableCols = ['make', 'model', 'support_type', 'openpilot_longitudinal', 'merged', 'auto_resume', 'good_steering_torque', 'years', 'package', 'ari', 'cc_seal'];
+      const filterableCols = ['make', 'model', 'support_type', 'openpilot_longitudinal', 'merged', 'auto_resume', 'good_steering_torque', 'years', 'package', 'ari', 'cc_seal', 'min_steer_speed', 'min_enable_speed'];
 
       return {
         cars: (() => {
