@@ -1,0 +1,11 @@
+[project]
+name = "openpilot-support"
+version = "0.1.0"
+requires-python = ">=3.11,<3.13"
+dependencies = [
+  "jinja2>=3",
+  "opendbc[docs]",
+]
+
+[tool.uv.sources]
+opendbc = { path = "openpilot/opendbc_repo" }
