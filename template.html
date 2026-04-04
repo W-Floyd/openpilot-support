@@ -230,7 +230,7 @@
                                 class="flex cursor-pointer items-center gap-2 rounded px-2 py-1.5 text-gray-700 hover:bg-gray-50">
                                 <input type="checkbox" :checked="isFilterActive(col.key, val)"
                                   @change="toggleFilter(col.key, val)" class="rounded border-gray-300 text-blue-600">
-                                <span class="text-sm" x-text="val"></span>
+                                <span class="text-sm" x-text="col.cc_seal ? ccSealShort(val) : val"></span>
                               </label>
                             </template>
                           </div>
@@ -473,6 +473,11 @@
                 const sa = this.ariScore(a), sb = this.ariScore(b);
                 av = sa !== null ? (sa.min + sa.max) / 2 : null;
                 bv = sb !== null ? (sb.min + sb.max) / 2 : null;
+              } else if (this.sortCol === 'cc_seal') {
+                const order = ['Seal of Awesome', 'Seal of Pretty Good', 'Beware of the Clunker', 'Avoid Like The Plague'];
+                const rank = seals => seals?.length ? Math.min(...seals.map(s => { const i = order.indexOf(s.seal); return i === -1 ? order.length : i; })) : order.length + 1;
+                av = rank(a.cc_seal);
+                bv = rank(b.cc_seal);
               } else {
                 av = a[this.sortCol];
                 bv = b[this.sortCol];
