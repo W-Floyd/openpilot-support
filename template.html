@@ -375,9 +375,14 @@
                     </span>
                   </template>
 
+                  <!-- model with styled parentheticals -->
+                  <template x-if="col.key === 'model' && car[col.key] !== null">
+                    <span x-html="car[col.key].replace(/(\s*\([^)]*\))/g, '<span class=\'text-[0.8em] text-gray-400\'>$1</span>')"></span>
+                  </template>
+
                   <!-- default string/number -->
                   <template
-                    x-if="!col.speed && !col.ebay && !col.cargurus && !col.ari && !col.cc_seal && col.key !== 'support_type' && col.key !== 'years' && car[col.key] !== null && typeof car[col.key] !== 'boolean'">
+                    x-if="!col.speed && !col.ebay && !col.cargurus && !col.ari && !col.cc_seal && col.key !== 'support_type' && col.key !== 'years' && col.key !== 'model' && car[col.key] !== null && typeof car[col.key] !== 'boolean'">
                     <span x-text="car[col.key]"></span>
                   </template>
 
