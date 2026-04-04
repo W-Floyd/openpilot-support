@@ -458,7 +458,14 @@
 
         presets: [
           {
-            label: 'All features', filters: { auto_resume: [true], good_steering_torque: [true], openpilot_longitudinal: ["!Stock"], support_type: ["!Not compatible", "!Dashcam mode"] },
+            label: 'All features',
+            filters: {
+              auto_resume: [true],
+              good_steering_torque: [true],
+              openpilot_longitudinal: ["!Stock"],
+              support_type: ["!Not compatible", "!Dashcam mode"],
+              package: ["^All"]
+            },
             speedFilters: {
               min_steer_speed: { min: null, max: 'dataMin' },
               min_enable_speed: { min: null, max: 'dataMin' },
@@ -480,8 +487,11 @@
             this.clearAllFilters();
             for (const [key, vals] of Object.entries(preset.filters)) {
               const excluded = vals.filter(v => String(v).startsWith('!')).map(v => String(v).slice(1));
+              const prefixed = vals.filter(v => String(v).startsWith('^')).map(v => String(v).slice(1));
               if (excluded.length > 0) {
                 this.filters[key] = this.allUniqueValues(key).filter(v => !excluded.includes(String(v)));
+              } else if (prefixed.length > 0) {
+                this.filters[key] = this.allUniqueValues(key).filter(v => prefixed.some(p => String(v).startsWith(p)));
               } else {
                 this.filters[key] = [...vals];
               }
@@ -497,8 +507,14 @@
         isPresetActive(preset) {
           const filtersMatch = Object.entries(preset.filters).every(([key, vals]) => {
             const excluded = vals.filter(v => String(v).startsWith('!')).map(v => String(v).slice(1));
+            const prefixed = vals.filter(v => String(v).startsWith('^')).map(v => String(v).slice(1));
             if (excluded.length > 0) {
               const expected = this.allUniqueValues(key).filter(v => !excluded.includes(String(v)));
+              return expected.length === this.filters[key]?.length &&
+                expected.every(v => this.filters[key].includes(v));
+            }
+            if (prefixed.length > 0) {
+              const expected = this.allUniqueValues(key).filter(v => prefixed.some(p => String(v).startsWith(p)));
               return expected.length === this.filters[key]?.length &&
                 expected.every(v => this.filters[key].includes(v));
             }
