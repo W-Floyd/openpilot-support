@@ -32,9 +32,10 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
       - name: Checkout openpilot (shallow)
         run: |
+          git config --global url."https://github.com/".insteadOf "git@github.com:"
           git submodule update --init --depth 1 openpilot
           git -C openpilot submodule update --init --depth 1 opendbc_repo
       - uses: astral-sh/setup-uv@v5
