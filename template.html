@@ -258,7 +258,7 @@
   <script type="application/json" id="cars-data">{{ cars_json }}</script>
   <script>
     function carTable() {
-      const filterableCols = ['make', 'model', 'support_type', 'openpilot_longitudinal', 'merged', 'auto_resume', 'good_steering_torque', 'years'];
+      const filterableCols = ['make', 'model', 'support_type', 'openpilot_longitudinal', 'merged', 'auto_resume', 'good_steering_torque', 'years', 'package'];
 
       return {
         cars: JSON.parse(document.getElementById('cars-data').textContent),
@@ -274,18 +274,18 @@
         },
 
         columns: [
-          { key: 'make', label: 'Make', filterable: true },
-          { key: 'model', label: 'Model', filterable: true },
-          { key: 'years', label: 'Years', filterable: true },
-          { key: 'package', label: 'Package', filterable: false },
-          { key: 'support_type', label: 'Support Level', filterable: true },
-          { key: 'merged', label: 'Merged', filterable: true },
-          { key: 'openpilot_longitudinal', label: 'Longitudinal', filterable: true },
-          { key: 'auto_resume', label: 'Auto Resume', filterable: true },
-          { key: 'good_steering_torque', label: 'Good Torque', filterable: true },
-          { key: 'min_steer_speed', label: 'Min Steer', filterable: true, speed: true },
-          { key: 'min_enable_speed', label: 'Min Enable', filterable: true, speed: true },
-        ],
+          { key: 'make', label: 'Make' },
+          { key: 'model', label: 'Model' },
+          { key: 'years', label: 'Years' },
+          { key: 'package', label: 'Package' },
+          { key: 'support_type', label: 'Support Level' },
+          { key: 'merged', label: 'Merged' },
+          { key: 'openpilot_longitudinal', label: 'Longitudinal' },
+          { key: 'auto_resume', label: 'Auto Resume' },
+          { key: 'good_steering_torque', label: 'Good Torque' },
+          { key: 'min_steer_speed', label: 'Min Steer', speed: true },
+          { key: 'min_enable_speed', label: 'Min Enable', speed: true },
+        ].map(col => ({ ...col, filterable: filterableCols.includes(col.key) })),
 
         get filteredCars() {
           let result = this.cars.filter(car => {
