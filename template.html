@@ -33,6 +33,19 @@
     </div>
   </div>
 
+  <!-- Presets -->
+  <div class="mb-3 flex flex-wrap items-center gap-2">
+    <span class="text-xs font-medium text-gray-400 uppercase tracking-wide">Presets</span>
+    <template x-for="preset in presets" :key="preset.label">
+      <button
+        @click="applyPreset(preset)"
+        :class="isPresetActive(preset) ? 'bg-gray-800 text-white' : 'bg-white text-gray-600 hover:bg-gray-100 border border-gray-200'"
+        class="rounded-full px-3 py-1 text-sm font-medium transition-colors shadow-sm"
+        x-text="preset.label"
+      ></button>
+    </template>
+  </div>
+
   <!-- Active filter chips -->
   <div class="mb-4 flex flex-wrap gap-2" x-show="activeFilters.length > 0 || activeSpeedFilters.length > 0">
     <template x-for="f in activeFilters" :key="f.key + ':' + f.val">
@@ -448,6 +461,28 @@ function carTable() {
     removeFilter(key, val) {
       const idx = this.filters[key].indexOf(val);
       if (idx !== -1) this.filters[key].splice(idx, 1);
+    },
+
+    presets: [
+      { label: 'All featured', filters: { auto_resume: [true], good_steering_torque: [true] } },
+    ],
+
+    applyPreset(preset) {
+      if (this.isPresetActive(preset)) {
+        this.clearAllFilters();
+      } else {
+        this.clearAllFilters();
+        for (const [key, vals] of Object.entries(preset.filters)) {
+          this.filters[key] = [...vals];
+        }
+      }
+    },
+
+    isPresetActive(preset) {
+      return Object.entries(preset.filters).every(([key, vals]) =>
+        vals.length === this.filters[key]?.length &&
+        vals.every(v => this.filters[key].includes(v))
+      );
     },
 
     columnLabel(key) {
