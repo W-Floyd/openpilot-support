@@ -232,9 +232,15 @@
                     <span x-text="formatSpeed(car[col.key])"></span>
                   </template>
 
+                  <!-- ebay link -->
+                  <template x-if="col.ebay">
+                    <a :href="ebayUrl(car)" target="_blank" rel="noopener"
+                      class="text-blue-600 hover:underline text-xs">Search</a>
+                  </template>
+
                   <!-- default string/number -->
                   <template
-                    x-if="!col.speed && col.key !== 'support_type' && col.key !== 'years' && car[col.key] !== null && typeof car[col.key] !== 'boolean'">
+                    x-if="!col.speed && !col.ebay && col.key !== 'support_type' && col.key !== 'years' && car[col.key] !== null && typeof car[col.key] !== 'boolean'">
                     <span x-text="car[col.key]"></span>
                   </template>
 
@@ -285,6 +291,7 @@
           { key: 'good_steering_torque', label: 'Good Torque' },
           { key: 'min_steer_speed', label: 'Min Steer', speed: true },
           { key: 'min_enable_speed', label: 'Min Enable', speed: true },
+          { key: 'ebay', label: 'eBay', ebay: true },
         ].map(col => ({ ...col, filterable: filterableCols.includes(col.key) })),
 
         get filteredCars() {
@@ -579,6 +586,12 @@
           }
           ranges.push(fmt(start, end));
           return ranges.join(', ');
+        },
+
+        ebayUrl(car) {
+          const years = [...new Set(car.years)].sort((a, b) => a - b).join(',');
+          const query = encodeURIComponent(`${car.make} ${car.model.trim()} (${years})`);
+          return `https://www.ebay.com/sch/6001/i.html?_nkw=${query}&_sop=2`;
         },
 
         supportTypeClass(supportType) {
