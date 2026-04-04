@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 import argparse
+import concurrent.futures
+import html.parser
 import http.server
 import json
 import math
 import os
 import sys
-import concurrent.futures
-import html.parser
 import unicodedata
 import urllib.parse
 import urllib.request
@@ -148,7 +148,9 @@ def save_cargurus_cache(cache: dict) -> None:
 def fetch_cargurus_cache(cars: list[dict]) -> dict:
     """Fetch CarGurus data for all cars, updating the cache file. Returns raw response cache."""
     cache = load_cargurus_cache()
-    pending = [q for car in cars if (q := cargurus_query(car)) is not None and q not in cache]
+    pending = [
+        q for car in cars if (q := cargurus_query(car)) is not None and q not in cache
+    ]
     total = len(pending)
 
     def fetch_one(query: str, idx: int) -> tuple[str, object]:
@@ -285,7 +287,10 @@ def fetch_ari_cache(cars: list[dict]) -> dict:
         return ari_cache_key(make, model, year), fetch_ari_response(make, model, year)
 
     with concurrent.futures.ThreadPoolExecutor(max_workers=5) as pool:
-        futures = {pool.submit(fetch_one, entry, i + 1): entry for i, entry in enumerate(pending)}
+        futures = {
+            pool.submit(fetch_one, entry, i + 1): entry
+            for i, entry in enumerate(pending)
+        }
         for future in concurrent.futures.as_completed(futures):
             key, result = future.result()
             cache[key] = result
@@ -448,11 +453,17 @@ def fetch_cc_cache(cars: list[dict]) -> dict:
 
     def fetch_one(entry: tuple[str, str, int], idx: int) -> tuple[str, object]:
         make, model, year = entry
-        print(f"  [{idx}/{total}] Fetching CarComplaints: {make} {model} {year}", file=sys.stderr)
+        print(
+            f"  [{idx}/{total}] Fetching CarComplaints: {make} {model} {year}",
+            file=sys.stderr,
+        )
         return cc_cache_key(make, model, year), fetch_cc_response(make, model, year)
 
     with concurrent.futures.ThreadPoolExecutor(max_workers=5) as pool:
-        futures = {pool.submit(fetch_one, entry, i + 1): entry for i, entry in enumerate(pending)}
+        futures = {
+            pool.submit(fetch_one, entry, i + 1): entry
+            for i, entry in enumerate(pending)
+        }
         for future in concurrent.futures.as_completed(futures):
             key, result = future.result()
             cache[key] = result
@@ -460,7 +471,12 @@ def fetch_cc_cache(cars: list[dict]) -> dict:
     return cache
 
 
-def generate_html(cars: list[dict], cargurus_js_cache: dict | None = None, ari_cache: dict | None = None, cc_cache: dict | None = None) -> str:
+def generate_html(
+    cars: list[dict],
+    cargurus_js_cache: dict | None = None,
+    ari_cache: dict | None = None,
+    cc_cache: dict | None = None,
+) -> str:
     here = os.path.dirname(__file__)
     env = jinja2.Environment(loader=jinja2.FileSystemLoader(here))
     template = env.get_template("template.html")
