@@ -540,8 +540,8 @@
               let av, bv;
               if (this.sortCol === 'ari') {
                 const sa = this.ariScore(a), sb = this.ariScore(b);
-                av = sa !== null ? (sa.min + sa.max) / 2 : null;
-                bv = sb !== null ? (sb.min + sb.max) / 2 : null;
+                av = sa !== null ? (sa.min + sa.max) / 2 : 0;
+                bv = sb !== null ? (sb.min + sb.max) / 2 : 0;
               } else if (this.sortCol === 'cc_seal') {
                 const order = ['Seal of Awesome', 'Seal of Pretty Good', 'Beware of the Clunker', 'Avoid Like The Plague'];
                 const rank = seals => seals?.length ? Math.min(...seals.map(s => { const i = order.indexOf(s.seal); return i === -1 ? order.length : i; })) : order.length + 1;
