@@ -165,7 +165,7 @@
 <script type="application/json" id="cars-data">{{ cars_json }}</script>
 <script>
 function carTable() {
-  const filterableCols = ['make', 'support_type', 'openpilot_longitudinal', 'merged', 'auto_resume', 'good_steering_torque', 'years'];
+  const filterableCols = ['make', 'model', 'support_type', 'openpilot_longitudinal', 'merged', 'auto_resume', 'good_steering_torque', 'years'];
 
   return {
     cars: JSON.parse(document.getElementById('cars-data').textContent),
@@ -176,7 +176,7 @@ function carTable() {
 
     columns: [
       { key: 'make',                   label: 'Make',            filterable: true  },
-      { key: 'model',                  label: 'Model',           filterable: false },
+      { key: 'model',                  label: 'Model',           filterable: true  },
       { key: 'years',                  label: 'Years',           filterable: true  },
       { key: 'package',                label: 'Package',         filterable: false },
       { key: 'support_type',           label: 'Support Level',   filterable: true  },
