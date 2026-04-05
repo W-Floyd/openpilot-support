@@ -4,6 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>openpilot Supported Cars</title>
+        <!-- prettier-ignore -->
         <script>{{ tailwind_js }}</script>
     </head>
 
@@ -919,21 +920,16 @@
             </div>
         </div>
 
-        <script type="application/json" id="cars-data">
-            {{ cars_json }}
-        </script>
-        <script type="application/json" id="cargurus-cache">
-            {{ cargurus_cache_json }}
-        </script>
-        <script type="application/json" id="ari-cache">
-            {{ ari_cache_json }}
-        </script>
-        <script type="application/json" id="cc-cache">
-            {{ cc_cache_json }}
-        </script>
-        <script type="application/json" id="model-mappings">
-            {{ model_mappings_json }}
-        </script>
+        <!-- prettier-ignore -->
+        <script type="application/json" id="cars-data">{{ cars_json }}</script>
+        <!-- prettier-ignore -->
+        <script type="application/json" id="cargurus-cache">{{ cargurus_cache_json }}</script>
+        <!-- prettier-ignore -->
+        <script type="application/json" id="ari-cache">{{ ari_cache_json }}</script>
+        <!-- prettier-ignore -->
+        <script type="application/json" id="cc-cache">{{ cc_cache_json }}</script>
+        <!-- prettier-ignore -->
+        <script type="application/json" id="model-mappings">{{ model_mappings_json }}</script>
         <script>
             function carTable() {
                 const filterableCols = [
@@ -1967,6 +1963,7 @@
                 };
             }
         </script>
+        <!-- prettier-ignore -->
         <script>{{ alpine_js }}</script>
     </body>
 </html>
