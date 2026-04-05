@@ -491,6 +491,25 @@ def fetch_cc_cache(cars: list[dict]) -> dict:
     return cache
 
 
+ALPINE_JS_URL = "https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
+TAILWIND_JS_URL = "https://cdn.tailwindcss.com"
+ALPINE_CACHE_FILE = os.path.join(os.path.dirname(__file__), ".alpine_cache.js")
+TAILWIND_CACHE_FILE = os.path.join(os.path.dirname(__file__), ".tailwind_cache.js")
+
+
+def fetch_asset(url: str, cache_file: str) -> str:
+    if os.path.exists(cache_file):
+        with open(cache_file) as f:
+            return f.read()
+    print(f"Fetching {url} ...", file=sys.stderr)
+    req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+    with urllib.request.urlopen(req) as r:
+        content = r.read().decode()
+    with open(cache_file, "w") as f:
+        f.write(content)
+    return content
+
+
 def generate_html(
     cars: list[dict],
     cargurus_js_cache: dict | None = None,
@@ -511,6 +530,8 @@ def generate_html(
         ari_cache_json=json.dumps({k: v for k, v in (ari_cache or {}).items() if v is not None}, separators=(",", ":")),
         cc_cache_json=json.dumps({k: v for k, v in (cc_cache or {}).items() if v is not None}, separators=(",", ":")),
         model_mappings_json=model_mappings_json,
+        alpine_js=fetch_asset(ALPINE_JS_URL, ALPINE_CACHE_FILE),
+        tailwind_js=fetch_asset(TAILWIND_JS_URL, TAILWIND_CACHE_FILE),
     )
     if not minify:
         return rendered
