@@ -439,7 +439,8 @@ def cc_slug(text: str) -> str:
 
 
 def cc_url(make: str, model: str, year: int) -> str:
-    return f"https://www.carcomplaints.com/{cc_slug(make)}/{cc_slug(model)}/{year}/"
+    raw_model = CC_MODEL_MAPPINGS.get((make, model, year), model)
+    return f"https://www.carcomplaints.com/{cc_slug(make)}/{cc_slug(raw_model)}/{year}/"
 
 
 def cc_cache_key(make: str, model: str, year: int) -> str:
@@ -512,25 +513,10 @@ def fetch_cc_cache(cars: list[dict]) -> dict:
     """Fetch CarComplaints data for all car/year combinations, updating the cache file."""
     cache = load_cc_cache()
     pending = [
-        (
-            car["make"],
-            CC_MODEL_MAPPINGS.get(
-                (car["make"], car["model"], year),
-                car["model"],
-            ),
-            year,
-        )
+        (car["make"], car["model"], year)
         for car in cars
         for year in sorted(set(car["years"]))
-        if cc_cache_key(
-            car["make"],
-            CC_MODEL_MAPPINGS.get(
-                (car["make"], car["model"], year),
-                car["model"],
-            ),
-            year,
-        )
-        not in cache
+        if cc_cache_key(car["make"], car["model"], year) not in cache
     ]
     total = len(pending)
 

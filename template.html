@@ -1594,18 +1594,18 @@
                     },
 
                     ccSealUrl(car, seal) {
-                        const slug = (s) => this.toAscii(s).replace(/ /g, "_");
                         const years = [...new Set(car.years)].sort(
                             (a, b) => a - b,
                         );
-                        const year =
-                            years.find(
-                                (y) =>
-                                    this.ccCache[
-                                        `${this.toAscii(car.make)}|${this.toAscii(car.model)}|${y}`
-                                    ]?.seal === seal,
-                            ) ?? years[years.length - 1];
-                        return `https://www.carcomplaints.com/${slug(car.make)}/${slug(car.model)}/${year}/`;
+                        for (const y of years) {
+                            const d =
+                                this.ccCache[
+                                    `${this.toAscii(car.make)}|${this.toAscii(car.model)}|${y}`
+                                ];
+                            if (!d) continue;
+                            if (seal ? d.seal === seal : true) return d.url;
+                        }
+                        return null;
                     },
 
                     ccSealShort(seal) {
