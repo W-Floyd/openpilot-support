@@ -132,6 +132,11 @@
                 </div>
             </div>
 
+            <!-- Collapsible info section -->
+            <div
+                class="overflow-hidden transition-all duration-300 ease-in-out"
+                :class="scrolled ? 'max-h-0 opacity-0' : 'max-h-96 opacity-100'"
+            >
             <!-- Usage notes -->
             <div
                 class="mb-4 rounded-lg border border-blue-100 bg-blue-50 px-3 py-2 sm:px-4 sm:py-3 text-xs sm:text-sm text-blue-900"
@@ -159,6 +164,7 @@
                     ></button>
                 </template>
             </div>
+            </div><!-- end collapsible -->
 
             <!-- Active filter chips -->
             <div
@@ -215,7 +221,7 @@
             </div>
 
             <!-- Table -->
-            <div class="overflow-auto rounded-lg shadow flex-1 min-h-0">
+            <div class="overflow-auto rounded-lg shadow flex-1 min-h-0" @scroll="scrolled = $event.target.scrollTop > 20">
                 <table class="w-full text-sm text-left">
                     <thead class="sticky top-0 z-10 bg-gray-800 text-white">
                         <tr>
@@ -933,6 +939,7 @@
                             };
                         });
                     })(),
+                    scrolled: false,
                     sortCol: null,
                     sortDir: "asc",
                     filters: Object.fromEntries(
