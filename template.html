@@ -837,6 +837,9 @@
         <script type="application/json" id="cc-cache">
             {{ cc_cache_json }}
         </script>
+        <script type="application/json" id="model-mappings">
+            {{ model_mappings_json }}
+        </script>
         <script>
             function carTable() {
                 const filterableCols = [
@@ -943,6 +946,9 @@
                     ),
                     ccCache: JSON.parse(
                         document.getElementById("cc-cache").textContent,
+                    ),
+                    modelMappings: JSON.parse(
+                        document.getElementById("model-mappings").textContent,
                     ),
                     ariFilter: { min: null, max: null },
                     showSettings: false,
