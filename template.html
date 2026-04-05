@@ -1766,8 +1766,22 @@
                             years.length === 1
                                 ? `${years[0]}`
                                 : `(${years.join(",")})`;
+                        const mappedModels = [
+                            ...new Set(
+                                years.map(
+                                    (y) =>
+                                        this.modelMappings[
+                                            `${car.make}|${car.model}|${y}`
+                                        ] ?? car.model,
+                                ),
+                            ),
+                        ];
+                        const modelName =
+                            mappedModels.length === 1
+                                ? mappedModels[0]
+                                : car.model;
                         const query = encodeURIComponent(
-                            `${car.make} ${car.model.trim()} ${yearStr}`,
+                            `${car.make} ${modelName.trim()} ${yearStr}`,
                         );
                         return `https://www.ebay.com/sch/6001/i.html?_nkw=${query}&_sop=2`;
                     },
