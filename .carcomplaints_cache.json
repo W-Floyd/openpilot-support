@@ -4590,13 +4590,67 @@
   "Lexus|RX Hybrid|2020": null,
   "Lexus|RX Hybrid|2021": null,
   "Lexus|RX Hybrid|2022": null,
-  "Lexus|RX|2016": null,
-  "Lexus|RX|2017": null,
-  "Lexus|RX|2018": null,
-  "Lexus|RX|2019": null,
-  "Lexus|RX|2020": null,
-  "Lexus|RX|2021": null,
-  "Lexus|RX|2022": null,
+  "Lexus|RX350|2016": null,
+  "Lexus|RX350|2017": {
+    "url": "https://www.carcomplaints.com/Lexus/RX350/2017/",
+    "complaints": 126,
+    "recalls": 3,
+    "tsbs": 255,
+    "investigations": null,
+    "top_problems": [
+      "Ventilated Seats Don't Work Properly in the 2017 Lexus RX 350",
+      "Engine Shudders And Vibrates in the 2017 Lexus RX 350",
+      "&quot;Brake Pressure Low&quot; Warning in the 2017 Lexus RX 350"
+    ],
+    "seal": null
+  },
+  "Lexus|RX350|2018": {
+    "url": "https://www.carcomplaints.com/Lexus/RX350/2018/",
+    "complaints": 53,
+    "recalls": 1,
+    "tsbs": 199,
+    "investigations": null,
+    "top_problems": [
+      "Bad Struts in the 2018 Lexus RX 350",
+      "Dashboard Cracking in the 2018 Lexus RX 350",
+      "Driver-Side Mirror Vibrates At Speed in the 2018 Lexus RX 350"
+    ],
+    "seal": null
+  },
+  "Lexus|RX350|2019": {
+    "url": "https://www.carcomplaints.com/Lexus/RX350/2019/",
+    "complaints": 95,
+    "recalls": 4,
+    "tsbs": 177,
+    "investigations": null,
+    "top_problems": [
+      "Stalling in the 2019 Lexus RX 350"
+    ],
+    "seal": null
+  },
+  "Lexus|RX350|2020": {
+    "url": "https://www.carcomplaints.com/Lexus/RX350/2020/",
+    "complaints": 44,
+    "recalls": 2,
+    "tsbs": 140,
+    "investigations": null,
+    "top_problems": [
+      "Droning Noise Vibration in the 2020 Lexus RX 350"
+    ],
+    "seal": null
+  },
+  "Lexus|RX350|2021": {
+    "url": "https://www.carcomplaints.com/Lexus/RX350/2021/",
+    "complaints": 64,
+    "recalls": 2,
+    "tsbs": 141,
+    "investigations": null,
+    "top_problems": [
+      "Slides In Rain Up To 15 Feet After Braking in the 2021 Lexus RX 350"
+    ],
+    "seal": null
+  },
+  "Lexus|RX350|2022": null,
   "Lexus|UX Hybrid|2019": null,
   "Lexus|UX Hybrid|2020": null,
   "Lexus|UX Hybrid|2021": null,
