@@ -308,7 +308,7 @@ CC_SEALS = {
     "worst.png": "Avoid Like The Plague",
 }
 
-CC_MODEL_MAPPINGS: dict[tuple[str, str, int], str] = {
+MODEL_MAPPINGS: dict[tuple[str, str, int], str] = {
     ("Lexus", "ES", 1989): "ES250",
     ("Lexus", "ES", 1990): "ES250",
     ("Lexus", "ES", 1991): "ES300",
@@ -439,7 +439,7 @@ def cc_slug(text: str) -> str:
 
 
 def cc_url(make: str, model: str, year: int) -> str:
-    raw_model = CC_MODEL_MAPPINGS.get((make, model, year), model)
+    raw_model = MODEL_MAPPINGS.get((make, model, year), model)
     return f"https://www.carcomplaints.com/{cc_slug(make)}/{cc_slug(raw_model)}/{year}/"
 
 
@@ -549,11 +549,16 @@ def generate_html(
     here = os.path.dirname(__file__)
     env = jinja2.Environment(loader=jinja2.FileSystemLoader(here))
     template = env.get_template("template.html")
+    model_mappings_json = json.dumps(
+        {f"{make}|{model}|{year}": mapped for (make, model, year), mapped in MODEL_MAPPINGS.items()},
+        separators=(",", ":"),
+    )
     rendered = template.render(
         cars_json=json.dumps(cars, separators=(",", ":")),
         cargurus_cache_json=json.dumps(cargurus_js_cache or {}, separators=(",", ":")),
         ari_cache_json=json.dumps(ari_cache or {}, separators=(",", ":")),
         cc_cache_json=json.dumps(cc_cache or {}, separators=(",", ":")),
+        model_mappings_json=model_mappings_json,
     )
     return minify_html.minify(rendered, minify_js=True, minify_css=True)
 
