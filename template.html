@@ -1077,26 +1077,29 @@
                         { key: "make", label: "Make" },
                         { key: "model", label: "Model" },
                         { key: "years", label: "Years" },
-                        { key: "package", label: "Package" },
-                        { key: "support_type", label: "Support Level" },
+                        { key: "package", label: "Package", mobileLabel: "Pkg" },
+                        { key: "support_type", label: "Support Level", mobileLabel: "Support" },
                         { key: "merged", label: "Merged" },
                         {
                             key: "openpilot_longitudinal",
                             label: "Longitudinal",
+                            mobileLabel: "Long.",
                         },
-                        { key: "auto_resume", label: "Resume" },
-                        { key: "good_steering_torque", label: "Torque" },
+                        { key: "auto_resume", label: "Resume", mobileLabel: "Res." },
+                        { key: "good_steering_torque", label: "Torque", mobileLabel: "Torq." },
                         {
                             key: "min_steer_speed",
                             label: "Min Steer",
+                            mobileLabel: "Steer",
                             speed: true,
                         },
                         {
                             key: "min_enable_speed",
                             label: "Min Enable",
+                            mobileLabel: "Enable",
                             speed: true,
                         },
-                        { key: "ari", label: "Reliability", ari: true },
+                        { key: "ari", label: "Reliability", mobileLabel: "Rel.", ari: true },
                         {
                             key: "cc_seal",
                             label: "CC Rating",
@@ -1627,7 +1630,7 @@
                     },
 
                     colLabel(col) {
-                        return col.label;
+                        return (window.innerWidth < 640 && col.mobileLabel) ? col.mobileLabel : col.label;
                     },
 
                     convertFromMs(mps) {
