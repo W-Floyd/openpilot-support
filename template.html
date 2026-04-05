@@ -1264,7 +1264,7 @@
                     },
 
                     isFilterActive(colKey, val) {
-                        return this.filters[colKey].includes(val);
+                        return this.filters[colKey]?.includes(val) ?? false;
                     },
 
                     allVisibleSelected(colKey) {
@@ -1272,14 +1272,14 @@
                         return (
                             visible.length > 0 &&
                             visible.every((v) =>
-                                this.filters[colKey].includes(v),
+                                this.filters[colKey]?.includes(v),
                             )
                         );
                     },
 
                     someVisibleSelected(colKey) {
                         return this.filteredUniqueValues(colKey).some((v) =>
-                            this.filters[colKey].includes(v),
+                            this.filters[colKey]?.includes(v),
                         );
                     },
 
