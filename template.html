@@ -166,9 +166,9 @@
             </div>
             </div><!-- end collapsible -->
 
-            <!-- Active filter chips -->
+            <!-- Active filter chips (desktop) -->
             <div
-                class="mb-4 flex flex-wrap gap-2"
+                class="mb-4 hidden sm:flex flex-wrap gap-2"
                 x-show="activeFilters.length > 0 || activeSpeedFilters.length > 0 || isAriFilterActive()"
             >
                 <template x-for="f in activeFilters" :key="f.key + ':' + f.val">
@@ -218,6 +218,64 @@
                 >
                     Clear all
                 </button>
+            </div>
+
+            <!-- Active filter chips (mobile) -->
+            <div
+                class="mb-3 sm:hidden"
+                x-show="activeFilters.length > 0 || activeSpeedFilters.length > 0 || isAriFilterActive()"
+            >
+                <div class="flex items-center gap-2 min-w-0">
+                    <div class="flex items-center gap-2 overflow-x-auto pb-1 min-w-0">
+                        <template x-for="f in activeFilters" :key="f.key + ':' + f.val">
+                            <span
+                                class="inline-flex shrink-0 items-center gap-1 rounded-full bg-blue-100 px-3 py-1 text-sm text-blue-800"
+                            >
+                                <span x-text="columnLabel(f.key) + ': ' + f.val"></span>
+                                <button
+                                    @click="removeFilter(f.key, f.val)"
+                                    class="ml-1 font-bold leading-none hover:text-blue-600"
+                                >
+                                    &times;
+                                </button>
+                            </span>
+                        </template>
+                        <template x-for="f in activeSpeedFilters" :key="f.key">
+                            <span
+                                class="inline-flex shrink-0 items-center gap-1 rounded-full bg-blue-100 px-3 py-1 text-sm text-blue-800"
+                            >
+                                <span x-text="f.label"></span>
+                                <button
+                                    @click="clearFilter(f.key)"
+                                    class="ml-1 font-bold leading-none hover:text-blue-600"
+                                >
+                                    &times;
+                                </button>
+                            </span>
+                        </template>
+                        <template x-if="isAriFilterActive()">
+                            <span
+                                class="inline-flex shrink-0 items-center gap-1 rounded-full bg-blue-100 px-3 py-1 text-sm text-blue-800"
+                            >
+                                <span
+                                    x-text="`Reliability: ${ariFilter.min ?? 0}–${ariFilter.max ?? 100}`"
+                                ></span>
+                                <button
+                                    @click="clearFilter('ari')"
+                                    class="ml-1 font-bold leading-none hover:text-blue-600"
+                                >
+                                    &times;
+                                </button>
+                            </span>
+                        </template>
+                    </div>
+                    <button
+                        @click="clearAllFilters()"
+                        class="shrink-0 rounded-full bg-gray-200 px-3 py-1 text-sm text-gray-600 hover:bg-gray-300"
+                    >
+                        Clear all
+                    </button>
+                </div>
             </div>
 
             <!-- Table -->
