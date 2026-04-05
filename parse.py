@@ -308,6 +308,47 @@ CC_SEALS = {
     "worst.png": "Avoid Like The Plague",
 }
 
+CC_MODEL_MAPPINGS: dict[tuple[str, str, int], str] = {
+    ("Lexus", "ES", 1989): "ES250",
+    ("Lexus", "ES", 1990): "ES250",
+    ("Lexus", "ES", 1991): "ES300",
+    ("Lexus", "ES", 1992): "ES300",
+    ("Lexus", "ES", 1993): "ES300",
+    ("Lexus", "ES", 1994): "ES300",
+    ("Lexus", "ES", 1995): "ES300",
+    ("Lexus", "ES", 1996): "ES300",
+    ("Lexus", "ES", 1997): "ES300",
+    ("Lexus", "ES", 1998): "ES300",
+    ("Lexus", "ES", 1999): "ES300",
+    ("Lexus", "ES", 2000): "ES300",
+    ("Lexus", "ES", 2001): "ES300",
+    ("Lexus", "ES", 2002): "ES300",
+    ("Lexus", "ES", 2003): "ES330",
+    ("Lexus", "ES", 2004): "ES330",
+    ("Lexus", "ES", 2005): "ES330",
+    ("Lexus", "ES", 2006): "ES330",
+    ("Lexus", "ES", 2007): "ES350",
+    ("Lexus", "ES", 2008): "ES350",
+    ("Lexus", "ES", 2009): "ES350",
+    ("Lexus", "ES", 2010): "ES350",
+    ("Lexus", "ES", 2011): "ES350",
+    ("Lexus", "ES", 2012): "ES350",
+    ("Lexus", "ES", 2013): "ES350",
+    ("Lexus", "ES", 2014): "ES350",
+    ("Lexus", "ES", 2015): "ES350",
+    ("Lexus", "ES", 2016): "ES350",
+    ("Lexus", "ES", 2017): "ES350",
+    ("Lexus", "ES", 2018): "ES350",
+    ("Lexus", "ES", 2019): "ES350",
+    ("Lexus", "ES", 2020): "ES350",
+    ("Lexus", "ES", 2021): "ES350",
+    ("Lexus", "ES", 2022): "ES350",
+    ("Lexus", "ES", 2023): "ES350",
+    ("Lexus", "ES", 2024): "ES350",
+    ("Lexus", "ES", 2025): "ES350",
+    ("Lexus", "ES", 2026): "ES350",
+}
+
 
 class CcParser(html.parser.HTMLParser):
     """Extracts subnav counts, seal, and JSON-LD from a carcomplaints.com page."""
@@ -444,10 +485,25 @@ def fetch_cc_cache(cars: list[dict]) -> dict:
     """Fetch CarComplaints data for all car/year combinations, updating the cache file."""
     cache = load_cc_cache()
     pending = [
-        (car["make"], car["model"], year)
+        (
+            car["make"],
+            CC_MODEL_MAPPINGS.get(
+                (car["make"], car["model"], year),
+                car["model"],
+            ),
+            year,
+        )
         for car in cars
         for year in sorted(set(car["years"]))
-        if cc_cache_key(car["make"], car["model"], year) not in cache
+        if cc_cache_key(
+            car["make"],
+            CC_MODEL_MAPPINGS.get(
+                (car["make"], car["model"], year),
+                car["model"],
+            ),
+            year,
+        )
+        not in cache
     ]
     total = len(pending)
 

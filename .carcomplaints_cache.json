@@ -4495,15 +4495,52 @@
   "Lexus|ES Hybrid|2023": null,
   "Lexus|ES Hybrid|2024": null,
   "Lexus|ES Hybrid|2025": null,
-  "Lexus|ES|2017": null,
-  "Lexus|ES|2018": null,
-  "Lexus|ES|2019": null,
-  "Lexus|ES|2020": null,
-  "Lexus|ES|2021": null,
-  "Lexus|ES|2022": null,
-  "Lexus|ES|2023": null,
-  "Lexus|ES|2024": null,
-  "Lexus|ES|2025": null,
+  "Lexus|ES350|2017": {
+    "url": "https://www.carcomplaints.com/Lexus/ES350/2017/",
+    "complaints": 27,
+    "recalls": 1,
+    "tsbs": 147,
+    "investigations": null,
+    "top_problems": [],
+    "seal": null
+  },
+  "Lexus|ES350|2018": {
+    "url": "https://www.carcomplaints.com/Lexus/ES350/2018/",
+    "complaints": 12,
+    "recalls": 2,
+    "tsbs": 101,
+    "investigations": null,
+    "top_problems": [
+      "Car Accelerated, Lurched Forward On Its Own.  in the 2018 Lexus ES 350"
+    ],
+    "seal": null
+  },
+  "Lexus|ES350|2019": {
+    "url": "https://www.carcomplaints.com/Lexus/ES350/2019/",
+    "complaints": 52,
+    "recalls": 3,
+    "tsbs": 181,
+    "investigations": null,
+    "top_problems": [],
+    "seal": null
+  },
+  "Lexus|ES350|2020": null,
+  "Lexus|ES350|2021": null,
+  "Lexus|ES350|2022": {
+    "url": "https://www.carcomplaints.com/Lexus/ES350/2022/",
+    "complaints": 12,
+    "recalls": null,
+    "tsbs": 64,
+    "investigations": null,
+    "top_problems": [
+      "Trunk Suddenly Closes When Not Activatged in the 2022 Lexus ES 350",
+      "Backseat Seat Belt Alarms in the 2022 Lexus ES 350"
+    ],
+    "seal": null
+  },
+  "Lexus|ES350|2023": null,
+  "Lexus|ES350|2024": null,
+  "Lexus|ES350|2025": null,
   "Lexus|GS F|2016": {
     "url": "https://www.carcomplaints.com/Lexus/GS_F/2016/",
     "complaints": 2,
