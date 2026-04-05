@@ -1430,11 +1430,24 @@
                         this.ariFilter = { min: null, max: null };
                     },
 
+                    get activePresetKeys() {
+                        const filterKeys = new Set();
+                        const speedKeys = new Set();
+                        for (const preset of this.presets) {
+                            if (!this.isPresetActive(preset)) continue;
+                            for (const key of Object.keys(preset.filters)) filterKeys.add(key);
+                            for (const key of Object.keys(preset.speedFilters ?? {})) speedKeys.add(key);
+                        }
+                        return { filterKeys, speedKeys };
+                    },
+
                     get activeFilters() {
+                        const { filterKeys } = this.activePresetKeys;
                         const result = [];
                         for (const [key, selected] of Object.entries(
                             this.filters,
                         )) {
+                            if (filterKeys.has(key)) continue;
                             for (const val of selected) {
                                 result.push({ key, val });
                             }
@@ -1443,10 +1456,12 @@
                     },
 
                     get activeSpeedFilters() {
+                        const { speedKeys } = this.activePresetKeys;
                         const result = [];
                         for (const [key, range] of Object.entries(
                             this.speedFilters,
                         )) {
+                            if (speedKeys.has(key)) continue;
                             if (!this.isSpeedFilterActive(key)) continue;
                             const col = this.columns.find((c) => c.key === key);
                             const dataRange = this.speedRange(key);
