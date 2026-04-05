@@ -718,14 +718,14 @@
                                                     >
                                                         <template
                                                             x-for="row in ccYearRows(car)"
-                                                            :key="row.year"
+                                                            :key="row.key"
                                                         >
                                                             <div
                                                                 class="flex items-baseline gap-1.5 px-3 py-0.5"
                                                             >
                                                                 <span
-                                                                    class="w-9 shrink-0 font-medium text-gray-700"
-                                                                    x-text="row.year"
+                                                                    class="shrink-0 font-medium text-gray-700"
+                                                                    x-text="row.rawModel ? row.year + ' (' + row.rawModel + ')' : row.year"
                                                                 ></span>
                                                                 <span
                                                                     class="tabular-nums text-red-500"
@@ -863,13 +863,24 @@
                         const ccCache = JSON.parse(
                             document.getElementById("cc-cache").textContent,
                         );
+                        const modelMappings = JSON.parse(
+                            document.getElementById("model-mappings").textContent,
+                        );
                         const toAscii = (str) =>
                             str
                                 .normalize("NFKD")
                                 .replace(/[\u0300-\u036f]/g, "")
                                 .replace(/[^\x00-\x7F]/g, "");
-                        const ccKey = (make, model, year) =>
-                            `${toAscii(make)}|${toAscii(model)}|${year}`;
+                        const ccKey = (make, rawModel, year) =>
+                            `${toAscii(make)}|${toAscii(rawModel)}|${year}`;
+                        const ccLookup = (make, model, year) => {
+                            const mapped = modelMappings[`${make}|${model}`] ?? [model];
+                            for (const rm of mapped) {
+                                const d = ccCache[ccKey(make, rm, year)];
+                                if (d) return d;
+                            }
+                            return null;
+                        };
                         const fmtRanges = (years) => {
                             const ranges = [];
                             let start = years[0],
@@ -902,8 +913,7 @@
                             const bySeal = {};
                             for (const y of years) {
                                 const seal =
-                                    ccCache[ccKey(car.make, car.model, y)]
-                                        ?.seal;
+                                    ccLookup(car.make, car.model, y)?.seal;
                                 if (seal) (bySeal[seal] ??= []).push(y);
                             }
                             const seals = Object.entries(bySeal).map(
@@ -913,9 +923,7 @@
                                 }),
                             );
                             const cc_has_none = years.some(
-                                (y) =>
-                                    !ccCache[ccKey(car.make, car.model, y)]
-                                        ?.seal,
+                                (y) => !ccLookup(car.make, car.model, y)?.seal,
                             );
                             return {
                                 ...car,
@@ -1576,27 +1584,36 @@
                             .replace(/[^\x00-\x7F]/g, "");
                     },
 
+                    ccLookup(car, year) {
+                        const mapped = this.modelMappings[`${car.make}|${car.model}`] ?? [car.model];
+                        for (const rm of mapped) {
+                            const key = `${this.toAscii(car.make)}|${this.toAscii(rm)}|${year}`;
+                            if (this.ccCache[key]) return this.ccCache[key];
+                        }
+                        return null;
+                    },
+
                     ccYearRows(car) {
                         const years = [...new Set(car.years)].sort(
                             (a, b) => a - b,
                         );
-                        return years
-                            .map((y) => {
-                                const d =
-                                    this.ccCache[
-                                        `${this.toAscii(car.make)}|${this.toAscii(car.model)}|${y}`
-                                    ];
-                                return d
-                                    ? {
-                                          year: y,
-                                          complaints: d.complaints ?? 0,
-                                          recalls: d.recalls ?? 0,
-                                          tsbs: d.tsbs ?? 0,
-                                          seal: d.seal,
-                                      }
-                                    : null;
-                            })
-                            .filter(Boolean);
+                        const rows = [];
+                        for (const y of years) {
+                            const mapped = this.modelMappings[`${car.make}|${car.model}`] ?? [car.model];
+                            for (const rm of mapped) {
+                                const d = this.ccCache[`${this.toAscii(car.make)}|${this.toAscii(rm)}|${y}`];
+                                if (d) rows.push({
+                                    key: `${y}|${rm}`,
+                                    year: y,
+                                    rawModel: rm !== car.model ? rm : null,
+                                    complaints: d.complaints ?? 0,
+                                    recalls: d.recalls ?? 0,
+                                    tsbs: d.tsbs ?? 0,
+                                    seal: d.seal,
+                                });
+                            }
+                        }
+                        return rows;
                     },
 
                     ccSealUrl(car, seal) {
@@ -1604,10 +1621,7 @@
                             (a, b) => a - b,
                         );
                         for (const y of years) {
-                            const d =
-                                this.ccCache[
-                                    `${this.toAscii(car.make)}|${this.toAscii(car.model)}|${y}`
-                                ];
+                            const d = this.ccLookup(car, y);
                             if (!d) continue;
                             if (seal ? d.seal === seal : true) return d.url;
                         }
@@ -1766,16 +1780,8 @@
                             years.length === 1
                                 ? `${years[0]}`
                                 : `(${years.join(",")})`;
-                        const mappedModels = [
-                            ...new Set(
-                                years.map(
-                                    (y) =>
-                                        this.modelMappings[
-                                            `${car.make}|${car.model}|${y}`
-                                        ] ?? car.model,
-                                ),
-                            ),
-                        ];
+                        const mappedModels =
+                            this.modelMappings[`${car.make}|${car.model}`] ?? [car.model];
                         const modelName =
                             mappedModels.length === 1
                                 ? mappedModels[0]

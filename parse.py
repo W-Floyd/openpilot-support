@@ -308,18 +308,23 @@ CC_SEALS = {
     "worst.png": "Avoid Like The Plague",
 }
 
-def _model_range(make: str, model: str, start: int, end: int, mapped: str) -> dict[tuple[str, str, int], str]:
-    return {(make, model, year): mapped for year in range(start, end + 1)}
-
-
-MODEL_MAPPINGS: dict[tuple[str, str, int], str] = {
-    **_model_range("Lexus", "ES", 1989, 1990, "ES250"),
-    **_model_range("Lexus", "ES", 1991, 2002, "ES300"),
-    **_model_range("Lexus", "ES", 2003, 2006, "ES330"),
-    **_model_range("Lexus", "ES", 2007, 2026, "ES350"),
-    **_model_range("Lexus", "RX", 1998, 2003, "RX300"),
-    # RX 300 and RX 330 lived at the same time, 2 engine sizes
-    **_model_range("Lexus", "RX", 2007, 2026, "RX350"),
+MODEL_MAPPINGS: dict[tuple[str, str], list[str]] = {
+    ("Lexus", "CT Hybrid"):  ["CT 200h"],
+    ("Lexus", "ES Hybrid"):  ["ES 300h"],
+    ("Lexus", "ES"):         ["ES 250", "ES 300", "ES 330", "ES 350", "ES 350f"],
+    ("Lexus", "IS"):         ["IS 200", "IS 250", "IS 250t", "IS 300", "IS 350", "IS 500"],
+    ("Lexus", "LC Hybrid"):  ["LC 500h"],
+    ("Lexus", "LC"):         ["LC 500"],
+    ("Lexus", "LS Hybrid"):  ["LS 500h", "LS 600h"],
+    ("Lexus", "LS"):         ["LS 400", "LS 430", "LS 460", "LS 500"],
+    ("Lexus", "LX"):        ["LX 470", "LX 570", "LX 600"],
+    ("Lexus", "NX Hybrid"):  ["NX 200h", "NX 350h", "NX 450h"],
+    ("Lexus", "NX"):         ["NX", "NX 200", "NX 200t", "NX200T", "NX 250", "NX 350"],
+    ("Lexus", "RC Hybrid"):  ["RC 300h"],
+    ("Lexus", "RC"):         ["RC 200t", "RC 300", "RC 350", "RC F"],
+    ("Lexus", "RX Hybrid"):  ["RX 400h", "RX 450h", "RX 450hL", "RX 500h"],
+    ("Lexus", "RX"):         ["RX 300", "RX 330", "RX 350", "RX 350L"],
+    ("Lexus", "UX Hybrid"):  ["UX 200h", "UX 250h"],
 }
 
 
@@ -384,17 +389,16 @@ def cc_slug(text: str) -> str:
     return to_ascii(text).replace(" ", "_")
 
 
-def cc_url(make: str, model: str, year: int) -> str:
-    raw_model = MODEL_MAPPINGS.get((make, model, year), model)
+def cc_url(make: str, raw_model: str, year: int) -> str:
     return f"https://www.carcomplaints.com/{cc_slug(make)}/{cc_slug(raw_model)}/{year}/"
 
 
-def cc_cache_key(make: str, model: str, year: int) -> str:
-    return f"{to_ascii(make)}|{to_ascii(model)}|{year}"
+def cc_cache_key(make: str, raw_model: str, year: int) -> str:
+    return f"{to_ascii(make)}|{to_ascii(raw_model)}|{year}"
 
 
-def fetch_cc_response(make: str, model: str, year: int) -> dict | None:
-    url = cc_url(make, model, year)
+def fetch_cc_response(make: str, raw_model: str, year: int) -> dict | None:
+    url = cc_url(make, raw_model, year)
     try:
         req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
         with urllib.request.urlopen(req, timeout=10) as resp:
@@ -459,20 +463,21 @@ def fetch_cc_cache(cars: list[dict]) -> dict:
     """Fetch CarComplaints data for all car/year combinations, updating the cache file."""
     cache = load_cc_cache()
     pending = [
-        (car["make"], car["model"], year)
+        (car["make"], raw_model, year)
         for car in cars
         for year in sorted(set(car["years"]))
-        if cc_cache_key(car["make"], car["model"], year) not in cache
+        for raw_model in (MODEL_MAPPINGS.get((car["make"], car["model"])) or [car["model"]])
+        if cc_cache_key(car["make"], raw_model, year) not in cache
     ]
     total = len(pending)
 
     def fetch_one(entry: tuple[str, str, int], idx: int) -> tuple[str, object]:
-        make, model, year = entry
+        make, raw_model, year = entry
         print(
-            f"  [{idx}/{total}] Fetching CarComplaints: {make} {model} {year}",
+            f"  [{idx}/{total}] Fetching CarComplaints: {make} {raw_model} {year}",
             file=sys.stderr,
         )
-        return cc_cache_key(make, model, year), fetch_cc_response(make, model, year)
+        return cc_cache_key(make, raw_model, year), fetch_cc_response(make, raw_model, year)
 
     with concurrent.futures.ThreadPoolExecutor(max_workers=5) as pool:
         futures = {
@@ -496,7 +501,7 @@ def generate_html(
     env = jinja2.Environment(loader=jinja2.FileSystemLoader(here))
     template = env.get_template("template.html")
     model_mappings_json = json.dumps(
-        {f"{make}|{model}|{year}": mapped for (make, model, year), mapped in MODEL_MAPPINGS.items()},
+        {f"{make}|{model}": mapped for (make, model), mapped in MODEL_MAPPINGS.items()},
         separators=(",", ":"),
     )
     rendered = template.render(
