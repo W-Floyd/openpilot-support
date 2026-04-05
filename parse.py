@@ -95,6 +95,26 @@ def to_ascii(text: str) -> str:
     return unicodedata.normalize("NFKD", text).encode("ascii", "ignore").decode("ascii")
 
 
+def generate_favicon_svg() -> str:
+    """Generate a simple SVG favicon."""
+    return """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<defs>
+  <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:1" />
+    <stop offset="100%" style="stop-color:#10B981;stop-opacity:1" />
+  </linearGradient>
+</defs>
+<rect width="100" height="100" rx="20" fill="url(#grad)"/>
+<text x="50" y="65" font-family="Arial, sans-serif" font-size="50" font-weight="bold" text-anchor="middle" fill="white">OP</text>
+</svg>"""
+
+
+def generate_favicon_url(html_filename: str) -> str:
+    """Generate a URL for the favicon relative to the HTML file."""
+    base = html_filename.rsplit(".", 1)[0]
+    return f"{base}-favicon.svg"
+
+
 def cargurus_query(car: dict) -> str | None:
     years = sorted(set(car["years"]))
     if not years:
@@ -309,22 +329,22 @@ CC_SEALS = {
 }
 
 MODEL_MAPPINGS: dict[tuple[str, str], list[str]] = {
-    ("Lexus", "CT Hybrid"):  ["CT 200h"],
-    ("Lexus", "ES Hybrid"):  ["ES 300h"],
-    ("Lexus", "ES"):         ["ES 250", "ES 300", "ES 330", "ES 350", "ES 350f"],
-    ("Lexus", "IS"):         ["IS 200", "IS 250", "IS 250t", "IS 300", "IS 350", "IS 500"],
-    ("Lexus", "LC Hybrid"):  ["LC 500h"],
-    ("Lexus", "LC"):         ["LC 500"],
-    ("Lexus", "LS Hybrid"):  ["LS 500h", "LS 600h"],
-    ("Lexus", "LS"):         ["LS 400", "LS 430", "LS 460", "LS 500"],
-    ("Lexus", "LX"):        ["LX 470", "LX 570", "LX 600"],
-    ("Lexus", "NX Hybrid"):  ["NX 200h", "NX 350h", "NX 450h"],
-    ("Lexus", "NX"):         ["NX", "NX 200", "NX 200t", "NX200T", "NX 250", "NX 350"],
-    ("Lexus", "RC Hybrid"):  ["RC 300h"],
-    ("Lexus", "RC"):         ["RC 200t", "RC 300", "RC 350", "RC F"],
-    ("Lexus", "RX Hybrid"):  ["RX 400h", "RX 450h", "RX 450hL", "RX 500h"],
-    ("Lexus", "RX"):         ["RX 300", "RX 330", "RX 350", "RX 350L"],
-    ("Lexus", "UX Hybrid"):  ["UX 200h", "UX 250h"],
+    ("Lexus", "CT Hybrid"): ["CT 200h"],
+    ("Lexus", "ES Hybrid"): ["ES 300h"],
+    ("Lexus", "ES"): ["ES 250", "ES 300", "ES 330", "ES 350", "ES 350f"],
+    ("Lexus", "IS"): ["IS 200", "IS 250", "IS 250t", "IS 300", "IS 350", "IS 500"],
+    ("Lexus", "LC Hybrid"): ["LC 500h"],
+    ("Lexus", "LC"): ["LC 500"],
+    ("Lexus", "LS Hybrid"): ["LS 500h", "LS 600h"],
+    ("Lexus", "LS"): ["LS 400", "LS 430", "LS 460", "LS 500"],
+    ("Lexus", "LX"): ["LX 470", "LX 570", "LX 600"],
+    ("Lexus", "NX Hybrid"): ["NX 200h", "NX 350h", "NX 450h"],
+    ("Lexus", "NX"): ["NX", "NX 200", "NX 200t", "NX200T", "NX 250", "NX 350"],
+    ("Lexus", "RC Hybrid"): ["RC 300h"],
+    ("Lexus", "RC"): ["RC 200t", "RC 300", "RC 350", "RC F"],
+    ("Lexus", "RX Hybrid"): ["RX 400h", "RX 450h", "RX 450hL", "RX 500h"],
+    ("Lexus", "RX"): ["RX 300", "RX 330", "RX 350", "RX 350L"],
+    ("Lexus", "UX Hybrid"): ["UX 200h", "UX 250h"],
 }
 
 
@@ -466,7 +486,9 @@ def fetch_cc_cache(cars: list[dict]) -> dict:
         (car["make"], raw_model, year)
         for car in cars
         for year in sorted(set(car["years"]))
-        for raw_model in (MODEL_MAPPINGS.get((car["make"], car["model"])) or [car["model"]])
+        for raw_model in (
+            MODEL_MAPPINGS.get((car["make"], car["model"])) or [car["model"]]
+        )
         if cc_cache_key(car["make"], raw_model, year) not in cache
     ]
     total = len(pending)
@@ -477,7 +499,9 @@ def fetch_cc_cache(cars: list[dict]) -> dict:
             f"  [{idx}/{total}] Fetching CarComplaints: {make} {raw_model} {year}",
             file=sys.stderr,
         )
-        return cc_cache_key(make, raw_model, year), fetch_cc_response(make, raw_model, year)
+        return cc_cache_key(make, raw_model, year), fetch_cc_response(
+            make, raw_model, year
+        )
 
     with concurrent.futures.ThreadPoolExecutor(max_workers=5) as pool:
         futures = {
@@ -516,6 +540,7 @@ def generate_html(
     ari_cache: dict | None = None,
     cc_cache: dict | None = None,
     minify: bool = True,
+    html_out: str | None = None,
 ) -> str:
     here = os.path.dirname(__file__)
     env = jinja2.Environment(loader=jinja2.FileSystemLoader(here))
@@ -526,12 +551,25 @@ def generate_html(
     )
     rendered = template.render(
         cars_json=json.dumps(cars, separators=(",", ":")),
-        cargurus_cache_json=json.dumps({k: v for k, v in (cargurus_js_cache or {}).items() if v is not None}, separators=(",", ":")),
-        ari_cache_json=json.dumps({k: v for k, v in (ari_cache or {}).items() if v is not None}, separators=(",", ":")),
-        cc_cache_json=json.dumps({k: v for k, v in (cc_cache or {}).items() if v is not None}, separators=(",", ":")),
+        cargurus_cache_json=json.dumps(
+            {k: v for k, v in (cargurus_js_cache or {}).items() if v is not None},
+            separators=(",", ":"),
+        ),
+        ari_cache_json=json.dumps(
+            {k: v for k, v in (ari_cache or {}).items() if v is not None},
+            separators=(",", ":"),
+        ),
+        cc_cache_json=json.dumps(
+            {k: v for k, v in (cc_cache or {}).items() if v is not None},
+            separators=(",", ":"),
+        ),
         model_mappings_json=model_mappings_json,
         alpine_js=fetch_asset(ALPINE_JS_URL, ALPINE_CACHE_FILE),
         tailwind_js=fetch_asset(TAILWIND_JS_URL, TAILWIND_CACHE_FILE),
+        # Use relative path from server root (same folder as HTML)
+        favicon=f"{os.path.splitext(os.path.basename(html_out))[0]}-favicon.svg"
+        if html_out
+        else None,
     )
     if not minify:
         return rendered
@@ -613,8 +651,26 @@ def main():
     if args.html_out:
         os.makedirs(os.path.dirname(os.path.abspath(args.html_out)), exist_ok=True)
         with open(args.html_out, "w") as f:
-            f.write(generate_html(cars, cargurus_js_cache, ari_cache, cc_cache, minify=not args.no_minify))
+            f.write(
+                generate_html(
+                    cars,
+                    cargurus_js_cache,
+                    ari_cache,
+                    cc_cache,
+                    minify=not args.no_minify,
+                    html_out=args.html_out,
+                )
+            )
         print(f"Written to {args.html_out}", file=sys.stderr)
+
+        # Save favicon as a separate file next to the HTML
+        favicon_svg = generate_favicon_svg()
+        base_path = os.path.splitext(args.html_out)[0]
+        favicon_path = f"{base_path}-favicon.svg"
+        os.makedirs(os.path.dirname(favicon_path), exist_ok=True)
+        with open(favicon_path, "w") as f:
+            f.write(favicon_svg)
+        print(f"Written favicon to {favicon_path}", file=sys.stderr)
 
     if args.serve:
         if not args.html_out:
@@ -622,19 +678,10 @@ def main():
             sys.exit(1)
 
         serve_dir = os.path.dirname(os.path.abspath(args.html_out))
-        serve_file = os.path.basename(args.html_out)
-
-        class Handler(http.server.SimpleHTTPRequestHandler):
-            def translate_path(self, path):
-                if path == "/":
-                    path = f"/{serve_file}"
-                return super().translate_path(path)
-
-            def log_message(self, format, *a):
-                print(format % a, file=sys.stderr)
-
         os.chdir(serve_dir)
-        with http.server.HTTPServer(("", args.port), Handler) as httpd:
+        with http.server.HTTPServer(
+            ("", args.port), http.server.SimpleHTTPRequestHandler
+        ) as httpd:
             print(f"Serving at http://localhost:{args.port}/", file=sys.stderr)
             try:
                 httpd.serve_forever()
