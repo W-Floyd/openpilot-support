@@ -15,13 +15,22 @@
             class="p-3 sm:p-6 h-full flex flex-col"
         >
             <!-- Header -->
-            <div class="mb-4 sm:mb-6 flex items-start justify-between gap-2 flex-wrap">
+
+            <div
+                class="mb-4 sm:mb-6 flex items-start justify-between gap-2 flex-wrap"
+            >
                 <div>
                     <h1 class="text-2xl sm:text-3xl font-bold text-gray-900">
                         openpilot Supported Cars
                     </h1>
-                    <p class="mt-1 text-sm text-gray-500 flex flex-wrap gap-x-1 items-center">
-                        <span><span x-text="filteredCars.length"></span> of <span x-text="cars.length"></span> cars</span>
+
+                    <p
+                        class="mt-1 text-sm text-gray-500 flex flex-wrap gap-x-1 items-center"
+                    >
+                        <span
+                            ><span x-text="filteredCars.length"></span> of
+                            <span x-text="cars.length"></span> cars</span
+                        >
                         <span class="text-gray-300">&middot;</span>
                         <a
                             href="https://github.com/W-Floyd/openpilot-support"
@@ -30,14 +39,18 @@
                             class="hover:underline"
                             >Github</a
                         >
-                        <span class="text-gray-300 hidden sm:inline">&middot;</span>
+                        <span class="text-gray-300 hidden sm:inline"
+                            >&middot;</span
+                        >
                         <button
                             @click="openAllEbayLinks()"
                             class="hover:underline hidden sm:inline"
                         >
                             Open all eBay links
                         </button>
-                        <span class="text-gray-300 hidden sm:inline">&middot;</span>
+                        <span class="text-gray-300 hidden sm:inline"
+                            >&middot;</span
+                        >
                         <button
                             @click="openAllCarGurusLinks()"
                             class="hover:underline hidden sm:inline"
@@ -47,22 +60,13 @@
                     </p>
                 </div>
                 <!-- Settings button -->
+
                 <div class="flex items-center gap-2">
-                <button
-                    x-show="infoDismissed"
-                    @click="infoDismissed = false"
-                    title="Show info"
-                    class="rounded-lg border border-gray-200 bg-white px-3 py-2 shadow-sm text-gray-600 hover:bg-gray-50 transition-colors"
-                >
-                    <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                    </svg>
-                </button>
-                <div class="relative">
                     <button
-                        @click="showSettings = !showSettings"
-                        :class="showSettings ? 'bg-gray-800 text-white' : 'bg-white text-gray-600 hover:bg-gray-50'"
-                        class="rounded-lg border border-gray-200 px-3 py-2 shadow-sm transition-colors"
+                        x-show="infoDismissed"
+                        @click="infoDismissed = false"
+                        title="Show info"
+                        class="rounded-lg border border-gray-200 bg-white px-3 py-2 shadow-sm text-gray-600 hover:bg-gray-50 transition-colors"
                     >
                         <svg
                             class="h-4 w-4"
@@ -74,113 +78,159 @@
                                 stroke-linecap="round"
                                 stroke-linejoin="round"
                                 stroke-width="2"
-                                d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"
-                            />
-                            <path
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="2"
-                                d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                                d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
                             />
                         </svg>
                     </button>
-                    <div
-                        x-show="showSettings"
-                        @click.outside="showSettings = false"
-                        x-transition:enter="transition ease-out duration-100"
-                        x-transition:enter-start="opacity-0 scale-95"
-                        x-transition:enter-end="opacity-100 scale-100"
-                        class="fixed inset-0 z-50 bg-white overflow-y-auto p-4 sm:absolute sm:inset-auto sm:right-0 sm:top-full sm:mt-1 sm:w-48 sm:max-h-[80vh] sm:rounded-lg sm:border sm:border-gray-200 sm:shadow-xl sm:p-3"
-                    >
-                        <!-- Mobile header -->
-                        <div class="flex items-center justify-between mb-4 sm:hidden">
-                            <span class="text-base font-semibold text-gray-800">Settings</span>
-                            <button
-                                @click="showSettings = false"
-                                class="rounded-lg p-2 text-gray-500 hover:bg-gray-100"
-                            >
-                                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
-                                </svg>
-                            </button>
-                        </div>
-                        <p
-                            class="mb-2 text-xs font-semibold text-gray-500 uppercase tracking-wide"
+
+                    <div class="relative">
+                        <button
+                            @click="showSettings = !showSettings"
+                            :class="showSettings ? 'bg-gray-800 text-white' : 'bg-white text-gray-600 hover:bg-gray-50'"
+                            class="rounded-lg border border-gray-200 px-3 py-2 shadow-sm transition-colors"
                         >
-                            Units
-                        </p>
-                        <div
-                            class="flex items-center gap-1 rounded-lg border border-gray-200 p-1 mb-3"
-                        >
-                            <button
-                                @click="setSpeedUnit('km/h')"
-                                :class="speedUnit === 'km/h' ? 'bg-gray-800 text-white' : 'text-gray-500 hover:text-gray-800'"
-                                class="flex-1 rounded px-2 py-1 text-sm font-medium transition-colors"
+                            <svg
+                                class="h-4 w-4"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
                             >
-                                km/h
-                            </button>
-                            <button
-                                @click="setSpeedUnit('mph')"
-                                :class="speedUnit === 'mph' ? 'bg-gray-800 text-white' : 'text-gray-500 hover:text-gray-800'"
-                                class="flex-1 rounded px-2 py-1 text-sm font-medium transition-colors"
-                            >
-                                mph
-                            </button>
-                        </div>
-                        <p
-                            class="mb-2 text-xs font-semibold text-gray-500 uppercase tracking-wide"
-                        >
-                            Columns
-                        </p>
-                        <template x-for="col in allColumns" :key="col.key">
-                            <label
-                                class="flex cursor-pointer items-center gap-2 rounded px-1 py-1 hover:bg-gray-50"
-                            >
-                                <input
-                                    type="checkbox"
-                                    :checked="hiddenColumns.indexOf(col.key) === -1"
-                                    @change="toggleColumn(col.key)"
-                                    class="rounded border-gray-300 text-blue-600"
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"
                                 />
-                                <span
-                                    class="text-sm text-gray-700"
-                                    x-text="col.label"
-                                ></span>
-                            </label>
-                        </template>
-                        <div class="mt-3 border-t border-gray-100 pt-3">
-                            <button
-                                @click="resetSettings()"
-                                class="w-full rounded-lg px-3 py-1.5 text-sm text-gray-500 hover:bg-gray-100 hover:text-gray-700 transition-colors"
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                                />
+                            </svg>
+                        </button>
+
+                        <div
+                            x-show="showSettings"
+                            @click.outside="showSettings = false"
+                            x-transition:enter="transition ease-out duration-100"
+                            x-transition:enter-start="opacity-0 scale-95"
+                            x-transition:enter-end="opacity-100 scale-100"
+                            class="fixed inset-0 z-50 bg-white overflow-y-auto p-4 sm:absolute sm:inset-auto sm:right-0 sm:top-full sm:mt-1 sm:w-48 sm:max-h-[80vh] sm:rounded-lg sm:border sm:border-gray-200 sm:shadow-xl sm:p-3"
+                        >
+                            <!-- Mobile header -->
+
+                            <div
+                                class="flex items-center justify-between mb-4 sm:hidden"
                             >
-                                Reset to defaults
-                            </button>
+                                <span
+                                    class="text-base font-semibold text-gray-800"
+                                    >Settings</span
+                                >
+                                <button
+                                    @click="showSettings = false"
+                                    class="rounded-lg p-2 text-gray-500 hover:bg-gray-100"
+                                >
+                                    <svg
+                                        class="h-5 w-5"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        viewBox="0 0 24 24"
+                                    >
+                                        <path
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            stroke-width="2"
+                                            d="M6 18L18 6M6 6l12 12"
+                                        />
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <p
+                                class="mb-2 text-xs font-semibold text-gray-500 uppercase tracking-wide"
+                            >
+                                Units
+                            </p>
+
+                            <div
+                                class="flex items-center gap-1 rounded-lg border border-gray-200 p-1 mb-3"
+                            >
+                                <button
+                                    @click="setSpeedUnit('km/h')"
+                                    :class="speedUnit === 'km/h' ? 'bg-gray-800 text-white' : 'text-gray-500 hover:text-gray-800'"
+                                    class="flex-1 rounded px-2 py-1 text-sm font-medium transition-colors"
+                                >
+                                    km/h
+                                </button>
+                                <button
+                                    @click="setSpeedUnit('mph')"
+                                    :class="speedUnit === 'mph' ? 'bg-gray-800 text-white' : 'text-gray-500 hover:text-gray-800'"
+                                    class="flex-1 rounded px-2 py-1 text-sm font-medium transition-colors"
+                                >
+                                    mph
+                                </button>
+                            </div>
+
+                            <p
+                                class="mb-2 text-xs font-semibold text-gray-500 uppercase tracking-wide"
+                            >
+                                Columns
+                            </p>
+                            <template x-for="col in allColumns" :key="col.key">
+                                <label
+                                    class="flex cursor-pointer items-center gap-2 rounded px-1 py-1 hover:bg-gray-50"
+                                >
+                                    <input
+                                        type="checkbox"
+                                        :checked="hiddenColumns.indexOf(col.key) === -1"
+                                        @change="toggleColumn(col.key)"
+                                        class="rounded border-gray-300 text-blue-600"
+                                    />
+                                    <span
+                                        class="text-sm text-gray-700"
+                                        x-text="col.label"
+                                    ></span>
+                                </label>
+                            </template>
+
+                            <div class="mt-3 border-t border-gray-100 pt-3">
+                                <button
+                                    @click="resetSettings()"
+                                    class="w-full rounded-lg px-3 py-1.5 text-sm text-gray-500 hover:bg-gray-100 hover:text-gray-700 transition-colors"
+                                >
+                                    Reset to defaults
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
-                </div><!-- end flex wrapper -->
+                <!-- end flex wrapper -->
             </div>
 
             <!-- Collapsible info section -->
+
             <div
                 class="overflow-hidden transition-all duration-300 ease-in-out"
                 :class="infoDismissed ? 'max-h-0 opacity-0' : 'max-h-96 opacity-100'"
             >
-            <!-- Usage notes -->
-            <div
-                class="mb-4 rounded-lg border border-blue-100 bg-blue-50 px-3 py-2 sm:px-4 sm:py-3 text-xs sm:text-sm text-blue-900"
-            >
-                <strong>eBay &amp; CarGurus links</strong> are auto-generated
-                from the car's make, model, and year range and may return
-                incorrect or unrelated results - always verify before
-                purchasing. eBay searches by keyword; CarGurus uses structured
-                filters but may match the wrong trim or generation. Use them as
-                a starting point, not a guarantee.
-            </div>
+                <!-- Usage notes -->
 
-            </div><!-- end collapsible -->
+                <div
+                    class="mb-4 rounded-lg border border-blue-100 bg-blue-50 px-3 py-2 sm:px-4 sm:py-3 text-xs sm:text-sm text-blue-900"
+                >
+                    <strong>eBay &amp; CarGurus links</strong> are
+                    auto-generated from the car's make, model, and year range
+                    and may return incorrect or unrelated results - always
+                    verify before purchasing. eBay searches by keyword; CarGurus
+                    uses structured filters but may match the wrong trim or
+                    generation. Use them as a starting point, not a guarantee.
+                </div>
+            </div>
+            <!-- end collapsible -->
 
             <!-- Presets -->
+
             <div class="mb-3 flex flex-wrap items-center gap-2">
                 <span
                     class="text-xs font-medium text-gray-400 uppercase tracking-wide"
@@ -197,6 +247,7 @@
             </div>
 
             <!-- Active filter chips (desktop) -->
+
             <div
                 class="mb-4 hidden sm:flex flex-wrap gap-2"
                 x-show="activeFilters.length > 0 || activeSpeedFilters.length > 0 || isAriFilterActive()"
@@ -251,17 +302,25 @@
             </div>
 
             <!-- Active filter chips (mobile) -->
+
             <div
                 class="mb-3 sm:hidden"
                 x-show="activeFilters.length > 0 || activeSpeedFilters.length > 0 || isAriFilterActive()"
             >
                 <div class="flex items-center gap-2 min-w-0">
-                    <div class="flex items-center gap-2 overflow-x-auto pb-1 min-w-0">
-                        <template x-for="f in activeFilters" :key="f.key + ':' + f.val">
+                    <div
+                        class="flex items-center gap-2 overflow-x-auto pb-1 min-w-0"
+                    >
+                        <template
+                            x-for="f in activeFilters"
+                            :key="f.key + ':' + f.val"
+                        >
                             <span
                                 class="inline-flex shrink-0 items-center gap-1 rounded-full bg-blue-100 px-3 py-1 text-sm text-blue-800"
                             >
-                                <span x-text="columnLabel(f.key) + ': ' + f.val"></span>
+                                <span
+                                    x-text="columnLabel(f.key) + ': ' + f.val"
+                                ></span>
                                 <button
                                     @click="removeFilter(f.key, f.val)"
                                     class="ml-1 font-bold leading-none hover:text-blue-600"
@@ -309,7 +368,11 @@
             </div>
 
             <!-- Table -->
-            <div class="overflow-auto rounded-lg shadow flex-1 min-h-0" @scroll="scrolled = $event.target.scrollTop > 20; if (scrolled) infoDismissed = true;">
+
+            <div
+                class="overflow-auto rounded-lg shadow flex-1 min-h-0"
+                @scroll="scrolled = $event.target.scrollTop > 20; if (scrolled) infoDismissed = true;"
+            >
                 <table class="w-full text-sm text-left">
                     <thead class="sticky top-0 z-10 bg-gray-800 text-white">
                         <tr>
@@ -353,6 +416,7 @@
                                         </template>
 
                                         <!-- Filter button + dropdown -->
+
                                         <div
                                             class="relative"
                                             x-show="col.filterable"
@@ -423,6 +487,7 @@
                                                                 class="w-full accent-blue-600"
                                                             />
                                                         </div>
+
                                                         <div>
                                                             <div
                                                                 class="mb-1 flex justify-between text-xs text-gray-500"
@@ -443,6 +508,7 @@
                                                                 class="w-full accent-blue-600"
                                                             />
                                                         </div>
+
                                                         <div
                                                             class="border-t border-gray-100 pt-2"
                                                         >
@@ -452,6 +518,7 @@
                                                                 <span
                                                                     >Value</span
                                                                 >
+
                                                                 <div
                                                                     class="flex gap-3"
                                                                 >
@@ -463,6 +530,7 @@
                                                                     >
                                                                 </div>
                                                             </div>
+
                                                             <div
                                                                 class="max-h-40 overflow-y-auto space-y-0.5"
                                                             >
@@ -477,6 +545,7 @@
                                                                         <span
                                                                             x-text="formatSpeed(v)"
                                                                         ></span>
+
                                                                         <div
                                                                             class="flex gap-3"
                                                                         >
@@ -530,6 +599,7 @@
                                                                 class="w-full accent-blue-600"
                                                             />
                                                         </div>
+
                                                         <div>
                                                             <div
                                                                 class="mb-1 flex justify-between text-xs text-gray-500"
@@ -573,6 +643,7 @@
                                                                 class="w-full rounded border border-gray-200 px-2 py-1 text-xs text-gray-700 placeholder-gray-400 focus:border-blue-400 focus:outline-none"
                                                             />
                                                         </div>
+
                                                         <div
                                                             class="border-b border-gray-100 px-2 py-1"
                                                         >
@@ -594,6 +665,7 @@
                                                                 >
                                                             </label>
                                                         </div>
+
                                                         <div
                                                             class="max-h-64 overflow-y-auto p-2"
                                                         >
@@ -723,6 +795,7 @@
                                                                 </span>
                                                             </template>
                                                         </a>
+
                                                         <div
                                                             x-show="ariOpen"
                                                             x-cloak
@@ -806,6 +879,7 @@
                                                             </a>
                                                         </template>
                                                     </template>
+
                                                     <div
                                                         x-show="ccOpen"
                                                         x-cloak
@@ -954,7 +1028,8 @@
                             document.getElementById("cc-cache").textContent,
                         );
                         const modelMappings = JSON.parse(
-                            document.getElementById("model-mappings").textContent,
+                            document.getElementById("model-mappings")
+                                .textContent,
                         );
                         const toAscii = (str) =>
                             str
@@ -964,7 +1039,9 @@
                         const ccKey = (make, rawModel, year) =>
                             `${toAscii(make)}|${toAscii(rawModel)}|${year}`;
                         const ccLookup = (make, model, year) => {
-                            const mapped = modelMappings[`${make}|${model}`] ?? [model];
+                            const mapped = modelMappings[
+                                `${make}|${model}`
+                            ] ?? [model];
                             for (const rm of mapped) {
                                 const d = ccCache[ccKey(make, rm, year)];
                                 if (d) return d;
@@ -1002,8 +1079,11 @@
                             );
                             const bySeal = {};
                             for (const y of years) {
-                                const seal =
-                                    ccLookup(car.make, car.model, y)?.seal;
+                                const seal = ccLookup(
+                                    car.make,
+                                    car.model,
+                                    y,
+                                )?.seal;
                                 if (seal) (bySeal[seal] ??= []).push(y);
                             }
                             const seals = Object.entries(bySeal).map(
@@ -1057,9 +1137,21 @@
                     showSettings: false,
                     hiddenColumns: JSON.parse(
                         localStorage.getItem("hiddenColumns") ||
-                        (window.innerWidth < 640
-                            ? JSON.stringify(["support_type", "merged", "openpilot_longitudinal", "auto_resume", "good_steering_torque", "min_steer_speed", "min_enable_speed", "ari", "cc_seal", "ebay", "cargurus"])
-                            : "[]")
+                            (window.innerWidth < 640
+                                ? JSON.stringify([
+                                      "support_type",
+                                      "merged",
+                                      "openpilot_longitudinal",
+                                      "auto_resume",
+                                      "good_steering_torque",
+                                      "min_steer_speed",
+                                      "min_enable_speed",
+                                      "ari",
+                                      "cc_seal",
+                                      "ebay",
+                                      "cargurus",
+                                  ])
+                                : "[]"),
                     ),
 
                     get columns() {
@@ -1072,16 +1164,32 @@
                         { key: "make", label: "Make" },
                         { key: "model", label: "Model" },
                         { key: "years", label: "Years" },
-                        { key: "package", label: "Package", mobileLabel: "Pkg" },
-                        { key: "support_type", label: "Support Level", mobileLabel: "Support" },
+                        {
+                            key: "package",
+                            label: "Package",
+                            mobileLabel: "Pkg",
+                        },
+                        {
+                            key: "support_type",
+                            label: "Support Level",
+                            mobileLabel: "Support",
+                        },
                         { key: "merged", label: "Merged" },
                         {
                             key: "openpilot_longitudinal",
                             label: "Longitudinal",
                             mobileLabel: "Long.",
                         },
-                        { key: "auto_resume", label: "Resume", mobileLabel: "Res." },
-                        { key: "good_steering_torque", label: "Torque", mobileLabel: "Torq." },
+                        {
+                            key: "auto_resume",
+                            label: "Resume",
+                            mobileLabel: "Res.",
+                        },
+                        {
+                            key: "good_steering_torque",
+                            label: "Torque",
+                            mobileLabel: "Torq.",
+                        },
                         {
                             key: "min_steer_speed",
                             label: "Min Steer",
@@ -1094,7 +1202,12 @@
                             mobileLabel: "Enable",
                             speed: true,
                         },
-                        { key: "ari", label: "Reliability", mobileLabel: "Rel.", ari: true },
+                        {
+                            key: "ari",
+                            label: "Reliability",
+                            mobileLabel: "Rel.",
+                            ari: true,
+                        },
                         {
                             key: "cc_seal",
                             label: "CC Rating",
@@ -1305,7 +1418,10 @@
                     },
 
                     allUniqueValues(colKey) {
-                        return this._allUniqueValuesCache[colKey] ?? this._computeAllUniqueValues(colKey);
+                        return (
+                            this._allUniqueValuesCache[colKey] ??
+                            this._computeAllUniqueValues(colKey)
+                        );
                     },
 
                     _computeAllUniqueValues(colKey) {
@@ -1371,7 +1487,7 @@
                     filterDropdownClass(el) {
                         const rect = el.getBoundingClientRect();
                         const spaceRight = window.innerWidth - rect.left;
-                        return spaceRight < 220 ? 'right-0' : 'left-0';
+                        return spaceRight < 220 ? "right-0" : "left-0";
                     },
 
                     isFilterActive(colKey, val) {
@@ -1437,8 +1553,12 @@
                         const speedKeys = new Set();
                         for (const preset of this.presets) {
                             if (!this.isPresetActive(preset)) continue;
-                            for (const key of Object.keys(preset.filters)) filterKeys.add(key);
-                            for (const key of Object.keys(preset.speedFilters ?? {})) speedKeys.add(key);
+                            for (const key of Object.keys(preset.filters))
+                                filterKeys.add(key);
+                            for (const key of Object.keys(
+                                preset.speedFilters ?? {},
+                            ))
+                                speedKeys.add(key);
                         }
                         return { filterKeys, speedKeys };
                     },
@@ -1629,7 +1749,9 @@
                     },
 
                     colLabel(col) {
-                        return (this.isMobile && col.mobileLabel) ? col.mobileLabel : col.label;
+                        return this.isMobile && col.mobileLabel
+                            ? col.mobileLabel
+                            : col.label;
                     },
 
                     convertFromMs(mps) {
@@ -1645,7 +1767,10 @@
                     },
 
                     speedRange(colKey) {
-                        return this._speedRangeCache[colKey] ?? this._computeSpeedRange(colKey);
+                        return (
+                            this._speedRangeCache[colKey] ??
+                            this._computeSpeedRange(colKey)
+                        );
                     },
 
                     _computeSpeedRange(colKey) {
@@ -1715,7 +1840,9 @@
                     },
 
                     ccLookup(car, year) {
-                        const mapped = this.modelMappings[`${car.make}|${car.model}`] ?? [car.model];
+                        const mapped = this.modelMappings[
+                            `${car.make}|${car.model}`
+                        ] ?? [car.model];
                         for (const rm of mapped) {
                             const key = `${this.toAscii(car.make)}|${this.toAscii(rm)}|${year}`;
                             if (this.ccCache[key]) return this.ccCache[key];
@@ -1729,18 +1856,24 @@
                         );
                         const rows = [];
                         for (const y of years) {
-                            const mapped = this.modelMappings[`${car.make}|${car.model}`] ?? [car.model];
+                            const mapped = this.modelMappings[
+                                `${car.make}|${car.model}`
+                            ] ?? [car.model];
                             for (const rm of mapped) {
-                                const d = this.ccCache[`${this.toAscii(car.make)}|${this.toAscii(rm)}|${y}`];
-                                if (d) rows.push({
-                                    key: `${y}|${rm}`,
-                                    year: y,
-                                    rawModel: rm !== car.model ? rm : null,
-                                    complaints: d.complaints ?? 0,
-                                    recalls: d.recalls ?? 0,
-                                    tsbs: d.tsbs ?? 0,
-                                    seal: d.seal,
-                                });
+                                const d =
+                                    this.ccCache[
+                                        `${this.toAscii(car.make)}|${this.toAscii(rm)}|${y}`
+                                    ];
+                                if (d)
+                                    rows.push({
+                                        key: `${y}|${rm}`,
+                                        year: y,
+                                        rawModel: rm !== car.model ? rm : null,
+                                        complaints: d.complaints ?? 0,
+                                        recalls: d.recalls ?? 0,
+                                        tsbs: d.tsbs ?? 0,
+                                        seal: d.seal,
+                                    });
                             }
                         }
                         return rows;
@@ -1871,7 +2004,19 @@
                         localStorage.removeItem("speedUnit");
                         this.speedUnit = "mph";
                         this.hiddenColumns = this.isMobile
-                            ? ["support_type", "merged", "openpilot_longitudinal", "auto_resume", "good_steering_torque", "min_steer_speed", "min_enable_speed", "ari", "cc_seal", "ebay", "cargurus"]
+                            ? [
+                                  "support_type",
+                                  "merged",
+                                  "openpilot_longitudinal",
+                                  "auto_resume",
+                                  "good_steering_torque",
+                                  "min_steer_speed",
+                                  "min_enable_speed",
+                                  "ari",
+                                  "cc_seal",
+                                  "ebay",
+                                  "cargurus",
+                              ]
                             : [];
                     },
 
@@ -1885,10 +2030,12 @@
                             car._ebayUrl = this.ebayUrl(car);
                         }
                         for (const key of Object.keys(this.filters)) {
-                            this._allUniqueValuesCache[key] = this._computeAllUniqueValues(key);
+                            this._allUniqueValuesCache[key] =
+                                this._computeAllUniqueValues(key);
                         }
                         for (const key of Object.keys(this.speedFilters)) {
-                            this._speedRangeCache[key] = this._computeSpeedRange(key);
+                            this._speedRangeCache[key] =
+                                this._computeSpeedRange(key);
                         }
                     },
 
@@ -1900,18 +2047,13 @@
                         )
                             return;
                         for (const car of cars) {
-                            window.open(
-                                car._ebayUrl,
-                                "_blank",
-                                "noopener",
-                            );
+                            window.open(car._ebayUrl, "_blank", "noopener");
                         }
                     },
 
                     openAllCarGurusLinks() {
                         const cars = this.filteredCars.filter(
-                            (car) =>
-                                this.carGurusCache[car._carGurusKey]?.url,
+                            (car) => this.carGurusCache[car._carGurusKey]?.url,
                         );
                         if (cars.length === 0) return;
                         if (
@@ -1936,8 +2078,9 @@
                             years.length === 1
                                 ? `${years[0]}`
                                 : `(${years.join(",")})`;
-                        const mappedModels =
-                            this.modelMappings[`${car.make}|${car.model}`] ?? [car.model];
+                        const mappedModels = this.modelMappings[
+                            `${car.make}|${car.model}`
+                        ] ?? [car.model];
                         const modelName =
                             mappedModels.length === 1
                                 ? mappedModels[0]
