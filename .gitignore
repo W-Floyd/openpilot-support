@@ -3,3 +3,4 @@ index.html
 *.pyc
 .alpine_cache.js
 .tailwind_cache.js
+*.svg
