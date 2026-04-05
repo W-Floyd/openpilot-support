@@ -685,7 +685,7 @@
                                         <template x-if="col.ari">
                                             <span>
                                                 <template
-                                                    x-if="ariScore(car) !== null"
+                                                    x-if="car._ariScore !== null"
                                                 >
                                                     <span
                                                         class="relative"
@@ -694,34 +694,34 @@
                                                         @mouseleave="ariOpen = false"
                                                     >
                                                         <a
-                                                            :href="ariLink(car)"
+                                                            :href="car._ariLink"
                                                             target="_blank"
                                                             rel="noopener"
                                                             class="text-xs font-medium hover:underline tabular-nums"
                                                         >
                                                             <template
-                                                                x-if="ariScore(car).min === ariScore(car).max"
+                                                                x-if="car._ariScore.min === car._ariScore.max"
                                                             >
                                                                 <span
-                                                                    :style="`color: ${ariColor(ariScore(car).min)}`"
-                                                                    x-text="ariScore(car).min"
+                                                                    :style="`color: ${ariColor(car._ariScore.min)}`"
+                                                                    x-text="car._ariScore.min"
                                                                 ></span>
                                                             </template>
                                                             <template
-                                                                x-if="ariScore(car).min !== ariScore(car).max"
+                                                                x-if="car._ariScore.min !== car._ariScore.max"
                                                             >
                                                                 <span>
                                                                     <span
-                                                                        :style="`color: ${ariColor(ariScore(car).min)}`"
-                                                                        x-text="ariScore(car).min"
+                                                                        :style="`color: ${ariColor(car._ariScore.min)}`"
+                                                                        x-text="car._ariScore.min"
                                                                     ></span>
                                                                     <span
                                                                         class="text-gray-400"
                                                                         >–</span
                                                                     >
                                                                     <span
-                                                                        :style="`color: ${ariColor(ariScore(car).max)}`"
-                                                                        x-text="ariScore(car).max"
+                                                                        :style="`color: ${ariColor(car._ariScore.max)}`"
+                                                                        x-text="car._ariScore.max"
                                                                     ></span>
                                                                 </span>
                                                             </template>
@@ -732,7 +732,7 @@
                                                             class="absolute bottom-full right-0 z-50 mb-1.5 whitespace-nowrap rounded-lg border border-gray-200 bg-white py-1.5 shadow-lg text-xs"
                                                         >
                                                             <template
-                                                                x-for="row in ariYearRows(car)"
+                                                                x-for="row in car._ariYearRows"
                                                                 :key="row.year"
                                                             >
                                                                 <div
@@ -756,7 +756,7 @@
                                                     </span>
                                                 </template>
                                                 <template
-                                                    x-if="ariScore(car) === null"
+                                                    x-if="car._ariScore === null"
                                                 >
                                                     <span class="text-gray-300"
                                                         >—</span
@@ -768,7 +768,7 @@
                                         <!-- ebay link -->
                                         <template x-if="col.ebay">
                                             <a
-                                                :href="ebayUrl(car)"
+                                                :href="car._ebayUrl"
                                                 target="_blank"
                                                 rel="noopener"
                                                 class="text-blue-600 hover:underline text-xs"
@@ -815,7 +815,7 @@
                                                         class="absolute bottom-full right-0 z-50 mb-1.5 whitespace-nowrap rounded-lg border border-gray-200 bg-white py-1.5 shadow-lg text-xs"
                                                     >
                                                         <template
-                                                            x-for="row in ccYearRows(car)"
+                                                            x-for="row in car._ccYearRows"
                                                             :key="row.key"
                                                         >
                                                             <div
@@ -869,10 +869,10 @@
                                         <template x-if="col.cargurus">
                                             <span>
                                                 <template
-                                                    x-if="carGurusCache[carGurusKey(car)]?.url"
+                                                    x-if="carGurusCache[car._carGurusKey]?.url"
                                                 >
                                                     <a
-                                                        :href="carGurusCache[carGurusKey(car)].url"
+                                                        :href="carGurusCache[car._carGurusKey].url"
                                                         target="_blank"
                                                         rel="noopener"
                                                         class="text-blue-600 hover:underline text-xs"
@@ -880,7 +880,7 @@
                                                     >
                                                 </template>
                                                 <template
-                                                    x-if="!carGurusCache[carGurusKey(car)]?.url"
+                                                    x-if="!carGurusCache[car._carGurusKey]?.url"
                                                 >
                                                     <span class="text-gray-300"
                                                         >—</span
@@ -1032,6 +1032,9 @@
                     })(),
                     scrolled: false,
                     infoDismissed: false,
+                    isMobile: window.innerWidth < 640,
+                    _allUniqueValuesCache: {},
+                    _speedRangeCache: {},
                     sortCol: null,
                     sortDir: "asc",
                     filters: Object.fromEntries(
@@ -1169,7 +1172,7 @@
                                 this.ariFilter.min !== null ||
                                 this.ariFilter.max !== null
                             ) {
-                                const s = this.ariScore(car);
+                                const s = car._ariScore;
                                 if (s === null) return false;
                                 const avg = (s.min + s.max) / 2;
                                 if (
@@ -1191,8 +1194,8 @@
                             result = [...result].sort((a, b) => {
                                 let av, bv;
                                 if (this.sortCol === "ari") {
-                                    const sa = this.ariScore(a),
-                                        sb = this.ariScore(b);
+                                    const sa = a._ariScore,
+                                        sb = b._ariScore;
                                     av =
                                         sa !== null ? (sa.min + sa.max) / 2 : 0;
                                     bv =
@@ -1310,6 +1313,10 @@
                     },
 
                     allUniqueValues(colKey) {
+                        return this._allUniqueValuesCache[colKey] ?? this._computeAllUniqueValues(colKey);
+                    },
+
+                    _computeAllUniqueValues(colKey) {
                         const vals = this.extractVals(colKey, this.cars);
                         return [...new Set(vals)].sort((a, b) =>
                             a === ""
@@ -1630,7 +1637,7 @@
                     },
 
                     colLabel(col) {
-                        return (window.innerWidth < 640 && col.mobileLabel) ? col.mobileLabel : col.label;
+                        return (this.isMobile && col.mobileLabel) ? col.mobileLabel : col.label;
                     },
 
                     convertFromMs(mps) {
@@ -1646,6 +1653,10 @@
                     },
 
                     speedRange(colKey) {
+                        return this._speedRangeCache[colKey] ?? this._computeSpeedRange(colKey);
+                    },
+
+                    _computeSpeedRange(colKey) {
                         const vals = [
                             ...new Set(
                                 this.cars
@@ -1867,9 +1878,26 @@
                         localStorage.removeItem("hiddenColumns");
                         localStorage.removeItem("speedUnit");
                         this.speedUnit = "mph";
-                        this.hiddenColumns = window.innerWidth < 640
+                        this.hiddenColumns = this.isMobile
                             ? ["support_type", "merged", "openpilot_longitudinal", "auto_resume", "good_steering_torque", "min_steer_speed", "min_enable_speed", "ari", "cc_seal", "ebay", "cargurus"]
                             : [];
+                    },
+
+                    init() {
+                        for (const car of this.cars) {
+                            car._carGurusKey = this.carGurusKey(car);
+                            car._ariScore = this.ariScore(car);
+                            car._ariLink = this.ariLink(car);
+                            car._ccYearRows = this.ccYearRows(car);
+                            car._ariYearRows = this.ariYearRows(car);
+                            car._ebayUrl = this.ebayUrl(car);
+                        }
+                        for (const key of Object.keys(this.filters)) {
+                            this._allUniqueValuesCache[key] = this._computeAllUniqueValues(key);
+                        }
+                        for (const key of Object.keys(this.speedFilters)) {
+                            this._speedRangeCache[key] = this._computeSpeedRange(key);
+                        }
                     },
 
                     openAllEbayLinks() {
@@ -1881,7 +1909,7 @@
                             return;
                         for (const car of cars) {
                             window.open(
-                                this.ebayUrl(car),
+                                car._ebayUrl,
                                 "_blank",
                                 "noopener",
                             );
@@ -1891,7 +1919,7 @@
                     openAllCarGurusLinks() {
                         const cars = this.filteredCars.filter(
                             (car) =>
-                                this.carGurusCache[this.carGurusKey(car)]?.url,
+                                this.carGurusCache[car._carGurusKey]?.url,
                         );
                         if (cars.length === 0) return;
                         if (
@@ -1901,7 +1929,7 @@
                             return;
                         for (const car of cars) {
                             window.open(
-                                this.carGurusCache[this.carGurusKey(car)].url,
+                                this.carGurusCache[car._carGurusKey].url,
                                 "_blank",
                                 "noopener",
                             );
