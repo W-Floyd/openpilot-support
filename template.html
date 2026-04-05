@@ -1022,15 +1022,22 @@
                     "min_enable_speed",
                 ];
 
+                // Cache parsed JSON to avoid reparsing on each call
+                const ccCache = JSON.parse(
+                    document.getElementById("cc-cache").textContent,
+                );
+                const modelMappings = JSON.parse(
+                    document.getElementById("model-mappings").textContent,
+                );
+                const carGurusCache = JSON.parse(
+                    document.getElementById("cargurus-cache").textContent,
+                );
+                const ariCache = JSON.parse(
+                    document.getElementById("ari-cache").textContent,
+                );
+
                 return {
                     cars: (() => {
-                        const ccCache = JSON.parse(
-                            document.getElementById("cc-cache").textContent,
-                        );
-                        const modelMappings = JSON.parse(
-                            document.getElementById("model-mappings")
-                                .textContent,
-                        );
                         const toAscii = (str) =>
                             str
                                 .normalize("NFKD")
@@ -1121,18 +1128,10 @@
                         min_steer_speed: { min: null, max: null },
                         min_enable_speed: { min: null, max: null },
                     },
-                    carGurusCache: JSON.parse(
-                        document.getElementById("cargurus-cache").textContent,
-                    ),
-                    ariCache: JSON.parse(
-                        document.getElementById("ari-cache").textContent,
-                    ),
-                    ccCache: JSON.parse(
-                        document.getElementById("cc-cache").textContent,
-                    ),
-                    modelMappings: JSON.parse(
-                        document.getElementById("model-mappings").textContent,
-                    ),
+                    carGurusCache,
+                    ariCache,
+                    ccCache,
+                    modelMappings,
                     ariFilter: { min: null, max: null },
                     showSettings: false,
                     hiddenColumns: JSON.parse(
