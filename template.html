@@ -1053,7 +1053,10 @@
                     ariFilter: { min: null, max: null },
                     showSettings: false,
                     hiddenColumns: JSON.parse(
-                        localStorage.getItem("hiddenColumns") || "[]",
+                        localStorage.getItem("hiddenColumns") ||
+                        (window.innerWidth < 640
+                            ? JSON.stringify(["support_type", "merged", "openpilot_longitudinal", "auto_resume", "good_steering_torque", "min_steer_speed", "min_enable_speed", "ari", "cc_seal", "ebay", "cargurus"])
+                            : "[]")
                     ),
 
                     get columns() {
