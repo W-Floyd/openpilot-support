@@ -569,7 +569,7 @@
 
                                         <!-- null -->
                                         <template
-                                            x-if="col.key !== 'support_type' && col.key !== 'years' && car[col.key] === null"
+                                            x-if="col.key !== 'support_type' && col.key !== 'years'&& col.key !== 'cc_seal' && car[col.key] === null"
                                         >
                                             <span class="text-gray-300">—</span>
                                         </template>
@@ -748,9 +748,17 @@
                                                     </span>
                                                 </template>
                                                 <template x-if="!car.cc_seal">
-                                                    <span class="text-gray-300"
-                                                        >—</span
+                                                    <a
+                                                        :href="ccSealUrl(car, '')"
+                                                        target="_blank"
+                                                        rel="noopener"
+                                                        class="text-xs text-gray-500 hover:underline"
                                                     >
+                                                        <span
+                                                            class="text-gray-400"
+                                                            >—</span
+                                                        >
+                                                    </a>
                                                 </template>
                                             </span>
                                         </template>
