@@ -507,9 +507,9 @@ def generate_html(
     )
     rendered = template.render(
         cars_json=json.dumps(cars, separators=(",", ":")),
-        cargurus_cache_json=json.dumps(cargurus_js_cache or {}, separators=(",", ":")),
-        ari_cache_json=json.dumps(ari_cache or {}, separators=(",", ":")),
-        cc_cache_json=json.dumps(cc_cache or {}, separators=(",", ":")),
+        cargurus_cache_json=json.dumps({k: v for k, v in (cargurus_js_cache or {}).items() if v is not None}, separators=(",", ":")),
+        ari_cache_json=json.dumps({k: v for k, v in (ari_cache or {}).items() if v is not None}, separators=(",", ":")),
+        cc_cache_json=json.dumps({k: v for k, v in (cc_cache or {}).items() if v is not None}, separators=(",", ":")),
         model_mappings_json=model_mappings_json,
     )
     if not minify:
