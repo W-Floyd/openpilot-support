@@ -496,6 +496,7 @@ def generate_html(
     cargurus_js_cache: dict | None = None,
     ari_cache: dict | None = None,
     cc_cache: dict | None = None,
+    minify: bool = True,
 ) -> str:
     here = os.path.dirname(__file__)
     env = jinja2.Environment(loader=jinja2.FileSystemLoader(here))
@@ -511,6 +512,8 @@ def generate_html(
         cc_cache_json=json.dumps(cc_cache or {}, separators=(",", ":")),
         model_mappings_json=model_mappings_json,
     )
+    if not minify:
+        return rendered
     return minify_html.minify(rendered, minify_js=True, minify_css=True)
 
 
@@ -546,6 +549,11 @@ def main():
         "--no-fetch-cc",
         action="store_true",
         help="Skip fetching CarComplaints data for all cars.",
+    )
+    parser.add_argument(
+        "--no-minify",
+        action="store_true",
+        help="Skip HTML/JS/CSS minification (useful for debugging).",
     )
     args = parser.parse_args()
 
@@ -584,7 +592,7 @@ def main():
     if args.html_out:
         os.makedirs(os.path.dirname(os.path.abspath(args.html_out)), exist_ok=True)
         with open(args.html_out, "w") as f:
-            f.write(generate_html(cars, cargurus_js_cache, ari_cache, cc_cache))
+            f.write(generate_html(cars, cargurus_js_cache, ari_cache, cc_cache, minify=not args.no_minify))
         print(f"Written to {args.html_out}", file=sys.stderr)
 
     if args.serve:
