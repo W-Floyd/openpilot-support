@@ -4495,7 +4495,7 @@
   "Lexus|ES Hybrid|2023": null,
   "Lexus|ES Hybrid|2024": null,
   "Lexus|ES Hybrid|2025": null,
-  "Lexus|ES350|2017": {
+  "Lexus|ES|2017": {
     "url": "https://www.carcomplaints.com/Lexus/ES350/2017/",
     "complaints": 27,
     "recalls": 1,
@@ -4504,7 +4504,7 @@
     "top_problems": [],
     "seal": null
   },
-  "Lexus|ES350|2018": {
+  "Lexus|ES|2018": {
     "url": "https://www.carcomplaints.com/Lexus/ES350/2018/",
     "complaints": 12,
     "recalls": 2,
@@ -4515,7 +4515,7 @@
     ],
     "seal": null
   },
-  "Lexus|ES350|2019": {
+  "Lexus|ES|2019": {
     "url": "https://www.carcomplaints.com/Lexus/ES350/2019/",
     "complaints": 52,
     "recalls": 3,
@@ -4524,9 +4524,9 @@
     "top_problems": [],
     "seal": null
   },
-  "Lexus|ES350|2020": null,
-  "Lexus|ES350|2021": null,
-  "Lexus|ES350|2022": {
+  "Lexus|ES|2020": null,
+  "Lexus|ES|2021": null,
+  "Lexus|ES|2022": {
     "url": "https://www.carcomplaints.com/Lexus/ES350/2022/",
     "complaints": 12,
     "recalls": null,
@@ -4538,9 +4538,9 @@
     ],
     "seal": null
   },
-  "Lexus|ES350|2023": null,
-  "Lexus|ES350|2024": null,
-  "Lexus|ES350|2025": null,
+  "Lexus|ES|2023": null,
+  "Lexus|ES|2024": null,
+  "Lexus|ES|2025": null,
   "Lexus|GS F|2016": {
     "url": "https://www.carcomplaints.com/Lexus/GS_F/2016/",
     "complaints": 2,
@@ -4590,8 +4590,20 @@
   "Lexus|RX Hybrid|2020": null,
   "Lexus|RX Hybrid|2021": null,
   "Lexus|RX Hybrid|2022": null,
-  "Lexus|RX350|2016": null,
-  "Lexus|RX350|2017": {
+  "Lexus|RX|2016": {
+    "url": "https://www.carcomplaints.com/Lexus/RX350/2016/",
+    "complaints": 119,
+    "recalls": 3,
+    "tsbs": 296,
+    "investigations": null,
+    "top_problems": [
+      "Not Shifting Properly in the 2016 Lexus RX 350",
+      "Blue Tooth Issues in the 2016 Lexus RX 350",
+      "Sunroof Exploded While Driving in the 2016 Lexus RX 350"
+    ],
+    "seal": null
+  },
+  "Lexus|RX|2017": {
     "url": "https://www.carcomplaints.com/Lexus/RX350/2017/",
     "complaints": 126,
     "recalls": 3,
@@ -4604,7 +4616,7 @@
     ],
     "seal": null
   },
-  "Lexus|RX350|2018": {
+  "Lexus|RX|2018": {
     "url": "https://www.carcomplaints.com/Lexus/RX350/2018/",
     "complaints": 53,
     "recalls": 1,
@@ -4617,7 +4629,7 @@
     ],
     "seal": null
   },
-  "Lexus|RX350|2019": {
+  "Lexus|RX|2019": {
     "url": "https://www.carcomplaints.com/Lexus/RX350/2019/",
     "complaints": 95,
     "recalls": 4,
@@ -4628,7 +4640,7 @@
     ],
     "seal": null
   },
-  "Lexus|RX350|2020": {
+  "Lexus|RX|2020": {
     "url": "https://www.carcomplaints.com/Lexus/RX350/2020/",
     "complaints": 44,
     "recalls": 2,
@@ -4639,7 +4651,7 @@
     ],
     "seal": null
   },
-  "Lexus|RX350|2021": {
+  "Lexus|RX|2021": {
     "url": "https://www.carcomplaints.com/Lexus/RX350/2021/",
     "complaints": 64,
     "recalls": 2,
@@ -4650,7 +4662,7 @@
     ],
     "seal": null
   },
-  "Lexus|RX350|2022": null,
+  "Lexus|RX|2022": null,
   "Lexus|UX Hybrid|2019": null,
   "Lexus|UX Hybrid|2020": null,
   "Lexus|UX Hybrid|2021": null,
