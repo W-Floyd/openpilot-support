@@ -30,6 +30,92 @@ OPENPILOT_CACHE_FILE = os.path.join(HERE, ".openpilot_cache.json")
 CARGURUS_CACHE_FILE = os.path.join(HERE, ".cargurus_cache.json")
 
 
+def _extract_years_from_model(model: str) -> list[int]:
+    """Extract year range from model name when years field is not available."""
+    import re
+
+    pattern = r"\d{4}-\d{2}|\d{4}"
+    matches = re.findall(pattern, model)
+    if not matches:
+        return []
+
+    years: list[int] = []
+    for match in matches:
+        years.extend(parse_years(match))
+    return sorted(set(years))
+
+
+def _remove_years_from_model(car_docs) -> str:
+    """Strip year range from model name."""
+    import re
+
+    if car_docs.years:
+        return car_docs.model
+    else:
+        pattern = r"(\s*20\d{2}(-20\d{2}|-\d{2})?)"
+        return re.sub(pattern, "", car_docs.model).strip()
+
+
+from dataclasses import dataclass
+
+
+@dataclass
+class MockCarDocs:
+    model: str
+    years: str = ""
+
+
+def test_remove_years_from_model() -> None:
+    """Test the _remove_years_from_model function."""
+    test_cases = [
+        # (car_docs, expected_result)
+        (MockCarDocs("Accord", "2018"), "Accord"),
+        (MockCarDocs("Civic 2020-22", ""), "Civic"),
+        (MockCarDocs("CR-V", "2015"), "CR-V"),
+        (MockCarDocs("no years here", ""), "no years here"),
+        (MockCarDocs("Silverado 1500", "2022"), "Silverado 1500"),
+        (MockCarDocs("Silverado 1500 2022", ""), "Silverado 1500"),
+        (
+            MockCarDocs("Suburban Premier 2016-2020 - No-ACC", ""),
+            "Suburban Premier - No-ACC",
+        ),
+    ]
+
+    for car_docs, expected in test_cases:
+        result = _remove_years_from_model(car_docs)
+        assert result == expected, (
+            f"Failed for {car_docs.model!r}: got {result!r}, expected {expected!r}"
+        )
+
+    print("All tests passed!")
+
+
+def test_extract_years_from_model() -> None:
+    """Test the _extract_years_from_model function."""
+    test_cases = [
+        # (input_model, expected_years)
+        ("Suburban Premier 2016-20", [2016, 2017, 2018, 2019, 2020]),
+        ("Silverado 2020-21", [2020, 2021]),
+        ("Civic LX 2019", [2019]),
+        ("no years here", []),
+        ("2016-2020 Edition", [2016, 2017, 2018, 2019, 2020]),
+        ("Accord 2022-24", [2022, 2023, 2024]),
+        ("CR-V 2015", [2015]),
+        ("Explorer 2020-23, 2024", [2020, 2021, 2022, 2023, 2024]),
+        ("RAV4 2022-23", [2022, 2023]),
+        ("Malibu Hybrid 2017 - No-ACC", [2017]),
+        ("Malibu 2017-19 ASCM Harness", [2017, 2018, 2019]),
+    ]
+
+    for model, expected in test_cases:
+        result = _extract_years_from_model(model)
+        assert result == expected, (
+            f"Failed for {model!r}: got {result}, expected {expected}"
+        )
+
+    print("All tests passed!")
+
+
 def parse_years(years_str: str) -> list[int]:
     if not years_str:
         return []
@@ -61,8 +147,10 @@ def car_docs_to_dict(car_docs) -> dict:
 
     return {
         "make": car_docs.make,
-        "model": car_docs.model,
-        "years": parse_years(car_docs.years),
+        "model": _remove_years_from_model(car_docs),
+        "years": _extract_years_from_model(car_docs.model)
+        if not parse_years(car_docs.years)
+        else parse_years(car_docs.years),
         "name": car_docs.name,
         "package": car_docs.package,
         "support_type": car_docs.support_type.value,
@@ -154,8 +242,10 @@ def car_docs_to_dict_old(car_docs) -> dict:
 
     return {
         "make": car_docs.make,
-        "model": car_docs.model,
-        "years": parse_years(car_docs.years),
+        "model": _remove_years_from_model(car_docs),
+        "years": _extract_years_from_model(car_docs.model)
+        if not parse_years(car_docs.years)
+        else parse_years(car_docs.years),
         "name": car_docs.name,
         "package": car_docs.package,
         "support_type": "Community",
@@ -1081,7 +1171,8 @@ def main():
         favicon_svg = generate_favicon_svg()
         base_path = os.path.splitext(args.html_out)[0]
         favicon_path = f"{base_path}-favicon.svg"
-        os.makedirs(os.path.dirname(favicon_path), exist_ok=True)
+        favicon_dir = os.path.dirname(favicon_path) or "."
+        os.makedirs(favicon_dir, exist_ok=True)
         with open(favicon_path, "w") as f:
             f.write(favicon_svg)
         print(f"Written favicon to {favicon_path}", file=sys.stderr)
