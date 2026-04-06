@@ -3,6 +3,7 @@ import argparse
 import concurrent.futures
 import html.parser
 import http.server
+import subprocess
 import json
 import math
 import os
@@ -14,13 +15,16 @@ import urllib.request
 import jinja2
 import minify_html
 
-# Add opendbc to path
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), "openpilot", "opendbc_repo"))
+HERE = os.path.dirname(os.path.abspath(__file__))
 
-from opendbc.car.docs import get_all_car_docs
-from opendbc.car.docs_definitions import Column, ExtraCarsColumn, Star
+# Forks to load, in priority order (first fork's data wins for shared cars).
+FORKS = [
+    ("openpilot", os.path.join(HERE, "openpilot", "opendbc_repo")),
+    ("sunnypilot", os.path.join(HERE, "sunnypilot", "opendbc_repo")),
+    ("opgm", os.path.join(HERE, "opgm", "opendbc_repo")),
+]
 
-CARGURUS_CACHE_FILE = os.path.join(os.path.dirname(__file__), ".cargurus_cache.json")
+CARGURUS_CACHE_FILE = os.path.join(HERE, ".cargurus_cache.json")
 
 
 def parse_years(years_str: str) -> list[int]:
@@ -42,6 +46,9 @@ def parse_years(years_str: str) -> list[int]:
 
 
 def car_docs_to_dict(car_docs) -> dict:
+    # Import from whichever opendbc fork is currently loaded in sys.modules.
+    from opendbc.car.docs_definitions import Column, ExtraCarsColumn, Star
+
     row = car_docs.row
 
     def star_to_bool(val) -> bool | None:
@@ -80,6 +87,47 @@ def car_docs_to_dict(car_docs) -> dict:
             for col in ExtraCarsColumn
         },
     }
+
+
+def _load_cars_directly(fork_path: str) -> list[dict]:
+    """Load and convert car docs from a fork's opendbc_repo directly.
+
+    Must run in an isolated process — capnp's schema registry is global and
+    will reject duplicate schema IDs if two forks are loaded in the same process.
+    """
+    sys.path.insert(0, fork_path)
+    from opendbc.car.docs import get_all_car_docs
+    return [car_docs_to_dict(cd) for cd in get_all_car_docs()]
+
+
+def load_fork_cars(fork_path: str) -> list[dict]:
+    """Load car docs from a fork's opendbc_repo via subprocess for isolation."""
+    result = subprocess.run(
+        [sys.executable, __file__, "--dump-fork", fork_path],
+        capture_output=True,
+        text=True,
+    )
+    if result.returncode != 0:
+        print(result.stderr, file=sys.stderr, end="")
+        raise RuntimeError(f"Failed to load cars from {fork_path}")
+    return json.loads(result.stdout)
+
+
+def merge_fork_cars(fork_car_lists: list[tuple[str, list[dict]]]) -> list[dict]:
+    """Merge car lists from multiple forks, deduplicating by name.
+
+    First fork's car data wins for shared cars; later forks append their name
+    to the car's ``forks`` list.
+    """
+    merged: dict[str, dict] = {}
+    for fork_name, cars in fork_car_lists:
+        for car in cars:
+            key = car["name"]
+            if key in merged:
+                merged[key]["forks"].append(fork_name)
+            else:
+                merged[key] = {**car, "forks": [fork_name]}
+    return list(merged.values())
 
 
 def cargurus_car_key(car: dict) -> str | None:
@@ -614,13 +662,28 @@ def main():
         action="store_true",
         help="Skip HTML/JS/CSS minification (useful for debugging).",
     )
+    # Hidden: used by load_fork_cars() to isolate capnp schema loading per fork.
+    parser.add_argument("--dump-fork", default=None, help=argparse.SUPPRESS)
     args = parser.parse_args()
 
-    print("Loading car docs...", file=sys.stderr)
-    all_car_docs = get_all_car_docs()
-    print(f"Found {len(all_car_docs)} cars.", file=sys.stderr)
+    if args.dump_fork:
+        print(json.dumps(_load_cars_directly(args.dump_fork)))
+        return
 
-    cars = [car_docs_to_dict(cd) for cd in all_car_docs]
+    print("Loading car docs from forks...", file=sys.stderr)
+    fork_car_lists = []
+    for fork_name, fork_path in FORKS:
+        opendbc_pkg = os.path.join(fork_path, "opendbc")
+        if not os.path.isdir(opendbc_pkg):
+            print(f"  Skipping {fork_name}: opendbc package not found in {fork_path}.", file=sys.stderr)
+            continue
+        print(f"  Loading {fork_name}...", file=sys.stderr)
+        fork_cars = load_fork_cars(fork_path)
+        print(f"  Found {len(fork_cars)} cars in {fork_name}.", file=sys.stderr)
+        fork_car_lists.append((fork_name, fork_cars))
+
+    cars = merge_fork_cars(fork_car_lists)
+    print(f"Total unique cars: {len(cars)}.", file=sys.stderr)
 
     if not args.no_fetch_cargurus:
         print("Fetching CarGurus data...", file=sys.stderr)
