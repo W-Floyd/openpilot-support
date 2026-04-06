@@ -217,11 +217,27 @@ def load_fork_cars(fork_path: str) -> list[dict]:
     return json.loads(result.stdout)
 
 
+def _same_features(a: dict, b: dict) -> bool:
+    """Return True if two car entries have the same functional support features."""
+    return (
+        a["package"] == b["package"]
+        and a["support_type"] == b["support_type"]
+        and a["openpilot_longitudinal"] == b["openpilot_longitudinal"]
+        and a["good_steering_torque"] == b["good_steering_torque"]
+        and a["auto_resume"] == b["auto_resume"]
+    )
+
+
 def merge_fork_cars(fork_car_lists: list[tuple[str, list[dict]]]) -> list[dict]:
     """Merge car lists from multiple forks, deduplicating by name.
 
     First fork's car data wins for shared cars; later forks append their name
     to the car's ``forks`` list.
+
+    After the name-based merge, any car whose year range is a strict subset of
+    another same-make/model car with identical features is absorbed into the
+    larger entry — the larger car gains the subset car's forks, and the subset
+    entry is removed.
     """
     merged: dict[str, dict] = {}
     for fork_name, cars in fork_car_lists:
@@ -231,6 +247,38 @@ def merge_fork_cars(fork_car_lists: list[tuple[str, list[dict]]]) -> list[dict]:
                 merged[key]["forks"].append(fork_name)
             else:
                 merged[key] = {**car, "forks": [fork_name]}
+
+    # Group names by (make, model); only groups with >1 entry can have subsets.
+    by_make_model: dict[tuple[str, str], list[str]] = {}
+    for name, car in merged.items():
+        by_make_model.setdefault((car["make"], car["model"]), []).append(name)
+
+    to_remove: set[str] = set()
+    for names in by_make_model.values():
+        if len(names) < 2:
+            continue
+        # Process largest year ranges first so a subset is always absorbed by
+        # the widest matching entry.
+        names_by_size = sorted(names, key=lambda n: len(merged[n]["years"]), reverse=True)
+        for i, larger_name in enumerate(names_by_size):
+            if larger_name in to_remove:
+                continue
+            larger = merged[larger_name]
+            larger_years = set(larger["years"])
+            for smaller_name in names_by_size[i + 1:]:
+                if smaller_name in to_remove:
+                    continue
+                smaller = merged[smaller_name]
+                smaller_years = set(smaller["years"])
+                if smaller_years < larger_years and _same_features(larger, smaller):
+                    for fork in smaller["forks"]:
+                        if fork not in larger["forks"]:
+                            larger["forks"].append(fork)
+                    to_remove.add(smaller_name)
+
+    for name in to_remove:
+        del merged[name]
+
     return list(merged.values())
 
 
