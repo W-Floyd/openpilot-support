@@ -3,10 +3,10 @@ import argparse
 import concurrent.futures
 import html.parser
 import http.server
-import subprocess
 import json
 import math
 import os
+import subprocess
 import sys
 import unicodedata
 import urllib.parse
@@ -111,15 +111,23 @@ def _setup_old_layout_stubs() -> None:
         return m
 
     class _Noop:
-        def __init__(self, *a, **kw): pass
-        def __call__(self, *a, **kw): return self
+        def __init__(self, *a, **kw):
+            pass
+
+        def __call__(self, *a, **kw):
+            return self
 
     # usb1: Python libusb wrapper — only needed for USB comms with panda hardware
-    _stub("usb1",
-          ENDPOINT_IN=0x80, ENDPOINT_OUT=0x00,
-          TYPE_VENDOR=0x40, RECIPIENT_DEVICE=0x00,
-          USBContext=_Noop,
-          USBErrorIO=Exception, USBErrorOverflow=Exception)
+    _stub(
+        "usb1",
+        ENDPOINT_IN=0x80,
+        ENDPOINT_OUT=0x00,
+        TYPE_VENDOR=0x40,
+        RECIPIENT_DEVICE=0x00,
+        USBContext=_Noop,
+        USBErrorIO=Exception,
+        USBErrorOverflow=Exception,
+    )
 
     # Compiled Cython CAN bus parser/packer — only needed for live CAN parsing
     _stub("opendbc.can.parser_pyx", CANParser=_Noop, CANDefine=_Noop)
@@ -177,6 +185,7 @@ def _load_cars_directly_old(fork_root: str) -> list[dict]:
     _setup_old_layout_stubs()
     sys.path.insert(0, fork_root)
     from openpilot.selfdrive.car.docs import get_all_car_docs
+
     # Some fork code prints debug info to stdout during get_params(); redirect to
     # stderr so it doesn't corrupt the JSON written to stdout by --dump-fork.
     old_stdout = sys.stdout
@@ -210,9 +219,9 @@ def _load_cars_directly(fork_path: str) -> list[dict]:
         # 2. Meta path finder for openpilot.* only: StarPilot imports arbitrary submodules
         #    (e.g. openpilot.starpilot.common.testing_grounds) that aren't on sys.path in
         #    this subprocess.  Return MagicMock modules for any openpilot.* import.
-        import types
         import importlib.abc
         import importlib.machinery
+        import types
         from unittest.mock import MagicMock
 
         _injected: list[str] = []
@@ -246,40 +255,64 @@ def _load_cars_directly(fork_path: str) -> list[dict]:
         class _OpenpilotMockFinder(importlib.abc.MetaPathFinder):
             def find_spec(self, fullname, _path, _target=None):
                 if fullname == "openpilot" or fullname.startswith("openpilot."):
-                    return importlib.machinery.ModuleSpec(fullname, _OpenpilotMockLoader())
+                    return importlib.machinery.ModuleSpec(
+                        fullname, _OpenpilotMockLoader()
+                    )
                 return None
 
         _finder = _OpenpilotMockFinder()
         sys.meta_path.insert(0, _finder)
         try:
-            import opendbc.car.docs as _car_docs_mod
-            from opendbc.car.docs import get_all_car_docs
             # StarPilot added a required `starpilot_toggles` arg to get_params but
             # didn't update get_params_for_docs in docs.py, and some platforms are
             # missing from get_torque_params().  Only patch when the fork's get_params
             # actually requires starpilot_toggles.
             import inspect
+
+            import opendbc.car.docs as _car_docs_mod
+            from opendbc.car.docs import get_all_car_docs
+
             _sample_iface = next(iter(_car_docs_mod.interfaces.values()), None)
-            if _sample_iface is not None and "starpilot_toggles" in inspect.signature(_sample_iface.get_params).parameters:
+            if (
+                _sample_iface is not None
+                and "starpilot_toggles"
+                in inspect.signature(_sample_iface.get_params).parameters
+            ):
+
                 def _patched_get_params_for_docs(platform):
                     from types import SimpleNamespace
+
                     from opendbc.car import gen_empty_fingerprint
                     from opendbc.car.structs import CarParams
-                    cp_platform = platform if platform in _car_docs_mod.interfaces else _car_docs_mod.MOCK.MOCK
+
+                    cp_platform = (
+                        platform
+                        if platform in _car_docs_mod.interfaces
+                        else _car_docs_mod.MOCK.MOCK
+                    )
                     try:
                         return _car_docs_mod.interfaces[cp_platform].get_params(
-                            cp_platform, fingerprint=gen_empty_fingerprint(),
+                            cp_platform,
+                            fingerprint=gen_empty_fingerprint(),
                             car_fw=[CarParams.CarFw(ecu=CarParams.Ecu.unknown)],
-                            alpha_long=True, is_release=False, docs=True,
+                            alpha_long=True,
+                            is_release=False,
+                            docs=True,
                             starpilot_toggles=SimpleNamespace(),
                         )
                     except Exception:
-                        return _car_docs_mod.interfaces[_car_docs_mod.MOCK.MOCK].get_params(
-                            _car_docs_mod.MOCK.MOCK, fingerprint=gen_empty_fingerprint(),
+                        return _car_docs_mod.interfaces[
+                            _car_docs_mod.MOCK.MOCK
+                        ].get_params(
+                            _car_docs_mod.MOCK.MOCK,
+                            fingerprint=gen_empty_fingerprint(),
                             car_fw=[CarParams.CarFw(ecu=CarParams.Ecu.unknown)],
-                            alpha_long=True, is_release=False, docs=True,
+                            alpha_long=True,
+                            is_release=False,
+                            docs=True,
                             starpilot_toggles=SimpleNamespace(),
                         )
+
                 _car_docs_mod.get_params_for_docs = _patched_get_params_for_docs
             result = [car_docs_to_dict(cd) for cd in get_all_car_docs()]
         finally:
@@ -347,13 +380,15 @@ def merge_fork_cars(fork_car_lists: list[tuple[str, list[dict]]]) -> list[dict]:
             continue
         # Process largest year ranges first so a subset is always absorbed by
         # the widest matching entry.
-        names_by_size = sorted(names, key=lambda n: len(merged[n]["years"]), reverse=True)
+        names_by_size = sorted(
+            names, key=lambda n: len(merged[n]["years"]), reverse=True
+        )
         for i, larger_name in enumerate(names_by_size):
             if larger_name in to_remove:
                 continue
             larger = merged[larger_name]
             larger_years = set(larger["years"])
-            for smaller_name in names_by_size[i + 1:]:
+            for smaller_name in names_by_size[i + 1 :]:
                 if smaller_name in to_remove:
                     continue
                 smaller = merged[smaller_name]
@@ -915,11 +950,19 @@ def main():
     for fork_name, fork_path in FORKS:
         fork_root = os.path.dirname(fork_path)
         new_layout = os.path.isdir(os.path.join(fork_path, "opendbc", "car"))
-        old_layout = os.path.isfile(os.path.join(fork_root, "openpilot", "selfdrive", "car", "docs.py"))
+        old_layout = os.path.isfile(
+            os.path.join(fork_root, "openpilot", "selfdrive", "car", "docs.py")
+        )
         if not new_layout and not old_layout:
-            print(f"  Skipping {fork_name}: no supported opendbc layout found.", file=sys.stderr)
+            print(
+                f"  Skipping {fork_name}: no supported opendbc layout found.",
+                file=sys.stderr,
+            )
             continue
-        print(f"  Loading {fork_name} ({'new' if new_layout else 'old'} layout)...", file=sys.stderr)
+        print(
+            f"  Loading {fork_name} ({'new' if new_layout else 'old'} layout)...",
+            file=sys.stderr,
+        )
         fork_cars = load_fork_cars(fork_path)
         print(f"  Found {len(fork_cars)} cars in {fork_name}.", file=sys.stderr)
         fork_car_lists.append((fork_name, fork_cars))
