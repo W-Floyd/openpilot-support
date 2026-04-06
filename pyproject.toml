@@ -9,6 +9,3 @@ dependencies = [
   "natsort",
   "opendbc[docs]",
 ]
-
-[tool.uv.sources]
-opendbc = { path = "openpilot/opendbc_repo" }
