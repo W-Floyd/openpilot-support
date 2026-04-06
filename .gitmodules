@@ -7,3 +7,6 @@
 [submodule "opgm"]
 	path = opgm
 	url = git@github.com:opgm/openpilot.git
+[submodule "BMW-E8x-E9x"]
+	path = BMW-E8x-E9x
+	url = git@github.com:BMW-E8x-E9x/openpilot.git

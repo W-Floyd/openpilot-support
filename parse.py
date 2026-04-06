@@ -22,6 +22,7 @@ FORKS = [
     ("openpilot", os.path.join(HERE, "openpilot", "opendbc_repo")),
     ("sunnypilot", os.path.join(HERE, "sunnypilot", "opendbc_repo")),
     ("opgm", os.path.join(HERE, "opgm", "opendbc_repo")),
+    ("BMW-E8x-E9x", os.path.join(HERE, "BMW-E8x-E9x", "opendbc_repo")),
 ]
 
 CARGURUS_CACHE_FILE = os.path.join(HERE, ".cargurus_cache.json")
@@ -89,15 +90,118 @@ def car_docs_to_dict(car_docs) -> dict:
     }
 
 
-def _load_cars_directly(fork_path: str) -> list[dict]:
-    """Load and convert car docs from a fork's opendbc_repo directly.
+def _setup_old_layout_stubs() -> None:
+    """Inject stub modules for the old openpilot layout's compiled/hardware deps.
 
-    Must run in an isolated process — capnp's schema registry is global and
-    will reject duplicate schema IDs if two forks are loaded in the same process.
+    Old-style forks (selfdrive/car layout) import hardware drivers and Cython
+    extensions at module load time.  These are only used at runtime (actual CAN
+    bus comms, USB panda connections) — not during docs generation — so safe to
+    stub out.
     """
-    sys.path.insert(0, fork_path)
-    from opendbc.car.docs import get_all_car_docs
-    return [car_docs_to_dict(cd) for cd in get_all_car_docs()]
+    import types
+
+    def _stub(name: str, **attrs):
+        if name in sys.modules:
+            return sys.modules[name]
+        m = types.ModuleType(name)
+        for k, v in attrs.items():
+            setattr(m, k, v)
+        sys.modules[name] = m
+        return m
+
+    class _Noop:
+        def __init__(self, *a, **kw): pass
+        def __call__(self, *a, **kw): return self
+
+    # usb1: Python libusb wrapper — only needed for USB comms with panda hardware
+    _stub("usb1",
+          ENDPOINT_IN=0x80, ENDPOINT_OUT=0x00,
+          TYPE_VENDOR=0x40, RECIPIENT_DEVICE=0x00,
+          USBContext=_Noop,
+          USBErrorIO=Exception, USBErrorOverflow=Exception)
+
+    # Compiled Cython CAN bus parser/packer — only needed for live CAN parsing
+    _stub("opendbc.can.parser_pyx", CANParser=_Noop, CANDefine=_Noop)
+    _stub("opendbc.can.packer_pyx", CANPacker=_Noop)
+
+    # cereal.messaging IPC — only used at runtime, not during docs generation
+    _stub("cereal.messaging")
+
+    # Events system — only used in CarInterface.update(), not get_all_car_docs()
+    _stub("openpilot.selfdrive.controls.lib.events", Events=_Noop)
+
+
+def car_docs_to_dict_old(car_docs) -> dict:
+    """Convert old-style (selfdrive/car) CarDocs to our standard dict format."""
+    from openpilot.selfdrive.car.docs_definitions import Column, Star
+
+    row = car_docs.row
+
+    def star_to_bool(val) -> bool | None:
+        if isinstance(val, Star):
+            return val == Star.FULL
+        return None
+
+    return {
+        "make": car_docs.make,
+        "model": car_docs.model,
+        "years": parse_years(car_docs.years),
+        "name": car_docs.name,
+        "package": car_docs.package,
+        "support_type": "Community",
+        "support_link": "#community",
+        "merged": False,
+        "min_steer_speed": car_docs.min_steer_speed
+        if car_docs.min_steer_speed is not None
+        and not math.isinf(car_docs.min_steer_speed)
+        else None,
+        "min_enable_speed": car_docs.min_enable_speed
+        if car_docs.min_enable_speed is not None
+        and not math.isinf(car_docs.min_enable_speed)
+        else None,
+        "auto_resume": car_docs.auto_resume,
+        "good_steering_torque": star_to_bool(row[Column.STEERING_TORQUE]),
+        "openpilot_longitudinal": row[Column.LONGITUDINAL]
+        if not isinstance(row[Column.LONGITUDINAL], Star)
+        else star_to_bool(row[Column.LONGITUDINAL]),
+        "video": getattr(car_docs, "video_link", None),
+        "setup_video": None,
+        "detail_sentence": car_docs.detail_sentence,
+        "extra_cars_columns": {},
+    }
+
+
+def _load_cars_directly_old(fork_root: str) -> list[dict]:
+    """Load car docs from an old-style openpilot fork (selfdrive/car layout)."""
+    _setup_old_layout_stubs()
+    sys.path.insert(0, fork_root)
+    from openpilot.selfdrive.car.docs import get_all_car_docs
+    # Some fork code prints debug info to stdout during get_params(); redirect to
+    # stderr so it doesn't corrupt the JSON written to stdout by --dump-fork.
+    old_stdout = sys.stdout
+    sys.stdout = sys.stderr
+    try:
+        cars = [car_docs_to_dict_old(cd) for cd in get_all_car_docs()]
+    finally:
+        sys.stdout = old_stdout
+    return cars
+
+
+def _load_cars_directly(fork_path: str) -> list[dict]:
+    """Load and convert car docs from a fork directly.
+
+    Detects the layout (new opendbc_repo vs old selfdrive/car) and dispatches
+    accordingly.  Must run in an isolated process — capnp's schema registry is
+    global and will reject duplicate schema IDs across forks.
+    """
+    if os.path.isdir(os.path.join(fork_path, "opendbc", "car")):
+        # New layout: opendbc_repo/opendbc/car/docs.py
+        sys.path.insert(0, fork_path)
+        from opendbc.car.docs import get_all_car_docs
+        return [car_docs_to_dict(cd) for cd in get_all_car_docs()]
+    else:
+        # Old layout: fork_root/openpilot/selfdrive/car/docs.py
+        return _load_cars_directly_old(os.path.dirname(fork_path))
 
 
 def load_fork_cars(fork_path: str) -> list[dict]:
@@ -673,11 +777,13 @@ def main():
     print("Loading car docs from forks...", file=sys.stderr)
     fork_car_lists = []
     for fork_name, fork_path in FORKS:
-        opendbc_pkg = os.path.join(fork_path, "opendbc")
-        if not os.path.isdir(opendbc_pkg):
-            print(f"  Skipping {fork_name}: opendbc package not found in {fork_path}.", file=sys.stderr)
+        fork_root = os.path.dirname(fork_path)
+        new_layout = os.path.isdir(os.path.join(fork_path, "opendbc", "car"))
+        old_layout = os.path.isfile(os.path.join(fork_root, "openpilot", "selfdrive", "car", "docs.py"))
+        if not new_layout and not old_layout:
+            print(f"  Skipping {fork_name}: no supported opendbc layout found.", file=sys.stderr)
             continue
-        print(f"  Loading {fork_name}...", file=sys.stderr)
+        print(f"  Loading {fork_name} ({'new' if new_layout else 'old'} layout)...", file=sys.stderr)
         fork_cars = load_fork_cars(fork_path)
         print(f"  Found {len(fork_cars)} cars in {fork_name}.", file=sys.stderr)
         fork_car_lists.append((fork_name, fork_cars))
