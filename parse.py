@@ -328,17 +328,31 @@ def _load_cars_directly(fork_path: str) -> list[dict]:
 
 def load_fork_cars(
     fork_name: str, fork_path: str, use_cache: bool = True
-) -> list[dict]:
+) -> list[dict] | None:
     """Load car docs from a fork's opendbc_repo via subprocess for isolation.
 
     If use_cache is True, cached results from previous runs are reused when
     available. The cache file stores fork-specific car data keyed by fork name.
+
+    Returns None if the fork has no supported layout.
     """
     cache = None
     if use_cache:
         cache = load_openpilot_cache()
         if fork_name in cache:
+            print(
+                f"  Using cached {fork_name} data...",
+                file=sys.stderr,
+            )
             return cache[fork_name]
+
+    fork_root = os.path.dirname(fork_path)
+    new_layout = os.path.isdir(os.path.join(fork_path, "opendbc", "car"))
+    old_layout = os.path.isfile(
+        os.path.join(fork_root, "openpilot", "selfdrive", "car", "docs.py")
+    )
+    if not new_layout and not old_layout:
+        return None
 
     result = subprocess.run(
         [sys.executable, __file__, "--dump-fork", fork_path],
@@ -987,23 +1001,30 @@ def main():
     print("Loading car docs from forks...", file=sys.stderr)
     fork_car_lists = []
     for fork_name, fork_path in FORKS:
-        fork_root = os.path.dirname(fork_path)
-        new_layout = os.path.isdir(os.path.join(fork_path, "opendbc", "car"))
-        old_layout = os.path.isfile(
-            os.path.join(fork_root, "openpilot", "selfdrive", "car", "docs.py")
+        if not args.no_cache_openpilot:
+            cache = load_openpilot_cache()
+            if fork_name in cache:
+                fork_cars = cache[fork_name]
+                print(f"  Using cached {fork_name} data...", file=sys.stderr)
+                print(f"  Found {len(fork_cars)} cars in {fork_name}.", file=sys.stderr)
+                fork_car_lists.append((fork_name, fork_cars))
+                continue
+
+        fork_cars = load_fork_cars(
+            fork_name, fork_path, use_cache=not args.no_cache_openpilot
         )
-        if not new_layout and not old_layout:
+        if fork_cars is None:
             print(
                 f"  Skipping {fork_name}: no supported opendbc layout found.",
                 file=sys.stderr,
             )
             continue
-        print(
-            f"  Loading {fork_name} ({'new' if new_layout else 'old'} layout)...",
-            file=sys.stderr,
+        layout = (
+            "new" if os.path.isdir(os.path.join(fork_path, "opendbc", "car")) else "old"
         )
-        fork_cars = load_fork_cars(
-            fork_name, fork_path, use_cache=not args.no_cache_openpilot
+        print(
+            f"  Loading {fork_name} ({layout} layout)...",
+            file=sys.stderr,
         )
         print(f"  Found {len(fork_cars)} cars in {fork_name}.", file=sys.stderr)
         fork_car_lists.append((fork_name, fork_cars))
