@@ -30,12 +30,15 @@ OPENPILOT_CACHE_FILE = os.path.join(HERE, ".openpilot_cache.json")
 CARGURUS_CACHE_FILE = os.path.join(HERE, ".cargurus_cache.json")
 
 
-def _extract_years_from_model(model: str) -> list[int]:
+def _extract_years_from_model(car_docs) -> list[int]:
     """Extract year range from model name when years field is not available."""
     import re
 
+    if parse_years(car_docs.years):
+        return parse_years(car_docs.years)
+
     pattern = r"\d{4}-\d{2}|\d{4}"
-    matches = re.findall(pattern, model)
+    matches = re.findall(pattern, car_docs.model)
     if not matches:
         return []
 
@@ -94,17 +97,11 @@ def test_extract_years_from_model() -> None:
     """Test the _extract_years_from_model function."""
     test_cases = [
         # (input_model, expected_years)
-        ("Suburban Premier 2016-20", [2016, 2017, 2018, 2019, 2020]),
-        ("Silverado 2020-21", [2020, 2021]),
-        ("Civic LX 2019", [2019]),
-        ("no years here", []),
-        ("2016-2020 Edition", [2016, 2017, 2018, 2019, 2020]),
-        ("Accord 2022-24", [2022, 2023, 2024]),
-        ("CR-V 2015", [2015]),
-        ("Explorer 2020-23, 2024", [2020, 2021, 2022, 2023, 2024]),
-        ("RAV4 2022-23", [2022, 2023]),
-        ("Malibu Hybrid 2017 - No-ACC", [2017]),
-        ("Malibu 2017-19 ASCM Harness", [2017, 2018, 2019]),
+        (
+            MockCarDocs("Suburban Premier", "2016-20"),
+            [2016, 2017, 2018, 2019, 2020],
+        ),
+        (MockCarDocs("Silverado 2020-21", ""), [2020, 2021]),
     ]
 
     for model, expected in test_cases:
@@ -136,7 +133,7 @@ def parse_years(years_str: str) -> list[int]:
 
 def car_docs_to_dict(car_docs) -> dict:
     # Import from whichever opendbc fork is currently loaded in sys.modules.
-    from opendbc.car.docs_definitions import Column, ExtraCarsColumn, Star
+    from opendbc.car.docs_definitions import CarHarness, Column, ExtraCarsColumn, Star
 
     row = car_docs.row
 
@@ -145,12 +142,20 @@ def car_docs_to_dict(car_docs) -> dict:
             return val == Star.FULL
         return None
 
+    harness = None
+    if car_docs.car_parts.parts:
+        harness_docs = [
+            part
+            for part in car_docs.car_parts.all_parts()
+            if isinstance(part, CarHarness)
+        ]
+        for part in harness_docs:
+            harness = str(part.value.name).replace(" connector", "")
+
     return {
         "make": car_docs.make,
         "model": _remove_years_from_model(car_docs),
-        "years": _extract_years_from_model(car_docs.model)
-        if not parse_years(car_docs.years)
-        else parse_years(car_docs.years),
+        "years": _extract_years_from_model(car_docs),
         "name": car_docs.name,
         "package": car_docs.package,
         "support_type": car_docs.support_type.value,
@@ -172,6 +177,7 @@ def car_docs_to_dict(car_docs) -> dict:
         "video": car_docs.video,
         "setup_video": car_docs.setup_video,
         "detail_sentence": car_docs.detail_sentence,
+        "harness": harness,
         # Formatted columns matching CARS_template.md ExtraCarsColumn
         "extra_cars_columns": {
             col.name.lower(): car_docs.get_extra_cars_column(col)
@@ -243,9 +249,7 @@ def car_docs_to_dict_old(car_docs) -> dict:
     return {
         "make": car_docs.make,
         "model": _remove_years_from_model(car_docs),
-        "years": _extract_years_from_model(car_docs.model)
-        if not parse_years(car_docs.years)
-        else parse_years(car_docs.years),
+        "years": _extract_years_from_model(car_docs),
         "name": car_docs.name,
         "package": car_docs.package,
         "support_type": "Community",

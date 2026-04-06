@@ -721,7 +721,10 @@
                                         <!-- forks badges -->
                                         <template x-if="col.forks">
                                             <span class="flex flex-wrap gap-1">
-                                                <template x-for="fork in car.forks" :key="fork">
+                                                <template
+                                                    x-for="fork in car.forks"
+                                                    :key="fork"
+                                                >
                                                     <span
                                                         class="rounded-full px-2 py-0.5 text-xs font-medium"
                                                         :class="forkClass(fork)"
@@ -1205,6 +1208,11 @@
                             key: "good_steering_torque",
                             label: "Torque",
                             mobileLabel: "Torq.",
+                        },
+                        {
+                            key: "harness",
+                            label: "Harness",
+                            mobileLabel: "Harness",
                         },
                         {
                             key: "min_steer_speed",
