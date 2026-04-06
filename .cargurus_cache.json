@@ -317,6 +317,21 @@
     },
     "matchType": "KEYWORD"
   },
+  "Make: Acura, Model: TLX 2022-2023": {
+    "success": "SUCCESS",
+    "filterCriteria": {
+      "entityId": "d2278",
+      "makeModelTrimPaths": [
+        "m4/d2278"
+      ],
+      "startYear": 2022,
+      "endYear": 2023,
+      "isDeliveryEnabled": false,
+      "priceDropsOnly": false,
+      "hideNationwideShipping": true
+    },
+    "matchType": "LLM"
+  },
   "Make: Acura, Model: TLX 2023-2023": {
     "success": "SUCCESS",
     "filterCriteria": {
@@ -561,6 +576,21 @@
     },
     "matchType": "LLM"
   },
+  "Make: Buick, Model: Baby Enclave 2020-2023": {
+    "success": "SUCCESS",
+    "filterCriteria": {
+      "entityId": "d1029",
+      "makeModelTrimPaths": [
+        "m21/d1029"
+      ],
+      "startYear": 2020,
+      "endYear": 2023,
+      "isDeliveryEnabled": false,
+      "priceDropsOnly": false,
+      "hideNationwideShipping": true
+    },
+    "matchType": "LLM"
+  },
   "Make: CUPRA, Model: Ateca 2018-2023": {
     "success": "FAILURE",
     "errorMessage": "Failed to process query with LLM: The provided makes/models could not be matched to vehicle industry data available in our system. Please modify these names and try again: Make: CUPRA, Model: Ateca"
@@ -650,6 +680,43 @@
       "hideNationwideShipping": true
     },
     "matchType": "LLM"
+  },
+  "Make: Cadillac, Model: XT6 2020-2020": {
+    "success": "SUCCESS",
+    "filterCriteria": {
+      "entityId": "d2843",
+      "makeModelTrimPaths": [
+        "m22/d2843"
+      ],
+      "startYear": 2020,
+      "endYear": 2020,
+      "isDeliveryEnabled": false,
+      "priceDropsOnly": false,
+      "hideNationwideShipping": true
+    },
+    "matchType": "LLM"
+  },
+  "Make: Chevrolet, Model: Blazer 2019-2025": {
+    "success": "SUCCESS",
+    "filterCriteria": {
+      "entityId": "d602",
+      "makeModelTrimPaths": [
+        "m1/d602",
+        "m1/d3351",
+        "m1/d629",
+        "m1/d1714"
+      ],
+      "startYear": 2019,
+      "endYear": 2025,
+      "isDeliveryEnabled": false,
+      "priceDropsOnly": false,
+      "hideNationwideShipping": true
+    },
+    "matchType": "LLM"
+  },
+  "Make: Chevrolet, Model: Bolt ACC 2022-2023": {
+    "success": "FAILURE",
+    "errorMessage": "Failed to process query with LLM: The provided makes/models could not be matched to vehicle industry data available in our system. Please modify these names and try again: Make: Chevrolet, Model: Bolt, Trim description: ACC"
   },
   "Make: Chevrolet, Model: Bolt EUV 2022-2023": {
     "success": "SUCCESS",
@@ -857,6 +924,23 @@
     },
     "matchType": "LLM"
   },
+  "Make: Chevrolet, Model: Malibu 2019-2019": {
+    "success": "SUCCESS",
+    "filterCriteria": {
+      "entityId": "d622",
+      "makeModelTrimPaths": [
+        "m1/d622",
+        "m1/d2321",
+        "m1/d623"
+      ],
+      "startYear": 2019,
+      "endYear": 2019,
+      "isDeliveryEnabled": false,
+      "priceDropsOnly": false,
+      "hideNationwideShipping": true
+    },
+    "matchType": "LLM"
+  },
   "Make: Chevrolet, Model: Malibu No ACC 2018-2018": {
     "success": "SUCCESS",
     "filterCriteria": {
@@ -976,6 +1060,39 @@
       "installedOptionIds": [
         132
       ],
+      "hideNationwideShipping": true
+    },
+    "matchType": "LLM"
+  },
+  "Make: Chevrolet, Model: Suburban Premier 2016-2020": {
+    "success": "SUCCESS",
+    "filterCriteria": {
+      "entityId": "d638",
+      "makeModelTrimPaths": [
+        "m1/d638/Premier RWD",
+        "m1/d638/Premier 4WD",
+        "m1/d638/1500 Premier RWD",
+        "m1/d638/1500 Premier 4WD"
+      ],
+      "startYear": 2016,
+      "endYear": 2020,
+      "isDeliveryEnabled": false,
+      "priceDropsOnly": false,
+      "hideNationwideShipping": true
+    },
+    "matchType": "LLM"
+  },
+  "Make: Chevrolet, Model: TRAX 2024-2024": {
+    "success": "SUCCESS",
+    "filterCriteria": {
+      "entityId": "d2272",
+      "makeModelTrimPaths": [
+        "m1/d2272"
+      ],
+      "startYear": 2024,
+      "endYear": 2024,
+      "isDeliveryEnabled": false,
+      "priceDropsOnly": false,
       "hideNationwideShipping": true
     },
     "matchType": "LLM"

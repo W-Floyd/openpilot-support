@@ -23,6 +23,7 @@ FORKS = [
     ("sunnypilot", os.path.join(HERE, "sunnypilot", "opendbc_repo")),
     ("opgm", os.path.join(HERE, "opgm", "opendbc_repo")),
     ("BMW-E8x-E9x", os.path.join(HERE, "BMW-E8x-E9x", "opendbc_repo")),
+    ("StarPilot", os.path.join(HERE, "StarPilot", "opendbc_repo")),
 ]
 
 CARGURUS_CACHE_FILE = os.path.join(HERE, ".cargurus_cache.json")
@@ -197,8 +198,95 @@ def _load_cars_directly(fork_path: str) -> list[dict]:
     if os.path.isdir(os.path.join(fork_path, "opendbc", "car")):
         # New layout: opendbc_repo/opendbc/car/docs.py
         sys.path.insert(0, fork_path)
-        from opendbc.car.docs import get_all_car_docs
-        return [car_docs_to_dict(cd) for cd in get_all_car_docs()]
+        # Some forks (e.g. StarPilot) import cereal.custom and openpilot.* at module
+        # level in car_helpers and per-brand files, but docs loading doesn't need them
+        # at runtime.  We inject minimal stubs so those top-level imports succeed.
+        #
+        # Two-part strategy:
+        # 1. Targeted cereal stub: expose cereal.custom as MagicMock but do NOT add a
+        #    cereal.car attribute.  structs.py wraps `from cereal import car` in
+        #    try/except ImportError and falls back to capnp.load("car.capnp"), giving the
+        #    real CarParams.  Providing a fake cereal.car would break that for all forks.
+        # 2. Meta path finder for openpilot.* only: StarPilot imports arbitrary submodules
+        #    (e.g. openpilot.starpilot.common.testing_grounds) that aren't on sys.path in
+        #    this subprocess.  Return MagicMock modules for any openpilot.* import.
+        import types
+        import importlib.abc
+        import importlib.machinery
+        from unittest.mock import MagicMock
+
+        _injected: list[str] = []
+
+        def _inject(name: str, obj) -> None:
+            if name not in sys.modules:
+                sys.modules[name] = obj
+                _injected.append(name)
+
+        # cereal stub — custom present, car absent (structs.py fallback handles car)
+        _cereal = types.ModuleType("cereal")
+        _cereal_custom = MagicMock()
+        _cereal.custom = _cereal_custom  # type: ignore[attr-defined]
+        _inject("cereal", _cereal)
+        _inject("cereal.custom", _cereal_custom)
+
+        # openpilot meta path finder — mocks any openpilot.* submodule on demand
+        class _OpenpilotMockLoader(importlib.abc.Loader):
+            def create_module(self, spec):
+                mod = MagicMock()
+                mod.__name__ = spec.name
+                mod.__loader__ = self
+                mod.__package__ = spec.name.rpartition(".")[0]
+                mod.__spec__ = spec
+                mod.__path__ = []
+                return mod
+
+            def exec_module(self, _module):
+                pass
+
+        class _OpenpilotMockFinder(importlib.abc.MetaPathFinder):
+            def find_spec(self, fullname, _path, _target=None):
+                if fullname == "openpilot" or fullname.startswith("openpilot."):
+                    return importlib.machinery.ModuleSpec(fullname, _OpenpilotMockLoader())
+                return None
+
+        _finder = _OpenpilotMockFinder()
+        sys.meta_path.insert(0, _finder)
+        try:
+            import opendbc.car.docs as _car_docs_mod
+            from opendbc.car.docs import get_all_car_docs
+            # StarPilot added a required `starpilot_toggles` arg to get_params but
+            # didn't update get_params_for_docs in docs.py, and some platforms are
+            # missing from get_torque_params().  Only patch when the fork's get_params
+            # actually requires starpilot_toggles.
+            import inspect
+            _sample_iface = next(iter(_car_docs_mod.interfaces.values()), None)
+            if _sample_iface is not None and "starpilot_toggles" in inspect.signature(_sample_iface.get_params).parameters:
+                def _patched_get_params_for_docs(platform):
+                    from types import SimpleNamespace
+                    from opendbc.car import gen_empty_fingerprint
+                    from opendbc.car.structs import CarParams
+                    cp_platform = platform if platform in _car_docs_mod.interfaces else _car_docs_mod.MOCK.MOCK
+                    try:
+                        return _car_docs_mod.interfaces[cp_platform].get_params(
+                            cp_platform, fingerprint=gen_empty_fingerprint(),
+                            car_fw=[CarParams.CarFw(ecu=CarParams.Ecu.unknown)],
+                            alpha_long=True, is_release=False, docs=True,
+                            starpilot_toggles=SimpleNamespace(),
+                        )
+                    except Exception:
+                        return _car_docs_mod.interfaces[_car_docs_mod.MOCK.MOCK].get_params(
+                            _car_docs_mod.MOCK.MOCK, fingerprint=gen_empty_fingerprint(),
+                            car_fw=[CarParams.CarFw(ecu=CarParams.Ecu.unknown)],
+                            alpha_long=True, is_release=False, docs=True,
+                            starpilot_toggles=SimpleNamespace(),
+                        )
+                _car_docs_mod.get_params_for_docs = _patched_get_params_for_docs
+            result = [car_docs_to_dict(cd) for cd in get_all_car_docs()]
+        finally:
+            sys.meta_path.remove(_finder)
+            for _mod in _injected:
+                sys.modules.pop(_mod, None)
+        return result
     else:
         # Old layout: fork_root/openpilot/selfdrive/car/docs.py
         return _load_cars_directly_old(os.path.dirname(fork_path))

@@ -889,6 +889,10 @@
   "BMW|E90|2009": null,
   "BMW|E90|2010": null,
   "BMW|E90|2011": null,
+  "Buick|Baby Enclave|2020": null,
+  "Buick|Baby Enclave|2021": null,
+  "Buick|Baby Enclave|2022": null,
+  "Buick|Baby Enclave|2023": null,
   "CUPRA|Ateca|2018": null,
   "CUPRA|Ateca|2019": null,
   "CUPRA|Ateca|2020": null,
@@ -900,6 +904,62 @@
   "Cadillac|CT6 Non-ACC|2018": null,
   "Cadillac|XT5 No ACC|2018": null,
   "Cadillac|XT5 Non-ACC|2018": null,
+  "Cadillac|XT6|2020": {
+    "url": "https://www.carcomplaints.com/Cadillac/XT6/2020/",
+    "complaints": 46,
+    "recalls": 4,
+    "tsbs": 1035,
+    "investigations": 1,
+    "top_problems": [
+      "Won't Shift To 2nd Gear Until 5500 Rpm in the 2020 Cadillac XT6",
+      "Stabilink Service Light Keeps Coming On in the 2020 Cadillac XT6",
+      "Doesn't Shift Down When Accelerating Uphill in the 2020 Cadillac XT6"
+    ],
+    "seal": null
+  },
+  "Chevrolet|Blazer|2019": {
+    "url": "https://www.carcomplaints.com/Chevrolet/Blazer/2019/",
+    "complaints": 178,
+    "recalls": 2,
+    "tsbs": 1044,
+    "investigations": null,
+    "top_problems": [
+      "Car Won't Turn Off After Parking in the 2019 Chevrolet Blazer",
+      "Interior Trim Rattles in the 2019 Chevrolet Blazer",
+      "&quot;Climate Off&quot; in the 2019 Chevrolet Blazer"
+    ],
+    "seal": null
+  },
+  "Chevrolet|Blazer|2020": {
+    "url": "https://www.carcomplaints.com/Chevrolet/Blazer/2020/",
+    "complaints": 161,
+    "recalls": 3,
+    "tsbs": 1017,
+    "investigations": null,
+    "top_problems": [
+      "Rear Lift Gate Keeps Opening in the 2020 Chevrolet Blazer",
+      "Shift To Park Displays Even When Car In Park in the 2020 Chevrolet Blazer",
+      "Unintended Acceleration in the 2020 Chevrolet Blazer"
+    ],
+    "seal": null
+  },
+  "Chevrolet|Blazer|2021": {
+    "url": "https://www.carcomplaints.com/Chevrolet/Blazer/2021/",
+    "complaints": 75,
+    "recalls": 1,
+    "tsbs": 896,
+    "investigations": null,
+    "top_problems": [
+      "Service Light, Steering Assist Problem, Traction Control in the 2021 Chevrolet Blazer"
+    ],
+    "seal": null
+  },
+  "Chevrolet|Blazer|2022": null,
+  "Chevrolet|Blazer|2023": null,
+  "Chevrolet|Blazer|2024": null,
+  "Chevrolet|Blazer|2025": null,
+  "Chevrolet|Bolt ACC|2022": null,
+  "Chevrolet|Bolt ACC|2023": null,
   "Chevrolet|Bolt EUV LT Non-ACC|2022": null,
   "Chevrolet|Bolt EUV LT Non-ACC|2023": null,
   "Chevrolet|Bolt EUV LT|2022": null,
@@ -991,6 +1051,19 @@
   "Chevrolet|Malibu Non-ACC|2021": null,
   "Chevrolet|Malibu Non-ACC|2022": null,
   "Chevrolet|Malibu Non-ACC|2023": null,
+  "Chevrolet|Malibu|2019": {
+    "url": "https://www.carcomplaints.com/Chevrolet/Malibu/2019/",
+    "complaints": 237,
+    "recalls": 1,
+    "tsbs": 1059,
+    "investigations": null,
+    "top_problems": [
+      "Shift To Park Issue in the 2019 Chevrolet Malibu",
+      "Seats Uncomfortable On Long Trips in the 2019 Chevrolet Malibu",
+      "Service Rear Camera in the 2019 Chevrolet Malibu"
+    ],
+    "seal": null
+  },
   "Chevrolet|Silverado 1500|2020": {
     "url": "https://www.carcomplaints.com/Chevrolet/Silverado_1500/2020/",
     "complaints": 939,
@@ -1022,6 +1095,11 @@
   "Chevrolet|Suburban Non-ACC|2018": null,
   "Chevrolet|Suburban Non-ACC|2019": null,
   "Chevrolet|Suburban Non-ACC|2020": null,
+  "Chevrolet|Suburban Premier|2016": null,
+  "Chevrolet|Suburban Premier|2017": null,
+  "Chevrolet|Suburban Premier|2018": null,
+  "Chevrolet|Suburban Premier|2019": null,
+  "Chevrolet|Suburban Premier|2020": null,
   "Chevrolet|Suburban|2016": {
     "url": "https://www.carcomplaints.com/Chevrolet/Suburban/2016/",
     "complaints": 328,
@@ -1086,6 +1164,7 @@
     ],
     "seal": null
   },
+  "Chevrolet|TRAX|2024": null,
   "Chevrolet|Trailblazer NO ACC|2021": null,
   "Chevrolet|Trailblazer NO ACC|2022": null,
   "Chevrolet|Trailblazer Non-ACC|2021": null,

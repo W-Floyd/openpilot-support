@@ -207,6 +207,10 @@
   "BMW|E90|2009": null,
   "BMW|E90|2010": null,
   "BMW|E90|2011": null,
+  "Buick|Baby Enclave|2020": null,
+  "Buick|Baby Enclave|2021": null,
+  "Buick|Baby Enclave|2022": null,
+  "Buick|Baby Enclave|2023": null,
   "CUPRA|Ateca|2018": null,
   "CUPRA|Ateca|2019": null,
   "CUPRA|Ateca|2020": null,
@@ -218,6 +222,37 @@
   "Cadillac|CT6 Non-ACC|2018": null,
   "Cadillac|XT5 No ACC|2018": null,
   "Cadillac|XT5 Non-ACC|2018": null,
+  "Cadillac|XT6|2020": null,
+  "Chevrolet|Blazer|2019": {
+    "score": 69,
+    "url": "https://autoreliabilityindex.com/chevrolet/blazer/2019"
+  },
+  "Chevrolet|Blazer|2020": {
+    "score": 71,
+    "url": "https://autoreliabilityindex.com/chevrolet/blazer/2020"
+  },
+  "Chevrolet|Blazer|2021": {
+    "score": 74,
+    "url": "https://autoreliabilityindex.com/chevrolet/blazer/2021"
+  },
+  "Chevrolet|Blazer|2022": {
+    "score": 79,
+    "url": "https://autoreliabilityindex.com/chevrolet/blazer/2022"
+  },
+  "Chevrolet|Blazer|2023": {
+    "score": 78,
+    "url": "https://autoreliabilityindex.com/chevrolet/blazer/2023"
+  },
+  "Chevrolet|Blazer|2024": {
+    "score": 70,
+    "url": "https://autoreliabilityindex.com/chevrolet/blazer/2024"
+  },
+  "Chevrolet|Blazer|2025": {
+    "score": 77,
+    "url": "https://autoreliabilityindex.com/chevrolet/blazer/2025"
+  },
+  "Chevrolet|Bolt ACC|2022": null,
+  "Chevrolet|Bolt ACC|2023": null,
   "Chevrolet|Bolt EUV LT Non-ACC|2022": null,
   "Chevrolet|Bolt EUV LT Non-ACC|2023": null,
   "Chevrolet|Bolt EUV LT|2022": null,
@@ -273,6 +308,10 @@
   "Chevrolet|Malibu Non-ACC|2021": null,
   "Chevrolet|Malibu Non-ACC|2022": null,
   "Chevrolet|Malibu Non-ACC|2023": null,
+  "Chevrolet|Malibu|2019": {
+    "score": 74,
+    "url": "https://autoreliabilityindex.com/chevrolet/malibu/2019"
+  },
   "Chevrolet|Silverado 1500|2020": null,
   "Chevrolet|Silverado 1500|2021": null,
   "Chevrolet|Suburban Non-ACC|2016": null,
@@ -280,6 +319,11 @@
   "Chevrolet|Suburban Non-ACC|2018": null,
   "Chevrolet|Suburban Non-ACC|2019": null,
   "Chevrolet|Suburban Non-ACC|2020": null,
+  "Chevrolet|Suburban Premier|2016": null,
+  "Chevrolet|Suburban Premier|2017": null,
+  "Chevrolet|Suburban Premier|2018": null,
+  "Chevrolet|Suburban Premier|2019": null,
+  "Chevrolet|Suburban Premier|2020": null,
   "Chevrolet|Suburban|2016": null,
   "Chevrolet|Suburban|2017": null,
   "Chevrolet|Suburban|2018": {
@@ -293,6 +337,10 @@
   "Chevrolet|Suburban|2020": {
     "score": 68,
     "url": "https://autoreliabilityindex.com/chevrolet/suburban/2020"
+  },
+  "Chevrolet|TRAX|2024": {
+    "score": 80,
+    "url": "https://autoreliabilityindex.com/chevrolet/trax/2024"
   },
   "Chevrolet|Trailblazer NO ACC|2021": null,
   "Chevrolet|Trailblazer NO ACC|2022": null,

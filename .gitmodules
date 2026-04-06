@@ -10,3 +10,9 @@
 [submodule "BMW-E8x-E9x"]
 	path = BMW-E8x-E9x
 	url = git@github.com:BMW-E8x-E9x/openpilot.git
+[submodule "StarPilot"]
+	path = StarPilot
+	url = git@github.com:firestar5683/StarPilot.git
+[submodule "FrogPilot"]
+	path = FrogPilot
+	url = git@github.com:FrogAi/FrogPilot.git
