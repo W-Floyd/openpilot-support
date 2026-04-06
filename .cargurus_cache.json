@@ -628,6 +628,27 @@
     },
     "matchType": "LLM"
   },
+  "Make: Cadillac, Model: Escalade ASCM Harness 2018-2018": {
+    "success": "SUCCESS",
+    "filterCriteria": {
+      "entityId": "d142",
+      "makeModelTrimPaths": [
+        "m22/d143",
+        "m22/d144",
+        "m22/d142",
+        "m22/d3248",
+        "m22/d3392",
+        "m22/d3473",
+        "m22/d2914"
+      ],
+      "startYear": 2018,
+      "endYear": 2018,
+      "isDeliveryEnabled": false,
+      "priceDropsOnly": false,
+      "hideNationwideShipping": true
+    },
+    "matchType": "LLM"
+  },
   "Make: Cadillac, Model: XT5 No ACC 2018-2018": {
     "success": "SUCCESS",
     "filterCriteria": {
@@ -761,6 +782,54 @@
     },
     "matchType": "LLM"
   },
+  "Make: Chevrolet, Model: Bolt EV - No-ACC 2017-2017": {
+    "success": "SUCCESS",
+    "filterCriteria": {
+      "entityId": "d2397",
+      "makeModelTrimPaths": [
+        "m1/d2397"
+      ],
+      "startYear": 2017,
+      "endYear": 2017,
+      "isDeliveryEnabled": false,
+      "priceDropsOnly": false,
+      "hideNationwideShipping": true
+    },
+    "matchType": "LLM"
+  },
+  "Make: Chevrolet, Model: Bolt EV - No-ACC 2018-2021": {
+    "success": "SUCCESS",
+    "filterCriteria": {
+      "entityId": "d2397",
+      "makeModelTrimPaths": [
+        "m1/d2397"
+      ],
+      "startYear": 2018,
+      "endYear": 2021,
+      "isDeliveryEnabled": false,
+      "priceDropsOnly": false,
+      "installedOptionIds": [
+        132
+      ],
+      "hideNationwideShipping": true
+    },
+    "matchType": "LLM"
+  },
+  "Make: Chevrolet, Model: Bolt EV - No-ACC 2022-2023": {
+    "success": "SUCCESS",
+    "filterCriteria": {
+      "entityId": "d2397",
+      "makeModelTrimPaths": [
+        "m1/d2397"
+      ],
+      "startYear": 2022,
+      "endYear": 2023,
+      "isDeliveryEnabled": false,
+      "priceDropsOnly": false,
+      "hideNationwideShipping": true
+    },
+    "matchType": "LLM"
+  },
   "Make: Chevrolet, Model: Bolt EV 2017-2017": {
     "success": "SUCCESS",
     "filterCriteria": {
@@ -805,6 +874,10 @@
       "hideNationwideShipping": true
     },
     "matchType": "LLM"
+  },
+  "Make: Chevrolet, Model: Bolt EV ACC w Pedal 2022-2023": {
+    "success": "FAILURE",
+    "errorMessage": "Failed to process query with LLM: The provided makes/models could not be matched to vehicle industry data available in our system. Please modify these names and try again: Make: Chevrolet, Model: Bolt EV, Trim description: ACC w Pedal"
   },
   "Make: Chevrolet, Model: Bolt EV LT 2022-2023": {
     "success": "SUCCESS",
@@ -866,6 +939,22 @@
       "isDeliveryEnabled": false,
       "priceDropsOnly": false,
       "installedOptionIds": [],
+      "hideNationwideShipping": true
+    },
+    "matchType": "LLM"
+  },
+  "Make: Chevrolet, Model: Equinox - No-ACC 2019-2022": {
+    "success": "SUCCESS",
+    "filterCriteria": {
+      "entityId": "d616",
+      "makeModelTrimPaths": [
+        "m1/d3267",
+        "m1/d616"
+      ],
+      "startYear": 2019,
+      "endYear": 2022,
+      "isDeliveryEnabled": false,
+      "priceDropsOnly": false,
       "hideNationwideShipping": true
     },
     "matchType": "LLM"
@@ -941,6 +1030,26 @@
     },
     "matchType": "LLM"
   },
+  "Make: Chevrolet, Model: Malibu - No-ACC 2023-2023": {
+    "success": "SUCCESS",
+    "filterCriteria": {
+      "entityId": "d622",
+      "makeModelTrimPaths": [
+        "m1/d622",
+        "m1/d2321",
+        "m1/d623"
+      ],
+      "startYear": 2023,
+      "endYear": 2023,
+      "isDeliveryEnabled": false,
+      "priceDropsOnly": false,
+      "installedOptionIds": [
+        132
+      ],
+      "hideNationwideShipping": true
+    },
+    "matchType": "LLM"
+  },
   "Make: Chevrolet, Model: Malibu 2019-2019": {
     "success": "SUCCESS",
     "filterCriteria": {
@@ -952,6 +1061,38 @@
       ],
       "startYear": 2019,
       "endYear": 2019,
+      "isDeliveryEnabled": false,
+      "priceDropsOnly": false,
+      "hideNationwideShipping": true
+    },
+    "matchType": "LLM"
+  },
+  "Make: Chevrolet, Model: Malibu ASCM Harness 2017-2019": {
+    "success": "SUCCESS",
+    "filterCriteria": {
+      "entityId": "d622",
+      "makeModelTrimPaths": [
+        "m1/d622",
+        "m1/d2321",
+        "m1/d623"
+      ],
+      "startYear": 2017,
+      "endYear": 2019,
+      "isDeliveryEnabled": false,
+      "priceDropsOnly": false,
+      "hideNationwideShipping": true
+    },
+    "matchType": "LLM"
+  },
+  "Make: Chevrolet, Model: Malibu Hybrid - No-ACC 2017-2017": {
+    "success": "SUCCESS",
+    "filterCriteria": {
+      "entityId": "d2321",
+      "makeModelTrimPaths": [
+        "m1/d2321"
+      ],
+      "startYear": 2017,
+      "endYear": 2017,
       "isDeliveryEnabled": false,
       "priceDropsOnly": false,
       "hideNationwideShipping": true
@@ -1098,6 +1239,24 @@
     },
     "matchType": "LLM"
   },
+  "Make: Chevrolet, Model: Suburban Premier - No-ACC 2016-2020": {
+    "success": "SUCCESS",
+    "filterCriteria": {
+      "entityId": "d638",
+      "makeModelTrimPaths": [
+        "m1/d638/Premier RWD",
+        "m1/d638/Premier 4WD",
+        "m1/d638/1500 Premier RWD",
+        "m1/d638/1500 Premier 4WD"
+      ],
+      "startYear": 2016,
+      "endYear": 2020,
+      "isDeliveryEnabled": false,
+      "priceDropsOnly": false,
+      "hideNationwideShipping": true
+    },
+    "matchType": "LLM"
+  },
   "Make: Chevrolet, Model: Suburban Premier 2016-2020": {
     "success": "SUCCESS",
     "filterCriteria": {
@@ -1125,6 +1284,22 @@
       ],
       "startYear": 2024,
       "endYear": 2024,
+      "isDeliveryEnabled": false,
+      "priceDropsOnly": false,
+      "hideNationwideShipping": true
+    },
+    "matchType": "LLM"
+  },
+  "Make: Chevrolet, Model: Trailblazer - No-ACC 2021-2022": {
+    "success": "SUCCESS",
+    "filterCriteria": {
+      "entityId": "d642",
+      "makeModelTrimPaths": [
+        "m1/d642",
+        "m1/d643"
+      ],
+      "startYear": 2021,
+      "endYear": 2022,
       "isDeliveryEnabled": false,
       "priceDropsOnly": false,
       "hideNationwideShipping": true
@@ -1215,6 +1390,51 @@
         8027,
         8028
       ],
+      "hideNationwideShipping": true
+    },
+    "matchType": "LLM"
+  },
+  "Make: Chevrolet, Model: Volt - No-ACC 2017-2018": {
+    "success": "SUCCESS",
+    "filterCriteria": {
+      "entityId": "d2012",
+      "makeModelTrimPaths": [
+        "m1/d2012"
+      ],
+      "startYear": 2017,
+      "endYear": 2018,
+      "isDeliveryEnabled": false,
+      "priceDropsOnly": false,
+      "hideNationwideShipping": true
+    },
+    "matchType": "LLM"
+  },
+  "Make: Chevrolet, Model: Volt ASCM Harness 2017-2018": {
+    "success": "SUCCESS",
+    "filterCriteria": {
+      "entityId": "d2012",
+      "makeModelTrimPaths": [
+        "m1/d2012"
+      ],
+      "startYear": 2017,
+      "endYear": 2018,
+      "isDeliveryEnabled": false,
+      "priceDropsOnly": false,
+      "hideNationwideShipping": true
+    },
+    "matchType": "LLM"
+  },
+  "Make: Chevrolet, Model: Volt Camera Harness 2017-2018": {
+    "success": "SUCCESS",
+    "filterCriteria": {
+      "entityId": "d2012",
+      "makeModelTrimPaths": [
+        "m1/d2012"
+      ],
+      "startYear": 2017,
+      "endYear": 2018,
+      "isDeliveryEnabled": false,
+      "priceDropsOnly": false,
       "hideNationwideShipping": true
     },
     "matchType": "LLM"
@@ -1819,6 +2039,21 @@
       ],
       "startYear": 2024,
       "endYear": 2024,
+      "isDeliveryEnabled": false,
+      "priceDropsOnly": false,
+      "hideNationwideShipping": true
+    },
+    "matchType": "LLM"
+  },
+  "Make: GMC, Model: Acadia ASCM Harness 2018-2018": {
+    "success": "SUCCESS",
+    "filterCriteria": {
+      "entityId": "d925",
+      "makeModelTrimPaths": [
+        "m26/d925"
+      ],
+      "startYear": 2018,
+      "endYear": 2018,
       "isDeliveryEnabled": false,
       "priceDropsOnly": false,
       "hideNationwideShipping": true
@@ -5087,6 +5322,21 @@
       ],
       "startYear": 2019,
       "endYear": 2024,
+      "isDeliveryEnabled": false,
+      "priceDropsOnly": false,
+      "hideNationwideShipping": true
+    },
+    "matchType": "LLM"
+  },
+  "Make: Nissan, Model: Leaf - Instrument Cluster 2018-2023": {
+    "success": "SUCCESS",
+    "filterCriteria": {
+      "entityId": "d2077",
+      "makeModelTrimPaths": [
+        "m12/d2077"
+      ],
+      "startYear": 2018,
+      "endYear": 2023,
       "isDeliveryEnabled": false,
       "priceDropsOnly": false,
       "hideNationwideShipping": true
