@@ -1,3 +1,9 @@
 [submodule "openpilot"]
 	path = openpilot
 	url = git@github.com:commaai/openpilot.git
+[submodule "sunnypilot"]
+	path = sunnypilot
+	url = git@github.com:sunnypilot/sunnypilot.git
+[submodule "opgm"]
+	path = opgm
+	url = git@github.com:opgm/openpilot.git

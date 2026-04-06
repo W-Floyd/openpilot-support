@@ -718,6 +718,19 @@
                                             ></span>
                                         </template>
 
+                                        <!-- forks badges -->
+                                        <template x-if="col.forks">
+                                            <span class="flex flex-wrap gap-1">
+                                                <template x-for="fork in car.forks" :key="fork">
+                                                    <span
+                                                        class="rounded-full px-2 py-0.5 text-xs font-medium"
+                                                        :class="forkClass(fork)"
+                                                        x-text="fork"
+                                                    ></span>
+                                                </template>
+                                            </span>
+                                        </template>
+
                                         <!-- years array -->
                                         <template x-if="col.key === 'years'">
                                             <span
@@ -972,7 +985,7 @@
 
                                         <!-- default string/number -->
                                         <template
-                                            x-if="!col.speed && !col.ebay && !col.cargurus && !col.ari && !col.cc_seal && col.key !== 'support_type' && col.key !== 'years' && col.key !== 'model' && car[col.key] !== null && typeof car[col.key] !== 'boolean'"
+                                            x-if="!col.speed && !col.ebay && !col.cargurus && !col.ari && !col.cc_seal && !col.forks && col.key !== 'support_type' && col.key !== 'years' && col.key !== 'model' && car[col.key] !== null && typeof car[col.key] !== 'boolean'"
                                         >
                                             <span x-text="car[col.key]"></span>
                                         </template>
@@ -1010,6 +1023,7 @@
                 const filterableCols = [
                     "make",
                     "model",
+                    "forks",
                     "support_type",
                     "openpilot_longitudinal",
                     "merged",
@@ -1140,6 +1154,7 @@
                             (window.innerWidth < 640
                                 ? JSON.stringify([
                                       "support_type",
+                                      "forks",
                                       "merged",
                                       "openpilot_longitudinal",
                                       "auto_resume",
@@ -1174,6 +1189,7 @@
                             label: "Support Level",
                             mobileLabel: "Support",
                         },
+                        { key: "forks", label: "Fork", forks: true },
                         { key: "merged", label: "Merged" },
                         {
                             key: "openpilot_longitudinal",
@@ -2133,6 +2149,14 @@
                                 "Dashcam mode": "bg-orange-100 text-orange-800",
                                 "Not compatible": "bg-red-100 text-red-800",
                             }[supportType] ?? "bg-gray-100 text-gray-800"
+                        );
+                    },
+                    forkClass(fork) {
+                        return (
+                            {
+                                openpilot: "bg-green-100 text-green-800",
+                                sunnypilot: "bg-sky-100 text-sky-800",
+                            }[fork] ?? "bg-gray-100 text-gray-800"
                         );
                     },
                 };

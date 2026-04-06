@@ -104,6 +104,21 @@
     },
     "matchType": "KEYWORD"
   },
+  "Make: Acura, Model: MDX 2025-2025": {
+    "success": "SUCCESS",
+    "filterCriteria": {
+      "entityId": "d16",
+      "makeModelTrimPaths": [
+        "m4/d16"
+      ],
+      "startYear": 2025,
+      "endYear": 2025,
+      "isDeliveryEnabled": false,
+      "priceDropsOnly": false,
+      "hideNationwideShipping": true
+    },
+    "matchType": "LLM"
+  },
   "Make: Acura, Model: MDX 2025-2026": {
     "success": "SUCCESS",
     "filterCriteria": {
@@ -181,6 +196,21 @@
       "hideNationwideShipping": true
     },
     "matchType": "KEYWORD"
+  },
+  "Make: Acura, Model: RDX 2022-2025": {
+    "success": "SUCCESS",
+    "filterCriteria": {
+      "entityId": "d921",
+      "makeModelTrimPaths": [
+        "m4/d921"
+      ],
+      "startYear": 2022,
+      "endYear": 2025,
+      "isDeliveryEnabled": false,
+      "priceDropsOnly": false,
+      "hideNationwideShipping": true
+    },
+    "matchType": "LLM"
   },
   "Make: Acura, Model: RDX 2025-2025": {
     "success": "SUCCESS",
@@ -455,6 +485,92 @@
     "success": "FAILURE",
     "errorMessage": "Failed to process query with LLM: The provided makes/models could not be matched to vehicle industry data available in our system. Please modify these names and try again: Make: CUPRA, Model: Ateca"
   },
+  "Make: Cadillac, Model: CT6 No ACC 2018-2018": {
+    "success": "SUCCESS",
+    "filterCriteria": {
+      "entityId": "d2352",
+      "makeModelTrimPaths": [
+        "m22/d2861",
+        "m22/d2352",
+        "m22/d2604"
+      ],
+      "startYear": 2018,
+      "endYear": 2018,
+      "isDeliveryEnabled": false,
+      "priceDropsOnly": false,
+      "hideNationwideShipping": true
+    },
+    "matchType": "LLM"
+  },
+  "Make: Cadillac, Model: CT6 Non-ACC 2017-2018": {
+    "success": "SUCCESS",
+    "filterCriteria": {
+      "entityId": "d2352",
+      "makeModelTrimPaths": [
+        "m22/d2861",
+        "m22/d2352",
+        "m22/d2604"
+      ],
+      "startYear": 2017,
+      "endYear": 2018,
+      "isDeliveryEnabled": false,
+      "priceDropsOnly": false,
+      "installedOptionIds": [],
+      "hideNationwideShipping": true
+    },
+    "matchType": "LLM"
+  },
+  "Make: Cadillac, Model: XT5 No ACC 2018-2018": {
+    "success": "SUCCESS",
+    "filterCriteria": {
+      "entityId": "d2393",
+      "makeModelTrimPaths": [
+        "m22/d2393"
+      ],
+      "startYear": 2018,
+      "endYear": 2018,
+      "isDeliveryEnabled": false,
+      "priceDropsOnly": false,
+      "hideNationwideShipping": true
+    },
+    "matchType": "LLM"
+  },
+  "Make: Cadillac, Model: XT5 Non-ACC 2018-2018": {
+    "success": "SUCCESS",
+    "filterCriteria": {
+      "sortType": "BEST_MATCH",
+      "sortDirection": "ASC",
+      "entityId": "d2393",
+      "makeModelTrimPaths": [
+        "m22/d2393"
+      ],
+      "startYear": 2018,
+      "endYear": 2018,
+      "isDeliveryEnabled": false,
+      "priceDropsOnly": false,
+      "installedOptionIds": [
+        1,
+        2,
+        4,
+        6,
+        135,
+        138,
+        139,
+        140,
+        13,
+        141,
+        142,
+        8021,
+        120,
+        121,
+        122,
+        8027,
+        8028
+      ],
+      "hideNationwideShipping": true
+    },
+    "matchType": "LLM"
+  },
   "Make: Chevrolet, Model: Bolt EUV 2022-2023": {
     "success": "SUCCESS",
     "filterCriteria": {
@@ -469,6 +585,69 @@
       "hideNationwideShipping": true
     },
     "matchType": "KEYWORD"
+  },
+  "Make: Chevrolet, Model: Bolt EUV LT 2022-2023": {
+    "success": "SUCCESS",
+    "filterCriteria": {
+      "entityId": "d3116",
+      "makeModelTrimPaths": [
+        "m1/d3116/LT FWD"
+      ],
+      "startYear": 2022,
+      "endYear": 2023,
+      "isDeliveryEnabled": false,
+      "priceDropsOnly": false,
+      "hideNationwideShipping": true
+    },
+    "matchType": "LLM"
+  },
+  "Make: Chevrolet, Model: Bolt EUV LT Non-ACC 2022-2023": {
+    "success": "SUCCESS",
+    "filterCriteria": {
+      "sortType": "BEST_MATCH",
+      "sortDirection": "ASC",
+      "entityId": "d3116",
+      "makeModelTrimPaths": [
+        "m1/d3116/LT FWD"
+      ],
+      "startYear": 2022,
+      "endYear": 2023,
+      "isDeliveryEnabled": false,
+      "priceDropsOnly": false,
+      "installedOptionIds": [],
+      "hideNationwideShipping": true
+    },
+    "matchType": "LLM"
+  },
+  "Make: Chevrolet, Model: Bolt EV 2017-2017": {
+    "success": "SUCCESS",
+    "filterCriteria": {
+      "entityId": "d2397",
+      "makeModelTrimPaths": [
+        "m1/d2397"
+      ],
+      "startYear": 2017,
+      "endYear": 2017,
+      "isDeliveryEnabled": false,
+      "priceDropsOnly": false,
+      "hideNationwideShipping": true
+    },
+    "matchType": "LLM"
+  },
+  "Make: Chevrolet, Model: Bolt EV 2018-2021": {
+    "success": "SUCCESS",
+    "filterCriteria": {
+      "entityId": "d2397",
+      "makeModelTrimPaths": [
+        "m1/d2397"
+      ],
+      "startYear": 2018,
+      "endYear": 2021,
+      "isDeliveryEnabled": false,
+      "priceDropsOnly": false,
+      "hideNationwideShipping": true
+    },
+    "matchType": "LLM"
   },
   "Make: Chevrolet, Model: Bolt EV 2022-2023": {
     "success": "SUCCESS",
@@ -485,6 +664,68 @@
     },
     "matchType": "KEYWORD"
   },
+  "Make: Chevrolet, Model: Bolt EV LT 2022-2023": {
+    "success": "SUCCESS",
+    "filterCriteria": {
+      "entityId": "d2397",
+      "makeModelTrimPaths": [
+        "m1/d2397/LT FWD"
+      ],
+      "startYear": 2022,
+      "endYear": 2023,
+      "isDeliveryEnabled": false,
+      "priceDropsOnly": false,
+      "hideNationwideShipping": true
+    },
+    "matchType": "LLM"
+  },
+  "Make: Chevrolet, Model: Bolt EV LT Non-ACC 2022-2023": {
+    "success": "SUCCESS",
+    "filterCriteria": {
+      "entityId": "d2397",
+      "makeModelTrimPaths": [
+        "m1/d2397/LT FWD"
+      ],
+      "startYear": 2022,
+      "endYear": 2023,
+      "isDeliveryEnabled": false,
+      "priceDropsOnly": false,
+      "hideNationwideShipping": true
+    },
+    "matchType": "LLM"
+  },
+  "Make: Chevrolet, Model: Bolt EV Non-ACC 2017-2017": {
+    "success": "SUCCESS",
+    "filterCriteria": {
+      "entityId": "d2397",
+      "makeModelTrimPaths": [
+        "m1/d2397"
+      ],
+      "startYear": 2017,
+      "endYear": 2017,
+      "isDeliveryEnabled": false,
+      "priceDropsOnly": false,
+      "installedOptionIds": [],
+      "hideNationwideShipping": true
+    },
+    "matchType": "LLM"
+  },
+  "Make: Chevrolet, Model: Bolt EV Non-ACC 2018-2021": {
+    "success": "SUCCESS",
+    "filterCriteria": {
+      "entityId": "d2397",
+      "makeModelTrimPaths": [
+        "m1/d2397"
+      ],
+      "startYear": 2018,
+      "endYear": 2021,
+      "isDeliveryEnabled": false,
+      "priceDropsOnly": false,
+      "installedOptionIds": [],
+      "hideNationwideShipping": true
+    },
+    "matchType": "LLM"
+  },
   "Make: Chevrolet, Model: Equinox 2019-2022": {
     "success": "SUCCESS",
     "filterCriteria": {
@@ -500,6 +741,114 @@
       "hideNationwideShipping": true
     },
     "matchType": "KEYWORD"
+  },
+  "Make: Chevrolet, Model: Equinox NO ACC 2019-2022": {
+    "success": "SUCCESS",
+    "filterCriteria": {
+      "entityId": "d616",
+      "makeModelTrimPaths": [
+        "m1/d3267",
+        "m1/d616"
+      ],
+      "startYear": 2019,
+      "endYear": 2022,
+      "isDeliveryEnabled": false,
+      "priceDropsOnly": false,
+      "hideNationwideShipping": true
+    },
+    "matchType": "LLM"
+  },
+  "Make: Chevrolet, Model: Equinox Non-ACC 2019-2022": {
+    "success": "SUCCESS",
+    "filterCriteria": {
+      "entityId": "d616",
+      "makeModelTrimPaths": [
+        "m1/d3267",
+        "m1/d616"
+      ],
+      "startYear": 2019,
+      "endYear": 2022,
+      "isDeliveryEnabled": false,
+      "priceDropsOnly": false,
+      "installedOptionIds": [
+        132
+      ],
+      "hideNationwideShipping": true
+    },
+    "matchType": "LLM"
+  },
+  "Make: Chevrolet, Model: Malibu No ACC 2018-2018": {
+    "success": "SUCCESS",
+    "filterCriteria": {
+      "entityId": "d622",
+      "makeModelTrimPaths": [
+        "m1/d622",
+        "m1/d2321",
+        "m1/d623"
+      ],
+      "startYear": 2018,
+      "endYear": 2018,
+      "isDeliveryEnabled": false,
+      "priceDropsOnly": false,
+      "installedOptionIds": [
+        1,
+        2,
+        4,
+        6,
+        135,
+        138,
+        139,
+        140,
+        13,
+        141,
+        142,
+        8021,
+        120,
+        121,
+        122,
+        8027,
+        8028
+      ],
+      "hideNationwideShipping": true
+    },
+    "matchType": "LLM"
+  },
+  "Make: Chevrolet, Model: Malibu Non-ACC 2016-2023": {
+    "success": "SUCCESS",
+    "filterCriteria": {
+      "entityId": "d622",
+      "makeModelTrimPaths": [
+        "m1/d622",
+        "m1/d2321",
+        "m1/d623"
+      ],
+      "startYear": 2016,
+      "endYear": 2023,
+      "isDeliveryEnabled": false,
+      "priceDropsOnly": false,
+      "installedOptionIds": [
+        1,
+        2,
+        4,
+        6,
+        135,
+        138,
+        139,
+        140,
+        13,
+        141,
+        142,
+        8021,
+        120,
+        121,
+        122,
+        123,
+        8027,
+        8028
+      ],
+      "hideNationwideShipping": true
+    },
+    "matchType": "LLM"
   },
   "Make: Chevrolet, Model: Silverado 1500 2020-2021": {
     "success": "SUCCESS",
@@ -518,6 +867,39 @@
     },
     "matchType": "KEYWORD"
   },
+  "Make: Chevrolet, Model: Suburban 2016-2020": {
+    "success": "SUCCESS",
+    "filterCriteria": {
+      "entityId": "d638",
+      "makeModelTrimPaths": [
+        "m1/d638"
+      ],
+      "startYear": 2016,
+      "endYear": 2020,
+      "isDeliveryEnabled": false,
+      "priceDropsOnly": false,
+      "hideNationwideShipping": true
+    },
+    "matchType": "LLM"
+  },
+  "Make: Chevrolet, Model: Suburban Non-ACC 2016-2020": {
+    "success": "SUCCESS",
+    "filterCriteria": {
+      "entityId": "d638",
+      "makeModelTrimPaths": [
+        "m1/d638"
+      ],
+      "startYear": 2016,
+      "endYear": 2020,
+      "isDeliveryEnabled": false,
+      "priceDropsOnly": false,
+      "installedOptionIds": [
+        132
+      ],
+      "hideNationwideShipping": true
+    },
+    "matchType": "LLM"
+  },
   "Make: Chevrolet, Model: Trailblazer 2021-2022": {
     "success": "SUCCESS",
     "filterCriteria": {
@@ -533,6 +915,41 @@
       "hideNationwideShipping": true
     },
     "matchType": "KEYWORD"
+  },
+  "Make: Chevrolet, Model: Trailblazer NO ACC 2021-2022": {
+    "success": "SUCCESS",
+    "filterCriteria": {
+      "entityId": "d642",
+      "makeModelTrimPaths": [
+        "m1/d642",
+        "m1/d643"
+      ],
+      "startYear": 2021,
+      "endYear": 2022,
+      "isDeliveryEnabled": false,
+      "priceDropsOnly": false,
+      "hideNationwideShipping": true
+    },
+    "matchType": "LLM"
+  },
+  "Make: Chevrolet, Model: Trailblazer Non-ACC 2021-2022": {
+    "success": "SUCCESS",
+    "filterCriteria": {
+      "entityId": "d642",
+      "makeModelTrimPaths": [
+        "m1/d642",
+        "m1/d643"
+      ],
+      "startYear": 2021,
+      "endYear": 2022,
+      "isDeliveryEnabled": false,
+      "priceDropsOnly": false,
+      "installedOptionIds": [
+        132
+      ],
+      "hideNationwideShipping": true
+    },
+    "matchType": "LLM"
   },
   "Make: Chrysler, Model: Pacifica 2017-2018": {
     "success": "SUCCESS",
@@ -1136,6 +1553,21 @@
     },
     "matchType": "KEYWORD"
   },
+  "Make: Genesis, Model: G70 Non-SCC 2021-2021": {
+    "success": "SUCCESS",
+    "filterCriteria": {
+      "entityId": "d2701",
+      "makeModelTrimPaths": [
+        "m203/d2701"
+      ],
+      "startYear": 2021,
+      "endYear": 2021,
+      "isDeliveryEnabled": false,
+      "priceDropsOnly": false,
+      "hideNationwideShipping": true
+    },
+    "matchType": "LLM"
+  },
   "Make: Genesis, Model: G80 (2.5T Advanced Trim, with HDA II) 2024-2024": {
     "success": "SUCCESS",
     "filterCriteria": {
@@ -1454,6 +1886,22 @@
     },
     "matchType": "KEYWORD"
   },
+  "Make: Honda, Model: CR-V 2023-2025": {
+    "success": "SUCCESS",
+    "filterCriteria": {
+      "entityId": "d589",
+      "makeModelTrimPaths": [
+        "m6/d3002",
+        "m6/d589"
+      ],
+      "startYear": 2023,
+      "endYear": 2025,
+      "isDeliveryEnabled": false,
+      "priceDropsOnly": false,
+      "hideNationwideShipping": true
+    },
+    "matchType": "LLM"
+  },
   "Make: Honda, Model: CR-V 2023-2026": {
     "success": "SUCCESS",
     "filterCriteria": {
@@ -1484,6 +1932,21 @@
       "hideNationwideShipping": true
     },
     "matchType": "KEYWORD"
+  },
+  "Make: Honda, Model: CR-V Hybrid 2023-2025": {
+    "success": "SUCCESS",
+    "filterCriteria": {
+      "entityId": "d3002",
+      "makeModelTrimPaths": [
+        "m6/d3002"
+      ],
+      "startYear": 2023,
+      "endYear": 2025,
+      "isDeliveryEnabled": false,
+      "priceDropsOnly": false,
+      "hideNationwideShipping": true
+    },
+    "matchType": "LLM"
   },
   "Make: Honda, Model: CR-V Hybrid 2023-2026": {
     "success": "SUCCESS",
@@ -1602,6 +2065,21 @@
     },
     "matchType": "KEYWORD"
   },
+  "Make: Honda, Model: Civic Hatchback 2017-2021": {
+    "success": "SUCCESS",
+    "filterCriteria": {
+      "entityId": "d2441",
+      "makeModelTrimPaths": [
+        "m6/d2441"
+      ],
+      "startYear": 2017,
+      "endYear": 2021,
+      "isDeliveryEnabled": false,
+      "priceDropsOnly": false,
+      "hideNationwideShipping": true
+    },
+    "matchType": "LLM"
+  },
   "Make: Honda, Model: Civic Hatchback 2019-2021": {
     "success": "SUCCESS",
     "filterCriteria": {
@@ -1671,6 +2149,24 @@
     },
     "matchType": "LLM"
   },
+  "Make: Honda, Model: Civic Hatchback Hybrid 2025-2025": {
+    "success": "SUCCESS",
+    "filterCriteria": {
+      "entityId": "d2441",
+      "makeModelTrimPaths": [
+        "m6/d2441"
+      ],
+      "startYear": 2025,
+      "endYear": 2025,
+      "isDeliveryEnabled": false,
+      "priceDropsOnly": false,
+      "fuelTypes": [
+        "HYBRID"
+      ],
+      "hideNationwideShipping": true
+    },
+    "matchType": "LLM"
+  },
   "Make: Honda, Model: Civic Hatchback Hybrid 2025-2026": {
     "success": "SUCCESS",
     "filterCriteria": {
@@ -1688,6 +2184,21 @@
       "hideNationwideShipping": true
     },
     "matchType": "KEYWORD"
+  },
+  "Make: Honda, Model: Civic Hybrid 2025-2025": {
+    "success": "SUCCESS",
+    "filterCriteria": {
+      "entityId": "d2923",
+      "makeModelTrimPaths": [
+        "m6/d2923"
+      ],
+      "startYear": 2025,
+      "endYear": 2025,
+      "isDeliveryEnabled": false,
+      "priceDropsOnly": false,
+      "hideNationwideShipping": true
+    },
+    "matchType": "LLM"
   },
   "Make: Honda, Model: Civic Hybrid 2025-2026": {
     "success": "SUCCESS",
@@ -1846,6 +2357,21 @@
       "hideNationwideShipping": true
     },
     "matchType": "KEYWORD"
+  },
+  "Make: Honda, Model: Odyssey 2021-2025": {
+    "success": "SUCCESS",
+    "filterCriteria": {
+      "entityId": "d592",
+      "makeModelTrimPaths": [
+        "m6/d592"
+      ],
+      "startYear": 2021,
+      "endYear": 2025,
+      "isDeliveryEnabled": false,
+      "priceDropsOnly": false,
+      "hideNationwideShipping": true
+    },
+    "matchType": "LLM"
   },
   "Make: Honda, Model: Odyssey 2021-2026": {
     "success": "SUCCESS",
@@ -2018,6 +2544,10 @@
     },
     "matchType": "KEYWORD"
   },
+  "Make: Hyundai, Model: Bayon Non-SCC 2021-2021": {
+    "success": "FAILURE",
+    "errorMessage": "Failed to process query with LLM: The provided makes/models could not be matched to vehicle industry data available in our system. Please modify these names and try again: Make: Hyundai, Model: Bayon"
+  },
   "Make: Hyundai, Model: Custin 2023-2023": {
     "success": "FAILURE",
     "errorMessage": "Failed to process query with LLM: The provided makes/models could not be matched to vehicle industry data available in our system. Please modify these names and try again: Make: Hyundai, Model: Custin"
@@ -2111,6 +2641,26 @@
       "hideNationwideShipping": true
     },
     "matchType": "KEYWORD"
+  },
+  "Make: Hyundai, Model: Elantra Non-SCC 2022-2022": {
+    "success": "SUCCESS",
+    "filterCriteria": {
+      "entityId": "d92",
+      "makeModelTrimPaths": [
+        "m28/d2144",
+        "m28/d2033",
+        "m28/d2143",
+        "m28/d92",
+        "m28/d3139",
+        "m28/d3205"
+      ],
+      "startYear": 2022,
+      "endYear": 2022,
+      "isDeliveryEnabled": false,
+      "priceDropsOnly": false,
+      "hideNationwideShipping": true
+    },
+    "matchType": "LLM"
   },
   "Make: Hyundai, Model: Genesis 2015-2016": {
     "success": "SUCCESS",
@@ -2364,6 +2914,25 @@
     },
     "matchType": "KEYWORD"
   },
+  "Make: Hyundai, Model: Kona Electric Non-SCC 2019-2019": {
+    "success": "SUCCESS",
+    "filterCriteria": {
+      "entityId": "d2699",
+      "makeModelTrimPaths": [
+        "m28/d2699/SE FWD",
+        "m28/d2699/Ultimate FWD",
+        "m28/d2699/N Line FWD",
+        "m28/d2699/Limited FWD",
+        "m28/d2699/SEL FWD"
+      ],
+      "startYear": 2019,
+      "endYear": 2019,
+      "isDeliveryEnabled": false,
+      "priceDropsOnly": false,
+      "hideNationwideShipping": true
+    },
+    "matchType": "LLM"
+  },
   "Make: Hyundai, Model: Kona Hybrid 2020-2020": {
     "success": "SUCCESS",
     "filterCriteria": {
@@ -2383,6 +2952,23 @@
       "hideNationwideShipping": true
     },
     "matchType": "KEYWORD"
+  },
+  "Make: Hyundai, Model: Kona Non-SCC 2019-2019": {
+    "success": "SUCCESS",
+    "filterCriteria": {
+      "entityId": "d2663",
+      "makeModelTrimPaths": [
+        "m28/d3231",
+        "m28/d2699",
+        "m28/d2663"
+      ],
+      "startYear": 2019,
+      "endYear": 2019,
+      "isDeliveryEnabled": false,
+      "priceDropsOnly": false,
+      "hideNationwideShipping": true
+    },
+    "matchType": "LLM"
   },
   "Make: Hyundai, Model: Nexo 2021-2021": {
     "success": "SUCCESS",
@@ -2790,6 +3376,10 @@
     "success": "FAILURE",
     "errorMessage": "Failed to process query with LLM: The provided makes/models could not be matched to vehicle industry data available in our system. Please modify these names and try again: Make: Kia, Model: Ceed"
   },
+  "Make: Kia, Model: Ceed Plug-in Hybrid Non-SCC 2022-2022": {
+    "success": "FAILURE",
+    "errorMessage": "Failed to process query with LLM: The provided makes/models could not be matched to vehicle industry data available in our system. Please modify these names and try again: Make: Kia, Model: Ceed Plug-in Hybrid"
+  },
   "Make: Kia, Model: EV6 (Southeast Asia only) 2022-2024": {
     "success": "SUCCESS",
     "filterCriteria": {
@@ -2867,6 +3457,38 @@
     },
     "matchType": "KEYWORD"
   },
+  "Make: Kia, Model: Forte Non-SCC 2019-2019": {
+    "success": "SUCCESS",
+    "filterCriteria": {
+      "entityId": "d2043",
+      "makeModelTrimPaths": [
+        "m33/d2043",
+        "m33/d2044"
+      ],
+      "startYear": 2019,
+      "endYear": 2019,
+      "isDeliveryEnabled": false,
+      "priceDropsOnly": false,
+      "hideNationwideShipping": true
+    },
+    "matchType": "LLM"
+  },
+  "Make: Kia, Model: Forte Non-SCC 2021-2021": {
+    "success": "SUCCESS",
+    "filterCriteria": {
+      "entityId": "d2043",
+      "makeModelTrimPaths": [
+        "m33/d2043",
+        "m33/d2044"
+      ],
+      "startYear": 2021,
+      "endYear": 2021,
+      "isDeliveryEnabled": false,
+      "priceDropsOnly": false,
+      "hideNationwideShipping": true
+    },
+    "matchType": "LLM"
+  },
   "Make: Kia, Model: K5 2021-2024": {
     "success": "SUCCESS",
     "filterCriteria": {
@@ -2941,6 +3563,24 @@
       "endYear": 2025,
       "isDeliveryEnabled": false,
       "priceDropsOnly": false,
+      "hideNationwideShipping": true
+    },
+    "matchType": "LLM"
+  },
+  "Make: Kia, Model: Niro EV (with HDA II) 2025-2025": {
+    "success": "SUCCESS",
+    "filterCriteria": {
+      "entityId": "d2838",
+      "makeModelTrimPaths": [
+        "m33/d2838"
+      ],
+      "startYear": 2025,
+      "endYear": 2025,
+      "isDeliveryEnabled": false,
+      "priceDropsOnly": false,
+      "installedOptionIds": [
+        132
+      ],
       "hideNationwideShipping": true
     },
     "matchType": "LLM"
@@ -3079,6 +3719,21 @@
       "hideNationwideShipping": true
     },
     "matchType": "KEYWORD"
+  },
+  "Make: Kia, Model: Niro Hybrid 2023-2023": {
+    "success": "SUCCESS",
+    "filterCriteria": {
+      "entityId": "d2653",
+      "makeModelTrimPaths": [
+        "m33/d2653"
+      ],
+      "startYear": 2023,
+      "endYear": 2023,
+      "isDeliveryEnabled": false,
+      "priceDropsOnly": false,
+      "hideNationwideShipping": true
+    },
+    "matchType": "LLM"
   },
   "Make: Kia, Model: Niro Hybrid 2023-2024": {
     "success": "SUCCESS",
@@ -3240,6 +3895,21 @@
       "hideNationwideShipping": true
     },
     "matchType": "KEYWORD"
+  },
+  "Make: Kia, Model: Seltos Non-SCC 2023-2024": {
+    "success": "SUCCESS",
+    "filterCriteria": {
+      "entityId": "d2991",
+      "makeModelTrimPaths": [
+        "m33/d2991"
+      ],
+      "startYear": 2023,
+      "endYear": 2024,
+      "isDeliveryEnabled": false,
+      "priceDropsOnly": false,
+      "hideNationwideShipping": true
+    },
+    "matchType": "LLM"
   },
   "Make: Kia, Model: Sorento 2018-2018": {
     "success": "SUCCESS",
@@ -3921,6 +4591,23 @@
     },
     "matchType": "KEYWORD"
   },
+  "Make: Nissan, Model: Altima 2019-2020": {
+    "success": "SUCCESS",
+    "filterCriteria": {
+      "entityId": "d237",
+      "makeModelTrimPaths": [
+        "m12/d1038",
+        "m12/d237",
+        "m12/d2927"
+      ],
+      "startYear": 2019,
+      "endYear": 2020,
+      "isDeliveryEnabled": false,
+      "priceDropsOnly": false,
+      "hideNationwideShipping": true
+    },
+    "matchType": "LLM"
+  },
   "Make: Nissan, Model: Altima 2019-2024": {
     "success": "SUCCESS",
     "filterCriteria": {
@@ -4060,6 +4747,21 @@
     },
     "matchType": "KEYWORD"
   },
+  "Make: Rivian, Model: R1S 2022-2024": {
+    "success": "SUCCESS",
+    "filterCriteria": {
+      "entityId": "d2839",
+      "makeModelTrimPaths": [
+        "m243/d2839"
+      ],
+      "startYear": 2022,
+      "endYear": 2024,
+      "isDeliveryEnabled": false,
+      "priceDropsOnly": false,
+      "hideNationwideShipping": true
+    },
+    "matchType": "LLM"
+  },
   "Make: Rivian, Model: R1S 2022-2025": {
     "success": "SUCCESS",
     "filterCriteria": {
@@ -4069,6 +4771,36 @@
       ],
       "startYear": 2022,
       "endYear": 2025,
+      "isDeliveryEnabled": false,
+      "priceDropsOnly": false,
+      "hideNationwideShipping": true
+    },
+    "matchType": "LLM"
+  },
+  "Make: Rivian, Model: R1S 2025-2025": {
+    "success": "SUCCESS",
+    "filterCriteria": {
+      "entityId": "d2839",
+      "makeModelTrimPaths": [
+        "m243/d2839"
+      ],
+      "startYear": 2025,
+      "endYear": 2025,
+      "isDeliveryEnabled": false,
+      "priceDropsOnly": false,
+      "hideNationwideShipping": true
+    },
+    "matchType": "LLM"
+  },
+  "Make: Rivian, Model: R1T 2022-2024": {
+    "success": "SUCCESS",
+    "filterCriteria": {
+      "entityId": "d2837",
+      "makeModelTrimPaths": [
+        "m243/d2837"
+      ],
+      "startYear": 2022,
+      "endYear": 2024,
       "isDeliveryEnabled": false,
       "priceDropsOnly": false,
       "hideNationwideShipping": true
@@ -4089,6 +4821,21 @@
       "hideNationwideShipping": true
     },
     "matchType": "KEYWORD"
+  },
+  "Make: Rivian, Model: R1T 2025-2025": {
+    "success": "SUCCESS",
+    "filterCriteria": {
+      "entityId": "d2837",
+      "makeModelTrimPaths": [
+        "m243/d2837"
+      ],
+      "startYear": 2025,
+      "endYear": 2025,
+      "isDeliveryEnabled": false,
+      "priceDropsOnly": false,
+      "hideNationwideShipping": true
+    },
+    "matchType": "LLM"
   },
   "Make: SEAT, Model: Alhambra 2018-2020": {
     "success": "FAILURE",
@@ -4519,6 +5266,21 @@
       ],
       "startYear": 2020,
       "endYear": 2023,
+      "isDeliveryEnabled": false,
+      "priceDropsOnly": false,
+      "hideNationwideShipping": true
+    },
+    "matchType": "LLM"
+  },
+  "Make: Tesla, Model: Model Y (with HW4) 2024-2024": {
+    "success": "SUCCESS",
+    "filterCriteria": {
+      "entityId": "d3044",
+      "makeModelTrimPaths": [
+        "m112/d3044"
+      ],
+      "startYear": 2024,
+      "endYear": 2024,
       "isDeliveryEnabled": false,
       "priceDropsOnly": false,
       "hideNationwideShipping": true
@@ -5747,6 +6509,23 @@
       "hideNationwideShipping": true
     },
     "matchType": "KEYWORD"
+  },
+  "Make: Volkswagen, Model: Jetta 2018-2023": {
+    "success": "SUCCESS",
+    "filterCriteria": {
+      "entityId": "d200",
+      "makeModelTrimPaths": [
+        "m55/d2094",
+        "m55/d2860",
+        "m55/d200"
+      ],
+      "startYear": 2018,
+      "endYear": 2023,
+      "isDeliveryEnabled": false,
+      "priceDropsOnly": false,
+      "hideNationwideShipping": true
+    },
+    "matchType": "LLM"
   },
   "Make: Volkswagen, Model: Jetta 2019-2023": {
     "success": "SUCCESS",
