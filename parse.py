@@ -952,7 +952,7 @@ def main():
         "--port", type=int, default=8000, help="Port for --serve (default: 8000)."
     )
     parser.add_argument(
-        "--no-fetch-cargurus",
+        "--no-fetch-cg",
         action="store_true",
         help="Skip fetching CarGurus data for all cars.",
     )
@@ -1011,7 +1011,7 @@ def main():
     cars = merge_fork_cars(fork_car_lists)
     print(f"Total unique cars: {len(cars)}.", file=sys.stderr)
 
-    if not args.no_fetch_cargurus:
+    if not args.no_fetch_cg:
         print("Fetching CarGurus data...", file=sys.stderr)
         raw_cache = fetch_cargurus_cache(cars)
     else:
