@@ -26,6 +26,7 @@ FORKS = [
     ("StarPilot", os.path.join(HERE, "StarPilot", "opendbc_repo")),
 ]
 
+OPENPILOT_CACHE_FILE = os.path.join(HERE, ".openpilot_cache.json")
 CARGURUS_CACHE_FILE = os.path.join(HERE, ".cargurus_cache.json")
 
 
@@ -325,8 +326,20 @@ def _load_cars_directly(fork_path: str) -> list[dict]:
         return _load_cars_directly_old(os.path.dirname(fork_path))
 
 
-def load_fork_cars(fork_path: str) -> list[dict]:
-    """Load car docs from a fork's opendbc_repo via subprocess for isolation."""
+def load_fork_cars(
+    fork_name: str, fork_path: str, use_cache: bool = True
+) -> list[dict]:
+    """Load car docs from a fork's opendbc_repo via subprocess for isolation.
+
+    If use_cache is True, cached results from previous runs are reused when
+    available. The cache file stores fork-specific car data keyed by fork name.
+    """
+    cache = None
+    if use_cache:
+        cache = load_openpilot_cache()
+        if fork_name in cache:
+            return cache[fork_name]
+
     result = subprocess.run(
         [sys.executable, __file__, "--dump-fork", fork_path],
         capture_output=True,
@@ -335,7 +348,13 @@ def load_fork_cars(fork_path: str) -> list[dict]:
     if result.returncode != 0:
         print(result.stderr, file=sys.stderr, end="")
         raise RuntimeError(f"Failed to load cars from {fork_path}")
-    return json.loads(result.stdout)
+    cars = json.loads(result.stdout)
+
+    if use_cache and cache is not None:
+        cache[fork_name] = cars
+        save_openpilot_cache(cache)
+
+    return cars
 
 
 def _same_features(a: dict, b: dict) -> bool:
@@ -471,6 +490,21 @@ def build_cargurus_url(fc: dict) -> str:
         f"&makeModelTrimPaths={urllib.parse.quote(paths, safe='')}"
         f"&priceDropsOnly=false&hideNationwideShipping=true"
     )
+
+
+def load_openpilot_cache() -> dict:
+    if os.path.exists(OPENPILOT_CACHE_FILE):
+        try:
+            with open(OPENPILOT_CACHE_FILE) as f:
+                return json.load(f)
+        except (json.JSONDecodeError, ValueError):
+            pass
+    return {}
+
+
+def save_openpilot_cache(cache: dict) -> None:
+    with open(OPENPILOT_CACHE_FILE, "w") as f:
+        json.dump(dict(sorted(cache.items())), f, indent=2)
 
 
 def load_cargurus_cache() -> dict:
@@ -939,6 +973,11 @@ def main():
     )
     # Hidden: used by load_fork_cars() to isolate capnp schema loading per fork.
     parser.add_argument("--dump-fork", default=None, help=argparse.SUPPRESS)
+    parser.add_argument(
+        "--no-cache-openpilot",
+        action="store_true",
+        help="Force re-fetching openpilot data for all forks (disable caching).",
+    )
     args = parser.parse_args()
 
     if args.dump_fork:
@@ -963,7 +1002,9 @@ def main():
             f"  Loading {fork_name} ({'new' if new_layout else 'old'} layout)...",
             file=sys.stderr,
         )
-        fork_cars = load_fork_cars(fork_path)
+        fork_cars = load_fork_cars(
+            fork_name, fork_path, use_cache=not args.no_cache_openpilot
+        )
         print(f"  Found {len(fork_cars)} cars in {fork_name}.", file=sys.stderr)
         fork_car_lists.append((fork_name, fork_cars))
 
