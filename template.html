@@ -1639,6 +1639,22 @@
                                 min_enable_speed: { min: null, max: "dataMin" },
                             },
                         },
+                        {
+                            label: "All Features (Check Package, OP available)",
+                            filters: {
+                                auto_resume: [true],
+                                good_steering_torque: [true],
+                                openpilot_longitudinal: ["^openpilot"],
+                                support_type: [
+                                    "!Not compatible",
+                                    "!Dashcam mode",
+                                ],
+                            },
+                            speedFilters: {
+                                min_steer_speed: { min: null, max: "dataMin" },
+                                min_enable_speed: { min: null, max: "dataMin" },
+                            },
+                        },
                     ],
 
                     resolveSpeedFilter(key, range) {
