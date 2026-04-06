@@ -375,24 +375,28 @@ def _same_features(a: dict, b: dict) -> bool:
     """Return True if two car entries have the same functional support features."""
     return (
         a["package"] == b["package"]
-        and a["support_type"] == b["support_type"]
-        and a["openpilot_longitudinal"] == b["openpilot_longitudinal"]
+        and (
+            a["support_type"] == b["support_type"]
+            or (
+                (a["support_type"] == "Upstream" and b["support_type"] == "Community")
+                or (
+                    a["support_type"] == "Community" and b["support_type"] == "Upstream"
+                )
+            )
+        )
+        and (
+            a["openpilot_longitudinal"] == b["openpilot_longitudinal"]
+            or (
+                a["openpilot_longitudinal"] == "openpilot"
+                and b["openpilot_longitudinal"] == "openpilot supported"
+            )
+        )
         and a["good_steering_torque"] == b["good_steering_torque"]
         and a["auto_resume"] == b["auto_resume"]
     )
 
 
 def merge_fork_cars(fork_car_lists: list[tuple[str, list[dict]]]) -> list[dict]:
-    """Merge car lists from multiple forks, deduplicating by name.
-
-    First fork's car data wins for shared cars; later forks append their name
-    to the car's ``forks`` list.
-
-    After the name-based merge, any car whose year range is a strict subset of
-    another same-make/model car with identical features is absorbed into the
-    larger entry — the larger car gains the subset car's forks, and the subset
-    entry is removed.
-    """
     merged: dict[str, dict] = {}
     for fork_name, cars in fork_car_lists:
         for car in cars:
@@ -426,7 +430,7 @@ def merge_fork_cars(fork_car_lists: list[tuple[str, list[dict]]]) -> list[dict]:
                     continue
                 smaller = merged[smaller_name]
                 smaller_years = set(smaller["years"])
-                if smaller_years < larger_years and _same_features(larger, smaller):
+                if smaller_years <= larger_years and _same_features(larger, smaller):
                     for fork in smaller["forks"]:
                         if fork not in larger["forks"]:
                             larger["forks"].append(fork)
