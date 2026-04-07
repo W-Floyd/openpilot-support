@@ -1,8 +1,16 @@
 # Openpilot Vehicle Support Table - ![LLM](https://img.shields.io/badge/LLM%20Assisted-red)
 
-A tool that aggregates vehicle support information from multiple openpilot forks (openpilot, sunnypilot, opgm, BMW-E8x-E9x, StarPilot) into a single interactive table.
+A tool that aggregates vehicle support information from multiple openpilot forks into a single interactive table.
 
 This is a personal project created for my own curiosity, very much LLM assisted.
+
+## Forks Supported
+
+- openpilot
+- sunnypilot
+- opgm
+- BMW-E8x-E9x
+- StarPilot
 
 ## Usage
 
