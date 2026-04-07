@@ -482,7 +482,7 @@ def _same_features(a: dict, b: dict) -> bool:
             a["openpilot_longitudinal"] == b["openpilot_longitudinal"]
             or (
                 a["openpilot_longitudinal"] == "openpilot"
-                and b["openpilot_longitudinal"] == "openpilot supported"
+                and b["openpilot_longitudinal"] == "openpilot available"
             )
         )
         and a["good_steering_torque"] == b["good_steering_torque"]
