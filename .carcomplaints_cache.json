@@ -436,9 +436,7 @@
     "recalls": null,
     "tsbs": 454,
     "investigations": null,
-    "top_problems": [
-      "Panel Fell Off in the 2014 Audi A3"
-    ],
+    "top_problems": ["Panel Fell Off in the 2014 Audi A3"],
     "seal": null
   },
   "Audi|A3|2015": {
@@ -482,9 +480,7 @@
     "recalls": 2,
     "tsbs": 549,
     "investigations": 1,
-    "top_problems": [
-      "Low Quality Microphone in the 2018 Audi A3"
-    ],
+    "top_problems": ["Low Quality Microphone in the 2018 Audi A3"],
     "seal": null
   },
   "Audi|A3|2019": {
@@ -493,9 +489,7 @@
     "recalls": 3,
     "tsbs": 542,
     "investigations": 1,
-    "top_problems": [
-      "Catastrophic Engine Failure in the 2019 Audi A3"
-    ],
+    "top_problems": ["Catastrophic Engine Failure in the 2019 Audi A3"],
     "seal": null
   },
   "Audi|A4|2016": {
@@ -550,9 +544,7 @@
     "recalls": 3,
     "tsbs": 895,
     "investigations": null,
-    "top_problems": [
-      "Start Stop Not Functioning in the 2020 Audi A4"
-    ],
+    "top_problems": ["Start Stop Not Functioning in the 2020 Audi A4"],
     "seal": null
   },
   "Audi|A4|2021": {
@@ -561,9 +553,7 @@
     "recalls": 4,
     "tsbs": 823,
     "investigations": null,
-    "top_problems": [
-      "Steering Wheel Heats To Slow in the 2021 Audi A4"
-    ],
+    "top_problems": ["Steering Wheel Heats To Slow in the 2021 Audi A4"],
     "seal": null
   },
   "Audi|A4|2022": {
@@ -643,9 +633,7 @@
     "recalls": 5,
     "tsbs": 895,
     "investigations": null,
-    "top_problems": [
-      "Engine Stalls When Driving in the 2021 Audi A5"
-    ],
+    "top_problems": ["Engine Stalls When Driving in the 2021 Audi A5"],
     "seal": null
   },
   "Audi|A5|2022": {
@@ -682,9 +670,7 @@
     "recalls": 3,
     "tsbs": 769,
     "investigations": null,
-    "top_problems": [
-      "Panoramic Sunroof Leaking in the 2019 Audi Q3"
-    ],
+    "top_problems": ["Panoramic Sunroof Leaking in the 2019 Audi Q3"],
     "seal": null
   },
   "Audi|Q3|2020": {
@@ -784,9 +770,7 @@
     "recalls": 5,
     "tsbs": 711,
     "investigations": null,
-    "top_problems": [
-      "Blown Engine in the 2017 Audi Q5"
-    ],
+    "top_problems": ["Blown Engine in the 2017 Audi Q5"],
     "seal": null
   },
   "Audi|Q5|2018": {
@@ -833,9 +817,7 @@
     "recalls": 7,
     "tsbs": 909,
     "investigations": null,
-    "top_problems": [
-      "Electrical Malfunction in the 2021 Audi Q5"
-    ],
+    "top_problems": ["Electrical Malfunction in the 2021 Audi Q5"],
     "seal": null
   },
   "Audi|Q5|2022": null,
@@ -902,9 +884,47 @@
   "Cadillac|CT6 No ACC|2018": null,
   "Cadillac|CT6 Non-ACC|2017": null,
   "Cadillac|CT6 Non-ACC|2018": null,
+  "Cadillac|CT6|2017": {
+    "url": "https://www.carcomplaints.com/Cadillac/CT6/2017/",
+    "complaints": 37,
+    "recalls": 2,
+    "tsbs": 1631,
+    "investigations": null,
+    "top_problems": [
+      "Rough Shifting in the 2017 Cadillac CT6",
+      "Turbo Lag in the 2017 Cadillac CT6",
+      "Radio Touch Screen Goes Blank in the 2017 Cadillac CT6"
+    ],
+    "seal": null
+  },
+  "Cadillac|CT6|2018": {
+    "url": "https://www.carcomplaints.com/Cadillac/CT6/2018/",
+    "complaints": 20,
+    "recalls": 2,
+    "tsbs": 1340,
+    "investigations": null,
+    "top_problems": [
+      "Engine Runs Rough In 4 Cylinder Mode in the 2018 Cadillac CT6",
+      "Hesitation, Feels Like It Is Slipping At Any Speed in the 2018 Cadillac CT6"
+    ],
+    "seal": null
+  },
   "Cadillac|Escalade ASCM Harness|2018": null,
   "Cadillac|XT5 No ACC|2018": null,
   "Cadillac|XT5 Non-ACC|2018": null,
+  "Cadillac|XT5|2018": {
+    "url": "https://www.carcomplaints.com/Cadillac/XT5/2018/",
+    "complaints": 71,
+    "recalls": null,
+    "tsbs": 1262,
+    "investigations": null,
+    "top_problems": [
+      "Tires in the 2018 Cadillac XT5",
+      "Brake Switch Faulty in the 2018 Cadillac XT5",
+      "Doors/Liftgate Rattle in the 2018 Cadillac XT5"
+    ],
+    "seal": null
+  },
   "Cadillac|XT6|2020": {
     "url": "https://www.carcomplaints.com/Cadillac/XT6/2020/",
     "complaints": 46,
@@ -996,6 +1016,10 @@
   "Chevrolet|Equinox - No-ACC|2020": null,
   "Chevrolet|Equinox - No-ACC|2021": null,
   "Chevrolet|Equinox - No-ACC|2022": null,
+  "Chevrolet|Equinox -|2019": null,
+  "Chevrolet|Equinox -|2020": null,
+  "Chevrolet|Equinox -|2021": null,
+  "Chevrolet|Equinox -|2022": null,
   "Chevrolet|Equinox NO ACC|2019": null,
   "Chevrolet|Equinox NO ACC|2020": null,
   "Chevrolet|Equinox NO ACC|2021": null,
@@ -1061,6 +1085,20 @@
   "Chevrolet|Malibu ASCM Harness|2018": null,
   "Chevrolet|Malibu ASCM Harness|2019": null,
   "Chevrolet|Malibu Hybrid - No-ACC|2017": null,
+  "Chevrolet|Malibu Hybrid -|2017": null,
+  "Chevrolet|Malibu Hybrid|2017": {
+    "url": "https://www.carcomplaints.com/Chevrolet/Malibu_Hybrid/2017/",
+    "complaints": 14,
+    "recalls": null,
+    "tsbs": 298,
+    "investigations": 1,
+    "top_problems": [
+      "Car Won't Turn Off When In Park in the 2017 Chevrolet Malibu Hybrid",
+      "Shift To Park Failure in the 2017 Chevrolet Malibu Hybrid",
+      "Low Power Message in the 2017 Chevrolet Malibu Hybrid"
+    ],
+    "seal": null
+  },
   "Chevrolet|Malibu No ACC|2018": null,
   "Chevrolet|Malibu Non-ACC|2016": null,
   "Chevrolet|Malibu Non-ACC|2017": null,
@@ -1070,6 +1108,45 @@
   "Chevrolet|Malibu Non-ACC|2021": null,
   "Chevrolet|Malibu Non-ACC|2022": null,
   "Chevrolet|Malibu Non-ACC|2023": null,
+  "Chevrolet|Malibu|2016": {
+    "url": "https://www.carcomplaints.com/Chevrolet/Malibu/2016/",
+    "complaints": 1000,
+    "recalls": 9,
+    "tsbs": 1997,
+    "investigations": null,
+    "top_problems": [
+      "Loss Of Power in the 2016 Chevrolet Malibu",
+      "Check Engine Light Is On in the 2016 Chevrolet Malibu",
+      "Brake Failure, Multiple Problems in the 2016 Chevrolet Malibu"
+    ],
+    "seal": null
+  },
+  "Chevrolet|Malibu|2017": {
+    "url": "https://www.carcomplaints.com/Chevrolet/Malibu/2017/",
+    "complaints": 1000,
+    "recalls": 4,
+    "tsbs": 1692,
+    "investigations": null,
+    "top_problems": [
+      "&quot;Shift To Park&quot; Alert in the 2017 Chevrolet Malibu",
+      "Shift To Park in the 2017 Chevrolet Malibu",
+      "Check Engine Light On in the 2017 Chevrolet Malibu"
+    ],
+    "seal": null
+  },
+  "Chevrolet|Malibu|2018": {
+    "url": "https://www.carcomplaints.com/Chevrolet/Malibu/2018/",
+    "complaints": 1000,
+    "recalls": 6,
+    "tsbs": 1349,
+    "investigations": null,
+    "top_problems": [
+      "Poor Acceleration in the 2018 Chevrolet Malibu",
+      "Loses Power, Stalls in the 2018 Chevrolet Malibu",
+      "Shift To Park Warning Message in the 2018 Chevrolet Malibu"
+    ],
+    "seal": null
+  },
   "Chevrolet|Malibu|2019": {
     "url": "https://www.carcomplaints.com/Chevrolet/Malibu/2019/",
     "complaints": 237,
@@ -1081,6 +1158,51 @@
       "Seats Uncomfortable On Long Trips in the 2019 Chevrolet Malibu",
       "Service Rear Camera in the 2019 Chevrolet Malibu"
     ],
+    "seal": null
+  },
+  "Chevrolet|Malibu|2020": {
+    "url": "https://www.carcomplaints.com/Chevrolet/Malibu/2020/",
+    "complaints": 225,
+    "recalls": 1,
+    "tsbs": 885,
+    "investigations": null,
+    "top_problems": [
+      "The Brakes Stopped Working in the 2020 Chevrolet Malibu",
+      "Engine Failure in the 2020 Chevrolet Malibu"
+    ],
+    "seal": null
+  },
+  "Chevrolet|Malibu|2021": {
+    "url": "https://www.carcomplaints.com/Chevrolet/Malibu/2021/",
+    "complaints": 75,
+    "recalls": 2,
+    "tsbs": 729,
+    "investigations": null,
+    "top_problems": [
+      "Car Will Not Shut Off While In Park in the 2021 Chevrolet Malibu",
+      "On A Hill Press Throttle And Serious Sluggish Response in the 2021 Chevrolet Malibu"
+    ],
+    "seal": null
+  },
+  "Chevrolet|Malibu|2022": {
+    "url": "https://www.carcomplaints.com/Chevrolet/Malibu/2022/",
+    "complaints": 97,
+    "recalls": 1,
+    "tsbs": 613,
+    "investigations": null,
+    "top_problems": [
+      "Ant Infestation In Blower Motor in the 2022 Chevrolet Malibu",
+      "Code P0299 Indicated A Turbo Charger Underboost in the 2022 Chevrolet Malibu"
+    ],
+    "seal": null
+  },
+  "Chevrolet|Malibu|2023": {
+    "url": "https://www.carcomplaints.com/Chevrolet/Malibu/2023/",
+    "complaints": 25,
+    "recalls": 1,
+    "tsbs": 332,
+    "investigations": null,
+    "top_problems": [],
     "seal": null
   },
   "Chevrolet|Silverado 1500|2020": {
@@ -1119,6 +1241,11 @@
   "Chevrolet|Suburban Premier - No-ACC|2018": null,
   "Chevrolet|Suburban Premier - No-ACC|2019": null,
   "Chevrolet|Suburban Premier - No-ACC|2020": null,
+  "Chevrolet|Suburban Premier -|2016": null,
+  "Chevrolet|Suburban Premier -|2017": null,
+  "Chevrolet|Suburban Premier -|2018": null,
+  "Chevrolet|Suburban Premier -|2019": null,
+  "Chevrolet|Suburban Premier -|2020": null,
   "Chevrolet|Suburban Premier|2016": null,
   "Chevrolet|Suburban Premier|2017": null,
   "Chevrolet|Suburban Premier|2018": null,
@@ -1191,6 +1318,8 @@
   "Chevrolet|TRAX|2024": null,
   "Chevrolet|Trailblazer - No-ACC|2021": null,
   "Chevrolet|Trailblazer - No-ACC|2022": null,
+  "Chevrolet|Trailblazer -|2021": null,
+  "Chevrolet|Trailblazer -|2022": null,
   "Chevrolet|Trailblazer NO ACC|2021": null,
   "Chevrolet|Trailblazer NO ACC|2022": null,
   "Chevrolet|Trailblazer Non-ACC|2021": null,
@@ -1221,10 +1350,38 @@
   },
   "Chevrolet|Volt - No-ACC|2017": null,
   "Chevrolet|Volt - No-ACC|2018": null,
+  "Chevrolet|Volt -|2017": null,
+  "Chevrolet|Volt -|2018": null,
   "Chevrolet|Volt ASCM Harness|2017": null,
   "Chevrolet|Volt ASCM Harness|2018": null,
   "Chevrolet|Volt Camera Harness|2017": null,
   "Chevrolet|Volt Camera Harness|2018": null,
+  "Chevrolet|Volt|2017": {
+    "url": "https://www.carcomplaints.com/Chevrolet/Volt/2017/",
+    "complaints": 1000,
+    "recalls": null,
+    "tsbs": 1505,
+    "investigations": 2,
+    "top_problems": [
+      "Lost Power Steering While Driving in the 2017 Chevrolet Volt",
+      "Infotainment Failure in the 2017 Chevrolet Volt",
+      "Main Control Unit Failed in the 2017 Chevrolet Volt"
+    ],
+    "seal": null
+  },
+  "Chevrolet|Volt|2018": {
+    "url": "https://www.carcomplaints.com/Chevrolet/Volt/2018/",
+    "complaints": 314,
+    "recalls": 2,
+    "tsbs": 1056,
+    "investigations": 2,
+    "top_problems": [
+      "Brakes Failed On Downhill Slope in the 2018 Chevrolet Volt",
+      "Shift To Park Error in the 2018 Chevrolet Volt",
+      "Painfully Loud Seatbelt Dinger in the 2018 Chevrolet Volt"
+    ],
+    "seal": null
+  },
   "Chrysler|Pacifica Hybrid|2017": {
     "url": "https://www.carcomplaints.com/Chrysler/Pacifica_Hybrid/2017/",
     "complaints": 88,
@@ -1852,9 +2009,7 @@
     "recalls": null,
     "tsbs": null,
     "investigations": null,
-    "top_problems": [
-      "Rodents Eating Wiring in the 2023 Ford Mustang Mach-E"
-    ],
+    "top_problems": ["Rodents Eating Wiring in the 2023 Ford Mustang Mach-E"],
     "seal": null
   },
   "Ford|Mustang Mach-E|2024": {
@@ -2269,9 +2424,7 @@
     "recalls": 3,
     "tsbs": 4,
     "investigations": 1,
-    "top_problems": [
-      "Vehicle Pulling in the 2024 Honda Accord"
-    ],
+    "top_problems": ["Vehicle Pulling in the 2024 Honda Accord"],
     "seal": null
   },
   "Honda|Accord|2025": {
@@ -2928,9 +3081,7 @@
     "recalls": null,
     "tsbs": null,
     "investigations": null,
-    "top_problems": [
-      "Clicking Noise In Dash in the 2025 Honda Odyssey"
-    ],
+    "top_problems": ["Clicking Noise In Dash in the 2025 Honda Odyssey"],
     "seal": null
   },
   "Honda|Odyssey|2026": null,
@@ -2953,9 +3104,7 @@
     "recalls": 8,
     "tsbs": 178,
     "investigations": 2,
-    "top_problems": [
-      "Grumbling Sound When Turning in the 2020 Honda Passport"
-    ],
+    "top_problems": ["Grumbling Sound When Turning in the 2020 Honda Passport"],
     "seal": null
   },
   "Honda|Passport|2021": {
@@ -3013,9 +3162,7 @@
     "recalls": null,
     "tsbs": null,
     "investigations": null,
-    "top_problems": [
-      "Poor Fm Radio Reception in the 2026 Honda Passport"
-    ],
+    "top_problems": ["Poor Fm Radio Reception in the 2026 Honda Passport"],
     "seal": null
   },
   "Honda|Pilot|2016": {
@@ -3128,9 +3275,7 @@
     "recalls": 4,
     "tsbs": 18,
     "investigations": null,
-    "top_problems": [
-      "Puddle Light Blown in the 2024 Honda Pilot"
-    ],
+    "top_problems": ["Puddle Light Blown in the 2024 Honda Pilot"],
     "seal": null
   },
   "Honda|Pilot|2025": {
@@ -4229,9 +4374,7 @@
     "recalls": 3,
     "tsbs": 53,
     "investigations": null,
-    "top_problems": [
-      "Second Row Seating Force in the 2023 Kia Carnival"
-    ],
+    "top_problems": ["Second Row Seating Force in the 2023 Kia Carnival"],
     "seal": null
   },
   "Kia|Carnival|2024": null,
@@ -4309,9 +4452,7 @@
     "recalls": null,
     "tsbs": null,
     "investigations": null,
-    "top_problems": [
-      "Transmission in the 2023 Kia Forte"
-    ],
+    "top_problems": ["Transmission in the 2023 Kia Forte"],
     "seal": null
   },
   "Kia|K5 Hybrid|2020": null,
@@ -4535,9 +4676,7 @@
     "recalls": 4,
     "tsbs": 42,
     "investigations": 2,
-    "top_problems": [
-      "Malfunction Light in the 2022 Kia Sorento Hybrid"
-    ],
+    "top_problems": ["Malfunction Light in the 2022 Kia Sorento Hybrid"],
     "seal": null
   },
   "Kia|Sorento Hybrid|2023": {
@@ -4651,9 +4790,7 @@
     "recalls": 6,
     "tsbs": 67,
     "investigations": null,
-    "top_problems": [
-      "Paint Chipping in the 2020 Kia Stinger"
-    ],
+    "top_problems": ["Paint Chipping in the 2020 Kia Stinger"],
     "seal": null
   },
   "Kia|Stinger|2022": {
@@ -4755,9 +4892,7 @@
     "recalls": 1,
     "tsbs": 72,
     "investigations": null,
-    "top_problems": [
-      "Power Steering Malfunction in the 2021 Lexus ES 250"
-    ],
+    "top_problems": ["Power Steering Malfunction in the 2021 Lexus ES 250"],
     "seal": null
   },
   "Lexus|ES 250|2022": null,
@@ -5207,9 +5342,7 @@
     "recalls": 4,
     "tsbs": 177,
     "investigations": null,
-    "top_problems": [
-      "Stalling in the 2019 Lexus RX 350"
-    ],
+    "top_problems": ["Stalling in the 2019 Lexus RX 350"],
     "seal": null
   },
   "Lexus|RX 350|2020": {
@@ -5218,9 +5351,7 @@
     "recalls": 2,
     "tsbs": 140,
     "investigations": null,
-    "top_problems": [
-      "Droning Noise Vibration in the 2020 Lexus RX 350"
-    ],
+    "top_problems": ["Droning Noise Vibration in the 2020 Lexus RX 350"],
     "seal": null
   },
   "Lexus|RX 350|2021": {
@@ -5255,9 +5386,7 @@
     "recalls": null,
     "tsbs": 17,
     "investigations": null,
-    "top_problems": [
-      "Fuel Gauge Sensor Not Working in the 2016 Lexus RX 450h"
-    ],
+    "top_problems": ["Fuel Gauge Sensor Not Working in the 2016 Lexus RX 450h"],
     "seal": null
   },
   "Lexus|RX 450h|2017": null,
@@ -5748,9 +5877,7 @@
     "recalls": 2,
     "tsbs": 433,
     "investigations": null,
-    "top_problems": [
-      "Belly Pan Damaged in the 2020 Porsche Macan"
-    ],
+    "top_problems": ["Belly Pan Damaged in the 2020 Porsche Macan"],
     "seal": null
   },
   "Porsche|Macan|2021": {
@@ -5967,9 +6094,7 @@
     "recalls": 11,
     "tsbs": 601,
     "investigations": 1,
-    "top_problems": [
-      "Sudden Loss Of Transmission Power in the 2022 Ram 3500"
-    ],
+    "top_problems": ["Sudden Loss Of Transmission Power in the 2022 Ram 3500"],
     "seal": null
   },
   "Rivian|R1S|2022": {
@@ -6067,9 +6192,7 @@
     "recalls": null,
     "tsbs": null,
     "investigations": null,
-    "top_problems": [
-      "Brake Not Working Properly in the 2016 Skoda Superb"
-    ],
+    "top_problems": ["Brake Not Working Properly in the 2016 Skoda Superb"],
     "seal": null
   },
   "Skoda|Superb|2017": null,
@@ -6110,9 +6233,7 @@
     "recalls": 1,
     "tsbs": 362,
     "investigations": null,
-    "top_problems": [
-      "Engine Start And Stop in the 2021 Subaru Ascent"
-    ],
+    "top_problems": ["Engine Start And Stop in the 2021 Subaru Ascent"],
     "seal": null
   },
   "Subaru|Ascent|2023": {
@@ -6748,9 +6869,7 @@
     "recalls": 2,
     "tsbs": 157,
     "investigations": null,
-    "top_problems": [
-      "Navigation Gps in the 2021 Toyota Avalon"
-    ],
+    "top_problems": ["Navigation Gps in the 2021 Toyota Avalon"],
     "seal": null
   },
   "Toyota|Avalon|2022": {
@@ -6811,9 +6930,7 @@
     "recalls": 1,
     "tsbs": 122,
     "investigations": null,
-    "top_problems": [
-      "Transmission Failure in the 2020 Toyota C-HR"
-    ],
+    "top_problems": ["Transmission Failure in the 2020 Toyota C-HR"],
     "seal": null
   },
   "Toyota|C-HR|2021": {
@@ -7014,9 +7131,7 @@
     "recalls": 2,
     "tsbs": 23,
     "investigations": null,
-    "top_problems": [
-      "Oil Pan Gasket Leak in the 2022 Toyota Corolla Cross"
-    ],
+    "top_problems": ["Oil Pan Gasket Leak in the 2022 Toyota Corolla Cross"],
     "seal": null
   },
   "Toyota|Corolla Cross|2023": {
@@ -7398,9 +7513,7 @@
     "recalls": 1,
     "tsbs": 95,
     "investigations": null,
-    "top_problems": [
-      "Hydrogen Is Too Expensive in the 2021 Toyota Mirai"
-    ],
+    "top_problems": ["Hydrogen Is Too Expensive in the 2021 Toyota Mirai"],
     "seal": null
   },
   "Toyota|Prius Prime|2017": {
@@ -7422,9 +7535,7 @@
     "recalls": null,
     "tsbs": 94,
     "investigations": 1,
-    "top_problems": [
-      "Windshield Cracks Easily in the 2018 Toyota Prius Prime"
-    ],
+    "top_problems": ["Windshield Cracks Easily in the 2018 Toyota Prius Prime"],
     "seal": null
   },
   "Toyota|Prius Prime|2019": {
@@ -7433,9 +7544,7 @@
     "recalls": 1,
     "tsbs": 132,
     "investigations": 1,
-    "top_problems": [
-      "Windshield Cracked in the 2019 Toyota Prius Prime"
-    ],
+    "top_problems": ["Windshield Cracked in the 2019 Toyota Prius Prime"],
     "seal": null
   },
   "Toyota|Prius Prime|2020": {
@@ -7466,9 +7575,7 @@
     "recalls": 1,
     "tsbs": 73,
     "investigations": 1,
-    "top_problems": [
-      "Tire Problem On New Car in the 2022 Toyota Prius Prime"
-    ],
+    "top_problems": ["Tire Problem On New Car in the 2022 Toyota Prius Prime"],
     "seal": null
   },
   "Toyota|Prius v|2017": {
@@ -7477,9 +7584,7 @@
     "recalls": 1,
     "tsbs": 312,
     "investigations": null,
-    "top_problems": [
-      "Usb Port Stopped Charging in the 2017 Toyota Prius v"
-    ],
+    "top_problems": ["Usb Port Stopped Charging in the 2017 Toyota Prius v"],
     "seal": null
   },
   "Toyota|Prius|2016": {
@@ -7564,9 +7669,7 @@
     "recalls": 1,
     "tsbs": 78,
     "investigations": 1,
-    "top_problems": [
-      "Windshield Wipers Too Slow in the 2022 Toyota Prius"
-    ],
+    "top_problems": ["Windshield Wipers Too Slow in the 2022 Toyota Prius"],
     "seal": null
   },
   "Toyota|RAV4 Hybrid|2016": {
@@ -7675,9 +7778,7 @@
     "recalls": null,
     "tsbs": 30,
     "investigations": null,
-    "top_problems": [
-      "Bad Catalytic Converter in the 2024 Toyota RAV4 Hybrid"
-    ],
+    "top_problems": ["Bad Catalytic Converter in the 2024 Toyota RAV4 Hybrid"],
     "seal": null
   },
   "Toyota|RAV4 Hybrid|2025": {
@@ -8117,9 +8218,7 @@
     "recalls": 4,
     "tsbs": 373,
     "investigations": null,
-    "top_problems": [
-      "Water Pump Leak in the 2021 Volkswagen Arteon"
-    ],
+    "top_problems": ["Water Pump Leak in the 2021 Volkswagen Arteon"],
     "seal": null
   },
   "Volkswagen|Arteon|2022": null,
@@ -8504,9 +8603,7 @@
     "recalls": 2,
     "tsbs": 526,
     "investigations": 1,
-    "top_problems": [
-      "A/C Not Working in the 2020 Volkswagen Golf"
-    ],
+    "top_problems": ["A/C Not Working in the 2020 Volkswagen Golf"],
     "seal": null
   },
   "Volkswagen|Grand California|2019": null,
@@ -8738,9 +8835,7 @@
     "recalls": null,
     "tsbs": 239,
     "investigations": null,
-    "top_problems": [
-      "Rear Brakes Failed in the 2022 Volkswagen Passat"
-    ],
+    "top_problems": ["Rear Brakes Failed in the 2022 Volkswagen Passat"],
     "seal": null
   },
   "Volkswagen|Polo GTI|2018": null,
@@ -8799,9 +8894,7 @@
     "recalls": null,
     "tsbs": 120,
     "investigations": null,
-    "top_problems": [
-      "Apple Carplay (Apple Maps) in the 2024 Volkswagen Taos"
-    ],
+    "top_problems": ["Apple Carplay (Apple Maps) in the 2024 Volkswagen Taos"],
     "seal": null
   },
   "Volkswagen|Teramont Cross Sport|2021": null,

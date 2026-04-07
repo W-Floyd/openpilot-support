@@ -7317,10 +7317,10 @@
     },
     {
       "make": "Cadillac",
-      "model": "CT6 - No-ACC",
+      "model": "CT6",
       "years": [],
       "name": "Cadillac CT6 - No-ACC",
-      "package": "Adaptive Cruise Control (ACC)",
+      "package": "No Adaptive Cruise Control (Non-ACC)",
       "support_type": "Upstream",
       "support_link": "#upstream",
       "merged": true,
@@ -7369,10 +7369,10 @@
     },
     {
       "make": "Cadillac",
-      "model": "XT5 - No-ACC",
+      "model": "XT5",
       "years": [],
       "name": "Cadillac XT5 - No-ACC",
-      "package": "Adaptive Cruise Control (ACC)",
+      "package": "No Adaptive Cruise Control (Non-ACC)",
       "support_type": "Upstream",
       "support_link": "#upstream",
       "merged": true,
@@ -7482,12 +7482,12 @@
     },
     {
       "make": "Chevrolet",
-      "model": "Bolt EV - No-ACC",
+      "model": "Bolt EV",
       "years": [
         2017
       ],
       "name": "Chevrolet Bolt EV 2017 - No-ACC",
-      "package": "Adaptive Cruise Control (ACC)",
+      "package": "No Adaptive Cruise Control (Non-ACC)",
       "support_type": "Upstream",
       "support_link": "#upstream",
       "merged": true,
@@ -7509,7 +7509,7 @@
     },
     {
       "make": "Chevrolet",
-      "model": "Bolt EV - No-ACC",
+      "model": "Bolt EV",
       "years": [
         2018,
         2019,
@@ -7517,7 +7517,7 @@
         2021
       ],
       "name": "Chevrolet Bolt EV 2018-21 - No-ACC",
-      "package": "Adaptive Cruise Control (ACC)",
+      "package": "No Adaptive Cruise Control (Non-ACC)",
       "support_type": "Upstream",
       "support_link": "#upstream",
       "merged": true,
@@ -7539,13 +7539,13 @@
     },
     {
       "make": "Chevrolet",
-      "model": "Bolt EV - No-ACC",
+      "model": "Bolt EV",
       "years": [
         2022,
         2023
       ],
       "name": "Chevrolet Bolt EV 2022-23 - No-ACC",
-      "package": "Adaptive Cruise Control (ACC)",
+      "package": "No Adaptive Cruise Control (Non-ACC)",
       "support_type": "Upstream",
       "support_link": "#upstream",
       "merged": true,
@@ -7625,7 +7625,7 @@
     },
     {
       "make": "Chevrolet",
-      "model": "Equinox - No-ACC",
+      "model": "Equinox",
       "years": [
         2019,
         2020,
@@ -7633,7 +7633,7 @@
         2022
       ],
       "name": "Chevrolet Equinox 2019-22 - No-ACC",
-      "package": "Adaptive Cruise Control (ACC)",
+      "package": "No Adaptive Cruise Control (Non-ACC)",
       "support_type": "Upstream",
       "support_link": "#upstream",
       "merged": true,
@@ -7711,12 +7711,12 @@
     },
     {
       "make": "Chevrolet",
-      "model": "Malibu - No-ACC",
+      "model": "Malibu",
       "years": [
         2023
       ],
       "name": "Chevrolet Malibu 2023 - No-ACC",
-      "package": "Adaptive Cruise Control (ACC)",
+      "package": "No Adaptive Cruise Control (Non-ACC)",
       "support_type": "Upstream",
       "support_link": "#upstream",
       "merged": true,
@@ -7738,12 +7738,12 @@
     },
     {
       "make": "Chevrolet",
-      "model": "Malibu Hybrid - No-ACC",
+      "model": "Malibu Hybrid",
       "years": [
         2017
       ],
       "name": "Chevrolet Malibu Hybrid 2017 - No-ACC",
-      "package": "Adaptive Cruise Control (ACC)",
+      "package": "No Adaptive Cruise Control (Non-ACC)",
       "support_type": "Upstream",
       "support_link": "#upstream",
       "merged": true,
@@ -7824,7 +7824,7 @@
     },
     {
       "make": "Chevrolet",
-      "model": "Suburban Premier - No-ACC",
+      "model": "Suburban Premier",
       "years": [
         2016,
         2017,
@@ -7833,7 +7833,7 @@
         2020
       ],
       "name": "Chevrolet Suburban Premier 2016-20 - No-ACC",
-      "package": "Adaptive Cruise Control (ACC)",
+      "package": "No Adaptive Cruise Control (Non-ACC)",
       "support_type": "Upstream",
       "support_link": "#upstream",
       "merged": true,
@@ -7883,13 +7883,13 @@
     },
     {
       "make": "Chevrolet",
-      "model": "Trailblazer - No-ACC",
+      "model": "Trailblazer",
       "years": [
         2021,
         2022
       ],
       "name": "Chevrolet Trailblazer 2021-22 - No-ACC",
-      "package": "Adaptive Cruise Control (ACC)",
+      "package": "No Adaptive Cruise Control (Non-ACC)",
       "support_type": "Upstream",
       "support_link": "#upstream",
       "merged": true,
@@ -7938,13 +7938,13 @@
     },
     {
       "make": "Chevrolet",
-      "model": "Volt - No-ACC",
+      "model": "Volt",
       "years": [
         2017,
         2018
       ],
       "name": "Chevrolet Volt 2017-18 - No-ACC",
-      "package": "Adaptive Cruise Control (ACC)",
+      "package": "No Adaptive Cruise Control (Non-ACC)",
       "support_type": "Upstream",
       "support_link": "#upstream",
       "merged": true,
@@ -9441,10 +9441,10 @@
     },
     {
       "make": "GMC",
-      "model": "Yukon - No-ACC",
+      "model": "Yukon",
       "years": [],
       "name": "GMC Yukon - No-ACC",
-      "package": "Adaptive Cruise Control (ACC)",
+      "package": "No Adaptive Cruise Control (Non-ACC)",
       "support_type": "Upstream",
       "support_link": "#upstream",
       "merged": true,
@@ -30452,12 +30452,12 @@
     },
     {
       "make": "Cadillac",
-      "model": "CT6 No ACC",
+      "model": "CT6",
       "years": [
         2018
       ],
       "name": "Cadillac CT6 No ACC 2018",
-      "package": "Adaptive Cruise Control (ACC)",
+      "package": "No Adaptive Cruise Control (Non-ACC)",
       "support_type": "Upstream",
       "support_link": "#upstream",
       "merged": true,
@@ -30479,12 +30479,12 @@
     },
     {
       "make": "Cadillac",
-      "model": "XT5 No ACC",
+      "model": "XT5",
       "years": [
         2018
       ],
       "name": "Cadillac XT5 No ACC 2018",
-      "package": "Adaptive Cruise Control (ACC)",
+      "package": "No Adaptive Cruise Control (Non-ACC)",
       "support_type": "Upstream",
       "support_link": "#upstream",
       "merged": true,
@@ -30705,7 +30705,7 @@
     },
     {
       "make": "Chevrolet",
-      "model": "Equinox NO ACC",
+      "model": "Equinox",
       "years": [
         2019,
         2020,
@@ -30713,7 +30713,7 @@
         2022
       ],
       "name": "Chevrolet Equinox NO ACC 2019-22",
-      "package": "Adaptive Cruise Control (ACC)",
+      "package": "No Adaptive Cruise Control (Non-ACC)",
       "support_type": "Upstream",
       "support_link": "#upstream",
       "merged": true,
@@ -30735,12 +30735,12 @@
     },
     {
       "make": "Chevrolet",
-      "model": "Malibu No ACC",
+      "model": "Malibu",
       "years": [
         2018
       ],
       "name": "Chevrolet Malibu No ACC 2018",
-      "package": "Adaptive Cruise Control (ACC)",
+      "package": "No Adaptive Cruise Control (Non-ACC)",
       "support_type": "Upstream",
       "support_link": "#upstream",
       "merged": true,
@@ -30849,13 +30849,13 @@
     },
     {
       "make": "Chevrolet",
-      "model": "Trailblazer NO ACC",
+      "model": "Trailblazer",
       "years": [
         2021,
         2022
       ],
       "name": "Chevrolet Trailblazer NO ACC 2021-22",
-      "package": "Adaptive Cruise Control (ACC)",
+      "package": "No Adaptive Cruise Control (Non-ACC)",
       "support_type": "Upstream",
       "support_link": "#upstream",
       "merged": true,
@@ -41884,7 +41884,7 @@
     },
     {
       "make": "Cadillac",
-      "model": "CT6 Non-ACC",
+      "model": "CT6",
       "years": [
         2017,
         2018
@@ -41913,7 +41913,7 @@
     },
     {
       "make": "Cadillac",
-      "model": "XT5 Non-ACC",
+      "model": "XT5",
       "years": [
         2018
       ],
@@ -41970,7 +41970,7 @@
     },
     {
       "make": "Chevrolet",
-      "model": "Bolt EUV LT Non-ACC",
+      "model": "Bolt EUV LT",
       "years": [
         2022,
         2023
@@ -42028,7 +42028,7 @@
     },
     {
       "make": "Chevrolet",
-      "model": "Bolt EV LT Non-ACC",
+      "model": "Bolt EV LT",
       "years": [
         2022,
         2023
@@ -42057,7 +42057,7 @@
     },
     {
       "make": "Chevrolet",
-      "model": "Bolt EV Non-ACC",
+      "model": "Bolt EV",
       "years": [
         2017
       ],
@@ -42085,7 +42085,7 @@
     },
     {
       "make": "Chevrolet",
-      "model": "Bolt EV Non-ACC",
+      "model": "Bolt EV",
       "years": [
         2018,
         2019,
@@ -42147,7 +42147,7 @@
     },
     {
       "make": "Chevrolet",
-      "model": "Equinox Non-ACC",
+      "model": "Equinox",
       "years": [
         2019,
         2020,
@@ -42178,7 +42178,7 @@
     },
     {
       "make": "Chevrolet",
-      "model": "Malibu Non-ACC",
+      "model": "Malibu",
       "years": [
         2016,
         2017,
@@ -42242,7 +42242,7 @@
     },
     {
       "make": "Chevrolet",
-      "model": "Suburban Non-ACC",
+      "model": "Suburban",
       "years": [
         2016,
         2017,
@@ -42303,7 +42303,7 @@
     },
     {
       "make": "Chevrolet",
-      "model": "Trailblazer Non-ACC",
+      "model": "Trailblazer",
       "years": [
         2021,
         2022
