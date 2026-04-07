@@ -592,7 +592,10 @@ def merge_fork_cars(fork_car_lists: list[tuple[str, list[dict]]]) -> list[dict]:
     for name in to_remove:
         del merged[name]
 
-    return list(merged.values())
+    return sorted(
+        merged.values(),
+        key=lambda c: (c["make"], c["model"], min(c["years"]) if c["years"] else 0),
+    )
 
 
 def cargurus_car_key(car: dict) -> str | None:
