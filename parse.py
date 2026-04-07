@@ -48,15 +48,35 @@ def _extract_years_from_model(car_docs) -> list[int]:
     return sorted(set(years))
 
 
-def _remove_years_from_model(car_docs) -> str:
+_NON_ACC_PATTERNS = ["NO ACC", "Non-ACC", "Non ACC", "No-ACC"]
+_NON_ACC_REGEX = "|".join(f"( - )?{p}" for p in _NON_ACC_PATTERNS)
+
+
+def _clean_model_name(car_docs) -> str:
     """Strip year range from model name."""
     import re
 
-    if car_docs.years:
-        return car_docs.model
-    else:
+    model = car_docs.model
+
+    if not (car_docs.years):
         pattern = r"(\s*20\d{2}(-20\d{2}|-\d{2})?)"
-        return re.sub(pattern, "", car_docs.model).strip()
+        model = re.sub(pattern, "", model).strip()
+
+    if "ACC" in (car_docs.package or ""):
+        model = re.sub(
+            rf"\s*({_NON_ACC_REGEX})", "", model, flags=re.IGNORECASE
+        ).strip()
+
+    return model
+
+
+def _modify_package_from_model(car_docs) -> str:
+    import re
+
+    package = car_docs.package or ""
+    if "ACC" in package and re.search(_NON_ACC_REGEX, car_docs.model, re.IGNORECASE):
+        return "No Adaptive Cruise Control (Non-ACC)"
+    return package
 
 
 from dataclasses import dataclass
@@ -68,8 +88,8 @@ class MockCarDocs:
     years: str = ""
 
 
-def test_remove_years_from_model() -> None:
-    """Test the _remove_years_from_model function."""
+def test_clean_model_name() -> None:
+    """Test the _clean_model_name function."""
     test_cases = [
         # (car_docs, expected_result)
         (MockCarDocs("Accord", "2018"), "Accord"),
@@ -85,7 +105,7 @@ def test_remove_years_from_model() -> None:
     ]
 
     for car_docs, expected in test_cases:
-        result = _remove_years_from_model(car_docs)
+        result = _clean_model_name(car_docs)
         assert result == expected, (
             f"Failed for {car_docs.model!r}: got {result!r}, expected {expected!r}"
         )
@@ -154,10 +174,10 @@ def car_docs_to_dict(car_docs) -> dict:
 
     return {
         "make": car_docs.make,
-        "model": _remove_years_from_model(car_docs),
+        "model": _clean_model_name(car_docs),
         "years": _extract_years_from_model(car_docs),
         "name": car_docs.name,
-        "package": car_docs.package,
+        "package": _modify_package_from_model(car_docs),
         "support_type": car_docs.support_type.value,
         "support_link": car_docs.support_link,
         "merged": car_docs.merged,
@@ -248,7 +268,7 @@ def car_docs_to_dict_old(car_docs) -> dict:
 
     return {
         "make": car_docs.make,
-        "model": _remove_years_from_model(car_docs),
+        "model": _clean_model_name(car_docs),
         "years": _extract_years_from_model(car_docs),
         "name": car_docs.name,
         "package": car_docs.package,

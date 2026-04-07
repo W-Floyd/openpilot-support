@@ -220,9 +220,12 @@
   "Cadillac|CT6 No ACC|2018": null,
   "Cadillac|CT6 Non-ACC|2017": null,
   "Cadillac|CT6 Non-ACC|2018": null,
+  "Cadillac|CT6|2017": null,
+  "Cadillac|CT6|2018": null,
   "Cadillac|Escalade ASCM Harness|2018": null,
   "Cadillac|XT5 No ACC|2018": null,
   "Cadillac|XT5 Non-ACC|2018": null,
+  "Cadillac|XT5|2018": null,
   "Cadillac|XT6|2020": null,
   "Chevrolet|Blazer|2019": {
     "score": 69,
@@ -318,6 +321,7 @@
   "Chevrolet|Malibu ASCM Harness|2018": null,
   "Chevrolet|Malibu ASCM Harness|2019": null,
   "Chevrolet|Malibu Hybrid - No-ACC|2017": null,
+  "Chevrolet|Malibu Hybrid|2017": null,
   "Chevrolet|Malibu No ACC|2018": null,
   "Chevrolet|Malibu Non-ACC|2016": null,
   "Chevrolet|Malibu Non-ACC|2017": null,
@@ -327,9 +331,31 @@
   "Chevrolet|Malibu Non-ACC|2021": null,
   "Chevrolet|Malibu Non-ACC|2022": null,
   "Chevrolet|Malibu Non-ACC|2023": null,
+  "Chevrolet|Malibu|2016": null,
+  "Chevrolet|Malibu|2017": null,
+  "Chevrolet|Malibu|2018": {
+    "score": 62,
+    "url": "https://autoreliabilityindex.com/chevrolet/malibu/2018"
+  },
   "Chevrolet|Malibu|2019": {
     "score": 74,
     "url": "https://autoreliabilityindex.com/chevrolet/malibu/2019"
+  },
+  "Chevrolet|Malibu|2020": {
+    "score": 74,
+    "url": "https://autoreliabilityindex.com/chevrolet/malibu/2020"
+  },
+  "Chevrolet|Malibu|2021": {
+    "score": 74,
+    "url": "https://autoreliabilityindex.com/chevrolet/malibu/2021"
+  },
+  "Chevrolet|Malibu|2022": {
+    "score": 80,
+    "url": "https://autoreliabilityindex.com/chevrolet/malibu/2022"
+  },
+  "Chevrolet|Malibu|2023": {
+    "score": 81,
+    "url": "https://autoreliabilityindex.com/chevrolet/malibu/2023"
   },
   "Chevrolet|Silverado 1500|2020": null,
   "Chevrolet|Silverado 1500|2021": null,
@@ -380,6 +406,8 @@
   "Chevrolet|Volt ASCM Harness|2018": null,
   "Chevrolet|Volt Camera Harness|2017": null,
   "Chevrolet|Volt Camera Harness|2018": null,
+  "Chevrolet|Volt|2017": null,
+  "Chevrolet|Volt|2018": null,
   "Chrysler|Pacifica Hybrid|2017": null,
   "Chrysler|Pacifica Hybrid|2018": null,
   "Chrysler|Pacifica Hybrid|2019": null,

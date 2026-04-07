@@ -578,6 +578,40 @@
     "success": "FAILURE",
     "errorMessage": "Failed to process query with LLM: The provided makes/models could not be matched to vehicle industry data available in our system. Please modify these names and try again: Make: CUPRA, Model: Ateca"
   },
+  "Make: Cadillac, Model: CT6 2017-2018": {
+    "success": "SUCCESS",
+    "filterCriteria": {
+      "entityId": "d2352",
+      "makeModelTrimPaths": [
+        "m22/d2861",
+        "m22/d2352",
+        "m22/d2604"
+      ],
+      "startYear": 2017,
+      "endYear": 2018,
+      "isDeliveryEnabled": false,
+      "priceDropsOnly": false,
+      "hideNationwideShipping": true
+    },
+    "matchType": "LLM"
+  },
+  "Make: Cadillac, Model: CT6 2018-2018": {
+    "success": "SUCCESS",
+    "filterCriteria": {
+      "entityId": "d2352",
+      "makeModelTrimPaths": [
+        "m22/d2861",
+        "m22/d2352",
+        "m22/d2604"
+      ],
+      "startYear": 2018,
+      "endYear": 2018,
+      "isDeliveryEnabled": false,
+      "priceDropsOnly": false,
+      "hideNationwideShipping": true
+    },
+    "matchType": "LLM"
+  },
   "Make: Cadillac, Model: CT6 No ACC 2018-2018": {
     "success": "SUCCESS",
     "filterCriteria": {
@@ -640,6 +674,21 @@
         "m22/d3392",
         "m22/d3473",
         "m22/d2914"
+      ],
+      "startYear": 2018,
+      "endYear": 2018,
+      "isDeliveryEnabled": false,
+      "priceDropsOnly": false,
+      "hideNationwideShipping": true
+    },
+    "matchType": "LLM"
+  },
+  "Make: Cadillac, Model: XT5 2018-2018": {
+    "success": "SUCCESS",
+    "filterCriteria": {
+      "entityId": "d2393",
+      "makeModelTrimPaths": [
+        "m22/d2393"
       ],
       "startYear": 2018,
       "endYear": 2018,
@@ -773,6 +822,51 @@
       "entityId": "d3116",
       "makeModelTrimPaths": [
         "m1/d3116/LT FWD"
+      ],
+      "startYear": 2022,
+      "endYear": 2023,
+      "isDeliveryEnabled": false,
+      "priceDropsOnly": false,
+      "hideNationwideShipping": true
+    },
+    "matchType": "LLM"
+  },
+  "Make: Chevrolet, Model: Bolt EV - 2017-2017": {
+    "success": "SUCCESS",
+    "filterCriteria": {
+      "entityId": "d2397",
+      "makeModelTrimPaths": [
+        "m1/d2397"
+      ],
+      "startYear": 2017,
+      "endYear": 2017,
+      "isDeliveryEnabled": false,
+      "priceDropsOnly": false,
+      "hideNationwideShipping": true
+    },
+    "matchType": "LLM"
+  },
+  "Make: Chevrolet, Model: Bolt EV - 2018-2021": {
+    "success": "SUCCESS",
+    "filterCriteria": {
+      "entityId": "d2397",
+      "makeModelTrimPaths": [
+        "m1/d2397"
+      ],
+      "startYear": 2018,
+      "endYear": 2021,
+      "isDeliveryEnabled": false,
+      "priceDropsOnly": false,
+      "hideNationwideShipping": true
+    },
+    "matchType": "LLM"
+  },
+  "Make: Chevrolet, Model: Bolt EV - 2022-2023": {
+    "success": "SUCCESS",
+    "filterCriteria": {
+      "entityId": "d2397",
+      "makeModelTrimPaths": [
+        "m1/d2397"
       ],
       "startYear": 2022,
       "endYear": 2023,
@@ -943,6 +1037,22 @@
     },
     "matchType": "LLM"
   },
+  "Make: Chevrolet, Model: Equinox - 2019-2022": {
+    "success": "SUCCESS",
+    "filterCriteria": {
+      "entityId": "d616",
+      "makeModelTrimPaths": [
+        "m1/d3267",
+        "m1/d616"
+      ],
+      "startYear": 2019,
+      "endYear": 2022,
+      "isDeliveryEnabled": false,
+      "priceDropsOnly": false,
+      "hideNationwideShipping": true
+    },
+    "matchType": "LLM"
+  },
   "Make: Chevrolet, Model: Equinox - No-ACC 2019-2022": {
     "success": "SUCCESS",
     "filterCriteria": {
@@ -1030,6 +1140,23 @@
     },
     "matchType": "LLM"
   },
+  "Make: Chevrolet, Model: Malibu - 2023-2023": {
+    "success": "SUCCESS",
+    "filterCriteria": {
+      "entityId": "d622",
+      "makeModelTrimPaths": [
+        "m1/d622",
+        "m1/d2321",
+        "m1/d623"
+      ],
+      "startYear": 2023,
+      "endYear": 2023,
+      "isDeliveryEnabled": false,
+      "priceDropsOnly": false,
+      "hideNationwideShipping": true
+    },
+    "matchType": "LLM"
+  },
   "Make: Chevrolet, Model: Malibu - No-ACC 2023-2023": {
     "success": "SUCCESS",
     "filterCriteria": {
@@ -1046,6 +1173,40 @@
       "installedOptionIds": [
         132
       ],
+      "hideNationwideShipping": true
+    },
+    "matchType": "LLM"
+  },
+  "Make: Chevrolet, Model: Malibu 2016-2023": {
+    "success": "SUCCESS",
+    "filterCriteria": {
+      "entityId": "d622",
+      "makeModelTrimPaths": [
+        "m1/d622",
+        "m1/d2321",
+        "m1/d623"
+      ],
+      "startYear": 2016,
+      "endYear": 2023,
+      "isDeliveryEnabled": false,
+      "priceDropsOnly": false,
+      "hideNationwideShipping": true
+    },
+    "matchType": "LLM"
+  },
+  "Make: Chevrolet, Model: Malibu 2018-2018": {
+    "success": "SUCCESS",
+    "filterCriteria": {
+      "entityId": "d622",
+      "makeModelTrimPaths": [
+        "m1/d622",
+        "m1/d2321",
+        "m1/d623"
+      ],
+      "startYear": 2018,
+      "endYear": 2018,
+      "isDeliveryEnabled": false,
+      "priceDropsOnly": false,
       "hideNationwideShipping": true
     },
     "matchType": "LLM"
@@ -1084,7 +1245,37 @@
     },
     "matchType": "LLM"
   },
+  "Make: Chevrolet, Model: Malibu Hybrid - 2017-2017": {
+    "success": "SUCCESS",
+    "filterCriteria": {
+      "entityId": "d2321",
+      "makeModelTrimPaths": [
+        "m1/d2321"
+      ],
+      "startYear": 2017,
+      "endYear": 2017,
+      "isDeliveryEnabled": false,
+      "priceDropsOnly": false,
+      "hideNationwideShipping": true
+    },
+    "matchType": "LLM"
+  },
   "Make: Chevrolet, Model: Malibu Hybrid - No-ACC 2017-2017": {
+    "success": "SUCCESS",
+    "filterCriteria": {
+      "entityId": "d2321",
+      "makeModelTrimPaths": [
+        "m1/d2321"
+      ],
+      "startYear": 2017,
+      "endYear": 2017,
+      "isDeliveryEnabled": false,
+      "priceDropsOnly": false,
+      "hideNationwideShipping": true
+    },
+    "matchType": "LLM"
+  },
+  "Make: Chevrolet, Model: Malibu Hybrid 2017-2017": {
     "success": "SUCCESS",
     "filterCriteria": {
       "entityId": "d2321",
@@ -1239,6 +1430,24 @@
     },
     "matchType": "LLM"
   },
+  "Make: Chevrolet, Model: Suburban Premier - 2016-2020": {
+    "success": "SUCCESS",
+    "filterCriteria": {
+      "entityId": "d638",
+      "makeModelTrimPaths": [
+        "m1/d638/Premier RWD",
+        "m1/d638/Premier 4WD",
+        "m1/d638/1500 Premier RWD",
+        "m1/d638/1500 Premier 4WD"
+      ],
+      "startYear": 2016,
+      "endYear": 2020,
+      "isDeliveryEnabled": false,
+      "priceDropsOnly": false,
+      "hideNationwideShipping": true
+    },
+    "matchType": "LLM"
+  },
   "Make: Chevrolet, Model: Suburban Premier - No-ACC 2016-2020": {
     "success": "SUCCESS",
     "filterCriteria": {
@@ -1284,6 +1493,22 @@
       ],
       "startYear": 2024,
       "endYear": 2024,
+      "isDeliveryEnabled": false,
+      "priceDropsOnly": false,
+      "hideNationwideShipping": true
+    },
+    "matchType": "LLM"
+  },
+  "Make: Chevrolet, Model: Trailblazer - 2021-2022": {
+    "success": "SUCCESS",
+    "filterCriteria": {
+      "entityId": "d642",
+      "makeModelTrimPaths": [
+        "m1/d642",
+        "m1/d643"
+      ],
+      "startYear": 2021,
+      "endYear": 2022,
       "isDeliveryEnabled": false,
       "priceDropsOnly": false,
       "hideNationwideShipping": true
@@ -1394,7 +1619,37 @@
     },
     "matchType": "LLM"
   },
+  "Make: Chevrolet, Model: Volt - 2017-2018": {
+    "success": "SUCCESS",
+    "filterCriteria": {
+      "entityId": "d2012",
+      "makeModelTrimPaths": [
+        "m1/d2012"
+      ],
+      "startYear": 2017,
+      "endYear": 2018,
+      "isDeliveryEnabled": false,
+      "priceDropsOnly": false,
+      "hideNationwideShipping": true
+    },
+    "matchType": "LLM"
+  },
   "Make: Chevrolet, Model: Volt - No-ACC 2017-2018": {
+    "success": "SUCCESS",
+    "filterCriteria": {
+      "entityId": "d2012",
+      "makeModelTrimPaths": [
+        "m1/d2012"
+      ],
+      "startYear": 2017,
+      "endYear": 2018,
+      "isDeliveryEnabled": false,
+      "priceDropsOnly": false,
+      "hideNationwideShipping": true
+    },
+    "matchType": "LLM"
+  },
+  "Make: Chevrolet, Model: Volt 2017-2018": {
     "success": "SUCCESS",
     "filterCriteria": {
       "entityId": "d2012",
