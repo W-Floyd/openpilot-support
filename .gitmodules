@@ -4,7 +4,7 @@
 [submodule "sunnypilot"]
 	path = sunnypilot
 	url = git@github.com:sunnypilot/sunnypilot.git
-[submodule "opgm"]
+[submodule "OPGM"]
 	path = opgm
 	url = git@github.com:opgm/openpilot.git
 [submodule "BMW-E8x-E9x"]
@@ -13,3 +13,6 @@
 [submodule "StarPilot"]
 	path = StarPilot
 	url = git@github.com:firestar5683/StarPilot.git
+[submodule "BluePilot"]
+	path = bluepilot
+	url = git@github.com:BluePilotDev/bluepilot.git
