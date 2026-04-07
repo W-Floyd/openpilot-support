@@ -1832,6 +1832,21 @@
     },
     "matchType": "LLM"
   },
+  "Make: Ford, Model: Edge 2022-2022": {
+    "success": "SUCCESS",
+    "filterCriteria": {
+      "entityId": "d923",
+      "makeModelTrimPaths": [
+        "m2/d923"
+      ],
+      "startYear": 2022,
+      "endYear": 2022,
+      "isDeliveryEnabled": false,
+      "priceDropsOnly": false,
+      "hideNationwideShipping": true
+    },
+    "matchType": "LLM"
+  },
   "Make: Ford, Model: Escape 2020-2022": {
     "success": "SUCCESS",
     "filterCriteria": {

@@ -21,9 +21,10 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 FORKS = [
     ("openpilot", os.path.join(HERE, "openpilot", "opendbc_repo")),
     ("sunnypilot", os.path.join(HERE, "sunnypilot", "opendbc_repo")),
-    ("opgm", os.path.join(HERE, "opgm", "opendbc_repo")),
+    ("OPGM", os.path.join(HERE, "OPGM", "opendbc_repo")),
     ("BMW-E8x-E9x", os.path.join(HERE, "BMW-E8x-E9x", "opendbc_repo")),
     ("StarPilot", os.path.join(HERE, "StarPilot", "opendbc_repo")),
+    ("BluePilot", os.path.join(HERE, "BluePilot", "opendbc_repo")),
 ]
 
 OPENPILOT_CACHE_FILE = os.path.join(HERE, ".openpilot_cache.json")
@@ -348,6 +349,7 @@ def _load_cars_directly(fork_path: str) -> list[dict]:
 
         # cereal stub — custom present, car absent (structs.py fallback handles car)
         _cereal = types.ModuleType("cereal")
+        _cereal.__path__ = []  # mark as package so submodule imports resolve
         _cereal_custom = MagicMock()
         _cereal.custom = _cereal_custom  # type: ignore[attr-defined]
         _inject("cereal", _cereal)
@@ -367,9 +369,26 @@ def _load_cars_directly(fork_path: str) -> list[dict]:
             def exec_module(self, _module):
                 pass
 
+        # Legacy openpilot top-level packages that some forks (e.g. BluePilot) still
+        # import directly (e.g. `from common.pid import ...`, `from selfdrive.modeld...`).
+        _LEGACY_OPENPILOT_ROOTS = ("common", "selfdrive", "third_party", "tools")
+
         class _OpenpilotMockFinder(importlib.abc.MetaPathFinder):
             def find_spec(self, fullname, _path, _target=None):
                 if fullname == "openpilot" or fullname.startswith("openpilot."):
+                    return importlib.machinery.ModuleSpec(
+                        fullname, _OpenpilotMockLoader()
+                    )
+                # Mock cereal submodules on demand, but leave cereal.car absent so
+                # structs.py's try/except ImportError fallback to capnp still triggers.
+                if fullname.startswith("cereal.") and fullname != "cereal.car":
+                    return importlib.machinery.ModuleSpec(
+                        fullname, _OpenpilotMockLoader()
+                    )
+                # Mock legacy openpilot top-level packages (common, selfdrive, …) that
+                # some forks still use without an `openpilot.` prefix.
+                root = fullname.split(".")[0]
+                if root in _LEGACY_OPENPILOT_ROOTS:
                     return importlib.machinery.ModuleSpec(
                         fullname, _OpenpilotMockLoader()
                     )
@@ -429,6 +448,26 @@ def _load_cars_directly(fork_path: str) -> list[dict]:
                         )
 
                 _car_docs_mod.get_params_for_docs = _patched_get_params_for_docs
+
+            # BluePilot references Device.threex_angled_mount / Device.threex in
+            # init_make, but its Device enum only has Device.four.  Pre-import the
+            # module and wrap apply_bp_device_mount to swallow AttributeErrors so
+            # Ford cars are still included (just with default parts).
+            try:
+                import opendbc.sunnypilot.car.ford.values_ext as _ford_values_ext
+
+                _orig_apply_bp = _ford_values_ext.apply_bp_device_mount
+
+                def _safe_apply_bp_device_mount(car_docs, CP):
+                    try:
+                        _orig_apply_bp(car_docs, CP)
+                    except AttributeError:
+                        pass
+
+                _ford_values_ext.apply_bp_device_mount = _safe_apply_bp_device_mount
+            except (ImportError, AttributeError):
+                pass
+
             result = [car_docs_to_dict(cd) for cd in get_all_car_docs()]
         finally:
             sys.meta_path.remove(_finder)
