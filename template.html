@@ -737,7 +737,7 @@
                                         <!-- years array -->
                                         <template x-if="col.key === 'years'">
                                             <span
-                                                x-text="formatYears(car.years)"
+                                                x-text="car._yearsFormatted"
                                             ></span>
                                         </template>
 
@@ -789,7 +789,7 @@
                                                                 x-if="car._ariScore.min === car._ariScore.max"
                                                             >
                                                                 <span
-                                                                    :style="`color: ${ariColor(car._ariScore.min)}`"
+                                                                    :style="`color: ${car._ariColorMin}`"
                                                                     x-text="car._ariScore.min"
                                                                 ></span>
                                                             </template>
@@ -798,7 +798,7 @@
                                                             >
                                                                 <span>
                                                                     <span
-                                                                        :style="`color: ${ariColor(car._ariScore.min)}`"
+                                                                        :style="`color: ${car._ariColorMin}`"
                                                                         x-text="car._ariScore.min"
                                                                     ></span>
                                                                     <span
@@ -806,14 +806,16 @@
                                                                         >–</span
                                                                     >
                                                                     <span
-                                                                        :style="`color: ${ariColor(car._ariScore.max)}`"
+                                                                        :style="`color: ${car._ariColorMax}`"
                                                                         x-text="car._ariScore.max"
                                                                     ></span>
                                                                 </span>
                                                             </template>
                                                         </a>
 
-                                                        <template x-teleport="body">
+                                                        <template
+                                                            x-teleport="body"
+                                                        >
                                                             <div
                                                                 x-show="ariOpen"
                                                                 x-cloak
@@ -837,7 +839,7 @@
                                                                             target="_blank"
                                                                             rel="noopener"
                                                                             class="tabular-nums font-medium hover:underline"
-                                                                            :style="`color: ${ariColor(row.score)}`"
+                                                                            :style="`color: ${row.color}`"
                                                                             x-text="row.score"
                                                                         ></a>
                                                                     </div>
@@ -884,14 +886,14 @@
                                                             :key="s.seal"
                                                         >
                                                             <a
-                                                                :href="ccSealUrl(car, s.seal)"
+                                                                :href="s.url"
                                                                 target="_blank"
                                                                 rel="noopener"
                                                                 class="text-xs font-medium hover:underline"
-                                                                :class="ccSealClass(s.seal)"
+                                                                :class="s.cssClass"
                                                             >
                                                                 <span
-                                                                    x-text="ccSealShort(s.seal)"
+                                                                    x-text="s.short"
                                                                 ></span>
                                                                 <span
                                                                     class="text-gray-400 font-normal"
@@ -935,8 +937,8 @@
                                                                     <span
                                                                         x-show="row.seal"
                                                                         class="ml-auto font-medium"
-                                                                        :class="ccSealClass(row.seal)"
-                                                                        x-text="' - ' + ccSealShort(row.seal)"
+                                                                        :class="row.sealClass"
+                                                                        x-text="' - ' + row.sealShort"
                                                                     ></span>
                                                                 </div>
                                                             </template>
@@ -946,7 +948,7 @@
                                                         x-if="!car.cc_seal"
                                                     >
                                                         <a
-                                                            :href="ccSealUrl(car, '')"
+                                                            :href="car._ccUrl"
                                                             target="_blank"
                                                             rel="noopener"
                                                             class="text-xs text-gray-500 hover:underline"
@@ -990,7 +992,7 @@
                                             x-if="col.key === 'model' && car[col.key] !== null"
                                         >
                                             <span
-                                                x-html="car[col.key].replace(/(\s*\([^)]*\))/g, '<span class=\'text-[0.8em] text-gray-400\'>$1</span>')"
+                                                x-html="car._modelHtml"
                                             ></span>
                                         </template>
 
@@ -1255,108 +1257,71 @@
                     })),
 
                     get filteredCars() {
+                        const activeFilters = Object.entries(this.filters).filter(
+                            ([, v]) => v.length > 0
+                        );
+                        const activeFilterSets = activeFilters.map(
+                            ([key, selected]) => [key, new Set(selected.map(String))]
+                        );
+                        const activeSpeedFilters = Object.entries(this.speedFilters).filter(
+                            ([, r]) => r.min !== null || r.max !== null
+                        );
+                        const ariFilterActive =
+                            this.ariFilter.min !== null || this.ariFilter.max !== null;
+
                         let result = this.cars.filter((car) => {
-                            for (const [key, selected] of Object.entries(
-                                this.filters,
-                            )) {
-                                if (selected.length === 0) continue;
+                            for (const [key, selectedSet] of activeFilterSets) {
                                 if (key === "cc_seal") {
-                                    const seals = car.cc_seal?.length
-                                        ? [
-                                              ...car.cc_seal.map((s) => s.seal),
-                                              ...(car.cc_has_none ? [""] : []),
-                                          ]
-                                        : [""];
-                                    if (
-                                        !seals.some((v) => selected.includes(v))
-                                    )
-                                        return false;
-                                } else if (Array.isArray(car[key])) {
-                                    if (
-                                        !car[key].some((v) =>
-                                            selected.includes(v),
-                                        )
-                                    )
-                                        return false;
+                                    let ok = false;
+                                    for (const v of car._ccSealSet) { if (selectedSet.has(v)) { ok = true; break; } }
+                                    if (!ok) return false;
+                                } else if (car._filterSets?.[key]) {
+                                    let ok = false;
+                                    for (const v of car._filterSets[key]) { if (selectedSet.has(v)) { ok = true; break; } }
+                                    if (!ok) return false;
                                 } else {
-                                    if (
-                                        !selected.some(
-                                            (s) =>
-                                                String(s) === String(car[key]),
-                                        )
-                                    )
+                                    if (!selectedSet.has(String(car[key])))
                                         return false;
                                 }
                             }
-                            for (const [key, range] of Object.entries(
-                                this.speedFilters,
-                            )) {
+                            for (const [key, range] of activeSpeedFilters) {
                                 const val = car[key];
-                                if (val === null) {
-                                    if (
-                                        range.min !== null ||
-                                        range.max !== null
-                                    )
-                                        return false;
-                                    continue;
-                                }
-                                if (range.min !== null && val < range.min)
-                                    return false;
-                                if (range.max !== null && val > range.max)
-                                    return false;
+                                if (val === null) return false;
+                                if (range.min !== null && val < range.min) return false;
+                                if (range.max !== null && val > range.max) return false;
                             }
-                            if (
-                                this.ariFilter.min !== null ||
-                                this.ariFilter.max !== null
-                            ) {
+                            if (ariFilterActive) {
                                 const s = car._ariScore;
                                 if (s === null) return false;
                                 const avg = (s.min + s.max) / 2;
-                                if (
-                                    this.ariFilter.min !== null &&
-                                    avg < this.ariFilter.min
-                                )
-                                    return false;
-                                if (
-                                    this.ariFilter.max !== null &&
-                                    avg > this.ariFilter.max
-                                )
-                                    return false;
+                                if (this.ariFilter.min !== null && avg < this.ariFilter.min) return false;
+                                if (this.ariFilter.max !== null && avg > this.ariFilter.max) return false;
                             }
                             return true;
                         });
 
                         if (this.sortCol) {
                             const dir = this.sortDir === "asc" ? 1 : -1;
+                            const ccSealOrder = [
+                                "Seal of Awesome",
+                                "Seal of Pretty Good",
+                                "Beware of the Clunker",
+                                "Avoid Like The Plague",
+                            ];
                             result = [...result].sort((a, b) => {
                                 let av, bv;
                                 if (this.sortCol === "ari") {
-                                    const sa = a._ariScore,
-                                        sb = b._ariScore;
-                                    av =
-                                        sa !== null ? (sa.min + sa.max) / 2 : 0;
-                                    bv =
-                                        sb !== null ? (sb.min + sb.max) / 2 : 0;
+                                    const sa = a._ariScore, sb = b._ariScore;
+                                    av = sa !== null ? (sa.min + sa.max) / 2 : 0;
+                                    bv = sb !== null ? (sb.min + sb.max) / 2 : 0;
                                 } else if (this.sortCol === "cc_seal") {
-                                    const order = [
-                                        "Seal of Awesome",
-                                        "Seal of Pretty Good",
-                                        "Beware of the Clunker",
-                                        "Avoid Like The Plague",
-                                    ];
                                     const rank = (seals) =>
                                         seals?.length
-                                            ? Math.min(
-                                                  ...seals.map((s) => {
-                                                      const i = order.indexOf(
-                                                          s.seal,
-                                                      );
-                                                      return i === -1
-                                                          ? order.length
-                                                          : i;
-                                                  }),
-                                              )
-                                            : order.length + 1;
+                                            ? Math.min(...seals.map((s) => {
+                                                const i = ccSealOrder.indexOf(s.seal);
+                                                return i === -1 ? ccSealOrder.length : i;
+                                            }))
+                                            : ccSealOrder.length + 1;
                                     av = rank(a.cc_seal);
                                     bv = rank(b.cc_seal);
                                 } else {
@@ -1368,8 +1333,7 @@
                                 if (av === null && bv === null) return 0;
                                 if (av === null) return dir;
                                 if (bv === null) return -dir;
-                                if (typeof av === "string")
-                                    return av.localeCompare(bv) * dir;
+                                if (typeof av === "string") return av.localeCompare(bv) * dir;
                                 return (av < bv ? -1 : av > bv ? 1 : 0) * dir;
                             });
                         }
@@ -2085,6 +2049,9 @@
                     },
 
                     init() {
+                        const arrayFilterKeys = Object.keys(this.filters).filter(
+                            k => k !== 'cc_seal'
+                        );
                         for (const car of this.cars) {
                             car._carGurusKey = this.carGurusKey(car);
                             car._ariScore = this.ariScore(car);
@@ -2092,6 +2059,49 @@
                             car._ccYearRows = this.ccYearRows(car);
                             car._ariYearRows = this.ariYearRows(car);
                             car._ebayUrl = this.ebayUrl(car);
+
+                            // Precompute ARI colors
+                            if (car._ariScore !== null) {
+                                car._ariColorMin = this.ariColor(car._ariScore.min);
+                                car._ariColorMax = this.ariColor(car._ariScore.max);
+                            }
+                            for (const row of car._ariYearRows) {
+                                row.color = this.ariColor(row.score);
+                            }
+
+                            // Precompute CC seal display values
+                            car._ccUrl = this.ccSealUrl(car, '');
+                            if (car.cc_seal) {
+                                for (const s of car.cc_seal) {
+                                    s.url = this.ccSealUrl(car, s.seal);
+                                    s.cssClass = this.ccSealClass(s.seal);
+                                    s.short = this.ccSealShort(s.seal);
+                                }
+                            }
+                            for (const row of car._ccYearRows) {
+                                row.sealClass = this.ccSealClass(row.seal);
+                                row.sealShort = this.ccSealShort(row.seal);
+                            }
+
+                            // Precompute static display strings
+                            car._yearsFormatted = this.formatYears(car.years);
+                            car._modelHtml = car.model.replace(
+                                /(\s*\([^)]*\))/g,
+                                '<span class=\'text-[0.8em] text-gray-400\'>$1</span>'
+                            );
+
+                            // Precompute filter membership sets for O(1) lookup
+                            car._ccSealSet = new Set(
+                                car.cc_seal?.length
+                                    ? [...car.cc_seal.map(s => s.seal), ...(car.cc_has_none ? [''] : [])]
+                                    : ['']
+                            );
+                            car._filterSets = {};
+                            for (const key of arrayFilterKeys) {
+                                if (Array.isArray(car[key])) {
+                                    car._filterSets[key] = new Set(car[key].map(String));
+                                }
+                            }
                         }
                         for (const key of Object.keys(this.filters)) {
                             this._allUniqueValuesCache[key] =
