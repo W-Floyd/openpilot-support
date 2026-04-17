@@ -672,7 +672,7 @@
                                                         >
                                                             <template
                                                                 x-for="val in filteredUniqueValues(col.key)"
-                                                                :key="val"
+                                                                :key="String(val)"
                                                             >
                                                                 <label
                                                                     class="flex cursor-pointer items-center gap-2 rounded px-2 py-1.5 text-gray-700 hover:bg-gray-50"
@@ -1031,6 +1031,7 @@
         <script type="application/json" id="cc-cache">{{ cc_cache_json }}</script>
         <!-- prettier-ignore -->
         <script type="application/json" id="model-mappings">{{ model_mappings_json }}</script>
+        <script type="application/json" id="filter-index">{{ filter_index_json }}</script>
         <script>
             function carTable() {
                 const filterableCols = [
@@ -1142,6 +1143,7 @@
                     isMobile: window.innerWidth < 640,
                     _allUniqueValuesCache: {},
                     _speedRangeCache: {},
+                    _invertedIndex: {},
                     sortCol: null,
                     sortDir: "asc",
                     filters: Object.fromEntries(
@@ -1260,45 +1262,50 @@
                         const activeFilters = Object.entries(this.filters).filter(
                             ([, v]) => v.length > 0
                         );
-                        const activeFilterSets = activeFilters.map(
-                            ([key, selected]) => [key, new Set(selected.map(String))]
-                        );
                         const activeSpeedFilters = Object.entries(this.speedFilters).filter(
                             ([, r]) => r.min !== null || r.max !== null
                         );
                         const ariFilterActive =
                             this.ariFilter.min !== null || this.ariFilter.max !== null;
 
-                        let result = this.cars.filter((car) => {
-                            for (const [key, selectedSet] of activeFilterSets) {
-                                if (key === "cc_seal") {
-                                    let ok = false;
-                                    for (const v of car._ccSealSet) { if (selectedSet.has(v)) { ok = true; break; } }
-                                    if (!ok) return false;
-                                } else if (car._filterSets?.[key]) {
-                                    let ok = false;
-                                    for (const v of car._filterSets[key]) { if (selectedSet.has(v)) { ok = true; break; } }
-                                    if (!ok) return false;
-                                } else {
-                                    if (!selectedSet.has(String(car[key])))
-                                        return false;
+                        // Use inverted index: union selected values per column, intersect across columns
+                        let candidates = null; // null = all cars
+                        for (const [key, selected] of activeFilters) {
+                            const idx = this._invertedIndex[key] ?? {};
+                            const matching = new Set();
+                            for (const val of selected) {
+                                for (const car of (idx[String(val)] ?? [])) matching.add(car);
+                            }
+                            if (candidates === null) {
+                                candidates = matching;
+                            } else {
+                                for (const car of candidates) {
+                                    if (!matching.has(car)) candidates.delete(car);
                                 }
                             }
-                            for (const [key, range] of activeSpeedFilters) {
-                                const val = car[key];
-                                if (val === null) return false;
-                                if (range.min !== null && val < range.min) return false;
-                                if (range.max !== null && val > range.max) return false;
-                            }
-                            if (ariFilterActive) {
-                                const s = car._ariScore;
-                                if (s === null) return false;
-                                const avg = (s.min + s.max) / 2;
-                                if (this.ariFilter.min !== null && avg < this.ariFilter.min) return false;
-                                if (this.ariFilter.max !== null && avg > this.ariFilter.max) return false;
-                            }
-                            return true;
-                        });
+                        }
+
+                        let result = candidates !== null ? [...candidates] : [...this.cars];
+
+                        // Range filters applied only to surviving candidates
+                        if (activeSpeedFilters.length > 0 || ariFilterActive) {
+                            result = result.filter((car) => {
+                                for (const [key, range] of activeSpeedFilters) {
+                                    const val = car[key];
+                                    if (val === null) return false;
+                                    if (range.min !== null && val < range.min) return false;
+                                    if (range.max !== null && val > range.max) return false;
+                                }
+                                if (ariFilterActive) {
+                                    const s = car._ariScore;
+                                    if (s === null) return false;
+                                    const avg = (s.min + s.max) / 2;
+                                    if (this.ariFilter.min !== null && avg < this.ariFilter.min) return false;
+                                    if (this.ariFilter.max !== null && avg > this.ariFilter.max) return false;
+                                }
+                                return true;
+                            });
+                        }
 
                         if (this.sortCol) {
                             const dir = this.sortDir === "asc" ? 1 : -1;
@@ -2049,9 +2056,6 @@
                     },
 
                     init() {
-                        const arrayFilterKeys = Object.keys(this.filters).filter(
-                            k => k !== 'cc_seal'
-                        );
                         for (const car of this.cars) {
                             car._carGurusKey = this.carGurusKey(car);
                             car._ariScore = this.ariScore(car);
@@ -2090,19 +2094,20 @@
                                 '<span class=\'text-[0.8em] text-gray-400\'>$1</span>'
                             );
 
-                            // Precompute filter membership sets for O(1) lookup
-                            car._ccSealSet = new Set(
-                                car.cc_seal?.length
-                                    ? [...car.cc_seal.map(s => s.seal), ...(car.cc_has_none ? [''] : [])]
-                                    : ['']
-                            );
-                            car._filterSets = {};
-                            for (const key of arrayFilterKeys) {
-                                if (Array.isArray(car[key])) {
-                                    car._filterSets[key] = new Set(car[key].map(String));
-                                }
-                            }
                         }
+
+                        // Convert precomputed filter index (indices → car refs)
+                        const rawIdx = JSON.parse(
+                            document.getElementById("filter-index").textContent
+                        );
+                        for (const [key, vals] of Object.entries(rawIdx)) {
+                            const built = {};
+                            for (const [val, indices] of Object.entries(vals)) {
+                                built[val] = new Set(indices.map(i => this.cars[i]));
+                            }
+                            this._invertedIndex[key] = built;
+                        }
+
                         for (const key of Object.keys(this.filters)) {
                             this._allUniqueValuesCache[key] =
                                 this._computeAllUniqueValues(key);

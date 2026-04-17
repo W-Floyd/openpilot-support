@@ -1112,6 +1112,60 @@ def fetch_asset(url: str, cache_file: str) -> str:
     return content
 
 
+def _js_str(v) -> str:
+    """Stringify a value the same way JS String() does."""
+    if isinstance(v, bool):
+        return "true" if v else "false"
+    if isinstance(v, float) and v == int(v):
+        return str(int(v))
+    return str(v)
+
+
+def build_filter_index(cars: list[dict], cc_cache: dict) -> dict:
+    """
+    Build an inverted index mapping each filterable field value to the sorted
+    list of car indices that have that value. Precomputed in Python so JS init()
+    only needs a fast index→car-ref conversion instead of iterating all cars.
+    """
+    direct_fields = [
+        "make", "model", "forks", "support_type", "openpilot_longitudinal",
+        "merged", "auto_resume", "good_steering_torque", "years", "package",
+        "harness", "min_steer_speed", "min_enable_speed",
+    ]
+    index: dict[str, dict[str, list[int]]] = {f: {} for f in direct_fields}
+    index["cc_seal"] = {}
+
+    for i, car in enumerate(cars):
+        for field in direct_fields:
+            val = car.get(field)
+            vals = val if isinstance(val, list) else [val]
+            for v in vals:
+                if v is not None:
+                    index[field].setdefault(_js_str(v), []).append(i)
+
+        # Compute cc_seal membership using the same lookup as the JS
+        make, model = car["make"], car["model"]
+        raw_models = MODEL_MAPPINGS.get((make, model)) or [model]
+        has_none = False
+        seal_values: set[str] = set()
+        for year in sorted(set(car["years"])):
+            entry = next(
+                (cc_cache.get(cc_cache_key(make, rm, year)) for rm in raw_models
+                 if cc_cache.get(cc_cache_key(make, rm, year))),
+                None,
+            )
+            if entry and entry.get("seal"):
+                seal_values.add(entry["seal"])
+            else:
+                has_none = True
+        for seal in seal_values:
+            index["cc_seal"].setdefault(seal, []).append(i)
+        if has_none:
+            index["cc_seal"].setdefault("", []).append(i)
+
+    return index
+
+
 def generate_html(
     cars: list[dict],
     cargurus_js_cache: dict | None = None,
@@ -1142,6 +1196,10 @@ def generate_html(
             separators=(",", ":"),
         ),
         model_mappings_json=model_mappings_json,
+        filter_index_json=json.dumps(
+            build_filter_index(cars, cc_cache or {}),
+            separators=(",", ":"),
+        ),
         alpine_js=fetch_asset(ALPINE_JS_URL, ALPINE_CACHE_FILE),
         tailwind_js=fetch_asset(TAILWIND_JS_URL, TAILWIND_CACHE_FILE),
         # Use relative path from server root (same folder as HTML)
