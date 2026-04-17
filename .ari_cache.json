@@ -5,9 +5,18 @@
   "Acura|ILX|2017": null,
   "Acura|ILX|2018": null,
   "Acura|ILX|2019": null,
-  "Acura|Integra|2023": null,
-  "Acura|Integra|2024": null,
-  "Acura|Integra|2025": null,
+  "Acura|Integra|2023": {
+    "score": 63,
+    "url": "https://autoreliabilityindex.com/acura/integra/2023"
+  },
+  "Acura|Integra|2024": {
+    "score": 68,
+    "url": "https://autoreliabilityindex.com/acura/integra/2024"
+  },
+  "Acura|Integra|2025": {
+    "score": 74,
+    "url": "https://autoreliabilityindex.com/acura/integra/2025"
+  },
   "Acura|MDX Hybrid|2017": null,
   "Acura|MDX Hybrid|2018": null,
   "Acura|MDX Hybrid|2019": null,
@@ -49,25 +58,67 @@
   },
   "Acura|RDX|2016": null,
   "Acura|RDX|2017": null,
-  "Acura|RDX|2018": null,
-  "Acura|RDX|2019": null,
-  "Acura|RDX|2020": null,
-  "Acura|RDX|2021": null,
+  "Acura|RDX|2018": {
+    "score": 79,
+    "url": "https://autoreliabilityindex.com/acura/rdx/2018"
+  },
+  "Acura|RDX|2019": {
+    "score": 66,
+    "url": "https://autoreliabilityindex.com/acura/rdx/2019"
+  },
+  "Acura|RDX|2020": {
+    "score": 67,
+    "url": "https://autoreliabilityindex.com/acura/rdx/2020"
+  },
+  "Acura|RDX|2021": {
+    "score": 77,
+    "url": "https://autoreliabilityindex.com/acura/rdx/2021"
+  },
   "Acura|RDX|2022": null,
-  "Acura|RDX|2023": null,
-  "Acura|RDX|2024": null,
-  "Acura|RDX|2025": null,
+  "Acura|RDX|2023": {
+    "score": 82,
+    "url": "https://autoreliabilityindex.com/acura/rdx/2023"
+  },
+  "Acura|RDX|2024": {
+    "score": 82,
+    "url": "https://autoreliabilityindex.com/acura/rdx/2024"
+  },
+  "Acura|RDX|2025": {
+    "score": 81,
+    "url": "https://autoreliabilityindex.com/acura/rdx/2025"
+  },
   "Acura|RLX|2017": null,
   "Acura|TLX|2015": null,
   "Acura|TLX|2016": null,
   "Acura|TLX|2017": null,
-  "Acura|TLX|2018": null,
-  "Acura|TLX|2019": null,
-  "Acura|TLX|2020": null,
-  "Acura|TLX|2021": null,
-  "Acura|TLX|2022": null,
-  "Acura|TLX|2023": null,
-  "Acura|TLX|2025": null,
+  "Acura|TLX|2018": {
+    "score": 71,
+    "url": "https://autoreliabilityindex.com/acura/tlx/2018"
+  },
+  "Acura|TLX|2019": {
+    "score": 69,
+    "url": "https://autoreliabilityindex.com/acura/tlx/2019"
+  },
+  "Acura|TLX|2020": {
+    "score": 71,
+    "url": "https://autoreliabilityindex.com/acura/tlx/2020"
+  },
+  "Acura|TLX|2021": {
+    "score": 71,
+    "url": "https://autoreliabilityindex.com/acura/tlx/2021"
+  },
+  "Acura|TLX|2022": {
+    "score": 75,
+    "url": "https://autoreliabilityindex.com/acura/tlx/2022"
+  },
+  "Acura|TLX|2023": {
+    "score": 79,
+    "url": "https://autoreliabilityindex.com/acura/tlx/2023"
+  },
+  "Acura|TLX|2025": {
+    "score": 80,
+    "url": "https://autoreliabilityindex.com/acura/tlx/2025"
+  },
   "Acura|ZDX|2024": null,
   "Audi|A3 Sportback e-tron|2017": null,
   "Audi|A3 Sportback e-tron|2018": null,
@@ -217,15 +268,13 @@
   "CUPRA|Ateca|2021": null,
   "CUPRA|Ateca|2022": null,
   "CUPRA|Ateca|2023": null,
-  "Cadillac|CT6 No ACC|2018": null,
-  "Cadillac|CT6 Non-ACC|2017": null,
-  "Cadillac|CT6 Non-ACC|2018": null,
   "Cadillac|CT6|2017": null,
   "Cadillac|CT6|2018": null,
   "Cadillac|Escalade ASCM Harness|2018": null,
-  "Cadillac|XT5 No ACC|2018": null,
-  "Cadillac|XT5 Non-ACC|2018": null,
-  "Cadillac|XT5|2018": null,
+  "Cadillac|XT5|2018": {
+    "score": 77,
+    "url": "https://autoreliabilityindex.com/cadillac/xt5/2018"
+  },
   "Cadillac|XT6|2020": null,
   "Chevrolet|Blazer|2019": {
     "score": 69,
@@ -257,30 +306,14 @@
   },
   "Chevrolet|Bolt ACC|2022": null,
   "Chevrolet|Bolt ACC|2023": null,
-  "Chevrolet|Bolt EUV LT Non-ACC|2022": null,
-  "Chevrolet|Bolt EUV LT Non-ACC|2023": null,
   "Chevrolet|Bolt EUV LT|2022": null,
   "Chevrolet|Bolt EUV LT|2023": null,
   "Chevrolet|Bolt EUV|2022": null,
   "Chevrolet|Bolt EUV|2023": null,
-  "Chevrolet|Bolt EV - No-ACC|2017": null,
-  "Chevrolet|Bolt EV - No-ACC|2018": null,
-  "Chevrolet|Bolt EV - No-ACC|2019": null,
-  "Chevrolet|Bolt EV - No-ACC|2020": null,
-  "Chevrolet|Bolt EV - No-ACC|2021": null,
-  "Chevrolet|Bolt EV - No-ACC|2022": null,
-  "Chevrolet|Bolt EV - No-ACC|2023": null,
   "Chevrolet|Bolt EV ACC w Pedal|2022": null,
   "Chevrolet|Bolt EV ACC w Pedal|2023": null,
-  "Chevrolet|Bolt EV LT Non-ACC|2022": null,
-  "Chevrolet|Bolt EV LT Non-ACC|2023": null,
   "Chevrolet|Bolt EV LT|2022": null,
   "Chevrolet|Bolt EV LT|2023": null,
-  "Chevrolet|Bolt EV Non-ACC|2017": null,
-  "Chevrolet|Bolt EV Non-ACC|2018": null,
-  "Chevrolet|Bolt EV Non-ACC|2019": null,
-  "Chevrolet|Bolt EV Non-ACC|2020": null,
-  "Chevrolet|Bolt EV Non-ACC|2021": null,
   "Chevrolet|Bolt EV|2017": null,
   "Chevrolet|Bolt EV|2018": null,
   "Chevrolet|Bolt EV|2019": null,
@@ -288,18 +321,6 @@
   "Chevrolet|Bolt EV|2021": null,
   "Chevrolet|Bolt EV|2022": null,
   "Chevrolet|Bolt EV|2023": null,
-  "Chevrolet|Equinox - No-ACC|2019": null,
-  "Chevrolet|Equinox - No-ACC|2020": null,
-  "Chevrolet|Equinox - No-ACC|2021": null,
-  "Chevrolet|Equinox - No-ACC|2022": null,
-  "Chevrolet|Equinox NO ACC|2019": null,
-  "Chevrolet|Equinox NO ACC|2020": null,
-  "Chevrolet|Equinox NO ACC|2021": null,
-  "Chevrolet|Equinox NO ACC|2022": null,
-  "Chevrolet|Equinox Non-ACC|2019": null,
-  "Chevrolet|Equinox Non-ACC|2020": null,
-  "Chevrolet|Equinox Non-ACC|2021": null,
-  "Chevrolet|Equinox Non-ACC|2022": null,
   "Chevrolet|Equinox|2019": {
     "score": 71,
     "url": "https://autoreliabilityindex.com/chevrolet/equinox/2019"
@@ -316,21 +337,10 @@
     "score": 71,
     "url": "https://autoreliabilityindex.com/chevrolet/equinox/2022"
   },
-  "Chevrolet|Malibu - No-ACC|2023": null,
   "Chevrolet|Malibu ASCM Harness|2017": null,
   "Chevrolet|Malibu ASCM Harness|2018": null,
   "Chevrolet|Malibu ASCM Harness|2019": null,
-  "Chevrolet|Malibu Hybrid - No-ACC|2017": null,
   "Chevrolet|Malibu Hybrid|2017": null,
-  "Chevrolet|Malibu No ACC|2018": null,
-  "Chevrolet|Malibu Non-ACC|2016": null,
-  "Chevrolet|Malibu Non-ACC|2017": null,
-  "Chevrolet|Malibu Non-ACC|2018": null,
-  "Chevrolet|Malibu Non-ACC|2019": null,
-  "Chevrolet|Malibu Non-ACC|2020": null,
-  "Chevrolet|Malibu Non-ACC|2021": null,
-  "Chevrolet|Malibu Non-ACC|2022": null,
-  "Chevrolet|Malibu Non-ACC|2023": null,
   "Chevrolet|Malibu|2016": null,
   "Chevrolet|Malibu|2017": null,
   "Chevrolet|Malibu|2018": {
@@ -359,16 +369,6 @@
   },
   "Chevrolet|Silverado 1500|2020": null,
   "Chevrolet|Silverado 1500|2021": null,
-  "Chevrolet|Suburban Non-ACC|2016": null,
-  "Chevrolet|Suburban Non-ACC|2017": null,
-  "Chevrolet|Suburban Non-ACC|2018": null,
-  "Chevrolet|Suburban Non-ACC|2019": null,
-  "Chevrolet|Suburban Non-ACC|2020": null,
-  "Chevrolet|Suburban Premier - No-ACC|2016": null,
-  "Chevrolet|Suburban Premier - No-ACC|2017": null,
-  "Chevrolet|Suburban Premier - No-ACC|2018": null,
-  "Chevrolet|Suburban Premier - No-ACC|2019": null,
-  "Chevrolet|Suburban Premier - No-ACC|2020": null,
   "Chevrolet|Suburban Premier|2016": null,
   "Chevrolet|Suburban Premier|2017": null,
   "Chevrolet|Suburban Premier|2018": null,
@@ -392,16 +392,8 @@
     "score": 80,
     "url": "https://autoreliabilityindex.com/chevrolet/trax/2024"
   },
-  "Chevrolet|Trailblazer - No-ACC|2021": null,
-  "Chevrolet|Trailblazer - No-ACC|2022": null,
-  "Chevrolet|Trailblazer NO ACC|2021": null,
-  "Chevrolet|Trailblazer NO ACC|2022": null,
-  "Chevrolet|Trailblazer Non-ACC|2021": null,
-  "Chevrolet|Trailblazer Non-ACC|2022": null,
   "Chevrolet|Trailblazer|2021": null,
   "Chevrolet|Trailblazer|2022": null,
-  "Chevrolet|Volt - No-ACC|2017": null,
-  "Chevrolet|Volt - No-ACC|2018": null,
   "Chevrolet|Volt ASCM Harness|2017": null,
   "Chevrolet|Volt ASCM Harness|2018": null,
   "Chevrolet|Volt Camera Harness|2017": null,
@@ -450,10 +442,22 @@
     "score": 65,
     "url": "https://autoreliabilityindex.com/dodge/durango/2021"
   },
-  "Ford|Bronco Sport|2021": null,
-  "Ford|Bronco Sport|2022": null,
-  "Ford|Bronco Sport|2023": null,
-  "Ford|Bronco Sport|2024": null,
+  "Ford|Bronco Sport|2021": {
+    "score": 54,
+    "url": "https://autoreliabilityindex.com/ford/bronco-sport/2021"
+  },
+  "Ford|Bronco Sport|2022": {
+    "score": 59,
+    "url": "https://autoreliabilityindex.com/ford/bronco-sport/2022"
+  },
+  "Ford|Bronco Sport|2023": {
+    "score": 67,
+    "url": "https://autoreliabilityindex.com/ford/bronco-sport/2023"
+  },
+  "Ford|Bronco Sport|2024": {
+    "score": 72,
+    "url": "https://autoreliabilityindex.com/ford/bronco-sport/2024"
+  },
   "Ford|Edge|2022": null,
   "Ford|Escape Hybrid|2020": null,
   "Ford|Escape Hybrid|2021": null,
@@ -465,11 +469,23 @@
   "Ford|Escape Plug-in Hybrid|2022": null,
   "Ford|Escape Plug-in Hybrid|2023": null,
   "Ford|Escape Plug-in Hybrid|2024": null,
-  "Ford|Escape|2020": null,
+  "Ford|Escape|2020": {
+    "score": 52,
+    "url": "https://autoreliabilityindex.com/ford/escape/2020"
+  },
   "Ford|Escape|2021": null,
-  "Ford|Escape|2022": null,
-  "Ford|Escape|2023": null,
-  "Ford|Escape|2024": null,
+  "Ford|Escape|2022": {
+    "score": 62,
+    "url": "https://autoreliabilityindex.com/ford/escape/2022"
+  },
+  "Ford|Escape|2023": {
+    "score": 72,
+    "url": "https://autoreliabilityindex.com/ford/escape/2023"
+  },
+  "Ford|Escape|2024": {
+    "score": 75,
+    "url": "https://autoreliabilityindex.com/ford/escape/2024"
+  },
   "Ford|Expedition|2022": null,
   "Ford|Expedition|2023": null,
   "Ford|Expedition|2024": null,
@@ -577,11 +593,26 @@
   },
   "Genesis|G70 Non-SCC|2021": null,
   "Genesis|G70|2018": null,
-  "Genesis|G70|2019": null,
-  "Genesis|G70|2020": null,
-  "Genesis|G70|2021": null,
-  "Genesis|G70|2022": null,
-  "Genesis|G70|2023": null,
+  "Genesis|G70|2019": {
+    "score": 55,
+    "url": "https://autoreliabilityindex.com/genesis/g70/2019"
+  },
+  "Genesis|G70|2020": {
+    "score": 64,
+    "url": "https://autoreliabilityindex.com/genesis/g70/2020"
+  },
+  "Genesis|G70|2021": {
+    "score": 64,
+    "url": "https://autoreliabilityindex.com/genesis/g70/2021"
+  },
+  "Genesis|G70|2022": {
+    "score": 65,
+    "url": "https://autoreliabilityindex.com/genesis/g70/2022"
+  },
+  "Genesis|G70|2023": {
+    "score": 67,
+    "url": "https://autoreliabilityindex.com/genesis/g70/2023"
+  },
   "Genesis|G80 (2.5T Advanced Trim, with HDA II)|2024": null,
   "Genesis|G80|2017": null,
   "Genesis|G80|2018": null,
@@ -1032,9 +1063,18 @@
     "score": 63,
     "url": "https://autoreliabilityindex.com/hyundai/palisade/2024"
   },
-  "Hyundai|Santa Cruz|2022": null,
-  "Hyundai|Santa Cruz|2023": null,
-  "Hyundai|Santa Cruz|2024": null,
+  "Hyundai|Santa Cruz|2022": {
+    "score": 57,
+    "url": "https://autoreliabilityindex.com/hyundai/santa-cruz/2022"
+  },
+  "Hyundai|Santa Cruz|2023": {
+    "score": 64,
+    "url": "https://autoreliabilityindex.com/hyundai/santa-cruz/2023"
+  },
+  "Hyundai|Santa Cruz|2024": {
+    "score": 71,
+    "url": "https://autoreliabilityindex.com/hyundai/santa-cruz/2024"
+  },
   "Hyundai|Santa Fe Hybrid|2022": null,
   "Hyundai|Santa Fe Hybrid|2023": null,
   "Hyundai|Santa Fe Plug-in Hybrid|2022": null,
@@ -1177,11 +1217,26 @@
   "Kia|EV6 (without HDA II)|2024": null,
   "Kia|Forte Non-SCC|2019": null,
   "Kia|Forte Non-SCC|2021": null,
-  "Kia|Forte|2019": null,
-  "Kia|Forte|2020": null,
-  "Kia|Forte|2021": null,
-  "Kia|Forte|2022": null,
-  "Kia|Forte|2023": null,
+  "Kia|Forte|2019": {
+    "score": 67,
+    "url": "https://autoreliabilityindex.com/kia/forte/2019"
+  },
+  "Kia|Forte|2020": {
+    "score": 76,
+    "url": "https://autoreliabilityindex.com/kia/forte/2020"
+  },
+  "Kia|Forte|2021": {
+    "score": 72,
+    "url": "https://autoreliabilityindex.com/kia/forte/2021"
+  },
+  "Kia|Forte|2022": {
+    "score": 75,
+    "url": "https://autoreliabilityindex.com/kia/forte/2022"
+  },
+  "Kia|Forte|2023": {
+    "score": 68,
+    "url": "https://autoreliabilityindex.com/kia/forte/2023"
+  },
   "Kia|K5 Hybrid|2020": null,
   "Kia|K5 Hybrid|2021": null,
   "Kia|K5 Hybrid|2022": null,
@@ -1591,9 +1646,18 @@
     "url": "https://autoreliabilityindex.com/rivian/r1s/2025"
   },
   "Rivian|R1T|2022": null,
-  "Rivian|R1T|2023": null,
-  "Rivian|R1T|2024": null,
-  "Rivian|R1T|2025": null,
+  "Rivian|R1T|2023": {
+    "score": 65,
+    "url": "https://autoreliabilityindex.com/rivian/r1t/2023"
+  },
+  "Rivian|R1T|2024": {
+    "score": 67,
+    "url": "https://autoreliabilityindex.com/rivian/r1t/2024"
+  },
+  "Rivian|R1T|2025": {
+    "score": 65,
+    "url": "https://autoreliabilityindex.com/rivian/r1t/2025"
+  },
   "SEAT|Alhambra|2018": null,
   "SEAT|Alhambra|2019": null,
   "SEAT|Alhambra|2020": null,
@@ -1650,10 +1714,19 @@
   "Skoda|Superb|2020": null,
   "Skoda|Superb|2021": null,
   "Skoda|Superb|2022": null,
-  "Subaru|Ascent|2019": null,
-  "Subaru|Ascent|2020": null,
+  "Subaru|Ascent|2019": {
+    "score": 55,
+    "url": "https://autoreliabilityindex.com/subaru/ascent/2019"
+  },
+  "Subaru|Ascent|2020": {
+    "score": 58,
+    "url": "https://autoreliabilityindex.com/subaru/ascent/2020"
+  },
   "Subaru|Ascent|2021": null,
-  "Subaru|Ascent|2023": null,
+  "Subaru|Ascent|2023": {
+    "score": 71,
+    "url": "https://autoreliabilityindex.com/subaru/ascent/2023"
+  },
   "Subaru|Crosstrek Hybrid|2020": null,
   "Subaru|Crosstrek|2018": {
     "score": 60,
@@ -2194,9 +2267,18 @@
   "Volkswagen|Golf|2015": null,
   "Volkswagen|Golf|2016": null,
   "Volkswagen|Golf|2017": null,
-  "Volkswagen|Golf|2018": null,
-  "Volkswagen|Golf|2019": null,
-  "Volkswagen|Golf|2020": null,
+  "Volkswagen|Golf|2018": {
+    "score": 69,
+    "url": "https://autoreliabilityindex.com/volkswagen/golf/2018"
+  },
+  "Volkswagen|Golf|2019": {
+    "score": 65,
+    "url": "https://autoreliabilityindex.com/volkswagen/golf/2019"
+  },
+  "Volkswagen|Golf|2020": {
+    "score": 75,
+    "url": "https://autoreliabilityindex.com/volkswagen/golf/2020"
+  },
   "Volkswagen|Grand California|2019": null,
   "Volkswagen|Grand California|2020": null,
   "Volkswagen|Grand California|2021": null,
