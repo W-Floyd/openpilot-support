@@ -6,71 +6,820 @@
         <title>openpilot Supported Cars</title>
         <link rel="icon" type="image/svg+xml" href="{{ favicon }}" />
         <!-- prettier-ignore -->
-        <script>{{ tailwind_js }}</script>
+        <style>{{ pure_css }}</style>
+        <style>
+            *,
+            *::before,
+            *::after {
+                box-sizing: border-box;
+            }
+            html,
+            body {
+                height: 100%;
+            }
+            body {
+                font-family:
+                    system-ui,
+                    -apple-system,
+                    "Segoe UI",
+                    sans-serif;
+                font-size: 14px;
+                background: #f9fafb;
+                color: #1f2937;
+            }
+            a {
+                text-decoration: none;
+                color: inherit;
+            }
+            button {
+                cursor: pointer;
+                font-family: inherit;
+            }
+
+            /* ── Layout ── */
+            .page {
+                display: flex;
+                flex-direction: column;
+                height: 100vh;
+                padding: 12px;
+            }
+            @media (min-width: 640px) {
+                .page {
+                    padding: 24px;
+                }
+            }
+
+            .page-top {
+                display: flex;
+                align-items: flex-start;
+                justify-content: space-between;
+                gap: 8px;
+                flex-wrap: wrap;
+                margin-bottom: 20px;
+            }
+            .page-title {
+                font-size: 1.5rem;
+                font-weight: 700;
+                margin: 0 0 4px;
+                color: #111827;
+            }
+            @media (min-width: 640px) {
+                .page-title {
+                    font-size: 1.875rem;
+                }
+            }
+            .page-sub {
+                font-size: 0.875rem;
+                color: #6b7280;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 4px;
+                align-items: center;
+                margin: 0;
+            }
+            .page-sub a,
+            .page-sub button {
+                color: inherit;
+                background: none;
+                border: none;
+                padding: 0;
+                font-size: inherit;
+            }
+            .page-sub a:hover,
+            .page-sub button:hover {
+                text-decoration: underline;
+            }
+            .sep {
+                color: #d1d5db;
+            }
+            .sm-show {
+                display: none;
+            }
+            @media (min-width: 640px) {
+                .sm-show {
+                    display: inline;
+                }
+            }
+            .sm-show-flex {
+                display: none;
+            }
+            @media (min-width: 640px) {
+                .sm-show-flex {
+                    display: flex;
+                }
+            }
+            .sm-hide {
+                display: block;
+            }
+            @media (min-width: 640px) {
+                .sm-hide {
+                    display: none;
+                }
+            }
+
+            /* ── Header actions ── */
+            .hd-actions {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+            }
+            .icon-btn {
+                border-radius: 8px;
+                border: 1px solid #e5e7eb;
+                background: #fff;
+                padding: 8px 10px;
+                color: #4b5563;
+                display: flex;
+                align-items: center;
+            }
+            .icon-btn:hover {
+                background: #f9fafb;
+            }
+            .icon-btn.on {
+                background: #1f2937;
+                color: #fff;
+            }
+
+            /* ── Settings panel ── */
+            .settings-rel {
+                position: relative;
+            }
+            .settings-panel {
+                position: fixed;
+                inset: 0;
+                z-index: 50;
+                background: #fff;
+                overflow-y: auto;
+                padding: 16px;
+            }
+            @media (min-width: 640px) {
+                .settings-panel {
+                    position: absolute;
+                    inset: auto;
+                    right: 0;
+                    top: calc(100% + 4px);
+                    width: 192px;
+                    max-height: 80vh;
+                    border-radius: 8px;
+                    border: 1px solid #e5e7eb;
+                    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+                    padding: 12px;
+                    overflow-y: auto;
+                }
+            }
+            .sp-mobile-hd {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 16px;
+            }
+            .sp-title {
+                font-size: 1rem;
+                font-weight: 600;
+                color: #1f2937;
+            }
+            .sp-lbl {
+                font-size: 0.75rem;
+                font-weight: 600;
+                color: #6b7280;
+                text-transform: uppercase;
+                letter-spacing: 0.05em;
+                margin-bottom: 8px;
+            }
+            .unit-row {
+                display: flex;
+                align-items: center;
+                gap: 4px;
+                border-radius: 8px;
+                border: 1px solid #e5e7eb;
+                padding: 4px;
+                margin-bottom: 12px;
+            }
+            .unit-btn {
+                flex: 1;
+                border-radius: 4px;
+                padding: 4px 8px;
+                font-size: 0.875rem;
+                font-weight: 500;
+                border: none;
+                background: none;
+                color: #6b7280;
+            }
+            .unit-btn.on {
+                background: #1f2937;
+                color: #fff;
+            }
+            .col-row {
+                display: flex;
+                cursor: pointer;
+                align-items: center;
+                gap: 8px;
+                border-radius: 4px;
+                padding: 4px;
+            }
+            .col-row:hover {
+                background: #f9fafb;
+            }
+            .col-row span {
+                font-size: 0.875rem;
+                color: #374151;
+            }
+            .sp-footer {
+                border-top: 1px solid #f3f4f6;
+                padding-top: 12px;
+                margin-top: 12px;
+            }
+            .reset-btn {
+                width: 100%;
+                border-radius: 8px;
+                padding: 6px 12px;
+                font-size: 0.875rem;
+                color: #6b7280;
+                background: none;
+                border: none;
+            }
+            .reset-btn:hover {
+                background: #f3f4f6;
+                color: #374151;
+            }
+
+            /* ── Info banner ── */
+            .info-wrap {
+                overflow: hidden;
+                transition:
+                    max-height 0.3s ease,
+                    opacity 0.3s ease;
+            }
+            .info-banner {
+                border-radius: 8px;
+                border: 1px solid #bfdbfe;
+                background: #eff6ff;
+                padding: 8px 12px;
+                font-size: 0.75rem;
+                color: #1e3a8a;
+                margin-bottom: 16px;
+            }
+            @media (min-width: 640px) {
+                .info-banner {
+                    font-size: 0.875rem;
+                    padding: 12px 16px;
+                }
+            }
+
+            /* ── Presets ── */
+            .presets-row {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                gap: 8px;
+                margin-bottom: 12px;
+            }
+            .presets-lbl {
+                font-size: 0.75rem;
+                font-weight: 500;
+                color: #9ca3af;
+                text-transform: uppercase;
+                letter-spacing: 0.05em;
+            }
+            .preset-btn {
+                border-radius: 9999px;
+                padding: 4px 12px;
+                font-size: 0.875rem;
+                font-weight: 500;
+                border: 1px solid #e5e7eb;
+                background: #fff;
+                color: #4b5563;
+                box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+                transition: background 0.1s;
+            }
+            .preset-btn:hover {
+                background: #f3f4f6;
+            }
+            .preset-btn.on {
+                background: #1f2937;
+                color: #fff;
+                border-color: #1f2937;
+            }
+
+            /* ── Filter chips ── */
+            .chips-row {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 8px;
+                margin-bottom: 16px;
+                align-items: center;
+            }
+            .chip {
+                display: inline-flex;
+                align-items: center;
+                gap: 4px;
+                border-radius: 9999px;
+                background: #dbeafe;
+                padding: 4px 12px;
+                font-size: 0.875rem;
+                color: #1e40af;
+                flex-shrink: 0;
+            }
+            .chip-x {
+                background: none;
+                border: none;
+                font-weight: 700;
+                line-height: 1;
+                color: inherit;
+                margin-left: 4px;
+                padding: 0;
+            }
+            .chip-x:hover {
+                color: #1d4ed8;
+            }
+            .chip-clear {
+                border-radius: 9999px;
+                background: #e5e7eb;
+                padding: 4px 12px;
+                font-size: 0.875rem;
+                color: #4b5563;
+                border: none;
+                flex-shrink: 0;
+            }
+            .chip-clear:hover {
+                background: #d1d5db;
+            }
+            .chips-scroll {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                overflow-x: auto;
+                padding-bottom: 4px;
+                min-width: 0;
+            }
+
+            /* ── Table ── */
+            .table-wrap {
+                overflow: auto;
+                border-radius: 8px;
+                box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+                flex: 1;
+                min-height: 0;
+            }
+            .cars-tbl {
+                width: 100%;
+                border-collapse: collapse;
+                font-size: 0.875rem;
+                text-align: left;
+            }
+            .cars-tbl thead {
+                position: sticky;
+                top: 0;
+                z-index: 10;
+            }
+            .cars-tbl thead tr {
+                background: #1f2937;
+                color: #fff;
+            }
+            .cars-tbl th {
+                padding: 6px;
+                font-weight: 600;
+                white-space: nowrap;
+                user-select: none;
+            }
+            @media (min-width: 640px) {
+                .cars-tbl th {
+                    padding: 8px;
+                }
+            }
+            .cars-tbl tbody {
+                background: #fff;
+            }
+            .cars-tbl tbody tr {
+                border-bottom: 1px solid #f3f4f6;
+                transition: background 0.1s;
+            }
+            .cars-tbl tbody tr:hover {
+                background: #f9fafb;
+            }
+            .cars-tbl td {
+                padding: 4px 6px;
+                white-space: nowrap;
+                vertical-align: middle;
+            }
+            .cars-tbl td.td-pkg {
+                white-space: normal;
+                word-break: break-word;
+                max-width: 128px;
+            }
+            @media (min-width: 640px) {
+                .cars-tbl td {
+                    padding: 6px 8px;
+                }
+            }
+
+            /* ── Th inner layout ── */
+            .th-inner {
+                display: flex;
+                align-items: center;
+                gap: 4px;
+            }
+            .sort-btn {
+                display: flex;
+                align-items: center;
+                gap: 4px;
+                background: none;
+                border: none;
+                color: inherit;
+                font-weight: inherit;
+                font-size: inherit;
+                padding: 0;
+                white-space: nowrap;
+            }
+            .sort-btn:hover {
+                color: #93c5fd;
+            }
+            .si {
+                font-size: 0.75rem;
+                opacity: 0.5;
+            }
+            .si.lit {
+                opacity: 1;
+                color: #93c5fd;
+            }
+
+            .filter-wrap {
+                position: relative;
+            }
+            .filter-btn {
+                border-radius: 4px;
+                padding: 2px;
+                background: none;
+                border: none;
+                display: flex;
+                align-items: center;
+                color: #9ca3af;
+            }
+            .filter-btn:hover {
+                background: rgba(255, 255, 255, 0.1);
+            }
+            .filter-btn.on {
+                color: #93c5fd;
+            }
+
+            /* ── Filter dropdown ── */
+            .fdrop {
+                position: absolute;
+                top: 100%;
+                z-index: 50;
+                margin-top: 4px;
+                min-width: 192px;
+                border-radius: 8px;
+                border: 1px solid #e5e7eb;
+                background: #fff;
+                box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+            }
+            .fdrop.right {
+                right: 0;
+            }
+            .fdrop-hd {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border-bottom: 1px solid #f3f4f6;
+                padding: 8px 12px;
+            }
+            .fdrop-title {
+                font-size: 0.75rem;
+                font-weight: 600;
+                color: #374151;
+            }
+            .fdrop-clear {
+                font-size: 0.75rem;
+                color: #9ca3af;
+                background: none;
+                border: none;
+            }
+            .fdrop-clear:hover {
+                color: #4b5563;
+            }
+            .fdrop-search-row {
+                border-bottom: 1px solid #f3f4f6;
+                padding: 6px 8px;
+            }
+            .fdrop-search {
+                width: 100%;
+                border-radius: 4px;
+                border: 1px solid #e5e7eb;
+                padding: 4px 8px;
+                font-size: 0.75rem;
+                color: #374151;
+                outline: none;
+            }
+            .fdrop-search::placeholder {
+                color: #9ca3af;
+            }
+            .fdrop-search:focus {
+                border-color: #60a5fa;
+            }
+            .fdrop-all-row {
+                border-bottom: 1px solid #f3f4f6;
+                padding: 4px 8px;
+            }
+            .fdrop-opt {
+                display: flex;
+                cursor: pointer;
+                align-items: center;
+                gap: 8px;
+                border-radius: 4px;
+                padding: 6px 8px;
+                color: #374151;
+            }
+            .fdrop-opt:hover {
+                background: #f9fafb;
+            }
+            .fdrop-opt.muted {
+                color: #6b7280;
+            }
+            .fdrop-opt span {
+                font-size: 0.875rem;
+            }
+            .fdrop-list {
+                max-height: 256px;
+                overflow-y: auto;
+                padding: 8px;
+            }
+
+            /* ── Range filter ── */
+            .range-body {
+                padding: 12px;
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+                min-width: 224px;
+            }
+            .range-lbl-row {
+                display: flex;
+                justify-content: space-between;
+                font-size: 0.75rem;
+                color: #6b7280;
+                margin-bottom: 4px;
+            }
+            .range-slider {
+                width: 100%;
+                accent-color: #2563eb;
+            }
+            .range-sep {
+                border-top: 1px solid #f3f4f6;
+                padding-top: 8px;
+            }
+            .range-hdr {
+                display: flex;
+                justify-content: space-between;
+                padding: 0 4px;
+                font-size: 0.75rem;
+                color: #9ca3af;
+                margin-bottom: 4px;
+            }
+            .range-vals {
+                max-height: 160px;
+                overflow-y: auto;
+            }
+            .rv-row {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                border-radius: 4px;
+                padding: 2px 4px;
+                font-size: 0.75rem;
+                color: #4b5563;
+            }
+            .rv-row.sel {
+                background: #eff6ff;
+                color: #1e40af;
+            }
+            .rv-btns {
+                display: flex;
+                gap: 12px;
+            }
+            .rv-btn {
+                background: none;
+                border: none;
+                width: 24px;
+                text-align: center;
+                color: #9ca3af;
+            }
+            .rv-btn:hover,
+            .rv-btn.on {
+                color: #2563eb;
+                font-weight: bold;
+            }
+
+            /* ── Badges ── */
+            .badge {
+                border-radius: 9999px;
+                padding: 2px 8px;
+                font-size: 0.75rem;
+                font-weight: 500;
+                display: inline-block;
+            }
+            .badge-g {
+                background: #dcfce7;
+                color: #166534;
+            }
+            .badge-y {
+                background: #fef9c3;
+                color: #854d0e;
+            }
+            .badge-b {
+                background: #dbeafe;
+                color: #1e40af;
+            }
+            .badge-p {
+                background: #f3e8ff;
+                color: #6b21a8;
+            }
+            .badge-o {
+                background: #ffedd5;
+                color: #9a3412;
+            }
+            .badge-r {
+                background: #fee2e2;
+                color: #991b1b;
+            }
+            .badge-d {
+                background: #f3f4f6;
+                color: #374151;
+            }
+            .badge-fg {
+                background: #dcfce7;
+                color: #166534;
+            }
+            .badge-fb {
+                background: #e0f2fe;
+                color: #075985;
+            }
+            .forks {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 4px;
+            }
+
+            /* ── Boolean / null ── */
+            .v-t {
+                color: #16a34a;
+                font-weight: 500;
+            }
+            .v-f {
+                color: #ef4444;
+            }
+            .v-nil {
+                color: #d1d5db;
+            }
+
+            /* ── Links ── */
+            .srch-link {
+                color: #2563eb;
+                font-size: 0.75rem;
+            }
+            .srch-link:hover {
+                text-decoration: underline;
+            }
+
+            /* ── ARI & CC ── */
+            .ari-link {
+                font-size: 0.75rem;
+                font-weight: 500;
+            }
+            .ari-link:hover {
+                text-decoration: underline;
+            }
+            .tabnum {
+                font-variant-numeric: tabular-nums;
+            }
+            .seal-link {
+                font-size: 0.75rem;
+                font-weight: 500;
+            }
+            .seal-link:hover {
+                text-decoration: underline;
+            }
+            .seal-best {
+                color: #16a34a;
+            }
+            .seal-good {
+                color: #65a30d;
+            }
+            .seal-bad {
+                color: #f97316;
+            }
+            .seal-worst {
+                color: #dc2626;
+            }
+            .seal-none {
+                color: #9ca3af;
+            }
+            .cc-col {
+                display: flex;
+                flex-direction: column;
+                gap: 2px;
+                position: relative;
+            }
+
+            /* ── Popup tooltips ── */
+            .popup {
+                border-radius: 8px;
+                border: 1px solid #e5e7eb;
+                background: #fff;
+                padding: 6px 0;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+                white-space: nowrap;
+                font-size: 0.75rem;
+            }
+            .popup-row {
+                display: flex;
+                align-items: baseline;
+                gap: 6px;
+                padding: 2px 12px;
+            }
+            .pop-yr {
+                width: 36px;
+                flex-shrink: 0;
+                font-weight: 500;
+                color: #374151;
+            }
+            .pop-cmp {
+                color: #ef4444;
+            }
+            .pop-rcl {
+                color: #f59e0b;
+            }
+            .pop-tsb {
+                color: #3b82f6;
+            }
+            .pop-seal {
+                font-weight: 500;
+                margin-left: auto;
+            }
+
+            /* ── Model parenthetical ── */
+            .mp {
+                font-size: 0.8em;
+                color: #9ca3af;
+            }
+
+            /* ── Empty state ── */
+            .empty-row td {
+                text-align: center;
+                padding: 48px 8px;
+                color: #9ca3af;
+            }
+
+            /* ── Alpine ── */
+            [x-cloak] {
+                display: none !important;
+            }
+        </style>
     </head>
 
-    <body class="bg-gray-50 h-full">
+    <body>
         <div
             x-data="carTable()"
             @keydown.escape.window="openFilter = null"
-            class="p-3 sm:p-6 h-full flex flex-col"
+            class="page"
         >
             <!-- Header -->
-
-            <div
-                class="mb-4 sm:mb-6 flex items-start justify-between gap-2 flex-wrap"
-            >
+            <div class="page-top">
                 <div>
-                    <h1 class="text-2xl sm:text-3xl font-bold text-gray-900">
-                        openpilot Supported Cars
-                    </h1>
-
-                    <p
-                        class="mt-1 text-sm text-gray-500 flex flex-wrap gap-x-1 items-center"
-                    >
+                    <h1 class="page-title">openpilot Supported Cars</h1>
+                    <p class="page-sub">
                         <span
                             ><span x-text="filteredCars.length"></span> of
                             <span x-text="cars.length"></span> cars</span
                         >
-                        <span class="text-gray-300">&middot;</span>
+                        <span class="sep">&middot;</span>
                         <a
                             href="https://github.com/W-Floyd/openpilot-support"
                             target="_blank"
                             rel="noopener"
-                            class="hover:underline"
                             >Github</a
                         >
-                        <span class="text-gray-300 hidden sm:inline"
-                            >&middot;</span
-                        >
-                        <button
-                            @click="openAllEbayLinks()"
-                            class="hover:underline hidden sm:inline"
-                        >
+                        <span class="sep sm-show">&middot;</span>
+                        <button @click="openAllEbayLinks()" class="sm-show">
                             Open all eBay links
                         </button>
-                        <span class="text-gray-300 hidden sm:inline"
-                            >&middot;</span
-                        >
-                        <button
-                            @click="openAllCarGurusLinks()"
-                            class="hover:underline hidden sm:inline"
-                        >
+                        <span class="sep sm-show">&middot;</span>
+                        <button @click="openAllCarGurusLinks()" class="sm-show">
                             Open all CarGurus links
                         </button>
                     </p>
                 </div>
-                <!-- Settings button -->
 
-                <div class="flex items-center gap-2">
+                <div class="hd-actions">
                     <button
                         x-show="infoDismissed"
                         @click="infoDismissed = false"
                         title="Show info"
-                        class="rounded-lg border border-gray-200 bg-white px-3 py-2 shadow-sm text-gray-600 hover:bg-gray-50 transition-colors"
+                        class="icon-btn"
                     >
                         <svg
                             class="h-4 w-4"
+                            style="width: 16px; height: 16px"
                             fill="none"
                             stroke="currentColor"
                             viewBox="0 0 24 24"
@@ -84,14 +833,14 @@
                         </svg>
                     </button>
 
-                    <div class="relative">
+                    <div class="settings-rel">
                         <button
                             @click="showSettings = !showSettings"
-                            :class="showSettings ? 'bg-gray-800 text-white' : 'bg-white text-gray-600 hover:bg-gray-50'"
-                            class="rounded-lg border border-gray-200 px-3 py-2 shadow-sm transition-colors"
+                            :class="showSettings ? 'on' : ''"
+                            class="icon-btn"
                         >
                             <svg
-                                class="h-4 w-4"
+                                style="width: 16px; height: 16px"
                                 fill="none"
                                 stroke="currentColor"
                                 viewBox="0 0 24 24"
@@ -117,23 +866,16 @@
                             x-transition:enter="transition ease-out duration-100"
                             x-transition:enter-start="opacity-0 scale-95"
                             x-transition:enter-end="opacity-100 scale-100"
-                            class="fixed inset-0 z-50 bg-white overflow-y-auto p-4 sm:absolute sm:inset-auto sm:right-0 sm:top-full sm:mt-1 sm:w-48 sm:max-h-[80vh] sm:rounded-lg sm:border sm:border-gray-200 sm:shadow-xl sm:p-3"
+                            class="settings-panel"
                         >
-                            <!-- Mobile header -->
-
-                            <div
-                                class="flex items-center justify-between mb-4 sm:hidden"
-                            >
-                                <span
-                                    class="text-base font-semibold text-gray-800"
-                                    >Settings</span
-                                >
+                            <div class="sp-mobile-hd sm-hide">
+                                <span class="sp-title">Settings</span>
                                 <button
                                     @click="showSettings = false"
-                                    class="rounded-lg p-2 text-gray-500 hover:bg-gray-100"
+                                    class="icon-btn"
                                 >
                                     <svg
-                                        class="h-5 w-5"
+                                        style="width: 20px; height: 20px"
                                         fill="none"
                                         stroke="currentColor"
                                         viewBox="0 0 24 24"
@@ -148,57 +890,40 @@
                                 </button>
                             </div>
 
-                            <p
-                                class="mb-2 text-xs font-semibold text-gray-500 uppercase tracking-wide"
-                            >
-                                Units
-                            </p>
-
-                            <div
-                                class="flex items-center gap-1 rounded-lg border border-gray-200 p-1 mb-3"
-                            >
+                            <p class="sp-lbl">Units</p>
+                            <div class="unit-row">
                                 <button
                                     @click="setSpeedUnit('km/h')"
-                                    :class="speedUnit === 'km/h' ? 'bg-gray-800 text-white' : 'text-gray-500 hover:text-gray-800'"
-                                    class="flex-1 rounded px-2 py-1 text-sm font-medium transition-colors"
+                                    :class="speedUnit === 'km/h' ? 'on' : ''"
+                                    class="unit-btn"
                                 >
                                     km/h
                                 </button>
                                 <button
                                     @click="setSpeedUnit('mph')"
-                                    :class="speedUnit === 'mph' ? 'bg-gray-800 text-white' : 'text-gray-500 hover:text-gray-800'"
-                                    class="flex-1 rounded px-2 py-1 text-sm font-medium transition-colors"
+                                    :class="speedUnit === 'mph'  ? 'on' : ''"
+                                    class="unit-btn"
                                 >
                                     mph
                                 </button>
                             </div>
 
-                            <p
-                                class="mb-2 text-xs font-semibold text-gray-500 uppercase tracking-wide"
-                            >
-                                Columns
-                            </p>
+                            <p class="sp-lbl">Columns</p>
                             <template x-for="col in allColumns" :key="col.key">
-                                <label
-                                    class="flex cursor-pointer items-center gap-2 rounded px-1 py-1 hover:bg-gray-50"
-                                >
+                                <label class="col-row">
                                     <input
                                         type="checkbox"
                                         :checked="hiddenColumns.indexOf(col.key) === -1"
                                         @change="toggleColumn(col.key)"
-                                        class="rounded border-gray-300 text-blue-600"
                                     />
-                                    <span
-                                        class="text-sm text-gray-700"
-                                        x-text="col.label"
-                                    ></span>
+                                    <span x-text="col.label"></span>
                                 </label>
                             </template>
 
-                            <div class="mt-3 border-t border-gray-100 pt-3">
+                            <div class="sp-footer">
                                 <button
                                     @click="resetSettings()"
-                                    class="w-full rounded-lg px-3 py-1.5 text-sm text-gray-500 hover:bg-gray-100 hover:text-gray-700 transition-colors"
+                                    class="reset-btn"
                                 >
                                     Reset to defaults
                                 </button>
@@ -206,153 +931,125 @@
                         </div>
                     </div>
                 </div>
-                <!-- end flex wrapper -->
             </div>
 
-            <!-- Collapsible info section -->
-
+            <!-- Info banner -->
             <div
-                class="overflow-hidden transition-all duration-300 ease-in-out"
-                :class="infoDismissed ? 'max-h-0 opacity-0' : 'max-h-96 opacity-100'"
+                class="info-wrap"
+                :style="infoDismissed ? 'max-height:0;opacity:0' : 'max-height:400px;opacity:1'"
             >
-                <!-- Usage notes -->
-
-                <div
-                    class="mb-4 rounded-lg border border-blue-100 bg-blue-50 px-3 py-2 sm:px-4 sm:py-3 text-xs sm:text-sm text-blue-900"
-                >
+                <div class="info-banner">
                     <strong>eBay &amp; CarGurus links</strong> are
                     auto-generated from the car's make, model, and year range
-                    and may return incorrect or unrelated results - always
+                    and may return incorrect or unrelated results — always
                     verify before purchasing. eBay searches by keyword; CarGurus
                     uses structured filters but may match the wrong trim or
                     generation. Use them as a starting point, not a guarantee.
                 </div>
             </div>
-            <!-- end collapsible -->
 
             <!-- Presets -->
-
-            <div class="mb-3 flex flex-wrap items-center gap-2">
-                <span
-                    class="text-xs font-medium text-gray-400 uppercase tracking-wide"
-                    >Presets</span
-                >
+            <div class="presets-row">
+                <span class="presets-lbl">Presets</span>
                 <template x-for="preset in presets" :key="preset.label">
                     <button
                         @click="applyPreset(preset)"
-                        :class="isPresetActive(preset) ? 'bg-gray-800 text-white' : 'bg-white text-gray-600 hover:bg-gray-100 border border-gray-200'"
-                        class="rounded-full px-3 py-1 text-sm font-medium transition-colors shadow-sm"
+                        :class="isPresetActive(preset) ? 'on' : ''"
+                        class="preset-btn"
                         x-text="preset.label"
                     ></button>
                 </template>
             </div>
 
             <!-- Active filter chips (desktop) -->
-
             <div
-                class="mb-4 hidden sm:flex flex-wrap gap-2"
+                class="chips-row sm-show-flex"
                 x-show="activeFilters.length > 0 || activeSpeedFilters.length > 0 || isAriFilterActive()"
             >
                 <template x-for="f in activeFilters" :key="f.key + ':' + f.val">
-                    <span
-                        class="inline-flex items-center gap-1 rounded-full bg-blue-100 px-3 py-1 text-sm text-blue-800"
-                    >
+                    <span class="chip">
                         <span x-text="columnLabel(f.key) + ': ' + f.val"></span>
                         <button
                             @click="removeFilter(f.key, f.val)"
-                            class="ml-1 font-bold leading-none hover:text-blue-600"
+                            class="chip-x"
                         >
                             &times;
                         </button>
                     </span>
                 </template>
                 <template x-for="f in activeSpeedFilters" :key="f.key">
-                    <span
-                        class="inline-flex items-center gap-1 rounded-full bg-blue-100 px-3 py-1 text-sm text-blue-800"
-                    >
+                    <span class="chip">
                         <span x-text="f.label"></span>
-                        <button
-                            @click="clearFilter(f.key)"
-                            class="ml-1 font-bold leading-none hover:text-blue-600"
-                        >
+                        <button @click="clearFilter(f.key)" class="chip-x">
                             &times;
                         </button>
                     </span>
                 </template>
                 <template x-if="isAriFilterActive()">
-                    <span
-                        class="inline-flex items-center gap-1 rounded-full bg-blue-100 px-3 py-1 text-sm text-blue-800"
-                    >
+                    <span class="chip">
                         <span
                             x-text="`Reliability: ${ariFilter.min ?? 0}–${ariFilter.max ?? 100}`"
                         ></span>
-                        <button
-                            @click="clearFilter('ari')"
-                            class="ml-1 font-bold leading-none hover:text-blue-600"
-                        >
+                        <button @click="clearFilter('ari')" class="chip-x">
                             &times;
                         </button>
                     </span>
                 </template>
-                <button
-                    @click="clearAllFilters()"
-                    class="rounded-full bg-gray-200 px-3 py-1 text-sm text-gray-600 hover:bg-gray-300"
-                >
+                <button @click="clearAllFilters()" class="chip-clear">
                     Clear all
                 </button>
             </div>
 
             <!-- Active filter chips (mobile) -->
-
             <div
-                class="mb-3 sm:hidden"
+                class="sm-hide"
+                style="margin-bottom: 12px"
                 x-show="activeFilters.length > 0 || activeSpeedFilters.length > 0 || isAriFilterActive()"
             >
-                <div class="flex items-center gap-2 min-w-0">
-                    <div
-                        class="flex items-center gap-2 overflow-x-auto pb-1 min-w-0"
-                    >
+                <div
+                    style="
+                        display: flex;
+                        align-items: center;
+                        gap: 8px;
+                        min-width: 0;
+                    "
+                >
+                    <div class="chips-scroll">
                         <template
                             x-for="f in activeFilters"
                             :key="f.key + ':' + f.val"
                         >
-                            <span
-                                class="inline-flex shrink-0 items-center gap-1 rounded-full bg-blue-100 px-3 py-1 text-sm text-blue-800"
-                            >
+                            <span class="chip">
                                 <span
                                     x-text="columnLabel(f.key) + ': ' + f.val"
                                 ></span>
                                 <button
                                     @click="removeFilter(f.key, f.val)"
-                                    class="ml-1 font-bold leading-none hover:text-blue-600"
+                                    class="chip-x"
                                 >
                                     &times;
                                 </button>
                             </span>
                         </template>
                         <template x-for="f in activeSpeedFilters" :key="f.key">
-                            <span
-                                class="inline-flex shrink-0 items-center gap-1 rounded-full bg-blue-100 px-3 py-1 text-sm text-blue-800"
-                            >
+                            <span class="chip">
                                 <span x-text="f.label"></span>
                                 <button
                                     @click="clearFilter(f.key)"
-                                    class="ml-1 font-bold leading-none hover:text-blue-600"
+                                    class="chip-x"
                                 >
                                     &times;
                                 </button>
                             </span>
                         </template>
                         <template x-if="isAriFilterActive()">
-                            <span
-                                class="inline-flex shrink-0 items-center gap-1 rounded-full bg-blue-100 px-3 py-1 text-sm text-blue-800"
-                            >
+                            <span class="chip">
                                 <span
                                     x-text="`Reliability: ${ariFilter.min ?? 0}–${ariFilter.max ?? 100}`"
                                 ></span>
                                 <button
                                     @click="clearFilter('ari')"
-                                    class="ml-1 font-bold leading-none hover:text-blue-600"
+                                    class="chip-x"
                                 >
                                     &times;
                                 </button>
@@ -361,7 +1058,8 @@
                     </div>
                     <button
                         @click="clearAllFilters()"
-                        class="shrink-0 rounded-full bg-gray-200 px-3 py-1 text-sm text-gray-600 hover:bg-gray-300"
+                        class="chip-clear"
+                        style="flex-shrink: 0"
                     >
                         Clear all
                     </button>
@@ -369,42 +1067,39 @@
             </div>
 
             <!-- Table -->
-
             <div
-                class="overflow-auto rounded-lg shadow flex-1 min-h-0"
+                class="table-wrap"
                 @scroll="scrolled = $event.target.scrollTop > 20; if (scrolled) infoDismissed = true;"
             >
-                <table class="w-full text-sm text-left">
-                    <thead class="sticky top-0 z-10 bg-gray-800 text-white">
+                <table class="cars-tbl">
+                    <thead>
                         <tr>
                             <template x-for="col in columns" :key="col.key">
-                                <th
-                                    class="px-1.5 py-1.5 sm:px-2 sm:py-2 font-semibold whitespace-nowrap select-none"
-                                >
-                                    <div class="flex items-center gap-1">
+                                <th>
+                                    <div class="th-inner">
                                         <!-- Sort button -->
                                         <template
                                             x-if="!col.ebay && !col.cargurus"
                                         >
                                             <button
                                                 @click="toggleSort(col.key)"
-                                                class="flex items-center gap-1 transition-colors hover:text-blue-300"
+                                                class="sort-btn"
                                             >
                                                 <span
                                                     x-text="colLabel(col)"
                                                 ></span>
                                                 <span
-                                                    class="text-xs opacity-50"
+                                                    class="si"
                                                     x-show="sortCol !== col.key"
                                                     >⇅</span
                                                 >
                                                 <span
-                                                    class="text-xs text-blue-300"
+                                                    class="si lit"
                                                     x-show="sortCol === col.key && sortDir === 'asc'"
                                                     >↑</span
                                                 >
                                                 <span
-                                                    class="text-xs text-blue-300"
+                                                    class="si lit"
                                                     x-show="sortCol === col.key && sortDir === 'desc'"
                                                     >↓</span
                                                 >
@@ -417,18 +1112,20 @@
                                         </template>
 
                                         <!-- Filter button + dropdown -->
-
                                         <div
-                                            class="relative"
+                                            class="filter-wrap"
                                             x-show="col.filterable"
                                         >
                                             <button
                                                 @click.stop="openFilter = openFilter === col.key ? (filterSearch[col.key] = '', null) : col.key"
-                                                class="rounded p-0.5 transition-colors hover:bg-gray-700"
-                                                :class="(filters[col.key] && filters[col.key].length > 0) || isSpeedFilterActive(col.key) || (col.key === 'ari' && isAriFilterActive()) ? 'text-blue-300' : 'text-gray-400'"
+                                                class="filter-btn"
+                                                :class="(filters[col.key] && filters[col.key].length > 0) || isSpeedFilterActive(col.key) || (col.key === 'ari' && isAriFilterActive()) ? 'on' : ''"
                                             >
                                                 <svg
-                                                    class="h-3 w-3"
+                                                    style="
+                                                        width: 12px;
+                                                        height: 12px;
+                                                    "
                                                     fill="currentColor"
                                                     viewBox="0 0 20 20"
                                                 >
@@ -447,30 +1144,27 @@
                                                 x-transition:enter-start="opacity-0 scale-95"
                                                 x-transition:enter-end="opacity-100 scale-100"
                                                 x-bind:class="filterDropdownClass($el)"
-                                                class="absolute top-full z-50 mt-1 min-w-48 rounded-lg border border-gray-200 bg-white shadow-xl"
+                                                class="fdrop"
                                             >
-                                                <div
-                                                    class="flex items-center justify-between border-b border-gray-100 px-3 py-2"
-                                                >
+                                                <div class="fdrop-hd">
                                                     <span
-                                                        class="text-xs font-semibold text-gray-700"
+                                                        class="fdrop-title"
                                                         x-text="colLabel(col)"
                                                     ></span>
                                                     <button
                                                         @click="clearFilter(col.key)"
-                                                        class="text-xs text-gray-400 hover:text-gray-600"
+                                                        class="fdrop-clear"
                                                     >
                                                         Clear
                                                     </button>
                                                 </div>
+
                                                 <!-- Speed range slider -->
                                                 <template x-if="col.speed">
-                                                    <div
-                                                        class="p-3 space-y-3 min-w-56"
-                                                    >
+                                                    <div class="range-body">
                                                         <div>
                                                             <div
-                                                                class="mb-1 flex justify-between text-xs text-gray-500"
+                                                                class="range-lbl-row"
                                                             >
                                                                 <span>Min</span>
                                                                 <span
@@ -479,19 +1173,18 @@
                                                             </div>
                                                             <input
                                                                 type="range"
+                                                                class="range-slider"
                                                                 :min="convertFromMs(speedRange(col.key).min)"
                                                                 :max="convertFromMs(speedRange(col.key).max)"
                                                                 step="0.1"
                                                                 :value="convertFromMs(speedFilters[col.key].min ?? speedRange(col.key).min)"
                                                                 @input="speedFilters[col.key].min = convertToMs(parseFloat($event.target.value))"
                                                                 @click.stop
-                                                                class="w-full accent-blue-600"
                                                             />
                                                         </div>
-
                                                         <div>
                                                             <div
-                                                                class="mb-1 flex justify-between text-xs text-gray-500"
+                                                                class="range-lbl-row"
                                                             >
                                                                 <span>Max</span>
                                                                 <span
@@ -500,67 +1193,63 @@
                                                             </div>
                                                             <input
                                                                 type="range"
+                                                                class="range-slider"
                                                                 :min="convertFromMs(speedRange(col.key).min)"
                                                                 :max="convertFromMs(speedRange(col.key).max)"
                                                                 step="0.1"
                                                                 :value="convertFromMs(speedFilters[col.key].max ?? speedRange(col.key).max)"
                                                                 @input="speedFilters[col.key].max = convertToMs(parseFloat($event.target.value))"
                                                                 @click.stop
-                                                                class="w-full accent-blue-600"
                                                             />
                                                         </div>
-
-                                                        <div
-                                                            class="border-t border-gray-100 pt-2"
-                                                        >
+                                                        <div class="range-sep">
                                                             <div
-                                                                class="mb-1 flex justify-between px-1 text-xs text-gray-400"
+                                                                class="range-hdr"
                                                             >
                                                                 <span
                                                                     >Value</span
                                                                 >
-
                                                                 <div
-                                                                    class="flex gap-3"
+                                                                    style="
+                                                                        display: flex;
+                                                                        gap: 12px;
+                                                                    "
                                                                 >
                                                                     <span
                                                                         >Min</span
-                                                                    >
-                                                                    <span
+                                                                    ><span
                                                                         >Max</span
                                                                     >
                                                                 </div>
                                                             </div>
-
                                                             <div
-                                                                class="max-h-40 overflow-y-auto space-y-0.5"
+                                                                class="range-vals"
                                                             >
                                                                 <template
                                                                     x-for="v in speedRange(col.key).values"
                                                                     :key="v"
                                                                 >
                                                                     <div
-                                                                        class="flex items-center justify-between rounded px-1 py-0.5 text-xs"
-                                                                        :class="speedFilters[col.key].min === v || speedFilters[col.key].max === v ? 'bg-blue-50 text-blue-800' : 'text-gray-600'"
+                                                                        class="rv-row"
+                                                                        :class="speedFilters[col.key].min === v || speedFilters[col.key].max === v ? 'sel' : ''"
                                                                     >
                                                                         <span
                                                                             x-text="formatSpeed(v)"
                                                                         ></span>
-
                                                                         <div
-                                                                            class="flex gap-3"
+                                                                            class="rv-btns"
                                                                         >
                                                                             <button
                                                                                 @click.stop="speedFilters[col.key].min = v"
-                                                                                :class="speedFilters[col.key].min === v ? 'text-blue-600 font-bold' : 'text-gray-400 hover:text-blue-600'"
-                                                                                class="w-6 text-center"
+                                                                                class="rv-btn"
+                                                                                :class="speedFilters[col.key].min === v ? 'on' : ''"
                                                                             >
                                                                                 ↑
                                                                             </button>
                                                                             <button
                                                                                 @click.stop="speedFilters[col.key].max = v"
-                                                                                :class="speedFilters[col.key].max === v ? 'text-blue-600 font-bold' : 'text-gray-400 hover:text-blue-600'"
-                                                                                class="w-6 text-center"
+                                                                                class="rv-btn"
+                                                                                :class="speedFilters[col.key].max === v ? 'on' : ''"
                                                                             >
                                                                                 ↓
                                                                             </button>
@@ -574,54 +1263,49 @@
 
                                                 <!-- ARI range filter -->
                                                 <template x-if="col.ari">
-                                                    <div
-                                                        class="p-3 space-y-3 min-w-56"
-                                                    >
+                                                    <div class="range-body">
                                                         <div>
                                                             <div
-                                                                class="mb-1 flex justify-between text-xs text-gray-500"
+                                                                class="range-lbl-row"
                                                             >
                                                                 <span
                                                                     >Min
                                                                     score</span
-                                                                >
-                                                                <span
+                                                                ><span
                                                                     x-text="ariFilter.min ?? 0"
                                                                 ></span>
                                                             </div>
                                                             <input
                                                                 type="range"
+                                                                class="range-slider"
                                                                 min="0"
                                                                 max="100"
                                                                 step="1"
                                                                 :value="ariFilter.min ?? 0"
                                                                 @input="ariFilter.min = parseInt($event.target.value) || null; if (ariFilter.min === 0) ariFilter.min = null"
                                                                 @click.stop
-                                                                class="w-full accent-blue-600"
                                                             />
                                                         </div>
-
                                                         <div>
                                                             <div
-                                                                class="mb-1 flex justify-between text-xs text-gray-500"
+                                                                class="range-lbl-row"
                                                             >
                                                                 <span
                                                                     >Max
                                                                     score</span
-                                                                >
-                                                                <span
+                                                                ><span
                                                                     x-text="ariFilter.max ?? 100"
                                                                 ></span>
                                                             </div>
                                                             <input
                                                                 type="range"
+                                                                class="range-slider"
                                                                 min="0"
                                                                 max="100"
                                                                 step="1"
                                                                 :value="ariFilter.max ?? 100"
                                                                 @input="ariFilter.max = parseInt($event.target.value); if (ariFilter.max === 100) ariFilter.max = null"
                                                                 @click.stop
-                                                                class="w-full accent-blue-600"
                                                             />
                                                         </div>
                                                     </div>
@@ -633,7 +1317,7 @@
                                                 >
                                                     <div>
                                                         <div
-                                                            class="border-b border-gray-100 px-2 py-1.5"
+                                                            class="fdrop-search-row"
                                                         >
                                                             <input
                                                                 type="text"
@@ -641,15 +1325,14 @@
                                                                 x-model="filterSearch[col.key]"
                                                                 @click.stop
                                                                 x-effect="if (openFilter === col.key) $nextTick(() => $el.focus())"
-                                                                class="w-full rounded border border-gray-200 px-2 py-1 text-xs text-gray-700 placeholder-gray-400 focus:border-blue-400 focus:outline-none"
+                                                                class="fdrop-search"
                                                             />
                                                         </div>
-
                                                         <div
-                                                            class="border-b border-gray-100 px-2 py-1"
+                                                            class="fdrop-all-row"
                                                         >
                                                             <label
-                                                                class="flex cursor-pointer items-center gap-2 rounded px-2 py-1.5 text-gray-500 hover:bg-gray-50"
+                                                                class="fdrop-opt muted"
                                                             >
                                                                 <input
                                                                     type="checkbox"
@@ -657,34 +1340,27 @@
                                                                     :indeterminate.prop="someVisibleSelected(col.key) && !allVisibleSelected(col.key)"
                                                                     @change="toggleSelectAll(col.key)"
                                                                     @click.stop
-                                                                    class="rounded border-gray-300 text-blue-600"
                                                                 />
                                                                 <span
-                                                                    class="text-xs"
                                                                     >Select
                                                                     all</span
                                                                 >
                                                             </label>
                                                         </div>
-
-                                                        <div
-                                                            class="max-h-64 overflow-y-auto p-2"
-                                                        >
+                                                        <div class="fdrop-list">
                                                             <template
                                                                 x-for="val in filteredUniqueValues(col.key)"
                                                                 :key="String(val)"
                                                             >
                                                                 <label
-                                                                    class="flex cursor-pointer items-center gap-2 rounded px-2 py-1.5 text-gray-700 hover:bg-gray-50"
+                                                                    class="fdrop-opt"
                                                                 >
                                                                     <input
                                                                         type="checkbox"
                                                                         :checked="isFilterActive(col.key, val)"
                                                                         @change="toggleFilter(col.key, val)"
-                                                                        class="rounded border-gray-300 text-blue-600"
                                                                     />
                                                                     <span
-                                                                        class="text-sm"
                                                                         x-text="col.cc_seal ? (val === '' ? 'None' : ccSealShort(val)) : val"
                                                                     ></span>
                                                                 </label>
@@ -700,19 +1376,19 @@
                         </tr>
                     </thead>
 
-                    <tbody class="divide-y divide-gray-100 bg-white">
+                    <tbody>
                         <template x-for="car in filteredCars" :key="car.name">
-                            <tr class="transition-colors hover:bg-gray-50">
+                            <tr>
                                 <template x-for="col in columns" :key="col.key">
                                     <td
-                                        :class="col.key === 'package' ? 'px-1.5 py-1 sm:px-2 sm:py-1.5 break-words max-w-32' : 'px-1.5 py-1 sm:px-2 sm:py-1.5 whitespace-nowrap'"
+                                        :class="col.key === 'package' ? 'td-pkg' : ''"
                                     >
                                         <!-- support_type badge -->
                                         <template
                                             x-if="col.key === 'support_type'"
                                         >
                                             <span
-                                                class="rounded-full px-2 py-0.5 text-xs font-medium"
+                                                class="badge"
                                                 :class="supportTypeClass(car.support_type)"
                                                 x-text="car.support_type"
                                             ></span>
@@ -720,13 +1396,13 @@
 
                                         <!-- forks badges -->
                                         <template x-if="col.forks">
-                                            <span class="flex flex-wrap gap-1">
+                                            <span class="forks">
                                                 <template
                                                     x-for="fork in car.forks"
                                                     :key="fork"
                                                 >
                                                     <span
-                                                        class="rounded-full px-2 py-0.5 text-xs font-medium"
+                                                        class="badge"
                                                         :class="forkClass(fork)"
                                                         x-text="fork"
                                                     ></span>
@@ -734,7 +1410,7 @@
                                             </span>
                                         </template>
 
-                                        <!-- years array -->
+                                        <!-- years -->
                                         <template x-if="col.key === 'years'">
                                             <span
                                                 x-text="car._yearsFormatted"
@@ -746,19 +1422,19 @@
                                             x-if="col.key !== 'support_type' && col.key !== 'years' && typeof car[col.key] === 'boolean'"
                                         >
                                             <span
-                                                :class="car[col.key] ? 'text-green-600 font-medium' : 'text-red-500'"
+                                                :class="car[col.key] ? 'v-t' : 'v-f'"
                                                 x-text="car[col.key] ? '✓' : '✗'"
                                             ></span>
                                         </template>
 
                                         <!-- null -->
                                         <template
-                                            x-if="col.key !== 'support_type' && col.key !== 'years'&& col.key !== 'cc_seal' && car[col.key] === null"
+                                            x-if="col.key !== 'support_type' && col.key !== 'years' && col.key !== 'cc_seal' && car[col.key] === null"
                                         >
-                                            <span class="text-gray-300">—</span>
+                                            <span class="v-nil">—</span>
                                         </template>
 
-                                        <!-- speed (m/s converted to selected unit) -->
+                                        <!-- speed -->
                                         <template
                                             x-if="col.speed && car[col.key] !== null && typeof car[col.key] !== 'boolean'"
                                         >
@@ -774,7 +1450,7 @@
                                                     x-if="car._ariScore !== null"
                                                 >
                                                     <span
-                                                        class="relative"
+                                                        class="ari-wrap"
                                                         x-data="{ ariOpen: false, ariStyle: '' }"
                                                         @mouseenter="const rect = $el.getBoundingClientRect(); const right = window.innerWidth - rect.right; ariStyle = `position:fixed;z-index:9999;bottom:${window.innerHeight - rect.top + 6}px;right:${right}px`; ariOpen = true; $nextTick(() => { if ($refs.ariPopup.getBoundingClientRect().top < 0) ariStyle = `position:fixed;z-index:9999;top:${rect.bottom + 6}px;right:${right}px` })"
                                                         @mouseleave="ariOpen = false"
@@ -783,13 +1459,13 @@
                                                             :href="car._ariLink"
                                                             target="_blank"
                                                             rel="noopener"
-                                                            class="text-xs font-medium hover:underline tabular-nums"
+                                                            class="ari-link tabnum"
                                                         >
                                                             <template
                                                                 x-if="car._ariScore.min === car._ariScore.max"
                                                             >
                                                                 <span
-                                                                    :style="`color: ${car._ariColorMin}`"
+                                                                    :style="`color:${car._ariColorMin}`"
                                                                     x-text="car._ariScore.min"
                                                                 ></span>
                                                             </template>
@@ -798,21 +1474,20 @@
                                                             >
                                                                 <span>
                                                                     <span
-                                                                        :style="`color: ${car._ariColorMin}`"
+                                                                        :style="`color:${car._ariColorMin}`"
                                                                         x-text="car._ariScore.min"
                                                                     ></span>
                                                                     <span
-                                                                        class="text-gray-400"
+                                                                        class="v-nil"
                                                                         >–</span
                                                                     >
                                                                     <span
-                                                                        :style="`color: ${car._ariColorMax}`"
+                                                                        :style="`color:${car._ariColorMax}`"
                                                                         x-text="car._ariScore.max"
                                                                     ></span>
                                                                 </span>
                                                             </template>
                                                         </a>
-
                                                         <template
                                                             x-teleport="body"
                                                         >
@@ -820,7 +1495,7 @@
                                                                 x-show="ariOpen"
                                                                 x-cloak
                                                                 x-ref="ariPopup"
-                                                                class="whitespace-nowrap rounded-lg border border-gray-200 bg-white py-1.5 shadow-lg text-xs"
+                                                                class="popup"
                                                                 :style="ariStyle"
                                                             >
                                                                 <template
@@ -828,18 +1503,18 @@
                                                                     :key="row.year"
                                                                 >
                                                                     <div
-                                                                        class="flex items-baseline gap-1.5 px-3 py-0.5"
+                                                                        class="popup-row"
                                                                     >
                                                                         <span
-                                                                            class="w-9 shrink-0 font-medium text-gray-700"
+                                                                            class="pop-yr"
                                                                             x-text="row.year"
                                                                         ></span>
                                                                         <a
                                                                             :href="row.url"
                                                                             target="_blank"
                                                                             rel="noopener"
-                                                                            class="tabular-nums font-medium hover:underline"
-                                                                            :style="`color: ${row.color}`"
+                                                                            class="ari-link tabnum"
+                                                                            :style="`color:${row.color}`"
                                                                             x-text="row.score"
                                                                         ></a>
                                                                     </div>
@@ -851,9 +1526,7 @@
                                                 <template
                                                     x-if="car._ariScore === null"
                                                 >
-                                                    <span class="text-gray-300"
-                                                        >—</span
-                                                    >
+                                                    <span class="v-nil">—</span>
                                                 </template>
                                             </span>
                                         </template>
@@ -864,7 +1537,7 @@
                                                 :href="car._ebayUrl"
                                                 target="_blank"
                                                 rel="noopener"
-                                                class="text-blue-600 hover:underline text-xs"
+                                                class="srch-link"
                                                 >Search</a
                                             >
                                         </template>
@@ -873,7 +1546,7 @@
                                         <template x-if="col.cc_seal">
                                             <span>
                                                 <span
-                                                    class="relative flex flex-col gap-0.5"
+                                                    class="cc-col"
                                                     x-data="{ ccOpen: false, ccStyle: '' }"
                                                     @mouseenter="const rect = $el.getBoundingClientRect(); const right = window.innerWidth - rect.right; ccStyle = `position:fixed;z-index:9999;bottom:${window.innerHeight - rect.top + 6}px;right:${right}px`; ccOpen = true; $nextTick(() => { if ($refs.ccPopup.getBoundingClientRect().top < 0) ccStyle = `position:fixed;z-index:9999;top:${rect.bottom + 6}px;right:${right}px` })"
                                                     @mouseleave="ccOpen = false"
@@ -889,26 +1562,25 @@
                                                                 :href="s.url"
                                                                 target="_blank"
                                                                 rel="noopener"
-                                                                class="text-xs font-medium hover:underline"
+                                                                class="seal-link"
                                                                 :class="s.cssClass"
                                                             >
                                                                 <span
                                                                     x-text="s.short"
-                                                                ></span>
-                                                                <span
-                                                                    class="text-gray-400 font-normal"
+                                                                ></span
+                                                                ><span
+                                                                    class="v-nil"
                                                                     x-text="' (' + s.years + ')'"
                                                                 ></span>
                                                             </a>
                                                         </template>
                                                     </template>
-
                                                     <template x-teleport="body">
                                                         <div
                                                             x-show="ccOpen"
                                                             x-cloak
                                                             x-ref="ccPopup"
-                                                            class="whitespace-nowrap rounded-lg border border-gray-200 bg-white py-1.5 shadow-lg text-xs"
+                                                            class="popup"
                                                             :style="ccStyle"
                                                         >
                                                             <template
@@ -916,27 +1588,27 @@
                                                                 :key="row.key"
                                                             >
                                                                 <div
-                                                                    class="flex items-baseline gap-1.5 px-3 py-0.5"
+                                                                    class="popup-row"
                                                                 >
                                                                     <span
-                                                                        class="shrink-0 font-medium text-gray-700"
+                                                                        class="pop-yr"
                                                                         x-text="row.rawModel ? row.year + ' (' + row.rawModel + ')' : row.year"
                                                                     ></span>
                                                                     <span
-                                                                        class="tabular-nums text-red-500"
+                                                                        class="pop-cmp tabnum"
                                                                         x-text="row.complaints + ' complaints'"
                                                                     ></span>
                                                                     <span
-                                                                        class="tabular-nums text-amber-500"
+                                                                        class="pop-rcl tabnum"
                                                                         x-text="row.recalls + ' recalls'"
                                                                     ></span>
                                                                     <span
-                                                                        class="tabular-nums text-blue-500"
+                                                                        class="pop-tsb tabnum"
                                                                         x-text="row.tsbs + ' TSBs'"
                                                                     ></span>
                                                                     <span
                                                                         x-show="row.seal"
-                                                                        class="ml-auto font-medium"
+                                                                        class="pop-seal"
                                                                         :class="row.sealClass"
                                                                         x-text="' - ' + row.sealShort"
                                                                     ></span>
@@ -951,13 +1623,11 @@
                                                             :href="car._ccUrl"
                                                             target="_blank"
                                                             rel="noopener"
-                                                            class="text-xs text-gray-500 hover:underline"
-                                                        >
-                                                            <span
-                                                                class="text-gray-400"
+                                                            class="srch-link"
+                                                            ><span class="v-nil"
                                                                 >—</span
-                                                            >
-                                                        </a>
+                                                            ></a
+                                                        >
                                                     </template>
                                                 </span>
                                             </span>
@@ -973,16 +1643,14 @@
                                                         :href="carGurusCache[car._carGurusKey].url"
                                                         target="_blank"
                                                         rel="noopener"
-                                                        class="text-blue-600 hover:underline text-xs"
+                                                        class="srch-link"
                                                         >Search</a
                                                     >
                                                 </template>
                                                 <template
                                                     x-if="!carGurusCache[car._carGurusKey]?.url"
                                                 >
-                                                    <span class="text-gray-300"
-                                                        >—</span
-                                                    >
+                                                    <span class="v-nil">—</span>
                                                 </template>
                                             </span>
                                         </template>
@@ -1008,11 +1676,11 @@
                         </template>
 
                         <!-- Empty state -->
-                        <tr x-show="filteredCars.length === 0">
-                            <td
-                                :colspan="columns.length"
-                                class="px-2 py-12 text-center text-gray-400"
-                            >
+                        <tr
+                            class="empty-row"
+                            x-show="filteredCars.length === 0"
+                        >
+                            <td :colspan="columns.length">
                                 No cars match the current filters.
                             </td>
                         </tr>
@@ -1031,7 +1699,9 @@
         <script type="application/json" id="cc-cache">{{ cc_cache_json }}</script>
         <!-- prettier-ignore -->
         <script type="application/json" id="model-mappings">{{ model_mappings_json }}</script>
-        <script type="application/json" id="filter-index">{{ filter_index_json }}</script>
+        <script type="application/json" id="filter-index">
+            {{ filter_index_json }}
+        </script>
         <script>
             function carTable() {
                 const filterableCols = [
@@ -1051,7 +1721,6 @@
                     "min_enable_speed",
                 ];
 
-                // Cache parsed JSON to avoid reparsing on each call
                 const ccCache = JSON.parse(
                     document.getElementById("cc-cache").textContent,
                 );
@@ -1221,11 +1890,7 @@
                             label: "Torque",
                             mobileLabel: "Torq.",
                         },
-                        {
-                            key: "harness",
-                            label: "Harness",
-                            mobileLabel: "Harness",
-                        },
+                        { key: "harness", label: "Harness" },
                         {
                             key: "min_steer_speed",
                             label: "Min Steer",
@@ -1259,49 +1924,63 @@
                     })),
 
                     get filteredCars() {
-                        const activeFilters = Object.entries(this.filters).filter(
-                            ([, v]) => v.length > 0
-                        );
-                        const activeSpeedFilters = Object.entries(this.speedFilters).filter(
-                            ([, r]) => r.min !== null || r.max !== null
-                        );
+                        const activeFilters = Object.entries(
+                            this.filters,
+                        ).filter(([, v]) => v.length > 0);
+                        const activeSpeedFilters = Object.entries(
+                            this.speedFilters,
+                        ).filter(([, r]) => r.min !== null || r.max !== null);
                         const ariFilterActive =
-                            this.ariFilter.min !== null || this.ariFilter.max !== null;
+                            this.ariFilter.min !== null ||
+                            this.ariFilter.max !== null;
 
-                        // Use inverted index: union selected values per column, intersect across columns
-                        let candidates = null; // null = all cars
+                        let candidates = null;
                         for (const [key, selected] of activeFilters) {
                             const idx = this._invertedIndex[key] ?? {};
                             const matching = new Set();
                             for (const val of selected) {
-                                for (const car of (idx[String(val)] ?? [])) matching.add(car);
+                                for (const car of idx[String(val)] ?? [])
+                                    matching.add(car);
                             }
                             if (candidates === null) {
                                 candidates = matching;
                             } else {
                                 for (const car of candidates) {
-                                    if (!matching.has(car)) candidates.delete(car);
+                                    if (!matching.has(car))
+                                        candidates.delete(car);
                                 }
                             }
                         }
 
-                        let result = candidates !== null ? [...candidates] : [...this.cars];
+                        let result =
+                            candidates !== null
+                                ? [...candidates]
+                                : [...this.cars];
 
-                        // Range filters applied only to surviving candidates
                         if (activeSpeedFilters.length > 0 || ariFilterActive) {
                             result = result.filter((car) => {
                                 for (const [key, range] of activeSpeedFilters) {
                                     const val = car[key];
                                     if (val === null) return false;
-                                    if (range.min !== null && val < range.min) return false;
-                                    if (range.max !== null && val > range.max) return false;
+                                    if (range.min !== null && val < range.min)
+                                        return false;
+                                    if (range.max !== null && val > range.max)
+                                        return false;
                                 }
                                 if (ariFilterActive) {
                                     const s = car._ariScore;
                                     if (s === null) return false;
                                     const avg = (s.min + s.max) / 2;
-                                    if (this.ariFilter.min !== null && avg < this.ariFilter.min) return false;
-                                    if (this.ariFilter.max !== null && avg > this.ariFilter.max) return false;
+                                    if (
+                                        this.ariFilter.min !== null &&
+                                        avg < this.ariFilter.min
+                                    )
+                                        return false;
+                                    if (
+                                        this.ariFilter.max !== null &&
+                                        avg > this.ariFilter.max
+                                    )
+                                        return false;
                                 }
                                 return true;
                             });
@@ -1318,16 +1997,26 @@
                             result = [...result].sort((a, b) => {
                                 let av, bv;
                                 if (this.sortCol === "ari") {
-                                    const sa = a._ariScore, sb = b._ariScore;
-                                    av = sa !== null ? (sa.min + sa.max) / 2 : 0;
-                                    bv = sb !== null ? (sb.min + sb.max) / 2 : 0;
+                                    const sa = a._ariScore,
+                                        sb = b._ariScore;
+                                    av =
+                                        sa !== null ? (sa.min + sa.max) / 2 : 0;
+                                    bv =
+                                        sb !== null ? (sb.min + sb.max) / 2 : 0;
                                 } else if (this.sortCol === "cc_seal") {
                                     const rank = (seals) =>
                                         seals?.length
-                                            ? Math.min(...seals.map((s) => {
-                                                const i = ccSealOrder.indexOf(s.seal);
-                                                return i === -1 ? ccSealOrder.length : i;
-                                            }))
+                                            ? Math.min(
+                                                  ...seals.map((s) => {
+                                                      const i =
+                                                          ccSealOrder.indexOf(
+                                                              s.seal,
+                                                          );
+                                                      return i === -1
+                                                          ? ccSealOrder.length
+                                                          : i;
+                                                  }),
+                                              )
                                             : ccSealOrder.length + 1;
                                     av = rank(a.cc_seal);
                                     bv = rank(b.cc_seal);
@@ -1340,7 +2029,8 @@
                                 if (av === null && bv === null) return 0;
                                 if (av === null) return dir;
                                 if (bv === null) return -dir;
-                                if (typeof av === "string") return av.localeCompare(bv) * dir;
+                                if (typeof av === "string")
+                                    return av.localeCompare(bv) * dir;
                                 return (av < bv ? -1 : av > bv ? 1 : 0) * dir;
                             });
                         }
@@ -1489,8 +2179,9 @@
 
                     filterDropdownClass(el) {
                         const rect = el.getBoundingClientRect();
-                        const spaceRight = window.innerWidth - rect.left;
-                        return spaceRight < 220 ? "right-0" : "left-0";
+                        return window.innerWidth - rect.left < 220
+                            ? "right"
+                            : "";
                     },
 
                     isFilterActive(colKey, val) {
@@ -1542,18 +2233,16 @@
                     },
 
                     clearAllFilters() {
-                        for (const key of Object.keys(this.filters)) {
+                        for (const key of Object.keys(this.filters))
                             this.filters[key] = [];
-                        }
-                        for (const key of Object.keys(this.speedFilters)) {
+                        for (const key of Object.keys(this.speedFilters))
                             this.speedFilters[key] = { min: null, max: null };
-                        }
                         this.ariFilter = { min: null, max: null };
                     },
 
                     get activePresetKeys() {
-                        const filterKeys = new Set();
-                        const speedKeys = new Set();
+                        const filterKeys = new Set(),
+                            speedKeys = new Set();
                         for (const preset of this.presets) {
                             if (!this.isPresetActive(preset)) continue;
                             for (const key of Object.keys(preset.filters))
@@ -1573,9 +2262,8 @@
                             this.filters,
                         )) {
                             if (filterKeys.has(key)) continue;
-                            for (const val of selected) {
+                            for (const val of selected)
                                 result.push({ key, val });
-                            }
                         }
                         return result;
                     },
@@ -1676,43 +2364,40 @@
                     applyPreset(preset) {
                         if (this.isPresetActive(preset)) {
                             this.clearAllFilters();
-                        } else {
-                            this.clearAllFilters();
-                            for (const [key, vals] of Object.entries(
-                                preset.filters,
-                            )) {
-                                const excluded = vals
-                                    .filter((v) => String(v).startsWith("!"))
-                                    .map((v) => String(v).slice(1));
-                                const prefixed = vals
-                                    .filter((v) => String(v).startsWith("^"))
-                                    .map((v) => String(v).slice(1));
-                                if (excluded.length > 0) {
-                                    this.filters[key] = this.allUniqueValues(
-                                        key,
-                                    ).filter(
-                                        (v) => !excluded.includes(String(v)),
-                                    );
-                                } else if (prefixed.length > 0) {
-                                    this.filters[key] = this.allUniqueValues(
-                                        key,
-                                    ).filter((v) =>
-                                        prefixed.some((p) =>
-                                            String(v).startsWith(p),
-                                        ),
-                                    );
-                                } else {
-                                    this.filters[key] = [...vals];
-                                }
+                            return;
+                        }
+                        this.clearAllFilters();
+                        for (const [key, vals] of Object.entries(
+                            preset.filters,
+                        )) {
+                            const excluded = vals
+                                .filter((v) => String(v).startsWith("!"))
+                                .map((v) => String(v).slice(1));
+                            const prefixed = vals
+                                .filter((v) => String(v).startsWith("^"))
+                                .map((v) => String(v).slice(1));
+                            if (excluded.length > 0) {
+                                this.filters[key] = this.allUniqueValues(
+                                    key,
+                                ).filter((v) => !excluded.includes(String(v)));
+                            } else if (prefixed.length > 0) {
+                                this.filters[key] = this.allUniqueValues(
+                                    key,
+                                ).filter((v) =>
+                                    prefixed.some((p) =>
+                                        String(v).startsWith(p),
+                                    ),
+                                );
+                            } else {
+                                this.filters[key] = [...vals];
                             }
-                            if (preset.speedFilters) {
-                                for (const [key, range] of Object.entries(
-                                    preset.speedFilters,
-                                )) {
-                                    this.speedFilters[key] =
-                                        this.resolveSpeedFilter(key, range);
-                                }
-                            }
+                        }
+                        if (preset.speedFilters) {
+                            for (const [key, range] of Object.entries(
+                                preset.speedFilters,
+                            ))
+                                this.speedFilters[key] =
+                                    this.resolveSpeedFilter(key, range);
                         }
                     },
 
@@ -1782,19 +2467,16 @@
                             key
                         );
                     },
-
                     colLabel(col) {
                         return this.isMobile && col.mobileLabel
                             ? col.mobileLabel
                             : col.label;
                     },
-
                     convertFromMs(mps) {
                         return this.speedUnit === "km/h"
                             ? mps * 3.6
                             : mps * 2.23694;
                     },
-
                     convertToMs(val) {
                         return this.speedUnit === "km/h"
                             ? val / 3.6
@@ -1842,8 +2524,7 @@
 
                     formatSpeed(mps) {
                         if (mps === null || mps === undefined) return "—";
-                        const converted = this.convertFromMs(mps);
-                        return `${converted.toFixed(1)} ${this.speedUnit}`;
+                        return `${this.convertFromMs(mps).toFixed(1)} ${this.speedUnit}`;
                     },
 
                     formatYears(years) {
@@ -1940,11 +2621,11 @@
                     ccSealClass(seal) {
                         return (
                             {
-                                "Seal of Awesome": "text-green-600",
-                                "Seal of Pretty Good": "text-lime-600",
-                                "Beware of the Clunker": "text-orange-500",
-                                "Avoid Like The Plague": "text-red-600",
-                            }[seal] ?? "text-gray-500"
+                                "Seal of Awesome": "seal-best",
+                                "Seal of Pretty Good": "seal-good",
+                                "Beware of the Clunker": "seal-bad",
+                                "Avoid Like The Plague": "seal-worst",
+                            }[seal] ?? "seal-none"
                         );
                     },
 
@@ -1970,9 +2651,10 @@
                             )
                             .filter((s) => s != null);
                         if (scores.length === 0) return null;
-                        const min = Math.min(...scores),
-                            max = Math.max(...scores);
-                        return { min, max };
+                        return {
+                            min: Math.min(...scores),
+                            max: Math.max(...scores),
+                        };
                     },
 
                     ariLink(car) {
@@ -2064,17 +2746,18 @@
                             car._ariYearRows = this.ariYearRows(car);
                             car._ebayUrl = this.ebayUrl(car);
 
-                            // Precompute ARI colors
                             if (car._ariScore !== null) {
-                                car._ariColorMin = this.ariColor(car._ariScore.min);
-                                car._ariColorMax = this.ariColor(car._ariScore.max);
+                                car._ariColorMin = this.ariColor(
+                                    car._ariScore.min,
+                                );
+                                car._ariColorMax = this.ariColor(
+                                    car._ariScore.max,
+                                );
                             }
-                            for (const row of car._ariYearRows) {
+                            for (const row of car._ariYearRows)
                                 row.color = this.ariColor(row.score);
-                            }
 
-                            // Precompute CC seal display values
-                            car._ccUrl = this.ccSealUrl(car, '');
+                            car._ccUrl = this.ccSealUrl(car, "");
                             if (car.cc_seal) {
                                 for (const s of car.cc_seal) {
                                     s.url = this.ccSealUrl(car, s.seal);
@@ -2087,35 +2770,32 @@
                                 row.sealShort = this.ccSealShort(row.seal);
                             }
 
-                            // Precompute static display strings
                             car._yearsFormatted = this.formatYears(car.years);
                             car._modelHtml = car.model.replace(
                                 /(\s*\([^)]*\))/g,
-                                '<span class=\'text-[0.8em] text-gray-400\'>$1</span>'
+                                '<span class="mp">$1</span>',
                             );
-
                         }
 
-                        // Convert precomputed filter index (indices → car refs)
                         const rawIdx = JSON.parse(
-                            document.getElementById("filter-index").textContent
+                            document.getElementById("filter-index").textContent,
                         );
                         for (const [key, vals] of Object.entries(rawIdx)) {
                             const built = {};
                             for (const [val, indices] of Object.entries(vals)) {
-                                built[val] = new Set(indices.map(i => this.cars[i]));
+                                built[val] = new Set(
+                                    indices.map((i) => this.cars[i]),
+                                );
                             }
                             this._invertedIndex[key] = built;
                         }
 
-                        for (const key of Object.keys(this.filters)) {
+                        for (const key of Object.keys(this.filters))
                             this._allUniqueValuesCache[key] =
                                 this._computeAllUniqueValues(key);
-                        }
-                        for (const key of Object.keys(this.speedFilters)) {
+                        for (const key of Object.keys(this.speedFilters))
                             this._speedRangeCache[key] =
                                 this._computeSpeedRange(key);
-                        }
                     },
 
                     openAllEbayLinks() {
@@ -2125,9 +2805,8 @@
                             !confirm(`Open ${cars.length} eBay links?`)
                         )
                             return;
-                        for (const car of cars) {
+                        for (const car of cars)
                             window.open(car._ebayUrl, "_blank", "noopener");
-                        }
                     },
 
                     openAllCarGurusLinks() {
@@ -2140,13 +2819,12 @@
                             !confirm(`Open ${cars.length} CarGurus links?`)
                         )
                             return;
-                        for (const car of cars) {
+                        for (const car of cars)
                             window.open(
                                 this.carGurusCache[car._carGurusKey].url,
                                 "_blank",
                                 "noopener",
                             );
-                        }
                     },
 
                     ebayUrl(car) {
@@ -2173,21 +2851,21 @@
                     supportTypeClass(supportType) {
                         return (
                             {
-                                Upstream: "bg-green-100 text-green-800",
-                                "Under review": "bg-yellow-100 text-yellow-800",
-                                Community: "bg-blue-100 text-blue-800",
-                                Custom: "bg-purple-100 text-purple-800",
-                                "Dashcam mode": "bg-orange-100 text-orange-800",
-                                "Not compatible": "bg-red-100 text-red-800",
-                            }[supportType] ?? "bg-gray-100 text-gray-800"
+                                Upstream: "badge-g",
+                                "Under review": "badge-y",
+                                Community: "badge-b",
+                                Custom: "badge-p",
+                                "Dashcam mode": "badge-o",
+                                "Not compatible": "badge-r",
+                            }[supportType] ?? "badge-d"
                         );
                     },
+
                     forkClass(fork) {
                         return (
-                            {
-                                openpilot: "bg-green-100 text-green-800",
-                                sunnypilot: "bg-sky-100 text-sky-800",
-                            }[fork] ?? "bg-gray-100 text-gray-800"
+                            { openpilot: "badge-fg", sunnypilot: "badge-fb" }[
+                                fork
+                            ] ?? "badge-d"
                         );
                     },
                 };
