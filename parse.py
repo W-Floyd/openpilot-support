@@ -8,6 +8,8 @@ import math
 import os
 import subprocess
 import sys
+import threading
+import time
 import unicodedata
 import urllib.parse
 import urllib.request
@@ -1217,6 +1219,11 @@ def main():
         action="store_true",
         help="Re-fetch all cached entries whose stored value is null (implies --retry-nulls-cg/ari/cc).",
     )
+    parser.add_argument(
+        "--watch",
+        action="store_true",
+        help="Watch template.html for changes and regenerate HTML automatically.",
+    )
     args = parser.parse_args()
     if args.retry_nulls_all:
         args.retry_nulls_cg = args.retry_nulls_ari = args.retry_nulls_cc = True
@@ -1293,7 +1300,7 @@ def main():
             json.dump(cars, f, indent=2)
         print(f"Written to {args.json_out}", file=sys.stderr)
 
-    if args.html_out:
+    def _write_html():
         os.makedirs(os.path.dirname(os.path.abspath(args.html_out)), exist_ok=True)
         with open(args.html_out, "w") as f:
             f.write(
@@ -1307,6 +1314,9 @@ def main():
                 )
             )
         print(f"Written to {args.html_out}", file=sys.stderr)
+
+    if args.html_out:
+        _write_html()
 
         # Save favicon as a separate file next to the HTML
         favicon_svg = generate_favicon_svg()
@@ -1325,14 +1335,39 @@ def main():
 
         serve_dir = os.path.dirname(os.path.abspath(args.html_out))
         os.chdir(serve_dir)
-        with http.server.HTTPServer(
-            ("", args.port), http.server.SimpleHTTPRequestHandler
-        ) as httpd:
-            print(f"Serving at http://localhost:{args.port}/", file=sys.stderr)
+        httpd = http.server.HTTPServer(("", args.port), http.server.SimpleHTTPRequestHandler)
+        print(f"Serving at http://localhost:{args.port}/", file=sys.stderr)
+        if args.watch:
+            t = threading.Thread(target=httpd.serve_forever, daemon=True)
+            t.start()
+        else:
             try:
                 httpd.serve_forever()
             except KeyboardInterrupt:
                 print("\nStopped.", file=sys.stderr)
+            return
+
+    if args.watch:
+        if not args.html_out:
+            print("Error: --watch requires --html-out", file=sys.stderr)
+            sys.exit(1)
+
+        template_path = os.path.join(HERE, "template.html")
+        last_mtime = os.path.getmtime(template_path)
+        print(f"Watching {template_path} for changes...", file=sys.stderr)
+        try:
+            while True:
+                time.sleep(0.5)
+                mtime = os.path.getmtime(template_path)
+                if mtime != last_mtime:
+                    last_mtime = mtime
+                    print("template.html changed, regenerating...", file=sys.stderr)
+                    try:
+                        _write_html()
+                    except Exception as e:
+                        print(f"Error: {e}", file=sys.stderr)
+        except KeyboardInterrupt:
+            print("\nStopped.", file=sys.stderr)
 
 
 if __name__ == "__main__":
