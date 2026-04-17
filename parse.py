@@ -255,6 +255,46 @@ def _setup_old_layout_stubs() -> None:
     # Events system — only used in CarInterface.update(), not get_all_car_docs()
     _stub("openpilot.selfdrive.controls.lib.events", Events=_Noop)
 
+    # requests: pulled in by panda/python/flash_release.py at import time in some forks
+    _stub("requests")
+
+    # panda: hardware driver, only needed for live USB comms with panda device
+    # Panda.FLAG_* and uds.SERVICE_TYPE.* are integer class attributes — need a
+    # metaclass so that ClassName.ANYTHING returns 0 without explicit definitions.
+    class _IntNoop(int):
+        def __new__(cls, *a, **kw):
+            return super().__new__(cls, 0)
+
+        def __getattr__(self, name):
+            return _IntNoop()
+
+        def __call__(self, *a, **kw):
+            return _IntNoop()
+
+    class _IntMeta(type):
+        def __getattr__(cls, name):
+            return 0
+
+    class _PandaStub(metaclass=_IntMeta):
+        def __init__(self, *a, **kw):
+            pass
+
+        def __call__(self, *a, **kw):
+            return self
+
+    _stub("panda", Panda=_PandaStub, PandaWifiStreaming=_Noop, PandaDFU=_Noop)
+    _stub("panda.python", Panda=_PandaStub, PandaWifiStreaming=_Noop, PandaDFU=_Noop,
+          flash_release=_Noop, BASEDIR="", ensure_st_up_to_date=_Noop,
+          build_st=_Noop, PandaSerial=_Noop, ESPROM=_Noop, CesantaFlasher=_Noop)
+    class _IntAttrs:
+        """Stub for panda uds enum types: any attribute access returns plain int 0."""
+
+        def __getattr__(self, name):
+            return 0
+
+    uds_mod = _stub("panda.python.uds")
+    uds_mod.__getattr__ = lambda name: _IntAttrs()
+
 
 def car_docs_to_dict_old(car_docs) -> dict:
     """Convert old-style (selfdrive/car) CarDocs to our standard dict format."""
