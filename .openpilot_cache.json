@@ -18589,6 +18589,34 @@
   "OPGM": [
     {
       "make": "Acura",
+      "model": "ADX",
+      "years": [
+        2025,
+        2026
+      ],
+      "name": "Acura ADX 2025-26",
+      "package": "All",
+      "support_type": "Community",
+      "support_link": "#community",
+      "merged": false,
+      "min_steer_speed": 0.0,
+      "min_enable_speed": -1.0,
+      "auto_resume": true,
+      "good_steering_torque": true,
+      "openpilot_longitudinal": "Stock",
+      "video": null,
+      "setup_video": null,
+      "detail_sentence": "openpilot upgrades your <strong>Acura ADX</strong> with automated lane centering <strong>at all speeds</strong>, and adaptive cruise control <strong>that automatically resumes from a stop</strong>.",
+      "harness": null,
+      "extra_cars_columns": {
+        "make": "Acura",
+        "model": "ADX 2025-26",
+        "package": "All",
+        "support": "[Community](#community)"
+      }
+    },
+    {
+      "make": "Acura",
       "model": "ILX",
       "years": [
         2016,
@@ -18734,9 +18762,39 @@
       "make": "Acura",
       "model": "MDX",
       "years": [
-        2025
+        2022,
+        2023,
+        2024
       ],
-      "name": "Acura MDX 2025",
+      "name": "Acura MDX 2022-24",
+      "package": "All",
+      "support_type": "Upstream",
+      "support_link": "#upstream",
+      "merged": true,
+      "min_steer_speed": 19.444444444444446,
+      "min_enable_speed": -1.0,
+      "auto_resume": true,
+      "good_steering_torque": true,
+      "openpilot_longitudinal": "openpilot available",
+      "video": null,
+      "setup_video": null,
+      "detail_sentence": "openpilot upgrades your <strong>Acura MDX</strong> with automated lane centering <strong>above 43 mph</strong>, and adaptive cruise control <strong>that automatically resumes from a stop</strong>.",
+      "harness": "Honda Bosch A",
+      "extra_cars_columns": {
+        "make": "Acura",
+        "model": "MDX 2022-24",
+        "package": "All",
+        "support": "[Upstream](#upstream)"
+      }
+    },
+    {
+      "make": "Acura",
+      "model": "MDX",
+      "years": [
+        2025,
+        2026
+      ],
+      "name": "Acura MDX 2025-26",
       "package": "All except Type S",
       "support_type": "Upstream",
       "support_link": "#upstream",
@@ -18745,16 +18803,46 @@
       "min_enable_speed": -1.0,
       "auto_resume": true,
       "good_steering_torque": true,
-      "openpilot_longitudinal": "openpilot",
+      "openpilot_longitudinal": "Stock",
       "video": null,
       "setup_video": null,
-      "detail_sentence": "openpilot upgrades your <strong>Acura MDX</strong> with automated lane centering <strong>at all speeds</strong>, and adaptive cruise control <strong>that automatically resumes from a stop</strong>. Traffic light and stop sign handling is also available in <a href='https://blog.comma.ai/090release/#experimental-mode' target='_blank' class='highlight'>Experimental mode</a>.",
+      "detail_sentence": "openpilot upgrades your <strong>Acura MDX</strong> with automated lane centering <strong>at all speeds</strong>, and adaptive cruise control <strong>that automatically resumes from a stop</strong>.",
       "harness": "Honda Bosch C",
       "extra_cars_columns": {
         "make": "Acura",
-        "model": "MDX 2025",
+        "model": "MDX 2025-26",
         "package": "All except Type S",
         "support": "[Upstream](#upstream)"
+      }
+    },
+    {
+      "make": "Acura",
+      "model": "MDX Hybrid",
+      "years": [
+        2017,
+        2018,
+        2019,
+        2020
+      ],
+      "name": "Acura MDX Hybrid 2017-20",
+      "package": "All",
+      "support_type": "Community",
+      "support_link": "#community",
+      "merged": false,
+      "min_steer_speed": 0.0,
+      "min_enable_speed": -1.0,
+      "auto_resume": true,
+      "good_steering_torque": true,
+      "openpilot_longitudinal": "Stock",
+      "video": null,
+      "setup_video": null,
+      "detail_sentence": "openpilot upgrades your <strong>Acura MDX Hybrid</strong> with automated lane centering <strong>at all speeds</strong>, and adaptive cruise control <strong>that automatically resumes from a stop</strong>.",
+      "harness": null,
+      "extra_cars_columns": {
+        "make": "Acura",
+        "model": "MDX Hybrid 2017-20",
+        "package": "All",
+        "support": "[Community](#community)"
       }
     },
     {
@@ -18821,10 +18909,36 @@
       "years": [
         2022,
         2023,
-        2024,
+        2024
+      ],
+      "name": "Acura RDX 2022-24",
+      "package": "All",
+      "support_type": "Dashcam mode",
+      "support_link": "#dashcam",
+      "merged": true,
+      "min_steer_speed": 19.444444444444446,
+      "min_enable_speed": -1.0,
+      "auto_resume": true,
+      "good_steering_torque": true,
+      "openpilot_longitudinal": "openpilot available",
+      "video": null,
+      "setup_video": null,
+      "detail_sentence": "openpilot upgrades your <strong>Acura RDX</strong> with automated lane centering <strong>above 43 mph</strong>, and adaptive cruise control <strong>that automatically resumes from a stop</strong>.",
+      "harness": "Honda Bosch A",
+      "extra_cars_columns": {
+        "make": "Acura",
+        "model": "RDX 2022-24",
+        "package": "All",
+        "support": "[Dashcam mode](#dashcam)"
+      }
+    },
+    {
+      "make": "Acura",
+      "model": "RDX",
+      "years": [
         2025
       ],
-      "name": "Acura RDX 2022-25",
+      "name": "Acura RDX 2025",
       "package": "All",
       "support_type": "Community",
       "support_link": "#community",
@@ -18840,7 +18954,7 @@
       "harness": null,
       "extra_cars_columns": {
         "make": "Acura",
-        "model": "RDX 2022-25",
+        "model": "RDX 2025",
         "package": "All",
         "support": "[Community](#community)"
       }
@@ -18928,6 +19042,88 @@
         "model": "TLX 2018-20",
         "package": "All",
         "support": "[Community](#community)"
+      }
+    },
+    {
+      "make": "Acura",
+      "model": "TLX",
+      "years": [
+        2021,
+        2022
+      ],
+      "name": "Acura TLX 2021-22",
+      "package": "All",
+      "support_type": "Upstream",
+      "support_link": "#upstream",
+      "merged": true,
+      "min_steer_speed": 0.0,
+      "min_enable_speed": -1.0,
+      "auto_resume": true,
+      "good_steering_torque": true,
+      "openpilot_longitudinal": "openpilot available",
+      "video": null,
+      "setup_video": null,
+      "detail_sentence": "openpilot upgrades your <strong>Acura TLX</strong> with automated lane centering <strong>at all speeds</strong>, and adaptive cruise control <strong>that automatically resumes from a stop</strong>.",
+      "harness": "Honda Bosch A",
+      "extra_cars_columns": {
+        "make": "Acura",
+        "model": "TLX 2021-22",
+        "package": "All",
+        "support": "[Upstream](#upstream)"
+      }
+    },
+    {
+      "make": "Acura",
+      "model": "TLX",
+      "years": [
+        2023
+      ],
+      "name": "Acura TLX 2023",
+      "package": "All",
+      "support_type": "Community",
+      "support_link": "#community",
+      "merged": false,
+      "min_steer_speed": 0.0,
+      "min_enable_speed": -1.0,
+      "auto_resume": true,
+      "good_steering_torque": true,
+      "openpilot_longitudinal": "Stock",
+      "video": null,
+      "setup_video": null,
+      "detail_sentence": "openpilot upgrades your <strong>Acura TLX</strong> with automated lane centering <strong>at all speeds</strong>, and adaptive cruise control <strong>that automatically resumes from a stop</strong>.",
+      "harness": null,
+      "extra_cars_columns": {
+        "make": "Acura",
+        "model": "TLX 2023",
+        "package": "All",
+        "support": "[Community](#community)"
+      }
+    },
+    {
+      "make": "Acura",
+      "model": "TLX",
+      "years": [
+        2025
+      ],
+      "name": "Acura TLX 2025",
+      "package": "All",
+      "support_type": "Upstream",
+      "support_link": "#upstream",
+      "merged": true,
+      "min_steer_speed": 0.0,
+      "min_enable_speed": -1.0,
+      "auto_resume": true,
+      "good_steering_torque": true,
+      "openpilot_longitudinal": "Stock",
+      "video": null,
+      "setup_video": null,
+      "detail_sentence": "openpilot upgrades your <strong>Acura TLX</strong> with automated lane centering <strong>at all speeds</strong>, and adaptive cruise control <strong>that automatically resumes from a stop</strong>.",
+      "harness": "Honda Bosch C",
+      "extra_cars_columns": {
+        "make": "Acura",
+        "model": "TLX 2025",
+        "package": "All",
+        "support": "[Upstream](#upstream)"
       }
     },
     {
@@ -19150,6 +19346,37 @@
       "make": "Audi",
       "model": "Q5",
       "years": [
+        2013,
+        2014,
+        2015,
+        2016,
+        2017
+      ],
+      "name": "Audi Q5 2013-17",
+      "package": "Adaptive Cruise Control (ACC) & Lane Assist",
+      "support_type": "Dashcam mode",
+      "support_link": "#dashcam",
+      "merged": true,
+      "min_steer_speed": 0,
+      "min_enable_speed": -1.0,
+      "auto_resume": true,
+      "good_steering_torque": true,
+      "openpilot_longitudinal": "openpilot available",
+      "video": null,
+      "setup_video": null,
+      "detail_sentence": "openpilot upgrades your <strong>Audi Q5</strong> with automated lane centering <strong>at all speeds</strong>, and adaptive cruise control <strong>that automatically resumes from a stop</strong>.",
+      "harness": "VW J533",
+      "extra_cars_columns": {
+        "make": "Audi",
+        "model": "Q5 2013-17",
+        "package": "Adaptive Cruise Control (ACC) & Lane Assist",
+        "support": "[Dashcam mode](#dashcam)"
+      }
+    },
+    {
+      "make": "Audi",
+      "model": "Q5",
+      "years": [
         2017,
         2018,
         2019,
@@ -19237,60 +19464,6 @@
       }
     },
     {
-      "make": "Cadillac",
-      "model": "CT6",
-      "years": [
-        2018
-      ],
-      "name": "Cadillac CT6 No ACC 2018",
-      "package": "No Adaptive Cruise Control (Non-ACC)",
-      "support_type": "Upstream",
-      "support_link": "#upstream",
-      "merged": true,
-      "min_steer_speed": 2.777777671813965,
-      "min_enable_speed": 10.728960037231445,
-      "auto_resume": false,
-      "good_steering_torque": true,
-      "openpilot_longitudinal": "openpilot available",
-      "video": null,
-      "setup_video": null,
-      "detail_sentence": "openpilot upgrades your <strong>Cadillac CT6 No ACC</strong> with automated lane centering and adaptive cruise control <strong>while driving above 24 mph</strong>.",
-      "harness": "GM",
-      "extra_cars_columns": {
-        "make": "Cadillac",
-        "model": "CT6 No ACC 2018",
-        "package": "Adaptive Cruise Control (ACC)",
-        "support": "[Upstream](#upstream)"
-      }
-    },
-    {
-      "make": "Cadillac",
-      "model": "XT5",
-      "years": [
-        2018
-      ],
-      "name": "Cadillac XT5 No ACC 2018",
-      "package": "No Adaptive Cruise Control (Non-ACC)",
-      "support_type": "Upstream",
-      "support_link": "#upstream",
-      "merged": true,
-      "min_steer_speed": 2.777777671813965,
-      "min_enable_speed": 10.728960037231445,
-      "auto_resume": false,
-      "good_steering_torque": true,
-      "openpilot_longitudinal": "openpilot available",
-      "video": null,
-      "setup_video": null,
-      "detail_sentence": "openpilot upgrades your <strong>Cadillac XT5 No ACC</strong> with automated lane centering and adaptive cruise control <strong>while driving above 24 mph</strong>.",
-      "harness": "GM",
-      "extra_cars_columns": {
-        "make": "Cadillac",
-        "model": "XT5 No ACC 2018",
-        "package": "Adaptive Cruise Control (ACC)",
-        "support": "[Upstream](#upstream)"
-      }
-    },
-    {
       "make": "Chevrolet",
       "model": "Bolt EUV",
       "years": [
@@ -19298,7 +19471,7 @@
         2023
       ],
       "name": "Chevrolet Bolt EUV 2022-23",
-      "package": "Premier or Premier Redline Trim without Super Cruise Package",
+      "package": "Premier or Premier Redline Trim, without Super Cruise Package",
       "support_type": "Upstream",
       "support_link": "#upstream",
       "merged": true,
@@ -19314,92 +19487,7 @@
       "extra_cars_columns": {
         "make": "Chevrolet",
         "model": "Bolt EUV 2022-23",
-        "package": "Premier or Premier Redline Trim without Super Cruise Package",
-        "support": "[Upstream](#upstream)"
-      }
-    },
-    {
-      "make": "Chevrolet",
-      "model": "Bolt EUV LT",
-      "years": [
-        2022,
-        2023
-      ],
-      "name": "Chevrolet Bolt EUV LT 2022-23",
-      "package": "Adaptive Cruise Control (ACC)",
-      "support_type": "Upstream",
-      "support_link": "#upstream",
-      "merged": true,
-      "min_steer_speed": 2.777777671813965,
-      "min_enable_speed": 10.728960037231445,
-      "auto_resume": false,
-      "good_steering_torque": true,
-      "openpilot_longitudinal": "openpilot available",
-      "video": null,
-      "setup_video": null,
-      "detail_sentence": "openpilot upgrades your <strong>Chevrolet Bolt EUV LT</strong> with automated lane centering and adaptive cruise control <strong>while driving above 24 mph</strong>.",
-      "harness": "GM",
-      "extra_cars_columns": {
-        "make": "Chevrolet",
-        "model": "Bolt EUV LT 2022-23",
-        "package": "Adaptive Cruise Control (ACC)",
-        "support": "[Upstream](#upstream)"
-      }
-    },
-    {
-      "make": "Chevrolet",
-      "model": "Bolt EV",
-      "years": [
-        2017
-      ],
-      "name": "Chevrolet Bolt EV 2017",
-      "package": "Adaptive Cruise Control (ACC)",
-      "support_type": "Upstream",
-      "support_link": "#upstream",
-      "merged": true,
-      "min_steer_speed": 2.777777671813965,
-      "min_enable_speed": 10.728960037231445,
-      "auto_resume": false,
-      "good_steering_torque": true,
-      "openpilot_longitudinal": "openpilot available",
-      "video": null,
-      "setup_video": null,
-      "detail_sentence": "openpilot upgrades your <strong>Chevrolet Bolt EV</strong> with automated lane centering and adaptive cruise control <strong>while driving above 24 mph</strong>.",
-      "harness": "GM",
-      "extra_cars_columns": {
-        "make": "Chevrolet",
-        "model": "Bolt EV 2017",
-        "package": "Adaptive Cruise Control (ACC)",
-        "support": "[Upstream](#upstream)"
-      }
-    },
-    {
-      "make": "Chevrolet",
-      "model": "Bolt EV",
-      "years": [
-        2018,
-        2019,
-        2020,
-        2021
-      ],
-      "name": "Chevrolet Bolt EV 2018-21",
-      "package": "Adaptive Cruise Control (ACC)",
-      "support_type": "Upstream",
-      "support_link": "#upstream",
-      "merged": true,
-      "min_steer_speed": 2.777777671813965,
-      "min_enable_speed": 10.728960037231445,
-      "auto_resume": false,
-      "good_steering_torque": true,
-      "openpilot_longitudinal": "openpilot available",
-      "video": null,
-      "setup_video": null,
-      "detail_sentence": "openpilot upgrades your <strong>Chevrolet Bolt EV</strong> with automated lane centering and adaptive cruise control <strong>while driving above 24 mph</strong>.",
-      "harness": "GM",
-      "extra_cars_columns": {
-        "make": "Chevrolet",
-        "model": "Bolt EV 2018-21",
-        "package": "Adaptive Cruise Control (ACC)",
+        "package": "Premier or Premier Redline Trim, without Super Cruise Package",
         "support": "[Upstream](#upstream)"
       }
     },
@@ -19428,34 +19516,6 @@
         "make": "Chevrolet",
         "model": "Bolt EV 2022-23",
         "package": "2LT Trim with Adaptive Cruise Control Package",
-        "support": "[Upstream](#upstream)"
-      }
-    },
-    {
-      "make": "Chevrolet",
-      "model": "Bolt EV LT",
-      "years": [
-        2022,
-        2023
-      ],
-      "name": "Chevrolet Bolt EV LT 2022-23",
-      "package": "Adaptive Cruise Control (ACC)",
-      "support_type": "Upstream",
-      "support_link": "#upstream",
-      "merged": true,
-      "min_steer_speed": 2.777777671813965,
-      "min_enable_speed": 10.728960037231445,
-      "auto_resume": false,
-      "good_steering_torque": true,
-      "openpilot_longitudinal": "openpilot available",
-      "video": null,
-      "setup_video": null,
-      "detail_sentence": "openpilot upgrades your <strong>Chevrolet Bolt EV LT</strong> with automated lane centering and adaptive cruise control <strong>while driving above 24 mph</strong>.",
-      "harness": "GM",
-      "extra_cars_columns": {
-        "make": "Chevrolet",
-        "model": "Bolt EV LT 2022-23",
-        "package": "Adaptive Cruise Control (ACC)",
         "support": "[Upstream](#upstream)"
       }
     },
@@ -19491,63 +19551,6 @@
     },
     {
       "make": "Chevrolet",
-      "model": "Equinox",
-      "years": [
-        2019,
-        2020,
-        2021,
-        2022
-      ],
-      "name": "Chevrolet Equinox NO ACC 2019-22",
-      "package": "No Adaptive Cruise Control (Non-ACC)",
-      "support_type": "Upstream",
-      "support_link": "#upstream",
-      "merged": true,
-      "min_steer_speed": 2.777777671813965,
-      "min_enable_speed": 10.728960037231445,
-      "auto_resume": false,
-      "good_steering_torque": true,
-      "openpilot_longitudinal": "openpilot available",
-      "video": null,
-      "setup_video": null,
-      "detail_sentence": "openpilot upgrades your <strong>Chevrolet Equinox NO ACC</strong> with automated lane centering and adaptive cruise control <strong>while driving above 24 mph</strong>.",
-      "harness": "GM",
-      "extra_cars_columns": {
-        "make": "Chevrolet",
-        "model": "Equinox NO ACC 2019-22",
-        "package": "Adaptive Cruise Control (ACC)",
-        "support": "[Upstream](#upstream)"
-      }
-    },
-    {
-      "make": "Chevrolet",
-      "model": "Malibu",
-      "years": [
-        2018
-      ],
-      "name": "Chevrolet Malibu No ACC 2018",
-      "package": "No Adaptive Cruise Control (Non-ACC)",
-      "support_type": "Upstream",
-      "support_link": "#upstream",
-      "merged": true,
-      "min_steer_speed": 2.777777671813965,
-      "min_enable_speed": 10.728960037231445,
-      "auto_resume": false,
-      "good_steering_torque": true,
-      "openpilot_longitudinal": "openpilot available",
-      "video": null,
-      "setup_video": null,
-      "detail_sentence": "openpilot upgrades your <strong>Chevrolet Malibu No ACC</strong> with automated lane centering and adaptive cruise control <strong>while driving above 24 mph</strong>.",
-      "harness": "GM",
-      "extra_cars_columns": {
-        "make": "Chevrolet",
-        "model": "Malibu No ACC 2018",
-        "package": "Adaptive Cruise Control (ACC)",
-        "support": "[Upstream](#upstream)"
-      }
-    },
-    {
-      "make": "Chevrolet",
       "model": "Silverado 1500",
       "years": [
         2020,
@@ -19576,37 +19579,6 @@
     },
     {
       "make": "Chevrolet",
-      "model": "Suburban",
-      "years": [
-        2016,
-        2017,
-        2018,
-        2019,
-        2020
-      ],
-      "name": "Chevrolet Suburban 2016-20",
-      "package": "Adaptive Cruise Control (ACC)",
-      "support_type": "Upstream",
-      "support_link": "#upstream",
-      "merged": true,
-      "min_steer_speed": 2.777777671813965,
-      "min_enable_speed": 10.728960037231445,
-      "auto_resume": false,
-      "good_steering_torque": true,
-      "openpilot_longitudinal": "openpilot available",
-      "video": null,
-      "setup_video": null,
-      "detail_sentence": "openpilot upgrades your <strong>Chevrolet Suburban</strong> with automated lane centering and adaptive cruise control <strong>while driving above 24 mph</strong>.",
-      "harness": "GM",
-      "extra_cars_columns": {
-        "make": "Chevrolet",
-        "model": "Suburban 2016-20",
-        "package": "Adaptive Cruise Control (ACC)",
-        "support": "[Upstream](#upstream)"
-      }
-    },
-    {
-      "make": "Chevrolet",
       "model": "Trailblazer",
       "years": [
         2021,
@@ -19629,34 +19601,6 @@
       "extra_cars_columns": {
         "make": "Chevrolet",
         "model": "Trailblazer 2021-22",
-        "package": "Adaptive Cruise Control (ACC)",
-        "support": "[Upstream](#upstream)"
-      }
-    },
-    {
-      "make": "Chevrolet",
-      "model": "Trailblazer",
-      "years": [
-        2021,
-        2022
-      ],
-      "name": "Chevrolet Trailblazer NO ACC 2021-22",
-      "package": "No Adaptive Cruise Control (Non-ACC)",
-      "support_type": "Upstream",
-      "support_link": "#upstream",
-      "merged": true,
-      "min_steer_speed": 2.777777671813965,
-      "min_enable_speed": 10.728960037231445,
-      "auto_resume": false,
-      "good_steering_torque": true,
-      "openpilot_longitudinal": "openpilot available",
-      "video": null,
-      "setup_video": null,
-      "detail_sentence": "openpilot upgrades your <strong>Chevrolet Trailblazer NO ACC</strong> with automated lane centering and adaptive cruise control <strong>while driving above 24 mph</strong>.",
-      "harness": "GM",
-      "extra_cars_columns": {
-        "make": "Chevrolet",
-        "model": "Trailblazer NO ACC 2021-22",
         "package": "Adaptive Cruise Control (ACC)",
         "support": "[Upstream](#upstream)"
       }
@@ -21129,16 +21073,43 @@
       "min_enable_speed": -1.0,
       "auto_resume": true,
       "good_steering_torque": true,
-      "openpilot_longitudinal": "openpilot",
+      "openpilot_longitudinal": "Stock",
       "video": null,
       "setup_video": null,
-      "detail_sentence": "openpilot upgrades your <strong>Honda Accord</strong> with automated lane centering <strong>at all speeds</strong>, and adaptive cruise control <strong>that automatically resumes from a stop</strong>. Traffic light and stop sign handling is also available in <a href='https://blog.comma.ai/090release/#experimental-mode' target='_blank' class='highlight'>Experimental mode</a>.",
+      "detail_sentence": "openpilot upgrades your <strong>Honda Accord</strong> with automated lane centering <strong>at all speeds</strong>, and adaptive cruise control <strong>that automatically resumes from a stop</strong>.",
       "harness": "Honda Bosch C",
       "extra_cars_columns": {
         "make": "Honda",
         "model": "Accord 2023-25",
         "package": "All",
         "support": "[Upstream](#upstream)"
+      }
+    },
+    {
+      "make": "Honda",
+      "model": "Accord Hybrid",
+      "years": [
+        2017
+      ],
+      "name": "Honda Accord Hybrid 2017",
+      "package": "All",
+      "support_type": "Community",
+      "support_link": "#community",
+      "merged": false,
+      "min_steer_speed": 0.0,
+      "min_enable_speed": -1.0,
+      "auto_resume": true,
+      "good_steering_torque": true,
+      "openpilot_longitudinal": "Stock",
+      "video": null,
+      "setup_video": null,
+      "detail_sentence": "openpilot upgrades your <strong>Honda Accord Hybrid</strong> with automated lane centering <strong>at all speeds</strong>, and adaptive cruise control <strong>that automatically resumes from a stop</strong>.",
+      "harness": null,
+      "extra_cars_columns": {
+        "make": "Honda",
+        "model": "Accord Hybrid 2017",
+        "package": "All",
+        "support": "[Community](#community)"
       }
     },
     {
@@ -21189,14 +21160,41 @@
       "min_enable_speed": -1.0,
       "auto_resume": true,
       "good_steering_torque": true,
-      "openpilot_longitudinal": "openpilot",
+      "openpilot_longitudinal": "Stock",
       "video": null,
       "setup_video": null,
-      "detail_sentence": "openpilot upgrades your <strong>Honda Accord Hybrid</strong> with automated lane centering <strong>at all speeds</strong>, and adaptive cruise control <strong>that automatically resumes from a stop</strong>. Traffic light and stop sign handling is also available in <a href='https://blog.comma.ai/090release/#experimental-mode' target='_blank' class='highlight'>Experimental mode</a>.",
+      "detail_sentence": "openpilot upgrades your <strong>Honda Accord Hybrid</strong> with automated lane centering <strong>at all speeds</strong>, and adaptive cruise control <strong>that automatically resumes from a stop</strong>.",
       "harness": "Honda Bosch C",
       "extra_cars_columns": {
         "make": "Honda",
         "model": "Accord Hybrid 2023-25",
+        "package": "All",
+        "support": "[Upstream](#upstream)"
+      }
+    },
+    {
+      "make": "Honda",
+      "model": "City (Brazil only)",
+      "years": [
+        2023
+      ],
+      "name": "Honda City (Brazil only) 2023",
+      "package": "All",
+      "support_type": "Upstream",
+      "support_link": "#upstream",
+      "merged": true,
+      "min_steer_speed": 6.388888835906982,
+      "min_enable_speed": -1.0,
+      "auto_resume": true,
+      "good_steering_torque": true,
+      "openpilot_longitudinal": "openpilot available",
+      "video": null,
+      "setup_video": null,
+      "detail_sentence": "openpilot upgrades your <strong>Honda City (Brazil only)</strong> with automated lane centering <strong>above 14 mph</strong>, and adaptive cruise control <strong>that automatically resumes from a stop</strong>.",
+      "harness": "Honda Bosch B",
+      "extra_cars_columns": {
+        "make": "Honda",
+        "model": "City (Brazil only) 2023",
         "package": "All",
         "support": "[Upstream](#upstream)"
       }
@@ -21293,12 +21291,9 @@
       "model": "Civic Hatchback",
       "years": [
         2017,
-        2018,
-        2019,
-        2020,
-        2021
+        2018
       ],
-      "name": "Honda Civic Hatchback 2017-21",
+      "name": "Honda Civic Hatchback 2017-18",
       "package": "Honda Sensing",
       "support_type": "Upstream",
       "support_link": "#upstream",
@@ -21314,8 +21309,37 @@
       "harness": "Honda Bosch A",
       "extra_cars_columns": {
         "make": "Honda",
-        "model": "Civic Hatchback 2017-21",
+        "model": "Civic Hatchback 2017-18",
         "package": "Honda Sensing",
+        "support": "[Upstream](#upstream)"
+      }
+    },
+    {
+      "make": "Honda",
+      "model": "Civic Hatchback",
+      "years": [
+        2019,
+        2020,
+        2021
+      ],
+      "name": "Honda Civic Hatchback 2019-21",
+      "package": "All",
+      "support_type": "Upstream",
+      "support_link": "#upstream",
+      "merged": true,
+      "min_steer_speed": 5.36448,
+      "min_enable_speed": -1.0,
+      "auto_resume": true,
+      "good_steering_torque": false,
+      "openpilot_longitudinal": "openpilot available",
+      "video": null,
+      "setup_video": null,
+      "detail_sentence": "openpilot upgrades your <strong>Honda Civic Hatchback</strong> with automated lane centering <strong>above 12 mph</strong>, and adaptive cruise control <strong>that automatically resumes from a stop</strong>. This car may not be able to take tight turns on its own.",
+      "harness": "Honda Bosch A",
+      "extra_cars_columns": {
+        "make": "Honda",
+        "model": "Civic Hatchback 2019-21",
+        "package": "All",
         "support": "[Upstream](#upstream)"
       }
     },
@@ -21352,9 +21376,10 @@
       "make": "Honda",
       "model": "Civic Hatchback Hybrid",
       "years": [
-        2025
+        2025,
+        2026
       ],
-      "name": "Honda Civic Hatchback Hybrid 2025",
+      "name": "Honda Civic Hatchback Hybrid 2025-26",
       "package": "All",
       "support_type": "Upstream",
       "support_link": "#upstream",
@@ -21370,7 +21395,7 @@
       "harness": "Honda Bosch B",
       "extra_cars_columns": {
         "make": "Honda",
-        "model": "Civic Hatchback Hybrid 2025",
+        "model": "Civic Hatchback Hybrid 2025-26",
         "package": "All",
         "support": "[Upstream](#upstream)"
       }
@@ -21406,9 +21431,10 @@
       "make": "Honda",
       "model": "Civic Hybrid",
       "years": [
-        2025
+        2025,
+        2026
       ],
-      "name": "Honda Civic Hybrid 2025",
+      "name": "Honda Civic Hybrid 2025-26",
       "package": "All",
       "support_type": "Upstream",
       "support_link": "#upstream",
@@ -21424,7 +21450,7 @@
       "harness": "Honda Bosch B",
       "extra_cars_columns": {
         "make": "Honda",
-        "model": "Civic Hybrid 2025",
+        "model": "Civic Hybrid 2025-26",
         "package": "All",
         "support": "[Upstream](#upstream)"
       }
@@ -21525,9 +21551,10 @@
       "years": [
         2023,
         2024,
-        2025
+        2025,
+        2026
       ],
-      "name": "Honda CR-V 2023-25",
+      "name": "Honda CR-V 2023-26",
       "package": "All",
       "support_type": "Upstream",
       "support_link": "#upstream",
@@ -21536,14 +21563,14 @@
       "min_enable_speed": -1.0,
       "auto_resume": true,
       "good_steering_torque": true,
-      "openpilot_longitudinal": "openpilot",
+      "openpilot_longitudinal": "Stock",
       "video": null,
       "setup_video": null,
-      "detail_sentence": "openpilot upgrades your <strong>Honda CR-V</strong> with automated lane centering <strong>at all speeds</strong>, and adaptive cruise control <strong>that automatically resumes from a stop</strong>. Traffic light and stop sign handling is also available in <a href='https://blog.comma.ai/090release/#experimental-mode' target='_blank' class='highlight'>Experimental mode</a>.",
+      "detail_sentence": "openpilot upgrades your <strong>Honda CR-V</strong> with automated lane centering <strong>at all speeds</strong>, and adaptive cruise control <strong>that automatically resumes from a stop</strong>.",
       "harness": "Honda Bosch C",
       "extra_cars_columns": {
         "make": "Honda",
-        "model": "CR-V 2023-25",
+        "model": "CR-V 2023-26",
         "package": "All",
         "support": "[Upstream](#upstream)"
       }
@@ -21586,9 +21613,10 @@
       "years": [
         2023,
         2024,
-        2025
+        2025,
+        2026
       ],
-      "name": "Honda CR-V Hybrid 2023-25",
+      "name": "Honda CR-V Hybrid 2023-26",
       "package": "All",
       "support_type": "Upstream",
       "support_link": "#upstream",
@@ -21597,14 +21625,14 @@
       "min_enable_speed": -1.0,
       "auto_resume": true,
       "good_steering_torque": true,
-      "openpilot_longitudinal": "openpilot",
+      "openpilot_longitudinal": "Stock",
       "video": null,
       "setup_video": null,
-      "detail_sentence": "openpilot upgrades your <strong>Honda CR-V Hybrid</strong> with automated lane centering <strong>at all speeds</strong>, and adaptive cruise control <strong>that automatically resumes from a stop</strong>. Traffic light and stop sign handling is also available in <a href='https://blog.comma.ai/090release/#experimental-mode' target='_blank' class='highlight'>Experimental mode</a>.",
+      "detail_sentence": "openpilot upgrades your <strong>Honda CR-V Hybrid</strong> with automated lane centering <strong>at all speeds</strong>, and adaptive cruise control <strong>that automatically resumes from a stop</strong>.",
       "harness": "Honda Bosch C",
       "extra_cars_columns": {
         "make": "Honda",
-        "model": "CR-V Hybrid 2023-25",
+        "model": "CR-V Hybrid 2023-26",
         "package": "All",
         "support": "[Upstream](#upstream)"
       }
@@ -21810,6 +21838,33 @@
     },
     {
       "make": "Honda",
+      "model": "N-Box",
+      "years": [
+        2018
+      ],
+      "name": "Honda N-Box 2018",
+      "package": "All",
+      "support_type": "Upstream",
+      "support_link": "#upstream",
+      "merged": true,
+      "min_steer_speed": 5.0,
+      "min_enable_speed": -1.0,
+      "auto_resume": true,
+      "good_steering_torque": true,
+      "openpilot_longitudinal": "openpilot available",
+      "video": null,
+      "setup_video": null,
+      "detail_sentence": "openpilot upgrades your <strong>Honda N-Box</strong> with automated lane centering <strong>above 11 mph</strong>, and adaptive cruise control <strong>that automatically resumes from a stop</strong>.",
+      "harness": "Honda Bosch A",
+      "extra_cars_columns": {
+        "make": "Honda",
+        "model": "N-Box 2018",
+        "package": "All",
+        "support": "[Upstream](#upstream)"
+      }
+    },
+    {
+      "make": "Honda",
       "model": "Odyssey",
       "years": [
         2018,
@@ -21845,27 +21900,83 @@
         2022,
         2023,
         2024,
-        2025
+        2025,
+        2026
       ],
-      "name": "Honda Odyssey 2021-25",
+      "name": "Honda Odyssey 2021-26",
       "package": "All",
-      "support_type": "Community",
-      "support_link": "#community",
-      "merged": false,
-      "min_steer_speed": 0.0,
+      "support_type": "Upstream",
+      "support_link": "#upstream",
+      "merged": true,
+      "min_steer_speed": 19.444444444444446,
       "min_enable_speed": -1.0,
       "auto_resume": true,
-      "good_steering_torque": true,
-      "openpilot_longitudinal": "Stock",
+      "good_steering_torque": false,
+      "openpilot_longitudinal": "openpilot available",
       "video": null,
       "setup_video": null,
-      "detail_sentence": "openpilot upgrades your <strong>Honda Odyssey</strong> with automated lane centering <strong>at all speeds</strong>, and adaptive cruise control <strong>that automatically resumes from a stop</strong>.",
-      "harness": null,
+      "detail_sentence": "openpilot upgrades your <strong>Honda Odyssey</strong> with automated lane centering <strong>above 43 mph</strong>, and adaptive cruise control <strong>that automatically resumes from a stop</strong>. This car may not be able to take tight turns on its own.",
+      "harness": "Honda Bosch A",
       "extra_cars_columns": {
         "make": "Honda",
-        "model": "Odyssey 2021-25",
+        "model": "Odyssey 2021-26",
         "package": "All",
-        "support": "[Community](#community)"
+        "support": "[Upstream](#upstream)"
+      }
+    },
+    {
+      "make": "Honda",
+      "model": "Odyssey (Singapore)",
+      "years": [
+        2021
+      ],
+      "name": "Honda Odyssey (Singapore) 2021",
+      "package": "Honda Sensing",
+      "support_type": "Upstream",
+      "support_link": "#upstream",
+      "merged": true,
+      "min_steer_speed": 0.0,
+      "min_enable_speed": 8.493760108947754,
+      "auto_resume": false,
+      "good_steering_torque": false,
+      "openpilot_longitudinal": "openpilot",
+      "video": null,
+      "setup_video": null,
+      "detail_sentence": "openpilot upgrades your <strong>Honda Odyssey (Singapore)</strong> with automated lane centering and adaptive cruise control <strong>while driving above 19 mph</strong>. This car may not be able to take tight turns on its own. Traffic light and stop sign handling is also available in <a href='https://blog.comma.ai/090release/#experimental-mode' target='_blank' class='highlight'>Experimental mode</a>.",
+      "harness": "Honda Nidec",
+      "extra_cars_columns": {
+        "make": "Honda",
+        "model": "Odyssey (Singapore) 2021",
+        "package": "Honda Sensing",
+        "support": "[Upstream](#upstream)"
+      }
+    },
+    {
+      "make": "Honda",
+      "model": "Odyssey (Taiwan)",
+      "years": [
+        2018,
+        2019
+      ],
+      "name": "Honda Odyssey (Taiwan) 2018-19",
+      "package": "Honda Sensing",
+      "support_type": "Upstream",
+      "support_link": "#upstream",
+      "merged": true,
+      "min_steer_speed": 0.0,
+      "min_enable_speed": 8.493760108947754,
+      "auto_resume": false,
+      "good_steering_torque": false,
+      "openpilot_longitudinal": "openpilot",
+      "video": null,
+      "setup_video": null,
+      "detail_sentence": "openpilot upgrades your <strong>Honda Odyssey (Taiwan)</strong> with automated lane centering and adaptive cruise control <strong>while driving above 19 mph</strong>. This car may not be able to take tight turns on its own. Traffic light and stop sign handling is also available in <a href='https://blog.comma.ai/090release/#experimental-mode' target='_blank' class='highlight'>Experimental mode</a>.",
+      "harness": "Honda Nidec",
+      "extra_cars_columns": {
+        "make": "Honda",
+        "model": "Odyssey (Taiwan) 2018-19",
+        "package": "Honda Sensing",
+        "support": "[Upstream](#upstream)"
       }
     },
     {
@@ -21909,9 +22020,9 @@
       ],
       "name": "Honda Passport 2026",
       "package": "All",
-      "support_type": "Community",
-      "support_link": "#community",
-      "merged": false,
+      "support_type": "Upstream",
+      "support_link": "#upstream",
+      "merged": true,
       "min_steer_speed": 0.0,
       "min_enable_speed": -1.0,
       "auto_resume": true,
@@ -21920,12 +22031,12 @@
       "video": null,
       "setup_video": null,
       "detail_sentence": "openpilot upgrades your <strong>Honda Passport</strong> with automated lane centering <strong>at all speeds</strong>, and adaptive cruise control <strong>that automatically resumes from a stop</strong>.",
-      "harness": null,
+      "harness": "Honda Bosch C",
       "extra_cars_columns": {
         "make": "Honda",
         "model": "Passport 2026",
         "package": "All",
-        "support": "[Community](#community)"
+        "support": "[Upstream](#upstream)"
       }
     },
     {
@@ -21978,10 +22089,10 @@
       "min_enable_speed": -1.0,
       "auto_resume": true,
       "good_steering_torque": true,
-      "openpilot_longitudinal": "openpilot",
+      "openpilot_longitudinal": "Stock",
       "video": null,
       "setup_video": null,
-      "detail_sentence": "openpilot upgrades your <strong>Honda Pilot</strong> with automated lane centering <strong>at all speeds</strong>, and adaptive cruise control <strong>that automatically resumes from a stop</strong>. Traffic light and stop sign handling is also available in <a href='https://blog.comma.ai/090release/#experimental-mode' target='_blank' class='highlight'>Experimental mode</a>.",
+      "detail_sentence": "openpilot upgrades your <strong>Honda Pilot</strong> with automated lane centering <strong>at all speeds</strong>, and adaptive cruise control <strong>that automatically resumes from a stop</strong>.",
       "harness": "Honda Bosch C",
       "extra_cars_columns": {
         "make": "Honda",
@@ -22875,7 +22986,7 @@
         2024
       ],
       "name": "Hyundai Palisade 2023-24",
-      "package": "HDA2",
+      "package": "Highway Driving Assist II",
       "support_type": "Community",
       "support_link": "#community",
       "merged": false,
@@ -22891,7 +23002,7 @@
       "extra_cars_columns": {
         "make": "Hyundai",
         "model": "Palisade 2023-24",
-        "package": "HDA2",
+        "package": "Highway Driving Assist II",
         "support": "[Community](#community)"
       }
     },
@@ -23347,6 +23458,37 @@
     },
     {
       "make": "Jeep",
+      "model": "Cherokee",
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023
+      ],
+      "name": "Jeep Cherokee 2019-23",
+      "package": "Adaptive Cruise Control (ACC)",
+      "support_type": "Dashcam mode",
+      "support_link": "#dashcam",
+      "merged": true,
+      "min_steer_speed": 18.5,
+      "min_enable_speed": -1.0,
+      "auto_resume": true,
+      "good_steering_torque": true,
+      "openpilot_longitudinal": "Stock",
+      "video": null,
+      "setup_video": null,
+      "detail_sentence": "openpilot upgrades your <strong>Jeep Cherokee</strong> with automated lane centering <strong>above 41 mph</strong>, and adaptive cruise control <strong>that automatically resumes from a stop</strong>.",
+      "harness": "FCA",
+      "extra_cars_columns": {
+        "make": "Jeep",
+        "model": "Cherokee 2019-23",
+        "package": "Adaptive Cruise Control (ACC)",
+        "support": "[Dashcam mode](#dashcam)"
+      }
+    },
+    {
+      "make": "Jeep",
       "model": "Grand Cherokee",
       "years": [
         2016,
@@ -23693,6 +23835,33 @@
     },
     {
       "make": "Kia",
+      "model": "K7",
+      "years": [
+        2017
+      ],
+      "name": "Kia K7 2017",
+      "package": "Smart Cruise Control (SCC)",
+      "support_type": "Upstream",
+      "support_link": "#upstream",
+      "merged": true,
+      "min_steer_speed": 0.0,
+      "min_enable_speed": -1.0,
+      "auto_resume": true,
+      "good_steering_torque": true,
+      "openpilot_longitudinal": "openpilot available",
+      "video": null,
+      "setup_video": null,
+      "detail_sentence": "openpilot upgrades your <strong>Kia K7</strong> with automated lane centering <strong>at all speeds</strong>, and adaptive cruise control <strong>that automatically resumes from a stop</strong>.",
+      "harness": "Hyundai C",
+      "extra_cars_columns": {
+        "make": "Kia",
+        "model": "K7 2017",
+        "package": "Smart Cruise Control (SCC)",
+        "support": "[Upstream](#upstream)"
+      }
+    },
+    {
+      "make": "Kia",
       "model": "K8 Hybrid (with HDA II)",
       "years": [
         2023
@@ -23830,9 +23999,10 @@
       "make": "Kia",
       "model": "Niro EV (with HDA II)",
       "years": [
+        2024,
         2025
       ],
-      "name": "Kia Niro EV (with HDA II) 2025",
+      "name": "Kia Niro EV (with HDA II) 2024-25",
       "package": "Highway Driving Assist II",
       "support_type": "Upstream",
       "support_link": "#upstream",
@@ -23848,7 +24018,7 @@
       "harness": "Hyundai R",
       "extra_cars_columns": {
         "make": "Kia",
-        "model": "Niro EV (with HDA II) 2025",
+        "model": "Niro EV (with HDA II) 2024-25",
         "package": "Highway Driving Assist II",
         "support": "[Upstream](#upstream)"
       }
@@ -23967,9 +24137,10 @@
       "make": "Kia",
       "model": "Niro Hybrid",
       "years": [
-        2023
+        2023,
+        2024
       ],
-      "name": "Kia Niro Hybrid 2023",
+      "name": "Kia Niro Hybrid 2023-24",
       "package": "Smart Cruise Control (SCC)",
       "support_type": "Upstream",
       "support_link": "#upstream",
@@ -23985,7 +24156,7 @@
       "harness": "Hyundai A",
       "extra_cars_columns": {
         "make": "Kia",
-        "model": "Niro Hybrid 2023",
+        "model": "Niro Hybrid 2023-24",
         "package": "Smart Cruise Control (SCC)",
         "support": "[Upstream](#upstream)"
       }
@@ -24524,7 +24695,7 @@
         2024
       ],
       "name": "Kia Telluride 2023-24",
-      "package": "HDA2",
+      "package": "Highway Driving Assist II",
       "support_type": "Community",
       "support_link": "#community",
       "merged": false,
@@ -24540,7 +24711,7 @@
       "extra_cars_columns": {
         "make": "Kia",
         "model": "Telluride 2023-24",
-        "package": "HDA2",
+        "package": "Highway Driving Assist II",
         "support": "[Community](#community)"
       }
     },
@@ -24560,10 +24731,10 @@
       "min_enable_speed": -1.0,
       "auto_resume": false,
       "good_steering_torque": true,
-      "openpilot_longitudinal": "openpilot available",
+      "openpilot_longitudinal": "Stock",
       "video": null,
       "setup_video": null,
-      "detail_sentence": "openpilot upgrades your <strong>Lexus CT Hybrid</strong> with automated lane centering <strong>at all speeds</strong>, and adaptive cruise control. Traffic light and stop sign handling is also available in <a href='https://blog.comma.ai/090release/#experimental-mode' target='_blank' class='highlight'>Experimental mode</a>.",
+      "detail_sentence": "openpilot upgrades your <strong>Lexus CT Hybrid</strong> with automated lane centering <strong>at all speeds</strong>, and adaptive cruise control.",
       "harness": "Toyota A",
       "extra_cars_columns": {
         "make": "Lexus",
@@ -24588,10 +24759,10 @@
       "min_enable_speed": 8.493760108947754,
       "auto_resume": false,
       "good_steering_torque": true,
-      "openpilot_longitudinal": "openpilot available",
+      "openpilot_longitudinal": "Stock",
       "video": null,
       "setup_video": null,
-      "detail_sentence": "openpilot upgrades your <strong>Lexus ES</strong> with automated lane centering and adaptive cruise control <strong>while driving above 19 mph</strong>. Traffic light and stop sign handling is also available in <a href='https://blog.comma.ai/090release/#experimental-mode' target='_blank' class='highlight'>Experimental mode</a>.",
+      "detail_sentence": "openpilot upgrades your <strong>Lexus ES</strong> with automated lane centering and adaptive cruise control <strong>while driving above 19 mph</strong>.",
       "harness": "Toyota A",
       "extra_cars_columns": {
         "make": "Lexus",
@@ -24649,10 +24820,10 @@
       "min_enable_speed": 8.493760108947754,
       "auto_resume": false,
       "good_steering_torque": true,
-      "openpilot_longitudinal": "openpilot available",
+      "openpilot_longitudinal": "Stock",
       "video": null,
       "setup_video": null,
-      "detail_sentence": "openpilot upgrades your <strong>Lexus ES Hybrid</strong> with automated lane centering and adaptive cruise control <strong>while driving above 19 mph</strong>. Traffic light and stop sign handling is also available in <a href='https://blog.comma.ai/090release/#experimental-mode' target='_blank' class='highlight'>Experimental mode</a>.",
+      "detail_sentence": "openpilot upgrades your <strong>Lexus ES Hybrid</strong> with automated lane centering and adaptive cruise control <strong>while driving above 19 mph</strong>.",
       "harness": "Toyota A",
       "extra_cars_columns": {
         "make": "Lexus",
@@ -24809,6 +24980,33 @@
     },
     {
       "make": "Lexus",
+      "model": "LS",
+      "years": [
+        2018
+      ],
+      "name": "Lexus LS 2018",
+      "package": "All except Lexus Safety System+ A",
+      "support_type": "Upstream",
+      "support_link": "#upstream",
+      "merged": true,
+      "min_steer_speed": 0.0,
+      "min_enable_speed": -1.0,
+      "auto_resume": false,
+      "good_steering_torque": true,
+      "openpilot_longitudinal": "Stock",
+      "video": null,
+      "setup_video": null,
+      "detail_sentence": "openpilot upgrades your <strong>Lexus LS</strong> with automated lane centering <strong>at all speeds</strong>, and adaptive cruise control.",
+      "harness": "Toyota A",
+      "extra_cars_columns": {
+        "make": "Lexus",
+        "model": "LS 2018",
+        "package": "All except Lexus Safety System+ A",
+        "support": "[Upstream](#upstream)"
+      }
+    },
+    {
+      "make": "Lexus",
       "model": "NS",
       "years": [
         2022,
@@ -24817,7 +25015,7 @@
         2025
       ],
       "name": "Lexus NS 2022-25",
-      "package": "Any",
+      "package": "All",
       "support_type": "Not compatible",
       "support_link": "#can-bus-security",
       "merged": false,
@@ -24833,7 +25031,7 @@
       "extra_cars_columns": {
         "make": "Lexus",
         "model": "NS 2022-25",
-        "package": "Any",
+        "package": "All",
         "support": "[Not compatible](#can-bus-security)"
       }
     },
@@ -24853,10 +25051,10 @@
       "min_enable_speed": -1.0,
       "auto_resume": false,
       "good_steering_torque": true,
-      "openpilot_longitudinal": "openpilot available",
+      "openpilot_longitudinal": "Stock",
       "video": null,
       "setup_video": null,
-      "detail_sentence": "openpilot upgrades your <strong>Lexus NX</strong> with automated lane centering <strong>at all speeds</strong>, and adaptive cruise control. Traffic light and stop sign handling is also available in <a href='https://blog.comma.ai/090release/#experimental-mode' target='_blank' class='highlight'>Experimental mode</a>.",
+      "detail_sentence": "openpilot upgrades your <strong>Lexus NX</strong> with automated lane centering <strong>at all speeds</strong>, and adaptive cruise control.",
       "harness": "Toyota A",
       "extra_cars_columns": {
         "make": "Lexus",
@@ -24909,10 +25107,10 @@
       "min_enable_speed": -1.0,
       "auto_resume": false,
       "good_steering_torque": true,
-      "openpilot_longitudinal": "openpilot available",
+      "openpilot_longitudinal": "Stock",
       "video": null,
       "setup_video": null,
-      "detail_sentence": "openpilot upgrades your <strong>Lexus NX Hybrid</strong> with automated lane centering <strong>at all speeds</strong>, and adaptive cruise control. Traffic light and stop sign handling is also available in <a href='https://blog.comma.ai/090release/#experimental-mode' target='_blank' class='highlight'>Experimental mode</a>.",
+      "detail_sentence": "openpilot upgrades your <strong>Lexus NX Hybrid</strong> with automated lane centering <strong>at all speeds</strong>, and adaptive cruise control.",
       "harness": "Toyota A",
       "extra_cars_columns": {
         "make": "Lexus",
@@ -25020,10 +25218,10 @@
       "min_enable_speed": -1.0,
       "auto_resume": false,
       "good_steering_torque": true,
-      "openpilot_longitudinal": "openpilot available",
+      "openpilot_longitudinal": "Stock",
       "video": null,
       "setup_video": null,
-      "detail_sentence": "openpilot upgrades your <strong>Lexus RX</strong> with automated lane centering <strong>at all speeds</strong>, and adaptive cruise control. Traffic light and stop sign handling is also available in <a href='https://blog.comma.ai/090release/#experimental-mode' target='_blank' class='highlight'>Experimental mode</a>.",
+      "detail_sentence": "openpilot upgrades your <strong>Lexus RX</strong> with automated lane centering <strong>at all speeds</strong>, and adaptive cruise control.",
       "harness": "Toyota A",
       "extra_cars_columns": {
         "make": "Lexus",
@@ -25049,10 +25247,10 @@
       "min_enable_speed": -1.0,
       "auto_resume": false,
       "good_steering_torque": true,
-      "openpilot_longitudinal": "openpilot available",
+      "openpilot_longitudinal": "Stock",
       "video": null,
       "setup_video": null,
-      "detail_sentence": "openpilot upgrades your <strong>Lexus RX</strong> with automated lane centering <strong>at all speeds</strong>, and adaptive cruise control. Traffic light and stop sign handling is also available in <a href='https://blog.comma.ai/090release/#experimental-mode' target='_blank' class='highlight'>Experimental mode</a>.",
+      "detail_sentence": "openpilot upgrades your <strong>Lexus RX</strong> with automated lane centering <strong>at all speeds</strong>, and adaptive cruise control.",
       "harness": "Toyota A",
       "extra_cars_columns": {
         "make": "Lexus",
@@ -25105,10 +25303,10 @@
       "min_enable_speed": -1.0,
       "auto_resume": false,
       "good_steering_torque": true,
-      "openpilot_longitudinal": "openpilot available",
+      "openpilot_longitudinal": "Stock",
       "video": null,
       "setup_video": null,
-      "detail_sentence": "openpilot upgrades your <strong>Lexus RX Hybrid</strong> with automated lane centering <strong>at all speeds</strong>, and adaptive cruise control. Traffic light and stop sign handling is also available in <a href='https://blog.comma.ai/090release/#experimental-mode' target='_blank' class='highlight'>Experimental mode</a>.",
+      "detail_sentence": "openpilot upgrades your <strong>Lexus RX Hybrid</strong> with automated lane centering <strong>at all speeds</strong>, and adaptive cruise control.",
       "harness": "Toyota A",
       "extra_cars_columns": {
         "make": "Lexus",
@@ -25134,10 +25332,10 @@
       "min_enable_speed": -1.0,
       "auto_resume": false,
       "good_steering_torque": true,
-      "openpilot_longitudinal": "openpilot available",
+      "openpilot_longitudinal": "Stock",
       "video": null,
       "setup_video": null,
-      "detail_sentence": "openpilot upgrades your <strong>Lexus RX Hybrid</strong> with automated lane centering <strong>at all speeds</strong>, and adaptive cruise control. Traffic light and stop sign handling is also available in <a href='https://blog.comma.ai/090release/#experimental-mode' target='_blank' class='highlight'>Experimental mode</a>.",
+      "detail_sentence": "openpilot upgrades your <strong>Lexus RX Hybrid</strong> with automated lane centering <strong>at all speeds</strong>, and adaptive cruise control.",
       "harness": "Toyota A",
       "extra_cars_columns": {
         "make": "Lexus",
@@ -25518,9 +25716,10 @@
       "model": "Altima",
       "years": [
         2019,
-        2020
+        2020,
+        2024
       ],
-      "name": "Nissan Altima 2019-20",
+      "name": "Nissan Altima 2019-20, 2024",
       "package": "ProPILOT Assist",
       "support_type": "Upstream",
       "support_link": "#upstream",
@@ -25536,7 +25735,7 @@
       "harness": "Nissan B",
       "extra_cars_columns": {
         "make": "Nissan",
-        "model": "Altima 2019-20",
+        "model": "Altima 2019-20, 2024",
         "package": "ProPILOT Assist",
         "support": "[Upstream](#upstream)"
       }
@@ -25627,6 +25826,73 @@
         "model": "X-Trail 2017",
         "package": "ProPILOT Assist",
         "support": "[Upstream](#upstream)"
+      }
+    },
+    {
+      "make": "Peugeot",
+      "model": "208",
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "name": "Peugeot 208 2019-25",
+      "package": "Adaptive Cruise Control (ACC) & Lane Assist",
+      "support_type": "Dashcam mode",
+      "support_link": "#dashcam",
+      "merged": true,
+      "min_steer_speed": 0.0,
+      "min_enable_speed": -1.0,
+      "auto_resume": true,
+      "good_steering_torque": true,
+      "openpilot_longitudinal": "Stock",
+      "video": null,
+      "setup_video": null,
+      "detail_sentence": "openpilot upgrades your <strong>Peugeot 208</strong> with automated lane centering <strong>at all speeds</strong>, and adaptive cruise control <strong>that automatically resumes from a stop</strong>.",
+      "harness": "PSA A",
+      "extra_cars_columns": {
+        "make": "Peugeot",
+        "model": "208 2019-25",
+        "package": "Adaptive Cruise Control (ACC) & Lane Assist",
+        "support": "[Dashcam mode](#dashcam)"
+      }
+    },
+    {
+      "make": "Porsche",
+      "model": "Macan",
+      "years": [
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "name": "Porsche Macan 2017-24",
+      "package": "Adaptive Cruise Control (ACC) & Lane Assist",
+      "support_type": "Dashcam mode",
+      "support_link": "#dashcam",
+      "merged": true,
+      "min_steer_speed": 0,
+      "min_enable_speed": -1.0,
+      "auto_resume": true,
+      "good_steering_torque": true,
+      "openpilot_longitudinal": "openpilot available",
+      "video": null,
+      "setup_video": null,
+      "detail_sentence": "openpilot upgrades your <strong>Porsche Macan</strong> with automated lane centering <strong>at all speeds</strong>, and adaptive cruise control <strong>that automatically resumes from a stop</strong>.",
+      "harness": "VW J533",
+      "extra_cars_columns": {
+        "make": "Porsche",
+        "model": "Macan 2017-24",
+        "package": "Adaptive Cruise Control (ACC) & Lane Assist",
+        "support": "[Dashcam mode](#dashcam)"
       }
     },
     {
@@ -25753,6 +26019,33 @@
     },
     {
       "make": "Rivian",
+      "model": "R1S",
+      "years": [
+        2025
+      ],
+      "name": "Rivian R1S 2025",
+      "package": "All",
+      "support_type": "Upstream",
+      "support_link": "#upstream",
+      "merged": true,
+      "min_steer_speed": 0.0,
+      "min_enable_speed": -1.0,
+      "auto_resume": true,
+      "good_steering_torque": true,
+      "openpilot_longitudinal": "openpilot",
+      "video": null,
+      "setup_video": null,
+      "detail_sentence": "openpilot upgrades your <strong>Rivian R1S</strong> with automated lane centering <strong>at all speeds</strong>, and adaptive cruise control <strong>that automatically resumes from a stop</strong>. Traffic light and stop sign handling is also available in <a href='https://blog.comma.ai/090release/#experimental-mode' target='_blank' class='highlight'>Experimental mode</a>.",
+      "harness": "Rivian B",
+      "extra_cars_columns": {
+        "make": "Rivian",
+        "model": "R1S 2025",
+        "package": "All",
+        "support": "[Upstream](#upstream)"
+      }
+    },
+    {
+      "make": "Rivian",
       "model": "R1T",
       "years": [
         2022,
@@ -25776,6 +26069,33 @@
       "extra_cars_columns": {
         "make": "Rivian",
         "model": "R1T 2022-24",
+        "package": "All",
+        "support": "[Upstream](#upstream)"
+      }
+    },
+    {
+      "make": "Rivian",
+      "model": "R1T",
+      "years": [
+        2025
+      ],
+      "name": "Rivian R1T 2025",
+      "package": "All",
+      "support_type": "Upstream",
+      "support_link": "#upstream",
+      "merged": true,
+      "min_steer_speed": 0.0,
+      "min_enable_speed": -1.0,
+      "auto_resume": true,
+      "good_steering_torque": true,
+      "openpilot_longitudinal": "openpilot",
+      "video": null,
+      "setup_video": null,
+      "detail_sentence": "openpilot upgrades your <strong>Rivian R1T</strong> with automated lane centering <strong>at all speeds</strong>, and adaptive cruise control <strong>that automatically resumes from a stop</strong>. Traffic light and stop sign handling is also available in <a href='https://blog.comma.ai/090release/#experimental-mode' target='_blank' class='highlight'>Experimental mode</a>.",
+      "harness": "Rivian B",
+      "extra_cars_columns": {
+        "make": "Rivian",
+        "model": "R1T 2025",
         "package": "All",
         "support": "[Upstream](#upstream)"
       }
@@ -26369,7 +26689,7 @@
         2025
       ],
       "name": "Subaru Solterra 2023-25",
-      "package": "Any",
+      "package": "All",
       "support_type": "Not compatible",
       "support_link": "#can-bus-security",
       "merged": false,
@@ -26385,7 +26705,7 @@
       "extra_cars_columns": {
         "make": "Subaru",
         "model": "Solterra 2023-25",
-        "package": "Any",
+        "package": "All",
         "support": "[Not compatible](#can-bus-security)"
       }
     },
@@ -26837,9 +27157,10 @@
       "make": "Tesla",
       "model": "Model Y (with HW4)",
       "years": [
-        2024
+        2024,
+        2025
       ],
-      "name": "Tesla Model Y (with HW4) 2024",
+      "name": "Tesla Model Y (with HW4) 2024-25",
       "package": "All",
       "support_type": "Upstream",
       "support_link": "#upstream",
@@ -26855,7 +27176,7 @@
       "harness": "Tesla B",
       "extra_cars_columns": {
         "make": "Tesla",
-        "model": "Model Y (with HW4) 2024",
+        "model": "Model Y (with HW4) 2024-25",
         "package": "All",
         "support": "[Upstream](#upstream)"
       }
@@ -26930,10 +27251,10 @@
       "min_enable_speed": 8.493760108947754,
       "auto_resume": false,
       "good_steering_torque": true,
-      "openpilot_longitudinal": "openpilot available",
+      "openpilot_longitudinal": "Stock",
       "video": null,
       "setup_video": null,
-      "detail_sentence": "openpilot upgrades your <strong>Toyota Avalon</strong> with automated lane centering and adaptive cruise control <strong>while driving above 19 mph</strong>. Traffic light and stop sign handling is also available in <a href='https://blog.comma.ai/090release/#experimental-mode' target='_blank' class='highlight'>Experimental mode</a>.",
+      "detail_sentence": "openpilot upgrades your <strong>Toyota Avalon</strong> with automated lane centering and adaptive cruise control <strong>while driving above 19 mph</strong>.",
       "harness": "Toyota A",
       "extra_cars_columns": {
         "make": "Toyota",
@@ -26958,10 +27279,10 @@
       "min_enable_speed": 8.493760108947754,
       "auto_resume": false,
       "good_steering_torque": true,
-      "openpilot_longitudinal": "openpilot available",
+      "openpilot_longitudinal": "Stock",
       "video": null,
       "setup_video": null,
-      "detail_sentence": "openpilot upgrades your <strong>Toyota Avalon</strong> with automated lane centering and adaptive cruise control <strong>while driving above 19 mph</strong>. Traffic light and stop sign handling is also available in <a href='https://blog.comma.ai/090release/#experimental-mode' target='_blank' class='highlight'>Experimental mode</a>.",
+      "detail_sentence": "openpilot upgrades your <strong>Toyota Avalon</strong> with automated lane centering and adaptive cruise control <strong>while driving above 19 mph</strong>.",
       "harness": "Toyota A",
       "extra_cars_columns": {
         "make": "Toyota",
@@ -26987,10 +27308,10 @@
       "min_enable_speed": -1.0,
       "auto_resume": false,
       "good_steering_torque": true,
-      "openpilot_longitudinal": "openpilot available",
+      "openpilot_longitudinal": "Stock",
       "video": null,
       "setup_video": null,
-      "detail_sentence": "openpilot upgrades your <strong>Toyota Avalon</strong> with automated lane centering <strong>at all speeds</strong>, and adaptive cruise control. Traffic light and stop sign handling is also available in <a href='https://blog.comma.ai/090release/#experimental-mode' target='_blank' class='highlight'>Experimental mode</a>.",
+      "detail_sentence": "openpilot upgrades your <strong>Toyota Avalon</strong> with automated lane centering <strong>at all speeds</strong>, and adaptive cruise control.",
       "harness": "Toyota A",
       "extra_cars_columns": {
         "make": "Toyota",
@@ -27043,10 +27364,10 @@
       "min_enable_speed": -1.0,
       "auto_resume": false,
       "good_steering_torque": true,
-      "openpilot_longitudinal": "openpilot available",
+      "openpilot_longitudinal": "Stock",
       "video": null,
       "setup_video": null,
-      "detail_sentence": "openpilot upgrades your <strong>Toyota Avalon Hybrid</strong> with automated lane centering <strong>at all speeds</strong>, and adaptive cruise control. Traffic light and stop sign handling is also available in <a href='https://blog.comma.ai/090release/#experimental-mode' target='_blank' class='highlight'>Experimental mode</a>.",
+      "detail_sentence": "openpilot upgrades your <strong>Toyota Avalon Hybrid</strong> with automated lane centering <strong>at all speeds</strong>, and adaptive cruise control.",
       "harness": "Toyota A",
       "extra_cars_columns": {
         "make": "Toyota",
@@ -27091,7 +27412,7 @@
         2025
       ],
       "name": "Toyota bZ4x 2023-25",
-      "package": "Any",
+      "package": "All",
       "support_type": "Not compatible",
       "support_link": "#can-bus-security",
       "merged": false,
@@ -27107,7 +27428,7 @@
       "extra_cars_columns": {
         "make": "Toyota",
         "model": "bZ4x 2023-25",
-        "package": "Any",
+        "package": "All",
         "support": "[Not compatible](#can-bus-security)"
       }
     },
@@ -27292,7 +27613,7 @@
         2025
       ],
       "name": "Toyota Camry 2025",
-      "package": "Any",
+      "package": "All",
       "support_type": "Not compatible",
       "support_link": "#can-bus-security",
       "merged": false,
@@ -27308,7 +27629,7 @@
       "extra_cars_columns": {
         "make": "Toyota",
         "model": "Camry 2025",
-        "package": "Any",
+        "package": "All",
         "support": "[Not compatible](#can-bus-security)"
       }
     },
@@ -27388,10 +27709,10 @@
       "min_enable_speed": 8.493760108947754,
       "auto_resume": false,
       "good_steering_torque": true,
-      "openpilot_longitudinal": "openpilot available",
+      "openpilot_longitudinal": "Stock",
       "video": null,
       "setup_video": null,
-      "detail_sentence": "openpilot upgrades your <strong>Toyota Corolla</strong> with automated lane centering and adaptive cruise control <strong>while driving above 19 mph</strong>. Traffic light and stop sign handling is also available in <a href='https://blog.comma.ai/090release/#experimental-mode' target='_blank' class='highlight'>Experimental mode</a>.",
+      "detail_sentence": "openpilot upgrades your <strong>Toyota Corolla</strong> with automated lane centering and adaptive cruise control <strong>while driving above 19 mph</strong>.",
       "harness": "Toyota A",
       "extra_cars_columns": {
         "make": "Toyota",
@@ -27439,7 +27760,7 @@
         2025
       ],
       "name": "Toyota Corolla Cross 2022-25",
-      "package": "Any",
+      "package": "All",
       "support_type": "Not compatible",
       "support_link": "#can-bus-security",
       "merged": false,
@@ -27455,7 +27776,7 @@
       "extra_cars_columns": {
         "make": "Toyota",
         "model": "Corolla Cross 2022-25",
-        "package": "Any",
+        "package": "All",
         "support": "[Not compatible](#can-bus-security)"
       }
     },
@@ -27624,10 +27945,10 @@
       "min_enable_speed": 8.493760108947754,
       "auto_resume": false,
       "good_steering_torque": true,
-      "openpilot_longitudinal": "openpilot available",
+      "openpilot_longitudinal": "Stock",
       "video": "https://www.youtube.com/watch?v=0wS0wXSLzoo",
       "setup_video": null,
-      "detail_sentence": "openpilot upgrades your <strong>Toyota Highlander</strong> with automated lane centering and adaptive cruise control <strong>while driving above 19 mph</strong>. Traffic light and stop sign handling is also available in <a href='https://blog.comma.ai/090release/#experimental-mode' target='_blank' class='highlight'>Experimental mode</a>.",
+      "detail_sentence": "openpilot upgrades your <strong>Toyota Highlander</strong> with automated lane centering and adaptive cruise control <strong>while driving above 19 mph</strong>.",
       "harness": "Toyota A",
       "extra_cars_columns": {
         "make": "Toyota",
@@ -27673,7 +27994,7 @@
         2025
       ],
       "name": "Toyota Highlander 2025",
-      "package": "Any",
+      "package": "All",
       "support_type": "Not compatible",
       "support_link": "#can-bus-security",
       "merged": false,
@@ -27689,7 +28010,7 @@
       "extra_cars_columns": {
         "make": "Toyota",
         "model": "Highlander 2025",
-        "package": "Any",
+        "package": "All",
         "support": "[Not compatible](#can-bus-security)"
       }
     },
@@ -27710,10 +28031,10 @@
       "min_enable_speed": 8.493760108947754,
       "auto_resume": false,
       "good_steering_torque": true,
-      "openpilot_longitudinal": "openpilot available",
+      "openpilot_longitudinal": "Stock",
       "video": null,
       "setup_video": null,
-      "detail_sentence": "openpilot upgrades your <strong>Toyota Highlander Hybrid</strong> with automated lane centering and adaptive cruise control <strong>while driving above 19 mph</strong>. Traffic light and stop sign handling is also available in <a href='https://blog.comma.ai/090release/#experimental-mode' target='_blank' class='highlight'>Experimental mode</a>.",
+      "detail_sentence": "openpilot upgrades your <strong>Toyota Highlander Hybrid</strong> with automated lane centering and adaptive cruise control <strong>while driving above 19 mph</strong>.",
       "harness": "Toyota A",
       "extra_cars_columns": {
         "make": "Toyota",
@@ -27794,10 +28115,10 @@
       "min_enable_speed": -1.0,
       "auto_resume": false,
       "good_steering_torque": true,
-      "openpilot_longitudinal": "openpilot available",
+      "openpilot_longitudinal": "Stock",
       "video": "https://www.youtube.com/watch?v=8zopPJI8XQ0",
       "setup_video": null,
-      "detail_sentence": "openpilot upgrades your <strong>Toyota Prius</strong> with automated lane centering <strong>at all speeds</strong>, and adaptive cruise control. Traffic light and stop sign handling is also available in <a href='https://blog.comma.ai/090release/#experimental-mode' target='_blank' class='highlight'>Experimental mode</a>.",
+      "detail_sentence": "openpilot upgrades your <strong>Toyota Prius</strong> with automated lane centering <strong>at all speeds</strong>, and adaptive cruise control.",
       "harness": "Toyota A",
       "extra_cars_columns": {
         "make": "Toyota",
@@ -27824,10 +28145,10 @@
       "min_enable_speed": -1.0,
       "auto_resume": false,
       "good_steering_torque": true,
-      "openpilot_longitudinal": "openpilot available",
+      "openpilot_longitudinal": "Stock",
       "video": "https://www.youtube.com/watch?v=8zopPJI8XQ0",
       "setup_video": null,
-      "detail_sentence": "openpilot upgrades your <strong>Toyota Prius</strong> with automated lane centering <strong>at all speeds</strong>, and adaptive cruise control. Traffic light and stop sign handling is also available in <a href='https://blog.comma.ai/090release/#experimental-mode' target='_blank' class='highlight'>Experimental mode</a>.",
+      "detail_sentence": "openpilot upgrades your <strong>Toyota Prius</strong> with automated lane centering <strong>at all speeds</strong>, and adaptive cruise control.",
       "harness": "Toyota A",
       "extra_cars_columns": {
         "make": "Toyota",
@@ -27882,10 +28203,10 @@
       "min_enable_speed": -1.0,
       "auto_resume": false,
       "good_steering_torque": true,
-      "openpilot_longitudinal": "openpilot available",
+      "openpilot_longitudinal": "Stock",
       "video": "https://www.youtube.com/watch?v=8zopPJI8XQ0",
       "setup_video": null,
-      "detail_sentence": "openpilot upgrades your <strong>Toyota Prius Prime</strong> with automated lane centering <strong>at all speeds</strong>, and adaptive cruise control. Traffic light and stop sign handling is also available in <a href='https://blog.comma.ai/090release/#experimental-mode' target='_blank' class='highlight'>Experimental mode</a>.",
+      "detail_sentence": "openpilot upgrades your <strong>Toyota Prius Prime</strong> with automated lane centering <strong>at all speeds</strong>, and adaptive cruise control.",
       "harness": "Toyota A",
       "extra_cars_columns": {
         "make": "Toyota",
@@ -27937,10 +28258,10 @@
       "min_enable_speed": 8.493760000000002,
       "auto_resume": false,
       "good_steering_torque": true,
-      "openpilot_longitudinal": "openpilot available",
+      "openpilot_longitudinal": "Stock",
       "video": null,
       "setup_video": null,
-      "detail_sentence": "openpilot upgrades your <strong>Toyota Prius v</strong> with automated lane centering and adaptive cruise control <strong>while driving above 19 mph</strong>. Traffic light and stop sign handling is also available in <a href='https://blog.comma.ai/090release/#experimental-mode' target='_blank' class='highlight'>Experimental mode</a>.",
+      "detail_sentence": "openpilot upgrades your <strong>Toyota Prius v</strong> with automated lane centering and adaptive cruise control <strong>while driving above 19 mph</strong>.",
       "harness": "Toyota A",
       "extra_cars_columns": {
         "make": "Toyota",
@@ -27964,10 +28285,10 @@
       "min_enable_speed": 8.493760108947754,
       "auto_resume": false,
       "good_steering_torque": true,
-      "openpilot_longitudinal": "openpilot available",
+      "openpilot_longitudinal": "Stock",
       "video": null,
       "setup_video": null,
-      "detail_sentence": "openpilot upgrades your <strong>Toyota RAV4</strong> with automated lane centering and adaptive cruise control <strong>while driving above 19 mph</strong>. Traffic light and stop sign handling is also available in <a href='https://blog.comma.ai/090release/#experimental-mode' target='_blank' class='highlight'>Experimental mode</a>.",
+      "detail_sentence": "openpilot upgrades your <strong>Toyota RAV4</strong> with automated lane centering and adaptive cruise control <strong>while driving above 19 mph</strong>.",
       "harness": "Toyota A",
       "extra_cars_columns": {
         "make": "Toyota",
@@ -27992,10 +28313,10 @@
       "min_enable_speed": 8.493760108947754,
       "auto_resume": false,
       "good_steering_torque": true,
-      "openpilot_longitudinal": "openpilot available",
+      "openpilot_longitudinal": "Stock",
       "video": null,
       "setup_video": null,
-      "detail_sentence": "openpilot upgrades your <strong>Toyota RAV4</strong> with automated lane centering and adaptive cruise control <strong>while driving above 19 mph</strong>. Traffic light and stop sign handling is also available in <a href='https://blog.comma.ai/090release/#experimental-mode' target='_blank' class='highlight'>Experimental mode</a>.",
+      "detail_sentence": "openpilot upgrades your <strong>Toyota RAV4</strong> with automated lane centering and adaptive cruise control <strong>while driving above 19 mph</strong>.",
       "harness": "Toyota A",
       "extra_cars_columns": {
         "make": "Toyota",
@@ -28104,10 +28425,10 @@
       "min_enable_speed": 8.493760108947754,
       "auto_resume": false,
       "good_steering_torque": true,
-      "openpilot_longitudinal": "openpilot available",
+      "openpilot_longitudinal": "Stock",
       "video": "https://youtu.be/LhT5VzJVfNI?t=26",
       "setup_video": null,
-      "detail_sentence": "openpilot upgrades your <strong>Toyota RAV4 Hybrid</strong> with automated lane centering and adaptive cruise control <strong>while driving above 19 mph</strong>. Traffic light and stop sign handling is also available in <a href='https://blog.comma.ai/090release/#experimental-mode' target='_blank' class='highlight'>Experimental mode</a>.",
+      "detail_sentence": "openpilot upgrades your <strong>Toyota RAV4 Hybrid</strong> with automated lane centering and adaptive cruise control <strong>while driving above 19 mph</strong>.",
       "harness": "Toyota A",
       "extra_cars_columns": {
         "make": "Toyota",
@@ -28132,10 +28453,10 @@
       "min_enable_speed": 8.493760108947754,
       "auto_resume": false,
       "good_steering_torque": true,
-      "openpilot_longitudinal": "openpilot available",
+      "openpilot_longitudinal": "Stock",
       "video": "https://youtu.be/LhT5VzJVfNI?t=26",
       "setup_video": null,
-      "detail_sentence": "openpilot upgrades your <strong>Toyota RAV4 Hybrid</strong> with automated lane centering and adaptive cruise control <strong>while driving above 19 mph</strong>. Traffic light and stop sign handling is also available in <a href='https://blog.comma.ai/090release/#experimental-mode' target='_blank' class='highlight'>Experimental mode</a>.",
+      "detail_sentence": "openpilot upgrades your <strong>Toyota RAV4 Hybrid</strong> with automated lane centering and adaptive cruise control <strong>while driving above 19 mph</strong>.",
       "harness": "Toyota A",
       "extra_cars_columns": {
         "make": "Toyota",
@@ -28239,23 +28560,23 @@
       ],
       "name": "Toyota RAV4 Prime 2021-23",
       "package": "All",
-      "support_type": "Community",
-      "support_link": "#community",
+      "support_type": "Custom",
+      "support_link": "#secoc-cars-with-recoverable-keys",
       "merged": true,
       "min_steer_speed": 0.0,
       "min_enable_speed": 8.493760000000002,
       "auto_resume": false,
       "good_steering_torque": true,
-      "openpilot_longitudinal": "Stock",
+      "openpilot_longitudinal": "openpilot",
       "video": null,
       "setup_video": null,
-      "detail_sentence": "openpilot upgrades your <strong>Toyota RAV4 Prime</strong> with automated lane centering and adaptive cruise control <strong>while driving above 19 mph</strong>.",
+      "detail_sentence": "openpilot upgrades your <strong>Toyota RAV4 Prime</strong> with automated lane centering and adaptive cruise control <strong>while driving above 19 mph</strong>. Traffic light and stop sign handling is also available in <a href='https://blog.comma.ai/090release/#experimental-mode' target='_blank' class='highlight'>Experimental mode</a>.",
       "harness": "Toyota A",
       "extra_cars_columns": {
         "make": "Toyota",
         "model": "RAV4 Prime 2021-23",
         "package": "All",
-        "support": "[Community](#community)"
+        "support": "[Custom](#secoc-cars-with-recoverable-keys)"
       }
     },
     {
@@ -28266,7 +28587,7 @@
         2025
       ],
       "name": "Toyota RAV4 Prime 2024-25",
-      "package": "Any",
+      "package": "All",
       "support_type": "Not compatible",
       "support_link": "#can-bus-security",
       "merged": false,
@@ -28282,7 +28603,7 @@
       "extra_cars_columns": {
         "make": "Toyota",
         "model": "RAV4 Prime 2024-25",
-        "package": "Any",
+        "package": "All",
         "support": "[Not compatible](#can-bus-security)"
       }
     },
@@ -28295,7 +28616,7 @@
         2025
       ],
       "name": "Toyota Sequoia 2023-25",
-      "package": "Any",
+      "package": "All",
       "support_type": "Not compatible",
       "support_link": "#can-bus-security",
       "merged": false,
@@ -28311,7 +28632,7 @@
       "extra_cars_columns": {
         "make": "Toyota",
         "model": "Sequoia 2023-25",
-        "package": "Any",
+        "package": "All",
         "support": "[Not compatible](#can-bus-security)"
       }
     },
@@ -28332,10 +28653,10 @@
       "min_enable_speed": 8.493760000000002,
       "auto_resume": false,
       "good_steering_torque": true,
-      "openpilot_longitudinal": "openpilot available",
+      "openpilot_longitudinal": "Stock",
       "video": "https://www.youtube.com/watch?v=q1UPOo4Sh68",
       "setup_video": null,
-      "detail_sentence": "openpilot upgrades your <strong>Toyota Sienna</strong> with automated lane centering and adaptive cruise control <strong>while driving above 19 mph</strong>. Traffic light and stop sign handling is also available in <a href='https://blog.comma.ai/090release/#experimental-mode' target='_blank' class='highlight'>Experimental mode</a>.",
+      "detail_sentence": "openpilot upgrades your <strong>Toyota Sienna</strong> with automated lane centering and adaptive cruise control <strong>while driving above 19 mph</strong>.",
       "harness": "Toyota A",
       "extra_cars_columns": {
         "make": "Toyota",
@@ -28354,23 +28675,23 @@
       ],
       "name": "Toyota Sienna 2021-23",
       "package": "All",
-      "support_type": "Community",
-      "support_link": "#community",
+      "support_type": "Custom",
+      "support_link": "#secoc-cars-with-recoverable-keys",
       "merged": true,
       "min_steer_speed": 0.0,
       "min_enable_speed": 8.493760000000002,
       "auto_resume": false,
       "good_steering_torque": true,
-      "openpilot_longitudinal": "Stock",
+      "openpilot_longitudinal": "openpilot",
       "video": null,
       "setup_video": null,
-      "detail_sentence": "openpilot upgrades your <strong>Toyota Sienna</strong> with automated lane centering and adaptive cruise control <strong>while driving above 19 mph</strong>.",
+      "detail_sentence": "openpilot upgrades your <strong>Toyota Sienna</strong> with automated lane centering and adaptive cruise control <strong>while driving above 19 mph</strong>. Traffic light and stop sign handling is also available in <a href='https://blog.comma.ai/090release/#experimental-mode' target='_blank' class='highlight'>Experimental mode</a>.",
       "harness": "Toyota A",
       "extra_cars_columns": {
         "make": "Toyota",
         "model": "Sienna 2021-23",
         "package": "All",
-        "support": "[Community](#community)"
+        "support": "[Custom](#secoc-cars-with-recoverable-keys)"
       }
     },
     {
@@ -28381,7 +28702,7 @@
         2025
       ],
       "name": "Toyota Sienna 2024-25",
-      "package": "Any",
+      "package": "All",
       "support_type": "Not compatible",
       "support_link": "#can-bus-security",
       "merged": false,
@@ -28397,7 +28718,7 @@
       "extra_cars_columns": {
         "make": "Toyota",
         "model": "Sienna 2024-25",
-        "package": "Any",
+        "package": "All",
         "support": "[Not compatible](#can-bus-security)"
       }
     },
@@ -28411,7 +28732,7 @@
         2025
       ],
       "name": "Toyota Tundra 2022-25",
-      "package": "Any",
+      "package": "All",
       "support_type": "Not compatible",
       "support_link": "#can-bus-security",
       "merged": false,
@@ -28427,7 +28748,7 @@
       "extra_cars_columns": {
         "make": "Toyota",
         "model": "Tundra 2022-25",
-        "package": "Any",
+        "package": "All",
         "support": "[Not compatible](#can-bus-security)"
       }
     },
@@ -28442,7 +28763,7 @@
         2025
       ],
       "name": "Toyota Venza 2021-25",
-      "package": "Any",
+      "package": "All",
       "support_type": "Not compatible",
       "support_link": "#can-bus-security",
       "merged": false,
@@ -28458,7 +28779,7 @@
       "extra_cars_columns": {
         "make": "Toyota",
         "model": "Venza 2021-25",
-        "package": "Any",
+        "package": "All",
         "support": "[Not compatible](#can-bus-security)"
       }
     },
@@ -28471,8 +28792,8 @@
       ],
       "name": "Toyota Yaris (Non-US only) 2020, 2023",
       "package": "All",
-      "support_type": "Community",
-      "support_link": "#community",
+      "support_type": "Custom",
+      "support_link": "#secoc-cars-with-recoverable-keys",
       "merged": true,
       "min_steer_speed": 0.0,
       "min_enable_speed": 8.493760000000002,
@@ -28487,7 +28808,7 @@
         "make": "Toyota",
         "model": "Yaris (Non-US only) 2020, 2023",
         "package": "All",
-        "support": "[Community](#community)"
+        "support": "[Custom](#secoc-cars-with-recoverable-keys)"
       }
     },
     {
@@ -29203,14 +29524,13 @@
       "make": "Volkswagen",
       "model": "Jetta",
       "years": [
-        2018,
         2019,
         2020,
         2021,
         2022,
         2023
       ],
-      "name": "Volkswagen Jetta 2018-23",
+      "name": "Volkswagen Jetta 2019-23",
       "package": "Adaptive Cruise Control (ACC) & Lane Assist",
       "support_type": "Upstream",
       "support_link": "#upstream",
@@ -29226,7 +29546,7 @@
       "harness": "VW J533",
       "extra_cars_columns": {
         "make": "Volkswagen",
-        "model": "Jetta 2018-23",
+        "model": "Jetta 2019-23",
         "package": "Adaptive Cruise Control (ACC) & Lane Assist",
         "support": "[Upstream](#upstream)"
       }
@@ -30506,23 +30826,23 @@
       ],
       "name": "Buick Baby Enclave 2020-23",
       "package": "Driver Assist Package",
-      "support_type": "Dashcam mode",
-      "support_link": "#dashcam",
+      "support_type": "Upstream",
+      "support_link": "#upstream",
       "merged": true,
-      "min_steer_speed": 0.0,
+      "min_steer_speed": 3.1292800903320312,
       "min_enable_speed": -1.0,
-      "auto_resume": true,
+      "auto_resume": false,
       "good_steering_torque": true,
       "openpilot_longitudinal": "Stock",
       "video": null,
       "setup_video": null,
-      "detail_sentence": "openpilot upgrades your <strong>Buick Baby Enclave</strong> with automated lane centering <strong>at all speeds</strong>, and adaptive cruise control <strong>that automatically resumes from a stop</strong>.",
-      "harness": "GM",
+      "detail_sentence": "openpilot upgrades your <strong>Buick Baby Enclave</strong> with automated lane centering <strong>above 7 mph</strong>, and adaptive cruise control.",
+      "harness": "GM SDGM",
       "extra_cars_columns": {
         "make": "Buick",
         "model": "Baby Enclave 2020-23",
         "package": "Driver Assist Package",
-        "support": "[Dashcam mode](#dashcam)"
+        "support": "[Upstream](#upstream)"
       }
     },
     {
@@ -30643,23 +30963,23 @@
       ],
       "name": "Chevrolet Blazer 2019-25",
       "package": "Driver Assist Package",
-      "support_type": "Dashcam mode",
-      "support_link": "#dashcam",
+      "support_type": "Upstream",
+      "support_link": "#upstream",
       "merged": true,
-      "min_steer_speed": 0.0,
-      "min_enable_speed": -1.0,
-      "auto_resume": true,
+      "min_steer_speed": 3.1292800903320312,
+      "min_enable_speed": 1.3888888359069824,
+      "auto_resume": false,
       "good_steering_torque": true,
       "openpilot_longitudinal": "Stock",
       "video": null,
       "setup_video": null,
-      "detail_sentence": "openpilot upgrades your <strong>Chevrolet Blazer</strong> with automated lane centering <strong>at all speeds</strong>, and adaptive cruise control <strong>that automatically resumes from a stop</strong>.",
-      "harness": "GM",
+      "detail_sentence": "openpilot upgrades your <strong>Chevrolet Blazer</strong> with automated lane centering <strong>above 7 mph</strong>, and adaptive cruise control <strong>while driving above 3 mph</strong>.",
+      "harness": "GM SDGM",
       "extra_cars_columns": {
         "make": "Chevrolet",
         "model": "Blazer 2019-25",
         "package": "Driver Assist Package",
-        "support": "[Dashcam mode](#dashcam)"
+        "support": "[Upstream](#upstream)"
       }
     },
     {
@@ -48975,10 +49295,9 @@
       "years": [
         2022,
         2023,
-        2024,
-        2025
+        2024
       ],
-      "name": "Rivian R1S 2022-25",
+      "name": "Rivian R1S 2022-24",
       "package": "All",
       "support_type": "Upstream",
       "support_link": "#upstream",
@@ -48994,7 +49313,34 @@
       "harness": "Rivian A",
       "extra_cars_columns": {
         "make": "Rivian",
-        "model": "R1S 2022-25",
+        "model": "R1S 2022-24",
+        "package": "All",
+        "support": "[Upstream](#upstream)"
+      }
+    },
+    {
+      "make": "Rivian",
+      "model": "R1S",
+      "years": [
+        2025
+      ],
+      "name": "Rivian R1S 2025",
+      "package": "All",
+      "support_type": "Upstream",
+      "support_link": "#upstream",
+      "merged": true,
+      "min_steer_speed": 0.0,
+      "min_enable_speed": -1.0,
+      "auto_resume": true,
+      "good_steering_torque": true,
+      "openpilot_longitudinal": "openpilot",
+      "video": null,
+      "setup_video": null,
+      "detail_sentence": "openpilot upgrades your <strong>Rivian R1S</strong> with automated lane centering <strong>at all speeds</strong>, and adaptive cruise control <strong>that automatically resumes from a stop</strong>. Traffic light and stop sign handling is also available in <a href='https://blog.comma.ai/090release/#experimental-mode' target='_blank' class='highlight'>Experimental mode</a>.",
+      "harness": "Rivian B",
+      "extra_cars_columns": {
+        "make": "Rivian",
+        "model": "R1S 2025",
         "package": "All",
         "support": "[Upstream](#upstream)"
       }
@@ -49005,10 +49351,9 @@
       "years": [
         2022,
         2023,
-        2024,
-        2025
+        2024
       ],
-      "name": "Rivian R1T 2022-25",
+      "name": "Rivian R1T 2022-24",
       "package": "All",
       "support_type": "Upstream",
       "support_link": "#upstream",
@@ -49024,7 +49369,34 @@
       "harness": "Rivian A",
       "extra_cars_columns": {
         "make": "Rivian",
-        "model": "R1T 2022-25",
+        "model": "R1T 2022-24",
+        "package": "All",
+        "support": "[Upstream](#upstream)"
+      }
+    },
+    {
+      "make": "Rivian",
+      "model": "R1T",
+      "years": [
+        2025
+      ],
+      "name": "Rivian R1T 2025",
+      "package": "All",
+      "support_type": "Upstream",
+      "support_link": "#upstream",
+      "merged": true,
+      "min_steer_speed": 0.0,
+      "min_enable_speed": -1.0,
+      "auto_resume": true,
+      "good_steering_torque": true,
+      "openpilot_longitudinal": "openpilot",
+      "video": null,
+      "setup_video": null,
+      "detail_sentence": "openpilot upgrades your <strong>Rivian R1T</strong> with automated lane centering <strong>at all speeds</strong>, and adaptive cruise control <strong>that automatically resumes from a stop</strong>. Traffic light and stop sign handling is also available in <a href='https://blog.comma.ai/090release/#experimental-mode' target='_blank' class='highlight'>Experimental mode</a>.",
+      "harness": "Rivian B",
+      "extra_cars_columns": {
+        "make": "Rivian",
+        "model": "R1T 2025",
         "package": "All",
         "support": "[Upstream](#upstream)"
       }
