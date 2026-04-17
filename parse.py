@@ -1094,9 +1094,9 @@ def fetch_cc_cache(cars: list[dict], retry_nulls: bool = False) -> dict:
 
 
 ALPINE_JS_URL = "https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
-TAILWIND_JS_URL = "https://cdn.tailwindcss.com"
+PURE_CSS_URL = "https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/base-min.css"
 ALPINE_CACHE_FILE = os.path.join(os.path.dirname(__file__), ".alpine_cache.js")
-TAILWIND_CACHE_FILE = os.path.join(os.path.dirname(__file__), ".tailwind_cache.js")
+PURE_CSS_CACHE_FILE = os.path.join(os.path.dirname(__file__), ".pure_css_cache.css")
 
 
 def fetch_asset(url: str, cache_file: str) -> str:
@@ -1201,7 +1201,7 @@ def generate_html(
             separators=(",", ":"),
         ),
         alpine_js=fetch_asset(ALPINE_JS_URL, ALPINE_CACHE_FILE),
-        tailwind_js=fetch_asset(TAILWIND_JS_URL, TAILWIND_CACHE_FILE),
+        pure_css=fetch_asset(PURE_CSS_URL, PURE_CSS_CACHE_FILE),
         # Use relative path from server root (same folder as HTML)
         favicon=f"{os.path.splitext(os.path.basename(html_out))[0]}-favicon.svg"
         if html_out
