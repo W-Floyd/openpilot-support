@@ -2,7 +2,11 @@
   "permissions": {
     "allow": [
       "Bash(uv run:*)",
-      "Bash(cd /Users/william/Documents/Personal/git/openpilot-support && python -m py_compile parse.py 2>&1)"
+      "Bash(cd /Users/william/Documents/Personal/git/openpilot-support && python -m py_compile parse.py 2>&1)",
+      "mcp__firefox-devtools__list_network_requests",
+      "mcp__firefox-devtools__list_console_messages",
+      "mcp__firefox-devtools__screenshot_page",
+      "mcp__firefox-devtools__navigate_page"
     ]
   }
 }
