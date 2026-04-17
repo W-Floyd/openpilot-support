@@ -775,8 +775,8 @@
                                                 >
                                                     <span
                                                         class="relative"
-                                                        x-data="{ ariOpen: false }"
-                                                        @mouseenter="ariOpen = true"
+                                                        x-data="{ ariOpen: false, ariStyle: '' }"
+                                                        @mouseenter="const rect = $el.getBoundingClientRect(); const right = window.innerWidth - rect.right; ariStyle = `position:fixed;z-index:9999;bottom:${window.innerHeight - rect.top + 6}px;right:${right}px`; ariOpen = true; $nextTick(() => { if ($refs.ariPopup.getBoundingClientRect().top < 0) ariStyle = `position:fixed;z-index:9999;top:${rect.bottom + 6}px;right:${right}px` })"
                                                         @mouseleave="ariOpen = false"
                                                     >
                                                         <a
@@ -813,33 +813,37 @@
                                                             </template>
                                                         </a>
 
-                                                        <div
-                                                            x-show="ariOpen"
-                                                            x-cloak
-                                                            class="absolute bottom-full right-0 z-50 mb-1.5 whitespace-nowrap rounded-lg border border-gray-200 bg-white py-1.5 shadow-lg text-xs"
-                                                        >
-                                                            <template
-                                                                x-for="row in car._ariYearRows"
-                                                                :key="row.year"
+                                                        <template x-teleport="body">
+                                                            <div
+                                                                x-show="ariOpen"
+                                                                x-cloak
+                                                                x-ref="ariPopup"
+                                                                class="whitespace-nowrap rounded-lg border border-gray-200 bg-white py-1.5 shadow-lg text-xs"
+                                                                :style="ariStyle"
                                                             >
-                                                                <div
-                                                                    class="flex items-baseline gap-1.5 px-3 py-0.5"
+                                                                <template
+                                                                    x-for="row in car._ariYearRows"
+                                                                    :key="row.year"
                                                                 >
-                                                                    <span
-                                                                        class="w-9 shrink-0 font-medium text-gray-700"
-                                                                        x-text="row.year"
-                                                                    ></span>
-                                                                    <a
-                                                                        :href="row.url"
-                                                                        target="_blank"
-                                                                        rel="noopener"
-                                                                        class="tabular-nums font-medium hover:underline"
-                                                                        :style="`color: ${ariColor(row.score)}`"
-                                                                        x-text="row.score"
-                                                                    ></a>
-                                                                </div>
-                                                            </template>
-                                                        </div>
+                                                                    <div
+                                                                        class="flex items-baseline gap-1.5 px-3 py-0.5"
+                                                                    >
+                                                                        <span
+                                                                            class="w-9 shrink-0 font-medium text-gray-700"
+                                                                            x-text="row.year"
+                                                                        ></span>
+                                                                        <a
+                                                                            :href="row.url"
+                                                                            target="_blank"
+                                                                            rel="noopener"
+                                                                            class="tabular-nums font-medium hover:underline"
+                                                                            :style="`color: ${ariColor(row.score)}`"
+                                                                            x-text="row.score"
+                                                                        ></a>
+                                                                    </div>
+                                                                </template>
+                                                            </div>
+                                                        </template>
                                                     </span>
                                                 </template>
                                                 <template
@@ -868,8 +872,8 @@
                                             <span>
                                                 <span
                                                     class="relative flex flex-col gap-0.5"
-                                                    x-data="{ ccOpen: false }"
-                                                    @mouseenter="ccOpen = true"
+                                                    x-data="{ ccOpen: false, ccStyle: '' }"
+                                                    @mouseenter="const rect = $el.getBoundingClientRect(); const right = window.innerWidth - rect.right; ccStyle = `position:fixed;z-index:9999;bottom:${window.innerHeight - rect.top + 6}px;right:${right}px`; ccOpen = true; $nextTick(() => { if ($refs.ccPopup.getBoundingClientRect().top < 0) ccStyle = `position:fixed;z-index:9999;top:${rect.bottom + 6}px;right:${right}px` })"
                                                     @mouseleave="ccOpen = false"
                                                 >
                                                     <template
@@ -897,43 +901,47 @@
                                                         </template>
                                                     </template>
 
-                                                    <div
-                                                        x-show="ccOpen"
-                                                        x-cloak
-                                                        class="absolute bottom-full right-0 z-50 mb-1.5 whitespace-nowrap rounded-lg border border-gray-200 bg-white py-1.5 shadow-lg text-xs"
-                                                    >
-                                                        <template
-                                                            x-for="row in car._ccYearRows"
-                                                            :key="row.key"
+                                                    <template x-teleport="body">
+                                                        <div
+                                                            x-show="ccOpen"
+                                                            x-cloak
+                                                            x-ref="ccPopup"
+                                                            class="whitespace-nowrap rounded-lg border border-gray-200 bg-white py-1.5 shadow-lg text-xs"
+                                                            :style="ccStyle"
                                                         >
-                                                            <div
-                                                                class="flex items-baseline gap-1.5 px-3 py-0.5"
+                                                            <template
+                                                                x-for="row in car._ccYearRows"
+                                                                :key="row.key"
                                                             >
-                                                                <span
-                                                                    class="shrink-0 font-medium text-gray-700"
-                                                                    x-text="row.rawModel ? row.year + ' (' + row.rawModel + ')' : row.year"
-                                                                ></span>
-                                                                <span
-                                                                    class="tabular-nums text-red-500"
-                                                                    x-text="row.complaints + ' complaints'"
-                                                                ></span>
-                                                                <span
-                                                                    class="tabular-nums text-amber-500"
-                                                                    x-text="row.recalls + ' recalls'"
-                                                                ></span>
-                                                                <span
-                                                                    class="tabular-nums text-blue-500"
-                                                                    x-text="row.tsbs + ' TSBs'"
-                                                                ></span>
-                                                                <span
-                                                                    x-show="row.seal"
-                                                                    class="ml-auto font-medium"
-                                                                    :class="ccSealClass(row.seal)"
-                                                                    x-text="' - ' + ccSealShort(row.seal)"
-                                                                ></span>
-                                                            </div>
-                                                        </template>
-                                                    </div>
+                                                                <div
+                                                                    class="flex items-baseline gap-1.5 px-3 py-0.5"
+                                                                >
+                                                                    <span
+                                                                        class="shrink-0 font-medium text-gray-700"
+                                                                        x-text="row.rawModel ? row.year + ' (' + row.rawModel + ')' : row.year"
+                                                                    ></span>
+                                                                    <span
+                                                                        class="tabular-nums text-red-500"
+                                                                        x-text="row.complaints + ' complaints'"
+                                                                    ></span>
+                                                                    <span
+                                                                        class="tabular-nums text-amber-500"
+                                                                        x-text="row.recalls + ' recalls'"
+                                                                    ></span>
+                                                                    <span
+                                                                        class="tabular-nums text-blue-500"
+                                                                        x-text="row.tsbs + ' TSBs'"
+                                                                    ></span>
+                                                                    <span
+                                                                        x-show="row.seal"
+                                                                        class="ml-auto font-medium"
+                                                                        :class="ccSealClass(row.seal)"
+                                                                        x-text="' - ' + ccSealShort(row.seal)"
+                                                                    ></span>
+                                                                </div>
+                                                            </template>
+                                                        </div>
+                                                    </template>
                                                     <template
                                                         x-if="!car.cc_seal"
                                                     >
