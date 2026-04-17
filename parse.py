@@ -1259,25 +1259,33 @@ def main():
     cars = merge_fork_cars(fork_car_lists)
     print(f"Total unique cars: {len(cars)}.", file=sys.stderr)
 
-    if not args.no_fetch_cg:
-        print("Fetching CarGurus data...", file=sys.stderr)
-        raw_cache = fetch_cargurus_cache(cars, retry_nulls=args.retry_nulls_cg)
-    else:
-        raw_cache = load_cargurus_cache()
+    def _fetch_cg():
+        if not args.no_fetch_cg:
+            print("Fetching CarGurus data...", file=sys.stderr)
+            return fetch_cargurus_cache(cars, retry_nulls=args.retry_nulls_cg)
+        return load_cargurus_cache()
+
+    def _fetch_ari():
+        if not args.no_fetch_ari:
+            print("Fetching Auto Reliability Index data...", file=sys.stderr)
+            return fetch_ari_cache(cars, retry_nulls=args.retry_nulls_ari)
+        return load_ari_cache()
+
+    def _fetch_cc():
+        if not args.no_fetch_cc:
+            print("Fetching CarComplaints data...", file=sys.stderr)
+            return fetch_cc_cache(cars, retry_nulls=args.retry_nulls_cc)
+        return load_cc_cache()
+
+    with concurrent.futures.ThreadPoolExecutor(max_workers=3) as pool:
+        fut_cg = pool.submit(_fetch_cg)
+        fut_ari = pool.submit(_fetch_ari)
+        fut_cc = pool.submit(_fetch_cc)
+        raw_cache = fut_cg.result()
+        ari_cache = fut_ari.result()
+        cc_cache = fut_cc.result()
 
     cargurus_js_cache = build_cargurus_js_cache(cars, raw_cache)
-
-    if not args.no_fetch_ari:
-        print("Fetching Auto Reliability Index data...", file=sys.stderr)
-        ari_cache = fetch_ari_cache(cars, retry_nulls=args.retry_nulls_ari)
-    else:
-        ari_cache = load_ari_cache()
-
-    if not args.no_fetch_cc:
-        print("Fetching CarComplaints data...", file=sys.stderr)
-        cc_cache = fetch_cc_cache(cars, retry_nulls=args.retry_nulls_cc)
-    else:
-        cc_cache = load_cc_cache()
 
     if args.json_out:
         os.makedirs(os.path.dirname(os.path.abspath(args.json_out)), exist_ok=True)
