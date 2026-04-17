@@ -736,11 +736,14 @@ def save_cargurus_cache(cache: dict) -> None:
         json.dump(dict(sorted(cache.items())), f, indent=2)
 
 
-def fetch_cargurus_cache(cars: list[dict]) -> dict:
+def fetch_cargurus_cache(cars: list[dict], retry_nulls: bool = False) -> dict:
     """Fetch CarGurus data for all cars, updating the cache file. Returns raw response cache."""
     cache = load_cargurus_cache()
     pending = [
-        q for car in cars if (q := cargurus_query(car)) is not None and q not in cache
+        q
+        for car in cars
+        if (q := cargurus_query(car)) is not None
+        and (q not in cache or (retry_nulls and cache[q] is None))
     ]
     total = len(pending)
 
@@ -861,14 +864,15 @@ def ari_cache_key(make: str, model: str, year: int) -> str:
     return f"{to_ascii(make)}|{to_ascii(model)}|{year}"
 
 
-def fetch_ari_cache(cars: list[dict]) -> dict:
+def fetch_ari_cache(cars: list[dict], retry_nulls: bool = False) -> dict:
     """Fetch ARI data for all car/year combinations, updating the cache file."""
     cache = load_ari_cache()
     pending = [
         (car["make"], car["model"], year)
         for car in cars
         for year in sorted(set(car["years"]))
-        if ari_cache_key(car["make"], car["model"], year) not in cache
+        if (k := ari_cache_key(car["make"], car["model"], year)) not in cache
+        or (retry_nulls and cache[k] is None)
     ]
     total = len(pending)
 
@@ -1050,7 +1054,7 @@ def save_cc_cache(cache: dict) -> None:
         json.dump(dict(sorted(cache.items())), f, indent=2)
 
 
-def fetch_cc_cache(cars: list[dict]) -> dict:
+def fetch_cc_cache(cars: list[dict], retry_nulls: bool = False) -> dict:
     """Fetch CarComplaints data for all car/year combinations, updating the cache file."""
     cache = load_cc_cache()
     pending = [
@@ -1060,7 +1064,8 @@ def fetch_cc_cache(cars: list[dict]) -> dict:
         for raw_model in (
             MODEL_MAPPINGS.get((car["make"], car["model"])) or [car["model"]]
         )
-        if cc_cache_key(car["make"], raw_model, year) not in cache
+        if (k := cc_cache_key(car["make"], raw_model, year)) not in cache
+        or (retry_nulls and cache[k] is None)
     ]
     total = len(pending)
 
@@ -1192,7 +1197,29 @@ def main():
         action="store_true",
         help="Force re-fetching openpilot data for all forks (disable caching).",
     )
+    parser.add_argument(
+        "--retry-nulls-cg",
+        action="store_true",
+        help="Re-fetch CarGurus cached entries whose stored value is null.",
+    )
+    parser.add_argument(
+        "--retry-nulls-ari",
+        action="store_true",
+        help="Re-fetch ARI cached entries whose stored value is null.",
+    )
+    parser.add_argument(
+        "--retry-nulls-cc",
+        action="store_true",
+        help="Re-fetch CarComplaints cached entries whose stored value is null.",
+    )
+    parser.add_argument(
+        "--retry-nulls-all",
+        action="store_true",
+        help="Re-fetch all cached entries whose stored value is null (implies --retry-nulls-cg/ari/cc).",
+    )
     args = parser.parse_args()
+    if args.retry_nulls_all:
+        args.retry_nulls_cg = args.retry_nulls_ari = args.retry_nulls_cc = True
 
     if args.dump_fork:
         print(json.dumps(_load_cars_directly(args.dump_fork)))
@@ -1234,7 +1261,7 @@ def main():
 
     if not args.no_fetch_cg:
         print("Fetching CarGurus data...", file=sys.stderr)
-        raw_cache = fetch_cargurus_cache(cars)
+        raw_cache = fetch_cargurus_cache(cars, retry_nulls=args.retry_nulls_cg)
     else:
         raw_cache = load_cargurus_cache()
 
@@ -1242,13 +1269,13 @@ def main():
 
     if not args.no_fetch_ari:
         print("Fetching Auto Reliability Index data...", file=sys.stderr)
-        ari_cache = fetch_ari_cache(cars)
+        ari_cache = fetch_ari_cache(cars, retry_nulls=args.retry_nulls_ari)
     else:
         ari_cache = load_ari_cache()
 
     if not args.no_fetch_cc:
         print("Fetching CarComplaints data...", file=sys.stderr)
-        cc_cache = fetch_cc_cache(cars)
+        cc_cache = fetch_cc_cache(cars, retry_nulls=args.retry_nulls_cc)
     else:
         cc_cache = load_cc_cache()
 
