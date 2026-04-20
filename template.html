@@ -2191,10 +2191,10 @@
                     searchProviders: [
                         { key: "ebay",        label: "eBay",        caps: { mileage: "max", price: true,  distance: true,  zip: true,  years: true,     trim: false } },
                         { key: "autotrader",  label: "AutoTrader",  caps: { mileage: true,  price: true,  distance: true,  zip: true,  years: true,     trim: false } },
-                        { key: "cargurus",    label: "CarGurus",    caps: { mileage: true,  price: true,  distance: true,  zip: true,  years: "cached", trim: false } },
+                        { key: "cargurus",    label: "CarGurus",    caps: { mileage: true,  price: true,  distance: true,  zip: true,  years: true,     trim: false } },
                         { key: "carscom",     label: "Cars.com",    caps: { mileage: "max", price: true,  distance: true,  zip: true,  years: true,     trim: false } },
                         { key: "carvana",     label: "Carvana",     caps: { mileage: true,  price: true,  distance: false, zip: false, years: true,     trim: true  } },
-                        { key: "carmax",      label: "CarMax",      caps: { mileage: true,  price: true,  distance: false, zip: true,  years: true,     trim: true  } },
+                        { key: "carmax",      label: "CarMax",      caps: { mileage: true,  price: true,  distance: false, zip: false, years: true,     trim: true  } },
                     ],
                     providerCapDefs: [
                         { key: "mileage",  label: "Mileage"  },
@@ -3555,7 +3555,6 @@
                         if (p.minPrice && p.maxPrice) parts.push(`price=${p.minPrice}-${p.maxPrice}`);
                         else if (p.minPrice) parts.push(`price=${p.minPrice}-nomax`);
                         else if (p.maxPrice) parts.push(`price=${p.maxPrice}`);
-                        if (p.zipCode) parts.push(`zip=${p.zipCode}`);
                         if (years.length) parts.push(years.length === 1 ? `year=${years[0]}` : `year=${years[0]}-${years[years.length - 1]}`);
                         const qs = parts.join("&");
                         const pathSlugs = [...modelSlugs, ...trimSlugs];
@@ -3565,12 +3564,13 @@
                     carGurusUrl(car) {
                         const entry = this.carGurusCache[car._carGurusKey];
                         if (!entry?.paths?.length) return null;
+                        const years = [...new Set(car.years)].sort((a, b) => a - b);
                         const params = new URLSearchParams({
                             sourceContext: "carSelectorAPI",
                             sortDirection: "ASC",
                             sortType: "PRICE",
-                            startYear: entry.startYear,
-                            endYear: entry.endYear,
+                            startYear: years[0],
+                            endYear: years[years.length - 1],
                             srpVariation: "DEFAULT_SEARCH",
                             makeModelTrimPaths: entry.paths.join(","),
                         });
