@@ -530,7 +530,7 @@
     },
     "matchType": "LLM"
   },
-  "Make: Cadillac, Model: Escalade ASCM Harness 2018-2018": {
+  "Make: Cadillac, Model: Escalade 2018-2018": {
     "success": "SUCCESS",
     "filterCriteria": {
       "entityId": "d142",
@@ -724,6 +724,23 @@
     },
     "matchType": "LLM"
   },
+  "Make: Chevrolet, Model: Malibu 2017-2019": {
+    "success": "SUCCESS",
+    "filterCriteria": {
+      "entityId": "d622",
+      "makeModelTrimPaths": [
+        "m1/d622",
+        "m1/d2321",
+        "m1/d623"
+      ],
+      "startYear": 2017,
+      "endYear": 2019,
+      "isDeliveryEnabled": false,
+      "priceDropsOnly": false,
+      "hideNationwideShipping": true
+    },
+    "matchType": "LLM"
+  },
   "Make: Chevrolet, Model: Malibu 2019-2019": {
     "success": "SUCCESS",
     "filterCriteria": {
@@ -734,23 +751,6 @@
         "m1/d623"
       ],
       "startYear": 2019,
-      "endYear": 2019,
-      "isDeliveryEnabled": false,
-      "priceDropsOnly": false,
-      "hideNationwideShipping": true
-    },
-    "matchType": "LLM"
-  },
-  "Make: Chevrolet, Model: Malibu ASCM Harness 2017-2019": {
-    "success": "SUCCESS",
-    "filterCriteria": {
-      "entityId": "d622",
-      "makeModelTrimPaths": [
-        "m1/d622",
-        "m1/d2321",
-        "m1/d623"
-      ],
-      "startYear": 2017,
       "endYear": 2019,
       "isDeliveryEnabled": false,
       "priceDropsOnly": false,
@@ -855,36 +855,6 @@
     "matchType": "LLM"
   },
   "Make: Chevrolet, Model: Volt 2017-2018": {
-    "success": "SUCCESS",
-    "filterCriteria": {
-      "entityId": "d2012",
-      "makeModelTrimPaths": [
-        "m1/d2012"
-      ],
-      "startYear": 2017,
-      "endYear": 2018,
-      "isDeliveryEnabled": false,
-      "priceDropsOnly": false,
-      "hideNationwideShipping": true
-    },
-    "matchType": "LLM"
-  },
-  "Make: Chevrolet, Model: Volt ASCM Harness 2017-2018": {
-    "success": "SUCCESS",
-    "filterCriteria": {
-      "entityId": "d2012",
-      "makeModelTrimPaths": [
-        "m1/d2012"
-      ],
-      "startYear": 2017,
-      "endYear": 2018,
-      "isDeliveryEnabled": false,
-      "priceDropsOnly": false,
-      "hideNationwideShipping": true
-    },
-    "matchType": "LLM"
-  },
-  "Make: Chevrolet, Model: Volt Camera Harness 2017-2018": {
     "success": "SUCCESS",
     "filterCriteria": {
       "entityId": "d2012",
@@ -1422,7 +1392,7 @@
     },
     "matchType": "LLM"
   },
-  "Make: GMC, Model: Acadia ASCM Harness 2018-2018": {
+  "Make: GMC, Model: Acadia 2018-2018": {
     "success": "SUCCESS",
     "filterCriteria": {
       "entityId": "d925",
