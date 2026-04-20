@@ -1224,7 +1224,21 @@
     },
     "matchType": "LLM"
   },
-  "Make: Ford, Model: Focus Hybrid 2018-2018": null,
+  "Make: Ford, Model: Focus Hybrid 2018-2018": {
+    "success": "SUCCESS",
+    "filterCriteria": {
+      "entityId": "d346",
+      "makeModelTrimPaths": [
+        "m2/d346"
+      ],
+      "startYear": 2018,
+      "endYear": 2018,
+      "isDeliveryEnabled": false,
+      "priceDropsOnly": false,
+      "hideNationwideShipping": true
+    },
+    "matchType": "LLM"
+  },
   "Make: Ford, Model: Kuga 2020-2023": {
     "success": "SUCCESS",
     "filterCriteria": {

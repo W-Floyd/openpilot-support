@@ -1808,30 +1808,49 @@
                         });
                     })(),
                     scrolled: false,
-                    infoDismissed: false,
+                    infoDismissed: localStorage.getItem("infoDismissed") === "1",
                     isMobile: window.innerWidth < 640,
                     _allUniqueValuesCache: {},
                     _speedRangeCache: {},
                     _invertedIndex: {},
-                    sortCol: null,
-                    sortDir: "asc",
-                    filters: Object.fromEntries(
-                        filterableCols.map((k) => [k, []]),
-                    ),
+                    sortCol: (() => { try { return JSON.parse(localStorage.getItem("sortCol")); } catch { return null; } })(),
+                    sortDir: localStorage.getItem("sortDir") || "asc",
+                    filters: (() => {
+                        const defaults = Object.fromEntries(filterableCols.map((k) => [k, []]));
+                        try {
+                            const saved = JSON.parse(localStorage.getItem("filters"));
+                            if (saved && typeof saved === "object") {
+                                for (const k of filterableCols)
+                                    if (!Array.isArray(saved[k])) saved[k] = [];
+                                return { ...defaults, ...saved };
+                            }
+                        } catch {}
+                        return defaults;
+                    })(),
                     filterSearch: Object.fromEntries(
                         filterableCols.map((k) => [k, ""]),
                     ),
                     openFilter: null,
                     speedUnit: localStorage.getItem("speedUnit") || "mph",
-                    speedFilters: {
-                        min_steer_speed: { min: null, max: null },
-                        min_enable_speed: { min: null, max: null },
-                    },
+                    speedFilters: (() => {
+                        const defaults = { min_steer_speed: { min: null, max: null }, min_enable_speed: { min: null, max: null } };
+                        try {
+                            const saved = JSON.parse(localStorage.getItem("speedFilters"));
+                            if (saved && typeof saved === "object") return { ...defaults, ...saved };
+                        } catch {}
+                        return defaults;
+                    })(),
                     carGurusCache,
                     ariCache,
                     ccCache,
                     modelMappings,
-                    ariFilter: { min: null, max: null },
+                    ariFilter: (() => {
+                        try {
+                            const saved = JSON.parse(localStorage.getItem("ariFilter"));
+                            if (saved && typeof saved === "object") return saved;
+                        } catch {}
+                        return { min: null, max: null };
+                    })(),
                     showSettings: false,
                     hiddenColumns: JSON.parse(
                         localStorage.getItem("hiddenColumns") ||
@@ -2796,6 +2815,13 @@
                         for (const key of Object.keys(this.speedFilters))
                             this._speedRangeCache[key] =
                                 this._computeSpeedRange(key);
+
+                        this.$watch("infoDismissed", (v) => localStorage.setItem("infoDismissed", v ? "1" : "0"));
+                        this.$watch("filters", (v) => localStorage.setItem("filters", JSON.stringify(v)));
+                        this.$watch("speedFilters", (v) => localStorage.setItem("speedFilters", JSON.stringify(v)));
+                        this.$watch("ariFilter", (v) => localStorage.setItem("ariFilter", JSON.stringify(v)));
+                        this.$watch("sortCol", (v) => localStorage.setItem("sortCol", JSON.stringify(v)));
+                        this.$watch("sortDir", (v) => localStorage.setItem("sortDir", v));
                     },
 
                     openAllEbayLinks() {
