@@ -52,7 +52,10 @@ def _extract_years_from_model(car_docs) -> list[int]:
 
 _NON_ACC_PATTERNS = ["NO ACC", "Non-ACC", "Non ACC", "No-ACC"]
 _NON_ACC_REGEX = "|".join(f"( - )?{p}" for p in _NON_ACC_PATTERNS)
+_NON_SCC_PATTERNS = ["Non-SCC"]
+_NON_SCC_REGEX = "|".join(f"( - )?{p}" for p in _NON_SCC_PATTERNS)
 _HARNESS_SUFFIX_RE = re.compile(r"\s+(\S+ Harness)\s*$", re.IGNORECASE)
+_ACC_W_SUFFIX_RE = re.compile(r"\s+ACC w (\S+)\s*$", re.IGNORECASE)
 
 
 def _clean_model_name(car_docs) -> str:
@@ -70,6 +73,13 @@ def _clean_model_name(car_docs) -> str:
             rf"\s*({_NON_ACC_REGEX})", "", model, flags=re.IGNORECASE
         ).strip()
 
+    if "SCC" in (car_docs.package or ""):
+        model = re.sub(
+            rf"\s*({_NON_SCC_REGEX})", "", model, flags=re.IGNORECASE
+        ).strip()
+
+    model = _ACC_W_SUFFIX_RE.sub("", model).strip()
+
     return model
 
 
@@ -77,7 +87,13 @@ def _modify_package_from_model(car_docs) -> str:
     package = car_docs.package or ""
     if "ACC" in package and re.search(_NON_ACC_REGEX, car_docs.model, re.IGNORECASE):
         return "No Adaptive Cruise Control (Non-ACC)"
+    if "SCC" in package and re.search(_NON_SCC_REGEX, car_docs.model, re.IGNORECASE):
+        return "No Smart Cruise Control (Non-SCC)"
     m = _HARNESS_SUFFIX_RE.search(car_docs.model)
+    if m:
+        suffix = m.group(1)
+        return f"{package} + {suffix}" if package else suffix
+    m = _ACC_W_SUFFIX_RE.search(car_docs.model)
     if m:
         suffix = m.group(1)
         return f"{package} + {suffix}" if package else suffix
