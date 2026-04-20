@@ -59,8 +59,8 @@ The search parameters panel passes user-specified filters into each provider's U
 | Min Price    | ✓    | ✓          | ✓        | ✓        | ✓       | ✓      |
 | Max Price    | ✓    | ✓          | ✓        | ✓        | ✓       | ✓      |
 | Max Distance | ✓    | ✓          | ✓        | ✓        |         |        |
-| Zip Code     | ✓    | ✓          | ✓        | ✓        |         | ✓      |
-| Model Years  | ✓    | ✓          | pre-cached per model | ✓        | ✓       | ✓      |
+| Zip Code     | ✓    | ✓          | ✓        | ✓        |         |        |
+| Model Years  | ✓    | ✓          | ✓        | ✓        | ✓       | ✓      |
 | Trim/Package |      |            |          |          | ✓       | ✓      |
 
 ## Output Files

@@ -801,8 +801,7 @@ def build_cargurus_js_cache(cars: list[dict], raw_cache: dict) -> dict:
             and response.get("success") != "FAILURE"
             and response.get("filterCriteria", {}).get("makeModelTrimPaths")
         ):
-            fc = response["filterCriteria"]
-            result[key] = {"paths": fc["makeModelTrimPaths"], "startYear": fc["startYear"], "endYear": fc["endYear"]}
+            result[key] = {"paths": response["filterCriteria"]["makeModelTrimPaths"]}
         elif query in raw_cache:
             result[key] = {"error": True}
     return result
