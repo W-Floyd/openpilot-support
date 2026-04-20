@@ -191,7 +191,10 @@
                 align-items: center;
                 gap: 6px;
             }
-            .sp-lbl-row .sp-lbl { margin-bottom: 0; flex: 1; }
+            .sp-lbl-row .sp-lbl {
+                margin-bottom: 0;
+                flex: 1;
+            }
             .all-btn {
                 font-size: 0.7rem;
                 color: #6b7280;
@@ -202,7 +205,10 @@
                 cursor: pointer;
                 line-height: 1.4;
             }
-            .all-btn:hover { color: #111827; border-color: #9ca3af; }
+            .all-btn:hover {
+                color: #111827;
+                border-color: #9ca3af;
+            }
             .unit-row {
                 display: flex;
                 align-items: center;
@@ -301,12 +307,14 @@
                 font-size: 0.7rem;
                 margin-top: 8px;
             }
-            .caps-table th, .caps-table td {
+            .caps-table th,
+            .caps-table td {
                 padding: 2px 6px;
                 text-align: center;
                 border: 1px solid #bfdbfe;
             }
-            .caps-table td:first-child, .caps-table th:first-child {
+            .caps-table td:first-child,
+            .caps-table th:first-child {
                 text-align: left;
             }
             .caps-table thead th {
@@ -363,8 +371,13 @@
                 width: 100%;
                 text-align: left;
             }
-            .sp-toggle:hover { color: #111827; }
-            .sp-caret { font-size: 0.65rem; color: #9ca3af; }
+            .sp-toggle:hover {
+                color: #111827;
+            }
+            .sp-caret {
+                font-size: 0.65rem;
+                color: #9ca3af;
+            }
             .sp-fields {
                 display: flex;
                 flex-wrap: wrap;
@@ -1073,7 +1086,8 @@
 
                             <p class="sp-lbl">Columns</p>
                             <template x-for="col in allColumns" :key="col.key">
-                                <label class="col-row"
+                                <label
+                                    class="col-row"
                                     draggable="true"
                                     @dragstart="$event.dataTransfer.effectAllowed='move'; _dragColKey = col.key"
                                     @dragover.prevent="$event.dataTransfer.dropEffect='move'; _dragOverColKey = col.key"
@@ -1094,8 +1108,18 @@
 
                             <div class="sp-lbl-row">
                                 <p class="sp-lbl">Providers</p>
-                                <button class="all-btn" @click="hiddenProviders = []; hiddenColumns = hiddenColumns.filter(c => c !== 'search')">All</button>
-                                <button class="all-btn" @click="hiddenProviders = searchProviders.map(p => p.key)">None</button>
+                                <button
+                                    class="all-btn"
+                                    @click="hiddenProviders = []; hiddenColumns = hiddenColumns.filter(c => c !== 'search')"
+                                >
+                                    All
+                                </button>
+                                <button
+                                    class="all-btn"
+                                    @click="hiddenProviders = searchProviders.map(p => p.key)"
+                                >
+                                    None
+                                </button>
                             </div>
                             <template x-for="p in searchProviders" :key="p.key">
                                 <label class="col-row">
@@ -1128,24 +1152,35 @@
             >
                 <div class="info-banner">
                     Search links are auto-generated and may return incorrect or
-                    unrelated results. Use them as a starting point, not a guarantee.
-                    Always verify before purchasing.
+                    unrelated results. Use them as a starting point, not a
+                    guarantee. Always verify before purchasing.
                     <br /><br />
                     <table class="caps-table">
                         <thead>
                             <tr>
                                 <th></th>
-                                <template x-for="p in searchProviders.filter(p => !hiddenProviders.includes(p.key))" :key="p.key">
+                                <template
+                                    x-for="p in searchProviders.filter(p => !hiddenProviders.includes(p.key))"
+                                    :key="p.key"
+                                >
                                     <th x-text="p.label"></th>
                                 </template>
                             </tr>
                         </thead>
                         <tbody>
-                            <template x-for="cap in providerCapDefs" :key="cap.key">
+                            <template
+                                x-for="cap in providerCapDefs"
+                                :key="cap.key"
+                            >
                                 <tr>
                                     <td x-text="cap.label"></td>
-                                    <template x-for="p in searchProviders.filter(p => !hiddenProviders.includes(p.key))" :key="p.key">
-                                        <td x-text="p.caps[cap.key] === true ? '✓' : p.caps[cap.key] === 'max' ? 'Max' : p.caps[cap.key] === 'cached' ? '~' : ''"></td>
+                                    <template
+                                        x-for="p in searchProviders.filter(p => !hiddenProviders.includes(p.key))"
+                                        :key="p.key"
+                                    >
+                                        <td
+                                            x-text="p.caps[cap.key] === true ? '✓' : p.caps[cap.key] === 'max' ? 'Max' : p.caps[cap.key] === 'cached' ? '~' : ''"
+                                        ></td>
                                     </template>
                                 </tr>
                             </template>
@@ -1202,41 +1237,89 @@
             </div>
 
             <!-- Search parameters -->
-            <div class="search-params"
+            <div
+                class="search-params"
                 x-show="!hiddenColumns.includes('search') && searchProviders.some(p => !hiddenProviders.includes(p.key))"
             >
-                <button class="sp-toggle" @click="searchParamsOpen = !searchParamsOpen">
+                <button
+                    class="sp-toggle"
+                    @click="searchParamsOpen = !searchParamsOpen"
+                >
                     <span>Search Parameters</span>
-                    <span x-text="searchParamsOpen ? '▲' : '▼'" class="sp-caret"></span>
+                    <span
+                        x-text="searchParamsOpen ? '▲' : '▼'"
+                        class="sp-caret"
+                    ></span>
                 </button>
                 <template x-if="searchParamsOpen">
                     <div class="sp-fields">
                         <div class="sp-group">
                             <span class="sp-label">Mileage</span>
                             <div class="sp-row">
-                                <input class="sp-input" type="number" placeholder="Min" x-model.number="searchParams.minMileage" min="0" />
+                                <input
+                                    class="sp-input"
+                                    type="number"
+                                    placeholder="Min"
+                                    x-model.number="searchParams.minMileage"
+                                    min="0"
+                                />
                                 <span class="sp-sep">–</span>
-                                <input class="sp-input" type="number" placeholder="Max" x-model.number="searchParams.maxMileage" min="0" />
+                                <input
+                                    class="sp-input"
+                                    type="number"
+                                    placeholder="Max"
+                                    x-model.number="searchParams.maxMileage"
+                                    min="0"
+                                />
                             </div>
                         </div>
                         <div class="sp-group">
                             <span class="sp-label">Price</span>
                             <div class="sp-row">
-                                <input class="sp-input" type="number" placeholder="Min" x-model.number="searchParams.minPrice" min="0" />
+                                <input
+                                    class="sp-input"
+                                    type="number"
+                                    placeholder="Min"
+                                    x-model.number="searchParams.minPrice"
+                                    min="0"
+                                />
                                 <span class="sp-sep">–</span>
-                                <input class="sp-input" type="number" placeholder="Max" x-model.number="searchParams.maxPrice" min="0" />
+                                <input
+                                    class="sp-input"
+                                    type="number"
+                                    placeholder="Max"
+                                    x-model.number="searchParams.maxPrice"
+                                    min="0"
+                                />
                             </div>
                         </div>
                         <div class="sp-group">
                             <span class="sp-label">Max Distance</span>
-                            <input class="sp-input" type="number" placeholder="Miles" x-model.number="searchParams.maxDistance" min="0" />
+                            <input
+                                class="sp-input"
+                                type="number"
+                                placeholder="Miles"
+                                x-model.number="searchParams.maxDistance"
+                                min="0"
+                            />
                         </div>
                         <div class="sp-group">
                             <span class="sp-label">Zip Code</span>
-                            <input class="sp-input" type="text" placeholder="e.g. 90210" x-model="searchParams.zipCode" maxlength="10" />
+                            <input
+                                class="sp-input"
+                                type="text"
+                                placeholder="e.g. 90210"
+                                x-model="searchParams.zipCode"
+                                maxlength="10"
+                            />
                         </div>
                         <div class="sp-footer">
-                            <button class="chip-clear" @click="searchParams = { minMileage: null, maxMileage: null, minPrice: null, maxPrice: null, maxDistance: null, zipCode: '' }">Clear</button>
+                            <button
+                                class="chip-clear"
+                                @click="searchParams = { minMileage: null, maxMileage: null, minPrice: null, maxPrice: null, maxDistance: null, zipCode: '' }"
+                            >
+                                Clear
+                            </button>
                         </div>
                     </div>
                 </template>
@@ -2189,20 +2272,86 @@
                                 : "[]"),
                     ),
                     searchProviders: [
-                        { key: "ebay",        label: "eBay",        caps: { mileage: "max", price: true,  distance: true,  zip: true,  years: true,     trim: false } },
-                        { key: "autotrader",  label: "AutoTrader",  caps: { mileage: true,  price: true,  distance: true,  zip: true,  years: true,     trim: false } },
-                        { key: "cargurus",    label: "CarGurus",    caps: { mileage: true,  price: true,  distance: true,  zip: true,  years: true,     trim: false } },
-                        { key: "carscom",     label: "Cars.com",    caps: { mileage: "max", price: true,  distance: true,  zip: true,  years: true,     trim: false } },
-                        { key: "carvana",     label: "Carvana",     caps: { mileage: true,  price: true,  distance: false, zip: false, years: true,     trim: true  } },
-                        { key: "carmax",      label: "CarMax",      caps: { mileage: true,  price: true,  distance: false, zip: false, years: true,     trim: true  } },
+                        {
+                            key: "ebay",
+                            label: "eBay",
+                            caps: {
+                                mileage: "max",
+                                price: true,
+                                distance: true,
+                                zip: true,
+                                years: true,
+                                trim: false,
+                            },
+                        },
+                        {
+                            key: "autotrader",
+                            label: "AutoTrader",
+                            caps: {
+                                mileage: true,
+                                price: true,
+                                distance: true,
+                                zip: true,
+                                years: true,
+                                trim: false,
+                            },
+                        },
+                        {
+                            key: "cargurus",
+                            label: "CarGurus",
+                            caps: {
+                                mileage: true,
+                                price: true,
+                                distance: true,
+                                zip: true,
+                                years: true,
+                                trim: false,
+                            },
+                        },
+                        {
+                            key: "carscom",
+                            label: "Cars.com",
+                            caps: {
+                                mileage: "max",
+                                price: true,
+                                distance: true,
+                                zip: true,
+                                years: true,
+                                trim: false,
+                            },
+                        },
+                        {
+                            key: "carvana",
+                            label: "Carvana",
+                            caps: {
+                                mileage: true,
+                                price: true,
+                                distance: false,
+                                zip: false,
+                                years: true,
+                                trim: true,
+                            },
+                        },
+                        {
+                            key: "carmax",
+                            label: "CarMax",
+                            caps: {
+                                mileage: true,
+                                price: true,
+                                distance: false,
+                                zip: false,
+                                years: true,
+                                trim: true,
+                            },
+                        },
                     ],
                     providerCapDefs: [
-                        { key: "mileage",  label: "Mileage"  },
-                        { key: "price",    label: "Price"    },
+                        { key: "mileage", label: "Mileage" },
+                        { key: "price", label: "Price" },
                         { key: "distance", label: "Distance" },
-                        { key: "zip",      label: "Zip"      },
-                        { key: "years",    label: "Years"    },
-                        { key: "trim",     label: "Trim"     },
+                        { key: "zip", label: "Zip" },
+                        { key: "years", label: "Years" },
+                        { key: "trim", label: "Trim" },
                     ],
                     hiddenProviders: JSON.parse(
                         localStorage.getItem("hiddenProviders") || "[]",
@@ -2216,78 +2365,103 @@
 
                     _dragColKey: null,
                     _dragOverColKey: null,
-                    _defaultColumnOrder: ["make","model","years","package","support_type","forks","merged","openpilot_longitudinal","auto_resume","good_steering_torque","harness","min_steer_speed","min_enable_speed","ari","cc_seal","search"],
+                    _defaultColumnOrder: [
+                        "make",
+                        "model",
+                        "years",
+                        "package",
+                        "support_type",
+                        "forks",
+                        "merged",
+                        "openpilot_longitudinal",
+                        "auto_resume",
+                        "good_steering_torque",
+                        "harness",
+                        "min_steer_speed",
+                        "min_enable_speed",
+                        "ari",
+                        "cc_seal",
+                        "search",
+                    ],
                     allColumns: (() => {
-                      const cols = [
-                        { key: "make", label: "Make" },
-                        { key: "model", label: "Model" },
-                        { key: "years", label: "Years" },
-                        {
-                            key: "package",
-                            label: "Package",
-                            mobileLabel: "Pkg",
-                        },
-                        {
-                            key: "support_type",
-                            label: "Support Level",
-                            mobileLabel: "Support",
-                        },
-                        { key: "forks", label: "Fork", forks: true },
-                        { key: "merged", label: "Merged" },
-                        {
-                            key: "openpilot_longitudinal",
-                            label: "Longitudinal",
-                            mobileLabel: "Long.",
-                        },
-                        {
-                            key: "auto_resume",
-                            label: "Resume",
-                            mobileLabel: "Res.",
-                        },
-                        {
-                            key: "good_steering_torque",
-                            label: "Torque",
-                            mobileLabel: "Torq.",
-                        },
-                        { key: "harness", label: "Harness" },
-                        {
-                            key: "min_steer_speed",
-                            label: "Min Steer",
-                            mobileLabel: "Steer",
-                            speed: true,
-                        },
-                        {
-                            key: "min_enable_speed",
-                            label: "Min Enable",
-                            mobileLabel: "Enable",
-                            speed: true,
-                        },
-                        {
-                            key: "ari",
-                            label: "Reliability",
-                            mobileLabel: "Rel.",
-                            ari: true,
-                        },
-                        {
-                            key: "cc_seal",
-                            label: "CC Rating",
-                            cc_seal: true,
-                            filterable: true,
-                        },
-                        { key: "search", label: "Search", search: true },
-                      ].map((col) => ({
-                        ...col,
-                        filterable: col.filterable ?? filterableCols.includes(col.key),
-                      }));
-                      try {
-                        const saved = JSON.parse(localStorage.getItem("columnOrder"));
-                        if (Array.isArray(saved)) {
-                          const ordered = saved.map(k => cols.find(c => c.key === k)).filter(Boolean);
-                          const rest = cols.filter(c => !saved.includes(c.key));
-                          return [...ordered, ...rest];
-                        }
-                      } catch {}
-                      return cols;
+                        const cols = [
+                            { key: "make", label: "Make" },
+                            { key: "model", label: "Model" },
+                            { key: "years", label: "Years" },
+                            {
+                                key: "package",
+                                label: "Package",
+                                mobileLabel: "Pkg",
+                            },
+                            {
+                                key: "support_type",
+                                label: "Support Level",
+                                mobileLabel: "Support",
+                            },
+                            { key: "forks", label: "Fork", forks: true },
+                            { key: "merged", label: "Merged" },
+                            {
+                                key: "openpilot_longitudinal",
+                                label: "Longitudinal",
+                                mobileLabel: "Long.",
+                            },
+                            {
+                                key: "auto_resume",
+                                label: "Resume",
+                                mobileLabel: "Res.",
+                            },
+                            {
+                                key: "good_steering_torque",
+                                label: "Torque",
+                                mobileLabel: "Torq.",
+                            },
+                            { key: "harness", label: "Harness" },
+                            {
+                                key: "min_steer_speed",
+                                label: "Min Steer",
+                                mobileLabel: "Steer",
+                                speed: true,
+                            },
+                            {
+                                key: "min_enable_speed",
+                                label: "Min Enable",
+                                mobileLabel: "Enable",
+                                speed: true,
+                            },
+                            {
+                                key: "ari",
+                                label: "Reliability",
+                                mobileLabel: "Rel.",
+                                ari: true,
+                            },
+                            {
+                                key: "cc_seal",
+                                label: "CC Rating",
+                                cc_seal: true,
+                                filterable: true,
+                            },
+                            { key: "search", label: "Search", search: true },
+                        ].map((col) => ({
+                            ...col,
+                            filterable:
+                                col.filterable ??
+                                filterableCols.includes(col.key),
+                        }));
+                        try {
+                            const saved = JSON.parse(
+                                localStorage.getItem("columnOrder"),
+                            );
+                            if (Array.isArray(saved)) {
+                                const ordered = saved
+                                    .map((k) => cols.find((c) => c.key === k))
+                                    .filter(Boolean);
+                                const rest = cols.filter(
+                                    (c) => !saved.includes(c.key),
+                                );
+                                return [...ordered, ...rest];
+                            }
+                        } catch {}
+                        return cols;
                     })(),
 
                     get filteredCars() {
@@ -3005,7 +3179,9 @@
 
                     urlYears(car) {
                         const selected = this.filters.years;
-                        const years = [...new Set(car.years)].sort((a, b) => a - b);
+                        const years = [...new Set(car.years)].sort(
+                            (a, b) => a - b,
+                        );
                         if (!selected.length) return years;
                         const selectedSet = new Set(selected.map(Number));
                         return years.filter((y) => selectedSet.has(y));
@@ -3088,7 +3264,10 @@
                         const to = cols.findIndex((c) => c.key === toKey);
                         cols.splice(to, 0, cols.splice(from, 1)[0]);
                         this.allColumns = cols;
-                        localStorage.setItem("columnOrder", JSON.stringify(cols.map((c) => c.key)));
+                        localStorage.setItem(
+                            "columnOrder",
+                            JSON.stringify(cols.map((c) => c.key)),
+                        );
                     },
 
                     toggleColumn(key) {
@@ -3121,7 +3300,11 @@
                         this.sortCol = null;
                         this.sortDir = "asc";
                         this.clearAllFilters();
-                        this.allColumns = [...this._defaultColumnOrder].map(k => this.allColumns.find(c => c.key === k)).filter(Boolean);
+                        this.allColumns = [...this._defaultColumnOrder]
+                            .map((k) =>
+                                this.allColumns.find((c) => c.key === k),
+                            )
+                            .filter(Boolean);
                         this.speedUnit = "mph";
                         this.hiddenProviders = [];
                         this.hiddenColumns = this.isMobile
@@ -3250,15 +3433,20 @@
                                 } else if (p === "dir") {
                                     this.sortDir = v;
                                 } else if (p === "sp_min_mileage") {
-                                    this.searchParams.minMileage = parseInt(v) || null;
+                                    this.searchParams.minMileage =
+                                        parseInt(v) || null;
                                 } else if (p === "sp_max_mileage") {
-                                    this.searchParams.maxMileage = parseInt(v) || null;
+                                    this.searchParams.maxMileage =
+                                        parseInt(v) || null;
                                 } else if (p === "sp_min_price") {
-                                    this.searchParams.minPrice = parseInt(v) || null;
+                                    this.searchParams.minPrice =
+                                        parseInt(v) || null;
                                 } else if (p === "sp_max_price") {
-                                    this.searchParams.maxPrice = parseInt(v) || null;
+                                    this.searchParams.maxPrice =
+                                        parseInt(v) || null;
                                 } else if (p === "sp_max_distance") {
-                                    this.searchParams.maxDistance = parseInt(v) || null;
+                                    this.searchParams.maxDistance =
+                                        parseInt(v) || null;
                                 } else if (p === "sp_zip") {
                                     this.searchParams.zipCode = v;
                                 }
@@ -3297,14 +3485,33 @@
                             localStorage.setItem("sortDir", v);
                             this._saveToUrl();
                         });
-                        this.$watch("searchParams", () => this._saveToUrl(), { deep: true });
+                        this.$watch("searchParams", () => this._saveToUrl(), {
+                            deep: true,
+                        });
                         this.$watch("hiddenProviders", (v) => {
-                            localStorage.setItem("hiddenProviders", JSON.stringify(v));
-                            if (this.searchProviders.every((p) => v.includes(p.key)))
-                                this.hiddenColumns = [...new Set([...this.hiddenColumns, "search"])];
+                            localStorage.setItem(
+                                "hiddenProviders",
+                                JSON.stringify(v),
+                            );
+                            if (
+                                this.searchProviders.every((p) =>
+                                    v.includes(p.key),
+                                )
+                            )
+                                this.hiddenColumns = [
+                                    ...new Set([
+                                        ...this.hiddenColumns,
+                                        "search",
+                                    ]),
+                                ];
                         });
                         this.$watch("hiddenColumns", (v) => {
-                            if (!v.includes("search") && this.searchProviders.every((p) => this.hiddenProviders.includes(p.key)))
+                            if (
+                                !v.includes("search") &&
+                                this.searchProviders.every((p) =>
+                                    this.hiddenProviders.includes(p.key),
+                                )
+                            )
                                 this.hiddenProviders = [];
                         });
                         if (!location.search) this._saveToUrl();
@@ -3348,11 +3555,16 @@
                         if (this.sortDir !== "asc")
                             params.set("dir", this.sortDir);
                         const sp = this.searchParams;
-                        if (sp.minMileage) params.set("sp_min_mileage", sp.minMileage);
-                        if (sp.maxMileage) params.set("sp_max_mileage", sp.maxMileage);
-                        if (sp.minPrice) params.set("sp_min_price", sp.minPrice);
-                        if (sp.maxPrice) params.set("sp_max_price", sp.maxPrice);
-                        if (sp.maxDistance) params.set("sp_max_distance", sp.maxDistance);
+                        if (sp.minMileage)
+                            params.set("sp_min_mileage", sp.minMileage);
+                        if (sp.maxMileage)
+                            params.set("sp_max_mileage", sp.maxMileage);
+                        if (sp.minPrice)
+                            params.set("sp_min_price", sp.minPrice);
+                        if (sp.maxPrice)
+                            params.set("sp_max_price", sp.maxPrice);
+                        if (sp.maxDistance)
+                            params.set("sp_max_distance", sp.maxDistance);
                         if (sp.zipCode) params.set("sp_zip", sp.zipCode);
                         const qs = params.toString();
                         history.replaceState(
@@ -3402,38 +3614,49 @@
                                 .replace(/[^a-z0-9-]/g, "");
                         const make = slug(car.make);
                         const key = `${car.make}|${car.model}`;
-                        const variants =
-                            this.modelMappings[key] ?? [car.model];
+                        const variants = this.modelMappings[key] ?? [car.model];
                         const codes = variants.map(
                             (v) =>
-                                this.autotraderMappings[`${car.make}|${v}`] ?? v.replace(/\s+/g, ""),
+                                this.autotraderMappings[`${car.make}|${v}`] ??
+                                v.replace(/\s+/g, ""),
                         );
                         const years = this.urlYears(car);
                         const p = this.searchParams;
-                        const category = /hybrid/i.test(car.model) ? "hybrid/" : "";
-                        const priceSegment = (p.minPrice || p.maxPrice)
-                            ? `cars-between-${p.minPrice || 0}-and-${p.maxPrice || ""}/${category}`
-                            : category;
+                        const category = /hybrid/i.test(car.model)
+                            ? "hybrid/"
+                            : "";
+                        const priceSegment =
+                            p.minPrice || p.maxPrice
+                                ? `cars-between-${p.minPrice || 0}-and-${p.maxPrice || ""}/${category}`
+                                : category;
                         const base = `https://www.autotrader.com/cars-for-sale/all-cars/${priceSegment}${make}`;
                         const yearParams = new URLSearchParams();
                         if (years.length) {
                             yearParams.set("startYear", years[0]);
                             yearParams.set("endYear", years[years.length - 1]);
                         }
-                        if (p.maxMileage) yearParams.set("mileage", p.maxMileage);
-                        if (p.maxDistance) yearParams.set("searchRadius", p.maxDistance);
+                        if (p.maxMileage)
+                            yearParams.set("mileage", p.maxMileage);
+                        if (p.maxDistance)
+                            yearParams.set("searchRadius", p.maxDistance);
                         yearParams.set("sortBy", "derivedpriceASC");
                         if (p.zipCode) yearParams.set("zip", p.zipCode);
                         if (codes.length > 1) {
                             const modelParams = [...codes]
                                 .sort()
-                                .map((c) => `modelCode=${encodeURIComponent(c)}`)
+                                .map(
+                                    (c) => `modelCode=${encodeURIComponent(c)}`,
+                                )
                                 .join("&");
                             return `${base}?${modelParams}&${yearParams}`;
                         }
                         const modelSlug =
-                            this.autotraderMappings[`${car.make}|${variants[0]}`] ??
-                            slug(variants[0].replace(/\s*hybrid\s*/i, "").trim());
+                            this.autotraderMappings[
+                                `${car.make}|${variants[0]}`
+                            ] ??
+                            slug(
+                                variants[0].replace(/\s*hybrid\s*/i, "").trim(),
+                            );
                         return `${base}/${modelSlug}?${yearParams}`;
                     },
 
@@ -3463,7 +3686,8 @@
                         if (p.minPrice) url += `&list_price_min=${p.minPrice}`;
                         if (p.maxPrice) url += `&list_price_max=${p.maxPrice}`;
                         if (p.maxMileage) url += `&mileage_max=${p.maxMileage}`;
-                        if (p.zipCode) url += `&zip=${encodeURIComponent(p.zipCode)}`;
+                        if (p.zipCode)
+                            url += `&zip=${encodeURIComponent(p.zipCode)}`;
                         return url;
                     },
 
@@ -3474,7 +3698,8 @@
                                 .replace(/\s+/g, "-")
                                 .replace(/[^a-z0-9-]/g, "");
                         const years = this.urlYears(car);
-                        const pkg = (car.package === "All" ? "" : car.package) || "";
+                        const pkg =
+                            (car.package === "All" ? "" : car.package) || "";
                         const trimStr = pkg
                             .replace("Adaptive Cruise Control (ACC)", "")
                             .replace("Lane Assist", "")
@@ -3488,8 +3713,20 @@
                             : car.model;
                         const trims = trimStr ? trimStr.split(" or ") : [];
                         const makeEntry = isHybrid
-                            ? { name: car.make, parentModels: [{ name: modelName, trims }], models: [] }
-                            : { name: car.make, parentModels: [Object.assign({ name: modelName }, trims.length ? { trims } : {})] };
+                            ? {
+                                  name: car.make,
+                                  parentModels: [{ name: modelName, trims }],
+                                  models: [],
+                              }
+                            : {
+                                  name: car.make,
+                                  parentModels: [
+                                      Object.assign(
+                                          { name: modelName },
+                                          trims.length ? { trims } : {},
+                                      ),
+                                  ],
+                              };
                         const filters = isHybrid
                             ? { fuelTypes: ["Hybrid"], makes: [makeEntry] }
                             : { makes: [makeEntry] };
@@ -3537,9 +3774,12 @@
                                 .replace(/\s+/g, "-")
                                 .replace(/[^a-z0-9-]/g, "");
                         const make = slug(car.make);
-                        const variants = this.modelMappings[`${car.make}|${car.model}`] ?? [car.model];
+                        const variants = this.modelMappings[
+                            `${car.make}|${car.model}`
+                        ] ?? [car.model];
                         const modelSlugs = [...new Set(variants.map(slug))];
-                        const rawPkg = (car.package === "All" ? "" : car.package) || "";
+                        const rawPkg =
+                            (car.package === "All" ? "" : car.package) || "";
                         const cleanedPkg = rawPkg
                             .replace(/Adaptive Cruise Control \(ACC\)/g, "")
                             .replace(/Lane Assist/g, "")
@@ -3548,18 +3788,35 @@
                             .replace(/\s+/g, " ")
                             .trim();
                         const trimSlugs = cleanedPkg
-                            ? [...new Set(cleanedPkg.split(" or ").map((t) => slug(t.trim())).filter(Boolean))]
+                            ? [
+                                  ...new Set(
+                                      cleanedPkg
+                                          .split(" or ")
+                                          .map((t) => slug(t.trim()))
+                                          .filter(Boolean),
+                                  ),
+                              ]
                             : [];
-                        if (/Adaptive Cruise Control \(ACC\)/.test(rawPkg)) trimSlugs.push("automated-cruise-control");
+                        if (/Adaptive Cruise Control \(ACC\)/.test(rawPkg))
+                            trimSlugs.push("automated-cruise-control");
                         const years = this.urlYears(car);
                         const p = this.searchParams;
                         const parts = [];
                         if (p.minMileage || p.maxMileage)
-                            parts.push(`mileage=${p.minMileage || 0}-${p.maxMileage || "nomileage"}`);
-                        if (p.minPrice && p.maxPrice) parts.push(`price=${p.minPrice}-${p.maxPrice}`);
-                        else if (p.minPrice) parts.push(`price=${p.minPrice}-nomax`);
+                            parts.push(
+                                `mileage=${p.minMileage || 0}-${p.maxMileage || "nomileage"}`,
+                            );
+                        if (p.minPrice && p.maxPrice)
+                            parts.push(`price=${p.minPrice}-${p.maxPrice}`);
+                        else if (p.minPrice)
+                            parts.push(`price=${p.minPrice}-nomax`);
                         else if (p.maxPrice) parts.push(`price=${p.maxPrice}`);
-                        if (years.length) parts.push(years.length === 1 ? `year=${years[0]}` : `year=${years[0]}-${years[years.length - 1]}`);
+                        if (years.length)
+                            parts.push(
+                                years.length === 1
+                                    ? `year=${years[0]}`
+                                    : `year=${years[0]}-${years[years.length - 1]}`,
+                            );
                         const qs = parts.join("&");
                         const pathSlugs = [...modelSlugs, ...trimSlugs];
                         return `https://www.carmax.com/cars/${make}/${pathSlugs.join("/")}${qs ? `?${qs}` : ""}`;
@@ -3579,18 +3836,22 @@
                             makeModelTrimPaths: entry.paths.join(","),
                         });
                         const p = this.searchParams;
-                        if (p.minMileage) params.set("minMileage", p.minMileage);
-                        if (p.maxMileage) params.set("maxMileage", p.maxMileage);
+                        if (p.minMileage)
+                            params.set("minMileage", p.minMileage);
+                        if (p.maxMileage)
+                            params.set("maxMileage", p.maxMileage);
                         if (p.minPrice) params.set("minPrice", p.minPrice);
                         if (p.maxPrice) params.set("maxPrice", p.maxPrice);
-                        if (p.maxDistance) params.set("distance", p.maxDistance);
+                        if (p.maxDistance)
+                            params.set("distance", p.maxDistance);
                         if (p.zipCode) params.set("zip", p.zipCode);
                         return `https://www.cargurus.com/search?${params}`;
                     },
 
                     providerUrl(car, key) {
                         if (key === "ebay") return this.ebayUrl(car);
-                        if (key === "autotrader") return this.autoTraderUrl(car);
+                        if (key === "autotrader")
+                            return this.autoTraderUrl(car);
                         if (key === "cargurus") return this.carGurusUrl(car);
                         if (key === "carscom") return this.carsComUrl(car);
                         if (key === "carvana") return this.carvanaUrl(car);
@@ -3616,18 +3877,25 @@
                         );
                         const p = this.searchParams;
                         let url = `https://www.ebay.com/sch/6001/i.html?_nkw=${query}&_sop=2`;
-                        const ebayMileageBrackets = [50000, 75000, 100000, 125000, 150000, 175000, 200000];
+                        const ebayMileageBrackets = [
+                            50000, 75000, 100000, 125000, 150000, 175000,
+                            200000,
+                        ];
                         const mileageBracket = p.maxMileage
-                            ? ebayMileageBrackets.find((b) => b >= p.maxMileage) ?? null
+                            ? (ebayMileageBrackets.find(
+                                  (b) => b >= p.maxMileage,
+                              ) ?? null)
                             : null;
-                        if (p.minPrice || p.maxPrice || mileageBracket) url += `&rt=nc`;
+                        if (p.minPrice || p.maxPrice || mileageBracket)
+                            url += `&rt=nc`;
                         if (p.minPrice) url += `&_udlo=${p.minPrice}`;
                         if (p.maxPrice) url += `&_udhi=${p.maxPrice}`;
                         if (mileageBracket) {
                             const label = `Less than ${mileageBracket.toLocaleString("en-US")} miles`;
                             url += `&${encodeURIComponent(encodeURIComponent("Vehicle Mileage"))}=${encodeURIComponent(encodeURIComponent(label))}&_dcat=6001`;
                         }
-                        if (p.zipCode) url += `&_stpos=${encodeURIComponent(p.zipCode)}&_fspt=1`;
+                        if (p.zipCode)
+                            url += `&_stpos=${encodeURIComponent(p.zipCode)}&_fspt=1`;
                         if (p.maxDistance) url += `&_sadis=${p.maxDistance}`;
                         return url;
                     },
