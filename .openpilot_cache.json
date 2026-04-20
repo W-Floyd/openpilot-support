@@ -41887,6 +41887,42 @@
       }
     }
   ],
+  "_git_BMW-E8x-E9x": {
+    "name": "BMW-E8x-E9x",
+    "url": "https://github.com/BMW-E8x-E9x/openpilot",
+    "hash": "51113899d",
+    "hash_url": "https://github.com/BMW-E8x-E9x/openpilot/commit/51113899d"
+  },
+  "_git_BluePilot": {
+    "name": "BluePilot",
+    "url": "https://github.com/BluePilotDev/bluepilot",
+    "hash": "bc03057",
+    "hash_url": "https://github.com/BluePilotDev/bluepilot/commit/bc03057"
+  },
+  "_git_OPGM": {
+    "name": "OPGM",
+    "url": "https://github.com/opgm/openpilot",
+    "hash": "eb3918d99",
+    "hash_url": "https://github.com/opgm/openpilot/commit/eb3918d99"
+  },
+  "_git_StarPilot": {
+    "name": "StarPilot",
+    "url": "https://github.com/firestar5683/StarPilot",
+    "hash": "6b58561c2",
+    "hash_url": "https://github.com/firestar5683/StarPilot/commit/6b58561c2"
+  },
+  "_git_openpilot": {
+    "name": "openpilot",
+    "url": "https://github.com/commaai/openpilot",
+    "hash": "b6432e705",
+    "hash_url": "https://github.com/commaai/openpilot/commit/b6432e705"
+  },
+  "_git_sunnypilot": {
+    "name": "sunnypilot",
+    "url": "https://github.com/sunnypilot/sunnypilot",
+    "hash": "18406e77ee",
+    "hash_url": "https://github.com/sunnypilot/sunnypilot/commit/18406e77ee"
+  },
   "openpilot": [
     {
       "make": "Acura",

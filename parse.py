@@ -576,6 +576,7 @@ def load_fork_cars(
     cars = json.loads(result.stdout)
 
     cache[fork_name] = cars
+    cache[f"_git_{fork_name}"] = get_fork_git_info(fork_name, fork_path)
     save_openpilot_cache(cache)
 
     return cars
@@ -1378,7 +1379,20 @@ def main():
         )
         print(f"  Found {len(fork_cars)} cars in {fork_name}.", file=sys.stderr)
         fork_car_lists.append((fork_name, fork_cars))
-        fork_info.append(get_fork_git_info(fork_name, fork_path))
+
+    openpilot_cache = load_openpilot_cache()
+    dirty = False
+    fork_info = []
+    for name, path in FORKS:
+        if not any(n == name for n, _ in fork_car_lists):
+            continue
+        key = f"_git_{name}"
+        if key not in openpilot_cache:
+            openpilot_cache[key] = get_fork_git_info(name, path)
+            dirty = True
+        fork_info.append(openpilot_cache[key])
+    if dirty:
+        save_openpilot_cache(openpilot_cache)
 
     cars = merge_fork_cars(fork_car_lists)
     print(f"Total unique cars: {len(cars)}.", file=sys.stderr)
