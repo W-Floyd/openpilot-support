@@ -3065,6 +3065,11 @@
                         localStorage.removeItem("hiddenProviders");
                         localStorage.removeItem("speedUnit");
                         localStorage.removeItem("columnOrder");
+                        localStorage.removeItem("sortCol");
+                        localStorage.removeItem("sortDir");
+                        this.sortCol = null;
+                        this.sortDir = "asc";
+                        this.clearAllFilters();
                         this.allColumns = [...this._defaultColumnOrder].map(k => this.allColumns.find(c => c.key === k)).filter(Boolean);
                         this.speedUnit = "mph";
                         this.hiddenProviders = [];
