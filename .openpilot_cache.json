@@ -34489,7 +34489,7 @@
       "min_enable_speed": -1.0,
       "auto_resume": true,
       "good_steering_torque": true,
-      "openpilot_longitudinal": "Stock",
+      "openpilot_longitudinal": "openpilot available",
       "video": null,
       "setup_video": null,
       "detail_sentence": "openpilot upgrades your <strong>Hyundai Ioniq 6 (with HDA II)</strong> with automated lane centering <strong>at all speeds</strong>, and adaptive cruise control <strong>that automatically resumes from a stop</strong>.",
