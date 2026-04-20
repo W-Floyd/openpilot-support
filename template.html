@@ -3003,6 +3003,14 @@
                         return `${this.toAscii(car.make)}|${this.toAscii(car.model)}|${years[0]}-${years[years.length - 1]}`;
                     },
 
+                    urlYears(car) {
+                        const selected = this.filters.years;
+                        const years = [...new Set(car.years)].sort((a, b) => a - b);
+                        if (!selected.length) return years;
+                        const selectedSet = new Set(selected.map(Number));
+                        return years.filter((y) => selectedSet.has(y));
+                    },
+
                     ariKey(make, model, year) {
                         return `${this.toAscii(make)}|${this.toAscii(model)}|${year}`;
                     },
@@ -3400,7 +3408,7 @@
                             (v) =>
                                 this.autotraderMappings[`${car.make}|${v}`] ?? v.replace(/\s+/g, ""),
                         );
-                        const years = [...new Set(car.years)].sort((a, b) => a - b);
+                        const years = this.urlYears(car);
                         const p = this.searchParams;
                         const category = /hybrid/i.test(car.model) ? "hybrid/" : "";
                         const priceSegment = (p.minPrice || p.maxPrice)
@@ -3440,9 +3448,7 @@
                                 .toLowerCase()
                                 .replace(/\s+/g, "_")
                                 .replace(/[^a-z0-9_]/g, "");
-                        const years = [...new Set(car.years)].sort(
-                            (a, b) => a - b,
-                        );
+                        const years = this.urlYears(car);
                         const make = makeSlug(car.make);
                         const variants = this.modelMappings[
                             `${car.make}|${car.model}`
@@ -3467,9 +3473,7 @@
                                 .toLowerCase()
                                 .replace(/\s+/g, "-")
                                 .replace(/[^a-z0-9-]/g, "");
-                        const years = [...new Set(car.years)].sort(
-                            (a, b) => a - b,
-                        );
+                        const years = this.urlYears(car);
                         const pkg = (car.package === "All" ? "" : car.package) || "";
                         const trimStr = pkg
                             .replace("Adaptive Cruise Control (ACC)", "")
@@ -3547,7 +3551,7 @@
                             ? [...new Set(cleanedPkg.split(" or ").map((t) => slug(t.trim())).filter(Boolean))]
                             : [];
                         if (/Adaptive Cruise Control \(ACC\)/.test(rawPkg)) trimSlugs.push("automated-cruise-control");
-                        const years = [...new Set(car.years)].sort((a, b) => a - b);
+                        const years = this.urlYears(car);
                         const p = this.searchParams;
                         const parts = [];
                         if (p.minMileage || p.maxMileage)
@@ -3564,7 +3568,7 @@
                     carGurusUrl(car) {
                         const entry = this.carGurusCache[car._carGurusKey];
                         if (!entry?.paths?.length) return null;
-                        const years = [...new Set(car.years)].sort((a, b) => a - b);
+                        const years = this.urlYears(car);
                         const params = new URLSearchParams({
                             sourceContext: "carSelectorAPI",
                             sortDirection: "ASC",
@@ -3595,9 +3599,7 @@
                     },
 
                     ebayUrl(car) {
-                        const years = [...new Set(car.years)].sort(
-                            (a, b) => a - b,
-                        );
+                        const years = this.urlYears(car);
                         const yearStr =
                             years.length === 1
                                 ? `${years[0]}`
