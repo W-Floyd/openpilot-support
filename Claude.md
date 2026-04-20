@@ -26,7 +26,7 @@ Filter/sort state is persisted to `localStorage` and URL params. URL params take
 
 ## Search providers
 
-When adding or changing search parameter support in any provider URL function (`ebayUrl`, `autoTraderUrl`, `carsComUrl`, `carvanaUrl`, `providerUrl`), always update the **Search Parameter Support** table in `README.md` in the same change.
+When adding or changing search parameter support in any provider URL function, always update the **Search Parameter Support** table in `README.md` and the `caps` objects in `searchProviders` in the same change.
 
 ## Conventions
 - Python indents: 4 spaces
