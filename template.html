@@ -241,6 +241,19 @@
                 font-size: 0.875rem;
                 color: #374151;
             }
+            .col-row-dragging {
+                opacity: 0.4;
+            }
+            .col-row-drop-target {
+                border-top: 2px solid #6366f1;
+            }
+            .drag-handle {
+                cursor: grab;
+                color: #9ca3af;
+                font-size: 1rem;
+                line-height: 1;
+                user-select: none;
+            }
             .sp-footer {
                 border-top: 1px solid #f3f4f6;
                 padding-top: 12px;
@@ -1043,7 +1056,16 @@
 
                             <p class="sp-lbl">Columns</p>
                             <template x-for="col in allColumns" :key="col.key">
-                                <label class="col-row">
+                                <label class="col-row"
+                                    draggable="true"
+                                    @dragstart="$event.dataTransfer.effectAllowed='move'; _dragColKey = col.key"
+                                    @dragover.prevent="$event.dataTransfer.dropEffect='move'; _dragOverColKey = col.key"
+                                    @dragleave="if (!$event.currentTarget.contains($event.relatedTarget)) _dragOverColKey = null"
+                                    @dragend="_dragColKey = null; _dragOverColKey = null"
+                                    @drop.prevent="reorderColumn(_dragColKey, col.key); _dragColKey = null; _dragOverColKey = null"
+                                    :class="{ 'col-row-dragging': _dragColKey === col.key, 'col-row-drop-target': _dragOverColKey === col.key && _dragColKey !== col.key }"
+                                >
+                                    <span class="drag-handle">⠿</span>
                                     <input
                                         type="checkbox"
                                         :checked="hiddenColumns.indexOf(col.key) === -1"
@@ -2145,7 +2167,11 @@
                         );
                     },
 
-                    allColumns: [
+                    _dragColKey: null,
+                    _dragOverColKey: null,
+                    _defaultColumnOrder: ["make","model","years","package","support_type","forks","merged","openpilot_longitudinal","auto_resume","good_steering_torque","harness","min_steer_speed","min_enable_speed","ari","cc_seal","search"],
+                    allColumns: (() => {
+                      const cols = [
                         { key: "make", label: "Make" },
                         { key: "model", label: "Model" },
                         { key: "years", label: "Years" },
@@ -2202,11 +2228,20 @@
                             filterable: true,
                         },
                         { key: "search", label: "Search", search: true },
-                    ].map((col) => ({
+                      ].map((col) => ({
                         ...col,
-                        filterable:
-                            col.filterable ?? filterableCols.includes(col.key),
-                    })),
+                        filterable: col.filterable ?? filterableCols.includes(col.key),
+                      }));
+                      try {
+                        const saved = JSON.parse(localStorage.getItem("columnOrder"));
+                        if (Array.isArray(saved)) {
+                          const ordered = saved.map(k => cols.find(c => c.key === k)).filter(Boolean);
+                          const rest = cols.filter(c => !saved.includes(c.key));
+                          return [...ordered, ...rest];
+                        }
+                      } catch {}
+                      return cols;
+                    })(),
 
                     get filteredCars() {
                         const activeFilters = Object.entries(
@@ -2991,6 +3026,16 @@
                         localStorage.setItem("speedUnit", unit);
                     },
 
+                    reorderColumn(fromKey, toKey) {
+                        if (fromKey === toKey) return;
+                        const cols = [...this.allColumns];
+                        const from = cols.findIndex((c) => c.key === fromKey);
+                        const to = cols.findIndex((c) => c.key === toKey);
+                        cols.splice(to, 0, cols.splice(from, 1)[0]);
+                        this.allColumns = cols;
+                        localStorage.setItem("columnOrder", JSON.stringify(cols.map((c) => c.key)));
+                    },
+
                     toggleColumn(key) {
                         const idx = this.hiddenColumns.indexOf(key);
                         if (idx === -1) this.hiddenColumns.push(key);
@@ -3015,6 +3060,8 @@
                         localStorage.removeItem("hiddenColumns");
                         localStorage.removeItem("hiddenProviders");
                         localStorage.removeItem("speedUnit");
+                        localStorage.removeItem("columnOrder");
+                        this.allColumns = [...this._defaultColumnOrder].map(k => this.allColumns.find(c => c.key === k)).filter(Boolean);
                         this.speedUnit = "mph";
                         this.hiddenProviders = [];
                         this.hiddenColumns = this.isMobile
