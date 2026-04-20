@@ -3205,7 +3205,7 @@
                         const years = [...new Set(car.years)].sort(
                             (a, b) => a - b,
                         );
-                        const pkg = car.package || "";
+                        const pkg = (car.package === "All" ? "" : car.package) || "";
                         const trimStr = pkg
                             .replace("Adaptive Cruise Control (ACC)", "")
                             .replace("Lane Assist", "")
@@ -3213,19 +3213,17 @@
                             .replace(/^[\s&]+|[\s&]+$/g, "")
                             .replace(/\bPackage\b/g, "Pkg")
                             .trim();
-                        const filters = {
-                            makes: [
-                                {
-                                    name: car.make,
-                                    parentModels: [
-                                        Object.assign(
-                                            { name: car.model },
-                                            trimStr ? { trims: trimStr.split(" or ") } : {},
-                                        ),
-                                    ],
-                                },
-                            ],
-                        };
+                        const isHybrid = car.model.includes(" Hybrid");
+                        const modelName = isHybrid
+                            ? car.model.replace(" Hybrid", "")
+                            : car.model;
+                        const trims = trimStr ? trimStr.split(" or ") : [];
+                        const makeEntry = isHybrid
+                            ? { name: car.make, parentModels: [{ name: modelName, trims }], models: [] }
+                            : { name: car.make, parentModels: [Object.assign({ name: modelName }, trims.length ? { trims } : {})] };
+                        const filters = isHybrid
+                            ? { fuelTypes: ["Hybrid"], makes: [makeEntry] }
+                            : { makes: [makeEntry] };
                         if (years.length)
                             filters.year = {
                                 max: years[years.length - 1],
