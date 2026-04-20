@@ -172,11 +172,13 @@
   },
   "Acura|MDX|2024": {
     "url": "https://www.carcomplaints.com/Acura/MDX/2024/",
-    "complaints": 18,
+    "complaints": 55,
     "recalls": null,
     "tsbs": 28,
-    "investigations": null,
-    "top_problems": [],
+    "investigations": 1,
+    "top_problems": [
+      "Rear Brake Squeal in the 2024 Acura MDX"
+    ],
     "seal": null
   },
   "Acura|MDX|2025": {
@@ -899,9 +901,6 @@
   "CUPRA|Ateca|2021": null,
   "CUPRA|Ateca|2022": null,
   "CUPRA|Ateca|2023": null,
-  "Cadillac|CT6 No ACC|2018": null,
-  "Cadillac|CT6 Non-ACC|2017": null,
-  "Cadillac|CT6 Non-ACC|2018": null,
   "Cadillac|CT6|2017": {
     "url": "https://www.carcomplaints.com/Cadillac/CT6/2017/",
     "complaints": 37,
@@ -928,8 +927,6 @@
     "seal": null
   },
   "Cadillac|Escalade ASCM Harness|2018": null,
-  "Cadillac|XT5 No ACC|2018": null,
-  "Cadillac|XT5 Non-ACC|2018": null,
   "Cadillac|XT5|2018": {
     "url": "https://www.carcomplaints.com/Cadillac/XT5/2018/",
     "complaints": 71,
@@ -999,30 +996,14 @@
   "Chevrolet|Blazer|2025": null,
   "Chevrolet|Bolt ACC|2022": null,
   "Chevrolet|Bolt ACC|2023": null,
-  "Chevrolet|Bolt EUV LT Non-ACC|2022": null,
-  "Chevrolet|Bolt EUV LT Non-ACC|2023": null,
   "Chevrolet|Bolt EUV LT|2022": null,
   "Chevrolet|Bolt EUV LT|2023": null,
   "Chevrolet|Bolt EUV|2022": null,
   "Chevrolet|Bolt EUV|2023": null,
-  "Chevrolet|Bolt EV - No-ACC|2017": null,
-  "Chevrolet|Bolt EV - No-ACC|2018": null,
-  "Chevrolet|Bolt EV - No-ACC|2019": null,
-  "Chevrolet|Bolt EV - No-ACC|2020": null,
-  "Chevrolet|Bolt EV - No-ACC|2021": null,
-  "Chevrolet|Bolt EV - No-ACC|2022": null,
-  "Chevrolet|Bolt EV - No-ACC|2023": null,
   "Chevrolet|Bolt EV ACC w Pedal|2022": null,
   "Chevrolet|Bolt EV ACC w Pedal|2023": null,
-  "Chevrolet|Bolt EV LT Non-ACC|2022": null,
-  "Chevrolet|Bolt EV LT Non-ACC|2023": null,
   "Chevrolet|Bolt EV LT|2022": null,
   "Chevrolet|Bolt EV LT|2023": null,
-  "Chevrolet|Bolt EV Non-ACC|2017": null,
-  "Chevrolet|Bolt EV Non-ACC|2018": null,
-  "Chevrolet|Bolt EV Non-ACC|2019": null,
-  "Chevrolet|Bolt EV Non-ACC|2020": null,
-  "Chevrolet|Bolt EV Non-ACC|2021": null,
   "Chevrolet|Bolt EV|2017": null,
   "Chevrolet|Bolt EV|2018": null,
   "Chevrolet|Bolt EV|2019": null,
@@ -1030,22 +1011,6 @@
   "Chevrolet|Bolt EV|2021": null,
   "Chevrolet|Bolt EV|2022": null,
   "Chevrolet|Bolt EV|2023": null,
-  "Chevrolet|Equinox - No-ACC|2019": null,
-  "Chevrolet|Equinox - No-ACC|2020": null,
-  "Chevrolet|Equinox - No-ACC|2021": null,
-  "Chevrolet|Equinox - No-ACC|2022": null,
-  "Chevrolet|Equinox -|2019": null,
-  "Chevrolet|Equinox -|2020": null,
-  "Chevrolet|Equinox -|2021": null,
-  "Chevrolet|Equinox -|2022": null,
-  "Chevrolet|Equinox NO ACC|2019": null,
-  "Chevrolet|Equinox NO ACC|2020": null,
-  "Chevrolet|Equinox NO ACC|2021": null,
-  "Chevrolet|Equinox NO ACC|2022": null,
-  "Chevrolet|Equinox Non-ACC|2019": null,
-  "Chevrolet|Equinox Non-ACC|2020": null,
-  "Chevrolet|Equinox Non-ACC|2021": null,
-  "Chevrolet|Equinox Non-ACC|2022": null,
   "Chevrolet|Equinox|2019": {
     "url": "https://www.carcomplaints.com/Chevrolet/Equinox/2019/",
     "complaints": 366,
@@ -1098,12 +1063,9 @@
     ],
     "seal": null
   },
-  "Chevrolet|Malibu - No-ACC|2023": null,
   "Chevrolet|Malibu ASCM Harness|2017": null,
   "Chevrolet|Malibu ASCM Harness|2018": null,
   "Chevrolet|Malibu ASCM Harness|2019": null,
-  "Chevrolet|Malibu Hybrid - No-ACC|2017": null,
-  "Chevrolet|Malibu Hybrid -|2017": null,
   "Chevrolet|Malibu Hybrid|2017": {
     "url": "https://www.carcomplaints.com/Chevrolet/Malibu_Hybrid/2017/",
     "complaints": 14,
@@ -1117,15 +1079,6 @@
     ],
     "seal": null
   },
-  "Chevrolet|Malibu No ACC|2018": null,
-  "Chevrolet|Malibu Non-ACC|2016": null,
-  "Chevrolet|Malibu Non-ACC|2017": null,
-  "Chevrolet|Malibu Non-ACC|2018": null,
-  "Chevrolet|Malibu Non-ACC|2019": null,
-  "Chevrolet|Malibu Non-ACC|2020": null,
-  "Chevrolet|Malibu Non-ACC|2021": null,
-  "Chevrolet|Malibu Non-ACC|2022": null,
-  "Chevrolet|Malibu Non-ACC|2023": null,
   "Chevrolet|Malibu|2016": {
     "url": "https://www.carcomplaints.com/Chevrolet/Malibu/2016/",
     "complaints": 1000,
@@ -1249,21 +1202,6 @@
     ],
     "seal": null
   },
-  "Chevrolet|Suburban Non-ACC|2016": null,
-  "Chevrolet|Suburban Non-ACC|2017": null,
-  "Chevrolet|Suburban Non-ACC|2018": null,
-  "Chevrolet|Suburban Non-ACC|2019": null,
-  "Chevrolet|Suburban Non-ACC|2020": null,
-  "Chevrolet|Suburban Premier - No-ACC|2016": null,
-  "Chevrolet|Suburban Premier - No-ACC|2017": null,
-  "Chevrolet|Suburban Premier - No-ACC|2018": null,
-  "Chevrolet|Suburban Premier - No-ACC|2019": null,
-  "Chevrolet|Suburban Premier - No-ACC|2020": null,
-  "Chevrolet|Suburban Premier -|2016": null,
-  "Chevrolet|Suburban Premier -|2017": null,
-  "Chevrolet|Suburban Premier -|2018": null,
-  "Chevrolet|Suburban Premier -|2019": null,
-  "Chevrolet|Suburban Premier -|2020": null,
   "Chevrolet|Suburban Premier|2016": null,
   "Chevrolet|Suburban Premier|2017": null,
   "Chevrolet|Suburban Premier|2018": null,
@@ -1334,14 +1272,6 @@
     "seal": null
   },
   "Chevrolet|TRAX|2024": null,
-  "Chevrolet|Trailblazer - No-ACC|2021": null,
-  "Chevrolet|Trailblazer - No-ACC|2022": null,
-  "Chevrolet|Trailblazer -|2021": null,
-  "Chevrolet|Trailblazer -|2022": null,
-  "Chevrolet|Trailblazer NO ACC|2021": null,
-  "Chevrolet|Trailblazer NO ACC|2022": null,
-  "Chevrolet|Trailblazer Non-ACC|2021": null,
-  "Chevrolet|Trailblazer Non-ACC|2022": null,
   "Chevrolet|Trailblazer|2021": {
     "url": "https://www.carcomplaints.com/Chevrolet/Trailblazer/2021/",
     "complaints": 165,
@@ -1366,10 +1296,6 @@
     ],
     "seal": null
   },
-  "Chevrolet|Volt - No-ACC|2017": null,
-  "Chevrolet|Volt - No-ACC|2018": null,
-  "Chevrolet|Volt -|2017": null,
-  "Chevrolet|Volt -|2018": null,
   "Chevrolet|Volt ASCM Harness|2017": null,
   "Chevrolet|Volt ASCM Harness|2018": null,
   "Chevrolet|Volt Camera Harness|2017": null,
@@ -2489,12 +2415,13 @@
   },
   "Honda|CR-V Hybrid|2021": {
     "url": "https://www.carcomplaints.com/Honda/CR-V_Hybrid/2021/",
-    "complaints": 154,
+    "complaints": 155,
     "recalls": 2,
     "tsbs": 26,
     "investigations": 3,
     "top_problems": [
-      "Check Engine Light & Failure To Accelerate in the 2021 Honda CR-V Hybrid"
+      "Check Engine Light & Failure To Accelerate in the 2021 Honda CR-V Hybrid",
+      "Head Gasket Failure in the 2021 Honda CR-V Hybrid"
     ],
     "seal": null
   },
@@ -3286,7 +3213,7 @@
   },
   "Honda|Pilot|2022": {
     "url": "https://www.carcomplaints.com/Honda/Pilot/2022/",
-    "complaints": 147,
+    "complaints": 194,
     "recalls": 3,
     "tsbs": 109,
     "investigations": 1,
@@ -3336,7 +3263,7 @@
   },
   "Honda|Prologue|2024": {
     "url": "https://www.carcomplaints.com/Honda/Prologue/2024/",
-    "complaints": 789,
+    "complaints": 1000,
     "recalls": 1,
     "tsbs": null,
     "investigations": null,
@@ -3349,11 +3276,13 @@
   },
   "Honda|Prologue|2025": {
     "url": "https://www.carcomplaints.com/Honda/Prologue/2025/",
-    "complaints": 0,
+    "complaints": 173,
     "recalls": null,
     "tsbs": null,
     "investigations": null,
-    "top_problems": [],
+    "top_problems": [
+      "Cracked Paint After A Few Months Of Ownership in the 2025 Honda Prologue"
+    ],
     "seal": null
   },
   "Honda|Ridgeline|2017": {
@@ -3986,7 +3915,7 @@
   "Hyundai|Santa Fe Plug-in Hybrid|2023": null,
   "Hyundai|Santa Fe|2019": {
     "url": "https://www.carcomplaints.com/Hyundai/Santa_Fe/2019/",
-    "complaints": 276,
+    "complaints": 286,
     "recalls": 2,
     "tsbs": 244,
     "investigations": 1,
@@ -4868,7 +4797,7 @@
   },
   "Kia|Telluride|2020": {
     "url": "https://www.carcomplaints.com/Kia/Telluride/2020/",
-    "complaints": 854,
+    "complaints": 888,
     "recalls": 6,
     "tsbs": 191,
     "investigations": 1,
@@ -5591,14 +5520,14 @@
   },
   "Mazda|CX-5|2020": {
     "url": "https://www.carcomplaints.com/Mazda/CX-5/2020/",
-    "complaints": 143,
+    "complaints": 147,
     "recalls": null,
     "tsbs": 558,
     "investigations": null,
     "top_problems": [
+      "Cracked Cylinder Head in the 2020 Mazda CX-5",
       "Check Engine Light On in the 2020 Mazda CX-5",
-      "Auto Lift Gate Opens On Its Own in the 2020 Mazda CX-5",
-      "Car Changes Radio Stations On Its Own in the 2020 Mazda CX-5"
+      "Auto Lift Gate Opens On Its Own in the 2020 Mazda CX-5"
     ],
     "seal": null
   },
