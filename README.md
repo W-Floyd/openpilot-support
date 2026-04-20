@@ -8,13 +8,12 @@ This is a personal project created for my own curiosity, very much LLM assisted.
 
 - openpilot
 - sunnypilot
-- opgm
+- OPGM
 - BMW-E8x-E9x
 - StarPilot
+- BluePilot
 
 ## Usage
-
-Run the main script to generate HTML and JSON outputs:
 
 ```bash
 uv run parse.py --html-out index.html
@@ -22,38 +21,35 @@ uv run parse.py --html-out index.html
 
 ### Command-Line Options
 
-- `--html-out PATH` - Output path for the HTML file
-- `--json-out PATH` - Output path for the JSON data file
-- `--serve` - Serve the HTML file on a local HTTP server after building
-- `--port PORT` - Port for `--serve` (default: 8000)
-- `--no-fetch-cg` - Skip fetching CarGurus data
-- `--no-fetch-ari` - Skip fetching Auto Reliability Index data
-- `--no-fetch-cc` - Skip fetching CarComplaints data
-- `--no-minify` - Skip HTML/JS/CSS minification (useful for debugging)
-- `--no-cache-openpilot` - Force re-fetching openpilot data for all forks (disable caching)
+| Flag | Description |
+|------|-------------|
+| `--html-out PATH` | Output path for the HTML file |
+| `--json-out PATH` | Output path for raw JSON data |
+| `--serve` / `--port PORT` | Serve output on localhost after building (default port 8000) |
+| `--no-fetch-cg` | Skip fetching CarGurus data |
+| `--no-fetch-ari` | Skip fetching AutoReliabilityIndex data |
+| `--no-fetch-cc` | Skip fetching CarComplaints data |
+| `--no-minify` | Skip HTML/JS/CSS minification (useful for debugging) |
+| `--no-cache-openpilot` | Re-fetch all fork data (still updates cache) |
+| `--retry-nulls-cg` | Retry previously failed CarGurus cache entries |
+| `--retry-nulls-ari` | Retry previously failed ARI cache entries |
+| `--retry-nulls-cc` | Retry previously failed CarComplaints cache entries |
+| `--retry-nulls-all` | Retry all previously failed cache entries |
+| `--watch` | Watch template.html and rebuild on changes |
 
 ### Caching
 
-The tool caches results to avoid re-fetching data on every run:
+Results are cached to avoid re-fetching on every run. Stale entries (for cars no longer in any fork) are pruned automatically.
 
-**Openpilot Forks**
-- Cache file: `.openpilot_cache.json`
-- Use `--no-cache-openpilot` to force a fresh fetch from all forks
-
-**CarGurus**
-- Cache file: `.cargurus_cache.json`
-- Use `--no-fetch-cargurus` to skip fetching entirely
-
-**CarComplaints**
-- Cache file: `.carcomplaints_cache.json`
-- Use `--no-fetch-cc` to skip fetching entirely
-
-**Auto Reliability Index**
-- Cache file: `.ari_cache.json`
-- Use `--no-fetch-ari` to skip fetching entirely
+| Cache file | Data source |
+|-----------|-------------|
+| `.openpilot_cache.json` | Fork car documentation |
+| `.cargurus_cache.json` | CarGurus listings |
+| `.carcomplaints_cache.json` | CarComplaints complaint/recall data |
+| `.ari_cache.json` | AutoReliabilityIndex scores |
 
 ## Output Files
 
-- `index.html` - Interactive HTML table with vehicle support info
-- `cars.json` - Raw JSON data for all vehicles
-- `-favicon.svg` - Favicon for the HTML page
+- `index.html` — Interactive HTML table with vehicle support info
+- `index-favicon.svg` — Favicon for the HTML page
+- `cars.json` — Raw JSON data for all vehicles (only when `--json-out` is passed)
