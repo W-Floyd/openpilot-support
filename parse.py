@@ -969,10 +969,39 @@ MODEL_MAPPINGS: dict[tuple[str, str], list[str]] = {
     ("Lexus", "UX Hybrid"): ["UX 200h", "UX 250h"],
 }
 
-# Autotrader modelCode mappings
-# Maps (make, variant) tuples to AutoTrader modelCode/slug strings, where variant
-# is a model name from MODEL_MAPPINGS (or the raw car model if not in MODEL_MAPPINGS).
-AUTOTRADER_MAPPINGS: dict[tuple[str, str], str] = {}
+AUTOTRADER_MODELS_CACHE_FILE = os.path.join(HERE, ".autotrader_models_cache.json")
+
+
+def _build_autotrader_mappings() -> dict[tuple[str, str], str]:
+    try:
+        with open(AUTOTRADER_MODELS_CACHE_FILE) as f:
+            data = json.load(f)
+    except (FileNotFoundError, json.JSONDecodeError):
+        return {}
+
+    # Build lookup: make_name -> {normalized_model_name -> model_code}
+    # Normalized: lowercase, strip trailing "+", collapse whitespace
+    def norm(s: str) -> str:
+        return re.sub(r"\s+", "", s.rstrip("+")).lower()
+
+    at_lookup: dict[str, dict[str, str]] = {}
+    for make_entry in data.get("payload", {}).get("makeCode", []):
+        models: dict[str, str] = {}
+        for model in make_entry.get("models", []):
+            models[norm(model["name"])] = model["code"]
+        at_lookup[make_entry["name"]] = models
+
+    mappings: dict[tuple[str, str], str] = {}
+    for (make, _), variants in MODEL_MAPPINGS.items():
+        make_lookup = at_lookup.get(make, {})
+        for variant in variants:
+            code = make_lookup.get(norm(variant))
+            if code:
+                mappings[(make, variant)] = code
+    return mappings
+
+
+AUTOTRADER_MAPPINGS = _build_autotrader_mappings()
 
 
 class CcParser(html.parser.HTMLParser):
