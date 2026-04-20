@@ -724,16 +724,6 @@ def fetch_cargurus_response(query: str) -> dict | None:
         return None
 
 
-def build_cargurus_url(fc: dict) -> str:
-    paths = ",".join(fc["makeModelTrimPaths"])
-    return (
-        f"https://www.cargurus.com/search?sourceContext=carSelectorAPI"
-        f"&sortDirection=ASC&sortType=PRICE"
-        f"&startYear={fc['startYear']}&endYear={fc['endYear']}"
-        f"&srpVariation=DEFAULT_SEARCH"
-        f"&makeModelTrimPaths={urllib.parse.quote(paths, safe='')}"
-    )
-
 
 def load_openpilot_cache() -> dict:
     if os.path.exists(OPENPILOT_CACHE_FILE):
@@ -811,7 +801,8 @@ def build_cargurus_js_cache(cars: list[dict], raw_cache: dict) -> dict:
             and response.get("success") != "FAILURE"
             and response.get("filterCriteria", {}).get("makeModelTrimPaths")
         ):
-            result[key] = {"url": build_cargurus_url(response["filterCriteria"])}
+            fc = response["filterCriteria"]
+            result[key] = {"paths": fc["makeModelTrimPaths"], "startYear": fc["startYear"], "endYear": fc["endYear"]}
         elif query in raw_cache:
             result[key] = {"error": True}
     return result
