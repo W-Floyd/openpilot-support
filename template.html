@@ -1817,6 +1817,7 @@
                     sortDir: localStorage.getItem("sortDir") || "asc",
                     filters: (() => {
                         const defaults = Object.fromEntries(filterableCols.map((k) => [k, []]));
+                        if (location.search) return defaults;
                         try {
                             const saved = JSON.parse(localStorage.getItem("filters"));
                             if (saved && typeof saved === "object") {
@@ -1834,6 +1835,7 @@
                     speedUnit: localStorage.getItem("speedUnit") || "mph",
                     speedFilters: (() => {
                         const defaults = { min_steer_speed: { min: null, max: null }, min_enable_speed: { min: null, max: null } };
+                        if (location.search) return defaults;
                         try {
                             const saved = JSON.parse(localStorage.getItem("speedFilters"));
                             if (saved && typeof saved === "object") return { ...defaults, ...saved };
@@ -1845,6 +1847,7 @@
                     ccCache,
                     modelMappings,
                     ariFilter: (() => {
+                        if (location.search) return { min: null, max: null };
                         try {
                             const saved = JSON.parse(localStorage.getItem("ariFilter"));
                             if (saved && typeof saved === "object") return saved;
@@ -2816,12 +2819,70 @@
                             this._speedRangeCache[key] =
                                 this._computeSpeedRange(key);
 
+                        // Restore from URL params (takes priority over localStorage)
+                        const urlParams = new URLSearchParams(location.search);
+                        if (urlParams.toString()) {
+                            const presetLabel = urlParams.get("preset");
+                            if (presetLabel) {
+                                const preset = this.presets.find((p) => p.label === presetLabel);
+                                if (preset) this.applyPreset(preset);
+                            } else {
+                                for (const key of Object.keys(this.filters)) this.filters[key] = [];
+                            }
+                            for (const [p, v] of urlParams) {
+                                if (p === "preset") continue;
+                                if (p.startsWith("f_")) {
+                                    const key = p.slice(2);
+                                    if (key in this.filters)
+                                        try { this.filters[key].push(JSON.parse(v)); } catch { this.filters[key].push(v); }
+                                } else if (p.startsWith("sf_")) {
+                                    const rest = p.slice(3);
+                                    const side = rest.endsWith("_min") ? "min" : rest.endsWith("_max") ? "max" : null;
+                                    if (side) {
+                                        const key = rest.slice(0, -(side.length + 1));
+                                        if (key in this.speedFilters) this.speedFilters[key][side] = parseFloat(v);
+                                    }
+                                } else if (p === "ari_min") {
+                                    this.ariFilter.min = parseInt(v) || null;
+                                } else if (p === "ari_max") {
+                                    this.ariFilter.max = parseInt(v) || null;
+                                } else if (p === "sort") {
+                                    this.sortCol = v || null;
+                                } else if (p === "dir") {
+                                    this.sortDir = v;
+                                }
+                            }
+                        }
+
                         this.$watch("infoDismissed", (v) => localStorage.setItem("infoDismissed", v ? "1" : "0"));
-                        this.$watch("filters", (v) => localStorage.setItem("filters", JSON.stringify(v)));
-                        this.$watch("speedFilters", (v) => localStorage.setItem("speedFilters", JSON.stringify(v)));
-                        this.$watch("ariFilter", (v) => localStorage.setItem("ariFilter", JSON.stringify(v)));
-                        this.$watch("sortCol", (v) => localStorage.setItem("sortCol", JSON.stringify(v)));
-                        this.$watch("sortDir", (v) => localStorage.setItem("sortDir", v));
+                        this.$watch("filters", (v) => { localStorage.setItem("filters", JSON.stringify(v)); this._saveToUrl(); });
+                        this.$watch("speedFilters", (v) => { localStorage.setItem("speedFilters", JSON.stringify(v)); this._saveToUrl(); });
+                        this.$watch("ariFilter", (v) => { localStorage.setItem("ariFilter", JSON.stringify(v)); this._saveToUrl(); });
+                        this.$watch("sortCol", (v) => { localStorage.setItem("sortCol", JSON.stringify(v)); this._saveToUrl(); });
+                        this.$watch("sortDir", (v) => { localStorage.setItem("sortDir", v); this._saveToUrl(); });
+                        if (!location.search) this._saveToUrl();
+                    },
+
+                    _saveToUrl() {
+                        const params = new URLSearchParams();
+                        const activePreset = this.presets.find((p) => this.isPresetActive(p));
+                        const presetFilterKeys = new Set(Object.keys(activePreset?.filters ?? {}));
+                        const presetSpeedKeys = new Set(Object.keys(activePreset?.speedFilters ?? {}));
+                        if (activePreset) params.set("preset", activePreset.label);
+                        for (const [key, vals] of Object.entries(this.filters))
+                            if (!presetFilterKeys.has(key))
+                                for (const v of vals) params.append("f_" + key, JSON.stringify(v));
+                        for (const [key, range] of Object.entries(this.speedFilters)) {
+                            if (presetSpeedKeys.has(key)) continue;
+                            if (range.min !== null) params.set("sf_" + key + "_min", range.min);
+                            if (range.max !== null) params.set("sf_" + key + "_max", range.max);
+                        }
+                        if (this.ariFilter.min !== null) params.set("ari_min", this.ariFilter.min);
+                        if (this.ariFilter.max !== null) params.set("ari_max", this.ariFilter.max);
+                        if (this.sortCol !== null) params.set("sort", this.sortCol);
+                        if (this.sortDir !== "asc") params.set("dir", this.sortDir);
+                        const qs = params.toString();
+                        history.replaceState(null, "", qs ? "?" + qs : location.pathname);
                     },
 
                     openAllEbayLinks() {
