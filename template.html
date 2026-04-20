@@ -2156,6 +2156,7 @@
                         { key: "cargurus", label: "CarGurus" },
                         { key: "carscom", label: "Cars.com" },
                         { key: "carvana", label: "Carvana" },
+                        { key: "carmax", label: "CarMax" },
                     ],
                     hiddenProviders: JSON.parse(
                         localStorage.getItem("hiddenProviders") || "[]",
@@ -3474,6 +3475,42 @@
                         return `https://www.carvana.com/cars/filters?cvnaid=${cvnaid}`;
                     },
 
+                    carMaxUrl(car) {
+                        const slug = (s) =>
+                            this.toAscii(s)
+                                .toLowerCase()
+                                .replace(/\s+/g, "-")
+                                .replace(/[^a-z0-9-]/g, "");
+                        const make = slug(car.make);
+                        const variants = this.modelMappings[`${car.make}|${car.model}`] ?? [car.model];
+                        const modelSlugs = [...new Set(variants.map(slug))];
+                        const rawPkg = (car.package === "All" ? "" : car.package) || "";
+                        const cleanedPkg = rawPkg
+                            .replace(/Adaptive Cruise Control \(ACC\)/g, "")
+                            .replace(/Lane Assist/g, "")
+                            .replace(/\bPackage\b/g, "")
+                            .replace(/(\s*&\s*)+/g, " ")
+                            .replace(/\s+/g, " ")
+                            .trim();
+                        const trimSlugs = cleanedPkg
+                            ? [...new Set(cleanedPkg.split(" or ").map((t) => slug(t.trim())).filter(Boolean))]
+                            : [];
+                        if (/Adaptive Cruise Control \(ACC\)/.test(rawPkg)) trimSlugs.push("automated-cruise-control");
+                        const years = [...new Set(car.years)].sort((a, b) => a - b);
+                        const p = this.searchParams;
+                        const parts = [];
+                        if (p.minMileage || p.maxMileage)
+                            parts.push(`mileage=${p.minMileage || 0}-${p.maxMileage || "nomileage"}`);
+                        if (p.minPrice && p.maxPrice) parts.push(`price=${p.minPrice}-${p.maxPrice}`);
+                        else if (p.minPrice) parts.push(`price=${p.minPrice}-nomax`);
+                        else if (p.maxPrice) parts.push(`price=${p.maxPrice}`);
+                        if (p.zipCode) parts.push(`zip=${p.zipCode}`);
+                        if (years.length) parts.push(years.length === 1 ? `year=${years[0]}` : `year=${years[0]}-${years[years.length - 1]}`);
+                        const qs = parts.join("&");
+                        const pathSlugs = [...modelSlugs, ...trimSlugs];
+                        return `https://www.carmax.com/cars/${make}/${pathSlugs.join("/")}${qs ? `?${qs}` : ""}`;
+                    },
+
                     providerUrl(car, key) {
                         if (key === "ebay") return this.ebayUrl(car);
                         if (key === "autotrader") return this.autoTraderUrl(car);
@@ -3493,6 +3530,7 @@
                         }
                         if (key === "carscom") return this.carsComUrl(car);
                         if (key === "carvana") return this.carvanaUrl(car);
+                        if (key === "carmax") return this.carMaxUrl(car);
                         return null;
                     },
 
