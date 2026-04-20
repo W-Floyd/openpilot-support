@@ -3127,18 +3127,35 @@
                     },
 
                     autoTraderUrl(car) {
-                        const slug = (s) =>
+                        const makeSlug = (s) =>
                             this.toAscii(s)
                                 .toLowerCase()
                                 .replace(/\s+/g, "-")
                                 .replace(/[^a-z0-9-]/g, "");
+                        const make = makeSlug(car.make);
+                        const variants =
+                            this.modelMappings[`${car.make}|${car.model}`] ??
+                            [];
+                        const modelParams = variants
+                            .sort((a, b) => a.localeCompare(b))
+                            .map((m) => `modelCode=${m.replace(/\s+/g, "-")}`)
+                            .join("&");
+                        const modelCode = car.model
+                            .replace(/\s+/g, "-")
+                            .toLowerCase();
                         const years = [...new Set(car.years)].sort(
                             (a, b) => a - b,
                         );
-                        const params = years.length
-                            ? `?startYear=${years[0]}&endYear=${years[years.length - 1]}&sortBy=derivedpriceASC`
-                            : "?sortBy=derivedpriceASC";
-                        return `https://www.autotrader.com/cars-for-sale/all-cars/${slug(car.make)}/${slug(car.model)}${params}`;
+                        const params = new URLSearchParams();
+                        if (years.length) {
+                            params.set("endYear", years[years.length - 1]);
+                            params.set("startYear", years[0]);
+                        }
+                        params.set("sortBy", "derivedpriceASC");
+                        const baseUrl = variants.length
+                            ? `https://www.autotrader.com/cars-for-sale/all-cars/${make}?${params}&${modelParams}`
+                            : `https://www.autotrader.com/cars-for-sale/${make}/${modelCode}?${params}`;
+                        return baseUrl;
                     },
 
                     carsComUrl(car) {
