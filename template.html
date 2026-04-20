@@ -4,6 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>openpilot Supported Cars</title>
+        <!-- prettier-ignore -->
         <link rel="icon" type="image/svg+xml" href="{{ favicon }}" />
         <!-- prettier-ignore -->
         <style>{{ pure_css }}</style>
@@ -2045,11 +2046,9 @@
         </div>
 
         <!-- prettier-ignore -->
-        <!-- prettier-ignore -->
         <script type="application/json" id="fork-info">{{ fork_info_json }}</script>
-        <script type="application/json" id="cars-data">
-            {{ cars_json }}
-        </script>
+        <!-- prettier-ignore -->
+        <script type="application/json" id="cars-data">{{ cars_json }}</script>
         <!-- prettier-ignore -->
         <script type="application/json" id="cargurus-cache">{{ cargurus_cache_json }}</script>
         <!-- prettier-ignore -->
@@ -2060,9 +2059,8 @@
         <script type="application/json" id="model-mappings">{{ model_mappings_json }}</script>
         <!-- prettier-ignore -->
         <script type="application/json" id="autotrader-mappings">{{ autotrader_mappings_json }}</script>
-        <script type="application/json" id="filter-index">
-            {{ filter_index_json }}
-        </script>
+        <!-- prettier-ignore -->
+        <script type="application/json" id="filter-index">{{ filter_index_json }}</script>
         <script>
             function carTable() {
                 const filterableCols = [
@@ -3197,7 +3195,7 @@
                             (a, b) => a - b,
                         );
                         if (!selected.length) return years;
-                        const selectedSet = new Set(selected.map(Number));
+                            const selectedSet = new Set(selected.map(Number));
                         return years.filter((y) => selectedSet.has(y));
                     },
 
