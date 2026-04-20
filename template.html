@@ -291,6 +291,53 @@
                 color: #6b7280 !important;
             }
 
+            /* ── Search params ── */
+            .search-params {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: flex-end;
+                gap: 12px;
+                margin-bottom: 12px;
+                padding: 10px 14px;
+                background: #f9fafb;
+                border: 1px solid #e5e7eb;
+                border-radius: 8px;
+            }
+            .sp-group {
+                display: flex;
+                flex-direction: column;
+                gap: 3px;
+            }
+            .sp-label {
+                font-size: 0.7rem;
+                font-weight: 600;
+                color: #6b7280;
+                text-transform: uppercase;
+                letter-spacing: 0.04em;
+            }
+            .sp-row {
+                display: flex;
+                align-items: center;
+                gap: 4px;
+            }
+            .sp-input {
+                width: 90px;
+                border: 1px solid #d1d5db;
+                border-radius: 4px;
+                padding: 3px 6px;
+                font-size: 0.8rem;
+                color: #374151;
+                background: #fff;
+            }
+            .sp-input:focus {
+                outline: none;
+                border-color: #60a5fa;
+            }
+            .sp-sep {
+                font-size: 0.75rem;
+                color: #9ca3af;
+            }
+
             /* ── Presets ── */
             .presets-row {
                 display: flex;
@@ -1053,6 +1100,34 @@
                 >
                     Clear
                 </button>
+            </div>
+
+            <!-- Search parameters -->
+            <div class="search-params">
+                <div class="sp-group">
+                    <span class="sp-label">Mileage</span>
+                    <div class="sp-row">
+                        <input class="sp-input" type="number" placeholder="Min" x-model.number="searchParams.minMileage" min="0" />
+                        <span class="sp-sep">–</span>
+                        <input class="sp-input" type="number" placeholder="Max" x-model.number="searchParams.maxMileage" min="0" />
+                    </div>
+                </div>
+                <div class="sp-group">
+                    <span class="sp-label">Price</span>
+                    <div class="sp-row">
+                        <input class="sp-input" type="number" placeholder="Min" x-model.number="searchParams.minPrice" min="0" />
+                        <span class="sp-sep">–</span>
+                        <input class="sp-input" type="number" placeholder="Max" x-model.number="searchParams.maxPrice" min="0" />
+                    </div>
+                </div>
+                <div class="sp-group">
+                    <span class="sp-label">Max Distance</span>
+                    <input class="sp-input" type="number" placeholder="Miles" x-model.number="searchParams.maxDistance" min="0" />
+                </div>
+                <div class="sp-group">
+                    <span class="sp-label">Zip Code</span>
+                    <input class="sp-input" type="text" placeholder="e.g. 90210" x-model="searchParams.zipCode" maxlength="10" />
+                </div>
             </div>
 
             <!-- Active filter chips (desktop) -->
@@ -1962,6 +2037,14 @@
                     modelMappings,
                     autotraderMappings,
                     forkInfo,
+                    searchParams: {
+                        minMileage: null,
+                        maxMileage: null,
+                        minPrice: null,
+                        maxPrice: null,
+                        maxDistance: null,
+                        zipCode: "",
+                    },
                     ariFilter: (() => {
                         if (location.search) return { min: null, max: null };
                         try {
@@ -2905,10 +2988,6 @@
                             car._ariLink = this.ariLink(car);
                             car._ccYearRows = this.ccYearRows(car);
                             car._ariYearRows = this.ariYearRows(car);
-                            car._ebayUrl = this.ebayUrl(car);
-                            car._autoTraderUrl = this.autoTraderUrl(car);
-                            car._carsComUrl = this.carsComUrl(car);
-                            car._carvanaUrl = this.carvanaUrl(car);
 
                             if (car._ariScore !== null) {
                                 car._ariColorMin = this.ariColor(
@@ -3190,7 +3269,7 @@
                         const modelParams = variants
                             .map((m) => `models[]=${make}-${modelSlug(m)}`)
                             .join("&");
-                        let url = `https://www.cars.com/shopping/results/?stock_type=used&makes[]=${make}&${modelParams}&sort=list_price`;
+                        let url = `https://www.cars.com/shopping/results/?stock_type=used&makes[]=${make}&${modelParams}&maximum_distance=9999&sort=list_price`;
                         if (years.length)
                             url += `&year_min=${years[0]}&year_max=${years[years.length - 1]}`;
                         return url;
@@ -3249,15 +3328,15 @@
                     },
 
                     providerUrl(car, key) {
-                        if (key === "ebay") return car._ebayUrl;
-                        if (key === "autotrader") return car._autoTraderUrl;
+                        if (key === "ebay") return this.ebayUrl(car);
+                        if (key === "autotrader") return this.autoTraderUrl(car);
                         if (key === "cargurus")
                             return (
                                 this.carGurusCache[car._carGurusKey]?.url ||
                                 null
                             );
-                        if (key === "carscom") return car._carsComUrl;
-                        if (key === "carvana") return car._carvanaUrl;
+                        if (key === "carscom") return this.carsComUrl(car);
+                        if (key === "carvana") return this.carvanaUrl(car);
                         return null;
                     },
 
@@ -3279,7 +3358,22 @@
                         const query = encodeURIComponent(
                             `${car.make} ${modelName.trim()} ${yearStr}`,
                         );
-                        return `https://www.ebay.com/sch/6001/i.html?_nkw=${query}&_sop=2`;
+                        const p = this.searchParams;
+                        let url = `https://www.ebay.com/sch/6001/i.html?_nkw=${query}&_sop=2`;
+                        const ebayMileageBrackets = [50000, 75000, 100000, 125000, 150000, 175000, 200000];
+                        const mileageBracket = p.maxMileage
+                            ? ebayMileageBrackets.find((b) => b >= p.maxMileage) ?? null
+                            : null;
+                        if (p.minPrice || p.maxPrice || mileageBracket) url += `&rt=nc`;
+                        if (p.minPrice) url += `&_udlo=${p.minPrice}`;
+                        if (p.maxPrice) url += `&_udhi=${p.maxPrice}`;
+                        if (mileageBracket) {
+                            const label = `Less than ${mileageBracket.toLocaleString("en-US")} miles`;
+                            url += `&${encodeURIComponent(encodeURIComponent("Vehicle Mileage"))}=${encodeURIComponent(encodeURIComponent(label))}&_dcat=6001`;
+                        }
+                        if (p.zipCode) url += `&_stpos=${encodeURIComponent(p.zipCode)}&_fspt=1`;
+                        if (p.maxDistance) url += `&_sadis=${p.maxDistance}`;
+                        return url;
                     },
 
                     supportTypeClass(supportType) {
