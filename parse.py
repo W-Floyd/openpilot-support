@@ -4,9 +4,9 @@ import concurrent.futures
 import html.parser
 import http.server
 import json
-import queue
 import math
 import os
+import queue
 import re
 import subprocess
 import sys
@@ -304,9 +304,20 @@ def _setup_old_layout_stubs() -> None:
             return self
 
     _stub("panda", Panda=_PandaStub, PandaWifiStreaming=_Noop, PandaDFU=_Noop)
-    _stub("panda.python", Panda=_PandaStub, PandaWifiStreaming=_Noop, PandaDFU=_Noop,
-          flash_release=_Noop, BASEDIR="", ensure_st_up_to_date=_Noop,
-          build_st=_Noop, PandaSerial=_Noop, ESPROM=_Noop, CesantaFlasher=_Noop)
+    _stub(
+        "panda.python",
+        Panda=_PandaStub,
+        PandaWifiStreaming=_Noop,
+        PandaDFU=_Noop,
+        flash_release=_Noop,
+        BASEDIR="",
+        ensure_st_up_to_date=_Noop,
+        build_st=_Noop,
+        PandaSerial=_Noop,
+        ESPROM=_Noop,
+        CesantaFlasher=_Noop,
+    )
+
     class _IntAttrs:
         """Stub for panda uds enum types: any attribute access returns plain int 0."""
 
@@ -717,11 +728,10 @@ def build_cargurus_url(fc: dict) -> str:
     paths = ",".join(fc["makeModelTrimPaths"])
     return (
         f"https://www.cargurus.com/search?sourceContext=carSelectorAPI"
-        f"&sortDirection=ASC&sortType=BEST_MATCH"
+        f"&sortDirection=ASC&sortType=PRICE"
         f"&startYear={fc['startYear']}&endYear={fc['endYear']}"
         f"&srpVariation=DEFAULT_SEARCH"
         f"&makeModelTrimPaths={urllib.parse.quote(paths, safe='')}"
-        f"&priceDropsOnly=false&hideNationwideShipping=true"
     )
 
 
@@ -1098,7 +1108,9 @@ def fetch_cc_cache(cars: list[dict], retry_nulls: bool = False) -> dict:
         cc_cache_key(car["make"], raw_model, year)
         for car in cars
         for year in sorted(set(car["years"]))
-        for raw_model in (MODEL_MAPPINGS.get((car["make"], car["model"])) or [car["model"]])
+        for raw_model in (
+            MODEL_MAPPINGS.get((car["make"], car["model"])) or [car["model"]]
+        )
     }
     stale = [k for k in cache if k not in valid_keys]
     if stale:
@@ -1174,9 +1186,19 @@ def build_filter_index(cars: list[dict], cc_cache: dict) -> dict:
     only needs a fast index→car-ref conversion instead of iterating all cars.
     """
     direct_fields = [
-        "make", "model", "forks", "support_type", "openpilot_longitudinal",
-        "merged", "auto_resume", "good_steering_torque", "years", "package",
-        "harness", "min_steer_speed", "min_enable_speed",
+        "make",
+        "model",
+        "forks",
+        "support_type",
+        "openpilot_longitudinal",
+        "merged",
+        "auto_resume",
+        "good_steering_torque",
+        "years",
+        "package",
+        "harness",
+        "min_steer_speed",
+        "min_enable_speed",
     ]
     index: dict[str, dict[str, list[int]]] = {f: {} for f in direct_fields}
     index["cc_seal"] = {}
@@ -1196,8 +1218,11 @@ def build_filter_index(cars: list[dict], cc_cache: dict) -> dict:
         seal_values: set[str] = set()
         for year in sorted(set(car["years"])):
             entry = next(
-                (cc_cache.get(cc_cache_key(make, rm, year)) for rm in raw_models
-                 if cc_cache.get(cc_cache_key(make, rm, year))),
+                (
+                    cc_cache.get(cc_cache_key(make, rm, year))
+                    for rm in raw_models
+                    if cc_cache.get(cc_cache_key(make, rm, year))
+                ),
                 None,
             )
             if entry and entry.get("seal"):
@@ -1218,16 +1243,23 @@ def get_fork_git_info(fork_name: str, fork_path: str) -> dict:
     try:
         remote = subprocess.check_output(
             ["git", "-C", fork_root, "remote", "get-url", "origin"],
-            stderr=subprocess.DEVNULL, text=True,
+            stderr=subprocess.DEVNULL,
+            text=True,
         ).strip()
         sha = subprocess.check_output(
             ["git", "-C", fork_root, "rev-parse", "--short", "HEAD"],
-            stderr=subprocess.DEVNULL, text=True,
+            stderr=subprocess.DEVNULL,
+            text=True,
         ).strip()
         # Normalise SSH → HTTPS and strip .git
         url = re.sub(r"^git@github\.com:", "https://github.com/", remote)
         url = re.sub(r"\.git$", "", url)
-        return {"name": fork_name, "url": url, "hash": sha, "hash_url": f"{url}/commit/{sha}"}
+        return {
+            "name": fork_name,
+            "url": url,
+            "hash": sha,
+            "hash_url": f"{url}/commit/{sha}",
+        }
     except Exception:
         return {"name": fork_name}
 

@@ -845,7 +845,7 @@
                     </p>
                     <div class="open-all-row sm-show">
                         <span class="presets-lbl">Open all</span>
-                        <template x-for="p in searchProviders" :key="p.key">
+                        <template x-for="p in searchProviders.filter(p => !hiddenProviders.includes(p.key))" :key="p.key">
                             <button
                                 @click="openAllForProvider(p.key)"
                                 x-text="p.label"
@@ -962,6 +962,18 @@
                                         @change="toggleColumn(col.key)"
                                     />
                                     <span x-text="col.label"></span>
+                                </label>
+                            </template>
+
+                            <p class="sp-lbl">Providers</p>
+                            <template x-for="p in searchProviders" :key="p.key">
+                                <label class="col-row">
+                                    <input
+                                        type="checkbox"
+                                        :checked="hiddenProviders.indexOf(p.key) === -1"
+                                        @change="toggleProvider(p.key)"
+                                    />
+                                    <span x-text="p.label"></span>
                                 </label>
                             </template>
 
@@ -2843,10 +2855,22 @@
                         );
                     },
 
+                    toggleProvider(key) {
+                        const idx = this.hiddenProviders.indexOf(key);
+                        if (idx === -1) this.hiddenProviders.push(key);
+                        else this.hiddenProviders.splice(idx, 1);
+                        localStorage.setItem(
+                            "hiddenProviders",
+                            JSON.stringify(this.hiddenProviders),
+                        );
+                    },
+
                     resetSettings() {
                         localStorage.removeItem("hiddenColumns");
+                        localStorage.removeItem("hiddenProviders");
                         localStorage.removeItem("speedUnit");
                         this.speedUnit = "mph";
+                        this.hiddenProviders = [];
                         this.hiddenColumns = this.isMobile
                             ? [
                                   "support_type",
@@ -3012,6 +3036,12 @@
                             localStorage.setItem("sortDir", v);
                             this._saveToUrl();
                         });
+                        this.$watch("hiddenProviders", (v) =>
+                            localStorage.setItem(
+                                "hiddenProviders",
+                                JSON.stringify(v),
+                            ),
+                        );
                         if (!location.search) this._saveToUrl();
                     },
 
@@ -3128,7 +3158,7 @@
                         const modelParams = variants
                             .map((m) => `models[]=${make}-${modelSlug(m)}`)
                             .join("&");
-                        let url = `https://www.cars.com/shopping/results/?stock_type=used&makes[]=${make}&${modelParams}&sort=price_lowest`;
+                        let url = `https://www.cars.com/shopping/results/?stock_type=used&makes[]=${make}&${modelParams}&sort=list_price`;
                         if (years.length)
                             url += `&year_min=${years[0]}&year_max=${years[years.length - 1]}`;
                         return url;
