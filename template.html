@@ -3205,6 +3205,14 @@
                         const years = [...new Set(car.years)].sort(
                             (a, b) => a - b,
                         );
+                        const pkg = car.package || "";
+                        const trimStr = pkg
+                            .replace("Adaptive Cruise Control (ACC)", "")
+                            .replace("Lane Assist", "")
+                            .replace(/(\s*&\s*)+/g, " & ")
+                            .replace(/^[\s&]+|[\s&]+$/g, "")
+                            .replace(/\bPackage\b/g, "Pkg")
+                            .trim();
                         const filters = {
                             makes: [
                                 {
@@ -3212,16 +3220,7 @@
                                     parentModels: [
                                         Object.assign(
                                             { name: car.model },
-                                            car.package && car.package !== "All"
-                                                ? {
-                                                      trims: car.package
-                                                          .replace(
-                                                              /\bPackage\b/g,
-                                                              "Pkg",
-                                                          )
-                                                          .split(" or "),
-                                                  }
-                                                : {},
+                                            trimStr ? { trims: trimStr.split(" or ") } : {},
                                         ),
                                     ],
                                 },
@@ -3229,9 +3228,16 @@
                         };
                         if (years.length)
                             filters.year = {
-                                min: years[0],
                                 max: years[years.length - 1],
+                                min: years[0],
                             };
+                        const cvnaFeatures = [];
+                        if (/\(ACC\)/.test(pkg))
+                            cvnaFeatures.push("Adaptive Cruise Control");
+                        if (pkg.includes("Lane Assist"))
+                            cvnaFeatures.push("Active Lane Keep Assistance");
+                        if (cvnaFeatures.length)
+                            filters.cvnaFeatures = cvnaFeatures;
                         const json = JSON.stringify({
                             filters,
                             sortBy: "LowestPrice",
