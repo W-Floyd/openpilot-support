@@ -61,6 +61,8 @@ The search parameters panel passes user-specified filters into each provider's U
 | Max Distance | ✓    | ✓          | ✓        | ✓        |         |        |
 | Zip Code     | ✓    | ✓          | ✓        | ✓        |         |        |
 | Model Years  | ✓    | ✓          | ✓        | ✓        | ✓       | ✓      |
+| — individual years | ✓ | | | | | |
+| — range only | | ✓ | ✓ | ✓ | ✓ | ✓ |
 | Trim/Package |      |            |          |          | ✓       | ✓      |
 
 ## Output Files
