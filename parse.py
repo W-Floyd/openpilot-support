@@ -741,6 +741,12 @@ def save_cargurus_cache(cache: dict) -> None:
 def fetch_cargurus_cache(cars: list[dict], retry_nulls: bool = False) -> dict:
     """Fetch CarGurus data for all cars, updating the cache file. Returns raw response cache."""
     cache = load_cargurus_cache()
+    valid_queries = {q for car in cars if (q := cargurus_query(car)) is not None}
+    stale = [k for k in cache if k not in valid_queries]
+    if stale:
+        for k in stale:
+            del cache[k]
+        save_cargurus_cache(cache)
     pending = [
         q
         for car in cars
@@ -757,6 +763,8 @@ def fetch_cargurus_cache(cars: list[dict], retry_nulls: bool = False) -> dict:
         futures = {pool.submit(fetch_one, q, i + 1): q for i, q in enumerate(pending)}
         for future in concurrent.futures.as_completed(futures):
             query, response = future.result()
+            if isinstance(response, dict) and response.get("success") == "FAILURE":
+                response = None
             cache[query] = response
             save_cargurus_cache(cache)
     return cache
@@ -869,6 +877,16 @@ def ari_cache_key(make: str, model: str, year: int) -> str:
 def fetch_ari_cache(cars: list[dict], retry_nulls: bool = False) -> dict:
     """Fetch ARI data for all car/year combinations, updating the cache file."""
     cache = load_ari_cache()
+    valid_keys = {
+        ari_cache_key(car["make"], car["model"], year)
+        for car in cars
+        for year in sorted(set(car["years"]))
+    }
+    stale = [k for k in cache if k not in valid_keys]
+    if stale:
+        for k in stale:
+            del cache[k]
+        save_ari_cache(cache)
     pending = [
         (car["make"], car["model"], year)
         for car in cars
@@ -1059,6 +1077,17 @@ def save_cc_cache(cache: dict) -> None:
 def fetch_cc_cache(cars: list[dict], retry_nulls: bool = False) -> dict:
     """Fetch CarComplaints data for all car/year combinations, updating the cache file."""
     cache = load_cc_cache()
+    valid_keys = {
+        cc_cache_key(car["make"], raw_model, year)
+        for car in cars
+        for year in sorted(set(car["years"]))
+        for raw_model in (MODEL_MAPPINGS.get((car["make"], car["model"])) or [car["model"]])
+    }
+    stale = [k for k in cache if k not in valid_keys]
+    if stale:
+        for k in stale:
+            del cache[k]
+        save_cc_cache(cache)
     pending = [
         (car["make"], raw_model, year)
         for car in cars
