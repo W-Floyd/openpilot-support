@@ -278,8 +278,13 @@
                 gap: 4px;
                 font-size: 0.75rem;
             }
-            .fork-item a { color: #1d4ed8; text-decoration: none; }
-            .fork-item a:hover { text-decoration: underline; }
+            .fork-item a {
+                color: #1d4ed8;
+                text-decoration: none;
+            }
+            .fork-item a:hover {
+                text-decoration: underline;
+            }
             .fork-hash {
                 font-family: monospace;
                 font-size: 0.7rem;
@@ -301,7 +306,7 @@
                 text-transform: uppercase;
                 letter-spacing: 0.05em;
             }
-            .preset-btn {
+            .pill-btn {
                 border-radius: 9999px;
                 padding: 4px 12px;
                 font-size: 0.875rem;
@@ -312,10 +317,10 @@
                 box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
                 transition: background 0.1s;
             }
-            .preset-btn:hover {
+            .pill-btn:hover {
                 background: #f3f4f6;
             }
-            .preset-btn.on {
+            .pill-btn.on {
                 background: #1f2937;
                 color: #fff;
                 border-color: #1f2937;
@@ -693,6 +698,24 @@
             }
 
             /* ── Links ── */
+            .search-links {
+                display: flex;
+                flex-direction: column;
+            }
+            .open-all-row {
+                display: inline-flex;
+                align-items: center;
+                gap: 4px;
+            }
+            .srch-open-all {
+                background: none;
+                border: none;
+                border-top: 1px solid #e5e7eb;
+                padding: 2px 0 0;
+                margin-top: 2px;
+                text-align: left;
+                cursor: pointer;
+            }
             .srch-link {
                 color: #2563eb;
                 font-size: 0.75rem;
@@ -819,15 +842,17 @@
                             rel="noopener"
                             >Github</a
                         >
-                        <span class="sep sm-show">&middot;</span>
-                        <button @click="openAllEbayLinks()" class="sm-show">
-                            Open all eBay links
-                        </button>
-                        <span class="sep sm-show">&middot;</span>
-                        <button @click="openAllCarGurusLinks()" class="sm-show">
-                            Open all CarGurus links
-                        </button>
                     </p>
+                    <div class="open-all-row sm-show">
+                        <span class="presets-lbl">Open all</span>
+                        <template x-for="p in searchProviders" :key="p.key">
+                            <button
+                                @click="openAllForProvider(p.key)"
+                                x-text="p.label"
+                                class="pill-btn"
+                            ></button>
+                        </template>
+                    </div>
                 </div>
 
                 <div class="hd-actions">
@@ -969,13 +994,24 @@
                         <template x-for="fork in forkInfo" :key="fork.name">
                             <span class="fork-item">
                                 <template x-if="fork.url">
-                                    <a :href="fork.url" target="_blank" rel="noopener" x-text="fork.name"></a>
+                                    <a
+                                        :href="fork.url"
+                                        target="_blank"
+                                        rel="noopener"
+                                        x-text="fork.name"
+                                    ></a>
                                 </template>
                                 <template x-if="!fork.url">
                                     <span x-text="fork.name"></span>
                                 </template>
                                 <template x-if="fork.hash_url">
-                                    <a :href="fork.hash_url" target="_blank" rel="noopener" class="fork-hash" x-text="fork.hash"></a>
+                                    <a
+                                        :href="fork.hash_url"
+                                        target="_blank"
+                                        rel="noopener"
+                                        class="fork-hash"
+                                        x-text="fork.hash"
+                                    ></a>
                                 </template>
                             </span>
                         </template>
@@ -990,10 +1026,17 @@
                     <button
                         @click="applyPreset(preset)"
                         :class="isPresetActive(preset) ? 'on' : ''"
-                        class="preset-btn"
+                        class="pill-btn"
                         x-text="preset.label"
                     ></button>
                 </template>
+                <button
+                    @click="clearAllFilters()"
+                    class="chip-clear"
+                    style="margin-left: auto"
+                >
+                    Clear
+                </button>
             </div>
 
             <!-- Active filter chips (desktop) -->
@@ -1113,9 +1156,7 @@
                                 <th>
                                     <div class="th-inner">
                                         <!-- Sort button -->
-                                        <template
-                                            x-if="!col.ebay && !col.autotrader && !col.cargurus"
-                                        >
+                                        <template x-if="!col.search">
                                             <button
                                                 @click="toggleSort(col.key)"
                                                 class="sort-btn"
@@ -1140,9 +1181,7 @@
                                                 >
                                             </button>
                                         </template>
-                                        <template
-                                            x-if="col.ebay || col.autotrader || col.cargurus"
-                                        >
+                                        <template x-if="col.search">
                                             <span x-text="colLabel(col)"></span>
                                         </template>
 
@@ -1566,26 +1605,32 @@
                                             </span>
                                         </template>
 
-                                        <!-- ebay link -->
-                                        <template x-if="col.ebay">
-                                            <a
-                                                :href="car._ebayUrl"
-                                                target="_blank"
-                                                rel="noopener"
-                                                class="srch-link"
-                                                >Search</a
-                                            >
-                                        </template>
-
-                                        <!-- autotrader link -->
-                                        <template x-if="col.autotrader">
-                                            <a
-                                                :href="car._autoTraderUrl"
-                                                target="_blank"
-                                                rel="noopener"
-                                                class="srch-link"
-                                                >Search</a
-                                            >
+                                        <!-- search links -->
+                                        <template x-if="col.search">
+                                            <span class="search-links">
+                                                <template
+                                                    x-for="p in searchProviders.filter(p => !hiddenProviders.includes(p.key))"
+                                                    :key="p.key"
+                                                >
+                                                    <template
+                                                        x-if="providerUrl(car, p.key)"
+                                                    >
+                                                        <a
+                                                            :href="providerUrl(car, p.key)"
+                                                            target="_blank"
+                                                            rel="noopener"
+                                                            class="srch-link"
+                                                            x-text="p.label"
+                                                        ></a>
+                                                    </template>
+                                                </template>
+                                                <button
+                                                    @click="openAllSearchLinks(car)"
+                                                    class="srch-link srch-open-all"
+                                                >
+                                                    Open all
+                                                </button>
+                                            </span>
                                         </template>
 
                                         <!-- carcomplaints seal -->
@@ -1679,28 +1724,6 @@
                                             </span>
                                         </template>
 
-                                        <!-- cargurus link -->
-                                        <template x-if="col.cargurus">
-                                            <span>
-                                                <template
-                                                    x-if="carGurusCache[car._carGurusKey]?.url"
-                                                >
-                                                    <a
-                                                        :href="carGurusCache[car._carGurusKey].url"
-                                                        target="_blank"
-                                                        rel="noopener"
-                                                        class="srch-link"
-                                                        >Search</a
-                                                    >
-                                                </template>
-                                                <template
-                                                    x-if="!carGurusCache[car._carGurusKey]?.url"
-                                                >
-                                                    <span class="v-nil">—</span>
-                                                </template>
-                                            </span>
-                                        </template>
-
                                         <!-- model with styled parentheticals -->
                                         <template
                                             x-if="col.key === 'model' && car[col.key] !== null"
@@ -1712,7 +1735,7 @@
 
                                         <!-- default string/number -->
                                         <template
-                                            x-if="!col.speed && !col.ebay && !col.autotrader && !col.cargurus && !col.ari && !col.cc_seal && !col.forks && col.key !== 'support_type' && col.key !== 'years' && col.key !== 'model' && car[col.key] !== null && typeof car[col.key] !== 'boolean'"
+                                            x-if="!col.speed && !col.search && !col.ari && !col.cc_seal && !col.forks && col.key !== 'support_type' && col.key !== 'years' && col.key !== 'model' && car[col.key] !== null && typeof car[col.key] !== 'boolean'"
                                         >
                                             <span x-text="car[col.key]"></span>
                                         </template>
@@ -1738,7 +1761,9 @@
         <!-- prettier-ignore -->
         <!-- prettier-ignore -->
         <script type="application/json" id="fork-info">{{ fork_info_json }}</script>
-        <script type="application/json" id="cars-data">{{ cars_json }}</script>
+        <script type="application/json" id="cars-data">
+            {{ cars_json }}
+        </script>
         <!-- prettier-ignore -->
         <script type="application/json" id="cargurus-cache">{{ cargurus_cache_json }}</script>
         <!-- prettier-ignore -->
@@ -1859,18 +1884,29 @@
                         });
                     })(),
                     scrolled: false,
-                    infoDismissed: localStorage.getItem("infoDismissed") === "1",
+                    infoDismissed:
+                        localStorage.getItem("infoDismissed") === "1",
                     isMobile: window.innerWidth < 640,
                     _allUniqueValuesCache: {},
                     _speedRangeCache: {},
                     _invertedIndex: {},
-                    sortCol: (() => { try { return JSON.parse(localStorage.getItem("sortCol")); } catch { return null; } })(),
+                    sortCol: (() => {
+                        try {
+                            return JSON.parse(localStorage.getItem("sortCol"));
+                        } catch {
+                            return null;
+                        }
+                    })(),
                     sortDir: localStorage.getItem("sortDir") || "asc",
                     filters: (() => {
-                        const defaults = Object.fromEntries(filterableCols.map((k) => [k, []]));
+                        const defaults = Object.fromEntries(
+                            filterableCols.map((k) => [k, []]),
+                        );
                         if (location.search) return defaults;
                         try {
-                            const saved = JSON.parse(localStorage.getItem("filters"));
+                            const saved = JSON.parse(
+                                localStorage.getItem("filters"),
+                            );
                             if (saved && typeof saved === "object") {
                                 for (const k of filterableCols)
                                     if (!Array.isArray(saved[k])) saved[k] = [];
@@ -1885,11 +1921,17 @@
                     openFilter: null,
                     speedUnit: localStorage.getItem("speedUnit") || "mph",
                     speedFilters: (() => {
-                        const defaults = { min_steer_speed: { min: null, max: null }, min_enable_speed: { min: null, max: null } };
+                        const defaults = {
+                            min_steer_speed: { min: null, max: null },
+                            min_enable_speed: { min: null, max: null },
+                        };
                         if (location.search) return defaults;
                         try {
-                            const saved = JSON.parse(localStorage.getItem("speedFilters"));
-                            if (saved && typeof saved === "object") return { ...defaults, ...saved };
+                            const saved = JSON.parse(
+                                localStorage.getItem("speedFilters"),
+                            );
+                            if (saved && typeof saved === "object")
+                                return { ...defaults, ...saved };
                         } catch {}
                         return defaults;
                     })(),
@@ -1901,8 +1943,11 @@
                     ariFilter: (() => {
                         if (location.search) return { min: null, max: null };
                         try {
-                            const saved = JSON.parse(localStorage.getItem("ariFilter"));
-                            if (saved && typeof saved === "object") return saved;
+                            const saved = JSON.parse(
+                                localStorage.getItem("ariFilter"),
+                            );
+                            if (saved && typeof saved === "object")
+                                return saved;
                         } catch {}
                         return { min: null, max: null };
                     })(),
@@ -1921,11 +1966,19 @@
                                       "min_enable_speed",
                                       "ari",
                                       "cc_seal",
-                                      "ebay",
-                                      "autotrader",
-                                      "cargurus",
+                                      "search",
                                   ])
                                 : "[]"),
+                    ),
+                    searchProviders: [
+                        { key: "ebay", label: "eBay" },
+                        { key: "autotrader", label: "AutoTrader" },
+                        { key: "cargurus", label: "CarGurus" },
+                        { key: "carscom", label: "Cars.com" },
+                        { key: "carvana", label: "Carvana" },
+                    ],
+                    hiddenProviders: JSON.parse(
+                        localStorage.getItem("hiddenProviders") || "[]",
                     ),
 
                     get columns() {
@@ -1990,9 +2043,7 @@
                             cc_seal: true,
                             filterable: true,
                         },
-                        { key: "ebay", label: "eBay", ebay: true },
-                        { key: "autotrader", label: "AutoTrader", autotrader: true },
-                        { key: "cargurus", label: "CarGurus", cargurus: true },
+                        { key: "search", label: "Search", search: true },
                     ].map((col) => ({
                         ...col,
                         filterable:
@@ -2822,6 +2873,8 @@
                             car._ariYearRows = this.ariYearRows(car);
                             car._ebayUrl = this.ebayUrl(car);
                             car._autoTraderUrl = this.autoTraderUrl(car);
+                            car._carsComUrl = this.carsComUrl(car);
+                            car._carvanaUrl = this.carvanaUrl(car);
 
                             if (car._ariScore !== null) {
                                 car._ariColorMin = this.ariColor(
@@ -2879,23 +2932,41 @@
                         if (urlParams.toString()) {
                             const presetLabel = urlParams.get("preset");
                             if (presetLabel) {
-                                const preset = this.presets.find((p) => p.label === presetLabel);
+                                const preset = this.presets.find(
+                                    (p) => p.label === presetLabel,
+                                );
                                 if (preset) this.applyPreset(preset);
                             } else {
-                                for (const key of Object.keys(this.filters)) this.filters[key] = [];
+                                for (const key of Object.keys(this.filters))
+                                    this.filters[key] = [];
                             }
                             for (const [p, v] of urlParams) {
                                 if (p === "preset") continue;
                                 if (p.startsWith("f_")) {
                                     const key = p.slice(2);
                                     if (key in this.filters)
-                                        try { this.filters[key].push(JSON.parse(v)); } catch { this.filters[key].push(v); }
+                                        try {
+                                            this.filters[key].push(
+                                                JSON.parse(v),
+                                            );
+                                        } catch {
+                                            this.filters[key].push(v);
+                                        }
                                 } else if (p.startsWith("sf_")) {
                                     const rest = p.slice(3);
-                                    const side = rest.endsWith("_min") ? "min" : rest.endsWith("_max") ? "max" : null;
+                                    const side = rest.endsWith("_min")
+                                        ? "min"
+                                        : rest.endsWith("_max")
+                                          ? "max"
+                                          : null;
                                     if (side) {
-                                        const key = rest.slice(0, -(side.length + 1));
-                                        if (key in this.speedFilters) this.speedFilters[key][side] = parseFloat(v);
+                                        const key = rest.slice(
+                                            0,
+                                            -(side.length + 1),
+                                        );
+                                        if (key in this.speedFilters)
+                                            this.speedFilters[key][side] =
+                                                parseFloat(v);
                                     }
                                 } else if (p === "ari_min") {
                                     this.ariFilter.min = parseInt(v) || null;
@@ -2909,71 +2980,219 @@
                             }
                         }
 
-                        this.$watch("infoDismissed", (v) => localStorage.setItem("infoDismissed", v ? "1" : "0"));
-                        this.$watch("filters", (v) => { localStorage.setItem("filters", JSON.stringify(v)); this._saveToUrl(); });
-                        this.$watch("speedFilters", (v) => { localStorage.setItem("speedFilters", JSON.stringify(v)); this._saveToUrl(); });
-                        this.$watch("ariFilter", (v) => { localStorage.setItem("ariFilter", JSON.stringify(v)); this._saveToUrl(); });
-                        this.$watch("sortCol", (v) => { localStorage.setItem("sortCol", JSON.stringify(v)); this._saveToUrl(); });
-                        this.$watch("sortDir", (v) => { localStorage.setItem("sortDir", v); this._saveToUrl(); });
+                        this.$watch("infoDismissed", (v) =>
+                            localStorage.setItem(
+                                "infoDismissed",
+                                v ? "1" : "0",
+                            ),
+                        );
+                        this.$watch("filters", (v) => {
+                            localStorage.setItem("filters", JSON.stringify(v));
+                            this._saveToUrl();
+                        });
+                        this.$watch("speedFilters", (v) => {
+                            localStorage.setItem(
+                                "speedFilters",
+                                JSON.stringify(v),
+                            );
+                            this._saveToUrl();
+                        });
+                        this.$watch("ariFilter", (v) => {
+                            localStorage.setItem(
+                                "ariFilter",
+                                JSON.stringify(v),
+                            );
+                            this._saveToUrl();
+                        });
+                        this.$watch("sortCol", (v) => {
+                            localStorage.setItem("sortCol", JSON.stringify(v));
+                            this._saveToUrl();
+                        });
+                        this.$watch("sortDir", (v) => {
+                            localStorage.setItem("sortDir", v);
+                            this._saveToUrl();
+                        });
                         if (!location.search) this._saveToUrl();
                     },
 
                     _saveToUrl() {
                         const params = new URLSearchParams();
-                        const activePreset = this.presets.find((p) => this.isPresetActive(p));
-                        const presetFilterKeys = new Set(Object.keys(activePreset?.filters ?? {}));
-                        const presetSpeedKeys = new Set(Object.keys(activePreset?.speedFilters ?? {}));
-                        if (activePreset) params.set("preset", activePreset.label);
+                        const activePreset = this.presets.find((p) =>
+                            this.isPresetActive(p),
+                        );
+                        const presetFilterKeys = new Set(
+                            Object.keys(activePreset?.filters ?? {}),
+                        );
+                        const presetSpeedKeys = new Set(
+                            Object.keys(activePreset?.speedFilters ?? {}),
+                        );
+                        if (activePreset)
+                            params.set("preset", activePreset.label);
                         for (const [key, vals] of Object.entries(this.filters))
                             if (!presetFilterKeys.has(key))
-                                for (const v of vals) params.append("f_" + key, JSON.stringify(v));
-                        for (const [key, range] of Object.entries(this.speedFilters)) {
+                                for (const v of vals)
+                                    params.append(
+                                        "f_" + key,
+                                        JSON.stringify(v),
+                                    );
+                        for (const [key, range] of Object.entries(
+                            this.speedFilters,
+                        )) {
                             if (presetSpeedKeys.has(key)) continue;
-                            if (range.min !== null) params.set("sf_" + key + "_min", range.min);
-                            if (range.max !== null) params.set("sf_" + key + "_max", range.max);
+                            if (range.min !== null)
+                                params.set("sf_" + key + "_min", range.min);
+                            if (range.max !== null)
+                                params.set("sf_" + key + "_max", range.max);
                         }
-                        if (this.ariFilter.min !== null) params.set("ari_min", this.ariFilter.min);
-                        if (this.ariFilter.max !== null) params.set("ari_max", this.ariFilter.max);
-                        if (this.sortCol !== null) params.set("sort", this.sortCol);
-                        if (this.sortDir !== "asc") params.set("dir", this.sortDir);
+                        if (this.ariFilter.min !== null)
+                            params.set("ari_min", this.ariFilter.min);
+                        if (this.ariFilter.max !== null)
+                            params.set("ari_max", this.ariFilter.max);
+                        if (this.sortCol !== null)
+                            params.set("sort", this.sortCol);
+                        if (this.sortDir !== "asc")
+                            params.set("dir", this.sortDir);
                         const qs = params.toString();
-                        history.replaceState(null, "", qs ? "?" + qs : location.pathname);
-                    },
-
-                    openAllEbayLinks() {
-                        const cars = this.filteredCars;
-                        if (
-                            cars.length > 10 &&
-                            !confirm(`Open ${cars.length} eBay links?`)
-                        )
-                            return;
-                        for (const car of cars)
-                            window.open(car._ebayUrl, "_blank", "noopener");
-                    },
-
-                    openAllCarGurusLinks() {
-                        const cars = this.filteredCars.filter(
-                            (car) => this.carGurusCache[car._carGurusKey]?.url,
+                        history.replaceState(
+                            null,
+                            "",
+                            qs ? "?" + qs : location.pathname,
                         );
-                        if (cars.length === 0) return;
+                    },
+
+                    openAllSearchLinks(car) {
+                        const urls = this.searchProviders
+                            .filter(
+                                (p) => !this.hiddenProviders.includes(p.key),
+                            )
+                            .map((p) => this.providerUrl(car, p.key))
+                            .filter(Boolean);
+                        for (const url of urls)
+                            window.open(url, "_blank", "noopener");
+                    },
+
+                    openAllForProvider(key) {
+                        const label =
+                            this.searchProviders.find((p) => p.key === key)
+                                ?.label ?? key;
+                        const cars = this.filteredCars.filter((car) =>
+                            this.providerUrl(car, key),
+                        );
+                        if (!cars.length) return;
                         if (
                             cars.length > 10 &&
-                            !confirm(`Open ${cars.length} CarGurus links?`)
+                            !confirm(`Open ${cars.length} ${label} links?`)
                         )
                             return;
                         for (const car of cars)
                             window.open(
-                                this.carGurusCache[car._carGurusKey].url,
+                                this.providerUrl(car, key),
                                 "_blank",
                                 "noopener",
                             );
                     },
 
                     autoTraderUrl(car) {
-                        const slug = (s) => this.toAscii(s).toLowerCase().replace(/\s+/g, "-").replace(/[^a-z0-9-]/g, "");
-                        const years = [...new Set(car.years)].sort((a, b) => a - b);
-                        const params = years.length ? `?startYear=${years[0]}&endYear=${years[years.length - 1]}&sortBy=derivedpriceASC` : "?sortBy=derivedpriceASC";
+                        const slug = (s) =>
+                            this.toAscii(s)
+                                .toLowerCase()
+                                .replace(/\s+/g, "-")
+                                .replace(/[^a-z0-9-]/g, "");
+                        const years = [...new Set(car.years)].sort(
+                            (a, b) => a - b,
+                        );
+                        const params = years.length
+                            ? `?startYear=${years[0]}&endYear=${years[years.length - 1]}&sortBy=derivedpriceASC`
+                            : "?sortBy=derivedpriceASC";
                         return `https://www.autotrader.com/cars-for-sale/all-cars/${slug(car.make)}/${slug(car.model)}${params}`;
+                    },
+
+                    carsComUrl(car) {
+                        const makeSlug = (s) =>
+                            this.toAscii(s)
+                                .toLowerCase()
+                                .replace(/\s+/g, "-")
+                                .replace(/[^a-z0-9-]/g, "");
+                        const modelSlug = (s) =>
+                            this.toAscii(s)
+                                .toLowerCase()
+                                .replace(/\s+/g, "_")
+                                .replace(/[^a-z0-9_]/g, "");
+                        const years = [...new Set(car.years)].sort(
+                            (a, b) => a - b,
+                        );
+                        const make = makeSlug(car.make);
+                        const variants = this.modelMappings[
+                            `${car.make}|${car.model}`
+                        ] ?? [car.model];
+                        const modelParams = variants
+                            .map((m) => `models[]=${make}-${modelSlug(m)}`)
+                            .join("&");
+                        let url = `https://www.cars.com/shopping/results/?stock_type=used&makes[]=${make}&${modelParams}&sort=price_lowest`;
+                        if (years.length)
+                            url += `&year_min=${years[0]}&year_max=${years[years.length - 1]}`;
+                        return url;
+                    },
+
+                    carvanaUrl(car) {
+                        const slug = (s) =>
+                            this.toAscii(s)
+                                .toLowerCase()
+                                .replace(/\s+/g, "-")
+                                .replace(/[^a-z0-9-]/g, "");
+                        const years = [...new Set(car.years)].sort(
+                            (a, b) => a - b,
+                        );
+                        const filters = {
+                            makes: [
+                                {
+                                    name: car.make,
+                                    parentModels: [
+                                        Object.assign(
+                                            { name: car.model },
+                                            car.package && car.package !== "All"
+                                                ? {
+                                                      trims: car.package
+                                                          .replace(
+                                                              /\bPackage\b/g,
+                                                              "Pkg",
+                                                          )
+                                                          .split(" or "),
+                                                  }
+                                                : {},
+                                        ),
+                                    ],
+                                },
+                            ],
+                        };
+                        if (years.length)
+                            filters.year = {
+                                min: years[0],
+                                max: years[years.length - 1],
+                            };
+                        const json = JSON.stringify({
+                            filters,
+                            sortBy: "LowestPrice",
+                        });
+                        const cvnaid = btoa(
+                            String.fromCharCode(
+                                ...new TextEncoder().encode(json),
+                            ),
+                        ).replace(/=+$/, "");
+                        return `https://www.carvana.com/cars/filters?cvnaid=${cvnaid}`;
+                    },
+
+                    providerUrl(car, key) {
+                        if (key === "ebay") return car._ebayUrl;
+                        if (key === "autotrader") return car._autoTraderUrl;
+                        if (key === "cargurus")
+                            return (
+                                this.carGurusCache[car._carGurusKey]?.url ||
+                                null
+                            );
+                        if (key === "carscom") return car._carsComUrl;
+                        if (key === "carvana") return car._carvanaUrl;
+                        return null;
                     },
 
                     ebayUrl(car) {
@@ -2990,7 +3209,7 @@
                         const modelName =
                             mappedModels.length === 1
                                 ? mappedModels[0]
-                                : car.model;
+                                : `(${[car.model, ...mappedModels].join(",")})`;
                         const query = encodeURIComponent(
                             `${car.make} ${modelName.trim()} ${yearStr}`,
                         );

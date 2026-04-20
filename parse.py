@@ -4,6 +4,7 @@ import concurrent.futures
 import html.parser
 import http.server
 import json
+import queue
 import math
 import os
 import re
@@ -1279,6 +1280,58 @@ def generate_html(
     return minify_html.minify(rendered, minify_js=True, minify_css=True)
 
 
+_reload_clients: list[queue.Queue] = []
+_reload_lock = threading.Lock()
+
+_RELOAD_SCRIPT = b'\n<script>(function(){var s=new EventSource("/reload");s.onmessage=function(){location.reload()}})()</script>\n'
+
+
+def _notify_reload() -> None:
+    with _reload_lock:
+        clients = list(_reload_clients)
+    for q in clients:
+        try:
+            q.put_nowait("reload")
+        except Exception:
+            pass
+
+
+class _ReloadHandler(http.server.SimpleHTTPRequestHandler):
+    def do_GET(self):
+        if self.path != "/reload":
+            return super().do_GET()
+        self.send_response(200)
+        self.send_header("Content-Type", "text/event-stream")
+        self.send_header("Cache-Control", "no-cache")
+        self.send_header("Connection", "keep-alive")
+        self.end_headers()
+        q: queue.Queue = queue.Queue()
+        with _reload_lock:
+            _reload_clients.append(q)
+        try:
+            while True:
+                try:
+                    q.get(timeout=25)
+                    self.wfile.write(b"data: reload\n\n")
+                    self.wfile.flush()
+                except queue.Empty:
+                    self.wfile.write(b": ping\n\n")
+                    self.wfile.flush()
+        except Exception:
+            pass
+        finally:
+            with _reload_lock:
+                try:
+                    _reload_clients.remove(q)
+                except ValueError:
+                    pass
+
+    def log_message(self, format, *args):
+        if args and "/reload" in str(args[0]):
+            return
+        super().log_message(format, *args)
+
+
 def main():
     parser = argparse.ArgumentParser(
         description="Generate openpilot car support files."
@@ -1465,9 +1518,10 @@ def main():
             print("Error: --serve requires --html-out", file=sys.stderr)
             sys.exit(1)
 
+        handler = _ReloadHandler if args.watch else http.server.SimpleHTTPRequestHandler
         serve_dir = os.path.dirname(os.path.abspath(args.html_out))
         os.chdir(serve_dir)
-        httpd = http.server.HTTPServer(("", args.port), http.server.SimpleHTTPRequestHandler)
+        httpd = http.server.ThreadingHTTPServer(("", args.port), handler)
         print(f"Serving at http://localhost:{args.port}/", file=sys.stderr)
         if args.watch:
             t = threading.Thread(target=httpd.serve_forever, daemon=True)
@@ -1484,6 +1538,20 @@ def main():
             print("Error: --watch requires --html-out", file=sys.stderr)
             sys.exit(1)
 
+        html_path = os.path.abspath(args.html_out)
+        live_reload = args.serve
+
+        def rebuild():
+            _write_html()
+            if live_reload:
+                with open(html_path, "ab") as f:
+                    f.write(_RELOAD_SCRIPT)
+                _notify_reload()
+
+        if live_reload:
+            with open(html_path, "ab") as f:
+                f.write(_RELOAD_SCRIPT)
+
         template_path = os.path.join(HERE, "template.html")
         last_mtime = os.path.getmtime(template_path)
         print(f"Watching {template_path} for changes...", file=sys.stderr)
@@ -1495,7 +1563,7 @@ def main():
                     last_mtime = mtime
                     print("template.html changed, regenerating...", file=sys.stderr)
                     try:
-                        _write_html()
+                        rebuild()
                     except Exception as e:
                         print(f"Error: {e}", file=sys.stderr)
         except KeyboardInterrupt:
