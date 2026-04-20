@@ -1200,6 +1200,9 @@
                             <span class="sp-label">Zip Code</span>
                             <input class="sp-input" type="text" placeholder="e.g. 90210" x-model="searchParams.zipCode" maxlength="10" />
                         </div>
+                        <div class="sp-footer">
+                            <button class="chip-clear" @click="searchParams = { minMileage: null, maxMileage: null, minPrice: null, maxPrice: null, maxDistance: null, zipCode: '' }">Clear</button>
+                        </div>
                     </div>
                 </template>
             </div>
@@ -2111,7 +2114,7 @@
                     modelMappings,
                     autotraderMappings,
                     forkInfo,
-                    searchParamsOpen: false,
+                    searchParamsOpen: true,
                     searchParams: {
                         minMileage: null,
                         maxMileage: null,
