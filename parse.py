@@ -549,15 +549,13 @@ def load_fork_cars(
 
     Returns None if the fork has no supported layout.
     """
-    cache = None
-    if use_cache:
-        cache = load_openpilot_cache()
-        if fork_name in cache:
-            print(
-                f"  Using cached {fork_name} data...",
-                file=sys.stderr,
-            )
-            return cache[fork_name]
+    cache = load_openpilot_cache()
+    if use_cache and fork_name in cache:
+        print(
+            f"  Using cached {fork_name} data...",
+            file=sys.stderr,
+        )
+        return cache[fork_name]
 
     fork_root = os.path.dirname(fork_path)
     new_layout = os.path.isdir(os.path.join(fork_path, "opendbc", "car"))
@@ -577,9 +575,8 @@ def load_fork_cars(
         raise RuntimeError(f"Failed to load cars from {fork_path}")
     cars = json.loads(result.stdout)
 
-    if use_cache and cache is not None:
-        cache[fork_name] = cars
-        save_openpilot_cache(cache)
+    cache[fork_name] = cars
+    save_openpilot_cache(cache)
 
     return cars
 
@@ -1340,15 +1337,6 @@ def main():
     print("Loading car docs from forks...", file=sys.stderr)
     fork_car_lists = []
     for fork_name, fork_path in FORKS:
-        if not args.no_cache_openpilot:
-            cache = load_openpilot_cache()
-            if fork_name in cache:
-                fork_cars = cache[fork_name]
-                print(f"  Using cached {fork_name} data...", file=sys.stderr)
-                print(f"  Found {len(fork_cars)} cars in {fork_name}.", file=sys.stderr)
-                fork_car_lists.append((fork_name, fork_cars))
-                continue
-
         fork_cars = load_fork_cars(
             fork_name, fork_path, use_cache=not args.no_cache_openpilot
         )
