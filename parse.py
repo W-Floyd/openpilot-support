@@ -6,6 +6,7 @@ import http.server
 import json
 import math
 import os
+import re
 import subprocess
 import sys
 import threading
@@ -35,8 +36,6 @@ CARGURUS_CACHE_FILE = os.path.join(HERE, ".cargurus_cache.json")
 
 def _extract_years_from_model(car_docs) -> list[int]:
     """Extract year range from model name when years field is not available."""
-    import re
-
     if parse_years(car_docs.years):
         return parse_years(car_docs.years)
 
@@ -53,17 +52,18 @@ def _extract_years_from_model(car_docs) -> list[int]:
 
 _NON_ACC_PATTERNS = ["NO ACC", "Non-ACC", "Non ACC", "No-ACC"]
 _NON_ACC_REGEX = "|".join(f"( - )?{p}" for p in _NON_ACC_PATTERNS)
+_HARNESS_SUFFIX_RE = re.compile(r"\s+(\S+ Harness)\s*$", re.IGNORECASE)
 
 
 def _clean_model_name(car_docs) -> str:
     """Strip year range from model name."""
-    import re
-
     model = car_docs.model
 
     if not (car_docs.years):
         pattern = r"(\s*20\d{2}(-20\d{2}|-\d{2})?)"
         model = re.sub(pattern, "", model).strip()
+
+    model = _HARNESS_SUFFIX_RE.sub("", model).strip()
 
     if "ACC" in (car_docs.package or ""):
         model = re.sub(
@@ -74,11 +74,13 @@ def _clean_model_name(car_docs) -> str:
 
 
 def _modify_package_from_model(car_docs) -> str:
-    import re
-
     package = car_docs.package or ""
     if "ACC" in package and re.search(_NON_ACC_REGEX, car_docs.model, re.IGNORECASE):
         return "No Adaptive Cruise Control (Non-ACC)"
+    m = _HARNESS_SUFFIX_RE.search(car_docs.model)
+    if m:
+        suffix = m.group(1)
+        return f"{package} + {suffix}" if package else suffix
     return package
 
 

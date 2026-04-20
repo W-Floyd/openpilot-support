@@ -926,7 +926,18 @@
     ],
     "seal": null
   },
-  "Cadillac|Escalade ASCM Harness|2018": null,
+  "Cadillac|Escalade|2018": {
+    "url": "https://www.carcomplaints.com/Cadillac/Escalade/2018/",
+    "complaints": 18,
+    "recalls": 1,
+    "tsbs": 1420,
+    "investigations": null,
+    "top_problems": [
+      "Screen Delaminating in the 2018 Cadillac Escalade",
+      "1/8 Inch Gap On Dash in the 2018 Cadillac Escalade"
+    ],
+    "seal": null
+  },
   "Cadillac|XT5|2018": {
     "url": "https://www.carcomplaints.com/Cadillac/XT5/2018/",
     "complaints": 71,
@@ -1063,9 +1074,6 @@
     ],
     "seal": null
   },
-  "Chevrolet|Malibu ASCM Harness|2017": null,
-  "Chevrolet|Malibu ASCM Harness|2018": null,
-  "Chevrolet|Malibu ASCM Harness|2019": null,
   "Chevrolet|Malibu Hybrid|2017": {
     "url": "https://www.carcomplaints.com/Chevrolet/Malibu_Hybrid/2017/",
     "complaints": 14,
@@ -1296,10 +1304,6 @@
     ],
     "seal": null
   },
-  "Chevrolet|Volt ASCM Harness|2017": null,
-  "Chevrolet|Volt ASCM Harness|2018": null,
-  "Chevrolet|Volt Camera Harness|2017": null,
-  "Chevrolet|Volt Camera Harness|2018": null,
   "Chevrolet|Volt|2017": {
     "url": "https://www.carcomplaints.com/Chevrolet/Volt/2017/",
     "complaints": 1000,
@@ -1991,7 +1995,19 @@
     ],
     "seal": null
   },
-  "GMC|Acadia ASCM Harness|2018": null,
+  "GMC|Acadia|2018": {
+    "url": "https://www.carcomplaints.com/GMC/Acadia/2018/",
+    "complaints": 473,
+    "recalls": 2,
+    "tsbs": 1355,
+    "investigations": null,
+    "top_problems": [
+      "&quot;Shift To Park&quot; Message in the 2018 GMC Acadia",
+      "&quot;Shift To Park&quot; Issue in the 2018 GMC Acadia",
+      "A/C Leaking Freon, Known Problem By Gm in the 2018 GMC Acadia"
+    ],
+    "seal": null
+  },
   "GMC|Sierra 1500|2020": {
     "url": "https://www.carcomplaints.com/GMC/Sierra_1500/2020/",
     "complaints": 597,

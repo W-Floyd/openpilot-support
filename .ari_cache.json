@@ -270,7 +270,7 @@
   "CUPRA|Ateca|2023": null,
   "Cadillac|CT6|2017": null,
   "Cadillac|CT6|2018": null,
-  "Cadillac|Escalade ASCM Harness|2018": null,
+  "Cadillac|Escalade|2018": null,
   "Cadillac|XT5|2018": {
     "score": 77,
     "url": "https://autoreliabilityindex.com/cadillac/xt5/2018"
@@ -337,9 +337,6 @@
     "score": 71,
     "url": "https://autoreliabilityindex.com/chevrolet/equinox/2022"
   },
-  "Chevrolet|Malibu ASCM Harness|2017": null,
-  "Chevrolet|Malibu ASCM Harness|2018": null,
-  "Chevrolet|Malibu ASCM Harness|2019": null,
   "Chevrolet|Malibu Hybrid|2017": null,
   "Chevrolet|Malibu|2016": null,
   "Chevrolet|Malibu|2017": null,
@@ -394,10 +391,6 @@
   },
   "Chevrolet|Trailblazer|2021": null,
   "Chevrolet|Trailblazer|2022": null,
-  "Chevrolet|Volt ASCM Harness|2017": null,
-  "Chevrolet|Volt ASCM Harness|2018": null,
-  "Chevrolet|Volt Camera Harness|2017": null,
-  "Chevrolet|Volt Camera Harness|2018": null,
   "Chevrolet|Volt|2017": null,
   "Chevrolet|Volt|2018": null,
   "Chrysler|Pacifica Hybrid|2017": null,
@@ -574,7 +567,10 @@
     "score": 72,
     "url": "https://autoreliabilityindex.com/ford/ranger/2024"
   },
-  "GMC|Acadia ASCM Harness|2018": null,
+  "GMC|Acadia|2018": {
+    "score": 68,
+    "url": "https://autoreliabilityindex.com/gmc/acadia/2018"
+  },
   "GMC|Sierra 1500|2020": {
     "score": 63,
     "url": "https://autoreliabilityindex.com/gmc/sierra-1500/2020"
