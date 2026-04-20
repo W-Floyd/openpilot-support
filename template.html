@@ -296,6 +296,23 @@
                 }
             }
 
+            .caps-table {
+                border-collapse: collapse;
+                font-size: 0.7rem;
+                margin-top: 8px;
+            }
+            .caps-table th, .caps-table td {
+                padding: 2px 6px;
+                text-align: center;
+                border: 1px solid #bfdbfe;
+            }
+            .caps-table td:first-child, .caps-table th:first-child {
+                text-align: left;
+            }
+            .caps-table thead th {
+                font-weight: 600;
+            }
+
             .fork-list {
                 margin-top: 6px;
                 display: flex;
@@ -1107,15 +1124,33 @@
             <!-- Info banner -->
             <div
                 class="info-wrap"
-                :style="infoDismissed ? 'max-height:0;opacity:0' : 'max-height:400px;opacity:1'"
+                :style="infoDismissed ? 'max-height:0;opacity:0' : 'max-height:600px;opacity:1'"
             >
                 <div class="info-banner">
                     Search links are auto-generated and may return incorrect or
-                    unrelated results. They may match the wrong trim or
-                    generation. Use them as a starting point, not a guarantee.
-                    Always verify before purchasing. Not all search providers
-                    support all search options.
-                    <br />
+                    unrelated results. Use them as a starting point, not a guarantee.
+                    Always verify before purchasing.
+                    <br /><br />
+                    <table class="caps-table">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <template x-for="p in searchProviders.filter(p => !hiddenProviders.includes(p.key))" :key="p.key">
+                                    <th x-text="p.label"></th>
+                                </template>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <template x-for="cap in providerCapDefs" :key="cap.key">
+                                <tr>
+                                    <td x-text="cap.label"></td>
+                                    <template x-for="p in searchProviders.filter(p => !hiddenProviders.includes(p.key))" :key="p.key">
+                                        <td x-text="p.caps[cap.key] === true ? '✓' : p.caps[cap.key] === 'max' ? 'Max' : p.caps[cap.key] === 'cached' ? '~' : ''"></td>
+                                    </template>
+                                </tr>
+                            </template>
+                        </tbody>
+                    </table>
                     <br />
                     <div class="fork-list">
                         <template x-for="fork in forkInfo" :key="fork.name">
@@ -2154,12 +2189,20 @@
                                 : "[]"),
                     ),
                     searchProviders: [
-                        { key: "ebay", label: "eBay" },
-                        { key: "autotrader", label: "AutoTrader" },
-                        { key: "cargurus", label: "CarGurus" },
-                        { key: "carscom", label: "Cars.com" },
-                        { key: "carvana", label: "Carvana" },
-                        { key: "carmax", label: "CarMax" },
+                        { key: "ebay",        label: "eBay",        caps: { mileage: "max", price: true,  distance: true,  zip: true,  years: true,     trim: false } },
+                        { key: "autotrader",  label: "AutoTrader",  caps: { mileage: true,  price: true,  distance: true,  zip: true,  years: true,     trim: false } },
+                        { key: "cargurus",    label: "CarGurus",    caps: { mileage: true,  price: true,  distance: true,  zip: true,  years: "cached", trim: false } },
+                        { key: "carscom",     label: "Cars.com",    caps: { mileage: "max", price: true,  distance: true,  zip: true,  years: true,     trim: false } },
+                        { key: "carvana",     label: "Carvana",     caps: { mileage: true,  price: true,  distance: false, zip: false, years: true,     trim: true  } },
+                        { key: "carmax",      label: "CarMax",      caps: { mileage: true,  price: true,  distance: false, zip: true,  years: true,     trim: true  } },
+                    ],
+                    providerCapDefs: [
+                        { key: "mileage",  label: "Mileage"  },
+                        { key: "price",    label: "Price"    },
+                        { key: "distance", label: "Distance" },
+                        { key: "zip",      label: "Zip"      },
+                        { key: "years",    label: "Years"    },
+                        { key: "trim",     label: "Trim"     },
                     ],
                     hiddenProviders: JSON.parse(
                         localStorage.getItem("hiddenProviders") || "[]",
