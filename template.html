@@ -266,6 +266,26 @@
                 }
             }
 
+            .fork-list {
+                margin-top: 6px;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 4px 12px;
+            }
+            .fork-item {
+                display: inline-flex;
+                align-items: center;
+                gap: 4px;
+                font-size: 0.75rem;
+            }
+            .fork-item a { color: #1d4ed8; text-decoration: none; }
+            .fork-item a:hover { text-decoration: underline; }
+            .fork-hash {
+                font-family: monospace;
+                font-size: 0.7rem;
+                color: #6b7280 !important;
+            }
+
             /* ── Presets ── */
             .presets-row {
                 display: flex;
@@ -945,6 +965,21 @@
                     verify before purchasing. eBay searches by keyword; CarGurus
                     uses structured filters but may match the wrong trim or
                     generation. Use them as a starting point, not a guarantee.
+                    <div class="fork-list">
+                        <template x-for="fork in forkInfo" :key="fork.name">
+                            <span class="fork-item">
+                                <template x-if="fork.url">
+                                    <a :href="fork.url" target="_blank" rel="noopener" x-text="fork.name"></a>
+                                </template>
+                                <template x-if="!fork.url">
+                                    <span x-text="fork.name"></span>
+                                </template>
+                                <template x-if="fork.hash_url">
+                                    <a :href="fork.hash_url" target="_blank" rel="noopener" class="fork-hash" x-text="fork.hash"></a>
+                                </template>
+                            </span>
+                        </template>
+                    </div>
                 </div>
             </div>
 
@@ -1690,6 +1725,8 @@
         </div>
 
         <!-- prettier-ignore -->
+        <!-- prettier-ignore -->
+        <script type="application/json" id="fork-info">{{ fork_info_json }}</script>
         <script type="application/json" id="cars-data">{{ cars_json }}</script>
         <!-- prettier-ignore -->
         <script type="application/json" id="cargurus-cache">{{ cargurus_cache_json }}</script>
@@ -1726,6 +1763,9 @@
                 );
                 const modelMappings = JSON.parse(
                     document.getElementById("model-mappings").textContent,
+                );
+                const forkInfo = JSON.parse(
+                    document.getElementById("fork-info").textContent,
                 );
                 const carGurusCache = JSON.parse(
                     document.getElementById("cargurus-cache").textContent,
@@ -1846,6 +1886,7 @@
                     ariCache,
                     ccCache,
                     modelMappings,
+                    forkInfo,
                     ariFilter: (() => {
                         if (location.search) return { min: null, max: null };
                         try {
