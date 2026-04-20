@@ -1788,6 +1788,8 @@
         <script type="application/json" id="cc-cache">{{ cc_cache_json }}</script>
         <!-- prettier-ignore -->
         <script type="application/json" id="model-mappings">{{ model_mappings_json }}</script>
+        <!-- prettier-ignore -->
+        <script type="application/json" id="autotrader-mappings">{{ autotrader_mappings_json }}</script>
         <script type="application/json" id="filter-index">
             {{ filter_index_json }}
         </script>
@@ -1815,6 +1817,9 @@
                 );
                 const modelMappings = JSON.parse(
                     document.getElementById("model-mappings").textContent,
+                );
+                const autotraderMappings = JSON.parse(
+                    document.getElementById("autotrader-mappings").textContent,
                 );
                 const forkInfo = JSON.parse(
                     document.getElementById("fork-info").textContent,
@@ -1955,6 +1960,7 @@
                     ariCache,
                     ccCache,
                     modelMappings,
+                    autotraderMappings,
                     forkInfo,
                     ariFilter: (() => {
                         if (location.search) return { min: null, max: null };
@@ -3127,35 +3133,38 @@
                     },
 
                     autoTraderUrl(car) {
-                        const makeSlug = (s) =>
+                        const slug = (s) =>
                             this.toAscii(s)
                                 .toLowerCase()
                                 .replace(/\s+/g, "-")
                                 .replace(/[^a-z0-9-]/g, "");
-                        const make = makeSlug(car.make);
+                        const make = slug(car.make);
+                        const key = `${car.make}|${car.model}`;
                         const variants =
-                            this.modelMappings[`${car.make}|${car.model}`] ??
-                            [];
-                        const modelParams = variants
-                            .sort((a, b) => a.localeCompare(b))
-                            .map((m) => `modelCode=${m.replace(/\s+/g, "-")}`)
-                            .join("&");
-                        const modelCode = car.model
-                            .replace(/\s+/g, "-")
-                            .toLowerCase();
-                        const years = [...new Set(car.years)].sort(
-                            (a, b) => a - b,
+                            this.modelMappings[key] ?? [car.model];
+                        const codes = variants.map(
+                            (v) =>
+                                this.autotraderMappings[`${car.make}|${v}`] ?? v.replace(/\s+/g, ""),
                         );
-                        const params = new URLSearchParams();
+                        const years = [...new Set(car.years)].sort((a, b) => a - b);
+                        const base = `https://www.autotrader.com/cars-for-sale/all-cars/${make}`;
+                        const yearParams = new URLSearchParams();
                         if (years.length) {
-                            params.set("endYear", years[years.length - 1]);
-                            params.set("startYear", years[0]);
+                            yearParams.set("startYear", years[0]);
+                            yearParams.set("endYear", years[years.length - 1]);
                         }
-                        params.set("sortBy", "derivedpriceASC");
-                        const baseUrl = variants.length
-                            ? `https://www.autotrader.com/cars-for-sale/all-cars/${make}?${params}&${modelParams}`
-                            : `https://www.autotrader.com/cars-for-sale/${make}/${modelCode}?${params}`;
-                        return baseUrl;
+                        yearParams.set("sortBy", "derivedpriceASC");
+                        if (codes.length > 1) {
+                            const modelParams = [...codes]
+                                .sort()
+                                .map((c) => `modelCode=${encodeURIComponent(c)}`)
+                                .join("&");
+                            return `${base}?${modelParams}&${yearParams}`;
+                        }
+                        const modelSlug =
+                            this.autotraderMappings[`${car.make}|${variants[0]}`] ??
+                            slug(variants[0]);
+                        return `${base}/${modelSlug}?${yearParams}`;
                     },
 
                     carsComUrl(car) {
