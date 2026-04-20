@@ -52,14 +52,16 @@ Results are cached to avoid re-fetching on every run. Stale entries (for cars no
 
 The search parameters panel passes user-specified filters into each provider's URL. Keep this table in sync with the URL-building functions in `template.html`.
 
-| Parameter    | eBay | AutoTrader | CarGurus | Cars.com | Carvana |
-|--------------|:----:|:----------:|:--------:|:--------:|:-------:|
-| Min Mileage  |      |            | ✓        |          | ✓       |
-| Max Mileage  | ✓ (bracketed) | ✓          | ✓        | ✓        | ✓       |
-| Min Price    | ✓    | ✓          | ✓        | ✓        | ✓       |
-| Max Price    | ✓    | ✓          | ✓        | ✓        | ✓       |
-| Max Distance | ✓    | ✓          | ✓        | ✓        |         |
-| Zip Code     | ✓    | ✓          | ✓        | ✓        |         |
+| Parameter    | eBay | AutoTrader | CarGurus | Cars.com | Carvana | CarMax |
+|--------------|:----:|:----------:|:--------:|:--------:|:-------:|:------:|
+| Min Mileage  |      |            | ✓        |          | ✓       | ✓      |
+| Max Mileage  | ✓ (bracketed) | ✓          | ✓        | ✓        | ✓       | ✓      |
+| Min Price    | ✓    | ✓          | ✓        | ✓        | ✓       | ✓      |
+| Max Price    | ✓    | ✓          | ✓        | ✓        | ✓       | ✓      |
+| Max Distance | ✓    | ✓          | ✓        | ✓        |         |        |
+| Zip Code     | ✓    | ✓          | ✓        | ✓        |         | ✓      |
+| Model Years  | ✓    | ✓          | pre-cached per model | ✓        | ✓       | ✓      |
+| Trim/Package |      |            |          |          | ✓       | ✓      |
 
 ## Output Files
 
