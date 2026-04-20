@@ -1114,7 +1114,7 @@
                                     <div class="th-inner">
                                         <!-- Sort button -->
                                         <template
-                                            x-if="!col.ebay && !col.cargurus"
+                                            x-if="!col.ebay && !col.autotrader && !col.cargurus"
                                         >
                                             <button
                                                 @click="toggleSort(col.key)"
@@ -1141,7 +1141,7 @@
                                             </button>
                                         </template>
                                         <template
-                                            x-if="col.ebay || col.cargurus"
+                                            x-if="col.ebay || col.autotrader || col.cargurus"
                                         >
                                             <span x-text="colLabel(col)"></span>
                                         </template>
@@ -1577,6 +1577,17 @@
                                             >
                                         </template>
 
+                                        <!-- autotrader link -->
+                                        <template x-if="col.autotrader">
+                                            <a
+                                                :href="car._autoTraderUrl"
+                                                target="_blank"
+                                                rel="noopener"
+                                                class="srch-link"
+                                                >Search</a
+                                            >
+                                        </template>
+
                                         <!-- carcomplaints seal -->
                                         <template x-if="col.cc_seal">
                                             <span>
@@ -1701,7 +1712,7 @@
 
                                         <!-- default string/number -->
                                         <template
-                                            x-if="!col.speed && !col.ebay && !col.cargurus && !col.ari && !col.cc_seal && !col.forks && col.key !== 'support_type' && col.key !== 'years' && col.key !== 'model' && car[col.key] !== null && typeof car[col.key] !== 'boolean'"
+                                            x-if="!col.speed && !col.ebay && !col.autotrader && !col.cargurus && !col.ari && !col.cc_seal && !col.forks && col.key !== 'support_type' && col.key !== 'years' && col.key !== 'model' && car[col.key] !== null && typeof car[col.key] !== 'boolean'"
                                         >
                                             <span x-text="car[col.key]"></span>
                                         </template>
@@ -1911,6 +1922,7 @@
                                       "ari",
                                       "cc_seal",
                                       "ebay",
+                                      "autotrader",
                                       "cargurus",
                                   ])
                                 : "[]"),
@@ -1979,6 +1991,7 @@
                             filterable: true,
                         },
                         { key: "ebay", label: "eBay", ebay: true },
+                        { key: "autotrader", label: "AutoTrader", autotrader: true },
                         { key: "cargurus", label: "CarGurus", cargurus: true },
                     ].map((col) => ({
                         ...col,
@@ -2808,6 +2821,7 @@
                             car._ccYearRows = this.ccYearRows(car);
                             car._ariYearRows = this.ariYearRows(car);
                             car._ebayUrl = this.ebayUrl(car);
+                            car._autoTraderUrl = this.autoTraderUrl(car);
 
                             if (car._ariScore !== null) {
                                 car._ariColorMin = this.ariColor(
@@ -2953,6 +2967,13 @@
                                 "_blank",
                                 "noopener",
                             );
+                    },
+
+                    autoTraderUrl(car) {
+                        const slug = (s) => this.toAscii(s).toLowerCase().replace(/\s+/g, "-").replace(/[^a-z0-9-]/g, "");
+                        const years = [...new Set(car.years)].sort((a, b) => a - b);
+                        const params = years.length ? `?startYear=${years[0]}&endYear=${years[years.length - 1]}&sortBy=derivedpriceASC` : "?sortBy=derivedpriceASC";
+                        return `https://www.autotrader.com/cars-for-sale/all-cars/${slug(car.make)}/${slug(car.model)}${params}`;
                     },
 
                     ebayUrl(car) {
