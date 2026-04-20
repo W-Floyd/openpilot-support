@@ -186,6 +186,23 @@
                 letter-spacing: 0.05em;
                 margin-bottom: 8px;
             }
+            .sp-lbl-row {
+                display: flex;
+                align-items: center;
+                gap: 6px;
+            }
+            .sp-lbl-row .sp-lbl { margin-bottom: 0; flex: 1; }
+            .all-btn {
+                font-size: 0.7rem;
+                color: #6b7280;
+                background: none;
+                border: 1px solid #d1d5db;
+                border-radius: 4px;
+                padding: 1px 6px;
+                cursor: pointer;
+                line-height: 1.4;
+            }
+            .all-btn:hover { color: #111827; border-color: #9ca3af; }
             .unit-row {
                 display: flex;
                 align-items: center;
@@ -294,14 +311,35 @@
             /* ── Search params ── */
             .search-params {
                 display: flex;
-                flex-wrap: wrap;
-                align-items: flex-end;
-                gap: 12px;
+                flex-direction: column;
+                gap: 10px;
                 margin-bottom: 12px;
-                padding: 10px 14px;
+                padding: 8px 14px;
                 background: #f9fafb;
                 border: 1px solid #e5e7eb;
                 border-radius: 8px;
+            }
+            .sp-toggle {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                background: none;
+                border: none;
+                padding: 0;
+                cursor: pointer;
+                font-size: 0.8rem;
+                font-weight: 600;
+                color: #374151;
+                width: 100%;
+                text-align: left;
+            }
+            .sp-toggle:hover { color: #111827; }
+            .sp-caret { font-size: 0.65rem; color: #9ca3af; }
+            .sp-fields {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: flex-end;
+                gap: 12px;
             }
             .sp-group {
                 display: flex;
@@ -1015,7 +1053,11 @@
                                 </label>
                             </template>
 
-                            <p class="sp-lbl">Providers</p>
+                            <div class="sp-lbl-row">
+                                <p class="sp-lbl">Providers</p>
+                                <button class="all-btn" @click="hiddenProviders = []; hiddenColumns = hiddenColumns.filter(c => c !== 'search')">All</button>
+                                <button class="all-btn" @click="hiddenProviders = searchProviders.map(p => p.key)">None</button>
+                            </div>
                             <template x-for="p in searchProviders" :key="p.key">
                                 <label class="col-row">
                                     <input
@@ -1103,31 +1145,41 @@
             </div>
 
             <!-- Search parameters -->
-            <div class="search-params">
-                <div class="sp-group">
-                    <span class="sp-label">Mileage</span>
-                    <div class="sp-row">
-                        <input class="sp-input" type="number" placeholder="Min" x-model.number="searchParams.minMileage" min="0" />
-                        <span class="sp-sep">–</span>
-                        <input class="sp-input" type="number" placeholder="Max" x-model.number="searchParams.maxMileage" min="0" />
+            <div class="search-params"
+                x-show="!hiddenColumns.includes('search') && searchProviders.some(p => !hiddenProviders.includes(p.key))"
+            >
+                <button class="sp-toggle" @click="searchParamsOpen = !searchParamsOpen">
+                    <span>Search Parameters</span>
+                    <span x-text="searchParamsOpen ? '▲' : '▼'" class="sp-caret"></span>
+                </button>
+                <template x-if="searchParamsOpen">
+                    <div class="sp-fields">
+                        <div class="sp-group">
+                            <span class="sp-label">Mileage</span>
+                            <div class="sp-row">
+                                <input class="sp-input" type="number" placeholder="Min" x-model.number="searchParams.minMileage" min="0" />
+                                <span class="sp-sep">–</span>
+                                <input class="sp-input" type="number" placeholder="Max" x-model.number="searchParams.maxMileage" min="0" />
+                            </div>
+                        </div>
+                        <div class="sp-group">
+                            <span class="sp-label">Price</span>
+                            <div class="sp-row">
+                                <input class="sp-input" type="number" placeholder="Min" x-model.number="searchParams.minPrice" min="0" />
+                                <span class="sp-sep">–</span>
+                                <input class="sp-input" type="number" placeholder="Max" x-model.number="searchParams.maxPrice" min="0" />
+                            </div>
+                        </div>
+                        <div class="sp-group">
+                            <span class="sp-label">Max Distance</span>
+                            <input class="sp-input" type="number" placeholder="Miles" x-model.number="searchParams.maxDistance" min="0" />
+                        </div>
+                        <div class="sp-group">
+                            <span class="sp-label">Zip Code</span>
+                            <input class="sp-input" type="text" placeholder="e.g. 90210" x-model="searchParams.zipCode" maxlength="10" />
+                        </div>
                     </div>
-                </div>
-                <div class="sp-group">
-                    <span class="sp-label">Price</span>
-                    <div class="sp-row">
-                        <input class="sp-input" type="number" placeholder="Min" x-model.number="searchParams.minPrice" min="0" />
-                        <span class="sp-sep">–</span>
-                        <input class="sp-input" type="number" placeholder="Max" x-model.number="searchParams.maxPrice" min="0" />
-                    </div>
-                </div>
-                <div class="sp-group">
-                    <span class="sp-label">Max Distance</span>
-                    <input class="sp-input" type="number" placeholder="Miles" x-model.number="searchParams.maxDistance" min="0" />
-                </div>
-                <div class="sp-group">
-                    <span class="sp-label">Zip Code</span>
-                    <input class="sp-input" type="text" placeholder="e.g. 90210" x-model="searchParams.zipCode" maxlength="10" />
-                </div>
+                </template>
             </div>
 
             <!-- Active filter chips (desktop) -->
@@ -2037,6 +2089,7 @@
                     modelMappings,
                     autotraderMappings,
                     forkInfo,
+                    searchParamsOpen: false,
                     searchParams: {
                         minMileage: null,
                         maxMileage: null,
@@ -3089,6 +3142,18 @@
                                     this.sortCol = v || null;
                                 } else if (p === "dir") {
                                     this.sortDir = v;
+                                } else if (p === "sp_min_mileage") {
+                                    this.searchParams.minMileage = parseInt(v) || null;
+                                } else if (p === "sp_max_mileage") {
+                                    this.searchParams.maxMileage = parseInt(v) || null;
+                                } else if (p === "sp_min_price") {
+                                    this.searchParams.minPrice = parseInt(v) || null;
+                                } else if (p === "sp_max_price") {
+                                    this.searchParams.maxPrice = parseInt(v) || null;
+                                } else if (p === "sp_max_distance") {
+                                    this.searchParams.maxDistance = parseInt(v) || null;
+                                } else if (p === "sp_zip") {
+                                    this.searchParams.zipCode = v;
                                 }
                             }
                         }
@@ -3125,12 +3190,16 @@
                             localStorage.setItem("sortDir", v);
                             this._saveToUrl();
                         });
-                        this.$watch("hiddenProviders", (v) =>
-                            localStorage.setItem(
-                                "hiddenProviders",
-                                JSON.stringify(v),
-                            ),
-                        );
+                        this.$watch("searchParams", () => this._saveToUrl(), { deep: true });
+                        this.$watch("hiddenProviders", (v) => {
+                            localStorage.setItem("hiddenProviders", JSON.stringify(v));
+                            if (this.searchProviders.every((p) => v.includes(p.key)))
+                                this.hiddenColumns = [...new Set([...this.hiddenColumns, "search"])];
+                        });
+                        this.$watch("hiddenColumns", (v) => {
+                            if (!v.includes("search") && this.searchProviders.every((p) => this.hiddenProviders.includes(p.key)))
+                                this.hiddenProviders = [];
+                        });
                         if (!location.search) this._saveToUrl();
                     },
 
@@ -3171,6 +3240,13 @@
                             params.set("sort", this.sortCol);
                         if (this.sortDir !== "asc")
                             params.set("dir", this.sortDir);
+                        const sp = this.searchParams;
+                        if (sp.minMileage) params.set("sp_min_mileage", sp.minMileage);
+                        if (sp.maxMileage) params.set("sp_max_mileage", sp.maxMileage);
+                        if (sp.minPrice) params.set("sp_min_price", sp.minPrice);
+                        if (sp.maxPrice) params.set("sp_max_price", sp.maxPrice);
+                        if (sp.maxDistance) params.set("sp_max_distance", sp.maxDistance);
+                        if (sp.zipCode) params.set("sp_zip", sp.zipCode);
                         const qs = params.toString();
                         history.replaceState(
                             null,
@@ -3226,15 +3302,21 @@
                                 this.autotraderMappings[`${car.make}|${v}`] ?? v.replace(/\s+/g, ""),
                         );
                         const years = [...new Set(car.years)].sort((a, b) => a - b);
+                        const p = this.searchParams;
                         const category = /hybrid/i.test(car.model) ? "hybrid/" : "";
-                        const base = `https://www.autotrader.com/cars-for-sale/all-cars/${category}${make}`;
+                        const priceSegment = (p.minPrice || p.maxPrice)
+                            ? `cars-between-${p.minPrice || 0}-and-${p.maxPrice || ""}/${category}`
+                            : category;
+                        const base = `https://www.autotrader.com/cars-for-sale/all-cars/${priceSegment}${make}`;
                         const yearParams = new URLSearchParams();
                         if (years.length) {
                             yearParams.set("startYear", years[0]);
                             yearParams.set("endYear", years[years.length - 1]);
                         }
+                        if (p.maxMileage) yearParams.set("mileage", p.maxMileage);
+                        if (p.maxDistance) yearParams.set("searchRadius", p.maxDistance);
                         yearParams.set("sortBy", "derivedpriceASC");
-                        yearParams.set("searchRadius", "0");
+                        if (p.zipCode) yearParams.set("zip", p.zipCode);
                         if (codes.length > 1) {
                             const modelParams = [...codes]
                                 .sort()
@@ -3269,9 +3351,14 @@
                         const modelParams = variants
                             .map((m) => `models[]=${make}-${modelSlug(m)}`)
                             .join("&");
-                        let url = `https://www.cars.com/shopping/results/?stock_type=used&makes[]=${make}&${modelParams}&maximum_distance=9999&sort=list_price`;
+                        const p = this.searchParams;
+                        let url = `https://www.cars.com/shopping/results/?stock_type=used&makes[]=${make}&${modelParams}&maximum_distance=${p.maxDistance || 9999}&sort=list_price`;
                         if (years.length)
                             url += `&year_min=${years[0]}&year_max=${years[years.length - 1]}`;
+                        if (p.minPrice) url += `&list_price_min=${p.minPrice}`;
+                        if (p.maxPrice) url += `&list_price_max=${p.maxPrice}`;
+                        if (p.maxMileage) url += `&mileage_max=${p.maxMileage}`;
+                        if (p.zipCode) url += `&zip=${encodeURIComponent(p.zipCode)}`;
                         return url;
                     },
 
@@ -3315,6 +3402,19 @@
                             cvnaFeatures.push("Active Lane Keep Assistance");
                         if (cvnaFeatures.length)
                             filters.cvnaFeatures = cvnaFeatures;
+                        const p = this.searchParams;
+                        if (p.minPrice || p.maxPrice)
+                            filters.price = Object.assign(
+                                {},
+                                p.minPrice ? { min: p.minPrice } : {},
+                                p.maxPrice ? { max: p.maxPrice } : {},
+                            );
+                        if (p.minMileage || p.maxMileage)
+                            filters.mileage = Object.assign(
+                                {},
+                                p.minMileage ? { min: p.minMileage } : {},
+                                p.maxMileage ? { max: p.maxMileage } : {},
+                            );
                         const json = JSON.stringify({
                             filters,
                             sortBy: "LowestPrice",
@@ -3330,11 +3430,20 @@
                     providerUrl(car, key) {
                         if (key === "ebay") return this.ebayUrl(car);
                         if (key === "autotrader") return this.autoTraderUrl(car);
-                        if (key === "cargurus")
-                            return (
-                                this.carGurusCache[car._carGurusKey]?.url ||
-                                null
-                            );
+                        if (key === "cargurus") {
+                            const cgUrl = this.carGurusCache[car._carGurusKey]?.url;
+                            if (!cgUrl) return null;
+                            const p = this.searchParams;
+                            const extra = new URLSearchParams();
+                            if (p.minMileage) extra.set("minMileage", p.minMileage);
+                            if (p.maxMileage) extra.set("maxMileage", p.maxMileage);
+                            if (p.minPrice) extra.set("minPrice", p.minPrice);
+                            if (p.maxPrice) extra.set("maxPrice", p.maxPrice);
+                            if (p.maxDistance) extra.set("distance", p.maxDistance);
+                            if (p.zipCode) extra.set("zip", p.zipCode);
+                            const qs = extra.toString();
+                            return qs ? `${cgUrl}&${qs}` : cgUrl;
+                        }
                         if (key === "carscom") return this.carsComUrl(car);
                         if (key === "carvana") return this.carvanaUrl(car);
                         return null;
