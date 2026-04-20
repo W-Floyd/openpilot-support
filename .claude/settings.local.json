@@ -10,7 +10,8 @@
       "mcp__firefox-devtools__take_snapshot",
       "mcp__firefox-devtools__resolve_uid_to_selector",
       "mcp__firefox-devtools__list_pages",
-      "mcp__firefox-devtools__screenshot_by_uid"
+      "mcp__firefox-devtools__screenshot_by_uid",
+      "mcp__firefox-devtools__click_by_uid"
     ]
   }
 }

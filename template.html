@@ -3147,13 +3147,15 @@
                                 this.autotraderMappings[`${car.make}|${v}`] ?? v.replace(/\s+/g, ""),
                         );
                         const years = [...new Set(car.years)].sort((a, b) => a - b);
-                        const base = `https://www.autotrader.com/cars-for-sale/all-cars/${make}`;
+                        const category = /hybrid/i.test(car.model) ? "hybrid/" : "";
+                        const base = `https://www.autotrader.com/cars-for-sale/all-cars/${category}${make}`;
                         const yearParams = new URLSearchParams();
                         if (years.length) {
                             yearParams.set("startYear", years[0]);
                             yearParams.set("endYear", years[years.length - 1]);
                         }
                         yearParams.set("sortBy", "derivedpriceASC");
+                        yearParams.set("searchRadius", "0");
                         if (codes.length > 1) {
                             const modelParams = [...codes]
                                 .sort()
@@ -3163,7 +3165,7 @@
                         }
                         const modelSlug =
                             this.autotraderMappings[`${car.make}|${variants[0]}`] ??
-                            slug(variants[0]);
+                            slug(variants[0].replace(/\s*hybrid\s*/i, "").trim());
                         return `${base}/${modelSlug}?${yearParams}`;
                     },
 
