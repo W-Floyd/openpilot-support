@@ -969,6 +969,11 @@ MODEL_MAPPINGS: dict[tuple[str, str], list[str]] = {
     ("Lexus", "UX Hybrid"): ["UX 200h", "UX 250h"],
 }
 
+# Autotrader modelCode mappings
+# Maps (make, variant) tuples to AutoTrader modelCode/slug strings, where variant
+# is a model name from MODEL_MAPPINGS (or the raw car model if not in MODEL_MAPPINGS).
+AUTOTRADER_MAPPINGS: dict[tuple[str, str], str] = {}
+
 
 class CcParser(html.parser.HTMLParser):
     """Extracts subnav counts, seal, and JSON-LD from a carcomplaints.com page."""
@@ -1280,6 +1285,13 @@ def generate_html(
         {f"{make}|{model}": mapped for (make, model), mapped in MODEL_MAPPINGS.items()},
         separators=(",", ":"),
     )
+    autotrader_mappings_json = json.dumps(
+        {
+            f"{make}|{model}": mapped
+            for (make, model), mapped in AUTOTRADER_MAPPINGS.items()
+        },
+        separators=(",", ":"),
+    )
     rendered = template.render(
         cars_json=json.dumps(cars, separators=(",", ":")),
         cargurus_cache_json=json.dumps(
@@ -1295,6 +1307,7 @@ def generate_html(
             separators=(",", ":"),
         ),
         model_mappings_json=model_mappings_json,
+        autotrader_mappings_json=autotrader_mappings_json,
         filter_index_json=json.dumps(
             build_filter_index(cars, cc_cache or {}),
             separators=(",", ":"),
