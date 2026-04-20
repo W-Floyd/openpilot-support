@@ -8920,7 +8920,7 @@
     },
     {
       "make": "Genesis",
-      "model": "G70 Non-SCC",
+      "model": "G70",
       "years": [
         2021
       ],
@@ -10587,7 +10587,7 @@
     },
     {
       "make": "Hyundai",
-      "model": "Bayon Non-SCC",
+      "model": "Bayon",
       "years": [
         2021
       ],
@@ -10784,7 +10784,7 @@
     },
     {
       "make": "Hyundai",
-      "model": "Elantra Non-SCC",
+      "model": "Elantra",
       "years": [
         2022
       ],
@@ -11291,7 +11291,7 @@
     },
     {
       "make": "Hyundai",
-      "model": "Kona Electric Non-SCC",
+      "model": "Kona Electric",
       "years": [
         2019
       ],
@@ -11345,7 +11345,7 @@
     },
     {
       "make": "Hyundai",
-      "model": "Kona Non-SCC",
+      "model": "Kona",
       "years": [
         2019
       ],
@@ -12080,7 +12080,7 @@
     },
     {
       "make": "Kia",
-      "model": "Ceed Plug-in Hybrid Non-SCC",
+      "model": "Ceed Plug-in Hybrid",
       "years": [
         2022
       ],
@@ -12251,7 +12251,7 @@
     },
     {
       "make": "Kia",
-      "model": "Forte Non-SCC",
+      "model": "Forte",
       "years": [
         2019
       ],
@@ -12278,7 +12278,7 @@
     },
     {
       "make": "Kia",
-      "model": "Forte Non-SCC",
+      "model": "Forte",
       "years": [
         2021
       ],
@@ -12937,7 +12937,7 @@
     },
     {
       "make": "Kia",
-      "model": "Seltos Non-SCC",
+      "model": "Seltos",
       "years": [
         2023,
         2024
@@ -30872,12 +30872,12 @@
     },
     {
       "make": "Cadillac",
-      "model": "Escalade ASCM Harness",
+      "model": "Escalade",
       "years": [
         2018
       ],
       "name": "Cadillac Escalade 2018 ASCM Harness",
-      "package": "Driver Assist Package",
+      "package": "Driver Assist Package + ASCM Harness",
       "support_type": "Upstream",
       "support_link": "#upstream",
       "merged": true,
@@ -31097,13 +31097,13 @@
     },
     {
       "make": "Chevrolet",
-      "model": "Bolt EV ACC w Pedal",
+      "model": "Bolt EV",
       "years": [
         2022,
         2023
       ],
       "name": "Chevrolet Bolt EV 2022-23 ACC w Pedal",
-      "package": "Adaptive Cruise Control (ACC)",
+      "package": "Adaptive Cruise Control (ACC) + Pedal",
       "support_type": "Upstream",
       "support_link": "#upstream",
       "merged": true,
@@ -31185,14 +31185,14 @@
     },
     {
       "make": "Chevrolet",
-      "model": "Malibu ASCM Harness",
+      "model": "Malibu",
       "years": [
         2017,
         2018,
         2019
       ],
       "name": "Chevrolet Malibu 2017-19 ASCM Harness",
-      "package": "Adaptive Cruise Control (ACC)",
+      "package": "Adaptive Cruise Control (ACC) + ASCM Harness",
       "support_type": "Upstream",
       "support_link": "#upstream",
       "merged": true,
@@ -31496,13 +31496,13 @@
     },
     {
       "make": "Chevrolet",
-      "model": "Volt ASCM Harness",
+      "model": "Volt",
       "years": [
         2017,
         2018
       ],
       "name": "Chevrolet Volt 2017-18 ASCM Harness",
-      "package": "Adaptive Cruise Control (ACC)",
+      "package": "Adaptive Cruise Control (ACC) + ASCM Harness",
       "support_type": "Upstream",
       "support_link": "#upstream",
       "merged": true,
@@ -31524,13 +31524,13 @@
     },
     {
       "make": "Chevrolet",
-      "model": "Volt Camera Harness",
+      "model": "Volt",
       "years": [
         2017,
         2018
       ],
       "name": "Chevrolet Volt 2017-18 Camera Harness",
-      "package": "Flashed camera-forward integration with ACC",
+      "package": "Flashed camera-forward integration with ACC + Camera Harness",
       "support_type": "Upstream",
       "support_link": "#upstream",
       "merged": true,
@@ -32888,12 +32888,12 @@
     },
     {
       "make": "GMC",
-      "model": "Acadia ASCM Harness",
+      "model": "Acadia",
       "years": [
         2018
       ],
       "name": "GMC Acadia 2018 ASCM Harness",
-      "package": "Adaptive Cruise Control (ACC)",
+      "package": "Adaptive Cruise Control (ACC) + ASCM Harness",
       "support_type": "Upstream",
       "support_link": "#upstream",
       "merged": true,
@@ -55805,7 +55805,7 @@
     },
     {
       "make": "Genesis",
-      "model": "G70 Non-SCC",
+      "model": "G70",
       "years": [
         2021
       ],
@@ -57530,7 +57530,7 @@
     },
     {
       "make": "Hyundai",
-      "model": "Bayon Non-SCC",
+      "model": "Bayon",
       "years": [
         2021
       ],
@@ -57734,7 +57734,7 @@
     },
     {
       "make": "Hyundai",
-      "model": "Elantra Non-SCC",
+      "model": "Elantra",
       "years": [
         2022
       ],
@@ -58259,7 +58259,7 @@
     },
     {
       "make": "Hyundai",
-      "model": "Kona Electric Non-SCC",
+      "model": "Kona Electric",
       "years": [
         2019
       ],
@@ -58315,7 +58315,7 @@
     },
     {
       "make": "Hyundai",
-      "model": "Kona Non-SCC",
+      "model": "Kona",
       "years": [
         2019
       ],
@@ -59076,7 +59076,7 @@
     },
     {
       "make": "Kia",
-      "model": "Ceed Plug-in Hybrid Non-SCC",
+      "model": "Ceed Plug-in Hybrid",
       "years": [
         2022
       ],
@@ -59253,7 +59253,7 @@
     },
     {
       "make": "Kia",
-      "model": "Forte Non-SCC",
+      "model": "Forte",
       "years": [
         2019
       ],
@@ -59281,7 +59281,7 @@
     },
     {
       "make": "Kia",
-      "model": "Forte Non-SCC",
+      "model": "Forte",
       "years": [
         2021
       ],
@@ -59964,7 +59964,7 @@
     },
     {
       "make": "Kia",
-      "model": "Seltos Non-SCC",
+      "model": "Seltos",
       "years": [
         2023,
         2024

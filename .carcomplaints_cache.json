@@ -1011,8 +1011,6 @@
   "Chevrolet|Bolt EUV LT|2023": null,
   "Chevrolet|Bolt EUV|2022": null,
   "Chevrolet|Bolt EUV|2023": null,
-  "Chevrolet|Bolt EV ACC w Pedal|2022": null,
-  "Chevrolet|Bolt EV ACC w Pedal|2023": null,
   "Chevrolet|Bolt EV LT|2022": null,
   "Chevrolet|Bolt EV LT|2023": null,
   "Chevrolet|Bolt EV|2017": null,
@@ -2059,7 +2057,6 @@
     ],
     "seal": null
   },
-  "Genesis|G70 Non-SCC|2021": null,
   "Genesis|G70|2018": null,
   "Genesis|G70|2019": {
     "url": "https://www.carcomplaints.com/Genesis/G70/2019/",
@@ -3417,7 +3414,7 @@
   "Hyundai|Azera Hybrid|2019": null,
   "Hyundai|Azera Hybrid|2020": null,
   "Hyundai|Azera|2022": null,
-  "Hyundai|Bayon Non-SCC|2021": null,
+  "Hyundai|Bayon|2021": null,
   "Hyundai|Custin|2023": null,
   "Hyundai|Elantra GT|2017": {
     "url": "https://www.carcomplaints.com/Hyundai/Elantra_GT/2017/",
@@ -3486,7 +3483,6 @@
   },
   "Hyundai|Elantra Hybrid|2022": null,
   "Hyundai|Elantra Hybrid|2023": null,
-  "Hyundai|Elantra Non-SCC|2022": null,
   "Hyundai|Elantra|2017": {
     "url": "https://www.carcomplaints.com/Hyundai/Elantra/2017/",
     "complaints": 1000,
@@ -3734,7 +3730,6 @@
   },
   "Hyundai|Ioniq Plug-in Hybrid|2022": null,
   "Hyundai|Kona Electric (with HDA II, Korea only)|2023": null,
-  "Hyundai|Kona Electric Non-SCC|2019": null,
   "Hyundai|Kona Electric|2018": null,
   "Hyundai|Kona Electric|2019": {
     "url": "https://www.carcomplaints.com/Hyundai/Kona_Electric/2019/",
@@ -3782,7 +3777,19 @@
   },
   "Hyundai|Kona Electric|2023": null,
   "Hyundai|Kona Hybrid|2020": null,
-  "Hyundai|Kona Non-SCC|2019": null,
+  "Hyundai|Kona|2019": {
+    "url": "https://www.carcomplaints.com/Hyundai/Kona/2019/",
+    "complaints": 215,
+    "recalls": 1,
+    "tsbs": 129,
+    "investigations": 2,
+    "top_problems": [
+      "Excessive Oil Consumption in the 2019 Hyundai Kona",
+      "Fuel Pump Leak in the 2019 Hyundai Kona",
+      "Engine Stalls When Stopped Or Turning, Delayed After in the 2019 Hyundai Kona"
+    ],
+    "seal": null
+  },
   "Hyundai|Kona|2020": {
     "url": "https://www.carcomplaints.com/Hyundai/Kona/2020/",
     "complaints": 180,
@@ -4368,7 +4375,7 @@
     "seal": null
   },
   "Kia|Carnival|2024": null,
-  "Kia|Ceed Plug-in Hybrid Non-SCC|2022": null,
+  "Kia|Ceed Plug-in Hybrid|2022": null,
   "Kia|Ceed|2019": null,
   "Kia|Ceed|2020": null,
   "Kia|Ceed|2021": null,
@@ -4384,8 +4391,6 @@
   "Kia|EV6 (without HDA II)|2022": null,
   "Kia|EV6 (without HDA II)|2023": null,
   "Kia|EV6 (without HDA II)|2024": null,
-  "Kia|Forte Non-SCC|2019": null,
-  "Kia|Forte Non-SCC|2021": null,
   "Kia|Forte|2019": {
     "url": "https://www.carcomplaints.com/Kia/Forte/2019/",
     "complaints": 195,
@@ -4638,8 +4643,6 @@
     ],
     "seal": null
   },
-  "Kia|Seltos Non-SCC|2023": null,
-  "Kia|Seltos Non-SCC|2024": null,
   "Kia|Seltos|2021": {
     "url": "https://www.carcomplaints.com/Kia/Seltos/2021/",
     "complaints": 263,
@@ -4653,6 +4656,20 @@
     ],
     "seal": null
   },
+  "Kia|Seltos|2023": {
+    "url": "https://www.carcomplaints.com/Kia/Seltos/2023/",
+    "complaints": 57,
+    "recalls": 2,
+    "tsbs": 48,
+    "investigations": 1,
+    "top_problems": [
+      "Horn No Longer Functioning in the 2023 Kia Seltos",
+      "Rear, Driver Side Window Won't Roll Down in the 2023 Kia Seltos",
+      "Brake Fluid Leak in the 2023 Kia Seltos"
+    ],
+    "seal": null
+  },
+  "Kia|Seltos|2024": null,
   "Kia|Sorento Hybrid|2021": {
     "url": "https://www.carcomplaints.com/Kia/Sorento_Hybrid/2021/",
     "complaints": 2,

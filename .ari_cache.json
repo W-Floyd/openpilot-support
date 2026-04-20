@@ -310,8 +310,6 @@
   "Chevrolet|Bolt EUV LT|2023": null,
   "Chevrolet|Bolt EUV|2022": null,
   "Chevrolet|Bolt EUV|2023": null,
-  "Chevrolet|Bolt EV ACC w Pedal|2022": null,
-  "Chevrolet|Bolt EV ACC w Pedal|2023": null,
   "Chevrolet|Bolt EV LT|2022": null,
   "Chevrolet|Bolt EV LT|2023": null,
   "Chevrolet|Bolt EV|2017": null,
@@ -587,7 +585,6 @@
     "score": 71,
     "url": "https://autoreliabilityindex.com/gmc/yukon/2020"
   },
-  "Genesis|G70 Non-SCC|2021": null,
   "Genesis|G70|2018": null,
   "Genesis|G70|2019": {
     "score": 55,
@@ -957,7 +954,7 @@
   "Hyundai|Azera Hybrid|2019": null,
   "Hyundai|Azera Hybrid|2020": null,
   "Hyundai|Azera|2022": null,
-  "Hyundai|Bayon Non-SCC|2021": null,
+  "Hyundai|Bayon|2021": null,
   "Hyundai|Custin|2023": null,
   "Hyundai|Elantra GT|2017": null,
   "Hyundai|Elantra GT|2018": null,
@@ -966,7 +963,6 @@
   "Hyundai|Elantra Hybrid|2021": null,
   "Hyundai|Elantra Hybrid|2022": null,
   "Hyundai|Elantra Hybrid|2023": null,
-  "Hyundai|Elantra Non-SCC|2022": null,
   "Hyundai|Elantra|2017": null,
   "Hyundai|Elantra|2018": {
     "score": 76,
@@ -1017,7 +1013,6 @@
   "Hyundai|Ioniq Plug-in Hybrid|2021": null,
   "Hyundai|Ioniq Plug-in Hybrid|2022": null,
   "Hyundai|Kona Electric (with HDA II, Korea only)|2023": null,
-  "Hyundai|Kona Electric Non-SCC|2019": null,
   "Hyundai|Kona Electric|2018": null,
   "Hyundai|Kona Electric|2019": null,
   "Hyundai|Kona Electric|2020": null,
@@ -1025,7 +1020,10 @@
   "Hyundai|Kona Electric|2022": null,
   "Hyundai|Kona Electric|2023": null,
   "Hyundai|Kona Hybrid|2020": null,
-  "Hyundai|Kona Non-SCC|2019": null,
+  "Hyundai|Kona|2019": {
+    "score": 55,
+    "url": "https://autoreliabilityindex.com/hyundai/kona/2019"
+  },
   "Hyundai|Kona|2020": {
     "score": 57,
     "url": "https://autoreliabilityindex.com/hyundai/kona/2020"
@@ -1195,7 +1193,7 @@
     "url": "https://autoreliabilityindex.com/kia/carnival/2023"
   },
   "Kia|Carnival|2024": null,
-  "Kia|Ceed Plug-in Hybrid Non-SCC|2022": null,
+  "Kia|Ceed Plug-in Hybrid|2022": null,
   "Kia|Ceed|2019": null,
   "Kia|Ceed|2020": null,
   "Kia|Ceed|2021": null,
@@ -1211,8 +1209,6 @@
   "Kia|EV6 (without HDA II)|2022": null,
   "Kia|EV6 (without HDA II)|2023": null,
   "Kia|EV6 (without HDA II)|2024": null,
-  "Kia|Forte Non-SCC|2019": null,
-  "Kia|Forte Non-SCC|2021": null,
   "Kia|Forte|2019": {
     "score": 67,
     "url": "https://autoreliabilityindex.com/kia/forte/2019"
@@ -1279,9 +1275,9 @@
   "Kia|Optima|2017": null,
   "Kia|Optima|2019": null,
   "Kia|Optima|2020": null,
-  "Kia|Seltos Non-SCC|2023": null,
-  "Kia|Seltos Non-SCC|2024": null,
   "Kia|Seltos|2021": null,
+  "Kia|Seltos|2023": null,
+  "Kia|Seltos|2024": null,
   "Kia|Sorento Hybrid|2021": null,
   "Kia|Sorento Hybrid|2022": null,
   "Kia|Sorento Hybrid|2023": null,

@@ -675,7 +675,6 @@
     },
     "matchType": "LLM"
   },
-  "Make: Chevrolet, Model: Bolt EV ACC w Pedal 2022-2023": null,
   "Make: Chevrolet, Model: Bolt EV LT 2022-2023": {
     "success": "SUCCESS",
     "filterCriteria": {
@@ -1471,6 +1470,21 @@
     },
     "matchType": "LLM"
   },
+  "Make: Genesis, Model: G70 2021-2021": {
+    "success": "SUCCESS",
+    "filterCriteria": {
+      "entityId": "d2701",
+      "makeModelTrimPaths": [
+        "m203/d2701"
+      ],
+      "startYear": 2021,
+      "endYear": 2021,
+      "isDeliveryEnabled": false,
+      "priceDropsOnly": false,
+      "hideNationwideShipping": true
+    },
+    "matchType": "LLM"
+  },
   "Make: Genesis, Model: G70 2022-2023": {
     "success": "SUCCESS",
     "filterCriteria": {
@@ -1480,21 +1494,6 @@
       ],
       "startYear": 2022,
       "endYear": 2023,
-      "isDeliveryEnabled": false,
-      "priceDropsOnly": false,
-      "hideNationwideShipping": true
-    },
-    "matchType": "LLM"
-  },
-  "Make: Genesis, Model: G70 Non-SCC 2021-2021": {
-    "success": "SUCCESS",
-    "filterCriteria": {
-      "entityId": "d2701",
-      "makeModelTrimPaths": [
-        "m203/d2701"
-      ],
-      "startYear": 2021,
-      "endYear": 2021,
       "isDeliveryEnabled": false,
       "priceDropsOnly": false,
       "hideNationwideShipping": true
@@ -2357,7 +2356,7 @@
     },
     "matchType": "LLM"
   },
-  "Make: Hyundai, Model: Bayon Non-SCC 2021-2021": null,
+  "Make: Hyundai, Model: Bayon 2021-2021": null,
   "Make: Hyundai, Model: Custin 2023-2023": null,
   "Make: Hyundai, Model: Elantra 2017-2018": {
     "success": "SUCCESS",
@@ -2419,6 +2418,26 @@
     },
     "matchType": "LLM"
   },
+  "Make: Hyundai, Model: Elantra 2022-2022": {
+    "success": "SUCCESS",
+    "filterCriteria": {
+      "entityId": "d92",
+      "makeModelTrimPaths": [
+        "m28/d2144",
+        "m28/d2033",
+        "m28/d2143",
+        "m28/d92",
+        "m28/d3139",
+        "m28/d3205"
+      ],
+      "startYear": 2022,
+      "endYear": 2022,
+      "isDeliveryEnabled": false,
+      "priceDropsOnly": false,
+      "hideNationwideShipping": true
+    },
+    "matchType": "LLM"
+  },
   "Make: Hyundai, Model: Elantra GT 2017-2020": {
     "success": "SUCCESS",
     "filterCriteria": {
@@ -2443,26 +2462,6 @@
       ],
       "startYear": 2021,
       "endYear": 2023,
-      "isDeliveryEnabled": false,
-      "priceDropsOnly": false,
-      "hideNationwideShipping": true
-    },
-    "matchType": "LLM"
-  },
-  "Make: Hyundai, Model: Elantra Non-SCC 2022-2022": {
-    "success": "SUCCESS",
-    "filterCriteria": {
-      "entityId": "d92",
-      "makeModelTrimPaths": [
-        "m28/d2144",
-        "m28/d2033",
-        "m28/d2143",
-        "m28/d92",
-        "m28/d3139",
-        "m28/d3205"
-      ],
-      "startYear": 2022,
-      "endYear": 2022,
       "isDeliveryEnabled": false,
       "priceDropsOnly": false,
       "hideNationwideShipping": true
@@ -2664,6 +2663,23 @@
     },
     "matchType": "LLM"
   },
+  "Make: Hyundai, Model: Kona 2019-2019": {
+    "success": "SUCCESS",
+    "filterCriteria": {
+      "entityId": "d2663",
+      "makeModelTrimPaths": [
+        "m28/d3231",
+        "m28/d2699",
+        "m28/d2663"
+      ],
+      "startYear": 2019,
+      "endYear": 2019,
+      "isDeliveryEnabled": false,
+      "priceDropsOnly": false,
+      "hideNationwideShipping": true
+    },
+    "matchType": "LLM"
+  },
   "Make: Hyundai, Model: Kona 2020-2020": {
     "success": "SUCCESS",
     "filterCriteria": {
@@ -2728,6 +2744,21 @@
     },
     "matchType": "LLM"
   },
+  "Make: Hyundai, Model: Kona Electric 2019-2019": {
+    "success": "SUCCESS",
+    "filterCriteria": {
+      "entityId": "d2699",
+      "makeModelTrimPaths": [
+        "m28/d2699"
+      ],
+      "startYear": 2019,
+      "endYear": 2019,
+      "isDeliveryEnabled": false,
+      "priceDropsOnly": false,
+      "hideNationwideShipping": true
+    },
+    "matchType": "LLM"
+  },
   "Make: Hyundai, Model: Kona Electric 2022-2023": {
     "success": "SUCCESS",
     "filterCriteria": {
@@ -2743,21 +2774,6 @@
     },
     "matchType": "LLM"
   },
-  "Make: Hyundai, Model: Kona Electric Non-SCC 2019-2019": {
-    "success": "SUCCESS",
-    "filterCriteria": {
-      "entityId": "d2699",
-      "makeModelTrimPaths": [
-        "m28/d2699"
-      ],
-      "startYear": 2019,
-      "endYear": 2019,
-      "isDeliveryEnabled": false,
-      "priceDropsOnly": false,
-      "hideNationwideShipping": true
-    },
-    "matchType": "LLM"
-  },
   "Make: Hyundai, Model: Kona Hybrid 2020-2020": {
     "success": "SUCCESS",
     "filterCriteria": {
@@ -2767,23 +2783,6 @@
       ],
       "startYear": 2020,
       "endYear": 2020,
-      "isDeliveryEnabled": false,
-      "priceDropsOnly": false,
-      "hideNationwideShipping": true
-    },
-    "matchType": "LLM"
-  },
-  "Make: Hyundai, Model: Kona Non-SCC 2019-2019": {
-    "success": "SUCCESS",
-    "filterCriteria": {
-      "entityId": "d2663",
-      "makeModelTrimPaths": [
-        "m28/d3231",
-        "m28/d2699",
-        "m28/d2663"
-      ],
-      "startYear": 2019,
-      "endYear": 2019,
       "isDeliveryEnabled": false,
       "priceDropsOnly": false,
       "hideNationwideShipping": true
@@ -3176,21 +3175,7 @@
     "matchType": "LLM"
   },
   "Make: Kia, Model: Ceed 2019-2021": null,
-  "Make: Kia, Model: Ceed Plug-in Hybrid Non-SCC 2022-2022": {
-    "success": "SUCCESS",
-    "filterCriteria": {
-      "entityId": "d2653",
-      "makeModelTrimPaths": [
-        "m33/d2653"
-      ],
-      "startYear": 2022,
-      "endYear": 2022,
-      "isDeliveryEnabled": false,
-      "priceDropsOnly": false,
-      "hideNationwideShipping": true
-    },
-    "matchType": "LLM"
-  },
+  "Make: Kia, Model: Ceed Plug-in Hybrid 2022-2022": null,
   "Make: Kia, Model: EV6 (Non-US only) 2022-2024": {
     "success": "SUCCESS",
     "filterCriteria": {
@@ -3254,6 +3239,22 @@
     },
     "matchType": "LLM"
   },
+  "Make: Kia, Model: Forte 2019-2019": {
+    "success": "SUCCESS",
+    "filterCriteria": {
+      "entityId": "d2043",
+      "makeModelTrimPaths": [
+        "m33/d2043",
+        "m33/d2044"
+      ],
+      "startYear": 2019,
+      "endYear": 2019,
+      "isDeliveryEnabled": false,
+      "priceDropsOnly": false,
+      "hideNationwideShipping": true
+    },
+    "matchType": "LLM"
+  },
   "Make: Kia, Model: Forte 2019-2021": {
     "success": "SUCCESS",
     "filterCriteria": {
@@ -3263,6 +3264,22 @@
         "m33/d2044"
       ],
       "startYear": 2019,
+      "endYear": 2021,
+      "isDeliveryEnabled": false,
+      "priceDropsOnly": false,
+      "hideNationwideShipping": true
+    },
+    "matchType": "LLM"
+  },
+  "Make: Kia, Model: Forte 2021-2021": {
+    "success": "SUCCESS",
+    "filterCriteria": {
+      "entityId": "d2043",
+      "makeModelTrimPaths": [
+        "m33/d2043",
+        "m33/d2044"
+      ],
+      "startYear": 2021,
       "endYear": 2021,
       "isDeliveryEnabled": false,
       "priceDropsOnly": false,
@@ -3280,38 +3297,6 @@
       ],
       "startYear": 2022,
       "endYear": 2023,
-      "isDeliveryEnabled": false,
-      "priceDropsOnly": false,
-      "hideNationwideShipping": true
-    },
-    "matchType": "LLM"
-  },
-  "Make: Kia, Model: Forte Non-SCC 2019-2019": {
-    "success": "SUCCESS",
-    "filterCriteria": {
-      "entityId": "d2043",
-      "makeModelTrimPaths": [
-        "m33/d2043",
-        "m33/d2044"
-      ],
-      "startYear": 2019,
-      "endYear": 2019,
-      "isDeliveryEnabled": false,
-      "priceDropsOnly": false,
-      "hideNationwideShipping": true
-    },
-    "matchType": "LLM"
-  },
-  "Make: Kia, Model: Forte Non-SCC 2021-2021": {
-    "success": "SUCCESS",
-    "filterCriteria": {
-      "entityId": "d2043",
-      "makeModelTrimPaths": [
-        "m33/d2043",
-        "m33/d2044"
-      ],
-      "startYear": 2021,
-      "endYear": 2021,
       "isDeliveryEnabled": false,
       "priceDropsOnly": false,
       "hideNationwideShipping": true
@@ -3631,7 +3616,7 @@
     },
     "matchType": "LLM"
   },
-  "Make: Kia, Model: Seltos Non-SCC 2023-2024": {
+  "Make: Kia, Model: Seltos 2023-2024": {
     "success": "SUCCESS",
     "filterCriteria": {
       "entityId": "d2991",
