@@ -845,7 +845,10 @@
                     </p>
                     <div class="open-all-row sm-show">
                         <span class="presets-lbl">Open all</span>
-                        <template x-for="p in searchProviders.filter(p => !hiddenProviders.includes(p.key))" :key="p.key">
+                        <template
+                            x-for="p in searchProviders.filter(p => !hiddenProviders.includes(p.key))"
+                            :key="p.key"
+                        >
                             <button
                                 @click="openAllForProvider(p.key)"
                                 x-text="p.label"
@@ -996,12 +999,13 @@
                 :style="infoDismissed ? 'max-height:0;opacity:0' : 'max-height:400px;opacity:1'"
             >
                 <div class="info-banner">
-                    <strong>eBay &amp; CarGurus links</strong> are
-                    auto-generated from the car's make, model, and year range
-                    and may return incorrect or unrelated results — always
-                    verify before purchasing. eBay searches by keyword; CarGurus
-                    uses structured filters but may match the wrong trim or
+                    Search links are auto-generated and may return incorrect or
+                    unrelated results. They may match the wrong trim or
                     generation. Use them as a starting point, not a guarantee.
+                    Always verify before purchasing. Not all search providers
+                    support all search options.
+                    <br />
+                    <br />
                     <div class="fork-list">
                         <template x-for="fork in forkInfo" :key="fork.name">
                             <span class="fork-item">
