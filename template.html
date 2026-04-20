@@ -3562,23 +3562,32 @@
                         return `https://www.carmax.com/cars/${make}/${pathSlugs.join("/")}${qs ? `?${qs}` : ""}`;
                     },
 
+                    carGurusUrl(car) {
+                        const entry = this.carGurusCache[car._carGurusKey];
+                        if (!entry?.paths?.length) return null;
+                        const params = new URLSearchParams({
+                            sourceContext: "carSelectorAPI",
+                            sortDirection: "ASC",
+                            sortType: "PRICE",
+                            startYear: entry.startYear,
+                            endYear: entry.endYear,
+                            srpVariation: "DEFAULT_SEARCH",
+                            makeModelTrimPaths: entry.paths.join(","),
+                        });
+                        const p = this.searchParams;
+                        if (p.minMileage) params.set("minMileage", p.minMileage);
+                        if (p.maxMileage) params.set("maxMileage", p.maxMileage);
+                        if (p.minPrice) params.set("minPrice", p.minPrice);
+                        if (p.maxPrice) params.set("maxPrice", p.maxPrice);
+                        if (p.maxDistance) params.set("distance", p.maxDistance);
+                        if (p.zipCode) params.set("zip", p.zipCode);
+                        return `https://www.cargurus.com/search?${params}`;
+                    },
+
                     providerUrl(car, key) {
                         if (key === "ebay") return this.ebayUrl(car);
                         if (key === "autotrader") return this.autoTraderUrl(car);
-                        if (key === "cargurus") {
-                            const cgUrl = this.carGurusCache[car._carGurusKey]?.url;
-                            if (!cgUrl) return null;
-                            const p = this.searchParams;
-                            const extra = new URLSearchParams();
-                            if (p.minMileage) extra.set("minMileage", p.minMileage);
-                            if (p.maxMileage) extra.set("maxMileage", p.maxMileage);
-                            if (p.minPrice) extra.set("minPrice", p.minPrice);
-                            if (p.maxPrice) extra.set("maxPrice", p.maxPrice);
-                            if (p.maxDistance) extra.set("distance", p.maxDistance);
-                            if (p.zipCode) extra.set("zip", p.zipCode);
-                            const qs = extra.toString();
-                            return qs ? `${cgUrl}&${qs}` : cgUrl;
-                        }
+                        if (key === "cargurus") return this.carGurusUrl(car);
                         if (key === "carscom") return this.carsComUrl(car);
                         if (key === "carvana") return this.carvanaUrl(car);
                         if (key === "carmax") return this.carMaxUrl(car);
