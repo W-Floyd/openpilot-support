@@ -6,7 +6,8 @@
       "mcp__firefox-devtools__list_network_requests",
       "mcp__firefox-devtools__list_console_messages",
       "mcp__firefox-devtools__screenshot_page",
-      "mcp__firefox-devtools__navigate_page"
+      "mcp__firefox-devtools__navigate_page",
+      "mcp__firefox-devtools__take_snapshot"
     ]
   }
 }
