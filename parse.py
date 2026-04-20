@@ -1210,11 +1210,32 @@ def build_filter_index(cars: list[dict], cc_cache: dict) -> dict:
     return index
 
 
+def get_fork_git_info(fork_name: str, fork_path: str) -> dict:
+    """Return {name, url, hash, hash_url} for a fork, or just {name} on failure."""
+    fork_root = os.path.dirname(fork_path)
+    try:
+        remote = subprocess.check_output(
+            ["git", "-C", fork_root, "remote", "get-url", "origin"],
+            stderr=subprocess.DEVNULL, text=True,
+        ).strip()
+        sha = subprocess.check_output(
+            ["git", "-C", fork_root, "rev-parse", "--short", "HEAD"],
+            stderr=subprocess.DEVNULL, text=True,
+        ).strip()
+        # Normalise SSH → HTTPS and strip .git
+        url = re.sub(r"^git@github\.com:", "https://github.com/", remote)
+        url = re.sub(r"\.git$", "", url)
+        return {"name": fork_name, "url": url, "hash": sha, "hash_url": f"{url}/commit/{sha}"}
+    except Exception:
+        return {"name": fork_name}
+
+
 def generate_html(
     cars: list[dict],
     cargurus_js_cache: dict | None = None,
     ari_cache: dict | None = None,
     cc_cache: dict | None = None,
+    fork_info: list[dict] | None = None,
     minify: bool = True,
     html_out: str | None = None,
 ) -> str:
@@ -1244,6 +1265,7 @@ def generate_html(
             build_filter_index(cars, cc_cache or {}),
             separators=(",", ":"),
         ),
+        fork_info_json=json.dumps(fork_info or [], separators=(",", ":")),
         alpine_js=fetch_asset(ALPINE_JS_URL, ALPINE_CACHE_FILE),
         pure_css=fetch_asset(PURE_CSS_URL, PURE_CSS_CACHE_FILE),
         # Use relative path from server root (same folder as HTML)
@@ -1336,6 +1358,7 @@ def main():
 
     print("Loading car docs from forks...", file=sys.stderr)
     fork_car_lists = []
+    fork_info = []
     for fork_name, fork_path in FORKS:
         fork_cars = load_fork_cars(
             fork_name, fork_path, use_cache=not args.no_cache_openpilot
@@ -1355,6 +1378,7 @@ def main():
         )
         print(f"  Found {len(fork_cars)} cars in {fork_name}.", file=sys.stderr)
         fork_car_lists.append((fork_name, fork_cars))
+        fork_info.append(get_fork_git_info(fork_name, fork_path))
 
     cars = merge_fork_cars(fork_car_lists)
     print(f"Total unique cars: {len(cars)}.", file=sys.stderr)
@@ -1402,6 +1426,7 @@ def main():
                     cargurus_js_cache,
                     ari_cache,
                     cc_cache,
+                    fork_info=fork_info,
                     minify=not args.no_minify,
                     html_out=args.html_out,
                 )
