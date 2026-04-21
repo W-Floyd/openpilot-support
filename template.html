@@ -2255,17 +2255,18 @@
                         localStorage.getItem("hiddenColumns") ||
                             (window.innerWidth < 640
                                 ? JSON.stringify([
-                                      "support_type",
-                                      "forks",
-                                      "merged",
-                                      "openpilot_longitudinal",
-                                      "auto_resume",
-                                      "good_steering_torque",
-                                      "min_steer_speed",
-                                      "min_enable_speed",
                                       "ari",
+                                      "auto_resume",
                                       "cc_seal",
+                                      "forks",
+                                      "good_steering_torque",
+                                      "harness",
+                                      "merged",
+                                      "min_enable_speed",
+                                      "min_steer_speed",
+                                      "openpilot_longitudinal",
                                       "search",
+                                      "support_type",
                                   ])
                                 : "[]"),
                     ),
@@ -2449,6 +2450,7 @@
                             {
                                 key: "cc_seal",
                                 label: "CC Rating",
+                                mobileLabel: "CC",
                                 cc_seal: true,
                                 filterable: true,
                             },
@@ -3195,7 +3197,7 @@
                             (a, b) => a - b,
                         );
                         if (!selected.length) return years;
-                            const selectedSet = new Set(selected.map(Number));
+                        const selectedSet = new Set(selected.map(Number));
                         return years.filter((y) => selectedSet.has(y));
                     },
 

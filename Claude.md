@@ -4,6 +4,8 @@
 
 To test, run `uv run parse.py --html-out index.html` after every change. Skip external fetches during development with `--no-fetch-cg --no-fetch-ari --no-fetch-cc`.
 
+Unless adding support for a new fork, no not under any circumstances read files inside the openpilot or fork submodule directories. These may be found by checking `FORKS` in `parse.py` 
+
 ## Key flags
 - `--no-cache-openpilot` — re-fetch all fork data (still saves to cache)
 - `--retry-nulls-cg/ari/cc` / `--retry-nulls-all` — retry failed cache entries
