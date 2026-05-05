@@ -724,7 +724,6 @@ def fetch_cargurus_response(query: str) -> dict | None:
         return None
 
 
-
 def load_openpilot_cache() -> dict:
     if os.path.exists(OPENPILOT_CACHE_FILE):
         try:
@@ -864,11 +863,17 @@ def fetch_ari_response(make: str, model: str, year: int) -> dict | None:
     parser.feed(body)
     for block in parser.blocks:
         entity = block.get("mainEntity", {})
-        review = entity.get("review", {})
-        rating = review.get("reviewRating", {})
-        score = rating.get("ratingValue")
-        if score is not None:
-            return {"score": score, "url": url}
+        entities = entity if isinstance(entity, list) else [entity]
+        for ent in entities:
+            if not isinstance(ent, dict):
+                continue
+            review = ent.get("review", {})
+            if isinstance(review, list):
+                review = review[0] if review else {}
+            rating = review.get("reviewRating", {}) if isinstance(review, dict) else {}
+            score = rating.get("ratingValue")
+            if score is not None:
+                return {"score": score, "url": url}
     return None
 
 

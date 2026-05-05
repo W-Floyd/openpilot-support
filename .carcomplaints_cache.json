@@ -302,13 +302,16 @@
   },
   "Acura|RDX|2025": {
     "url": "https://www.carcomplaints.com/Acura/RDX/2025/",
-    "complaints": 0,
+    "complaints": 63,
     "recalls": null,
     "tsbs": null,
     "investigations": null,
-    "top_problems": [],
+    "top_problems": [
+      "Pebbles Impact/Puncture A/C Condenser The Refrigerant Leaks in the 2025 Acura RDX"
+    ],
     "seal": null
   },
+  "Acura|RDX|2026": null,
   "Acura|RLX|2017": {
     "url": "https://www.carcomplaints.com/Acura/RLX/2017/",
     "complaints": 3,
@@ -756,7 +759,7 @@
   },
   "Audi|Q5|2015": {
     "url": "https://www.carcomplaints.com/Audi/Q5/2015/",
-    "complaints": 129,
+    "complaints": 146,
     "recalls": 6,
     "tsbs": 1190,
     "investigations": null,
@@ -2275,14 +2278,14 @@
   },
   "Honda|Accord Hybrid|2025": {
     "url": "https://www.carcomplaints.com/Honda/Accord_Hybrid/2025/",
-    "complaints": 41,
+    "complaints": 42,
     "recalls": null,
     "tsbs": null,
     "investigations": null,
     "top_problems": [
       "Rodents Chewing Wiring in the 2025 Honda Accord Hybrid",
-      "Steering Sticks In Center On Hwy in the 2025 Honda Accord Hybrid",
-      "Body Control Module (Bcm) in the 2025 Honda Accord Hybrid"
+      "Body Control Module (Bcm) in the 2025 Honda Accord Hybrid",
+      "Steering Sticks In Center On Hwy in the 2025 Honda Accord Hybrid"
     ],
     "seal": null
   },
@@ -2327,7 +2330,7 @@
   },
   "Honda|Accord|2019": {
     "url": "https://www.carcomplaints.com/Honda/Accord/2019/",
-    "complaints": 994,
+    "complaints": 1000,
     "recalls": 5,
     "tsbs": 378,
     "investigations": 2,
@@ -2485,8 +2488,8 @@
     "investigations": null,
     "top_problems": [
       "Very Poor Mpg in the 2026 Honda CR-V Hybrid",
-      "Driver Wiper Doesn't Clear To A Pillar in the 2026 Honda CR-V Hybrid",
-      "Infotainment System Freezing And Not Connecting To Phone in the 2026 Honda CR-V Hybrid"
+      "Sudden/Unintended Acceleration in the 2026 Honda CR-V Hybrid",
+      "Driver Wiper Doesn't Clear To A Pillar in the 2026 Honda CR-V Hybrid"
     ],
     "seal": null
   },
@@ -3274,6 +3277,7 @@
     ],
     "seal": null
   },
+  "Honda|Pilot|2026": null,
   "Honda|Prologue|2024": {
     "url": "https://www.carcomplaints.com/Honda/Prologue/2024/",
     "complaints": 1000,
@@ -3601,6 +3605,8 @@
   "Hyundai|Ioniq 5 (without HDA II)|2024": null,
   "Hyundai|Ioniq 6 (with HDA II)|2023": null,
   "Hyundai|Ioniq 6 (with HDA II)|2024": null,
+  "Hyundai|Ioniq 6 (without HDA II)|2023": null,
+  "Hyundai|Ioniq 6 (without HDA II)|2024": null,
   "Hyundai|Ioniq Electric|2019": {
     "url": "https://www.carcomplaints.com/Hyundai/Ioniq_Electric/2019/",
     "complaints": 12,
@@ -3817,6 +3823,9 @@
     "seal": null
   },
   "Hyundai|Nexo|2021": null,
+  "Hyundai|Palisade (without HDA II)|2023": null,
+  "Hyundai|Palisade (without HDA II)|2024": null,
+  "Hyundai|Palisade (without HDA II)|2025": null,
   "Hyundai|Palisade|2020": {
     "url": "https://www.carcomplaints.com/Hyundai/Palisade/2020/",
     "complaints": 607,
@@ -3951,7 +3960,7 @@
   },
   "Hyundai|Santa Fe|2020": {
     "url": "https://www.carcomplaints.com/Hyundai/Santa_Fe/2020/",
-    "complaints": 172,
+    "complaints": 257,
     "recalls": 2,
     "tsbs": 136,
     "investigations": 1,
@@ -4325,7 +4334,7 @@
   },
   "Jeep|Grand Cherokee|2020": {
     "url": "https://www.carcomplaints.com/Jeep/Grand_Cherokee/2020/",
-    "complaints": 317,
+    "complaints": 345,
     "recalls": 3,
     "tsbs": 629,
     "investigations": 1,
@@ -4755,6 +4764,7 @@
   },
   "Kia|Sorento|2023": null,
   "Kia|Sportage Hybrid|2023": null,
+  "Kia|Sportage Hybrid|2026": null,
   "Kia|Sportage|2023": {
     "url": "https://www.carcomplaints.com/Kia/Sportage/2023/",
     "complaints": 322,
@@ -4784,7 +4794,7 @@
   },
   "Kia|Stinger|2019": {
     "url": "https://www.carcomplaints.com/Kia/Stinger/2019/",
-    "complaints": 49,
+    "complaints": 57,
     "recalls": 3,
     "tsbs": 73,
     "investigations": 1,
@@ -4828,6 +4838,9 @@
     "top_problems": [],
     "seal": null
   },
+  "Kia|Telluride (without HDA II)|2023": null,
+  "Kia|Telluride (without HDA II)|2024": null,
+  "Kia|Telluride (without HDA II)|2025": null,
   "Kia|Telluride|2020": {
     "url": "https://www.carcomplaints.com/Kia/Telluride/2020/",
     "complaints": 888,
@@ -5592,7 +5605,7 @@
   },
   "Mazda|CX-5|2023": {
     "url": "https://www.carcomplaints.com/Mazda/CX-5/2023/",
-    "complaints": 46,
+    "complaints": 79,
     "recalls": null,
     "tsbs": 232,
     "investigations": null,
@@ -6314,13 +6327,14 @@
   },
   "Subaru|Crosstrek|2020": {
     "url": "https://www.carcomplaints.com/Subaru/Crosstrek/2020/",
-    "complaints": 69,
+    "complaints": 79,
     "recalls": null,
     "tsbs": 450,
     "investigations": null,
     "top_problems": [
       "Cvt Started Making Whining Noise in the 2020 Subaru Crosstrek",
-      "Gear Broken in the 2020 Subaru Crosstrek"
+      "Gear Broken in the 2020 Subaru Crosstrek",
+      "Shuddered And Dashboard Lit Up Like A Christmas Tree in the 2020 Subaru Crosstrek"
     ],
     "seal": null
   },
@@ -6780,6 +6794,9 @@
   "Tesla|Model 3 (with HW3)|2023": null,
   "Tesla|Model 3 (with HW4)|2024": null,
   "Tesla|Model 3 (with HW4)|2025": null,
+  "Tesla|Model S (Pre-AP)|2012": null,
+  "Tesla|Model S (Pre-AP)|2013": null,
+  "Tesla|Model S (Pre-AP)|2014": null,
   "Tesla|Model X (with HW4)|2024": null,
   "Tesla|Model Y (with HW3)|2020": null,
   "Tesla|Model Y (with HW3)|2021": null,
@@ -6872,7 +6889,7 @@
   },
   "Toyota|Avalon|2019": {
     "url": "https://www.carcomplaints.com/Toyota/Avalon/2019/",
-    "complaints": 83,
+    "complaints": 98,
     "recalls": 4,
     "tsbs": 251,
     "investigations": null,
@@ -7448,7 +7465,7 @@
   },
   "Toyota|Highlander|2017": {
     "url": "https://www.carcomplaints.com/Toyota/Highlander/2017/",
-    "complaints": 332,
+    "complaints": 380,
     "recalls": 4,
     "tsbs": 360,
     "investigations": null,
@@ -7461,7 +7478,7 @@
   },
   "Toyota|Highlander|2018": {
     "url": "https://www.carcomplaints.com/Toyota/Highlander/2018/",
-    "complaints": 310,
+    "complaints": 363,
     "recalls": 5,
     "tsbs": 338,
     "investigations": null,
@@ -7906,7 +7923,7 @@
   },
   "Toyota|RAV4|2018": {
     "url": "https://www.carcomplaints.com/Toyota/RAV4/2018/",
-    "complaints": 463,
+    "complaints": 468,
     "recalls": 3,
     "tsbs": 192,
     "investigations": 1,
@@ -8164,12 +8181,13 @@
   },
   "Toyota|Tundra|2025": {
     "url": "https://www.carcomplaints.com/Toyota/Tundra/2025/",
-    "complaints": 41,
+    "complaints": 178,
     "recalls": null,
     "tsbs": 5,
     "investigations": null,
     "top_problems": [
-      "Drivers Door Locks When Tailgate Is Operated in the 2025 Toyota Tundra"
+      "Drivers Door Locks When Tailgate Is Operated in the 2025 Toyota Tundra",
+      "High Pitch Squeal Noise in the 2025 Toyota Tundra"
     ],
     "seal": null
   },
@@ -8314,7 +8332,7 @@
   },
   "Volkswagen|Atlas|2018": {
     "url": "https://www.carcomplaints.com/Volkswagen/Atlas/2018/",
-    "complaints": 671,
+    "complaints": 716,
     "recalls": 16,
     "tsbs": 1048,
     "investigations": 2,
@@ -9020,7 +9038,7 @@
   },
   "Volkswagen|Tiguan|2022": {
     "url": "https://www.carcomplaints.com/Volkswagen/Tiguan/2022/",
-    "complaints": 278,
+    "complaints": 405,
     "recalls": 5,
     "tsbs": 570,
     "investigations": null,

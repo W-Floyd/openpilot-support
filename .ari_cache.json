@@ -87,6 +87,7 @@
     "score": 81,
     "url": "https://autoreliabilityindex.com/acura/rdx/2025"
   },
+  "Acura|RDX|2026": null,
   "Acura|RLX|2017": null,
   "Acura|TLX|2015": null,
   "Acura|TLX|2016": null,
@@ -449,7 +450,10 @@
     "score": 72,
     "url": "https://autoreliabilityindex.com/ford/bronco-sport/2024"
   },
-  "Ford|Edge|2022": null,
+  "Ford|Edge|2022": {
+    "score": 69,
+    "url": "https://autoreliabilityindex.com/ford/edge/2022"
+  },
   "Ford|Escape Hybrid|2020": null,
   "Ford|Escape Hybrid|2021": null,
   "Ford|Escape Hybrid|2022": null,
@@ -909,6 +913,7 @@
     "score": 71,
     "url": "https://autoreliabilityindex.com/honda/pilot/2025"
   },
+  "Honda|Pilot|2026": null,
   "Honda|Prologue|2024": {
     "score": 72,
     "url": "https://autoreliabilityindex.com/honda/prologue/2024"
@@ -1000,6 +1005,8 @@
   "Hyundai|Ioniq 5 (without HDA II)|2024": null,
   "Hyundai|Ioniq 6 (with HDA II)|2023": null,
   "Hyundai|Ioniq 6 (with HDA II)|2024": null,
+  "Hyundai|Ioniq 6 (without HDA II)|2023": null,
+  "Hyundai|Ioniq 6 (without HDA II)|2024": null,
   "Hyundai|Ioniq Electric|2019": null,
   "Hyundai|Ioniq Electric|2020": null,
   "Hyundai|Ioniq Hybrid|2017": null,
@@ -1037,6 +1044,9 @@
     "url": "https://autoreliabilityindex.com/hyundai/kona/2023"
   },
   "Hyundai|Nexo|2021": null,
+  "Hyundai|Palisade (without HDA II)|2023": null,
+  "Hyundai|Palisade (without HDA II)|2024": null,
+  "Hyundai|Palisade (without HDA II)|2025": null,
   "Hyundai|Palisade|2020": {
     "score": 59,
     "url": "https://autoreliabilityindex.com/hyundai/palisade/2020"
@@ -1304,6 +1314,7 @@
     "url": "https://autoreliabilityindex.com/kia/sorento/2023"
   },
   "Kia|Sportage Hybrid|2023": null,
+  "Kia|Sportage Hybrid|2026": null,
   "Kia|Sportage|2023": {
     "score": 67,
     "url": "https://autoreliabilityindex.com/kia/sportage/2023"
@@ -1317,6 +1328,9 @@
   "Kia|Stinger|2020": null,
   "Kia|Stinger|2022": null,
   "Kia|Stinger|2023": null,
+  "Kia|Telluride (without HDA II)|2023": null,
+  "Kia|Telluride (without HDA II)|2024": null,
+  "Kia|Telluride (without HDA II)|2025": null,
   "Kia|Telluride|2020": {
     "score": 55,
     "url": "https://autoreliabilityindex.com/kia/telluride/2020"
@@ -1349,14 +1363,38 @@
   "Lexus|ES Hybrid|2024": null,
   "Lexus|ES Hybrid|2025": null,
   "Lexus|ES|2017": null,
-  "Lexus|ES|2018": null,
-  "Lexus|ES|2019": null,
-  "Lexus|ES|2020": null,
-  "Lexus|ES|2021": null,
-  "Lexus|ES|2022": null,
-  "Lexus|ES|2023": null,
-  "Lexus|ES|2024": null,
-  "Lexus|ES|2025": null,
+  "Lexus|ES|2018": {
+    "score": 80,
+    "url": "https://autoreliabilityindex.com/lexus/es/2018"
+  },
+  "Lexus|ES|2019": {
+    "score": 78,
+    "url": "https://autoreliabilityindex.com/lexus/es/2019"
+  },
+  "Lexus|ES|2020": {
+    "score": 83,
+    "url": "https://autoreliabilityindex.com/lexus/es/2020"
+  },
+  "Lexus|ES|2021": {
+    "score": 88,
+    "url": "https://autoreliabilityindex.com/lexus/es/2021"
+  },
+  "Lexus|ES|2022": {
+    "score": 88,
+    "url": "https://autoreliabilityindex.com/lexus/es/2022"
+  },
+  "Lexus|ES|2023": {
+    "score": 80,
+    "url": "https://autoreliabilityindex.com/lexus/es/2023"
+  },
+  "Lexus|ES|2024": {
+    "score": 80,
+    "url": "https://autoreliabilityindex.com/lexus/es/2024"
+  },
+  "Lexus|ES|2025": {
+    "score": 83,
+    "url": "https://autoreliabilityindex.com/lexus/es/2025"
+  },
   "Lexus|GS F|2016": null,
   "Lexus|IS|2017": null,
   "Lexus|IS|2018": {
@@ -1843,6 +1881,9 @@
   "Tesla|Model 3 (with HW3)|2023": null,
   "Tesla|Model 3 (with HW4)|2024": null,
   "Tesla|Model 3 (with HW4)|2025": null,
+  "Tesla|Model S (Pre-AP)|2012": null,
+  "Tesla|Model S (Pre-AP)|2013": null,
+  "Tesla|Model S (Pre-AP)|2014": null,
   "Tesla|Model X (with HW4)|2024": null,
   "Tesla|Model Y (with HW3)|2020": null,
   "Tesla|Model Y (with HW3)|2021": null,

@@ -18936,9 +18936,10 @@
       "make": "Acura",
       "model": "RDX",
       "years": [
-        2025
+        2025,
+        2026
       ],
-      "name": "Acura RDX 2025",
+      "name": "Acura RDX 2025-26",
       "package": "All",
       "support_type": "Community",
       "support_link": "#community",
@@ -18954,7 +18955,7 @@
       "harness": null,
       "extra_cars_columns": {
         "make": "Acura",
-        "model": "RDX 2025",
+        "model": "RDX 2025-26",
         "package": "All",
         "support": "[Community](#community)"
       }
@@ -22103,6 +22104,33 @@
     },
     {
       "make": "Honda",
+      "model": "Pilot",
+      "years": [
+        2026
+      ],
+      "name": "Honda Pilot 2026",
+      "package": "All",
+      "support_type": "Community",
+      "support_link": "#community",
+      "merged": false,
+      "min_steer_speed": 0.0,
+      "min_enable_speed": -1.0,
+      "auto_resume": true,
+      "good_steering_torque": true,
+      "openpilot_longitudinal": "Stock",
+      "video": null,
+      "setup_video": null,
+      "detail_sentence": "openpilot upgrades your <strong>Honda Pilot</strong> with automated lane centering <strong>at all speeds</strong>, and adaptive cruise control <strong>that automatically resumes from a stop</strong>.",
+      "harness": null,
+      "extra_cars_columns": {
+        "make": "Honda",
+        "model": "Pilot 2026",
+        "package": "All",
+        "support": "[Community](#community)"
+      }
+    },
+    {
+      "make": "Honda",
       "model": "Prologue",
       "years": [
         2024,
@@ -22584,6 +22612,34 @@
         "make": "Hyundai",
         "model": "Ioniq 6 (with HDA II) 2023-24",
         "package": "Highway Driving Assist II",
+        "support": "[Upstream](#upstream)"
+      }
+    },
+    {
+      "make": "Hyundai",
+      "model": "Ioniq 6 (without HDA II)",
+      "years": [
+        2023,
+        2024
+      ],
+      "name": "Hyundai Ioniq 6 (without HDA II) 2023-24",
+      "package": "Highway Driving Assist",
+      "support_type": "Upstream",
+      "support_link": "#upstream",
+      "merged": true,
+      "min_steer_speed": 0.0,
+      "min_enable_speed": -1.0,
+      "auto_resume": true,
+      "good_steering_torque": true,
+      "openpilot_longitudinal": "Stock",
+      "video": null,
+      "setup_video": null,
+      "detail_sentence": "openpilot upgrades your <strong>Hyundai Ioniq 6 (without HDA II)</strong> with automated lane centering <strong>at all speeds</strong>, and adaptive cruise control <strong>that automatically resumes from a stop</strong>.",
+      "harness": "Hyundai L",
+      "extra_cars_columns": {
+        "make": "Hyundai",
+        "model": "Ioniq 6 (without HDA II) 2023-24",
+        "package": "Highway Driving Assist",
         "support": "[Upstream](#upstream)"
       }
     },
@@ -33436,6 +33492,36 @@
       ],
       "name": "Honda Clarity 2018-21",
       "package": "All",
+      "support_type": "Upstream",
+      "support_link": "#upstream",
+      "merged": true,
+      "min_steer_speed": 1.34112,
+      "min_enable_speed": -1.0,
+      "auto_resume": true,
+      "good_steering_torque": false,
+      "openpilot_longitudinal": "openpilot",
+      "video": null,
+      "setup_video": null,
+      "detail_sentence": "openpilot upgrades your <strong>Honda Clarity</strong> with automated lane centering <strong>above 3 mph</strong>, and adaptive cruise control <strong>that automatically resumes from a stop</strong>. This car may not be able to take tight turns on its own. Traffic light and stop sign handling is also available in <a href='https://blog.comma.ai/090release/#experimental-mode' target='_blank' class='highlight'>Experimental mode</a>.",
+      "harness": "Honda Nidec",
+      "extra_cars_columns": {
+        "make": "Honda",
+        "model": "Clarity 2018-21",
+        "package": "All",
+        "support": "[Upstream](#upstream)"
+      }
+    },
+    {
+      "make": "Honda",
+      "model": "Clarity",
+      "years": [
+        2018,
+        2019,
+        2020,
+        2021
+      ],
+      "name": "Honda Clarity 2018-21",
+      "package": "All",
       "support_type": "Community",
       "support_link": "#community",
       "merged": false,
@@ -34797,7 +34883,7 @@
       "min_enable_speed": -1.0,
       "auto_resume": true,
       "good_steering_torque": true,
-      "openpilot_longitudinal": "Stock",
+      "openpilot_longitudinal": "openpilot available",
       "video": "https://www.youtube.com/watch?v=U2fOCmcQ8hw",
       "setup_video": null,
       "detail_sentence": "openpilot upgrades your <strong>Hyundai Kona Electric (with HDA II, Korea only)</strong> with automated lane centering <strong>at all speeds</strong>, and adaptive cruise control <strong>that automatically resumes from a stop</strong>.",
@@ -34918,6 +35004,35 @@
         "model": "Palisade 2023-24",
         "package": "HDA2",
         "support": "[Community](#community)"
+      }
+    },
+    {
+      "make": "Hyundai",
+      "model": "Palisade (without HDA II)",
+      "years": [
+        2023,
+        2024,
+        2025
+      ],
+      "name": "Hyundai Palisade (without HDA II) 2023-25",
+      "package": "Highway Driving Assist",
+      "support_type": "Upstream",
+      "support_link": "#upstream",
+      "merged": true,
+      "min_steer_speed": 0.0,
+      "min_enable_speed": -1.0,
+      "auto_resume": true,
+      "good_steering_torque": true,
+      "openpilot_longitudinal": "openpilot available",
+      "video": null,
+      "setup_video": null,
+      "detail_sentence": "openpilot upgrades your <strong>Hyundai Palisade (without HDA II)</strong> with automated lane centering <strong>at all speeds</strong>, and adaptive cruise control <strong>that automatically resumes from a stop</strong>.",
+      "harness": "Hyundai A",
+      "extra_cars_columns": {
+        "make": "Hyundai",
+        "model": "Palisade (without HDA II) 2023-25",
+        "package": "Highway Driving Assist",
+        "support": "[Upstream](#upstream)"
       }
     },
     {
@@ -35617,7 +35732,7 @@
       "min_enable_speed": 2.68224,
       "auto_resume": false,
       "good_steering_torque": true,
-      "openpilot_longitudinal": "openpilot available",
+      "openpilot_longitudinal": "Stock",
       "video": null,
       "setup_video": null,
       "detail_sentence": "openpilot upgrades your <strong>Kia Forte</strong> with automated lane centering and adaptive cruise control <strong>while driving above 6 mph</strong>.",
@@ -35645,7 +35760,7 @@
       "min_enable_speed": -1.0,
       "auto_resume": true,
       "good_steering_torque": true,
-      "openpilot_longitudinal": "openpilot available",
+      "openpilot_longitudinal": "Stock",
       "video": null,
       "setup_video": null,
       "detail_sentence": "openpilot upgrades your <strong>Kia Forte</strong> with automated lane centering <strong>at all speeds</strong>, and adaptive cruise control <strong>that automatically resumes from a stop</strong>.",
@@ -36457,6 +36572,33 @@
     },
     {
       "make": "Kia",
+      "model": "Sportage Hybrid",
+      "years": [
+        2026
+      ],
+      "name": "Kia Sportage Hybrid 2026",
+      "package": "Smart Cruise Control (SCC)",
+      "support_type": "Upstream",
+      "support_link": "#upstream",
+      "merged": true,
+      "min_steer_speed": 0.0,
+      "min_enable_speed": -1.0,
+      "auto_resume": true,
+      "good_steering_torque": true,
+      "openpilot_longitudinal": "openpilot available",
+      "video": null,
+      "setup_video": null,
+      "detail_sentence": "openpilot upgrades your <strong>Kia Sportage Hybrid</strong> with automated lane centering <strong>at all speeds</strong>, and adaptive cruise control <strong>that automatically resumes from a stop</strong>.",
+      "harness": "Hyundai N",
+      "extra_cars_columns": {
+        "make": "Kia",
+        "model": "Sportage Hybrid 2026",
+        "package": "Smart Cruise Control (SCC)",
+        "support": "[Upstream](#upstream)"
+      }
+    },
+    {
+      "make": "Kia",
       "model": "Stinger",
       "years": [
         2018,
@@ -36567,6 +36709,35 @@
         "model": "Telluride 2023-24",
         "package": "HDA2",
         "support": "[Community](#community)"
+      }
+    },
+    {
+      "make": "Kia",
+      "model": "Telluride (without HDA II)",
+      "years": [
+        2023,
+        2024,
+        2025
+      ],
+      "name": "Kia Telluride (without HDA II) 2023-25",
+      "package": "Highway Driving Assist",
+      "support_type": "Upstream",
+      "support_link": "#upstream",
+      "merged": true,
+      "min_steer_speed": 0.0,
+      "min_enable_speed": -1.0,
+      "auto_resume": true,
+      "good_steering_torque": true,
+      "openpilot_longitudinal": "openpilot available",
+      "video": null,
+      "setup_video": null,
+      "detail_sentence": "openpilot upgrades your <strong>Kia Telluride (without HDA II)</strong> with automated lane centering <strong>at all speeds</strong>, and adaptive cruise control <strong>that automatically resumes from a stop</strong>.",
+      "harness": "Hyundai L",
+      "extra_cars_columns": {
+        "make": "Kia",
+        "model": "Telluride (without HDA II) 2023-25",
+        "package": "Highway Driving Assist",
+        "support": "[Upstream](#upstream)"
       }
     },
     {
@@ -38899,6 +39070,35 @@
         "model": "Model 3 (with HW4) 2024-25",
         "package": "All",
         "support": "[Upstream](#upstream)"
+      }
+    },
+    {
+      "make": "Tesla",
+      "model": "Model S (Pre-AP)",
+      "years": [
+        2012,
+        2013,
+        2014
+      ],
+      "name": "Tesla Model S (Pre-AP) 2012-14",
+      "package": "All",
+      "support_type": "Dashcam mode",
+      "support_link": "#dashcam",
+      "merged": true,
+      "min_steer_speed": 0.0,
+      "min_enable_speed": -1.0,
+      "auto_resume": true,
+      "good_steering_torque": true,
+      "openpilot_longitudinal": "Stock",
+      "video": null,
+      "setup_video": null,
+      "detail_sentence": "openpilot upgrades your <strong>Tesla Model S (Pre-AP)</strong> with automated lane centering <strong>at all speeds</strong>, and adaptive cruise control <strong>that automatically resumes from a stop</strong>.",
+      "harness": null,
+      "extra_cars_columns": {
+        "make": "Tesla",
+        "model": "Model S (Pre-AP) 2012-14",
+        "package": "All",
+        "support": "[Dashcam mode](#dashcam)"
       }
     },
     {
@@ -41908,20 +42108,20 @@
   "_git_StarPilot": {
     "name": "StarPilot",
     "url": "https://github.com/firestar5683/StarPilot",
-    "hash": "6b58561c2",
-    "hash_url": "https://github.com/firestar5683/StarPilot/commit/6b58561c2"
+    "hash": "013ecbed9",
+    "hash_url": "https://github.com/firestar5683/StarPilot/commit/013ecbed9"
   },
   "_git_openpilot": {
     "name": "openpilot",
     "url": "https://github.com/commaai/openpilot",
-    "hash": "b6432e705",
-    "hash_url": "https://github.com/commaai/openpilot/commit/b6432e705"
+    "hash": "b88adeb4a",
+    "hash_url": "https://github.com/commaai/openpilot/commit/b88adeb4a"
   },
   "_git_sunnypilot": {
     "name": "sunnypilot",
     "url": "https://github.com/sunnypilot/sunnypilot",
-    "hash": "18406e77ee",
-    "hash_url": "https://github.com/sunnypilot/sunnypilot/commit/18406e77ee"
+    "hash": "a15aed1a79",
+    "hash_url": "https://github.com/sunnypilot/sunnypilot/commit/a15aed1a79"
   },
   "openpilot": [
     {
@@ -42273,9 +42473,10 @@
       "make": "Acura",
       "model": "RDX",
       "years": [
-        2025
+        2025,
+        2026
       ],
-      "name": "Acura RDX 2025",
+      "name": "Acura RDX 2025-26",
       "package": "All",
       "support_type": "Community",
       "support_link": "#community",
@@ -42291,7 +42492,7 @@
       "harness": null,
       "extra_cars_columns": {
         "make": "Acura",
-        "model": "RDX 2025",
+        "model": "RDX 2025-26",
         "package": "All",
         "support": "[Community](#community)"
       }
@@ -45440,6 +45641,33 @@
     },
     {
       "make": "Honda",
+      "model": "Pilot",
+      "years": [
+        2026
+      ],
+      "name": "Honda Pilot 2026",
+      "package": "All",
+      "support_type": "Community",
+      "support_link": "#community",
+      "merged": false,
+      "min_steer_speed": 0.0,
+      "min_enable_speed": -1.0,
+      "auto_resume": true,
+      "good_steering_torque": true,
+      "openpilot_longitudinal": "Stock",
+      "video": null,
+      "setup_video": null,
+      "detail_sentence": "openpilot upgrades your <strong>Honda Pilot</strong> with automated lane centering <strong>at all speeds</strong>, and adaptive cruise control <strong>that automatically resumes from a stop</strong>.",
+      "harness": null,
+      "extra_cars_columns": {
+        "make": "Honda",
+        "model": "Pilot 2026",
+        "package": "All",
+        "support": "[Community](#community)"
+      }
+    },
+    {
+      "make": "Honda",
       "model": "Prologue",
       "years": [
         2024,
@@ -45921,6 +46149,34 @@
         "make": "Hyundai",
         "model": "Ioniq 6 (with HDA II) 2023-24",
         "package": "Highway Driving Assist II",
+        "support": "[Upstream](#upstream)"
+      }
+    },
+    {
+      "make": "Hyundai",
+      "model": "Ioniq 6 (without HDA II)",
+      "years": [
+        2023,
+        2024
+      ],
+      "name": "Hyundai Ioniq 6 (without HDA II) 2023-24",
+      "package": "Highway Driving Assist",
+      "support_type": "Upstream",
+      "support_link": "#upstream",
+      "merged": true,
+      "min_steer_speed": 0.0,
+      "min_enable_speed": -1.0,
+      "auto_resume": true,
+      "good_steering_torque": true,
+      "openpilot_longitudinal": "Stock",
+      "video": null,
+      "setup_video": null,
+      "detail_sentence": "openpilot upgrades your <strong>Hyundai Ioniq 6 (without HDA II)</strong> with automated lane centering <strong>at all speeds</strong>, and adaptive cruise control <strong>that automatically resumes from a stop</strong>.",
+      "harness": "Hyundai L",
+      "extra_cars_columns": {
+        "make": "Hyundai",
+        "model": "Ioniq 6 (without HDA II) 2023-24",
+        "package": "Highway Driving Assist",
         "support": "[Upstream](#upstream)"
       }
     },
