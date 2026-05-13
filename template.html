@@ -832,9 +832,15 @@
                 flex-direction: column;
             }
             .open-all-row {
-                display: inline-flex;
+                display: flex;
                 align-items: center;
                 gap: 4px;
+                flex-wrap: wrap;
+            }
+            @media (max-width: 639px) {
+                .open-all-row .presets-lbl {
+                    flex-basis: 100%;
+                }
             }
             .srch-open-all {
                 background: none;
@@ -854,6 +860,21 @@
             }
 
             /* ── ARI & CC ── */
+            .ari-bar-wrap {
+                display: inline-block;
+                width: 56px;
+                height: 7px;
+                background: #e5e7eb;
+                border-radius: 2px;
+                overflow: hidden;
+                vertical-align: middle;
+                flex-shrink: 0;
+            }
+            .ari-bar {
+                display: block;
+                height: 100%;
+                border-radius: 2px;
+            }
             .ari-link {
                 font-size: 0.75rem;
                 font-weight: 500;
@@ -905,7 +926,7 @@
             }
             .popup-row {
                 display: flex;
-                align-items: baseline;
+                align-items: center;
                 gap: 6px;
                 padding: 2px 12px;
             }
@@ -1878,6 +1899,12 @@
                                                                             :style="`color:${row.color}`"
                                                                             x-text="row.score"
                                                                         ></a>
+                                                                        <span class="ari-bar-wrap">
+                                                                            <span
+                                                                                class="ari-bar"
+                                                                                :style="`width:${row.score}%;background:${row.color}`"
+                                                                            ></span>
+                                                                        </span>
                                                                     </div>
                                                                 </template>
                                                             </div>
