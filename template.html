@@ -812,6 +812,21 @@
                 display: flex;
                 flex-wrap: wrap;
                 gap: 4px;
+                align-items: center;
+            }
+            .forks-toggle {
+                display: block;
+                background: none;
+                border: none;
+                padding: 0;
+                font-size: 0.7rem;
+                color: #6b7280;
+                cursor: pointer;
+                white-space: nowrap;
+            }
+            .forks-toggle:hover {
+                color: #374151;
+                text-decoration: underline;
             }
 
             /* ── Boolean / null ── */
@@ -1778,16 +1793,65 @@
 
                                         <!-- forks badges -->
                                         <template x-if="col.forks">
-                                            <span class="forks">
+                                            <span
+                                                class="forks"
+                                                x-data="{ forksExpanded: false }"
+                                            >
                                                 <template
-                                                    x-for="fork in car.forks"
-                                                    :key="fork"
+                                                    x-if="car.forks.includes('openpilot')"
                                                 >
-                                                    <span
-                                                        class="badge"
-                                                        :class="forkClass(fork)"
-                                                        x-text="fork"
-                                                    ></span>
+                                                    <span>
+                                                        <span
+                                                            class="badge badge-fg"
+                                                        >openpilot</span>
+                                                        <template
+                                                            x-if="car.forks.length > 1"
+                                                        >
+                                                            <span>
+                                                                <template x-if="forksExpanded">
+                                                                    <span>
+                                                                        <template
+                                                                            x-for="fork in car.forks.filter(f => f !== 'openpilot')"
+                                                                            :key="fork"
+                                                                        >
+                                                                            <span
+                                                                                class="badge"
+                                                                                :class="forkClass(fork)"
+                                                                                x-text="fork"
+                                                                            ></span>
+                                                                        </template>
+                                                                        <button
+                                                                            class="forks-toggle"
+                                                                            @click.stop="forksExpanded = false"
+                                                                        >less</button>
+                                                                    </span>
+                                                                </template>
+                                                                <template x-if="!forksExpanded">
+                                                                    <button
+                                                                        class="forks-toggle"
+                                                                        @click.stop="forksExpanded = true"
+                                                                        x-text="`and ${car.forks.length - 1} other${car.forks.length - 1 === 1 ? '' : 's'}`"
+                                                                    ></button>
+                                                                </template>
+                                                            </span>
+                                                        </template>
+                                                    </span>
+                                                </template>
+                                                <template
+                                                    x-if="!car.forks.includes('openpilot')"
+                                                >
+                                                    <span>
+                                                        <template
+                                                            x-for="fork in car.forks"
+                                                            :key="fork"
+                                                        >
+                                                            <span
+                                                                class="badge"
+                                                                :class="forkClass(fork)"
+                                                                x-text="fork"
+                                                            ></span>
+                                                        </template>
+                                                    </span>
                                                 </template>
                                             </span>
                                         </template>
