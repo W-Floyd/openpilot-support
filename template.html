@@ -454,6 +454,11 @@
                 color: #fff;
                 border-color: #1f2937;
             }
+            .pill-btn.partial {
+                background: #9ca3af;
+                color: #fff;
+                border-color: #9ca3af;
+            }
 
             /* ── Filter chips ── */
             .chips-row {
@@ -1259,7 +1264,7 @@
                 <template x-for="preset in presets" :key="preset.label">
                     <button
                         @click="applyPreset(preset)"
-                        :class="isPresetActive(preset) ? 'on' : ''"
+                        :class="isPresetActive(preset) ? 'on' : (isPresetContained(preset) ? 'partial' : '')"
                         class="pill-btn"
                         x-text="preset.label"
                     ></button>
@@ -3108,6 +3113,14 @@
                             );
                         });
                         if (!filtersMatch) return false;
+                        const presetKeys = new Set(Object.keys(preset.filters));
+                        const hasExtraFilters = Object.entries(
+                            this.filters,
+                        ).some(
+                            ([key, vals]) =>
+                                vals?.length > 0 && !presetKeys.has(key),
+                        );
+                        if (hasExtraFilters) return false;
                         if (!preset.speedFilters) return true;
                         return Object.entries(preset.speedFilters).every(
                             ([key, range]) => {
@@ -3120,6 +3133,40 @@
                                         resolved.min &&
                                     this.speedFilters[key]?.max === resolved.max
                                 );
+                            },
+                        );
+                    },
+
+                    isPresetContained(preset) {
+                        if (this.isPresetActive(preset)) return false;
+                        if (this.presets.some((p) => this.isPresetActive(p)))
+                            return false;
+                        return Object.entries(preset.filters).every(
+                            ([key, vals]) => {
+                                const excluded = vals
+                                    .filter((v) => String(v).startsWith("!"))
+                                    .map((v) => String(v).slice(1));
+                                const prefixed = vals
+                                    .filter((v) => String(v).startsWith("^"))
+                                    .map((v) => String(v).slice(1));
+                                const current = this.filters[key] ?? [];
+                                if (excluded.length > 0)
+                                    return excluded.every(
+                                        (e) => !current.includes(String(e)),
+                                    );
+                                if (prefixed.length > 0) {
+                                    const expected = this.allUniqueValues(
+                                        key,
+                                    ).filter((v) =>
+                                        prefixed.some((p) =>
+                                            String(v).startsWith(p),
+                                        ),
+                                    );
+                                    return expected.every((v) =>
+                                        current.includes(v),
+                                    );
+                                }
+                                return vals.every((v) => current.includes(v));
                             },
                         );
                     },
