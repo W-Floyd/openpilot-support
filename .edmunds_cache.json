@@ -1,0 +1,121 @@
+{
+  "Acura|ADX|2025": {
+    "min": 35000,
+    "max": 44000,
+    "url": "https://www.edmunds.com/acura/adx/2025/",
+    "suggested": 35929,
+    "avg_used": null
+  },
+  "Acura|ADX|2026": {
+    "min": 35000,
+    "max": 44000,
+    "url": "https://www.edmunds.com/acura/adx/",
+    "suggested": 35599,
+    "avg_used": null
+  },
+  "Acura|ILX|2016": {
+    "min": 14599,
+    "max": 21590,
+    "url": "https://www.edmunds.com/acura/ilx/2016/review/",
+    "suggested": null,
+    "avg_used": 17051
+  },
+  "Acura|ILX|2017": {
+    "min": 11950,
+    "max": 22990,
+    "url": "https://www.edmunds.com/acura/ilx/2017/review/",
+    "suggested": null,
+    "avg_used": 17034
+  },
+  "Acura|ILX|2018": {
+    "min": 14998,
+    "max": 19998,
+    "url": "https://www.edmunds.com/acura/ilx/2018/review/",
+    "suggested": null,
+    "avg_used": 17286
+  },
+  "Acura|ILX|2019": {
+    "min": 15499,
+    "max": 26990,
+    "url": "https://www.edmunds.com/acura/ilx/2019/review/",
+    "suggested": null,
+    "avg_used": 21723
+  },
+  "Acura|Integra|2023": {
+    "min": 24580,
+    "max": 33990,
+    "url": "https://www.edmunds.com/acura/integra/2023/",
+    "suggested": null,
+    "avg_used": 33630
+  },
+  "Acura|Integra|2024": {
+    "min": 24980,
+    "max": 51880,
+    "url": "https://www.edmunds.com/acura/integra/2024/",
+    "suggested": null,
+    "avg_used": 33630
+  },
+  "Acura|Integra|2025": {
+    "min": 33000,
+    "max": 52900,
+    "url": "https://www.edmunds.com/acura/integra/2025/",
+    "suggested": 32409,
+    "avg_used": null
+  },
+  "Acura|Integra|2026": {
+    "min": 33400,
+    "max": 53900,
+    "url": "https://www.edmunds.com/acura/integra/",
+    "suggested": 33273,
+    "avg_used": null
+  },
+  "Acura|MDX|2014": {
+    "min": 14164,
+    "max": 20998,
+    "url": "https://www.edmunds.com/acura/mdx/2014/review/",
+    "suggested": null,
+    "avg_used": 16773
+  },
+  "Acura|MDX|2015": {
+    "min": 10750,
+    "max": 21998,
+    "url": "https://www.edmunds.com/acura/mdx/2015/review/",
+    "suggested": null,
+    "avg_used": null
+  },
+  "Acura|MDX|2016": {
+    "min": 10997,
+    "max": 26998,
+    "url": "https://www.edmunds.com/acura/mdx/2016/review/",
+    "suggested": null,
+    "avg_used": 18450
+  },
+  "Acura|MDX|2017": {
+    "min": 16399,
+    "max": 26590,
+    "url": "https://www.edmunds.com/acura/mdx/2017/review/",
+    "suggested": null,
+    "avg_used": 20654
+  },
+  "Acura|MDX|2018": {
+    "min": 17149,
+    "max": 29990,
+    "url": "https://www.edmunds.com/acura/mdx/2018/review/",
+    "suggested": null,
+    "avg_used": 23492
+  },
+  "Acura|MDX|2019": {
+    "min": 16995,
+    "max": 31990,
+    "url": "https://www.edmunds.com/acura/mdx/2019/review/",
+    "suggested": null,
+    "avg_used": 24106
+  },
+  "Acura|MDX|2022": {
+    "min": 29816,
+    "max": 54998,
+    "url": "https://www.edmunds.com/acura/mdx/2022/",
+    "suggested": null,
+    "avg_used": 35407
+  }
+}

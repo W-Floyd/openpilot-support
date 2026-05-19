@@ -4,3 +4,4 @@ index.html
 .alpine_cache.js
 .pure_css_cache.css
 *.svg
+.proxifly_*

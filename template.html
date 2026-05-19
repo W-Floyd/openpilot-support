@@ -1370,7 +1370,7 @@
             <!-- Active filter chips (desktop) -->
             <div
                 class="chips-row sm-show-flex"
-                x-show="activeFilters.length > 0 || activeSpeedFilters.length > 0 || isAriFilterActive()"
+                x-show="activeFilters.length > 0 || activeSpeedFilters.length > 0 || isAriFilterActive() || isPriceFilterActive()"
             >
                 <template x-for="f in activeFilters" :key="f.key + ':' + f.val">
                     <span class="chip">
@@ -1401,6 +1401,14 @@
                         </button>
                     </span>
                 </template>
+                <template x-if="isPriceFilterActive()">
+                    <span class="chip">
+                        <span
+                            x-text="`Price: ${priceFilter.min ? '$' + priceFilter.min.toLocaleString() : 'any'}–${priceFilter.max ? '$' + priceFilter.max.toLocaleString() : 'any'}`"
+                        ></span>
+                        <button @click="clearFilter('price')" class="chip-x">×</button>
+                    </span>
+                </template>
                 <button @click="clearAllFilters()" class="chip-clear">
                     Clear all
                 </button>
@@ -1410,7 +1418,7 @@
             <div
                 class="sm-hide"
                 style="margin-bottom: 12px"
-                x-show="activeFilters.length > 0 || activeSpeedFilters.length > 0 || isAriFilterActive()"
+                x-show="activeFilters.length > 0 || activeSpeedFilters.length > 0 || isAriFilterActive() || isPriceFilterActive()"
             >
                 <div
                     style="
@@ -1459,6 +1467,14 @@
                                 >
                                     &times;
                                 </button>
+                            </span>
+                        </template>
+                        <template x-if="isPriceFilterActive()">
+                            <span class="chip">
+                                <span
+                                    x-text="`Price: ${priceFilter.min ? '$' + priceFilter.min.toLocaleString() : 'any'}–${priceFilter.max ? '$' + priceFilter.max.toLocaleString() : 'any'}`"
+                                ></span>
+                                <button @click="clearFilter('price')" class="chip-x">×</button>
                             </span>
                         </template>
                     </div>
@@ -1521,7 +1537,7 @@
                                             <button
                                                 @click.stop="openFilter = openFilter === col.key ? (filterSearch[col.key] = '', null) : col.key"
                                                 class="filter-btn"
-                                                :class="(filters[col.key] && filters[col.key].length > 0) || isSpeedFilterActive(col.key) || (col.key === 'ari' && isAriFilterActive()) ? 'on' : ''"
+                                                :class="(filters[col.key] && filters[col.key].length > 0) || isSpeedFilterActive(col.key) || (col.key === 'ari' && isAriFilterActive()) || (col.key === 'price' && isPriceFilterActive()) ? 'on' : ''"
                                             >
                                                 <svg
                                                     style="
@@ -1713,9 +1729,47 @@
                                                     </div>
                                                 </template>
 
+                                                <!-- Price filter -->
+                                                <template x-if="col.price">
+                                                    <div class="range-body">
+                                                        <div>
+                                                            <div class="range-lbl-row">
+                                                                <span>Min price</span>
+                                                                <span x-text="priceFilter.min ? '$' + priceFilter.min.toLocaleString() : 'Any'"></span>
+                                                            </div>
+                                                            <input
+                                                                type="number"
+                                                                class="range-slider"
+                                                                min="0"
+                                                                step="500"
+                                                                placeholder="0"
+                                                                :value="priceFilter.min ?? ''"
+                                                                @input="priceFilter.min = parseInt($event.target.value) || null"
+                                                                @click.stop
+                                                            />
+                                                        </div>
+                                                        <div>
+                                                            <div class="range-lbl-row">
+                                                                <span>Max price</span>
+                                                                <span x-text="priceFilter.max ? '$' + priceFilter.max.toLocaleString() : 'Any'"></span>
+                                                            </div>
+                                                            <input
+                                                                type="number"
+                                                                class="range-slider"
+                                                                min="0"
+                                                                step="500"
+                                                                placeholder="∞"
+                                                                :value="priceFilter.max ?? ''"
+                                                                @input="priceFilter.max = parseInt($event.target.value) || null"
+                                                                @click.stop
+                                                            />
+                                                        </div>
+                                                    </div>
+                                                </template>
+
                                                 <!-- Checkbox filter -->
                                                 <template
-                                                    x-if="!col.speed && !col.ari"
+                                                    x-if="!col.speed && !col.ari && !col.price"
                                                 >
                                                     <div>
                                                         <div
@@ -1988,6 +2042,95 @@
                                             </span>
                                         </template>
 
+                                        <!-- price -->
+                                        <template x-if="col.price">
+                                            <span>
+                                                <template x-if="car._price != null">
+                                                    <span
+                                                        class="ari-wrap"
+                                                        x-data="{ edmOpen: false, edmStyle: '' }"
+                                                        @mouseenter="const rect = $el.getBoundingClientRect(); const right = window.innerWidth - rect.right; edmStyle = `position:fixed;z-index:9999;bottom:${window.innerHeight - rect.top + 6}px;right:${right}px`; edmOpen = true; $nextTick(() => { if ($refs.edmPopup.getBoundingClientRect().top < 0) edmStyle = `position:fixed;z-index:9999;top:${rect.bottom + 6}px;right:${right}px` })"
+                                                        @mouseleave="edmOpen = false"
+                                                    >
+                                                        <a
+                                                            :href="car._priceLink"
+                                                            target="_blank"
+                                                            rel="noopener"
+                                                            class="ari-link tabnum"
+                                                        >
+                                                            <template x-if="car._price.min === car._price.max">
+                                                                <span x-text="formatPrice(car._price.min)"></span>
+                                                            </template>
+                                                            <template x-if="car._price.min !== car._price.max">
+                                                                <span>
+                                                                    <span x-text="formatPrice(car._price.min)"></span>
+                                                                    <span class="v-nil">–</span>
+                                                                    <span x-text="formatPrice(car._price.max)"></span>
+                                                                </span>
+                                                            </template>
+                                                        </a>
+                                                        <template x-teleport="body">
+                                                            <div
+                                                                x-show="edmOpen"
+                                                                x-cloak
+                                                                x-ref="edmPopup"
+                                                                class="popup"
+                                                                :style="edmStyle"
+                                                            >
+                                                                <template x-if="car._priceScale">
+                                                                    <div style="padding:4px 2px 2px">
+                                                                        <template x-for="row in car._priceRows" :key="row.year">
+                                                                            <a :href="row.url" target="_blank" rel="noopener" class="popup-row" style="display:flex;align-items:center;gap:6px;text-decoration:none;color:inherit">
+                                                                                <span class="pop-yr" x-text="row.year"></span>
+                                                                                <svg width="120" height="16" style="display:block;flex-shrink:0" aria-hidden="true">
+                                                                                    <rect
+                                                                                        :x="car._priceScale.sc(row.price.min)"
+                                                                                        y="5"
+                                                                                        :width="Math.max(2, car._priceScale.sc(row.price.max) - car._priceScale.sc(row.price.min))"
+                                                                                        height="6"
+                                                                                        fill="rgba(59,130,246,0.25)"
+                                                                                        stroke="rgba(59,130,246,0.8)"
+                                                                                        stroke-width="1"
+                                                                                    />
+                                                                                    <line
+                                                                                        :x1="row.avg_used != null ? car._priceScale.sc(row.avg_used) : -99"
+                                                                                        y1="3"
+                                                                                        :x2="row.avg_used != null ? car._priceScale.sc(row.avg_used) : -99"
+                                                                                        y2="13"
+                                                                                        stroke="rgba(234,88,12,0.9)"
+                                                                                        stroke-width="2"
+                                                                                        :opacity="row.avg_used != null ? 1 : 0"
+                                                                                    />
+                                                                                    <line
+                                                                                        :x1="row.suggested != null ? car._priceScale.sc(row.suggested) : -99"
+                                                                                        y1="3"
+                                                                                        :x2="row.suggested != null ? car._priceScale.sc(row.suggested) : -99"
+                                                                                        y2="13"
+                                                                                        stroke="rgba(22,163,74,0.9)"
+                                                                                        stroke-width="2"
+                                                                                        :opacity="row.suggested != null ? 1 : 0"
+                                                                                    />
+                                                                                </svg>
+                                                                                <span class="tabnum" style="font-size:0.75em;color:var(--text-muted,#666)" x-text="formatPrice(row.price.min) + '–' + formatPrice(row.price.max)"></span>
+                                                                            </a>
+                                                                        </template>
+                                                                        <div style="display:flex;gap:10px;padding:4px 2px 0;font-size:0.7em;opacity:0.7">
+                                                                            <span style="display:flex;align-items:center;gap:3px"><svg width="10" height="10"><rect x="1" y="2" width="8" height="6" fill="rgba(59,130,246,0.25)" stroke="rgba(59,130,246,0.8)" stroke-width="1"/></svg> Range</span>
+                                                                            <span x-show="car._priceRows.some(r => r.avg_used != null)" style="display:flex;align-items:center;gap:3px"><svg width="10" height="10"><line x1="5" y1="1" x2="5" y2="9" stroke="rgba(234,88,12,0.9)" stroke-width="2"/></svg> Avg used</span>
+                                                                            <span x-show="car._priceRows.some(r => r.suggested != null)" style="display:flex;align-items:center;gap:3px"><svg width="10" height="10"><line x1="5" y1="1" x2="5" y2="9" stroke="rgba(22,163,74,0.9)" stroke-width="2"/></svg> Suggested</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </template>
+                                                            </div>
+                                                        </template>
+                                                    </span>
+                                                </template>
+                                                <template x-if="car._price == null">
+                                                    <span class="v-nil">—</span>
+                                                </template>
+                                            </span>
+                                        </template>
+
                                         <!-- search links -->
                                         <template x-if="col.search">
                                             <span class="search-links">
@@ -2118,7 +2261,7 @@
 
                                         <!-- default string/number -->
                                         <template
-                                            x-if="!col.speed && !col.search && !col.ari && !col.cc_seal && !col.forks && col.key !== 'support_type' && col.key !== 'years' && col.key !== 'model' && car[col.key] !== null && typeof car[col.key] !== 'boolean'"
+                                            x-if="!col.speed && !col.search && !col.ari && !col.price && !col.cc_seal && !col.forks && col.key !== 'support_type' && col.key !== 'years' && col.key !== 'model' && car[col.key] !== null && typeof car[col.key] !== 'boolean'"
                                         >
                                             <span x-text="car[col.key]"></span>
                                         </template>
@@ -2151,6 +2294,8 @@
         <script type="application/json" id="ari-cache">{{ ari_cache_json }}</script>
         <!-- prettier-ignore -->
         <script type="application/json" id="cc-cache">{{ cc_cache_json }}</script>
+        <!-- prettier-ignore -->
+        <script type="application/json" id="edmunds-cache">{{ edmunds_cache_json }}</script>
         <!-- prettier-ignore -->
         <script type="application/json" id="model-mappings">{{ model_mappings_json }}</script>
         <!-- prettier-ignore -->
@@ -2193,6 +2338,9 @@
                 );
                 const ariCache = JSON.parse(
                     document.getElementById("ari-cache").textContent,
+                );
+                const edmundsCache = JSON.parse(
+                    document.getElementById("edmunds-cache").textContent,
                 );
 
                 return {
@@ -2322,6 +2470,7 @@
                     })(),
                     carGurusCache,
                     ariCache,
+                    edmundsCache,
                     ccCache,
                     modelMappings,
                     autotraderMappings,
@@ -2346,6 +2495,17 @@
                         } catch {}
                         return { min: null, max: null };
                     })(),
+                    priceFilter: (() => {
+                        if (location.search) return { min: null, max: null };
+                        try {
+                            const saved = JSON.parse(
+                                localStorage.getItem("priceFilter"),
+                            );
+                            if (saved && typeof saved === "object")
+                                return saved;
+                        } catch {}
+                        return { min: null, max: null };
+                    })(),
                     showSettings: false,
                     hiddenColumns: JSON.parse(
                         localStorage.getItem("hiddenColumns") ||
@@ -2354,6 +2514,7 @@
                                       "ari",
                                       "auto_resume",
                                       "cc_seal",
+                                      "price",
                                       "forks",
                                       "good_steering_torque",
                                       "harness",
@@ -2489,6 +2650,7 @@
                         "min_steer_speed",
                         "min_enable_speed",
                         "ari",
+                        "price",
                         "cc_seal",
                         "search",
                     ],
@@ -2544,6 +2706,12 @@
                                 ari: true,
                             },
                             {
+                                key: "price",
+                                label: "Price",
+                                mobileLabel: "Price",
+                                price: true,
+                            },
+                            {
                                 key: "cc_seal",
                                 label: "CC Rating",
                                 mobileLabel: "CC",
@@ -2584,6 +2752,9 @@
                         const ariFilterActive =
                             this.ariFilter.min !== null ||
                             this.ariFilter.max !== null;
+                        const priceFilterActive =
+                            this.priceFilter.min !== null ||
+                            this.priceFilter.max !== null;
 
                         let candidates = null;
                         for (const [key, selected] of activeFilters) {
@@ -2608,7 +2779,7 @@
                                 ? [...candidates]
                                 : [...this.cars];
 
-                        if (activeSpeedFilters.length > 0 || ariFilterActive) {
+                        if (activeSpeedFilters.length > 0 || ariFilterActive || priceFilterActive) {
                             result = result.filter((car) => {
                                 for (const [key, range] of activeSpeedFilters) {
                                     const val = car[key];
@@ -2633,6 +2804,20 @@
                                     )
                                         return false;
                                 }
+                                if (priceFilterActive) {
+                                    const p = car._price;
+                                    if (p === null) return false;
+                                    if (
+                                        this.priceFilter.max !== null &&
+                                        p.min > this.priceFilter.max
+                                    )
+                                        return false;
+                                    if (
+                                        this.priceFilter.min !== null &&
+                                        p.max < this.priceFilter.min
+                                    )
+                                        return false;
+                                }
                                 return true;
                             });
                         }
@@ -2654,6 +2839,17 @@
                                         sa !== null ? (sa.min + sa.max) / 2 : 0;
                                     bv =
                                         sb !== null ? (sb.min + sb.max) / 2 : 0;
+                                } else if (this.sortCol === "price") {
+                                    const sa = a._price,
+                                        sb = b._price;
+                                    av =
+                                        sa !== null
+                                            ? (sa.min + sa.max) / 2
+                                            : -1;
+                                    bv =
+                                        sb !== null
+                                            ? (sb.min + sb.max) / 2
+                                            : -1;
                                 } else if (this.sortCol === "cc_seal") {
                                     const rank = (seals) =>
                                         seals?.length
@@ -2872,6 +3068,8 @@
                     clearFilter(colKey) {
                         if (colKey === "ari") {
                             this.ariFilter = { min: null, max: null };
+                        } else if (colKey === "price") {
+                            this.priceFilter = { min: null, max: null };
                         } else if (this.speedFilters[colKey]) {
                             this.speedFilters[colKey] = {
                                 min: null,
@@ -2889,6 +3087,7 @@
                         for (const key of Object.keys(this.speedFilters))
                             this.speedFilters[key] = { min: null, max: null };
                         this.ariFilter = { min: null, max: null };
+                        this.priceFilter = { min: null, max: null };
                     },
 
                     get activePresetKeys() {
@@ -3423,6 +3622,103 @@
                             .filter(Boolean);
                     },
 
+                    edmundsKey(make, model, year) {
+                        return `${this.toAscii(make)}|${this.toAscii(model)}|${year}`;
+                    },
+
+                    edmundsPrice(car) {
+                        const years = [...new Set(car.years)];
+                        const mins = [],
+                            maxs = [];
+                        for (const y of years) {
+                            const d =
+                                this.edmundsCache[
+                                    this.edmundsKey(car.make, car.model, y)
+                                ];
+                            if (d) {
+                                mins.push(d.min);
+                                maxs.push(d.max);
+                            }
+                        }
+                        if (!mins.length) return null;
+                        return {
+                            min: Math.min(...mins),
+                            max: Math.max(...maxs),
+                        };
+                    },
+
+                    edmundsLink(car) {
+                        const years = [...new Set(car.years)].sort(
+                            (a, b) => a - b,
+                        );
+                        const year =
+                            [...years]
+                                .reverse()
+                                .find(
+                                    (y) =>
+                                        this.edmundsCache[
+                                            this.edmundsKey(
+                                                car.make,
+                                                car.model,
+                                                y,
+                                            )
+                                        ],
+                                ) ?? years[years.length - 1];
+                        return (
+                            this.edmundsCache[
+                                this.edmundsKey(car.make, car.model, year)
+                            ]?.url ??
+                            `https://www.edmunds.com/${car.make.toLowerCase()}/${car.model.toLowerCase().replace(/ /g, "-")}/${year}/review/`
+                        );
+                    },
+
+                    edmundsYearRows(car) {
+                        const years = [...new Set(car.years)].sort(
+                            (a, b) => a - b,
+                        );
+                        return years
+                            .map((y) => {
+                                const d =
+                                    this.edmundsCache[
+                                        this.edmundsKey(car.make, car.model, y)
+                                    ];
+                                if (!d) return null;
+                                return {
+                                    year: y,
+                                    price: { min: d.min, max: d.max },
+                                    suggested: d.suggested ?? null,
+                                    avg_used: d.avg_used ?? null,
+                                    url: d.url,
+                                };
+                            })
+                            .filter(Boolean);
+                    },
+
+                    priceScale(car) {
+                        const rows = car._priceRows;
+                        if (!rows || !rows.length) return null;
+                        const vals = rows.flatMap((r) => [
+                            r.price.min, r.price.max,
+                            ...(r.suggested != null ? [r.suggested] : []),
+                            ...(r.avg_used != null ? [r.avg_used] : []),
+                        ]);
+                        const min = Math.min(...vals), max = Math.max(...vals);
+                        const sc = (v) =>
+                            min === max ? 40 : 5 + ((v - min) / (max - min)) * 110;
+                        return { min, max, sc };
+                    },
+
+                    formatPrice(n) {
+                        return "$" + Math.round(n).toLocaleString("en-US");
+                    },
+
+                    isPriceFilterActive() {
+                        return (
+                            this.priceFilter.min !== null ||
+                            this.priceFilter.max !== null
+                        );
+                    },
+
                     setSpeedUnit(unit) {
                         this.speedUnit = unit;
                         localStorage.setItem("speedUnit", unit);
@@ -3502,6 +3798,10 @@
                             car._ariLink = this.ariLink(car);
                             car._ccYearRows = this.ccYearRows(car);
                             car._ariYearRows = this.ariYearRows(car);
+                            car._price = this.edmundsPrice(car);
+                            car._priceLink = this.edmundsLink(car);
+                            car._priceRows = this.edmundsYearRows(car);
+                            car._priceScale = this.priceScale(car);
 
                             if (car._ariScore !== null) {
                                 car._ariColorMin = this.ariColor(
@@ -3644,6 +3944,13 @@
                         this.$watch("ariFilter", (v) => {
                             localStorage.setItem(
                                 "ariFilter",
+                                JSON.stringify(v),
+                            );
+                            this._saveToUrl();
+                        });
+                        this.$watch("priceFilter", (v) => {
+                            localStorage.setItem(
+                                "priceFilter",
                                 JSON.stringify(v),
                             );
                             this._saveToUrl();
