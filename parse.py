@@ -33,6 +33,51 @@ FORKS = [
 
 OPENPILOT_CACHE_FILE = os.path.join(HERE, ".openpilot_cache.json")
 CARGURUS_CACHE_FILE = os.path.join(HERE, ".cargurus_cache.json")
+CARGURUS_IDS_FILE = os.path.join(HERE, ".cargurus_ids.json")
+CAR_ALIASES_FILE = os.path.join(HERE, "car_aliases.json")
+FAMILY_MAPPINGS_FILE = os.path.join(HERE, "family_mappings.json")
+
+
+def _load_car_aliases() -> dict[str, tuple[str, str]]:
+    try:
+        with open(CAR_ALIASES_FILE) as f:
+            raw = json.load(f)
+        result = {}
+        for k, v in raw.items():
+            if k.startswith("_"):
+                continue
+            km, kmod = k.split("|", 1)
+            vm, vmod = v.split("|", 1)
+            result[(km, kmod)] = (vm, vmod)
+        return result
+    except (FileNotFoundError, json.JSONDecodeError, ValueError):
+        return {}
+
+
+CAR_ALIASES: dict[tuple[str, str], tuple[str, str]] = _load_car_aliases()
+
+
+def _load_family_mappings() -> dict[tuple[str, str], list[str]]:
+    try:
+        with open(FAMILY_MAPPINGS_FILE) as f:
+            raw = json.load(f)
+        result = {}
+        for k, v in raw.items():
+            if k.startswith("_"):
+                continue
+            make, model = k.split("|", 1)
+            result[(make, model)] = v
+        return result
+    except (FileNotFoundError, json.JSONDecodeError, ValueError):
+        return {}
+
+
+FAMILY_MAPPINGS: dict[tuple[str, str], list[str]] = _load_family_mappings()
+
+
+def resolve_alias(make: str, model: str) -> tuple[str, str]:
+    """Return the canonical (make, model) for a car, following car_aliases.json."""
+    return CAR_ALIASES.get((make, model), (make, model))
 
 
 def _extract_years_from_model(car_docs) -> list[int]:
@@ -668,13 +713,18 @@ def merge_fork_cars(fork_car_lists: list[tuple[str, list[dict]]]) -> list[dict]:
     )
 
 
+_CG_TRIVIAL_PACKAGES = {"All", "Any", ""}
+
+
 def cargurus_car_key(car: dict) -> str | None:
     years = sorted(set(car["years"]))
     if not years:
         return None
     make = to_ascii(car["make"])
     model = to_ascii(car["model"])
-    return f"{make}|{model}|{years[0]}-{years[-1]}"
+    pkg = car.get("package", "")
+    suffix = f"|{pkg}" if pkg not in _CG_TRIVIAL_PACKAGES else ""
+    return f"{make}|{model}|{years[0]}-{years[-1]}{suffix}"
 
 
 def to_ascii(text: str) -> str:
@@ -701,19 +751,121 @@ def generate_favicon_url(html_filename: str) -> str:
     return f"{base}-favicon.svg"
 
 
-def cargurus_query(car: dict) -> str | None:
-    years = sorted(set(car["years"]))
-    if not years:
+def _cg_model(model: str) -> str:
+    """Strip trailing parenthetical from model name for CarGurus lookups."""
+    return re.sub(r"\s*\([^)]*\)\s*$", "", model).strip()
+
+
+def cargurus_query_base(car: dict) -> str | None:
+    if not car["years"]:
         return None
-    make = to_ascii(car["make"])
-    model = to_ascii(car["model"])
-    return f"Make: {make}, Model: {model} {years[0]}-{years[-1]}"
+    make, model = resolve_alias(car["make"], _cg_model(car["model"]))
+    return f"{to_ascii(make)} {to_ascii(model)}"
+
+
+def cargurus_query(car: dict) -> str | None:
+    base = cargurus_query_base(car)
+    if base is None:
+        return None
+    pkg = car.get("package", "")
+    if pkg not in _CG_TRIVIAL_PACKAGES:
+        return f"{base} {pkg}"
+    return base
+
+
+def _cg_selector_fetch(path: str) -> dict:
+    url = f"https://www.cargurus.com{path}"
+    req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+    with urllib.request.urlopen(req, timeout=10) as resp:
+        return json.loads(resp.read())
+
+
+def enumerate_cargurus_ids() -> dict:
+    """Fetch complete CarGurus make→model taxonomy via the Car Selector API.
+
+    Returns a nested dict:
+        {make_name: {"id": "m4", "models": {model_name: "d2137", ...}}, ...}
+    Also writes .cargurus_ids.json.
+    """
+    makes = _cg_selector_fetch(
+        "/Cars/api/1.0/carselector/listMakes.action?searchType=USED"
+    )["makes"]
+    print(f"  Fetched {len(makes)} makes.", file=sys.stderr)
+
+    result: dict = {}
+    total = len(makes)
+    for idx, make in enumerate(makes, 1):
+        try:
+            models_resp = _cg_selector_fetch(
+                f"/Cars/api/1.0/carselector/listModels.action"
+                f"?searchType=USED&makeId={make['id']}"
+            )
+            models = {m["name"]: m["id"] for m in models_resp.get("models", [])}
+        except Exception as e:
+            print(f"  [{idx}/{total}] {make['name']}: error — {e}", file=sys.stderr)
+            models = {}
+        result[make["name"]] = {"id": make["id"], "models": models}
+        print(
+            f"  [{idx}/{total}] {make['name']}: {len(models)} models",
+            file=sys.stderr,
+        )
+        time.sleep(0.5)
+
+    with open(CARGURUS_IDS_FILE, "w") as f:
+        json.dump(dict(sorted(result.items())), f, indent=2)
+    print(f"  Saved to {CARGURUS_IDS_FILE}", file=sys.stderr)
+    return result
+
+
+def load_cargurus_ids() -> dict:
+    if os.path.exists(CARGURUS_IDS_FILE):
+        try:
+            with open(CARGURUS_IDS_FILE) as f:
+                return json.load(f)
+        except (json.JSONDecodeError, ValueError):
+            pass
+    return {}
+
+
+def warn_unmatched_cargurus(cars: list[dict], cg_ids: dict) -> None:
+    """Print a warning for each car whose make or model isn't in the CarGurus taxonomy."""
+    if not cg_ids:
+        return
+    # Normalize CG model names (some have trailing whitespace in the taxonomy)
+    cg_ids_norm = {
+        make: {m.strip(): id_ for m, id_ in entry["models"].items()}
+        for make, entry in cg_ids.items()
+    }
+    unmatched_make: list[str] = []
+    unmatched_model: list[str] = []
+    for car in cars:
+        make, model = resolve_alias(car["make"], _cg_model(car["model"]))
+        make_entry = cg_ids_norm.get(make)
+        if make_entry is None:
+            unmatched_make.append(f"{car['make']} {car['model']}")
+        elif model not in make_entry:
+            unmatched_model.append(f"{make} {model}")
+    if unmatched_make:
+        print(
+            f"  CarGurus: {len(unmatched_make)} car(s) with unrecognised make:",
+            file=sys.stderr,
+        )
+        for name in sorted(set(unmatched_make)):
+            print(f"    {name}", file=sys.stderr)
+    if unmatched_model:
+        print(
+            f"  CarGurus: {len(unmatched_model)} car(s) with unrecognised model:",
+            file=sys.stderr,
+        )
+        for name in sorted(set(unmatched_model)):
+            print(f"    {name}", file=sys.stderr)
 
 
 def fetch_cargurus_response(query: str) -> dict | None:
     url = (
-        f"https://www.cargurus.com/api/vehicle-discovery-service/v2/search/hybrid"
-        f"?query={urllib.parse.quote(query)}&locale=en_US&format=SRP&origin=SRP&devicePlatform=DESKTOP"
+        f"https://www.cargurus.com/api/vehicle-discovery-service/v2/search/suggestions"
+        f"?query={urllib.parse.quote(query)}&includeRecentSearch=false&includeSavedSearch=false"
+        f"&countryCode=UNITED_STATES&newOrUsed=USED&origin=HOMEPAGE&devicePlatform=DESKTOP"
     )
     try:
         req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
@@ -754,54 +906,99 @@ def save_cargurus_cache(cache: dict) -> None:
         json.dump(dict(sorted(cache.items())), f, indent=2)
 
 
+def _extract_cg_paths(response: dict | None) -> dict | None:
+    """Distill a suggestions API response down to the two path lists we actually need."""
+    results = (response or {}).get("data", {}).get("results")
+    if not results:
+        return None
+    trim_paths = _pick_cargurus_paths(results, want_trim=True)
+    base_paths = _pick_cargurus_paths(results, want_trim=False)
+    if trim_paths is None and base_paths is None:
+        return None
+    return {"trim_paths": trim_paths, "base_paths": base_paths}
+
+
 def fetch_cargurus_cache(cars: list[dict], retry_nulls: bool = False) -> dict:
-    """Fetch CarGurus data for all cars, updating the cache file. Returns raw response cache."""
+    """Fetch CarGurus data for all cars, updating the cache file. Returns compact path cache."""
     cache = load_cargurus_cache()
-    valid_queries = {q for car in cars if (q := cargurus_query(car)) is not None}
+    valid_queries = set()
+    for car in cars:
+        if q := cargurus_query(car):
+            valid_queries.add(q)
+        if b := cargurus_query_base(car):
+            valid_queries.add(b)
     stale = [k for k in cache if k not in valid_queries]
     if stale:
         for k in stale:
             del cache[k]
         save_cargurus_cache(cache)
-    pending = [
-        q
-        for car in cars
-        if (q := cargurus_query(car)) is not None
-        and (q not in cache or (retry_nulls and cache[q] is None))
-    ]
+    pending_set = set()
+    for car in cars:
+        for q in (cargurus_query(car), cargurus_query_base(car)):
+            if q and (q not in cache or (retry_nulls and cache[q] is None)):
+                pending_set.add(q)
+    pending = list(pending_set)
     total = len(pending)
 
     def fetch_one(query: str, idx: int) -> tuple[str, object]:
         print(f"  [{idx}/{total}] Fetching CarGurus: {query}", file=sys.stderr)
-        return query, fetch_cargurus_response(query)
+        return query, _extract_cg_paths(fetch_cargurus_response(query))
 
     with concurrent.futures.ThreadPoolExecutor(max_workers=5) as pool:
         futures = {pool.submit(fetch_one, q, i + 1): q for i, q in enumerate(pending)}
         for future in concurrent.futures.as_completed(futures):
-            query, response = future.result()
-            if isinstance(response, dict) and response.get("success") == "FAILURE":
-                response = None
-            cache[query] = response
+            query, entry = future.result()
+            cache[query] = entry
             save_cargurus_cache(cache)
     return cache
 
 
+def _pick_cargurus_paths(results: list[dict], want_trim: bool) -> list[str] | None:
+    """Pick the best makeModelTrimPaths from a suggestions response results list.
+
+    Prefers MakeModelTrim when want_trim is True (car has a non-trivial package),
+    falls back to MakeModel. Always ignores year-specific result types so the caller
+    can apply its own year range.
+    """
+    preferred = "MakeModelTrim" if want_trim else "MakeModel"
+    fallback = "MakeModel" if want_trim else "MakeModelTrim"
+    for type_ in (preferred, fallback):
+        for r in results:
+            if r.get("type") == type_:
+                paths = r.get("filterCriteria", {}).get("makeModelTrimPaths")
+                if paths:
+                    return paths
+    # Last resort: any result with paths
+    for r in results:
+        paths = r.get("filterCriteria", {}).get("makeModelTrimPaths")
+        if paths:
+            return paths
+    return None
+
+
 def build_cargurus_js_cache(cars: list[dict], raw_cache: dict) -> dict:
-    """Convert raw API response cache to JS-ready {carKey: {url}} or {carKey: {error}} map."""
+    """Convert compact path cache to JS-ready {carKey: {paths}} or {carKey: {error}} map."""
     result = {}
     for car in cars:
         key = cargurus_car_key(car)
-        query = cargurus_query(car)
-        if key is None or query is None:
+        if key is None:
             continue
-        response = raw_cache.get(query)
-        if (
-            response
-            and response.get("success") != "FAILURE"
-            and response.get("filterCriteria", {}).get("makeModelTrimPaths")
-        ):
-            result[key] = {"paths": response["filterCriteria"]["makeModelTrimPaths"]}
-        elif query in raw_cache:
+        pkg = car.get("package", "")
+        want_trim = pkg not in _CG_TRIVIAL_PACKAGES
+        queries = list(dict.fromkeys(
+            q for q in (cargurus_query(car), cargurus_query_base(car)) if q
+        ))
+        matched = False
+        for i, query in enumerate(queries):
+            entry = raw_cache.get(query)
+            if entry:
+                use_trim = want_trim and i == 0
+                paths = entry.get("trim_paths" if use_trim else "base_paths")
+                if paths:
+                    result[key] = {"paths": paths}
+                    matched = True
+                    break
+        if not matched and queries[0] in raw_cache:
             result[key] = {"error": True}
     return result
 
@@ -945,25 +1142,6 @@ CC_SEALS = {
     "worst.png": "Avoid Like The Plague",
 }
 
-MODEL_MAPPINGS: dict[tuple[str, str], list[str]] = {
-    ("Lexus", "CT Hybrid"): ["CT 200h"],
-    ("Lexus", "ES Hybrid"): ["ES 300h"],
-    ("Lexus", "ES"): ["ES 250", "ES 300", "ES 330", "ES 350", "ES 350f"],
-    ("Lexus", "IS"): ["IS 200", "IS 250", "IS 250t", "IS 300", "IS 350", "IS 500"],
-    ("Lexus", "LC Hybrid"): ["LC 500h"],
-    ("Lexus", "LC"): ["LC 500"],
-    ("Lexus", "LS Hybrid"): ["LS 500h", "LS 600h"],
-    ("Lexus", "LS"): ["LS 400", "LS 430", "LS 460", "LS 500"],
-    ("Lexus", "LX"): ["LX 470", "LX 570", "LX 600"],
-    ("Lexus", "NX Hybrid"): ["NX 200h", "NX 350h", "NX 450h"],
-    ("Lexus", "NX"): ["NX", "NX 200", "NX 200t", "NX200T", "NX 250", "NX 350"],
-    ("Lexus", "RC Hybrid"): ["RC 300h"],
-    ("Lexus", "RC"): ["RC 200t", "RC 300", "RC 350", "RC F"],
-    ("Lexus", "RX Hybrid"): ["RX 400h", "RX 450h", "RX 450hL", "RX 500h"],
-    ("Lexus", "RX"): ["RX 300", "RX 330", "RX 350", "RX 350L"],
-    ("Lexus", "UX Hybrid"): ["UX 200h", "UX 250h"],
-}
-
 AUTOTRADER_MODELS_CACHE_FILE = os.path.join(HERE, ".autotrader_models_cache.json")
 
 
@@ -987,7 +1165,7 @@ def _build_autotrader_mappings() -> dict[tuple[str, str], str]:
         at_lookup[make_entry["name"]] = models
 
     mappings: dict[tuple[str, str], str] = {}
-    for (make, _), variants in MODEL_MAPPINGS.items():
+    for (make, _), variants in FAMILY_MAPPINGS.items():
         make_lookup = at_lookup.get(make, {})
         for variant in variants:
             code = make_lookup.get(norm(variant))
@@ -1138,7 +1316,7 @@ def fetch_cc_cache(cars: list[dict], retry_nulls: bool = False) -> dict:
         for car in cars
         for year in sorted(set(car["years"]))
         for raw_model in (
-            MODEL_MAPPINGS.get((car["make"], car["model"])) or [car["model"]]
+            FAMILY_MAPPINGS.get((car["make"], car["model"])) or [car["model"]]
         )
     }
     stale = [k for k in cache if k not in valid_keys]
@@ -1151,7 +1329,7 @@ def fetch_cc_cache(cars: list[dict], retry_nulls: bool = False) -> dict:
         for car in cars
         for year in sorted(set(car["years"]))
         for raw_model in (
-            MODEL_MAPPINGS.get((car["make"], car["model"])) or [car["model"]]
+            FAMILY_MAPPINGS.get((car["make"], car["model"])) or [car["model"]]
         )
         if (k := cc_cache_key(car["make"], raw_model, year)) not in cache
         or (retry_nulls and cache[k] is None)
@@ -1242,7 +1420,7 @@ def build_filter_index(cars: list[dict], cc_cache: dict) -> dict:
 
         # Compute cc_seal membership using the same lookup as the JS
         make, model = car["make"], car["model"]
-        raw_models = MODEL_MAPPINGS.get((make, model)) or [model]
+        raw_models = FAMILY_MAPPINGS.get((make, model)) or [model]
         has_none = False
         seal_values: set[str] = set()
         for year in sorted(set(car["years"])):
@@ -1306,7 +1484,7 @@ def generate_html(
     env = jinja2.Environment(loader=jinja2.FileSystemLoader(here))
     template = env.get_template("template.html")
     model_mappings_json = json.dumps(
-        {f"{make}|{model}": mapped for (make, model), mapped in MODEL_MAPPINGS.items()},
+        {f"{make}|{model}": mapped for (make, model), mapped in FAMILY_MAPPINGS.items()},
         separators=(",", ":"),
     )
     autotrader_mappings_json = json.dumps(
@@ -1467,6 +1645,11 @@ def main():
         help="Re-fetch all cached entries whose stored value is null (implies --retry-nulls-cg/ari/cc).",
     )
     parser.add_argument(
+        "--enumerate-cg",
+        action="store_true",
+        help="Fetch the full CarGurus make/model taxonomy and save to .cargurus_ids.json, then exit.",
+    )
+    parser.add_argument(
         "--watch",
         action="store_true",
         help="Watch template.html for changes and regenerate HTML automatically.",
@@ -1474,6 +1657,11 @@ def main():
     args = parser.parse_args()
     if args.retry_nulls_all:
         args.retry_nulls_cg = args.retry_nulls_ari = args.retry_nulls_cc = True
+
+    if args.enumerate_cg:
+        print("Enumerating CarGurus make/model taxonomy...", file=sys.stderr)
+        enumerate_cargurus_ids()
+        return
 
     if args.dump_fork:
         print(json.dumps(_load_cars_directly(args.dump_fork)))
@@ -1546,6 +1734,7 @@ def main():
         cc_cache = fut_cc.result()
 
     cargurus_js_cache = build_cargurus_js_cache(cars, raw_cache)
+    warn_unmatched_cargurus(cars, load_cargurus_ids())
 
     if args.json_out:
         os.makedirs(os.path.dirname(os.path.abspath(args.json_out)), exist_ok=True)

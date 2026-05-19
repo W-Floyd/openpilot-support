@@ -1,0 +1,54 @@
+{
+  "_comment": "Maps 'Make|Model' (openpilot name) to 'Make|Model' (canonical/provider name). Used universally across all data sources. Add entries here whenever a car appears under a different name in external databases.",
+
+  "Acura|MDX Hybrid": "Acura|MDX",
+
+  "Audi|A3 Sportback e-tron": "Audi|A3 Sportback",
+  "Audi|RS3": "Audi|RS 3",
+
+  "Ford|Escape Plug-in Hybrid": "Ford|Escape Hybrid Plug-in",
+  "Ford|F-150 Hybrid": "Ford|F-150",
+  "Ford|Focus Hybrid": "Ford|Focus",
+  "Ford|Kuga": "Ford|Escape",
+  "Ford|Kuga Hybrid": "Ford|Escape Hybrid",
+  "Ford|Kuga Plug-in Hybrid": "Ford|Escape Hybrid Plug-in",
+  "Ford|Maverick Hybrid": "Ford|Maverick",
+
+  "Honda|Clarity": "Honda|Clarity Hybrid Plug-In",
+
+  "Hyundai|Azera Hybrid": "Hyundai|Azera",
+  "Hyundai|Ioniq Plug-in Hybrid": "Hyundai|Ioniq Hybrid Plug-In",
+  "Hyundai|Kona Hybrid": "Hyundai|Kona",
+  "Hyundai|Santa Fe Plug-in Hybrid": "Hyundai|Santa Fe Hybrid Plug-In",
+  "Hyundai|Tucson Diesel": "Hyundai|Tucson",
+  "Hyundai|Tucson Plug-in Hybrid": "Hyundai|Tucson Hybrid Plug-In",
+
+  "Kia|K5 Hybrid": "Kia|K5",
+  "Kia|Niro Hybrid": "Kia|Niro",
+  "Kia|Niro Plug-in Hybrid": "Kia|Niro Hybrid Plug-In",
+  "Kia|Sorento Plug-in Hybrid": "Kia|Sorento Plug-In Hybrid",
+
+  "Lexus|NS": "Lexus|NX",
+
+  "Lincoln|Aviator Plug-in Hybrid": "Lincoln|Aviator",
+
+  "Mazda|3": "Mazda|MAZDA3",
+  "Mazda|6": "Mazda|MAZDA6",
+
+  "Nissan|Leaf": "Nissan|LEAF",
+  "Nissan|X-Trail": "Nissan|Rogue",
+
+  "Subaru|XV": "Subaru|Crosstrek",
+
+  "Toyota|bZ4x": "Toyota|bZ4X",
+  "Toyota|C-HR Hybrid": "Toyota|C-HR",
+
+  "Volkswagen|Arteon R": "Volkswagen|Arteon",
+  "Volkswagen|Arteon eHybrid": "Volkswagen|Arteon",
+  "Volkswagen|Golf GTD": "Volkswagen|Golf",
+  "Volkswagen|Golf GTE": "Volkswagen|Golf",
+  "Volkswagen|Passat Alltrack": "Volkswagen|Passat",
+  "Volkswagen|Passat GTE": "Volkswagen|Passat",
+  "Volkswagen|Passat NMS": "Volkswagen|Passat",
+  "Volkswagen|Tiguan eHybrid": "Volkswagen|Tiguan"
+}

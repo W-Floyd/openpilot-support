@@ -1,0 +1,20 @@
+{
+  "_comment": "Maps 'Make|FamilyModel' (openpilot name) to a list of specific variant model names used by external sources (CarComplaints, AutoTrader, etc.). Used when a source names models by engine/trim variant rather than family.",
+
+  "Lexus|CT Hybrid": ["CT 200h"],
+  "Lexus|ES": ["ES 250", "ES 300", "ES 330", "ES 350", "ES 350f"],
+  "Lexus|ES Hybrid": ["ES 300h"],
+  "Lexus|IS": ["IS 200", "IS 250", "IS 250t", "IS 300", "IS 350", "IS 500"],
+  "Lexus|LC": ["LC 500"],
+  "Lexus|LC Hybrid": ["LC 500h"],
+  "Lexus|LS": ["LS 400", "LS 430", "LS 460", "LS 500"],
+  "Lexus|LS Hybrid": ["LS 500h", "LS 600h"],
+  "Lexus|LX": ["LX 470", "LX 570", "LX 600"],
+  "Lexus|NX": ["NX", "NX 200", "NX 200t", "NX200T", "NX 250", "NX 350"],
+  "Lexus|NX Hybrid": ["NX 200h", "NX 350h", "NX 450h"],
+  "Lexus|RC": ["RC 200t", "RC 300", "RC 350", "RC F"],
+  "Lexus|RC Hybrid": ["RC 300h"],
+  "Lexus|RX": ["RX 300", "RX 330", "RX 350", "RX 350L"],
+  "Lexus|RX Hybrid": ["RX 400h", "RX 450h", "RX 450hL", "RX 500h"],
+  "Lexus|UX Hybrid": ["UX 200h", "UX 250h"]
+}

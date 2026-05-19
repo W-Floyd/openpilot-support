@@ -3343,7 +3343,9 @@
                         const years = [...new Set(car.years)].sort(
                             (a, b) => a - b,
                         );
-                        return `${this.toAscii(car.make)}|${this.toAscii(car.model)}|${years[0]}-${years[years.length - 1]}`;
+                        const pkg = car.package;
+                        const suffix = pkg && pkg !== "All" && pkg !== "Any" ? `|${pkg}` : "";
+                        return `${this.toAscii(car.make)}|${this.toAscii(car.model)}|${years[0]}-${years[years.length - 1]}${suffix}`;
                     },
 
                     urlYears(car) {
