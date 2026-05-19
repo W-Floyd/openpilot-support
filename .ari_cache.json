@@ -126,7 +126,10 @@
     "score": 80,
     "url": "https://autoreliabilityindex.com/acura/tlx/2025"
   },
-  "Acura|ZDX|2024": null,
+  "Acura|ZDX|2024": {
+    "score": 76,
+    "url": "https://autoreliabilityindex.com/acura/zdx/2024"
+  },
   "Audi|A3 Sportback e-tron|2017": null,
   "Audi|A3 Sportback e-tron|2018": null,
   "Audi|A3|2014": null,
@@ -2205,9 +2208,18 @@
   "Toyota|Venza|2025": null,
   "Toyota|Yaris (Non-US only)|2020": null,
   "Toyota|Yaris (Non-US only)|2023": null,
-  "Toyota|bZ4x|2023": null,
-  "Toyota|bZ4x|2024": null,
-  "Toyota|bZ4x|2025": null,
+  "Toyota|bZ4x|2023": {
+    "score": 73,
+    "url": "https://autoreliabilityindex.com/toyota/bz4x/2023"
+  },
+  "Toyota|bZ4x|2024": {
+    "score": 75,
+    "url": "https://autoreliabilityindex.com/toyota/bz4x/2024"
+  },
+  "Toyota|bZ4x|2025": {
+    "score": 76,
+    "url": "https://autoreliabilityindex.com/toyota/bz4x/2025"
+  },
   "Volkswagen|Arteon R|2020": null,
   "Volkswagen|Arteon R|2021": null,
   "Volkswagen|Arteon R|2022": null,

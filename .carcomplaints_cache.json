@@ -1225,14 +1225,14 @@
   },
   "Chevrolet|Silverado 1500|2021": {
     "url": "https://www.carcomplaints.com/Chevrolet/Silverado_1500/2021/",
-    "complaints": 923,
+    "complaints": 983,
     "recalls": 7,
     "tsbs": 1601,
     "investigations": 4,
     "top_problems": [
       "Ecm Warning Light Comes On, Loss Of Steering, Can't Drive in the 2021 Chevrolet Silverado 1500",
-      "Long Crank No Start in the 2021 Chevrolet Silverado 1500",
-      "Lifter Failure in the 2021 Chevrolet Silverado 1500"
+      "P0011,P0016,P0089,P146b,P0330,P146f,P228d in the 2021 Chevrolet Silverado 1500",
+      "Long Crank No Start in the 2021 Chevrolet Silverado 1500"
     ],
     "seal": null
   },
@@ -2316,7 +2316,7 @@
   },
   "Honda|Accord|2016": {
     "url": "https://www.carcomplaints.com/Honda/Accord/2016/",
-    "complaints": 1000,
+    "complaints": 282,
     "recalls": 3,
     "tsbs": 232,
     "investigations": null,
@@ -2443,7 +2443,7 @@
   "Honda|CR-V Hybrid|2019": null,
   "Honda|CR-V Hybrid|2020": {
     "url": "https://www.carcomplaints.com/Honda/CR-V_Hybrid/2020/",
-    "complaints": 118,
+    "complaints": 120,
     "recalls": 4,
     "tsbs": 21,
     "investigations": 3,
@@ -2919,14 +2919,14 @@
   },
   "Honda|HR-V|2022": {
     "url": "https://www.carcomplaints.com/Honda/HR-V/2022/",
-    "complaints": 111,
+    "complaints": 143,
     "recalls": 3,
     "tsbs": 11,
     "investigations": 1,
     "top_problems": [
       "Omg Seats in the 2022 Honda HR-V",
-      "Sunroof Exploded in the 2022 Honda HR-V",
-      "Loud Engine Noise & Increased With Accel in the 2022 Honda HR-V"
+      "Loud Engine Noise & Increased With Accel in the 2022 Honda HR-V",
+      "Weak Battery in the 2022 Honda HR-V"
     ],
     "seal": null
   },

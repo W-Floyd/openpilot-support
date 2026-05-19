@@ -488,10 +488,7 @@
     "filterCriteria": {
       "entityId": "d2326",
       "makeModelTrimPaths": [
-        "m19/d2326/e-tron 1.4T Premium FWD",
-        "m19/d2326/e-tron 1.4T Premium Plus FWD",
-        "m19/d2326/e-tron 1.4T Progressiv FWD",
-        "m19/d2326/e-tron 1.4T Prestige FWD"
+        "m19/d2326"
       ],
       "startYear": 2017,
       "endYear": 2018,
@@ -636,22 +633,8 @@
     "filterCriteria": {
       "entityId": "d1512",
       "makeModelTrimPaths": [
-        "m3/d1512/M340i xDrive Sedan AWD",
-        "m3/d1512/335i xDrive Sedan AWD",
-        "m3/d1512/335d Sedan RWD",
-        "m3/d1512/325i Sedan RWD",
-        "m3/d1512/330e iPerformance Sedan RWD",
-        "m3/d1512/328xi Sedan AWD",
-        "m3/d1512/330i Sedan RWD",
-        "m3/d1512/328d Sedan RWD",
-        "m3/d1512/330i xDrive Sedan AWD",
-        "m3/d1512/328i xDrive Sedan AWD",
-        "m3/d1512/320i Sedan RWD",
-        "m3/d1512/328d xDrive Sedan AWD",
-        "m3/d1512/325xi Sedan AWD",
-        "m3/d1512/328i Sedan RWD",
-        "m3/d1512/335xi Sedan AWD",
-        "m3/d1512/M340i Sedan RWD"
+        "m3/d1512",
+        "m3/d2240"
       ],
       "startYear": 2005,
       "endYear": 2011,
