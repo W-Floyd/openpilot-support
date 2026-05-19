@@ -17,10 +17,12 @@
     "score": 74,
     "url": "https://autoreliabilityindex.com/acura/integra/2025"
   },
+  "Acura|Integra|2026": null,
   "Acura|MDX Hybrid|2017": null,
   "Acura|MDX Hybrid|2018": null,
   "Acura|MDX Hybrid|2019": null,
   "Acura|MDX Hybrid|2020": null,
+  "Acura|MDX|2014": null,
   "Acura|MDX|2015": null,
   "Acura|MDX|2016": null,
   "Acura|MDX|2017": null,
@@ -115,6 +117,10 @@
   "Acura|TLX|2023": {
     "score": 79,
     "url": "https://autoreliabilityindex.com/acura/tlx/2023"
+  },
+  "Acura|TLX|2024": {
+    "score": 80,
+    "url": "https://autoreliabilityindex.com/acura/tlx/2024"
   },
   "Acura|TLX|2025": {
     "score": 80,
@@ -770,6 +776,9 @@
   "Honda|Clarity|2019": null,
   "Honda|Clarity|2020": null,
   "Honda|Clarity|2021": null,
+  "Honda|Fit (Taiwan)|2021": null,
+  "Honda|Fit (Taiwan)|2024": null,
+  "Honda|Fit (Taiwan)|2025": null,
   "Honda|Fit|2018": null,
   "Honda|Fit|2019": null,
   "Honda|Fit|2020": null,
@@ -914,6 +923,7 @@
     "url": "https://autoreliabilityindex.com/honda/pilot/2025"
   },
   "Honda|Pilot|2026": null,
+  "Honda|Prelude|2026": null,
   "Honda|Prologue|2024": {
     "score": 72,
     "url": "https://autoreliabilityindex.com/honda/prologue/2024"

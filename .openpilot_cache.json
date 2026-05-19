@@ -30140,6 +30140,34 @@
   "StarPilot": [
     {
       "make": "Acura",
+      "model": "ADX",
+      "years": [
+        2025,
+        2026
+      ],
+      "name": "Acura ADX 2025-26",
+      "package": "All",
+      "support_type": "Dashcam mode",
+      "support_link": "#dashcam",
+      "merged": true,
+      "min_steer_speed": 0.0,
+      "min_enable_speed": -1.0,
+      "auto_resume": true,
+      "good_steering_torque": true,
+      "openpilot_longitudinal": "Stock",
+      "video": null,
+      "setup_video": null,
+      "detail_sentence": "openpilot upgrades your <strong>Acura ADX</strong> with automated lane centering <strong>at all speeds</strong>, and adaptive cruise control <strong>that automatically resumes from a stop</strong>.",
+      "harness": "Honda Nidec",
+      "extra_cars_columns": {
+        "make": "Acura",
+        "model": "ADX 2025-26",
+        "package": "All",
+        "support": "[Dashcam mode](#dashcam)"
+      }
+    },
+    {
+      "make": "Acura",
       "model": "ILX",
       "years": [
         2016,
@@ -30225,6 +30253,65 @@
     },
     {
       "make": "Acura",
+      "model": "Integra",
+      "years": [
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "name": "Acura Integra 2023-26",
+      "package": "All",
+      "support_type": "Dashcam mode",
+      "support_link": "#dashcam",
+      "merged": true,
+      "min_steer_speed": 0.0,
+      "min_enable_speed": -1.0,
+      "auto_resume": true,
+      "good_steering_torque": true,
+      "openpilot_longitudinal": "Stock",
+      "video": null,
+      "setup_video": null,
+      "detail_sentence": "openpilot upgrades your <strong>Acura Integra</strong> with automated lane centering <strong>at all speeds</strong>, and adaptive cruise control <strong>that automatically resumes from a stop</strong>.",
+      "harness": "Honda Nidec",
+      "extra_cars_columns": {
+        "make": "Acura",
+        "model": "Integra 2023-26",
+        "package": "All",
+        "support": "[Dashcam mode](#dashcam)"
+      }
+    },
+    {
+      "make": "Acura",
+      "model": "MDX",
+      "years": [
+        2014,
+        2015,
+        2016
+      ],
+      "name": "Acura MDX 2014-16",
+      "package": "Advance Package",
+      "support_type": "Dashcam mode",
+      "support_link": "#dashcam",
+      "merged": true,
+      "min_steer_speed": 0.0,
+      "min_enable_speed": -1.0,
+      "auto_resume": true,
+      "good_steering_torque": true,
+      "openpilot_longitudinal": "Stock",
+      "video": null,
+      "setup_video": null,
+      "detail_sentence": "openpilot upgrades your <strong>Acura MDX</strong> with automated lane centering <strong>at all speeds</strong>, and adaptive cruise control <strong>that automatically resumes from a stop</strong>.",
+      "harness": "Honda Nidec",
+      "extra_cars_columns": {
+        "make": "Acura",
+        "model": "MDX 2014-16",
+        "package": "Advance Package",
+        "support": "[Dashcam mode](#dashcam)"
+      }
+    },
+    {
+      "make": "Acura",
       "model": "MDX",
       "years": [
         2015,
@@ -30257,6 +30344,35 @@
       "years": [
         2017,
         2018,
+        2019
+      ],
+      "name": "Acura MDX 2017-19",
+      "package": "All",
+      "support_type": "Dashcam mode",
+      "support_link": "#dashcam",
+      "merged": true,
+      "min_steer_speed": 0.0,
+      "min_enable_speed": -1.0,
+      "auto_resume": true,
+      "good_steering_torque": true,
+      "openpilot_longitudinal": "Stock",
+      "video": null,
+      "setup_video": null,
+      "detail_sentence": "openpilot upgrades your <strong>Acura MDX</strong> with automated lane centering <strong>at all speeds</strong>, and adaptive cruise control <strong>that automatically resumes from a stop</strong>.",
+      "harness": "Honda Nidec",
+      "extra_cars_columns": {
+        "make": "Acura",
+        "model": "MDX 2017-19",
+        "package": "All",
+        "support": "[Dashcam mode](#dashcam)"
+      }
+    },
+    {
+      "make": "Acura",
+      "model": "MDX",
+      "years": [
+        2017,
+        2018,
         2019,
         2020
       ],
@@ -30279,6 +30395,62 @@
         "model": "MDX 2017-20",
         "package": "All",
         "support": "[Community](#community)"
+      }
+    },
+    {
+      "make": "Acura",
+      "model": "MDX",
+      "years": [
+        2020
+      ],
+      "name": "Acura MDX 2020",
+      "package": "All",
+      "support_type": "Dashcam mode",
+      "support_link": "#dashcam",
+      "merged": true,
+      "min_steer_speed": 0.0,
+      "min_enable_speed": -1.0,
+      "auto_resume": true,
+      "good_steering_torque": true,
+      "openpilot_longitudinal": "Stock",
+      "video": null,
+      "setup_video": null,
+      "detail_sentence": "openpilot upgrades your <strong>Acura MDX</strong> with automated lane centering <strong>at all speeds</strong>, and adaptive cruise control <strong>that automatically resumes from a stop</strong>.",
+      "harness": "Honda Nidec",
+      "extra_cars_columns": {
+        "make": "Acura",
+        "model": "MDX 2020",
+        "package": "All",
+        "support": "[Dashcam mode](#dashcam)"
+      }
+    },
+    {
+      "make": "Acura",
+      "model": "MDX",
+      "years": [
+        2022,
+        2023,
+        2024
+      ],
+      "name": "Acura MDX 2022-24",
+      "package": "All",
+      "support_type": "Dashcam mode",
+      "support_link": "#dashcam",
+      "merged": true,
+      "min_steer_speed": 19.444444444444446,
+      "min_enable_speed": -1.0,
+      "auto_resume": true,
+      "good_steering_torque": true,
+      "openpilot_longitudinal": "Stock",
+      "video": null,
+      "setup_video": null,
+      "detail_sentence": "openpilot upgrades your <strong>Acura MDX</strong> with automated lane centering <strong>above 43 mph</strong>, and adaptive cruise control <strong>that automatically resumes from a stop</strong>.",
+      "harness": "Honda Nidec",
+      "extra_cars_columns": {
+        "make": "Acura",
+        "model": "MDX 2022-24",
+        "package": "All",
+        "support": "[Dashcam mode](#dashcam)"
       }
     },
     {
@@ -30325,7 +30497,7 @@
       "min_enable_speed": -1.0,
       "auto_resume": true,
       "good_steering_torque": true,
-      "openpilot_longitudinal": "Stock",
+      "openpilot_longitudinal": "openpilot available",
       "video": null,
       "setup_video": null,
       "detail_sentence": "openpilot upgrades your <strong>Acura MDX</strong> with automated lane centering <strong>at all speeds</strong>, and adaptive cruise control <strong>that automatically resumes from a stop</strong>.",
@@ -30335,6 +30507,62 @@
         "model": "MDX 2025",
         "package": "All except Type S",
         "support": "[Upstream](#upstream)"
+      }
+    },
+    {
+      "make": "Acura",
+      "model": "MDX Hybrid",
+      "years": [
+        2017,
+        2018,
+        2019
+      ],
+      "name": "Acura MDX Hybrid 2017-19",
+      "package": "All",
+      "support_type": "Dashcam mode",
+      "support_link": "#dashcam",
+      "merged": true,
+      "min_steer_speed": 0.0,
+      "min_enable_speed": -1.0,
+      "auto_resume": true,
+      "good_steering_torque": true,
+      "openpilot_longitudinal": "Stock",
+      "video": null,
+      "setup_video": null,
+      "detail_sentence": "openpilot upgrades your <strong>Acura MDX Hybrid</strong> with automated lane centering <strong>at all speeds</strong>, and adaptive cruise control <strong>that automatically resumes from a stop</strong>.",
+      "harness": "Honda Nidec",
+      "extra_cars_columns": {
+        "make": "Acura",
+        "model": "MDX Hybrid 2017-19",
+        "package": "All",
+        "support": "[Dashcam mode](#dashcam)"
+      }
+    },
+    {
+      "make": "Acura",
+      "model": "MDX Hybrid",
+      "years": [
+        2020
+      ],
+      "name": "Acura MDX Hybrid 2020",
+      "package": "All",
+      "support_type": "Dashcam mode",
+      "support_link": "#dashcam",
+      "merged": true,
+      "min_steer_speed": 0.0,
+      "min_enable_speed": -1.0,
+      "auto_resume": true,
+      "good_steering_torque": true,
+      "openpilot_longitudinal": "Stock",
+      "video": null,
+      "setup_video": null,
+      "detail_sentence": "openpilot upgrades your <strong>Acura MDX Hybrid</strong> with automated lane centering <strong>at all speeds</strong>, and adaptive cruise control <strong>that automatically resumes from a stop</strong>.",
+      "harness": "Honda Nidec",
+      "extra_cars_columns": {
+        "make": "Acura",
+        "model": "MDX Hybrid 2020",
+        "package": "All",
+        "support": "[Dashcam mode](#dashcam)"
       }
     },
     {
@@ -30427,6 +30655,37 @@
     },
     {
       "make": "Acura",
+      "model": "RDX",
+      "years": [
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "name": "Acura RDX 2022-26",
+      "package": "All",
+      "support_type": "Dashcam mode",
+      "support_link": "#dashcam",
+      "merged": true,
+      "min_steer_speed": 19.444444444444446,
+      "min_enable_speed": -1.0,
+      "auto_resume": true,
+      "good_steering_torque": true,
+      "openpilot_longitudinal": "Stock",
+      "video": null,
+      "setup_video": null,
+      "detail_sentence": "openpilot upgrades your <strong>Acura RDX</strong> with automated lane centering <strong>above 43 mph</strong>, and adaptive cruise control <strong>that automatically resumes from a stop</strong>.",
+      "harness": "Honda Nidec",
+      "extra_cars_columns": {
+        "make": "Acura",
+        "model": "RDX 2022-26",
+        "package": "All",
+        "support": "[Dashcam mode](#dashcam)"
+      }
+    },
+    {
+      "make": "Acura",
       "model": "RLX",
       "years": [
         2017
@@ -30462,6 +30721,35 @@
       ],
       "name": "Acura TLX 2015-17",
       "package": "Advance Package",
+      "support_type": "Dashcam mode",
+      "support_link": "#dashcam",
+      "merged": true,
+      "min_steer_speed": 0.0,
+      "min_enable_speed": -1.0,
+      "auto_resume": true,
+      "good_steering_torque": true,
+      "openpilot_longitudinal": "Stock",
+      "video": null,
+      "setup_video": null,
+      "detail_sentence": "openpilot upgrades your <strong>Acura TLX</strong> with automated lane centering <strong>at all speeds</strong>, and adaptive cruise control <strong>that automatically resumes from a stop</strong>.",
+      "harness": "Honda Nidec",
+      "extra_cars_columns": {
+        "make": "Acura",
+        "model": "TLX 2015-17",
+        "package": "Advance Package",
+        "support": "[Dashcam mode](#dashcam)"
+      }
+    },
+    {
+      "make": "Acura",
+      "model": "TLX",
+      "years": [
+        2015,
+        2016,
+        2017
+      ],
+      "name": "Acura TLX 2015-17",
+      "package": "Advance Package",
       "support_type": "Community",
       "support_link": "#community",
       "merged": false,
@@ -30479,6 +30767,35 @@
         "model": "TLX 2015-17",
         "package": "Advance Package",
         "support": "[Community](#community)"
+      }
+    },
+    {
+      "make": "Acura",
+      "model": "TLX",
+      "years": [
+        2018,
+        2019,
+        2020
+      ],
+      "name": "Acura TLX 2018-20",
+      "package": "All",
+      "support_type": "Dashcam mode",
+      "support_link": "#dashcam",
+      "merged": true,
+      "min_steer_speed": 0.0,
+      "min_enable_speed": -1.0,
+      "auto_resume": true,
+      "good_steering_torque": true,
+      "openpilot_longitudinal": "Stock",
+      "video": null,
+      "setup_video": null,
+      "detail_sentence": "openpilot upgrades your <strong>Acura TLX</strong> with automated lane centering <strong>at all speeds</strong>, and adaptive cruise control <strong>that automatically resumes from a stop</strong>.",
+      "harness": "Honda Nidec",
+      "extra_cars_columns": {
+        "make": "Acura",
+        "model": "TLX 2018-20",
+        "package": "All",
+        "support": "[Dashcam mode](#dashcam)"
       }
     },
     {
@@ -30563,6 +30880,34 @@
         "model": "TLX 2022-23",
         "package": "All",
         "support": "[Community](#community)"
+      }
+    },
+    {
+      "make": "Acura",
+      "model": "TLX",
+      "years": [
+        2024,
+        2025
+      ],
+      "name": "Acura TLX 2024-25",
+      "package": "All",
+      "support_type": "Dashcam mode",
+      "support_link": "#dashcam",
+      "merged": true,
+      "min_steer_speed": 0.0,
+      "min_enable_speed": -1.0,
+      "auto_resume": true,
+      "good_steering_torque": true,
+      "openpilot_longitudinal": "Stock",
+      "video": null,
+      "setup_video": null,
+      "detail_sentence": "openpilot upgrades your <strong>Acura TLX</strong> with automated lane centering <strong>at all speeds</strong>, and adaptive cruise control <strong>that automatically resumes from a stop</strong>.",
+      "harness": "Honda Nidec",
+      "extra_cars_columns": {
+        "make": "Acura",
+        "model": "TLX 2024-25",
+        "package": "All",
+        "support": "[Dashcam mode](#dashcam)"
       }
     },
     {
@@ -33059,6 +33404,34 @@
       ],
       "name": "Honda Accord 2016-17",
       "package": "Honda Sensing",
+      "support_type": "Dashcam mode",
+      "support_link": "#dashcam",
+      "merged": true,
+      "min_steer_speed": 0.0,
+      "min_enable_speed": -1.0,
+      "auto_resume": true,
+      "good_steering_torque": true,
+      "openpilot_longitudinal": "Stock",
+      "video": null,
+      "setup_video": null,
+      "detail_sentence": "openpilot upgrades your <strong>Honda Accord</strong> with automated lane centering <strong>at all speeds</strong>, and adaptive cruise control <strong>that automatically resumes from a stop</strong>.",
+      "harness": "Honda Nidec",
+      "extra_cars_columns": {
+        "make": "Honda",
+        "model": "Accord 2016-17",
+        "package": "Honda Sensing",
+        "support": "[Dashcam mode](#dashcam)"
+      }
+    },
+    {
+      "make": "Honda",
+      "model": "Accord",
+      "years": [
+        2016,
+        2017
+      ],
+      "name": "Honda Accord 2016-17",
+      "package": "Honda Sensing",
       "support_type": "Community",
       "support_link": "#community",
       "merged": false,
@@ -33126,7 +33499,7 @@
       "min_enable_speed": -1.0,
       "auto_resume": true,
       "good_steering_torque": true,
-      "openpilot_longitudinal": "Stock",
+      "openpilot_longitudinal": "openpilot available",
       "video": null,
       "setup_video": null,
       "detail_sentence": "openpilot upgrades your <strong>Honda Accord</strong> with automated lane centering <strong>at all speeds</strong>, and adaptive cruise control <strong>that automatically resumes from a stop</strong>.",
@@ -33136,6 +33509,33 @@
         "model": "Accord 2023-25",
         "package": "All",
         "support": "[Upstream](#upstream)"
+      }
+    },
+    {
+      "make": "Honda",
+      "model": "Accord Hybrid",
+      "years": [
+        2017
+      ],
+      "name": "Honda Accord Hybrid 2017",
+      "package": "All",
+      "support_type": "Dashcam mode",
+      "support_link": "#dashcam",
+      "merged": true,
+      "min_steer_speed": 0.0,
+      "min_enable_speed": -1.0,
+      "auto_resume": true,
+      "good_steering_torque": true,
+      "openpilot_longitudinal": "Stock",
+      "video": null,
+      "setup_video": null,
+      "detail_sentence": "openpilot upgrades your <strong>Honda Accord Hybrid</strong> with automated lane centering <strong>at all speeds</strong>, and adaptive cruise control <strong>that automatically resumes from a stop</strong>.",
+      "harness": "Honda Nidec",
+      "extra_cars_columns": {
+        "make": "Honda",
+        "model": "Accord Hybrid 2017",
+        "package": "All",
+        "support": "[Dashcam mode](#dashcam)"
       }
     },
     {
@@ -33186,7 +33586,7 @@
       "min_enable_speed": -1.0,
       "auto_resume": true,
       "good_steering_torque": true,
-      "openpilot_longitudinal": "Stock",
+      "openpilot_longitudinal": "openpilot available",
       "video": null,
       "setup_video": null,
       "detail_sentence": "openpilot upgrades your <strong>Honda Accord Hybrid</strong> with automated lane centering <strong>at all speeds</strong>, and adaptive cruise control <strong>that automatically resumes from a stop</strong>.",
@@ -33619,7 +34019,7 @@
       "min_enable_speed": -1.0,
       "auto_resume": true,
       "good_steering_torque": true,
-      "openpilot_longitudinal": "Stock",
+      "openpilot_longitudinal": "openpilot available",
       "video": null,
       "setup_video": null,
       "detail_sentence": "openpilot upgrades your <strong>Honda CR-V</strong> with automated lane centering <strong>at all speeds</strong>, and adaptive cruise control <strong>that automatically resumes from a stop</strong>.",
@@ -33680,7 +34080,7 @@
       "min_enable_speed": -1.0,
       "auto_resume": true,
       "good_steering_torque": true,
-      "openpilot_longitudinal": "Stock",
+      "openpilot_longitudinal": "openpilot available",
       "video": null,
       "setup_video": null,
       "detail_sentence": "openpilot upgrades your <strong>Honda CR-V Hybrid</strong> with automated lane centering <strong>at all speeds</strong>, and adaptive cruise control <strong>that automatically resumes from a stop</strong>.",
@@ -33746,6 +34146,61 @@
         "model": "Fit 2018-20",
         "package": "Honda Sensing",
         "support": "[Upstream](#upstream)"
+      }
+    },
+    {
+      "make": "Honda",
+      "model": "Fit (Taiwan)",
+      "years": [
+        2021
+      ],
+      "name": "Honda Fit (Taiwan) 2021",
+      "package": "All",
+      "support_type": "Dashcam mode",
+      "support_link": "#dashcam",
+      "merged": true,
+      "min_steer_speed": 0.0,
+      "min_enable_speed": -1.0,
+      "auto_resume": true,
+      "good_steering_torque": true,
+      "openpilot_longitudinal": "Stock",
+      "video": null,
+      "setup_video": null,
+      "detail_sentence": "openpilot upgrades your <strong>Honda Fit (Taiwan)</strong> with automated lane centering <strong>at all speeds</strong>, and adaptive cruise control <strong>that automatically resumes from a stop</strong>.",
+      "harness": "Honda Nidec",
+      "extra_cars_columns": {
+        "make": "Honda",
+        "model": "Fit (Taiwan) 2021",
+        "package": "All",
+        "support": "[Dashcam mode](#dashcam)"
+      }
+    },
+    {
+      "make": "Honda",
+      "model": "Fit (Taiwan)",
+      "years": [
+        2024,
+        2025
+      ],
+      "name": "Honda Fit (Taiwan) 2024-25",
+      "package": "All",
+      "support_type": "Dashcam mode",
+      "support_link": "#dashcam",
+      "merged": true,
+      "min_steer_speed": 0.0,
+      "min_enable_speed": -1.0,
+      "auto_resume": true,
+      "good_steering_torque": true,
+      "openpilot_longitudinal": "Stock",
+      "video": null,
+      "setup_video": null,
+      "detail_sentence": "openpilot upgrades your <strong>Honda Fit (Taiwan)</strong> with automated lane centering <strong>at all speeds</strong>, and adaptive cruise control <strong>that automatically resumes from a stop</strong>.",
+      "harness": "Honda Nidec",
+      "extra_cars_columns": {
+        "make": "Honda",
+        "model": "Fit (Taiwan) 2024-25",
+        "package": "All",
+        "support": "[Dashcam mode](#dashcam)"
       }
     },
     {
@@ -33981,6 +34436,61 @@
     },
     {
       "make": "Honda",
+      "model": "Odyssey (Singapore)",
+      "years": [
+        2021
+      ],
+      "name": "Honda Odyssey (Singapore) 2021",
+      "package": "Honda Sensing",
+      "support_type": "Dashcam mode",
+      "support_link": "#dashcam",
+      "merged": true,
+      "min_steer_speed": 0.0,
+      "min_enable_speed": -1.0,
+      "auto_resume": true,
+      "good_steering_torque": true,
+      "openpilot_longitudinal": "Stock",
+      "video": null,
+      "setup_video": null,
+      "detail_sentence": "openpilot upgrades your <strong>Honda Odyssey (Singapore)</strong> with automated lane centering <strong>at all speeds</strong>, and adaptive cruise control <strong>that automatically resumes from a stop</strong>.",
+      "harness": "Honda Nidec",
+      "extra_cars_columns": {
+        "make": "Honda",
+        "model": "Odyssey (Singapore) 2021",
+        "package": "Honda Sensing",
+        "support": "[Dashcam mode](#dashcam)"
+      }
+    },
+    {
+      "make": "Honda",
+      "model": "Odyssey (Taiwan)",
+      "years": [
+        2018,
+        2019
+      ],
+      "name": "Honda Odyssey (Taiwan) 2018-19",
+      "package": "Honda Sensing",
+      "support_type": "Dashcam mode",
+      "support_link": "#dashcam",
+      "merged": true,
+      "min_steer_speed": 0.0,
+      "min_enable_speed": -1.0,
+      "auto_resume": true,
+      "good_steering_torque": true,
+      "openpilot_longitudinal": "Stock",
+      "video": null,
+      "setup_video": null,
+      "detail_sentence": "openpilot upgrades your <strong>Honda Odyssey (Taiwan)</strong> with automated lane centering <strong>at all speeds</strong>, and adaptive cruise control <strong>that automatically resumes from a stop</strong>.",
+      "harness": "Honda Nidec",
+      "extra_cars_columns": {
+        "make": "Honda",
+        "model": "Odyssey (Taiwan) 2018-19",
+        "package": "Honda Sensing",
+        "support": "[Dashcam mode](#dashcam)"
+      }
+    },
+    {
+      "make": "Honda",
       "model": "Passport",
       "years": [
         2019,
@@ -34027,7 +34537,7 @@
       "min_enable_speed": -1.0,
       "auto_resume": true,
       "good_steering_torque": true,
-      "openpilot_longitudinal": "Stock",
+      "openpilot_longitudinal": "openpilot available",
       "video": null,
       "setup_video": null,
       "detail_sentence": "openpilot upgrades your <strong>Honda Passport</strong> with automated lane centering <strong>at all speeds</strong>, and adaptive cruise control <strong>that automatically resumes from a stop</strong>.",
@@ -34089,7 +34599,7 @@
       "min_enable_speed": -1.0,
       "auto_resume": true,
       "good_steering_torque": true,
-      "openpilot_longitudinal": "Stock",
+      "openpilot_longitudinal": "openpilot available",
       "video": null,
       "setup_video": null,
       "detail_sentence": "openpilot upgrades your <strong>Honda Pilot</strong> with automated lane centering <strong>at all speeds</strong>, and adaptive cruise control <strong>that automatically resumes from a stop</strong>.",
@@ -34099,6 +34609,33 @@
         "model": "Pilot 2023-25",
         "package": "All",
         "support": "[Upstream](#upstream)"
+      }
+    },
+    {
+      "make": "Honda",
+      "model": "Prelude",
+      "years": [
+        2026
+      ],
+      "name": "Honda Prelude 2026",
+      "package": "All",
+      "support_type": "Dashcam mode",
+      "support_link": "#dashcam",
+      "merged": true,
+      "min_steer_speed": 0.0,
+      "min_enable_speed": -1.0,
+      "auto_resume": true,
+      "good_steering_torque": true,
+      "openpilot_longitudinal": "Stock",
+      "video": null,
+      "setup_video": null,
+      "detail_sentence": "openpilot upgrades your <strong>Honda Prelude</strong> with automated lane centering <strong>at all speeds</strong>, and adaptive cruise control <strong>that automatically resumes from a stop</strong>.",
+      "harness": "Honda Nidec",
+      "extra_cars_columns": {
+        "make": "Honda",
+        "model": "Prelude 2026",
+        "package": "All",
+        "support": "[Dashcam mode](#dashcam)"
       }
     },
     {
@@ -42108,20 +42645,20 @@
   "_git_StarPilot": {
     "name": "StarPilot",
     "url": "https://github.com/firestar5683/StarPilot",
-    "hash": "013ecbed9",
-    "hash_url": "https://github.com/firestar5683/StarPilot/commit/013ecbed9"
+    "hash": "1d0b3f629",
+    "hash_url": "https://github.com/firestar5683/StarPilot/commit/1d0b3f629"
   },
   "_git_openpilot": {
     "name": "openpilot",
     "url": "https://github.com/commaai/openpilot",
-    "hash": "b88adeb4a",
-    "hash_url": "https://github.com/commaai/openpilot/commit/b88adeb4a"
+    "hash": "6941a913a",
+    "hash_url": "https://github.com/commaai/openpilot/commit/6941a913a"
   },
   "_git_sunnypilot": {
     "name": "sunnypilot",
     "url": "https://github.com/sunnypilot/sunnypilot",
-    "hash": "a15aed1a79",
-    "hash_url": "https://github.com/sunnypilot/sunnypilot/commit/a15aed1a79"
+    "hash": "107a6f4c00",
+    "hash_url": "https://github.com/sunnypilot/sunnypilot/commit/107a6f4c00"
   },
   "openpilot": [
     {

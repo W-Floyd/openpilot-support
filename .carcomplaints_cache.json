@@ -62,10 +62,24 @@
   },
   "Acura|Integra|2024": null,
   "Acura|Integra|2025": null,
+  "Acura|Integra|2026": null,
   "Acura|MDX Hybrid|2017": null,
   "Acura|MDX Hybrid|2018": null,
   "Acura|MDX Hybrid|2019": null,
   "Acura|MDX Hybrid|2020": null,
+  "Acura|MDX|2014": {
+    "url": "https://www.carcomplaints.com/Acura/MDX/2014/",
+    "complaints": 294,
+    "recalls": 7,
+    "tsbs": 391,
+    "investigations": null,
+    "top_problems": [
+      "Paint Issues in the 2014 Acura MDX",
+      "Either Stalls Or Lurches On Light Acceleration in the 2014 Acura MDX",
+      "Unusual Noise At Idle in the 2014 Acura MDX"
+    ],
+    "seal": null
+  },
   "Acura|MDX|2015": {
     "url": "https://www.carcomplaints.com/Acura/MDX/2015/",
     "complaints": 106,
@@ -428,6 +442,17 @@
     "top_problems": [
       "Car Knocked/Jumped When The Speed Go Down To 28 Mph in the 2023 Acura TLX",
       "Noise Whilst At 62 Mph (100 Km/H) in the 2023 Acura TLX"
+    ],
+    "seal": null
+  },
+  "Acura|TLX|2024": {
+    "url": "https://www.carcomplaints.com/Acura/TLX/2024/",
+    "complaints": 1,
+    "recalls": null,
+    "tsbs": null,
+    "investigations": null,
+    "top_problems": [
+      "Hood Gap Uneven in the 2024 Acura TLX"
     ],
     "seal": null
   },
@@ -2815,6 +2840,9 @@
   "Honda|Clarity|2019": null,
   "Honda|Clarity|2020": null,
   "Honda|Clarity|2021": null,
+  "Honda|Fit (Taiwan)|2021": null,
+  "Honda|Fit (Taiwan)|2024": null,
+  "Honda|Fit (Taiwan)|2025": null,
   "Honda|Fit|2018": {
     "url": "https://www.carcomplaints.com/Honda/Fit/2018/",
     "complaints": 149,
@@ -3278,6 +3306,15 @@
     "seal": null
   },
   "Honda|Pilot|2026": null,
+  "Honda|Prelude|2026": {
+    "url": "https://www.carcomplaints.com/Honda/Prelude/2026/",
+    "complaints": 0,
+    "recalls": null,
+    "tsbs": null,
+    "investigations": null,
+    "top_problems": [],
+    "seal": null
+  },
   "Honda|Prologue|2024": {
     "url": "https://www.carcomplaints.com/Honda/Prologue/2024/",
     "complaints": 1000,

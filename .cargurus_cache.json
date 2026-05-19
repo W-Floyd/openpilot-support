@@ -74,6 +74,36 @@
     },
     "matchType": "LLM"
   },
+  "Make: Acura, Model: Integra 2023-2026": {
+    "success": "SUCCESS",
+    "filterCriteria": {
+      "entityId": "d36",
+      "makeModelTrimPaths": [
+        "m4/d36"
+      ],
+      "startYear": 2023,
+      "endYear": 2026,
+      "isDeliveryEnabled": false,
+      "priceDropsOnly": false,
+      "hideNationwideShipping": true
+    },
+    "matchType": "LLM"
+  },
+  "Make: Acura, Model: MDX 2014-2016": {
+    "success": "SUCCESS",
+    "filterCriteria": {
+      "entityId": "d16",
+      "makeModelTrimPaths": [
+        "m4/d16"
+      ],
+      "startYear": 2014,
+      "endYear": 2016,
+      "isDeliveryEnabled": false,
+      "priceDropsOnly": false,
+      "hideNationwideShipping": true
+    },
+    "matchType": "LLM"
+  },
   "Make: Acura, Model: MDX 2015-2016": {
     "success": "SUCCESS",
     "filterCriteria": {
@@ -89,6 +119,21 @@
     },
     "matchType": "LLM"
   },
+  "Make: Acura, Model: MDX 2017-2019": {
+    "success": "SUCCESS",
+    "filterCriteria": {
+      "entityId": "d16",
+      "makeModelTrimPaths": [
+        "m4/d16"
+      ],
+      "startYear": 2017,
+      "endYear": 2019,
+      "isDeliveryEnabled": false,
+      "priceDropsOnly": false,
+      "hideNationwideShipping": true
+    },
+    "matchType": "LLM"
+  },
   "Make: Acura, Model: MDX 2017-2020": {
     "success": "SUCCESS",
     "filterCriteria": {
@@ -97,6 +142,21 @@
         "m4/d16"
       ],
       "startYear": 2017,
+      "endYear": 2020,
+      "isDeliveryEnabled": false,
+      "priceDropsOnly": false,
+      "hideNationwideShipping": true
+    },
+    "matchType": "LLM"
+  },
+  "Make: Acura, Model: MDX 2020-2020": {
+    "success": "SUCCESS",
+    "filterCriteria": {
+      "entityId": "d16",
+      "makeModelTrimPaths": [
+        "m4/d16"
+      ],
+      "startYear": 2020,
       "endYear": 2020,
       "isDeliveryEnabled": false,
       "priceDropsOnly": false,
@@ -119,6 +179,21 @@
     },
     "matchType": "LLM"
   },
+  "Make: Acura, Model: MDX 2025-2025": {
+    "success": "SUCCESS",
+    "filterCriteria": {
+      "entityId": "d16",
+      "makeModelTrimPaths": [
+        "m4/d16"
+      ],
+      "startYear": 2025,
+      "endYear": 2025,
+      "isDeliveryEnabled": false,
+      "priceDropsOnly": false,
+      "hideNationwideShipping": true
+    },
+    "matchType": "LLM"
+  },
   "Make: Acura, Model: MDX 2025-2026": {
     "success": "SUCCESS",
     "filterCriteria": {
@@ -128,6 +203,21 @@
       ],
       "startYear": 2025,
       "endYear": 2026,
+      "isDeliveryEnabled": false,
+      "priceDropsOnly": false,
+      "hideNationwideShipping": true
+    },
+    "matchType": "LLM"
+  },
+  "Make: Acura, Model: MDX Hybrid 2017-2019": {
+    "success": "SUCCESS",
+    "filterCriteria": {
+      "entityId": "d2555",
+      "makeModelTrimPaths": [
+        "m4/d2555"
+      ],
+      "startYear": 2017,
+      "endYear": 2019,
       "isDeliveryEnabled": false,
       "priceDropsOnly": false,
       "hideNationwideShipping": true
@@ -148,6 +238,21 @@
       "fuelTypes": [
         "HYBRID"
       ],
+      "hideNationwideShipping": true
+    },
+    "matchType": "LLM"
+  },
+  "Make: Acura, Model: MDX Hybrid 2020-2020": {
+    "success": "SUCCESS",
+    "filterCriteria": {
+      "entityId": "d2555",
+      "makeModelTrimPaths": [
+        "m4/d2555"
+      ],
+      "startYear": 2020,
+      "endYear": 2020,
+      "isDeliveryEnabled": false,
+      "priceDropsOnly": false,
       "hideNationwideShipping": true
     },
     "matchType": "LLM"
@@ -206,6 +311,21 @@
       ],
       "startYear": 2022,
       "endYear": 2025,
+      "isDeliveryEnabled": false,
+      "priceDropsOnly": false,
+      "hideNationwideShipping": true
+    },
+    "matchType": "LLM"
+  },
+  "Make: Acura, Model: RDX 2022-2026": {
+    "success": "SUCCESS",
+    "filterCriteria": {
+      "entityId": "d921",
+      "makeModelTrimPaths": [
+        "m4/d921"
+      ],
+      "startYear": 2022,
+      "endYear": 2026,
       "isDeliveryEnabled": false,
       "priceDropsOnly": false,
       "hideNationwideShipping": true
@@ -296,6 +416,21 @@
       ],
       "startYear": 2022,
       "endYear": 2023,
+      "isDeliveryEnabled": false,
+      "priceDropsOnly": false,
+      "hideNationwideShipping": true
+    },
+    "matchType": "LLM"
+  },
+  "Make: Acura, Model: TLX 2024-2025": {
+    "success": "SUCCESS",
+    "filterCriteria": {
+      "entityId": "d2278",
+      "makeModelTrimPaths": [
+        "m4/d2278"
+      ],
+      "startYear": 2024,
+      "endYear": 2025,
       "isDeliveryEnabled": false,
       "priceDropsOnly": false,
       "hideNationwideShipping": true
@@ -1902,6 +2037,21 @@
     },
     "matchType": "LLM"
   },
+  "Make: Honda, Model: CR-V Hybrid 2023-2025": {
+    "success": "SUCCESS",
+    "filterCriteria": {
+      "entityId": "d3002",
+      "makeModelTrimPaths": [
+        "m6/d3002"
+      ],
+      "startYear": 2023,
+      "endYear": 2025,
+      "isDeliveryEnabled": false,
+      "priceDropsOnly": false,
+      "hideNationwideShipping": true
+    },
+    "matchType": "LLM"
+  },
   "Make: Honda, Model: CR-V Hybrid 2023-2026": {
     "success": "SUCCESS",
     "filterCriteria": {
@@ -2097,6 +2247,36 @@
       ],
       "startYear": 2018,
       "endYear": 2021,
+      "isDeliveryEnabled": false,
+      "priceDropsOnly": false,
+      "hideNationwideShipping": true
+    },
+    "matchType": "LLM"
+  },
+  "Make: Honda, Model: Fit (Taiwan) 2021-2021": {
+    "success": "SUCCESS",
+    "filterCriteria": {
+      "entityId": "d744",
+      "makeModelTrimPaths": [
+        "m6/d744"
+      ],
+      "startYear": 2021,
+      "endYear": 2021,
+      "isDeliveryEnabled": false,
+      "priceDropsOnly": false,
+      "hideNationwideShipping": true
+    },
+    "matchType": "LLM"
+  },
+  "Make: Honda, Model: Fit (Taiwan) 2024-2025": {
+    "success": "SUCCESS",
+    "filterCriteria": {
+      "entityId": "d744",
+      "makeModelTrimPaths": [
+        "m6/d744"
+      ],
+      "startYear": 2024,
+      "endYear": 2025,
       "isDeliveryEnabled": false,
       "priceDropsOnly": false,
       "hideNationwideShipping": true
@@ -2306,6 +2486,21 @@
       "entityId": "d594",
       "makeModelTrimPaths": [
         "m6/d594"
+      ],
+      "startYear": 2026,
+      "endYear": 2026,
+      "isDeliveryEnabled": false,
+      "priceDropsOnly": false,
+      "hideNationwideShipping": true
+    },
+    "matchType": "LLM"
+  },
+  "Make: Honda, Model: Prelude 2026-2026": {
+    "success": "SUCCESS",
+    "filterCriteria": {
+      "entityId": "d595",
+      "makeModelTrimPaths": [
+        "m6/d595"
       ],
       "startYear": 2026,
       "endYear": 2026,
