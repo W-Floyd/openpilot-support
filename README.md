@@ -55,6 +55,7 @@ Results are cached to avoid re-fetching on every run. Stale entries (for cars no
 | `.carcomplaints_cache.json` | CarComplaints complaint/recall data |
 | `.carcomplaints_html_cache/` | Raw CarComplaints pages (avoids re-fetching) |
 | `.ari_cache.json` | AutoReliabilityIndex scores |
+| `.ari_html_cache/` | Raw ARI pages (avoids re-fetching) |
 | `.edmunds_cache.json` | Edmunds price ranges |
 | `.edmunds_html_cache/` | Raw rendered Edmunds pages (avoids re-fetching) |
 | `.jdpower_cache.json` | JD Power "People Paid" price ranges |

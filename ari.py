@@ -12,6 +12,7 @@ from car_data import to_ascii
 from proxy import _urlopen_proxied
 
 ARI_CACHE_FILE = os.path.join(HERE, ".ari_cache.json")
+ARI_HTML_CACHE_DIR = os.path.join(HERE, ".ari_html_cache")
 
 
 class JsonLdExtractor(html.parser.HTMLParser):
@@ -54,16 +55,26 @@ def ari_url(make: str, model: str, year: int) -> str:
     return f"https://autoreliabilityindex.com/{ari_slug(make)}/{ari_slug(model)}/{year}"
 
 
-def fetch_ari_response(make: str, model: str, year: int) -> dict | None:
-    url = ari_url(make, model, year)
-    try:
-        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
-        with _urlopen_proxied(req, timeout=10) as resp:
-            body = resp.read().decode("utf-8", errors="replace")
-    except Exception as e:
-        print(f"  Error fetching '{url}': {e}", file=sys.stderr)
-        return None
+def _ari_html_cache_path(make: str, model: str, year: int) -> str:
+    slug = to_ascii(f"{make}_{model}_{year}").replace(" ", "_").lower()
+    return os.path.join(ARI_HTML_CACHE_DIR, f"{slug}.html")
 
+
+def _load_ari_html_cache(make: str, model: str, year: int) -> str | None:
+    path = _ari_html_cache_path(make, model, year)
+    if os.path.exists(path):
+        with open(path, encoding="utf-8") as f:
+            return f.read()
+    return None
+
+
+def _save_ari_html_cache(make: str, model: str, year: int, html: str) -> None:
+    os.makedirs(ARI_HTML_CACHE_DIR, exist_ok=True)
+    with open(_ari_html_cache_path(make, model, year), "w", encoding="utf-8") as f:
+        f.write(html)
+
+
+def _parse_ari_html(body: str, url: str) -> dict | None:
     parser = JsonLdExtractor()
     parser.feed(body)
     for block in parser.blocks:
@@ -80,6 +91,22 @@ def fetch_ari_response(make: str, model: str, year: int) -> dict | None:
             if score is not None:
                 return {"score": score, "url": url}
     return None
+
+
+def fetch_ari_response(make: str, model: str, year: int) -> dict | None:
+    url = ari_url(make, model, year)
+    cached = _load_ari_html_cache(make, model, year)
+    if cached:
+        return _parse_ari_html(cached, url)
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+        with _urlopen_proxied(req, timeout=10) as resp:
+            body = resp.read().decode("utf-8", errors="replace")
+    except Exception as e:
+        print(f"  Error fetching '{url}': {e}", file=sys.stderr)
+        return None
+    _save_ari_html_cache(make, model, year, body)
+    return _parse_ari_html(body, url)
 
 
 def load_ari_cache() -> dict:
