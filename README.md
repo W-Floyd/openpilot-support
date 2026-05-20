@@ -53,6 +53,7 @@ Results are cached to avoid re-fetching on every run. Stale entries (for cars no
 | `.openpilot_cache.json` | Fork car documentation |
 | `.cargurus_cache.json` | CarGurus listings |
 | `.carcomplaints_cache.json` | CarComplaints complaint/recall data |
+| `.carcomplaints_html_cache/` | Raw CarComplaints pages (avoids re-fetching) |
 | `.ari_cache.json` | AutoReliabilityIndex scores |
 | `.edmunds_cache.json` | Edmunds price ranges |
 | `.edmunds_html_cache/` | Raw rendered Edmunds pages (avoids re-fetching) |

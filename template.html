@@ -2090,29 +2090,27 @@
                                                                                 <span class="pop-yr" x-text="row.year"></span>
                                                                                 <svg width="120" height="24" style="display:block;flex-shrink:0" aria-hidden="true">
                                                                                     <!-- Edmunds range (top) -->
-                                                                                    <template x-if="row.price">
-                                                                                        <rect
-                                                                                            :x="car._priceScale.sc(row.price.min)"
-                                                                                            y="2"
-                                                                                            :width="Math.max(2, car._priceScale.sc(row.price.max) - car._priceScale.sc(row.price.min))"
-                                                                                            height="8"
-                                                                                            fill="rgba(59,130,246,0.25)"
-                                                                                            stroke="rgba(59,130,246,0.8)"
-                                                                                            stroke-width="1"
-                                                                                        />
-                                                                                    </template>
+                                                                                    <rect
+                                                                                        :x="row.price ? car._priceScale.sc(row.price.min) : -99"
+                                                                                        y="2"
+                                                                                        :width="row.price ? Math.max(2, car._priceScale.sc(row.price.max) - car._priceScale.sc(row.price.min)) : 0"
+                                                                                        height="8"
+                                                                                        fill="rgba(59,130,246,0.25)"
+                                                                                        stroke="rgba(59,130,246,0.8)"
+                                                                                        stroke-width="1"
+                                                                                        :opacity="row.price ? 1 : 0"
+                                                                                    />
                                                                                     <!-- JD Power range (bottom) -->
-                                                                                    <template x-if="row.jp">
-                                                                                        <rect
-                                                                                            :x="car._priceScale.sc(row.jp.min)"
-                                                                                            y="14"
-                                                                                            :width="Math.max(2, car._priceScale.sc(row.jp.max) - car._priceScale.sc(row.jp.min))"
-                                                                                            height="8"
-                                                                                            fill="rgba(139,92,246,0.25)"
-                                                                                            stroke="rgba(139,92,246,0.8)"
-                                                                                            stroke-width="1"
-                                                                                        />
-                                                                                    </template>
+                                                                                    <rect
+                                                                                        :x="row.jp ? car._priceScale.sc(row.jp.min) : -99"
+                                                                                        y="14"
+                                                                                        :width="row.jp ? Math.max(2, car._priceScale.sc(row.jp.max) - car._priceScale.sc(row.jp.min)) : 0"
+                                                                                        height="8"
+                                                                                        fill="rgba(139,92,246,0.25)"
+                                                                                        stroke="rgba(139,92,246,0.8)"
+                                                                                        stroke-width="1"
+                                                                                        :opacity="row.jp ? 1 : 0"
+                                                                                    />
                                                                                     <!-- avg_used line -->
                                                                                     <line
                                                                                         :x1="row.avg_used != null ? car._priceScale.sc(row.avg_used) : -99"
@@ -3678,10 +3676,9 @@
                                 const hi = d.max ?? avg;
                                 if (lo != null) mins.push(lo);
                                 if (hi != null) maxs.push(hi);
-                            } else {
-                                const jp = this.jdpowerCache[key];
-                                if (jp) { mins.push(jp.min); maxs.push(jp.max); }
                             }
+                            const jp = this.jdpowerCache[key];
+                            if (jp) { mins.push(jp.min); maxs.push(jp.max); }
                         }
                         if (!mins.length) return null;
                         return {

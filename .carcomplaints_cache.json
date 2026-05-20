@@ -147,13 +147,13 @@
   },
   "Acura|MDX|2020": {
     "url": "https://www.carcomplaints.com/Acura/MDX/2020/",
-    "complaints": 262,
+    "complaints": 6,
     "recalls": 6,
     "tsbs": 163,
     "investigations": 3,
     "top_problems": [
-      "Trans Failure. Car Did Not Start. Many Warning Lights in the 2020 Acura MDX",
       "Dead Battery in the 2020 Acura MDX",
+      "Trans Failure. Car Did Not Start. Many Warning Lights in the 2020 Acura MDX",
       "Car Died (Many Warning Lights) in the 2020 Acura MDX"
     ],
     "seal": null
@@ -2355,7 +2355,7 @@
   },
   "Honda|Accord|2019": {
     "url": "https://www.carcomplaints.com/Honda/Accord/2019/",
-    "complaints": 1000,
+    "complaints": 60,
     "recalls": 5,
     "tsbs": 378,
     "investigations": 2,
@@ -4775,7 +4775,7 @@
   },
   "Kia|Sorento|2021": {
     "url": "https://www.carcomplaints.com/Kia/Sorento/2021/",
-    "complaints": 239,
+    "complaints": 6,
     "recalls": 3,
     "tsbs": 117,
     "investigations": 1,
@@ -6769,7 +6769,7 @@
   },
   "Subaru|Outback|2022": {
     "url": "https://www.carcomplaints.com/Subaru/Outback/2022/",
-    "complaints": 536,
+    "complaints": 41,
     "recalls": 4,
     "tsbs": 379,
     "investigations": null,
@@ -7973,7 +7973,7 @@
   },
   "Toyota|RAV4|2019": {
     "url": "https://www.carcomplaints.com/Toyota/RAV4/2019/",
-    "complaints": 1000,
+    "complaints": 135,
     "recalls": 7,
     "tsbs": 388,
     "investigations": null,

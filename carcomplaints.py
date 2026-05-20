@@ -12,6 +12,7 @@ from car_data import AUTOTRADER_MODELS_CACHE_FILE, FAMILY_MAPPINGS, to_ascii
 from proxy import _urlopen_proxied
 
 CC_CACHE_FILE = os.path.join(HERE, ".carcomplaints_cache.json")
+CC_HTML_CACHE_DIR = os.path.join(HERE, ".carcomplaints_html_cache")
 
 CC_SEALS = {
     "best.png": "Seal of Awesome",
@@ -90,16 +91,26 @@ def cc_cache_key(make: str, raw_model: str, year: int) -> str:
     return f"{to_ascii(make)}|{to_ascii(raw_model)}|{year}"
 
 
-def fetch_cc_response(make: str, raw_model: str, year: int) -> dict | None:
-    url = cc_url(make, raw_model, year)
-    try:
-        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
-        with _urlopen_proxied(req, timeout=10) as resp:
-            body = resp.read().decode("utf-8", errors="replace")
-    except Exception as e:
-        print(f"  Error fetching '{url}': {e}", file=sys.stderr)
-        return None
+def _cc_html_cache_path(make: str, raw_model: str, year: int) -> str:
+    slug = to_ascii(f"{make}_{raw_model}_{year}").replace(" ", "_").lower()
+    return os.path.join(CC_HTML_CACHE_DIR, f"{slug}.html")
 
+
+def _load_cc_html_cache(make: str, raw_model: str, year: int) -> str | None:
+    path = _cc_html_cache_path(make, raw_model, year)
+    if os.path.exists(path):
+        with open(path, encoding="utf-8") as f:
+            return f.read()
+    return None
+
+
+def _save_cc_html_cache(make: str, raw_model: str, year: int, html: str) -> None:
+    os.makedirs(CC_HTML_CACHE_DIR, exist_ok=True)
+    with open(_cc_html_cache_path(make, raw_model, year), "w", encoding="utf-8") as f:
+        f.write(html)
+
+
+def _parse_cc_html(body: str, url: str) -> dict | None:
     p = CcParser()
     p.feed(body)
 
@@ -108,7 +119,6 @@ def fetch_cc_response(make: str, raw_model: str, year: int) -> dict | None:
     tsbs = _parse_cc_count(p.counts.get("tsbNav", ""))
     investigations = _parse_cc_count(p.counts.get("invNav", ""))
 
-    # Top problems from JSON-LD ItemList
     top_problems: list[str] = []
     for raw in p.ld_blocks:
         try:
@@ -135,6 +145,22 @@ def fetch_cc_response(make: str, raw_model: str, year: int) -> dict | None:
         "top_problems": top_problems,
         "seal": p.seal,
     }
+
+
+def fetch_cc_response(make: str, raw_model: str, year: int) -> dict | None:
+    url = cc_url(make, raw_model, year)
+    cached = _load_cc_html_cache(make, raw_model, year)
+    if cached:
+        return _parse_cc_html(cached, url)
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+        with _urlopen_proxied(req, timeout=10) as resp:
+            body = resp.read().decode("utf-8", errors="replace")
+    except Exception as e:
+        print(f"  Error fetching '{url}': {e}", file=sys.stderr)
+        return None
+    _save_cc_html_cache(make, raw_model, year, body)
+    return _parse_cc_html(body, url)
 
 
 def load_cc_cache() -> dict:

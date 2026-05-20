@@ -6,3 +6,5 @@ index.html
 *.svg
 .proxifly_*
 .edmunds_html_cache/
+.jdpower_html_cache/
+.carcomplaints_html_cache/
