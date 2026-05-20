@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import argparse
 import concurrent.futures
+import contextlib
 import html.parser
 import http.server
 import json
@@ -795,6 +796,10 @@ class _ProxyBlocked(Exception):
         self.blacklist = blacklist
 
 
+class _BrowserDied(Exception):
+    pass
+
+
 def load_proxy_list(max_age_seconds: int = 3600) -> list[str]:
     """Fetch the proxifly proxy list (cached locally for max_age_seconds).
 
@@ -817,26 +822,22 @@ def load_proxy_list(max_age_seconds: int = 3600) -> list[str]:
             raw = json.loads(resp.read())
         with open(PROXIFLY_CACHE_FILE, "w") as f:
             json.dump(raw, f)
-    proxies = [p["proxy"] for p in raw if p.get("protocol") in ("http", "https")]
-    print(f"  Loaded {len(proxies)} http/https proxies.", file=sys.stderr)
+    proxies = [p["proxy"] for p in raw if p.get("protocol") in ("http", "https", "socks4", "socks5")]
+    print(f"  Loaded {len(proxies)} proxies.", file=sys.stderr)
     return proxies
 
 
 def _fetch_ip(
     proxy: str | None = None, ip_check_url: str = IP_CHECK_URL, timeout: int = 5
 ) -> str | None:
+    import requests
     try:
-        req = urllib.request.Request(
-            ip_check_url, headers={"User-Agent": "Mozilla/5.0"}
+        proxies = {"http": proxy, "https": proxy} if proxy else None
+        resp = requests.get(
+            ip_check_url, headers={"User-Agent": "Mozilla/5.0"},
+            proxies=proxies, timeout=timeout,
         )
-        if proxy:
-            opener = urllib.request.build_opener(
-                urllib.request.ProxyHandler({"http": proxy, "https": proxy})
-            )
-            with opener.open(req, timeout=timeout) as resp:
-                return json.loads(resp.read())["ip"]
-        with urllib.request.urlopen(req, timeout=timeout) as resp:
-            return json.loads(resp.read())["ip"]
+        return resp.json()["ip"]
     except Exception:
         return None
 
@@ -924,14 +925,17 @@ def _pick_proxy() -> str | None:
     return random.choice(_ACTIVE_PROXIES) if _ACTIVE_PROXIES else None
 
 
+@contextlib.contextmanager
 def _urlopen_proxied(req, timeout: int = 10):
+    import io
+    import requests
     proxy = _pick_proxy()
-    if proxy:
-        opener = urllib.request.build_opener(
-            urllib.request.ProxyHandler({"http": proxy, "https": proxy})
-        )
-        return opener.open(req, timeout=timeout)
-    return urllib.request.urlopen(req, timeout=timeout)
+    url = req.full_url if hasattr(req, "full_url") else req
+    headers = dict(req.headers) if hasattr(req, "headers") else {}
+    proxies = {"http": proxy, "https": proxy} if proxy else None
+    resp = requests.get(url, headers=headers, proxies=proxies, timeout=timeout)
+    resp.raise_for_status()
+    yield io.BytesIO(resp.content)
 
 
 def _cg_selector_fetch(path: str) -> dict:
@@ -1306,6 +1310,7 @@ CC_SEALS = {
 }
 
 EDMUNDS_CACHE_FILE = os.path.join(HERE, ".edmunds_cache.json")
+EDMUNDS_HTML_CACHE_DIR = os.path.join(HERE, ".edmunds_html_cache")
 
 
 def edmunds_slug(text: str) -> str:
@@ -1368,6 +1373,26 @@ def _load_firefox_edmunds_cookies() -> list[dict]:
     return cookies
 
 
+def _edmunds_html_cache_path(make: str, model: str, year: int) -> str:
+    slug = re.sub(r"[^a-z0-9]+", "_", f"{make}_{model}_{year}".lower()).strip("_")
+    return os.path.join(EDMUNDS_HTML_CACHE_DIR, f"{slug}.html")
+
+
+def _load_edmunds_html_cache(make: str, model: str, year: int) -> str | None:
+    path = _edmunds_html_cache_path(make, model, year)
+    if os.path.exists(path):
+        with open(path, encoding="utf-8") as f:
+            return f.read()
+    return None
+
+
+def _save_edmunds_html_cache(make: str, model: str, year: int, html: str) -> None:
+    os.makedirs(EDMUNDS_HTML_CACHE_DIR, exist_ok=True)
+    path = _edmunds_html_cache_path(make, model, year)
+    with open(path, "w", encoding="utf-8") as f:
+        f.write(html)
+
+
 def _parse_edmunds_price(text: str) -> dict | None:
     prices = [int(m.replace(",", "")) for m in re.findall(r"[\d,]+", text)]
     if not prices:
@@ -1393,63 +1418,171 @@ async def _edmunds_single_price(
     return None
 
 
-async def _fetch_edmunds_price_with_page(
-    make: str, model: str, year: int, page
+async def _try_edmunds_candidate(
+    make: str, candidate: str, year: int, page,
+    cached_html: str | None = None,
+    save_html_as: str | None = None,
 ) -> dict | None:
-    url = edmunds_url(make, model, year)
+    """Fetch one candidate URL. Returns entry dict, None if not found, or raises on hard errors.
+
+    save_html_as: model name to use when writing the HTML cache (defaults to candidate).
+    """
+    import asyncio
+
+    url = edmunds_url(make, candidate, year)
+    html_model = save_html_as or candidate
     try:
-        response = await page.goto(url, timeout=12000, wait_until="domcontentloaded")
-        actual_title = await page.title()
-        print(f"    car page: HTTP {response.status if response else '?'}, title={actual_title!r}, url={page.url}", file=sys.stderr)
-        if response and response.status == 404:
-            return None
-        if response and response.status >= 400:
-            title = await page.title()
-            headers = dict(response.headers)
-            screenshot_path = os.path.join(HERE, f"_edmunds_debug_{response.status}.png")
-            try:
-                await page.screenshot(path=screenshot_path)
-            except Exception:
-                screenshot_path = "(screenshot failed)"
-            print(
-                f"  HTTP {response.status} fetching Edmunds {make} {model} {year}\n"
-                f"    title: {title!r}\n"
-                f"    url: {page.url}\n"
-                f"    screenshot: {screenshot_path}\n"
-                f"    headers: { {k: v for k, v in headers.items() if k.lower() in ('server','cf-ray','x-amz-cf-id','x-cache','via','location','content-type','x-powered-by')} }",
-                file=sys.stderr,
+        if cached_html:
+            await page.set_content(cached_html, wait_until="domcontentloaded")
+            actual_title = await page.title()
+            print(f"    car page: (cached HTML), title={actual_title!r}", file=sys.stderr)
+            if not actual_title or "page not found" in actual_title.lower():
+                return None
+        else:
+            response = await page.goto(url, timeout=12000, wait_until="domcontentloaded")
+            actual_title = await page.title()
+            if not actual_title:
+                try:
+                    await page.wait_for_function("document.title !== ''", timeout=3000)
+                    actual_title = await page.title()
+                except Exception:
+                    pass
+            print(f"    car page: HTTP {response.status if response else '?'}, title={actual_title!r}, url={page.url}", file=sys.stderr)
+            if response and response.status == 404:
+                return None
+            if response and response.status >= 400:
+                title = await page.title()
+                headers = dict(response.headers)
+                reported_ip = None
+                if response.status == 403:
+                    try:
+                        body = await page.inner_text("body", timeout=3000)
+                        m = re.search(r"IP\s*(?:Address)?[:\s]+(\d{1,3}(?:\.\d{1,3}){3})", body, re.IGNORECASE)
+                        if m:
+                            reported_ip = m.group(1)
+                    except Exception:
+                        pass
+                print(
+                    f"  HTTP {response.status} fetching Edmunds {make} {candidate} {year}\n"
+                    f"    title: {title!r}\n"
+                    f"    url: {page.url}\n"
+                    + (f"    reported IP: {reported_ip}{' (matches direct — proxy not routing)' if reported_ip == _proxy_direct_ip else ''}\n" if reported_ip else "")
+                    + f"    headers:{ {k: v for k, v in headers.items() if k.lower() in ('server','cf-ray','x-amz-cf-id','x-cache','via','location','content-type','x-powered-by')} }",
+                    file=sys.stderr,
+                )
+                raise _ProxyBlocked(blacklist=True)
+            if not actual_title or "page not found" in actual_title.lower():
+                return None
+        if not cached_html:
+            await page.mouse.wheel(0, 600)
+            await page.mouse.wheel(0, 600)
+
+        async def _get_price_range() -> str | None:
+            loc = page.locator("text=Price Range:").or_(page.locator("text=Price:")).first
+            await loc.wait_for(timeout=15000)
+            return await loc.text_content(timeout=5000)
+
+        async def _check_not_found() -> None:
+            await page.locator("text=Page Not Found").first.wait_for(timeout=15000)
+
+        async def _race_details() -> tuple:
+            t_sug = asyncio.create_task(
+                _edmunds_single_price(page, "Edmunds Suggested Price", "Edmunds suggests you pay", timeout=8000)
             )
-            raise _ProxyBlocked(blacklist=True)
-        if "page not found" in actual_title.lower():
-            return None
-        # Scroll to trigger lazy-loading of the below-fold price section
-        await page.mouse.wheel(0, 600)
-        await page.mouse.wheel(0, 600)
-        loc = page.locator("text=Price Range:").first
-        await loc.wait_for(timeout=15000)
-        price_str = await loc.text_content(timeout=5000)
+            t_avg = asyncio.create_task(
+                _edmunds_single_price(page, "Average price", timeout=8000)
+            )
+            suggested = avg_used = None
+            pending = {t_sug, t_avg}
+            try:
+                while pending:
+                    done, pending = await asyncio.wait(pending, return_when=asyncio.FIRST_COMPLETED)
+                    for task in done:
+                        val = None if task.exception() else task.result()
+                        if task is t_sug:
+                            suggested = val
+                        else:
+                            avg_used = val
+                        if val is not None:
+                            for p in pending:
+                                p.cancel()
+                            return suggested, avg_used
+                return suggested, avg_used
+            finally:
+                for t in (t_sug, t_avg):
+                    t.cancel()
+                await asyncio.gather(t_sug, t_avg, return_exceptions=True)
+
+        t_price = asyncio.create_task(_get_price_range())
+        t_details = asyncio.create_task(_race_details())
+        t_notfound = asyncio.create_task(_check_not_found())
+
+        try:
+            done, _ = await asyncio.wait({t_price, t_notfound}, return_when=asyncio.FIRST_COMPLETED)
+            if t_notfound in done and not t_notfound.exception():
+                return None
+            t_notfound.cancel()
+
+            if t_price not in done:
+                await asyncio.wait({t_price})
+            price_str = None if t_price.exception() else t_price.result()
+
+            try:
+                suggested, avg_used = await t_details
+            except Exception:
+                suggested = avg_used = None
+        finally:
+            for t in (t_price, t_details, t_notfound):
+                t.cancel()
+            await asyncio.gather(t_price, t_details, t_notfound, return_exceptions=True)
+
         entry = _parse_edmunds_price(price_str or "")
-        if not entry:
+        if not entry and avg_used is None:
             return None
-        entry["url"] = page.url
-        entry["suggested"] = await _edmunds_single_price(
-            page, "Edmunds Suggested Price", "Edmunds suggests you pay"
-        )
-        entry["avg_used"] = await _edmunds_single_price(page, "Average price")
+        if not entry:
+            entry = {}
+        entry["url"] = url if cached_html else page.url
+        entry["suggested"] = None if isinstance(suggested, Exception) else suggested
+        entry["avg_used"] = None if isinstance(avg_used, Exception) else avg_used
         entry["lastUpdated"] = time.time()
+        if not cached_html:
+            _save_edmunds_html_cache(make, html_model, year, await page.content())
         return entry
     except _ProxyBlocked:
         raise
     except Exception as e:
         err = str(e)
-        if "Target page, context or browser has been closed" in err:
-            raise SystemExit(
-                "error: Edmunds browser was closed unexpectedly — exiting."
-            )
+        if "Target page, context or browser has been closed" in err or "Connection closed" in err:
+            raise _BrowserDied()
         if "Timeout" in err and ("goto" in err or "navigation" in err):
             raise _ProxyBlocked(blacklist=True)
-        print(f"  Error fetching Edmunds {make} {model} {year}: {e}", file=sys.stderr)
+        if "NS_ERROR_PROXY" in err or "NS_ERROR_CONNECTION_REFUSED" in err or "NS_ERROR_NET_RESET" in err:
+            raise _ProxyBlocked(blacklist=True)
+        print(f"  Error fetching Edmunds {make} {candidate} {year}: {e}", file=sys.stderr)
         return None
+
+
+async def _fetch_edmunds_price_with_page(
+    make: str, model: str, year: int, page
+) -> dict | None:
+    # If we have cached HTML for this model, use it directly (no candidate iteration needed).
+    cached_html = _load_edmunds_html_cache(make, model, year)
+    if cached_html:
+        return await _try_edmunds_candidate(make, model, year, page, cached_html=cached_html)
+
+    # Build candidate list: original model name first, then family mapping variants.
+    candidates: list[str] = [model]
+    for variant in (FAMILY_MAPPINGS.get((make, model)) or []):
+        if variant not in candidates:
+            candidates.append(variant)
+
+    for candidate in candidates:
+        if candidate != model:
+            print(f"    trying family variant: {candidate!r}", file=sys.stderr)
+        result = await _try_edmunds_candidate(make, candidate, year, page, save_html_as=model)
+        if result is not None:
+            return result
+    return None
 
 
 def load_edmunds_cache() -> dict:
@@ -1486,6 +1619,7 @@ async def _fetch_edmunds_cache_async(
     iter_times: list[float] = []
     retries: dict[int, int] = {}
     blacklist: set[str] = _load_proxy_blacklist()
+    proxy: object = None
 
     async def _make_page(browser):
         ctx_kwargs: dict = {
@@ -1501,130 +1635,147 @@ async def _fetch_edmunds_cache_async(
         page = await ctx.new_page()
         return ctx, page
 
-    async with async_playwright() as p:
-        proxy = await asyncio.to_thread(_find_next_proxy, blacklist) if _ACTIVE_PROXIES else None
-        browser: object = None
-        ctx: object = None
-        page: object = None
+    # Outer loop restarts the playwright driver when it crashes.
+    while idx < total:
+        async with async_playwright() as p:
+            if proxy is None:
+                proxy = await asyncio.to_thread(_find_next_proxy, blacklist) if _ACTIVE_PROXIES else None
+                if _ACTIVE_PROXIES and proxy is None:
+                    raise SystemExit("error: no proxies available — all exhausted or blacklisted.")
+            browser: object = None
+            ctx: object = None
+            page: object = None
+            playwright_alive = True
 
-        async def _launch_browser() -> None:
-            nonlocal browser, ctx, page
-            if browser is not None:
-                await browser.close()
-                browser = ctx = page = None
-            proxy_arg = {"server": proxy} if proxy else None
-            browser = await AsyncNewBrowser(
-                p,
-                headless=headless,
-                humanize=True,
-                block_webrtc=True,
-                os=["windows", "macos"],
-                proxy=proxy_arg,
-                geoip=proxy is not None,
-            )
+            async def _launch_browser() -> None:
+                nonlocal browser, ctx, page
+                if browser is not None:
+                    try:
+                        await browser.close()
+                    except Exception:
+                        pass
+                    browser = ctx = page = None
+                proxy_arg = {"server": proxy} if proxy else None
+                browser = await AsyncNewBrowser(
+                    p,
+                    headless=headless,
+                    humanize=True,
+                    block_webrtc=True,
+                    os=["windows", "macos"],
+                    proxy=proxy_arg,
+                    geoip=proxy is not None,
+                )
 
-        async def _rotate(exc: _ProxyBlocked | None = None) -> None:
-            nonlocal proxy, browser, ctx, page
-            if exc and exc.blacklist and proxy:
-                blacklist.add(proxy)
-                _save_proxy_blacklist(blacklist)
-                print(f"  Blacklisted proxy {proxy}", file=sys.stderr)
-            if browser is not None:
-                await browser.close()
-                browser = ctx = page = None
-            proxy = (
-                await asyncio.to_thread(_find_next_proxy, blacklist) if _ACTIVE_PROXIES else None
-            )
+            async def _rotate(exc: _ProxyBlocked | None = None) -> None:
+                nonlocal proxy, browser, ctx, page
+                if exc and exc.blacklist and proxy:
+                    blacklist.add(proxy)
+                    _save_proxy_blacklist(blacklist)
+                    print(f"  Blacklisted proxy {proxy}", file=sys.stderr)
+                if browser is not None:
+                    try:
+                        await browser.close()
+                    except Exception:
+                        pass
+                    browser = ctx = page = None
+                proxy = (
+                    await asyncio.to_thread(_find_next_proxy, blacklist) if _ACTIVE_PROXIES else None
+                )
+                if _ACTIVE_PROXIES and proxy is None:
+                    raise SystemExit("error: no proxies remaining — all exhausted or blacklisted.")
 
-        while idx < total:
-            if browser is None:
-                try:
-                    await _launch_browser()
-                except Exception as e:
-                    print(f"  Browser launch failed ({e}) — rotating", file=sys.stderr)
-                    await _rotate(_ProxyBlocked(blacklist=True))
-                    continue
-                ctx, page = await _make_page(browser)
+            while idx < total and playwright_alive:
+                if browser is None:
+                    try:
+                        await _launch_browser()
+                    except Exception as e:
+                        err = str(e)
+                        if "Connection closed" in err:
+                            print(f"  Playwright driver died ({e}) — restarting", file=sys.stderr)
+                            playwright_alive = False
+                            break
+                        print(f"  Browser launch failed ({e}) — rotating", file=sys.stderr)
+                        await _rotate(_ProxyBlocked(blacklist=True))
+                        continue
+                    ctx, page = await _make_page(browser)
 
+                    print(
+                        f"  Visiting Edmunds homepage{f' via {proxy}' if proxy else ''}...",
+                        file=sys.stderr,
+                    )
+                    try:
+                        hp_resp = await page.goto(
+                            "https://www.edmunds.com/", timeout=12000, wait_until="load"
+                        )
+                        hp_status = hp_resp.status if hp_resp else "?"
+                        hp_title = await page.title()
+                        print(
+                            f"  Homepage: HTTP {hp_status}, title={hp_title!r}, url={page.url}",
+                            file=sys.stderr,
+                        )
+                        homepage_ok = hp_resp is None or hp_resp.status < 400
+                        if not homepage_ok:
+                            print(f"  Homepage blocked", file=sys.stderr)
+                    except Exception as e:
+                        print(f"  Homepage failed ({e}) — rotating", file=sys.stderr)
+                        homepage_ok = False
+                    if not homepage_ok:
+                        await _rotate()
+                        continue
+
+                make, model, year = pending[idx]
+                i = idx + 1
+                t0 = asyncio.get_event_loop().time()
+                delay = (sleep + random.uniform(0, jitter)) if i < total else 0.0
+                eta_str = ""
+                if iter_times:
+                    avg = sum(iter_times) / len(iter_times)
+                    remaining_secs = avg * (total - i + 1) + delay
+                    m, s = divmod(int(remaining_secs), 60)
+                    eta_str = f"  ETA ~{m}m{s:02d}s" if m else f"  ETA ~{s}s"
                 print(
-                    f"  Visiting Edmunds homepage{f' via {proxy}' if proxy else ''}...",
+                    f"  [{i}/{total}] Fetching Edmunds: {make} {model} {year}{eta_str}",
                     file=sys.stderr,
                 )
                 try:
-                    hp_resp = await page.goto(
-                        "https://www.edmunds.com/", timeout=12000, wait_until="load"
+                    key = edmunds_cache_key(make, model, year)
+                    cache[key] = await _fetch_edmunds_price_with_page(
+                        make, model, year, page
                     )
-                    hp_status = hp_resp.status if hp_resp else "?"
-                    hp_title = await page.title()
-                    print(
-                        f"  Homepage: HTTP {hp_status}, title={hp_title!r}, url={page.url}",
-                        file=sys.stderr,
-                    )
-                    homepage_ok = hp_resp is None or hp_resp.status < 400
-                    if not homepage_ok:
-                        screenshot_path = os.path.join(HERE, "_edmunds_debug_homepage.png")
-                        try:
-                            await page.screenshot(path=screenshot_path)
-                        except Exception:
-                            screenshot_path = "(failed)"
-                        print(f"  Homepage blocked — screenshot: {screenshot_path}", file=sys.stderr)
-                except Exception as e:
-                    print(f"  Homepage failed ({e}) — rotating", file=sys.stderr)
-                    homepage_ok = False
-                if not homepage_ok:
-                    await _rotate()
-                    continue
-
-            make, model, year = pending[idx]
-            i = idx + 1
-            t0 = asyncio.get_event_loop().time()
-            delay = (sleep + random.uniform(0, jitter)) if i < total else 0.0
-            eta_str = ""
-            if iter_times:
-                avg = sum(iter_times) / len(iter_times)
-                remaining_secs = avg * (total - i + 1) + delay
-                m, s = divmod(int(remaining_secs), 60)
-                eta_str = f"  ETA ~{m}m{s:02d}s" if m else f"  ETA ~{s}s"
-            print(
-                f"  [{i}/{total}] Fetching Edmunds: {make} {model} {year}{eta_str}",
-                file=sys.stderr,
-            )
-            try:
-                key = edmunds_cache_key(make, model, year)
-                cache[key] = await _fetch_edmunds_price_with_page(
-                    make, model, year, page
-                )
-                save_edmunds_cache(cache)
-                if delay > 0:
-                    await asyncio.sleep(delay)
-                iter_times.append(asyncio.get_event_loop().time() - t0)
-                idx += 1
-            except _ProxyBlocked as exc:
-                await _rotate(exc)
-            except Exception as e:
-                err_str = str(e)
-                if "Target page, context or browser has been closed" in err_str:
-                    print("  Browser closed unexpectedly — exiting", file=sys.stderr)
-                    if browser:
-                        await browser.close()
-                    return cache
-                retries[idx] = retries.get(idx, 0) + 1
-                if retries[idx] >= MAX_RETRIES:
-                    cache[edmunds_cache_key(make, model, year)] = None
-                    print(
-                        f"  Giving up on Edmunds {make} {model} {year} ({retries[idx]} failures)",
-                        file=sys.stderr,
-                    )
+                    save_edmunds_cache(cache)
+                    if delay > 0:
+                        await asyncio.sleep(delay)
+                    iter_times.append(asyncio.get_event_loop().time() - t0)
                     idx += 1
-                else:
-                    print(
-                        f"  Fetch error ({e}) ({retries[idx]}/{MAX_RETRIES}) — retrying...",
-                        file=sys.stderr,
-                    )
-                    await _rotate()
+                except _ProxyBlocked as exc:
+                    await _rotate(exc)
+                except _BrowserDied:
+                    print("  Browser died — skipping", file=sys.stderr)
+                    cache[edmunds_cache_key(make, model, year)] = None
+                    save_edmunds_cache(cache)
+                    idx += 1
+                    playwright_alive = False
+                except Exception as e:
+                    retries[idx] = retries.get(idx, 0) + 1
+                    if retries[idx] >= MAX_RETRIES:
+                        cache[edmunds_cache_key(make, model, year)] = None
+                        print(
+                            f"  Giving up on Edmunds {make} {model} {year} ({retries[idx]} failures)",
+                            file=sys.stderr,
+                        )
+                        idx += 1
+                    else:
+                        print(
+                            f"  Fetch error ({e}) ({retries[idx]}/{MAX_RETRIES}) — retrying...",
+                            file=sys.stderr,
+                        )
+                        await _rotate()
 
-        if browser:
-            await browser.close()
+            if browser:
+                try:
+                    await browser.close()
+                except Exception:
+                    pass
     return cache
 
 

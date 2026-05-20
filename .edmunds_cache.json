@@ -267,7 +267,14 @@
     "avg_used": null,
     "lastUpdated": 1779253172.957168
   },
-  "Acura|RLX|2017": null,
+  "Acura|RLX|2017": {
+    "min": 27998,
+    "max": 27998,
+    "url": "https://www.edmunds.com/acura/rlx/2017/review/",
+    "suggested": null,
+    "avg_used": 15421,
+    "lastUpdated": 1779292435.225993
+  },
   "Acura|TLX|2015": {
     "min": 9995,
     "max": 22998,
@@ -372,7 +379,14 @@
     "avg_used": 13677,
     "lastUpdated": 1779253372.450735
   },
-  "Audi|A3 Sportback e-tron|2018": null,
+  "Audi|A3 Sportback e-tron|2018": {
+    "min": 17998,
+    "max": 17998,
+    "url": "https://www.edmunds.com/audi/a3-sportback-e-tron/2018/review/",
+    "suggested": null,
+    "avg_used": 15651,
+    "lastUpdated": 1779292439.290882
+  },
   "Audi|A3|2014": null,
   "Audi|A3|2015": {
     "min": 16990,
@@ -382,7 +396,14 @@
     "avg_used": 13879,
     "lastUpdated": 1779253318.580756
   },
-  "Audi|A3|2016": null,
+  "Audi|A3|2016": {
+    "min": 9895,
+    "max": 9895,
+    "url": "https://www.edmunds.com/audi/a3/2016/review/",
+    "suggested": null,
+    "avg_used": 11149,
+    "lastUpdated": 1779292437.748513
+  },
   "Audi|A3|2017": {
     "min": 13500,
     "max": 22590,
@@ -414,5 +435,5718 @@
     "suggested": null,
     "avg_used": 16914,
     "lastUpdated": 1779253397.2051132
-  }
+  },
+  "Audi|A4|2017": {
+    "min": 12900,
+    "max": 22990,
+    "url": "https://www.edmunds.com/audi/a4/2017/review/",
+    "suggested": null,
+    "avg_used": 18071,
+    "lastUpdated": 1779253407.188294
+  },
+  "Audi|A4|2018": {
+    "min": 13987,
+    "max": 26990,
+    "url": "https://www.edmunds.com/audi/a4/2018/review/",
+    "suggested": null,
+    "avg_used": 20222,
+    "lastUpdated": 1779253414.2428071
+  },
+  "Audi|A4|2019": {
+    "min": 17998,
+    "max": 28998,
+    "url": "https://www.edmunds.com/audi/a4/2019/review/",
+    "suggested": null,
+    "avg_used": 22609,
+    "lastUpdated": 1779253421.564712
+  },
+  "Audi|A4|2020": {
+    "min": 21990,
+    "max": 29998,
+    "url": "https://www.edmunds.com/audi/a4/2020/review/",
+    "suggested": null,
+    "avg_used": 24714,
+    "lastUpdated": 1779253428.6653981
+  },
+  "Audi|A4|2021": {
+    "min": 20590,
+    "max": 32998,
+    "url": "https://www.edmunds.com/audi/a4/2021/review/",
+    "suggested": null,
+    "avg_used": 24760,
+    "lastUpdated": 1779253435.737128
+  },
+  "Audi|A4|2022": {
+    "min": 22397,
+    "max": 28998,
+    "url": "https://www.edmunds.com/audi/a4/2022/",
+    "suggested": null,
+    "avg_used": 21668,
+    "lastUpdated": 1779253442.981886
+  },
+  "Audi|A4|2023": {
+    "min": 23818,
+    "max": 35998,
+    "url": "https://www.edmunds.com/audi/a4/2023/",
+    "suggested": null,
+    "avg_used": 21668,
+    "lastUpdated": 1779253450.052138
+  },
+  "Audi|A4|2024": {
+    "min": 23999,
+    "max": 34998,
+    "url": "https://www.edmunds.com/audi/a4/2024/",
+    "suggested": null,
+    "avg_used": 21668,
+    "lastUpdated": 1779253457.307437
+  },
+  "Audi|A5|2016": {
+    "min": 18998,
+    "max": 19990,
+    "url": "https://www.edmunds.com/audi/a5/2016/review/",
+    "suggested": null,
+    "avg_used": 17167,
+    "lastUpdated": 1779253464.2162979
+  },
+  "Audi|A5|2017": {
+    "min": 17950,
+    "max": 17950,
+    "url": "https://www.edmunds.com/audi/a5/2017/review/",
+    "suggested": null,
+    "avg_used": 17131,
+    "lastUpdated": 1779292441.0459719
+  },
+  "Audi|A5|2018": {
+    "min": 15999,
+    "max": 21990,
+    "url": "https://www.edmunds.com/audi/a5/2018/review/",
+    "suggested": null,
+    "avg_used": 23133,
+    "lastUpdated": 1779253487.0842319
+  },
+  "Audi|A5|2019": {
+    "min": 22590,
+    "max": 24998,
+    "url": "https://www.edmunds.com/audi/a5/2019/review/",
+    "suggested": null,
+    "avg_used": 25037,
+    "lastUpdated": 1779253494.1662028
+  },
+  "Audi|A5|2020": {
+    "min": 22995,
+    "max": 28998,
+    "url": "https://www.edmunds.com/audi/a5/2020/review/",
+    "suggested": null,
+    "avg_used": 25083,
+    "lastUpdated": 1779253501.118658
+  },
+  "Audi|A5|2021": {
+    "min": 23998,
+    "max": 31990,
+    "url": "https://www.edmunds.com/audi/a5/2021/review/",
+    "suggested": null,
+    "avg_used": 28835,
+    "lastUpdated": 1779253508.174166
+  },
+  "Audi|A5|2022": {
+    "min": 26590,
+    "max": 36999,
+    "url": "https://www.edmunds.com/audi/a5/2022/",
+    "suggested": null,
+    "avg_used": 32653,
+    "lastUpdated": 1779253515.418275
+  },
+  "Audi|A5|2023": {
+    "min": 24964,
+    "max": 42590,
+    "url": "https://www.edmunds.com/audi/a5/2023/",
+    "suggested": null,
+    "avg_used": 32653,
+    "lastUpdated": 1779253522.409027
+  },
+  "Audi|A5|2024": {
+    "min": 28680,
+    "max": 41987,
+    "url": "https://www.edmunds.com/audi/a5/2024/",
+    "suggested": null,
+    "avg_used": 32653,
+    "lastUpdated": 1779253529.420775
+  },
+  "Audi|Q2|2018": null,
+  "Audi|Q3|2019": {
+    "min": 18880,
+    "max": 24998,
+    "url": "https://www.edmunds.com/audi/q3/2019/review/",
+    "suggested": null,
+    "avg_used": 22655,
+    "lastUpdated": 1779253536.997463
+  },
+  "Audi|Q3|2020": {
+    "min": 14798,
+    "max": 31990,
+    "url": "https://www.edmunds.com/audi/q3/2020/review/",
+    "suggested": null,
+    "avg_used": 23027,
+    "lastUpdated": 1779253543.992419
+  },
+  "Audi|Q3|2021": {
+    "min": 18994,
+    "max": 28998,
+    "url": "https://www.edmunds.com/audi/q3/2021/review/",
+    "suggested": null,
+    "avg_used": 24070,
+    "lastUpdated": 1779253550.86885
+  },
+  "Audi|Q3|2022": {
+    "min": 18770,
+    "max": 30590,
+    "url": "https://www.edmunds.com/audi/q3/2022/",
+    "suggested": null,
+    "avg_used": 26488,
+    "lastUpdated": 1779253558.178824
+  },
+  "Audi|Q3|2023": {
+    "min": 21497,
+    "max": 34990,
+    "url": "https://www.edmunds.com/audi/q3/2023/",
+    "suggested": null,
+    "avg_used": 26488,
+    "lastUpdated": 1779253565.286471
+  },
+  "Audi|Q3|2024": {
+    "min": 22825,
+    "max": 37590,
+    "url": "https://www.edmunds.com/audi/q3/2024/",
+    "suggested": null,
+    "avg_used": 26488,
+    "lastUpdated": 1779253572.572474
+  },
+  "Audi|Q5|2013": {
+    "min": 7450,
+    "max": 14990,
+    "url": "https://www.edmunds.com/audi/q5/2013/review/",
+    "suggested": null,
+    "avg_used": 10739,
+    "lastUpdated": 1779253579.43363
+  },
+  "Audi|Q5|2014": {
+    "min": 9499,
+    "max": 17590,
+    "url": "https://www.edmunds.com/audi/q5/2014/review/",
+    "suggested": null,
+    "avg_used": 12575,
+    "lastUpdated": 1779253586.397897
+  },
+  "Audi|Q5|2015": {
+    "min": 8700,
+    "max": 21998,
+    "url": "https://www.edmunds.com/audi/q5/2015/review/",
+    "suggested": null,
+    "avg_used": 16176,
+    "lastUpdated": 1779253593.649364
+  },
+  "Audi|Q5|2016": {
+    "min": 9300,
+    "max": 19998,
+    "url": "https://www.edmunds.com/audi/q5/2016/review/",
+    "suggested": null,
+    "avg_used": 16381,
+    "lastUpdated": 1779253600.4912262
+  },
+  "Audi|Q5|2017": {
+    "min": 9950,
+    "max": 19998,
+    "url": "https://www.edmunds.com/audi/q5/2017/review/",
+    "suggested": null,
+    "avg_used": 16479,
+    "lastUpdated": 1779253614.632001
+  },
+  "Audi|Q5|2018": {
+    "min": 12650,
+    "max": 25998,
+    "url": "https://www.edmunds.com/audi/q5/2018/review/",
+    "suggested": null,
+    "avg_used": 20683,
+    "lastUpdated": 1779253621.461932
+  },
+  "Audi|Q5|2019": {
+    "min": 13500,
+    "max": 28990,
+    "url": "https://www.edmunds.com/audi/q5/2019/review/",
+    "suggested": null,
+    "avg_used": 22190,
+    "lastUpdated": 1779253628.362997
+  },
+  "Audi|Q5|2020": {
+    "min": 18990,
+    "max": 31998,
+    "url": "https://www.edmunds.com/audi/q5/2020/review/",
+    "suggested": null,
+    "avg_used": 24871,
+    "lastUpdated": 1779253635.466825
+  },
+  "Audi|Q5|2021": {
+    "min": 16888,
+    "max": 32998,
+    "url": "https://www.edmunds.com/audi/q5/2021/review/",
+    "suggested": null,
+    "avg_used": 25976,
+    "lastUpdated": 1779253642.3853471
+  },
+  "Audi|Q5|2022": {
+    "min": 23572,
+    "max": 38998,
+    "url": "https://www.edmunds.com/audi/q5/2022/",
+    "suggested": null,
+    "avg_used": 29849,
+    "lastUpdated": 1779253650.442559
+  },
+  "Audi|Q5|2023": {
+    "min": 18698,
+    "max": 45000,
+    "url": "https://www.edmunds.com/audi/q5/2023/",
+    "suggested": null,
+    "avg_used": 29849,
+    "lastUpdated": 1779253657.5619872
+  },
+  "Audi|Q5|2024": {
+    "min": 26499,
+    "max": 44990,
+    "url": "https://www.edmunds.com/audi/q5/2024/",
+    "suggested": null,
+    "avg_used": 29849,
+    "lastUpdated": 1779253664.639982
+  },
+  "Audi|RS3|2018": {
+    "url": "https://www.edmunds.com/audi/rs3/2018/review/",
+    "suggested": null,
+    "avg_used": 40856,
+    "lastUpdated": 1779300426.998126
+  },
+  "Audi|S3|2015": {
+    "min": 14561,
+    "max": 14561,
+    "url": "https://www.edmunds.com/audi/s3/2015/review/",
+    "suggested": null,
+    "avg_used": 14561,
+    "lastUpdated": 1779292460.1428359
+  },
+  "Audi|S3|2016": {
+    "min": 24590,
+    "max": 27590,
+    "url": "https://www.edmunds.com/audi/s3/2016/review/",
+    "suggested": null,
+    "avg_used": 17969,
+    "lastUpdated": 1779253703.225047
+  },
+  "Audi|S3|2017": {
+    "min": 20700,
+    "max": 23990,
+    "url": "https://www.edmunds.com/audi/s3/2017/review/",
+    "suggested": null,
+    "avg_used": 22343,
+    "lastUpdated": 1779253710.063543
+  },
+  "BMW|E82|2004": null,
+  "BMW|E82|2005": null,
+  "BMW|E82|2006": null,
+  "BMW|E82|2007": null,
+  "BMW|E82|2008": null,
+  "BMW|E82|2009": null,
+  "BMW|E82|2010": null,
+  "BMW|E82|2011": null,
+  "BMW|E82|2012": null,
+  "BMW|E82|2013": null,
+  "BMW|E90|2005": null,
+  "BMW|E90|2006": null,
+  "BMW|E90|2007": null,
+  "BMW|E90|2008": null,
+  "BMW|E90|2009": null,
+  "BMW|E90|2010": null,
+  "BMW|E90|2011": null,
+  "Buick|Baby Enclave|2020": null,
+  "Buick|Baby Enclave|2021": null,
+  "Buick|Baby Enclave|2022": null,
+  "Buick|Baby Enclave|2023": null,
+  "CUPRA|Ateca|2018": null,
+  "CUPRA|Ateca|2019": null,
+  "CUPRA|Ateca|2020": null,
+  "CUPRA|Ateca|2021": null,
+  "CUPRA|Ateca|2022": null,
+  "CUPRA|Ateca|2023": null,
+  "Cadillac|CT6|2017": {
+    "min": 14995,
+    "max": 30990,
+    "url": "https://www.edmunds.com/cadillac/ct6/2017/review/",
+    "suggested": null,
+    "avg_used": 20628,
+    "lastUpdated": 1779256175.8571782
+  },
+  "Cadillac|CT6|2018": {
+    "min": 23990,
+    "max": 31998,
+    "url": "https://www.edmunds.com/cadillac/ct6/2018/review/",
+    "suggested": null,
+    "avg_used": 23587,
+    "lastUpdated": 1779256185.045123
+  },
+  "Cadillac|Escalade|2018": {
+    "min": 24775,
+    "max": 41990,
+    "url": "https://www.edmunds.com/cadillac/escalade/2018/review/",
+    "suggested": null,
+    "avg_used": 28408,
+    "lastUpdated": 1779256186.853952
+  },
+  "Cadillac|XT5|2018": {
+    "min": 8796,
+    "max": 27998,
+    "url": "https://www.edmunds.com/cadillac/xt5/2018/review/",
+    "suggested": null,
+    "avg_used": 20737,
+    "lastUpdated": 1779256188.649843
+  },
+  "Cadillac|XT6|2020": {
+    "min": 22625,
+    "max": 33998,
+    "url": "https://www.edmunds.com/cadillac/xt6/2020/review/",
+    "suggested": null,
+    "avg_used": 29064,
+    "lastUpdated": 1779256190.326302
+  },
+  "Chevrolet|Blazer|2019": {
+    "min": 13995,
+    "max": 27998,
+    "url": "https://www.edmunds.com/chevrolet/blazer/2019/review/",
+    "suggested": null,
+    "avg_used": 20595,
+    "lastUpdated": 1779256192.1873338
+  },
+  "Chevrolet|Blazer|2020": {
+    "min": 14995,
+    "max": 25691,
+    "url": "https://www.edmunds.com/chevrolet/blazer/2020/review/",
+    "suggested": null,
+    "avg_used": 21051,
+    "lastUpdated": 1779256193.967393
+  },
+  "Chevrolet|Blazer|2021": {
+    "min": 14553,
+    "max": 32993,
+    "url": "https://www.edmunds.com/chevrolet/blazer/2021/review/",
+    "suggested": null,
+    "avg_used": 23381,
+    "lastUpdated": 1779256195.905588
+  },
+  "Chevrolet|Blazer|2022": {
+    "min": 17290,
+    "max": 35990,
+    "url": "https://www.edmunds.com/chevrolet/blazer/2022/",
+    "suggested": null,
+    "avg_used": 27215,
+    "lastUpdated": 1779256197.992927
+  },
+  "Chevrolet|Blazer|2023": {
+    "min": 19081,
+    "max": 35998,
+    "url": "https://www.edmunds.com/chevrolet/blazer/2023/",
+    "suggested": null,
+    "avg_used": 27215,
+    "lastUpdated": 1779256200.6772742
+  },
+  "Chevrolet|Blazer|2024": {
+    "min": 22590,
+    "max": 39875,
+    "url": "https://www.edmunds.com/chevrolet/blazer/2024/",
+    "suggested": null,
+    "avg_used": 27215,
+    "lastUpdated": 1779256203.547062
+  },
+  "Chevrolet|Blazer|2025": {
+    "min": 35400,
+    "max": 45700,
+    "url": "https://www.edmunds.com/chevrolet/blazer/2025/",
+    "suggested": 33864,
+    "avg_used": null,
+    "lastUpdated": 1779256205.9708622
+  },
+  "Chevrolet|Bolt ACC|2022": null,
+  "Chevrolet|Bolt ACC|2023": null,
+  "Chevrolet|Bolt EUV LT|2022": null,
+  "Chevrolet|Bolt EUV LT|2023": null,
+  "Chevrolet|Bolt EUV|2022": {
+    "min": 17888,
+    "max": 24590,
+    "url": "https://www.edmunds.com/chevrolet/bolt-euv/2022/",
+    "suggested": null,
+    "avg_used": 20151,
+    "lastUpdated": 1779256358.793343
+  },
+  "Chevrolet|Bolt EUV|2023": {
+    "min": 15590,
+    "max": 28990,
+    "url": "https://www.edmunds.com/chevrolet/bolt-euv/2023/",
+    "suggested": null,
+    "avg_used": 20151,
+    "lastUpdated": 1779256360.9173062
+  },
+  "Chevrolet|Bolt EV LT|2022": null,
+  "Chevrolet|Bolt EV LT|2023": null,
+  "Chevrolet|Bolt EV|2017": {
+    "min": 14990,
+    "max": 16590,
+    "url": "https://www.edmunds.com/chevrolet/bolt-ev/2017/review/",
+    "suggested": null,
+    "avg_used": 13312,
+    "lastUpdated": 1779292671.5902479
+  },
+  "Chevrolet|Bolt EV|2018": {
+    "min": 16990,
+    "max": 16990,
+    "url": "https://www.edmunds.com/chevrolet/bolt-ev/2018/review/",
+    "suggested": null,
+    "avg_used": 14925,
+    "lastUpdated": 1779292673.550714
+  },
+  "Chevrolet|Bolt EV|2019": {
+    "min": 14790,
+    "max": 17990,
+    "url": "https://www.edmunds.com/chevrolet/bolt-ev/2019/review/",
+    "suggested": null,
+    "avg_used": 14656,
+    "lastUpdated": 1779256397.815416
+  },
+  "Chevrolet|Bolt EV|2020": {
+    "min": 15990,
+    "max": 18990,
+    "url": "https://www.edmunds.com/chevrolet/bolt-ev/2020/review/",
+    "suggested": null,
+    "avg_used": 16046,
+    "lastUpdated": 1779256399.613526
+  },
+  "Chevrolet|Bolt EV|2021": {
+    "min": 17590,
+    "max": 17990,
+    "url": "https://www.edmunds.com/chevrolet/bolt-ev/2021/review/",
+    "suggested": null,
+    "avg_used": 16484,
+    "lastUpdated": 1779256401.27575
+  },
+  "Chevrolet|Bolt EV|2022": {
+    "min": 19990,
+    "max": 19998,
+    "url": "https://www.edmunds.com/chevrolet/bolt-ev/2022/review/",
+    "suggested": null,
+    "avg_used": 19210,
+    "lastUpdated": 1779300243.226926
+  },
+  "Chevrolet|Bolt EV|2023": {
+    "min": 16990,
+    "max": 26590,
+    "url": "https://www.edmunds.com/chevrolet/bolt-ev/2023/review/",
+    "suggested": null,
+    "avg_used": 17103,
+    "lastUpdated": 1779256443.4933288
+  },
+  "Chevrolet|Equinox|2019": {
+    "min": 7500,
+    "max": 24968,
+    "url": "https://www.edmunds.com/chevrolet/equinox/2019/review/",
+    "suggested": null,
+    "avg_used": 16771,
+    "lastUpdated": 1779256469.426959
+  },
+  "Chevrolet|Equinox|2020": {
+    "min": 8900,
+    "max": 24900,
+    "url": "https://www.edmunds.com/chevrolet/equinox/2020/review/",
+    "suggested": null,
+    "avg_used": 17123,
+    "lastUpdated": 1779256470.714196
+  },
+  "Chevrolet|Equinox|2021": {
+    "min": 11902,
+    "max": 23995,
+    "url": "https://www.edmunds.com/chevrolet/equinox/2021/review/",
+    "suggested": null,
+    "avg_used": 18306,
+    "lastUpdated": 1779256471.32354
+  },
+  "Chevrolet|Equinox|2022": {
+    "min": 7977,
+    "max": 30574,
+    "url": "https://www.edmunds.com/chevrolet/equinox/2022/review/",
+    "suggested": null,
+    "avg_used": 21642,
+    "lastUpdated": 1779256769.688617
+  },
+  "Chevrolet|Malibu Hybrid|2017": null,
+  "Chevrolet|Malibu|2016": {
+    "min": 5980,
+    "max": 19590,
+    "url": "https://www.edmunds.com/chevrolet/malibu/2016/review/",
+    "suggested": null,
+    "avg_used": 13023,
+    "lastUpdated": 1779292727.854613
+  },
+  "Chevrolet|Malibu|2017": {
+    "min": 6990,
+    "max": 19590,
+    "url": "https://www.edmunds.com/chevrolet/malibu/2017/review/",
+    "suggested": null,
+    "avg_used": 14215,
+    "lastUpdated": 1779256525.178406
+  },
+  "Chevrolet|Malibu|2018": {
+    "min": 6999,
+    "max": 22998,
+    "url": "https://www.edmunds.com/chevrolet/malibu/2018/review/",
+    "suggested": null,
+    "avg_used": 15559,
+    "lastUpdated": 1779256526.1876109
+  },
+  "Chevrolet|Malibu|2019": {
+    "min": 6999,
+    "max": 20998,
+    "url": "https://www.edmunds.com/chevrolet/malibu/2019/review/",
+    "suggested": null,
+    "avg_used": 16662,
+    "lastUpdated": 1779256794.273149
+  },
+  "Chevrolet|Malibu|2020": {
+    "min": 9500,
+    "max": 19998,
+    "url": "https://www.edmunds.com/chevrolet/malibu/2020/review/",
+    "suggested": null,
+    "avg_used": 17080,
+    "lastUpdated": 1779256518.389248
+  },
+  "Chevrolet|Malibu|2021": {
+    "min": 7999,
+    "max": 21590,
+    "url": "https://www.edmunds.com/chevrolet/malibu/2021/review/",
+    "suggested": null,
+    "avg_used": 17275,
+    "lastUpdated": 1779256520.087716
+  },
+  "Chevrolet|Malibu|2022": {
+    "min": 13999,
+    "max": 22998,
+    "url": "https://www.edmunds.com/chevrolet/malibu/2022/",
+    "suggested": null,
+    "avg_used": 17271,
+    "lastUpdated": 1779256522.287071
+  },
+  "Chevrolet|Malibu|2023": {
+    "min": 12995,
+    "max": 23998,
+    "url": "https://www.edmunds.com/chevrolet/malibu/2023/",
+    "suggested": null,
+    "avg_used": 17271,
+    "lastUpdated": 1779256524.4754822
+  },
+  "Chevrolet|Silverado 1500|2020": {
+    "min": 15995,
+    "max": 49995,
+    "url": "https://www.edmunds.com/chevrolet/silverado-1500/2020/review/",
+    "suggested": null,
+    "avg_used": 30046,
+    "lastUpdated": 1779292731.745488
+  },
+  "Chevrolet|Silverado 1500|2021": {
+    "min": 17595,
+    "max": 46594,
+    "url": "https://www.edmunds.com/chevrolet/silverado-1500/2021/review/",
+    "suggested": null,
+    "avg_used": 33727,
+    "lastUpdated": 1779256876.8400488
+  },
+  "Chevrolet|Suburban Premier|2016": null,
+  "Chevrolet|Suburban Premier|2017": null,
+  "Chevrolet|Suburban Premier|2018": null,
+  "Chevrolet|Suburban Premier|2019": null,
+  "Chevrolet|Suburban Premier|2020": null,
+  "Chevrolet|Suburban|2016": {
+    "min": 16300,
+    "max": 36998,
+    "url": "https://www.edmunds.com/chevrolet/suburban/2016/review/",
+    "suggested": null,
+    "avg_used": 18814,
+    "lastUpdated": 1779256878.918705
+  },
+  "Chevrolet|Suburban|2017": {
+    "min": 11500,
+    "max": 36590,
+    "url": "https://www.edmunds.com/chevrolet/suburban/2017/review/",
+    "suggested": null,
+    "avg_used": 22163,
+    "lastUpdated": 1779256880.532831
+  },
+  "Chevrolet|Suburban|2018": {
+    "min": 11495,
+    "max": 40990,
+    "url": "https://www.edmunds.com/chevrolet/suburban/2018/review/",
+    "suggested": null,
+    "avg_used": 25429,
+    "lastUpdated": 1779256882.41303
+  },
+  "Chevrolet|Suburban|2019": {
+    "min": 13998,
+    "max": 48590,
+    "url": "https://www.edmunds.com/chevrolet/suburban/2019/review/",
+    "suggested": null,
+    "avg_used": 27863,
+    "lastUpdated": 1779256884.2771342
+  },
+  "Chevrolet|Suburban|2020": {
+    "min": 18749,
+    "max": 55998,
+    "url": "https://www.edmunds.com/chevrolet/suburban/2020/review/",
+    "suggested": null,
+    "avg_used": 30200,
+    "lastUpdated": 1779256886.1402838
+  },
+  "Chevrolet|TRAX|2024": {
+    "min": 15995,
+    "max": 25998,
+    "url": "https://www.edmunds.com/chevrolet/trax/2024/",
+    "suggested": null,
+    "avg_used": 20253,
+    "lastUpdated": 1779256897.027491
+  },
+  "Chevrolet|Trailblazer|2021": {
+    "min": 13998,
+    "max": 25990,
+    "url": "https://www.edmunds.com/chevrolet/trailblazer/2021/review/",
+    "suggested": null,
+    "avg_used": 19368,
+    "lastUpdated": 1779256919.936579
+  },
+  "Chevrolet|Trailblazer|2022": {
+    "min": 14599,
+    "max": 25998,
+    "url": "https://www.edmunds.com/chevrolet/trailblazer/2022/review/",
+    "suggested": null,
+    "avg_used": 22041,
+    "lastUpdated": 1779256920.223178
+  },
+  "Chevrolet|Volt|2017": {
+    "min": 7500,
+    "max": 18990,
+    "url": "https://www.edmunds.com/chevrolet/volt/2017/review/",
+    "suggested": null,
+    "avg_used": 13285,
+    "lastUpdated": 1779257014.817557
+  },
+  "Chevrolet|Volt|2018": {
+    "min": 12389,
+    "max": 21990,
+    "url": "https://www.edmunds.com/chevrolet/volt/2018/review/",
+    "suggested": null,
+    "avg_used": 15631,
+    "lastUpdated": 1779257015.243659
+  },
+  "Chrysler|Pacifica Hybrid|2017": {
+    "min": 20990,
+    "max": 20990,
+    "url": "https://www.edmunds.com/chrysler/pacifica-hybrid/2017/review/",
+    "suggested": null,
+    "avg_used": 16397,
+    "lastUpdated": 1779292823.386421
+  },
+  "Chrysler|Pacifica Hybrid|2018": {
+    "min": 18590,
+    "max": 26998,
+    "url": "https://www.edmunds.com/chrysler/pacifica-hybrid/2018/review/",
+    "suggested": null,
+    "avg_used": 21680,
+    "lastUpdated": 1779257045.422606
+  },
+  "Chrysler|Pacifica Hybrid|2019": {
+    "min": 19990,
+    "max": 23988,
+    "url": "https://www.edmunds.com/chrysler/pacifica-hybrid/2019/review/",
+    "suggested": null,
+    "avg_used": 20371,
+    "lastUpdated": 1779257046.9391732
+  },
+  "Chrysler|Pacifica Hybrid|2020": null,
+  "Chrysler|Pacifica Hybrid|2021": null,
+  "Chrysler|Pacifica Hybrid|2022": null,
+  "Chrysler|Pacifica Hybrid|2023": null,
+  "Chrysler|Pacifica Hybrid|2024": null,
+  "Chrysler|Pacifica Hybrid|2025": null,
+  "Chrysler|Pacifica|2017": {
+    "min": 7715,
+    "max": 27998,
+    "url": "https://www.edmunds.com/chrysler/pacifica/2017/review/",
+    "suggested": null,
+    "avg_used": 18281,
+    "lastUpdated": 1779256583.9079611
+  },
+  "Chrysler|Pacifica|2018": {
+    "min": 7999,
+    "max": 25590,
+    "url": "https://www.edmunds.com/chrysler/pacifica/2018/review/",
+    "suggested": null,
+    "avg_used": 19081,
+    "lastUpdated": 1779257016.792383
+  },
+  "Chrysler|Pacifica|2019": {
+    "min": 10200,
+    "max": 25998,
+    "url": "https://www.edmunds.com/chrysler/pacifica/2019/review/",
+    "suggested": null,
+    "avg_used": 21120,
+    "lastUpdated": 1779257018.6181278
+  },
+  "Chrysler|Pacifica|2020": {
+    "min": 13999,
+    "max": 33590,
+    "url": "https://www.edmunds.com/chrysler/pacifica/2020/review/",
+    "suggested": null,
+    "avg_used": 23301,
+    "lastUpdated": 1779257020.651982
+  },
+  "Chrysler|Pacifica|2021": {
+    "min": 16900,
+    "max": 38590,
+    "url": "https://www.edmunds.com/chrysler/pacifica/2021/review/",
+    "suggested": null,
+    "avg_used": 25671,
+    "lastUpdated": 1779257022.464459
+  },
+  "Chrysler|Pacifica|2022": {
+    "min": 15599,
+    "max": 40998,
+    "url": "https://www.edmunds.com/chrysler/pacifica/2022/",
+    "suggested": null,
+    "avg_used": 26390,
+    "lastUpdated": 1779257024.707757
+  },
+  "Chrysler|Pacifica|2023": {
+    "min": 17997,
+    "max": 40998,
+    "url": "https://www.edmunds.com/chrysler/pacifica/2023/",
+    "suggested": null,
+    "avg_used": 26390,
+    "lastUpdated": 1779257027.6286001
+  },
+  "Dodge|Durango|2020": {
+    "min": 13997,
+    "max": 54971,
+    "url": "https://www.edmunds.com/dodge/durango/2020/review/",
+    "suggested": null,
+    "avg_used": 28147,
+    "lastUpdated": 1779257054.5133178
+  },
+  "Dodge|Durango|2021": {
+    "min": 20818,
+    "max": 56590,
+    "url": "https://www.edmunds.com/dodge/durango/2021/review/",
+    "suggested": null,
+    "avg_used": 31403,
+    "lastUpdated": 1779257056.134371
+  },
+  "Ford|Bronco Sport|2021": {
+    "min": 16530,
+    "max": 27590,
+    "url": "https://www.edmunds.com/ford/bronco-sport/2021/review/",
+    "suggested": null,
+    "avg_used": 22731,
+    "lastUpdated": 1779257058.05952
+  },
+  "Ford|Bronco Sport|2022": {
+    "min": 18298,
+    "max": 30590,
+    "url": "https://www.edmunds.com/ford/bronco-sport/2022/",
+    "suggested": null,
+    "avg_used": 29475,
+    "lastUpdated": 1779257060.00546
+  },
+  "Ford|Bronco Sport|2023": {
+    "min": 21000,
+    "max": 34998,
+    "url": "https://www.edmunds.com/ford/bronco-sport/2023/",
+    "suggested": null,
+    "avg_used": 29475,
+    "lastUpdated": 1779257062.088906
+  },
+  "Ford|Bronco Sport|2024": {
+    "min": 17995,
+    "max": 40255,
+    "url": "https://www.edmunds.com/ford/bronco-sport/2024/",
+    "suggested": null,
+    "avg_used": 29475,
+    "lastUpdated": 1779257064.548718
+  },
+  "Ford|Edge|2022": {
+    "min": 13200,
+    "max": 30590,
+    "url": "https://www.edmunds.com/ford/edge/2022/",
+    "suggested": null,
+    "avg_used": 19022,
+    "lastUpdated": 1779257066.781973
+  },
+  "Ford|Escape Hybrid|2020": null,
+  "Ford|Escape Hybrid|2021": null,
+  "Ford|Escape Hybrid|2022": null,
+  "Ford|Escape Hybrid|2023": null,
+  "Ford|Escape Hybrid|2024": null,
+  "Ford|Escape Plug-in Hybrid|2020": null,
+  "Ford|Escape Plug-in Hybrid|2021": {
+    "min": 17998,
+    "max": 17998,
+    "url": "https://www.edmunds.com/ford/escape-plug-in-hybrid/2021/review/",
+    "suggested": null,
+    "avg_used": 19194,
+    "lastUpdated": 1779292854.438733
+  },
+  "Ford|Escape Plug-in Hybrid|2022": {
+    "min": 16990,
+    "max": 25998,
+    "url": "https://www.edmunds.com/ford/escape-plug-in-hybrid/2022/",
+    "suggested": null,
+    "avg_used": 20633,
+    "lastUpdated": 1779257127.040114
+  },
+  "Ford|Escape Plug-in Hybrid|2023": null,
+  "Ford|Escape Plug-in Hybrid|2024": null,
+  "Ford|Escape|2020": {
+    "min": 9400,
+    "max": 28998,
+    "url": "https://www.edmunds.com/ford/escape/2020/review/",
+    "suggested": null,
+    "avg_used": 18265,
+    "lastUpdated": 1779257068.9358919
+  },
+  "Ford|Escape|2021": {
+    "min": 14468,
+    "max": 26998,
+    "url": "https://www.edmunds.com/ford/escape/2021/review/",
+    "suggested": null,
+    "avg_used": 19369,
+    "lastUpdated": 1779257071.0479732
+  },
+  "Ford|Escape|2022": {
+    "min": 11999,
+    "max": 32499,
+    "url": "https://www.edmunds.com/ford/escape/2022/",
+    "suggested": null,
+    "avg_used": 17839,
+    "lastUpdated": 1779257073.7138078
+  },
+  "Ford|Escape|2023": {
+    "min": 14995,
+    "max": 33491,
+    "url": "https://www.edmunds.com/ford/escape/2023/",
+    "suggested": null,
+    "avg_used": 17839,
+    "lastUpdated": 1779257075.935232
+  },
+  "Ford|Escape|2024": {
+    "min": 17495,
+    "max": 34991,
+    "url": "https://www.edmunds.com/ford/escape/2024/",
+    "suggested": null,
+    "avg_used": 17839,
+    "lastUpdated": 1779257078.147093
+  },
+  "Ford|Expedition|2022": {
+    "min": 32990,
+    "max": 61998,
+    "url": "https://www.edmunds.com/ford/expedition/2022/",
+    "suggested": null,
+    "avg_used": 49013,
+    "lastUpdated": 1779257132.20035
+  },
+  "Ford|Expedition|2023": {
+    "min": 29685,
+    "max": 61995,
+    "url": "https://www.edmunds.com/ford/expedition/2023/",
+    "suggested": null,
+    "avg_used": 49013,
+    "lastUpdated": 1779257134.495788
+  },
+  "Ford|Expedition|2024": {
+    "min": 33744,
+    "max": 71995,
+    "url": "https://www.edmunds.com/ford/expedition/2024/",
+    "suggested": null,
+    "avg_used": 49013,
+    "lastUpdated": 1779257137.600669
+  },
+  "Ford|Explorer Hybrid|2020": null,
+  "Ford|Explorer Hybrid|2021": null,
+  "Ford|Explorer Hybrid|2022": null,
+  "Ford|Explorer Hybrid|2023": null,
+  "Ford|Explorer Hybrid|2024": null,
+  "Ford|Explorer|2020": {
+    "min": 13950,
+    "max": 45799,
+    "url": "https://www.edmunds.com/ford/explorer/2020/review/",
+    "suggested": null,
+    "avg_used": 25872,
+    "lastUpdated": 1779257139.666759
+  },
+  "Ford|Explorer|2021": {
+    "min": 16301,
+    "max": 38998,
+    "url": "https://www.edmunds.com/ford/explorer/2021/review/",
+    "suggested": null,
+    "avg_used": 26621,
+    "lastUpdated": 1779257142.059392
+  },
+  "Ford|Explorer|2022": {
+    "min": 16995,
+    "max": 41998,
+    "url": "https://www.edmunds.com/ford/explorer/2022/",
+    "suggested": null,
+    "avg_used": 33178,
+    "lastUpdated": 1779257144.7615051
+  },
+  "Ford|Explorer|2023": {
+    "min": 22635,
+    "max": 48590,
+    "url": "https://www.edmunds.com/ford/explorer/2023/",
+    "suggested": null,
+    "avg_used": 33178,
+    "lastUpdated": 1779257147.4919271
+  },
+  "Ford|Explorer|2024": {
+    "min": 24990,
+    "max": 47570,
+    "url": "https://www.edmunds.com/ford/explorer/2024/",
+    "suggested": null,
+    "avg_used": 33178,
+    "lastUpdated": 1779257149.911649
+  },
+  "Ford|F-150 Hybrid|2021": null,
+  "Ford|F-150 Hybrid|2022": null,
+  "Ford|F-150 Hybrid|2023": null,
+  "Ford|F-150|2021": {
+    "min": 20000,
+    "max": 65998,
+    "url": "https://www.edmunds.com/ford/f-150/2021/review/",
+    "suggested": null,
+    "avg_used": 35076,
+    "lastUpdated": 1779257159.624776
+  },
+  "Ford|F-150|2022": {
+    "min": 19495,
+    "max": 74968,
+    "url": "https://www.edmunds.com/ford/f-150/2022/",
+    "suggested": null,
+    "avg_used": 38865,
+    "lastUpdated": 1779257164.180322
+  },
+  "Ford|F-150|2023": {
+    "min": 27349,
+    "max": 117000,
+    "url": "https://www.edmunds.com/ford/f-150/2023/",
+    "suggested": null,
+    "avg_used": 38865,
+    "lastUpdated": 1779257168.785915
+  },
+  "Ford|Focus Hybrid|2018": null,
+  "Ford|Focus|2018": {
+    "min": 6290,
+    "max": 20990,
+    "url": "https://www.edmunds.com/ford/focus/2018/review/",
+    "suggested": null,
+    "avg_used": 13312,
+    "lastUpdated": 1779257176.63248
+  },
+  "Ford|Kuga Hybrid|2020": null,
+  "Ford|Kuga Hybrid|2021": null,
+  "Ford|Kuga Hybrid|2022": null,
+  "Ford|Kuga Hybrid|2023": null,
+  "Ford|Kuga Hybrid|2024": null,
+  "Ford|Kuga Plug-in Hybrid|2020": null,
+  "Ford|Kuga Plug-in Hybrid|2021": null,
+  "Ford|Kuga Plug-in Hybrid|2022": null,
+  "Ford|Kuga Plug-in Hybrid|2023": null,
+  "Ford|Kuga Plug-in Hybrid|2024": null,
+  "Ford|Kuga|2020": null,
+  "Ford|Kuga|2021": null,
+  "Ford|Kuga|2022": null,
+  "Ford|Kuga|2023": null,
+  "Ford|Maverick Hybrid|2022": null,
+  "Ford|Maverick Hybrid|2023": null,
+  "Ford|Maverick Hybrid|2024": null,
+  "Ford|Maverick|2022": {
+    "min": 19399,
+    "max": 34799,
+    "url": "https://www.edmunds.com/ford/maverick/2022/",
+    "suggested": null,
+    "avg_used": 32942,
+    "lastUpdated": 1779257198.4041548
+  },
+  "Ford|Maverick|2023": {
+    "min": 23250,
+    "max": 36998,
+    "url": "https://www.edmunds.com/ford/maverick/2023/",
+    "suggested": null,
+    "avg_used": 32942,
+    "lastUpdated": 1779257203.0599658
+  },
+  "Ford|Maverick|2024": {
+    "min": 21998,
+    "max": 39990,
+    "url": "https://www.edmunds.com/ford/maverick/2024/",
+    "suggested": null,
+    "avg_used": 32942,
+    "lastUpdated": 1779257207.7291782
+  },
+  "Ford|Mustang Mach-E|2021": {
+    "min": 23590,
+    "max": 30527,
+    "url": "https://www.edmunds.com/ford/mustang-mach-e/2021/review/",
+    "suggested": null,
+    "avg_used": 23959,
+    "lastUpdated": 1779257216.116698
+  },
+  "Ford|Mustang Mach-E|2022": {
+    "min": 21990,
+    "max": 38998,
+    "url": "https://www.edmunds.com/ford/mustang-mach-e/2022/",
+    "suggested": null,
+    "avg_used": 41750,
+    "lastUpdated": 1779257220.612489
+  },
+  "Ford|Mustang Mach-E|2023": {
+    "min": 24590,
+    "max": 43835,
+    "url": "https://www.edmunds.com/ford/mustang-mach-e/2023/",
+    "suggested": null,
+    "avg_used": 41750,
+    "lastUpdated": 1779257225.392281
+  },
+  "Ford|Mustang Mach-E|2024": {
+    "min": 30995,
+    "max": 36998,
+    "url": "https://www.edmunds.com/ford/mustang-mach-e/2024/",
+    "suggested": null,
+    "avg_used": 41750,
+    "lastUpdated": 1779257230.243077
+  },
+  "Ford|Ranger|2024": {
+    "min": 30998,
+    "max": 58238,
+    "url": "https://www.edmunds.com/ford/ranger/2024/",
+    "suggested": null,
+    "avg_used": 32322,
+    "lastUpdated": 1779257234.8027542
+  },
+  "GMC|Acadia|2018": {
+    "min": 9891,
+    "max": 40791,
+    "url": "https://www.edmunds.com/gmc/acadia/2018/review/",
+    "suggested": null,
+    "avg_used": 20812,
+    "lastUpdated": 1779257238.969267
+  },
+  "GMC|Sierra 1500|2020": {
+    "min": 21500,
+    "max": 51682,
+    "url": "https://www.edmunds.com/gmc/sierra-1500/2020/review/",
+    "suggested": null,
+    "avg_used": 36484,
+    "lastUpdated": 1779257243.30732
+  },
+  "GMC|Sierra 1500|2021": {
+    "min": 27990,
+    "max": 50989,
+    "url": "https://www.edmunds.com/gmc/sierra-1500/2021/review/",
+    "suggested": null,
+    "avg_used": 38298,
+    "lastUpdated": 1779257247.489324
+  },
+  "GMC|Yukon|2019": {
+    "min": 23990,
+    "max": 67794,
+    "url": "https://www.edmunds.com/gmc/yukon/2019/review/",
+    "suggested": null,
+    "avg_used": 37047,
+    "lastUpdated": 1779257251.511585
+  },
+  "GMC|Yukon|2020": {
+    "min": 18900,
+    "max": 44998,
+    "url": "https://www.edmunds.com/gmc/yukon/2020/review/",
+    "suggested": null,
+    "avg_used": 34654,
+    "lastUpdated": 1779257255.743263
+  },
+  "Genesis|G70|2018": null,
+  "Genesis|G70|2019": {
+    "min": 17595,
+    "max": 28998,
+    "url": "https://www.edmunds.com/genesis/g70/2019/review/",
+    "suggested": null,
+    "avg_used": 21015,
+    "lastUpdated": 1779257260.929821
+  },
+  "Genesis|G70|2020": {
+    "min": 18950,
+    "max": 27759,
+    "url": "https://www.edmunds.com/genesis/g70/2020/review/",
+    "suggested": null,
+    "avg_used": 21961,
+    "lastUpdated": 1779257265.059799
+  },
+  "Genesis|G70|2021": {
+    "min": 20998,
+    "max": 34998,
+    "url": "https://www.edmunds.com/genesis/g70/2021/review/",
+    "suggested": null,
+    "avg_used": 23824,
+    "lastUpdated": 1779292901.886035
+  },
+  "Genesis|G70|2022": null,
+  "Genesis|G70|2023": {
+    "min": 24990,
+    "max": 44998,
+    "url": "https://www.edmunds.com/genesis/g70/2023/",
+    "suggested": null,
+    "avg_used": 37454,
+    "lastUpdated": 1779257281.953376
+  },
+  "Genesis|G80 (2.5T Advanced Trim, with HDA II)|2024": null,
+  "Genesis|G80|2017": {
+    "min": 11995,
+    "max": 33794,
+    "url": "https://www.edmunds.com/genesis/g80/2017/review/",
+    "suggested": null,
+    "avg_used": 15951,
+    "lastUpdated": 1779257283.6612659
+  },
+  "Genesis|G80|2018": {
+    "min": 17950,
+    "max": 25998,
+    "url": "https://www.edmunds.com/genesis/g80/2018/review/",
+    "suggested": null,
+    "avg_used": 19107,
+    "lastUpdated": 1779257285.526443
+  },
+  "Genesis|G80|2019": {
+    "min": 23999,
+    "max": 30990,
+    "url": "https://www.edmunds.com/genesis/g80/2019/review/",
+    "suggested": null,
+    "avg_used": 22332,
+    "lastUpdated": 1779257288.043286
+  },
+  "Genesis|G90|2017": {
+    "min": 24990,
+    "max": 31998,
+    "url": "https://www.edmunds.com/genesis/g90/2017/review/",
+    "suggested": null,
+    "avg_used": 19665,
+    "lastUpdated": 1779257307.773024
+  },
+  "Genesis|G90|2018": {
+    "min": 19998,
+    "max": 27990,
+    "url": "https://www.edmunds.com/genesis/g90/2018/review/",
+    "suggested": null,
+    "avg_used": 23995,
+    "lastUpdated": 1779257309.8548281
+  },
+  "Genesis|G90|2019": {
+    "min": 25990,
+    "max": 33998,
+    "url": "https://www.edmunds.com/genesis/g90/2019/review/",
+    "suggested": null,
+    "avg_used": 28576,
+    "lastUpdated": 1779257311.50827
+  },
+  "Genesis|G90|2020": {
+    "min": 30798,
+    "max": 30798,
+    "url": "https://www.edmunds.com/genesis/g90/2020/review/",
+    "suggested": null,
+    "avg_used": 30798,
+    "lastUpdated": 1779292942.33584
+  },
+  "Genesis|GV60 (Advanced Trim)|2023": {
+    "min": 31000,
+    "max": 36990,
+    "url": "https://www.edmunds.com/genesis/gv60/2023/",
+    "suggested": null,
+    "avg_used": 47087,
+    "lastUpdated": 1779257330.248151
+  },
+  "Genesis|GV60 (Performance Trim)|2022": null,
+  "Genesis|GV60 (Performance Trim)|2023": {
+    "min": 31000,
+    "max": 36990,
+    "url": "https://www.edmunds.com/genesis/gv60/2023/",
+    "suggested": null,
+    "avg_used": 47087,
+    "lastUpdated": 1779257334.087935
+  },
+  "Genesis|GV70 (2.5T Trim, without HDA II)|2022": {
+    "min": 27990,
+    "max": 41998,
+    "url": "https://www.edmunds.com/genesis/gv70/2022/review/",
+    "suggested": null,
+    "avg_used": 52429,
+    "lastUpdated": 1779257342.342122
+  },
+  "Genesis|GV70 (2.5T Trim, without HDA II)|2023": {
+    "min": 30614,
+    "max": 43998,
+    "url": "https://www.edmunds.com/genesis/gv70/2023/review/",
+    "suggested": null,
+    "avg_used": 52429,
+    "lastUpdated": 1779257343.033694
+  },
+  "Genesis|GV70 (2.5T Trim, without HDA II)|2024": {
+    "min": 33299,
+    "max": 44998,
+    "url": "https://www.edmunds.com/genesis/gv70/2024/",
+    "suggested": null,
+    "avg_used": 52429,
+    "lastUpdated": 1779257341.659714
+  },
+  "Genesis|GV70 (3.5T Trim, without HDA II)|2022": null,
+  "Genesis|GV70 (3.5T Trim, without HDA II)|2023": null,
+  "Genesis|GV70 Electrified (Australia Only)|2022": null,
+  "Genesis|GV70 Electrified (with HDA II)|2023": null,
+  "Genesis|GV70 Electrified (with HDA II)|2024": null,
+  "Genesis|GV80|2023": {
+    "min": 27998,
+    "max": 50450,
+    "url": "https://www.edmunds.com/genesis/gv80/2023/",
+    "suggested": null,
+    "avg_used": 57242,
+    "lastUpdated": 1779257360.362773
+  },
+  "Honda|Accord Hybrid|2017": {
+    "min": 9195,
+    "max": 24998,
+    "url": "https://www.edmunds.com/honda/accord-hybrid/2017/review/",
+    "suggested": null,
+    "avg_used": 16242,
+    "lastUpdated": 1779257392.3862069
+  },
+  "Honda|Accord Hybrid|2018": {
+    "min": 14734,
+    "max": 24998,
+    "url": "https://www.edmunds.com/honda/accord-hybrid/2018/review/",
+    "suggested": null,
+    "avg_used": 19136,
+    "lastUpdated": 1779257394.0057821
+  },
+  "Honda|Accord Hybrid|2019": {
+    "min": 9999,
+    "max": 27998,
+    "url": "https://www.edmunds.com/honda/accord-hybrid/2019/review/",
+    "suggested": null,
+    "avg_used": 19519,
+    "lastUpdated": 1779257395.82461
+  },
+  "Honda|Accord Hybrid|2020": {
+    "min": 15900,
+    "max": 29998,
+    "url": "https://www.edmunds.com/honda/accord-hybrid/2020/review/",
+    "suggested": null,
+    "avg_used": 22162,
+    "lastUpdated": 1779257397.802699
+  },
+  "Honda|Accord Hybrid|2021": {
+    "min": 19995,
+    "max": 30998,
+    "url": "https://www.edmunds.com/honda/accord-hybrid/2021/review/",
+    "suggested": null,
+    "avg_used": 23082,
+    "lastUpdated": 1779257399.7701151
+  },
+  "Honda|Accord Hybrid|2022": {
+    "min": 18991,
+    "max": 34590,
+    "url": "https://www.edmunds.com/honda/accord-hybrid/2022/",
+    "suggested": null,
+    "avg_used": 21515,
+    "lastUpdated": 1779257401.955908
+  },
+  "Honda|Accord Hybrid|2023": null,
+  "Honda|Accord Hybrid|2024": null,
+  "Honda|Accord Hybrid|2025": null,
+  "Honda|Accord|2016": {
+    "min": 8900,
+    "max": 27590,
+    "url": "https://www.edmunds.com/honda/accord/2016/review/",
+    "suggested": null,
+    "avg_used": 17595,
+    "lastUpdated": 1779257362.198783
+  },
+  "Honda|Accord|2017": {
+    "min": 10495,
+    "max": 24990,
+    "url": "https://www.edmunds.com/honda/accord/2017/review/",
+    "suggested": null,
+    "avg_used": 17810,
+    "lastUpdated": 1779257364.5060291
+  },
+  "Honda|Accord|2018": {
+    "min": 9800,
+    "max": 28790,
+    "url": "https://www.edmunds.com/honda/accord/2018/review/",
+    "suggested": null,
+    "avg_used": 20338,
+    "lastUpdated": 1779257366.558274
+  },
+  "Honda|Accord|2019": {
+    "min": 14500,
+    "max": 29563,
+    "url": "https://www.edmunds.com/honda/accord/2019/review/",
+    "suggested": null,
+    "avg_used": 21720,
+    "lastUpdated": 1779257368.742944
+  },
+  "Honda|Accord|2020": {
+    "min": 14500,
+    "max": 31990,
+    "url": "https://www.edmunds.com/honda/accord/2020/review/",
+    "suggested": null,
+    "avg_used": 23056,
+    "lastUpdated": 1779257370.951024
+  },
+  "Honda|Accord|2021": {
+    "min": 14995,
+    "max": 31541,
+    "url": "https://www.edmunds.com/honda/accord/2021/review/",
+    "suggested": null,
+    "avg_used": 23834,
+    "lastUpdated": 1779257372.93204
+  },
+  "Honda|Accord|2022": {
+    "min": 15300,
+    "max": 33998,
+    "url": "https://www.edmunds.com/honda/accord/2022/",
+    "suggested": null,
+    "avg_used": 23260,
+    "lastUpdated": 1779257375.3274019
+  },
+  "Honda|Accord|2023": {
+    "min": 17599,
+    "max": 38297,
+    "url": "https://www.edmunds.com/honda/accord/2023/",
+    "suggested": null,
+    "avg_used": 23260,
+    "lastUpdated": 1779257377.805419
+  },
+  "Honda|Accord|2024": {
+    "min": 18514,
+    "max": 37589,
+    "url": "https://www.edmunds.com/honda/accord/2024/",
+    "suggested": null,
+    "avg_used": 23260,
+    "lastUpdated": 1779257380.8208692
+  },
+  "Honda|Accord|2025": {
+    "min": 28295,
+    "max": 39300,
+    "url": "https://www.edmunds.com/honda/accord/2025/",
+    "suggested": 27304,
+    "avg_used": null,
+    "lastUpdated": 1779257390.876229
+  },
+  "Honda|CR-V Hybrid|2017": null,
+  "Honda|CR-V Hybrid|2018": null,
+  "Honda|CR-V Hybrid|2019": null,
+  "Honda|CR-V Hybrid|2020": {
+    "min": 22430,
+    "max": 30998,
+    "url": "https://www.edmunds.com/honda/cr-v-hybrid/2020/review/",
+    "suggested": null,
+    "avg_used": 24444,
+    "lastUpdated": 1779257455.691215
+  },
+  "Honda|CR-V Hybrid|2021": {
+    "min": 16883,
+    "max": 32998,
+    "url": "https://www.edmunds.com/honda/cr-v-hybrid/2021/review/",
+    "suggested": null,
+    "avg_used": 26180,
+    "lastUpdated": 1779257459.866791
+  },
+  "Honda|CR-V Hybrid|2022": {
+    "min": 19969,
+    "max": 35298,
+    "url": "https://www.edmunds.com/honda/cr-v-hybrid/2022/",
+    "suggested": null,
+    "avg_used": 26561,
+    "lastUpdated": 1779257464.9511402
+  },
+  "Honda|CR-V Hybrid|2023": null,
+  "Honda|CR-V Hybrid|2024": null,
+  "Honda|CR-V Hybrid|2025": null,
+  "Honda|CR-V Hybrid|2026": null,
+  "Honda|CR-V|2015": {
+    "min": 8995,
+    "max": 25998,
+    "url": "https://www.edmunds.com/honda/cr-v/2015/review/",
+    "suggested": null,
+    "avg_used": 17116,
+    "lastUpdated": 1779257407.993539
+  },
+  "Honda|CR-V|2016": {
+    "min": 7995,
+    "max": 25990,
+    "url": "https://www.edmunds.com/honda/cr-v/2016/review/",
+    "suggested": null,
+    "avg_used": 18591,
+    "lastUpdated": 1779257409.7555861
+  },
+  "Honda|CR-V|2017": {
+    "min": 12500,
+    "max": 26998,
+    "url": "https://www.edmunds.com/honda/cr-v/2017/review/",
+    "suggested": null,
+    "avg_used": 20458,
+    "lastUpdated": 1779257411.367976
+  },
+  "Honda|CR-V|2018": {
+    "min": 10995,
+    "max": 28990,
+    "url": "https://www.edmunds.com/honda/cr-v/2018/review/",
+    "suggested": null,
+    "avg_used": 21100,
+    "lastUpdated": 1779257413.284134
+  },
+  "Honda|CR-V|2019": {
+    "min": 15450,
+    "max": 29998,
+    "url": "https://www.edmunds.com/honda/cr-v/2019/review/",
+    "suggested": null,
+    "avg_used": 23021,
+    "lastUpdated": 1779257415.1297212
+  },
+  "Honda|CR-V|2020": {
+    "min": 15899,
+    "max": 37794,
+    "url": "https://www.edmunds.com/honda/cr-v/2020/review/",
+    "suggested": null,
+    "avg_used": 24390,
+    "lastUpdated": 1779257417.0833468
+  },
+  "Honda|CR-V|2021": {
+    "min": 18940,
+    "max": 31990,
+    "url": "https://www.edmunds.com/honda/cr-v/2021/review/",
+    "suggested": null,
+    "avg_used": 25667,
+    "lastUpdated": 1779257419.2392168
+  },
+  "Honda|CR-V|2022": {
+    "min": 17995,
+    "max": 33998,
+    "url": "https://www.edmunds.com/honda/cr-v/2022/",
+    "suggested": null,
+    "avg_used": 28074,
+    "lastUpdated": 1779257421.583843
+  },
+  "Honda|CR-V|2023": {
+    "min": 22401,
+    "max": 38998,
+    "url": "https://www.edmunds.com/honda/cr-v/2023/",
+    "suggested": null,
+    "avg_used": 28074,
+    "lastUpdated": 1779257424.609154
+  },
+  "Honda|CR-V|2024": {
+    "min": 22255,
+    "max": 42998,
+    "url": "https://www.edmunds.com/honda/cr-v/2024/",
+    "suggested": null,
+    "avg_used": 28074,
+    "lastUpdated": 1779257426.882565
+  },
+  "Honda|CR-V|2025": {
+    "min": 30100,
+    "max": 41100,
+    "url": "https://www.edmunds.com/honda/cr-v/2025/",
+    "suggested": 29618,
+    "avg_used": null,
+    "lastUpdated": 1779257436.6157708
+  },
+  "Honda|CR-V|2026": {
+    "min": 30920,
+    "max": 42250,
+    "url": "https://www.edmunds.com/honda/cr-v/",
+    "suggested": 31484,
+    "avg_used": null,
+    "lastUpdated": 1779257448.781455
+  },
+  "Honda|City (Brazil only)|2023": null,
+  "Honda|Civic Hatchback Hybrid (Europe only)|2023": null,
+  "Honda|Civic Hatchback Hybrid|2025": null,
+  "Honda|Civic Hatchback Hybrid|2026": null,
+  "Honda|Civic Hatchback|2017": null,
+  "Honda|Civic Hatchback|2018": null,
+  "Honda|Civic Hatchback|2019": null,
+  "Honda|Civic Hatchback|2020": null,
+  "Honda|Civic Hatchback|2021": null,
+  "Honda|Civic Hatchback|2022": null,
+  "Honda|Civic Hatchback|2023": null,
+  "Honda|Civic Hatchback|2024": null,
+  "Honda|Civic Hybrid|2025": null,
+  "Honda|Civic Hybrid|2026": null,
+  "Honda|Civic|2016": {
+    "min": 9995,
+    "max": 22990,
+    "url": "https://www.edmunds.com/honda/civic/2016/review/",
+    "suggested": null,
+    "avg_used": 17844,
+    "lastUpdated": 1779257476.249995
+  },
+  "Honda|Civic|2017": {
+    "min": 6995,
+    "max": 23998,
+    "url": "https://www.edmunds.com/honda/civic/2017/review/",
+    "suggested": null,
+    "avg_used": 17854,
+    "lastUpdated": 1779257478.131121
+  },
+  "Honda|Civic|2018": {
+    "min": 12900,
+    "max": 41998,
+    "url": "https://www.edmunds.com/honda/civic/2018/review/",
+    "suggested": null,
+    "avg_used": 19721,
+    "lastUpdated": 1779257479.9616268
+  },
+  "Honda|Civic|2019": {
+    "min": 11995,
+    "max": 26990,
+    "url": "https://www.edmunds.com/honda/civic/2019/review/",
+    "suggested": null,
+    "avg_used": 20378,
+    "lastUpdated": 1779257481.861532
+  },
+  "Honda|Civic|2020": {
+    "min": 11700,
+    "max": 29776,
+    "url": "https://www.edmunds.com/honda/civic/2020/review/",
+    "suggested": null,
+    "avg_used": 21427,
+    "lastUpdated": 1779257484.683806
+  },
+  "Honda|Civic|2021": {
+    "min": 13500,
+    "max": 25990,
+    "url": "https://www.edmunds.com/honda/civic/2021/review/",
+    "suggested": null,
+    "avg_used": 23340,
+    "lastUpdated": 1779257486.697716
+  },
+  "Honda|Civic|2022": {
+    "min": 17950,
+    "max": 31990,
+    "url": "https://www.edmunds.com/honda/civic/2022/",
+    "suggested": null,
+    "avg_used": 21511,
+    "lastUpdated": 1779257489.310418
+  },
+  "Honda|Civic|2023": {
+    "min": 16895,
+    "max": 30998,
+    "url": "https://www.edmunds.com/honda/civic/2023/",
+    "suggested": null,
+    "avg_used": 21511,
+    "lastUpdated": 1779257492.127758
+  },
+  "Honda|Civic|2024": {
+    "min": 16800,
+    "max": 32590,
+    "url": "https://www.edmunds.com/honda/civic/2024/",
+    "suggested": null,
+    "avg_used": 21511,
+    "lastUpdated": 1779257494.671525
+  },
+  "Honda|Clarity|2018": {
+    "min": 12976,
+    "max": 24998,
+    "url": "https://www.edmunds.com/honda/clarity/2018/review/",
+    "suggested": null,
+    "avg_used": 19733,
+    "lastUpdated": 1779257578.152608
+  },
+  "Honda|Clarity|2019": {
+    "min": 21998,
+    "max": 21998,
+    "url": "https://www.edmunds.com/honda/clarity/2019/review/",
+    "suggested": null,
+    "avg_used": 19220,
+    "lastUpdated": 1779293185.0289652
+  },
+  "Honda|Clarity|2020": {
+    "min": 20990,
+    "max": 26998,
+    "url": "https://www.edmunds.com/honda/clarity/2020/review/",
+    "suggested": null,
+    "avg_used": 22149,
+    "lastUpdated": 1779257598.5525918
+  },
+  "Honda|Clarity|2021": {
+    "min": 24998,
+    "max": 27998,
+    "url": "https://www.edmunds.com/honda/clarity/2021/review/",
+    "suggested": null,
+    "avg_used": 20751,
+    "lastUpdated": 1779257602.953871
+  },
+  "Honda|Fit (Taiwan)|2021": null,
+  "Honda|Fit (Taiwan)|2024": null,
+  "Honda|Fit (Taiwan)|2025": null,
+  "Honda|Fit|2018": {
+    "min": 15998,
+    "max": 23998,
+    "url": "https://www.edmunds.com/honda/fit/2018/review/",
+    "suggested": null,
+    "avg_used": 17453,
+    "lastUpdated": 1779257607.006733
+  },
+  "Honda|Fit|2019": {
+    "min": 9298,
+    "max": 24998,
+    "url": "https://www.edmunds.com/honda/fit/2019/review/",
+    "suggested": null,
+    "avg_used": 18746,
+    "lastUpdated": 1779257611.1606028
+  },
+  "Honda|Fit|2020": {
+    "min": 15999,
+    "max": 23998,
+    "url": "https://www.edmunds.com/honda/fit/2020/review/",
+    "suggested": null,
+    "avg_used": 18069,
+    "lastUpdated": 1779257615.334949
+  },
+  "Honda|Freed|2020": null,
+  "Honda|HR-V|2019": {
+    "min": 8999,
+    "max": 24990,
+    "url": "https://www.edmunds.com/honda/hr-v/2019/review/",
+    "suggested": null,
+    "avg_used": 19067,
+    "lastUpdated": 1779257624.4604921
+  },
+  "Honda|HR-V|2020": {
+    "min": 10899,
+    "max": 23998,
+    "url": "https://www.edmunds.com/honda/hr-v/2020/review/",
+    "suggested": null,
+    "avg_used": 19840,
+    "lastUpdated": 1779257628.797336
+  },
+  "Honda|HR-V|2021": {
+    "min": 13511,
+    "max": 25998,
+    "url": "https://www.edmunds.com/honda/hr-v/2021/review/",
+    "suggested": null,
+    "avg_used": 21018,
+    "lastUpdated": 1779257632.84935
+  },
+  "Honda|HR-V|2022": {
+    "min": 13760,
+    "max": 26990,
+    "url": "https://www.edmunds.com/honda/hr-v/2022/",
+    "suggested": null,
+    "avg_used": 24255,
+    "lastUpdated": 1779257638.0545862
+  },
+  "Honda|HR-V|2023": {
+    "min": 17200,
+    "max": 28816,
+    "url": "https://www.edmunds.com/honda/hr-v/2023/",
+    "suggested": null,
+    "avg_used": 24255,
+    "lastUpdated": 1779257642.826665
+  },
+  "Honda|HR-V|2024": {
+    "min": 20000,
+    "max": 29998,
+    "url": "https://www.edmunds.com/honda/hr-v/2024/",
+    "suggested": null,
+    "avg_used": 24255,
+    "lastUpdated": 1779257647.6189709
+  },
+  "Honda|HR-V|2025": {
+    "min": 25400,
+    "max": 31000,
+    "url": "https://www.edmunds.com/honda/hr-v/2025/",
+    "suggested": 25330,
+    "avg_used": null,
+    "lastUpdated": 1779257653.724192
+  },
+  "Honda|Insight|2019": {
+    "min": 10795,
+    "max": 23998,
+    "url": "https://www.edmunds.com/honda/insight/2019/review/",
+    "suggested": null,
+    "avg_used": 19736,
+    "lastUpdated": 1779257657.920405
+  },
+  "Honda|Insight|2020": {
+    "min": 19990,
+    "max": 22998,
+    "url": "https://www.edmunds.com/honda/insight/2020/review/",
+    "suggested": null,
+    "avg_used": 21995,
+    "lastUpdated": 1779257662.1259542
+  },
+  "Honda|Insight|2021": {
+    "min": 20990,
+    "max": 25998,
+    "url": "https://www.edmunds.com/honda/insight/2021/review/",
+    "suggested": null,
+    "avg_used": 20710,
+    "lastUpdated": 1779257666.762538
+  },
+  "Honda|Insight|2022": {
+    "min": 17998,
+    "max": 24998,
+    "url": "https://www.edmunds.com/honda/insight/2022/",
+    "suggested": null,
+    "avg_used": 19402,
+    "lastUpdated": 1779257671.1046028
+  },
+  "Honda|Inspire|2018": null,
+  "Honda|N-Box|2018": null,
+  "Honda|Odyssey (Singapore)|2021": {
+    "min": 17997,
+    "max": 53232,
+    "url": "https://www.edmunds.com/honda/odyssey/2021/review/",
+    "suggested": null,
+    "avg_used": 30441,
+    "lastUpdated": 1779293201.599332
+  },
+  "Honda|Odyssey (Taiwan)|2018": {
+    "min": 9999,
+    "max": 40684,
+    "url": "https://www.edmunds.com/honda/odyssey/2018/review/",
+    "suggested": null,
+    "avg_used": 24159,
+    "lastUpdated": 1779293203.459418
+  },
+  "Honda|Odyssey (Taiwan)|2019": {
+    "min": 15699,
+    "max": 38998,
+    "url": "https://www.edmunds.com/honda/odyssey/2019/review/",
+    "suggested": null,
+    "avg_used": 26398,
+    "lastUpdated": 1779293205.5788999
+  },
+  "Honda|Odyssey|2018": {
+    "min": 13990,
+    "max": 49999,
+    "url": "https://www.edmunds.com/honda/odyssey/2018/review/",
+    "suggested": null,
+    "avg_used": 24184,
+    "lastUpdated": 1779257676.902383
+  },
+  "Honda|Odyssey|2019": {
+    "min": 12999,
+    "max": 59999,
+    "url": "https://www.edmunds.com/honda/odyssey/2019/review/",
+    "suggested": null,
+    "avg_used": 26066,
+    "lastUpdated": 1779257681.022145
+  },
+  "Honda|Odyssey|2020": {
+    "min": 14995,
+    "max": 35998,
+    "url": "https://www.edmunds.com/honda/odyssey/2020/review/",
+    "suggested": null,
+    "avg_used": 28659,
+    "lastUpdated": 1779257685.145997
+  },
+  "Honda|Odyssey|2021": {
+    "min": 18997,
+    "max": 69990,
+    "url": "https://www.edmunds.com/honda/odyssey/2021/review/",
+    "suggested": null,
+    "avg_used": 32428,
+    "lastUpdated": 1779257689.344548
+  },
+  "Honda|Odyssey|2022": {
+    "min": 22999,
+    "max": 70999,
+    "url": "https://www.edmunds.com/honda/odyssey/2022/",
+    "suggested": null,
+    "avg_used": 30153,
+    "lastUpdated": 1779257694.079139
+  },
+  "Honda|Odyssey|2023": {
+    "min": 24580,
+    "max": 82990,
+    "url": "https://www.edmunds.com/honda/odyssey/2023/",
+    "suggested": null,
+    "avg_used": 30153,
+    "lastUpdated": 1779257698.8647559
+  },
+  "Honda|Odyssey|2024": {
+    "min": 29430,
+    "max": 46998,
+    "url": "https://www.edmunds.com/honda/odyssey/2024/",
+    "suggested": null,
+    "avg_used": 30748,
+    "lastUpdated": 1779293194.698514
+  },
+  "Honda|Odyssey|2025": {
+    "min": 42220,
+    "max": 51180,
+    "url": "https://www.edmunds.com/honda/odyssey/2025/",
+    "suggested": 40176,
+    "avg_used": null,
+    "lastUpdated": 1779293196.9779189
+  },
+  "Honda|Odyssey|2026": {
+    "min": 42795,
+    "max": 51695,
+    "url": "https://www.edmunds.com/honda/odyssey/",
+    "suggested": 42170,
+    "avg_used": null,
+    "lastUpdated": 1779293199.6768599
+  },
+  "Honda|Passport|2019": {
+    "min": 12796,
+    "max": 30590,
+    "url": "https://www.edmunds.com/honda/passport/2019/review/",
+    "suggested": null,
+    "avg_used": 22300,
+    "lastUpdated": 1779293207.8829372
+  },
+  "Honda|Passport|2020": {
+    "min": 18205,
+    "max": 31990,
+    "url": "https://www.edmunds.com/honda/passport/2020/review/",
+    "suggested": null,
+    "avg_used": 22943,
+    "lastUpdated": 1779293209.829375
+  },
+  "Honda|Passport|2021": {
+    "min": 17255,
+    "max": 40049,
+    "url": "https://www.edmunds.com/honda/passport/2021/review/",
+    "suggested": null,
+    "avg_used": 27188,
+    "lastUpdated": 1779293212.0935
+  },
+  "Honda|Passport|2022": {
+    "min": 19500,
+    "max": 36998,
+    "url": "https://www.edmunds.com/honda/passport/2022/",
+    "suggested": null,
+    "avg_used": 37648,
+    "lastUpdated": 1779257744.9195971
+  },
+  "Honda|Passport|2023": {
+    "min": 26891,
+    "max": 39477,
+    "url": "https://www.edmunds.com/honda/passport/2023/",
+    "suggested": null,
+    "avg_used": 37648,
+    "lastUpdated": 1779257746.6138508
+  },
+  "Honda|Passport|2024": {
+    "min": 24990,
+    "max": 40998,
+    "url": "https://www.edmunds.com/honda/passport/2024/",
+    "suggested": null,
+    "avg_used": 37648,
+    "lastUpdated": 1779257748.862474
+  },
+  "Honda|Passport|2025": {
+    "min": 42400,
+    "max": 48470,
+    "url": "https://www.edmunds.com/honda/passport/2025/",
+    "suggested": 41137,
+    "avg_used": null,
+    "lastUpdated": 1779257750.5875468
+  },
+  "Honda|Passport|2026": {
+    "min": 44950,
+    "max": 53850,
+    "url": "https://www.edmunds.com/honda/passport/",
+    "suggested": 44329,
+    "avg_used": null,
+    "lastUpdated": 1779257756.438986
+  },
+  "Honda|Pilot|2016": {
+    "min": 10299,
+    "max": 27998,
+    "url": "https://www.edmunds.com/honda/pilot/2016/review/",
+    "suggested": null,
+    "avg_used": 18160,
+    "lastUpdated": 1779257760.554058
+  },
+  "Honda|Pilot|2017": {
+    "min": 12591,
+    "max": 29998,
+    "url": "https://www.edmunds.com/honda/pilot/2017/review/",
+    "suggested": null,
+    "avg_used": 21446,
+    "lastUpdated": 1779257764.952102
+  },
+  "Honda|Pilot|2018": {
+    "min": 14195,
+    "max": 29590,
+    "url": "https://www.edmunds.com/honda/pilot/2018/review/",
+    "suggested": null,
+    "avg_used": 21241,
+    "lastUpdated": 1779257768.9142778
+  },
+  "Honda|Pilot|2019": {
+    "min": 13798,
+    "max": 30990,
+    "url": "https://www.edmunds.com/honda/pilot/2019/review/",
+    "suggested": null,
+    "avg_used": 23353,
+    "lastUpdated": 1779257773.984688
+  },
+  "Honda|Pilot|2020": {
+    "min": 15495,
+    "max": 36990,
+    "url": "https://www.edmunds.com/honda/pilot/2020/review/",
+    "suggested": null,
+    "avg_used": 25327,
+    "lastUpdated": 1779257778.201323
+  },
+  "Honda|Pilot|2021": {
+    "min": 13999,
+    "max": 37885,
+    "url": "https://www.edmunds.com/honda/pilot/2021/review/",
+    "suggested": null,
+    "avg_used": 27250,
+    "lastUpdated": 1779257782.215629
+  },
+  "Honda|Pilot|2022": {
+    "min": 16995,
+    "max": 40990,
+    "url": "https://www.edmunds.com/honda/pilot/2022/",
+    "suggested": null,
+    "avg_used": 33209,
+    "lastUpdated": 1779257786.803169
+  },
+  "Honda|Pilot|2023": {
+    "min": 22998,
+    "max": 47998,
+    "url": "https://www.edmunds.com/honda/pilot/2023/",
+    "suggested": null,
+    "avg_used": 33209,
+    "lastUpdated": 1779257791.0023549
+  },
+  "Honda|Pilot|2024": {
+    "min": 30999,
+    "max": 48998,
+    "url": "https://www.edmunds.com/honda/pilot/2024/",
+    "suggested": null,
+    "avg_used": 33209,
+    "lastUpdated": 1779257795.314355
+  },
+  "Honda|Pilot|2025": {
+    "min": 40200,
+    "max": 54580,
+    "url": "https://www.edmunds.com/honda/pilot/2025/",
+    "suggested": 40291,
+    "avg_used": null,
+    "lastUpdated": 1779257799.496522
+  },
+  "Honda|Pilot|2026": {
+    "min": 42395,
+    "max": 55195,
+    "url": "https://www.edmunds.com/honda/pilot/",
+    "suggested": 42724,
+    "avg_used": null,
+    "lastUpdated": 1779257804.001333
+  },
+  "Honda|Prelude|2026": {
+    "min": 42000,
+    "max": 42500,
+    "url": "https://www.edmunds.com/honda/prelude/",
+    "suggested": 42551,
+    "avg_used": null,
+    "lastUpdated": 1779257808.886492
+  },
+  "Honda|Prologue|2024": {
+    "min": 21995,
+    "max": 32488,
+    "url": "https://www.edmunds.com/honda/prologue/2024/",
+    "suggested": null,
+    "avg_used": 46301,
+    "lastUpdated": 1779257813.427243
+  },
+  "Honda|Prologue|2025": {
+    "min": 47400,
+    "max": 57900,
+    "url": "https://www.edmunds.com/honda/prologue/2025/",
+    "suggested": 45235,
+    "avg_used": null,
+    "lastUpdated": 1779257818.545587
+  },
+  "Honda|Ridgeline|2017": {
+    "min": 13200,
+    "max": 26998,
+    "url": "https://www.edmunds.com/honda/ridgeline/2017/review/",
+    "suggested": null,
+    "avg_used": 21155,
+    "lastUpdated": 1779257822.851064
+  },
+  "Honda|Ridgeline|2018": {
+    "min": 18995,
+    "max": 24990,
+    "url": "https://www.edmunds.com/honda/ridgeline/2018/review/",
+    "suggested": null,
+    "avg_used": 22849,
+    "lastUpdated": 1779257827.2927911
+  },
+  "Honda|Ridgeline|2019": {
+    "min": 15995,
+    "max": 34990,
+    "url": "https://www.edmunds.com/honda/ridgeline/2019/review/",
+    "suggested": null,
+    "avg_used": 24538,
+    "lastUpdated": 1779257831.4083729
+  },
+  "Honda|Ridgeline|2020": {
+    "min": 21998,
+    "max": 31990,
+    "url": "https://www.edmunds.com/honda/ridgeline/2020/review/",
+    "suggested": null,
+    "avg_used": 27334,
+    "lastUpdated": 1779257835.924136
+  },
+  "Honda|Ridgeline|2021": {
+    "min": 25990,
+    "max": 36590,
+    "url": "https://www.edmunds.com/honda/ridgeline/2021/review/",
+    "suggested": null,
+    "avg_used": 30891,
+    "lastUpdated": 1779257839.85088
+  },
+  "Honda|Ridgeline|2022": {
+    "min": 23935,
+    "max": 35990,
+    "url": "https://www.edmunds.com/honda/ridgeline/2022/",
+    "suggested": null,
+    "avg_used": 34425,
+    "lastUpdated": 1779257844.7444868
+  },
+  "Honda|Ridgeline|2023": {
+    "min": 22991,
+    "max": 40998,
+    "url": "https://www.edmunds.com/honda/ridgeline/2023/",
+    "suggested": null,
+    "avg_used": 34425,
+    "lastUpdated": 1779257849.411965
+  },
+  "Honda|Ridgeline|2024": {
+    "min": 29777,
+    "max": 44990,
+    "url": "https://www.edmunds.com/honda/ridgeline/2024/",
+    "suggested": null,
+    "avg_used": 34425,
+    "lastUpdated": 1779257854.178563
+  },
+  "Honda|Ridgeline|2025": {
+    "min": 40150,
+    "max": 47280,
+    "url": "https://www.edmunds.com/honda/ridgeline/2025/",
+    "suggested": 38132,
+    "avg_used": null,
+    "lastUpdated": 1779257858.741913
+  },
+  "Honda|e|2020": null,
+  "Hyundai|Azera Hybrid|2019": null,
+  "Hyundai|Azera Hybrid|2020": null,
+  "Hyundai|Azera|2022": null,
+  "Hyundai|Bayon|2021": null,
+  "Hyundai|Custin|2023": null,
+  "Hyundai|Elantra GT|2017": null,
+  "Hyundai|Elantra GT|2018": null,
+  "Hyundai|Elantra GT|2019": null,
+  "Hyundai|Elantra GT|2020": {
+    "min": 13998,
+    "max": 22990,
+    "url": "https://www.edmunds.com/hyundai/elantra-gt/2020/review/",
+    "suggested": null,
+    "avg_used": 17319,
+    "lastUpdated": 1779257955.540969
+  },
+  "Hyundai|Elantra Hybrid|2021": null,
+  "Hyundai|Elantra Hybrid|2022": null,
+  "Hyundai|Elantra Hybrid|2023": null,
+  "Hyundai|Elantra|2017": {
+    "min": 6500,
+    "max": 18990,
+    "url": "https://www.edmunds.com/hyundai/elantra/2017/review/",
+    "suggested": null,
+    "avg_used": 14023,
+    "lastUpdated": 1779257867.806746
+  },
+  "Hyundai|Elantra|2018": {
+    "min": 6499,
+    "max": 18990,
+    "url": "https://www.edmunds.com/hyundai/elantra/2018/review/",
+    "suggested": null,
+    "avg_used": 13979,
+    "lastUpdated": 1779257872.352727
+  },
+  "Hyundai|Elantra|2019": {
+    "min": 8998,
+    "max": 19998,
+    "url": "https://www.edmunds.com/hyundai/elantra/2019/review/",
+    "suggested": null,
+    "avg_used": 14852,
+    "lastUpdated": 1779257877.240709
+  },
+  "Hyundai|Elantra|2021": {
+    "min": 9950,
+    "max": 27590,
+    "url": "https://www.edmunds.com/hyundai/elantra/2021/review/",
+    "suggested": null,
+    "avg_used": 18815,
+    "lastUpdated": 1779257881.277269
+  },
+  "Hyundai|Elantra|2022": {
+    "min": 12831,
+    "max": 28990,
+    "url": "https://www.edmunds.com/hyundai/elantra/2022/review/",
+    "suggested": null,
+    "avg_used": 19719,
+    "lastUpdated": 1779257890.3969028
+  },
+  "Hyundai|Elantra|2023": {
+    "min": 13988,
+    "max": 29998,
+    "url": "https://www.edmunds.com/hyundai/elantra/2023/",
+    "suggested": null,
+    "avg_used": 19719,
+    "lastUpdated": 1779257889.737271
+  },
+  "Hyundai|Genesis|2015": {
+    "min": 7500,
+    "max": 20590,
+    "url": "https://www.edmunds.com/hyundai/genesis/2015/review/",
+    "suggested": null,
+    "avg_used": 15301,
+    "lastUpdated": 1779257963.252652
+  },
+  "Hyundai|Genesis|2016": {
+    "min": 9999,
+    "max": 20998,
+    "url": "https://www.edmunds.com/hyundai/genesis/2016/review/",
+    "suggested": null,
+    "avg_used": 13943,
+    "lastUpdated": 1779257964.8988621
+  },
+  "Hyundai|Ioniq 5 (Non-US only)|2022": {
+    "min": 22198,
+    "max": 29998,
+    "url": "https://www.edmunds.com/hyundai/ioniq-5/2022/",
+    "suggested": null,
+    "avg_used": 36352,
+    "lastUpdated": 1779257966.931796
+  },
+  "Hyundai|Ioniq 5 (Non-US only)|2023": {
+    "min": 17750,
+    "max": 35998,
+    "url": "https://www.edmunds.com/hyundai/ioniq-5/2023/",
+    "suggested": null,
+    "avg_used": 36352,
+    "lastUpdated": 1779257968.983114
+  },
+  "Hyundai|Ioniq 5 (Non-US only)|2024": {
+    "min": 19000,
+    "max": 40998,
+    "url": "https://www.edmunds.com/hyundai/ioniq-5/2024/",
+    "suggested": null,
+    "avg_used": 36352,
+    "lastUpdated": 1779257971.4644191
+  },
+  "Hyundai|Ioniq 5 (Southeast Asia and Europe only)|2022": {
+    "min": 22198,
+    "max": 29998,
+    "url": "https://www.edmunds.com/hyundai/ioniq-5/2022/",
+    "suggested": null,
+    "avg_used": 36352,
+    "lastUpdated": 1779257973.379356
+  },
+  "Hyundai|Ioniq 5 (Southeast Asia and Europe only)|2023": {
+    "min": 17750,
+    "max": 35998,
+    "url": "https://www.edmunds.com/hyundai/ioniq-5/2023/",
+    "suggested": null,
+    "avg_used": 36352,
+    "lastUpdated": 1779257975.269472
+  },
+  "Hyundai|Ioniq 5 (Southeast Asia and Europe only)|2024": {
+    "min": 19000,
+    "max": 40998,
+    "url": "https://www.edmunds.com/hyundai/ioniq-5/2024/",
+    "suggested": null,
+    "avg_used": 36352,
+    "lastUpdated": 1779257977.5927172
+  },
+  "Hyundai|Ioniq 5 (with HDA II)|2022": {
+    "min": 22198,
+    "max": 29998,
+    "url": "https://www.edmunds.com/hyundai/ioniq-5/2022/",
+    "suggested": null,
+    "avg_used": 36352,
+    "lastUpdated": 1779257979.753411
+  },
+  "Hyundai|Ioniq 5 (with HDA II)|2023": {
+    "min": 17750,
+    "max": 35998,
+    "url": "https://www.edmunds.com/hyundai/ioniq-5/2023/",
+    "suggested": null,
+    "avg_used": 36352,
+    "lastUpdated": 1779257981.608444
+  },
+  "Hyundai|Ioniq 5 (with HDA II)|2024": {
+    "min": 19000,
+    "max": 40998,
+    "url": "https://www.edmunds.com/hyundai/ioniq-5/2024/",
+    "suggested": null,
+    "avg_used": 36352,
+    "lastUpdated": 1779257983.372121
+  },
+  "Hyundai|Ioniq 5 (without HDA II)|2022": {
+    "min": 22198,
+    "max": 29998,
+    "url": "https://www.edmunds.com/hyundai/ioniq-5/2022/",
+    "suggested": null,
+    "avg_used": 36352,
+    "lastUpdated": 1779257986.182914
+  },
+  "Hyundai|Ioniq 5 (without HDA II)|2023": {
+    "min": 17750,
+    "max": 35998,
+    "url": "https://www.edmunds.com/hyundai/ioniq-5/2023/",
+    "suggested": null,
+    "avg_used": 36352,
+    "lastUpdated": 1779257989.913285
+  },
+  "Hyundai|Ioniq 5 (without HDA II)|2024": {
+    "min": 19000,
+    "max": 40998,
+    "url": "https://www.edmunds.com/hyundai/ioniq-5/2024/",
+    "suggested": null,
+    "avg_used": 36352,
+    "lastUpdated": 1779257992.0968142
+  },
+  "Hyundai|Ioniq 6 (with HDA II)|2023": {
+    "min": 18999,
+    "max": 31998,
+    "url": "https://www.edmunds.com/hyundai/ioniq-6/2023/",
+    "suggested": null,
+    "avg_used": 26105,
+    "lastUpdated": 1779257994.226092
+  },
+  "Hyundai|Ioniq 6 (with HDA II)|2024": {
+    "min": 20500,
+    "max": 29991,
+    "url": "https://www.edmunds.com/hyundai/ioniq-6/2024/",
+    "suggested": null,
+    "avg_used": 26105,
+    "lastUpdated": 1779257996.822432
+  },
+  "Hyundai|Ioniq 6 (without HDA II)|2023": null,
+  "Hyundai|Ioniq 6 (without HDA II)|2024": null,
+  "Hyundai|Ioniq Electric|2019": null,
+  "Hyundai|Ioniq Electric|2020": null,
+  "Hyundai|Ioniq Hybrid|2017": null,
+  "Hyundai|Ioniq Hybrid|2018": null,
+  "Hyundai|Ioniq Hybrid|2019": null,
+  "Hyundai|Ioniq Hybrid|2020": null,
+  "Hyundai|Ioniq Hybrid|2021": null,
+  "Hyundai|Ioniq Hybrid|2022": null,
+  "Hyundai|Ioniq Plug-in Hybrid|2019": null,
+  "Hyundai|Ioniq Plug-in Hybrid|2020": null,
+  "Hyundai|Ioniq Plug-in Hybrid|2021": null,
+  "Hyundai|Ioniq Plug-in Hybrid|2022": null,
+  "Hyundai|Kona Electric (with HDA II, Korea only)|2023": null,
+  "Hyundai|Kona Electric|2018": null,
+  "Hyundai|Kona Electric|2019": null,
+  "Hyundai|Kona Electric|2020": null,
+  "Hyundai|Kona Electric|2021": null,
+  "Hyundai|Kona Electric|2022": null,
+  "Hyundai|Kona Electric|2023": null,
+  "Hyundai|Kona Hybrid|2020": null,
+  "Hyundai|Kona|2019": null,
+  "Hyundai|Kona|2020": null,
+  "Hyundai|Kona|2022": null,
+  "Hyundai|Kona|2023": null,
+  "Hyundai|Nexo|2021": null,
+  "Hyundai|Palisade (without HDA II)|2023": null,
+  "Hyundai|Palisade (without HDA II)|2024": null,
+  "Hyundai|Palisade (without HDA II)|2025": null,
+  "Hyundai|Palisade|2020": null,
+  "Hyundai|Palisade|2021": null,
+  "Hyundai|Palisade|2022": null,
+  "Hyundai|Palisade|2023": null,
+  "Hyundai|Palisade|2024": null,
+  "Hyundai|Santa Cruz|2022": null,
+  "Hyundai|Santa Cruz|2023": null,
+  "Hyundai|Santa Cruz|2024": null,
+  "Hyundai|Santa Fe Hybrid|2022": null,
+  "Hyundai|Santa Fe Hybrid|2023": null,
+  "Hyundai|Santa Fe Plug-in Hybrid|2022": null,
+  "Hyundai|Santa Fe Plug-in Hybrid|2023": null,
+  "Hyundai|Santa Fe|2019": null,
+  "Hyundai|Santa Fe|2020": null,
+  "Hyundai|Santa Fe|2021": null,
+  "Hyundai|Santa Fe|2022": null,
+  "Hyundai|Santa Fe|2023": null,
+  "Hyundai|Sonata Hybrid|2020": null,
+  "Hyundai|Sonata Hybrid|2021": null,
+  "Hyundai|Sonata Hybrid|2022": null,
+  "Hyundai|Sonata Hybrid|2023": null,
+  "Hyundai|Sonata|2018": null,
+  "Hyundai|Sonata|2019": null,
+  "Hyundai|Sonata|2020": null,
+  "Hyundai|Sonata|2021": null,
+  "Hyundai|Sonata|2022": null,
+  "Hyundai|Sonata|2023": null,
+  "Hyundai|Staria|2023": null,
+  "Hyundai|Tucson Diesel|2019": null,
+  "Hyundai|Tucson Hybrid|2022": null,
+  "Hyundai|Tucson Hybrid|2023": null,
+  "Hyundai|Tucson Hybrid|2024": null,
+  "Hyundai|Tucson Plug-in Hybrid|2024": null,
+  "Hyundai|Tucson|2021": null,
+  "Hyundai|Tucson|2022": null,
+  "Hyundai|Tucson|2023": null,
+  "Hyundai|Tucson|2024": null,
+  "Hyundai|Veloster|2019": null,
+  "Hyundai|Veloster|2020": {
+    "min": 10950,
+    "max": 26990,
+    "url": "https://www.edmunds.com/hyundai/veloster/2020/review/",
+    "suggested": null,
+    "avg_used": 21858,
+    "lastUpdated": 1779293534.384819
+  },
+  "Hyundai|i30|2017": null,
+  "Hyundai|i30|2018": null,
+  "Hyundai|i30|2019": null,
+  "Jeep|Cherokee|2019": {
+    "min": 6500,
+    "max": 23998,
+    "url": "https://www.edmunds.com/jeep/cherokee/2019/review/",
+    "suggested": null,
+    "avg_used": 17005,
+    "lastUpdated": 1779293539.412699
+  },
+  "Jeep|Cherokee|2020": {
+    "min": 7900,
+    "max": 26590,
+    "url": "https://www.edmunds.com/jeep/cherokee/2020/review/",
+    "suggested": null,
+    "avg_used": 19163,
+    "lastUpdated": 1779293541.324276
+  },
+  "Jeep|Cherokee|2021": {
+    "min": 10999,
+    "max": 25998,
+    "url": "https://www.edmunds.com/jeep/cherokee/2021/review/",
+    "suggested": null,
+    "avg_used": 20342,
+    "lastUpdated": 1779258272.243315
+  },
+  "Jeep|Cherokee|2022": {
+    "min": 12500,
+    "max": 29590,
+    "url": "https://www.edmunds.com/jeep/cherokee/2022/",
+    "suggested": null,
+    "avg_used": 20608,
+    "lastUpdated": 1779258274.862426
+  },
+  "Jeep|Cherokee|2023": {
+    "min": 19499,
+    "max": 28595,
+    "url": "https://www.edmunds.com/jeep/cherokee/2023/",
+    "suggested": null,
+    "avg_used": 20608,
+    "lastUpdated": 1779258276.5776799
+  },
+  "Jeep|Grand Cherokee|2016": {
+    "min": 8900,
+    "max": 21590,
+    "url": "https://www.edmunds.com/jeep/grand-cherokee/2016/review/",
+    "suggested": null,
+    "avg_used": 15857,
+    "lastUpdated": 1779258278.328981
+  },
+  "Jeep|Grand Cherokee|2017": {
+    "min": 8415,
+    "max": 24590,
+    "url": "https://www.edmunds.com/jeep/grand-cherokee/2017/review/",
+    "suggested": null,
+    "avg_used": 17877,
+    "lastUpdated": 1779258280.1754618
+  },
+  "Jeep|Grand Cherokee|2018": {
+    "min": 9680,
+    "max": 89991,
+    "url": "https://www.edmunds.com/jeep/grand-cherokee/2018/review/",
+    "suggested": null,
+    "avg_used": 21805,
+    "lastUpdated": 1779258282.013587
+  },
+  "Jeep|Grand Cherokee|2019": {
+    "min": 11777,
+    "max": 47795,
+    "url": "https://www.edmunds.com/jeep/grand-cherokee/2019/review/",
+    "suggested": null,
+    "avg_used": 21385,
+    "lastUpdated": 1779258284.157929
+  },
+  "Jeep|Grand Cherokee|2020": {
+    "min": 13995,
+    "max": 52995,
+    "url": "https://www.edmunds.com/jeep/grand-cherokee/2020/review/",
+    "suggested": null,
+    "avg_used": 23653,
+    "lastUpdated": 1779258286.1510348
+  },
+  "Jeep|Grand Cherokee|2021": {
+    "min": 14999,
+    "max": 90995,
+    "url": "https://www.edmunds.com/jeep/grand-cherokee/2021/review/",
+    "suggested": null,
+    "avg_used": 25346,
+    "lastUpdated": 1779258288.149132
+  },
+  "Kia|Carnival (China only)|2023": {
+    "min": 17000,
+    "max": 41590,
+    "url": "https://www.edmunds.com/kia/carnival/2023/",
+    "suggested": null,
+    "avg_used": 37527,
+    "lastUpdated": 1779258296.878007
+  },
+  "Kia|Carnival|2022": {
+    "min": 22892,
+    "max": 38990,
+    "url": "https://www.edmunds.com/kia/carnival/2022/",
+    "suggested": null,
+    "avg_used": 37527,
+    "lastUpdated": 1779258290.528697
+  },
+  "Kia|Carnival|2023": {
+    "min": 17000,
+    "max": 41590,
+    "url": "https://www.edmunds.com/kia/carnival/2023/",
+    "suggested": null,
+    "avg_used": 37527,
+    "lastUpdated": 1779258292.443588
+  },
+  "Kia|Carnival|2024": {
+    "min": 27888,
+    "max": 43998,
+    "url": "https://www.edmunds.com/kia/carnival/2024/",
+    "suggested": null,
+    "avg_used": 37527,
+    "lastUpdated": 1779258295.105985
+  },
+  "Kia|Ceed Plug-in Hybrid|2022": null,
+  "Kia|Ceed|2019": null,
+  "Kia|Ceed|2020": null,
+  "Kia|Ceed|2021": null,
+  "Kia|EV6 (Non-US only)|2022": {
+    "min": 25990,
+    "max": 28998,
+    "url": "https://www.edmunds.com/kia/ev6/2022/",
+    "suggested": null,
+    "avg_used": 33305,
+    "lastUpdated": 1779258303.791918
+  },
+  "Kia|EV6 (Non-US only)|2023": {
+    "min": 23997,
+    "max": 36998,
+    "url": "https://www.edmunds.com/kia/ev6/2023/",
+    "suggested": null,
+    "avg_used": 33305,
+    "lastUpdated": 1779258305.496168
+  },
+  "Kia|EV6 (Non-US only)|2024": {
+    "min": 24500,
+    "max": 34999,
+    "url": "https://www.edmunds.com/kia/ev6/2024/",
+    "suggested": null,
+    "avg_used": 33305,
+    "lastUpdated": 1779258307.4902022
+  },
+  "Kia|EV6 (Southeast Asia only)|2022": {
+    "min": 25990,
+    "max": 28998,
+    "url": "https://www.edmunds.com/kia/ev6/2022/",
+    "suggested": null,
+    "avg_used": 33305,
+    "lastUpdated": 1779258309.2822661
+  },
+  "Kia|EV6 (Southeast Asia only)|2023": {
+    "min": 23997,
+    "max": 36998,
+    "url": "https://www.edmunds.com/kia/ev6/2023/",
+    "suggested": null,
+    "avg_used": 33305,
+    "lastUpdated": 1779258311.077131
+  },
+  "Kia|EV6 (Southeast Asia only)|2024": {
+    "min": 24500,
+    "max": 34999,
+    "url": "https://www.edmunds.com/kia/ev6/2024/",
+    "suggested": null,
+    "avg_used": 33305,
+    "lastUpdated": 1779258312.866133
+  },
+  "Kia|EV6 (with HDA II)|2022": {
+    "min": 25990,
+    "max": 28998,
+    "url": "https://www.edmunds.com/kia/ev6/2022/",
+    "suggested": null,
+    "avg_used": 33305,
+    "lastUpdated": 1779258314.8560169
+  },
+  "Kia|EV6 (with HDA II)|2023": {
+    "min": 23997,
+    "max": 36998,
+    "url": "https://www.edmunds.com/kia/ev6/2023/",
+    "suggested": null,
+    "avg_used": 33305,
+    "lastUpdated": 1779258316.812917
+  },
+  "Kia|EV6 (with HDA II)|2024": {
+    "min": 24500,
+    "max": 34999,
+    "url": "https://www.edmunds.com/kia/ev6/2024/",
+    "suggested": null,
+    "avg_used": 33305,
+    "lastUpdated": 1779258318.9511092
+  },
+  "Kia|EV6 (without HDA II)|2022": {
+    "min": 18000,
+    "max": 28998,
+    "url": "https://www.edmunds.com/kia/ev6/2022/",
+    "suggested": null,
+    "avg_used": 29644,
+    "lastUpdated": 1779293547.795685
+  },
+  "Kia|EV6 (without HDA II)|2023": {
+    "min": 22990,
+    "max": 36998,
+    "url": "https://www.edmunds.com/kia/ev6/2023/",
+    "suggested": null,
+    "avg_used": 29644,
+    "lastUpdated": 1779293550.3307478
+  },
+  "Kia|EV6 (without HDA II)|2024": {
+    "min": 22905,
+    "max": 35373,
+    "url": "https://www.edmunds.com/kia/ev6/2024/",
+    "suggested": null,
+    "avg_used": 29644,
+    "lastUpdated": 1779293553.0270321
+  },
+  "Kia|Forte|2019": {
+    "min": 9998,
+    "max": 19590,
+    "url": "https://www.edmunds.com/kia/forte/2019/review/",
+    "suggested": null,
+    "avg_used": 14841,
+    "lastUpdated": 1779258358.203212
+  },
+  "Kia|Forte|2020": {
+    "min": 8999,
+    "max": 19990,
+    "url": "https://www.edmunds.com/kia/forte/2020/review/",
+    "suggested": null,
+    "avg_used": 16171,
+    "lastUpdated": 1779258355.147922
+  },
+  "Kia|Forte|2021": {
+    "min": 8800,
+    "max": 21590,
+    "url": "https://www.edmunds.com/kia/forte/2021/review/",
+    "suggested": null,
+    "avg_used": 17131,
+    "lastUpdated": 1779293555.790098
+  },
+  "Kia|Forte|2022": null,
+  "Kia|Forte|2023": null,
+  "Kia|K5 Hybrid|2020": null,
+  "Kia|K5 Hybrid|2021": null,
+  "Kia|K5 Hybrid|2022": null,
+  "Kia|K5|2021": {
+    "min": 14499,
+    "max": 25990,
+    "url": "https://www.edmunds.com/kia/k5/2021/review/",
+    "suggested": null,
+    "avg_used": 21508,
+    "lastUpdated": 1779293605.7832608
+  },
+  "Kia|K5|2022": {
+    "min": 15098,
+    "max": 27998,
+    "url": "https://www.edmunds.com/kia/k5/2022/",
+    "suggested": null,
+    "avg_used": 28018,
+    "lastUpdated": 1779258393.370432
+  },
+  "Kia|K5|2023": {
+    "min": 16995,
+    "max": 29990,
+    "url": "https://www.edmunds.com/kia/k5/2023/",
+    "suggested": null,
+    "avg_used": 28018,
+    "lastUpdated": 1779258395.616798
+  },
+  "Kia|K5|2024": {
+    "min": 20590,
+    "max": 33590,
+    "url": "https://www.edmunds.com/kia/k5/2024/",
+    "suggested": null,
+    "avg_used": 28018,
+    "lastUpdated": 1779258398.502228
+  },
+  "Kia|K7|2017": null,
+  "Kia|K8 Hybrid (with HDA II)|2023": null,
+  "Kia|Niro EV (with HDA II)|2024": {
+    "min": 20950,
+    "max": 30998,
+    "url": "https://www.edmunds.com/kia/niro-ev/2024/",
+    "suggested": null,
+    "avg_used": 26820,
+    "lastUpdated": 1779258445.410929
+  },
+  "Kia|Niro EV (with HDA II)|2025": {
+    "min": 39600,
+    "max": 44600,
+    "url": "https://www.edmunds.com/kia/niro-ev/2025/",
+    "suggested": 37641,
+    "avg_used": null,
+    "lastUpdated": 1779258447.202049
+  },
+  "Kia|Niro EV (without HDA II)|2023": {
+    "min": 20991,
+    "max": 27990,
+    "url": "https://www.edmunds.com/kia/niro-ev/2023/",
+    "suggested": null,
+    "avg_used": 26820,
+    "lastUpdated": 1779258448.737941
+  },
+  "Kia|Niro EV (without HDA II)|2024": {
+    "min": 20950,
+    "max": 30998,
+    "url": "https://www.edmunds.com/kia/niro-ev/2024/",
+    "suggested": null,
+    "avg_used": 26820,
+    "lastUpdated": 1779258450.379613
+  },
+  "Kia|Niro EV (without HDA II)|2025": {
+    "min": 39600,
+    "max": 44600,
+    "url": "https://www.edmunds.com/kia/niro-ev/2025/",
+    "suggested": 37641,
+    "avg_used": null,
+    "lastUpdated": 1779258451.716416
+  },
+  "Kia|Niro EV|2019": {
+    "min": 13680,
+    "max": 13680,
+    "url": "https://www.edmunds.com/kia/niro-ev/2019/review/",
+    "suggested": null,
+    "avg_used": 14426,
+    "lastUpdated": 1779293613.443616
+  },
+  "Kia|Niro EV|2020": {
+    "min": 16990,
+    "max": 20998,
+    "url": "https://www.edmunds.com/kia/niro-ev/2020/review/",
+    "suggested": null,
+    "avg_used": 15582,
+    "lastUpdated": 1779258422.382636
+  },
+  "Kia|Niro EV|2021": {
+    "min": 18990,
+    "max": 18990,
+    "url": "https://www.edmunds.com/kia/niro-ev/2021/review/",
+    "suggested": null,
+    "avg_used": 16967,
+    "lastUpdated": 1779293615.149281
+  },
+  "Kia|Niro EV|2022": {
+    "min": 18198,
+    "max": 20998,
+    "url": "https://www.edmunds.com/kia/niro-ev/2022/",
+    "suggested": null,
+    "avg_used": 26820,
+    "lastUpdated": 1779258440.907126
+  },
+  "Kia|Niro EV|2023": {
+    "min": 20991,
+    "max": 27990,
+    "url": "https://www.edmunds.com/kia/niro-ev/2023/",
+    "suggested": null,
+    "avg_used": 26820,
+    "lastUpdated": 1779258443.142377
+  },
+  "Kia|Niro Hybrid|2018": null,
+  "Kia|Niro Hybrid|2021": null,
+  "Kia|Niro Hybrid|2022": null,
+  "Kia|Niro Hybrid|2023": null,
+  "Kia|Niro Hybrid|2024": null,
+  "Kia|Niro Plug-in Hybrid|2018": {
+    "min": 14590,
+    "max": 17998,
+    "url": "https://www.edmunds.com/kia/niro-plug-in-hybrid/2018/review/",
+    "suggested": null,
+    "avg_used": 14559,
+    "lastUpdated": 1779258459.139016
+  },
+  "Kia|Niro Plug-in Hybrid|2019": {
+    "min": 19590,
+    "max": 19590,
+    "url": "https://www.edmunds.com/kia/niro-plug-in-hybrid/2019/review/",
+    "suggested": null,
+    "avg_used": 17363,
+    "lastUpdated": 1779293622.6290371
+  },
+  "Kia|Niro Plug-in Hybrid|2020": {
+    "min": 16914,
+    "max": 16914,
+    "url": "https://www.edmunds.com/kia/niro-plug-in-hybrid/2020/review/",
+    "suggested": null,
+    "avg_used": 16914,
+    "lastUpdated": 1779293624.1662238
+  },
+  "Kia|Niro Plug-in Hybrid|2021": {
+    "min": 21495,
+    "max": 21495,
+    "url": "https://www.edmunds.com/kia/niro-plug-in-hybrid/2021/review/",
+    "suggested": null,
+    "avg_used": 21495,
+    "lastUpdated": 1779293626.151506
+  },
+  "Kia|Niro Plug-in Hybrid|2022": {
+    "min": 17996,
+    "max": 23998,
+    "url": "https://www.edmunds.com/kia/niro-plug-in-hybrid/2022/",
+    "suggested": null,
+    "avg_used": 23127,
+    "lastUpdated": 1779258510.960541
+  },
+  "Kia|Optima Hybrid|2017": {
+    "min": 12599,
+    "max": 15998,
+    "url": "https://www.edmunds.com/kia/optima-hybrid/2017/review/",
+    "suggested": null,
+    "avg_used": 10888,
+    "lastUpdated": 1779258517.644269
+  },
+  "Kia|Optima Hybrid|2019": {
+    "min": 14106,
+    "max": 14106,
+    "url": "https://www.edmunds.com/kia/optima-hybrid/2019/review/",
+    "suggested": null,
+    "avg_used": 14106,
+    "lastUpdated": 1779293627.8248582
+  },
+  "Kia|Optima|2017": {
+    "min": 5998,
+    "max": 19998,
+    "url": "https://www.edmunds.com/kia/optima/2017/review/",
+    "suggested": null,
+    "avg_used": 13064,
+    "lastUpdated": 1779258512.4810848
+  },
+  "Kia|Optima|2019": {
+    "min": 5400,
+    "max": 24299,
+    "url": "https://www.edmunds.com/kia/optima/2019/review/",
+    "suggested": null,
+    "avg_used": 15231,
+    "lastUpdated": 1779258514.12665
+  },
+  "Kia|Optima|2020": {
+    "min": 8297,
+    "max": 22998,
+    "url": "https://www.edmunds.com/kia/optima/2020/review/",
+    "suggested": null,
+    "avg_used": 15959,
+    "lastUpdated": 1779258515.9389188
+  },
+  "Kia|Seltos|2021": {
+    "min": 11490,
+    "max": 23590,
+    "url": "https://www.edmunds.com/kia/seltos/2021/review/",
+    "suggested": null,
+    "avg_used": 18188,
+    "lastUpdated": 1779258535.599355
+  },
+  "Kia|Seltos|2023": {
+    "min": 16590,
+    "max": 25990,
+    "url": "https://www.edmunds.com/kia/seltos/2023/",
+    "suggested": null,
+    "avg_used": 25221,
+    "lastUpdated": 1779258537.485881
+  },
+  "Kia|Seltos|2024": {
+    "min": 17590,
+    "max": 29400,
+    "url": "https://www.edmunds.com/kia/seltos/2024/",
+    "suggested": null,
+    "avg_used": 25221,
+    "lastUpdated": 1779258539.522422
+  },
+  "Kia|Sorento Hybrid|2021": {
+    "min": 19900,
+    "max": 25998,
+    "url": "https://www.edmunds.com/kia/sorento-hybrid/2021/review/",
+    "suggested": null,
+    "avg_used": 23323,
+    "lastUpdated": 1779258557.624877
+  },
+  "Kia|Sorento Hybrid|2022": {
+    "min": 23499,
+    "max": 31990,
+    "url": "https://www.edmunds.com/kia/sorento-hybrid/2022/",
+    "suggested": null,
+    "avg_used": 37354,
+    "lastUpdated": 1779258559.9284968
+  },
+  "Kia|Sorento Hybrid|2023": {
+    "min": 25988,
+    "max": 36998,
+    "url": "https://www.edmunds.com/kia/sorento-hybrid/2023/",
+    "suggested": null,
+    "avg_used": 37354,
+    "lastUpdated": 1779258561.614988
+  },
+  "Kia|Sorento Plug-in Hybrid|2022": {
+    "min": 20084,
+    "max": 33990,
+    "url": "https://www.edmunds.com/kia/sorento-plug-in-hybrid/2022/",
+    "suggested": null,
+    "avg_used": 41271,
+    "lastUpdated": 1779258563.468676
+  },
+  "Kia|Sorento Plug-in Hybrid|2023": {
+    "min": 31998,
+    "max": 38998,
+    "url": "https://www.edmunds.com/kia/sorento-plug-in-hybrid/2023/",
+    "suggested": null,
+    "avg_used": 41271,
+    "lastUpdated": 1779258565.767874
+  },
+  "Kia|Sorento|2018": {
+    "min": 9699,
+    "max": 23999,
+    "url": "https://www.edmunds.com/kia/sorento/2018/review/",
+    "suggested": null,
+    "avg_used": 16758,
+    "lastUpdated": 1779293629.7468858
+  },
+  "Kia|Sorento|2019": {
+    "min": 8991,
+    "max": 28990,
+    "url": "https://www.edmunds.com/kia/sorento/2019/review/",
+    "suggested": null,
+    "avg_used": 16967,
+    "lastUpdated": 1779258549.6559591
+  },
+  "Kia|Sorento|2021": {
+    "min": 16998,
+    "max": 30990,
+    "url": "https://www.edmunds.com/kia/sorento/2021/review/",
+    "suggested": null,
+    "avg_used": 23949,
+    "lastUpdated": 1779258552.1632159
+  },
+  "Kia|Sorento|2022": {
+    "min": 16995,
+    "max": 35998,
+    "url": "https://www.edmunds.com/kia/sorento/2022/",
+    "suggested": null,
+    "avg_used": 25060,
+    "lastUpdated": 1779258554.160743
+  },
+  "Kia|Sorento|2023": {
+    "min": 16570,
+    "max": 37998,
+    "url": "https://www.edmunds.com/kia/sorento/2023/",
+    "suggested": null,
+    "avg_used": 25060,
+    "lastUpdated": 1779258556.065448
+  },
+  "Kia|Sportage Hybrid|2023": {
+    "min": 19750,
+    "max": 35590,
+    "url": "https://www.edmunds.com/kia/sportage-hybrid/2023/",
+    "suggested": null,
+    "avg_used": 34216,
+    "lastUpdated": 1779258572.354368
+  },
+  "Kia|Sportage Hybrid|2026": {
+    "min": 30490,
+    "max": 40590,
+    "url": "https://www.edmunds.com/kia/sportage-hybrid/",
+    "suggested": 31340,
+    "avg_used": null,
+    "lastUpdated": 1779258574.800294
+  },
+  "Kia|Sportage|2023": {
+    "min": 15998,
+    "max": 32590,
+    "url": "https://www.edmunds.com/kia/sportage/2023/",
+    "suggested": null,
+    "avg_used": 23347,
+    "lastUpdated": 1779258567.91436
+  },
+  "Kia|Sportage|2024": {
+    "min": 19500,
+    "max": 33990,
+    "url": "https://www.edmunds.com/kia/sportage/2024/",
+    "suggested": null,
+    "avg_used": 23347,
+    "lastUpdated": 1779258570.305231
+  },
+  "Kia|Stinger|2018": {
+    "min": 16495,
+    "max": 34590,
+    "url": "https://www.edmunds.com/kia/stinger/2018/review/",
+    "suggested": null,
+    "avg_used": 20693,
+    "lastUpdated": 1779258576.38018
+  },
+  "Kia|Stinger|2019": {
+    "min": 18998,
+    "max": 24998,
+    "url": "https://www.edmunds.com/kia/stinger/2019/review/",
+    "suggested": null,
+    "avg_used": 23289,
+    "lastUpdated": 1779258577.746024
+  },
+  "Kia|Stinger|2020": {
+    "min": 19990,
+    "max": 34990,
+    "url": "https://www.edmunds.com/kia/stinger/2020/review/",
+    "suggested": null,
+    "avg_used": 28394,
+    "lastUpdated": 1779258579.539062
+  },
+  "Kia|Stinger|2022": {
+    "min": 24990,
+    "max": 46998,
+    "url": "https://www.edmunds.com/kia/stinger/2022/",
+    "suggested": null,
+    "avg_used": 27852,
+    "lastUpdated": 1779258581.451891
+  },
+  "Kia|Stinger|2023": {
+    "min": 28998,
+    "max": 43590,
+    "url": "https://www.edmunds.com/kia/stinger/2023/",
+    "suggested": null,
+    "avg_used": 27852,
+    "lastUpdated": 1779258583.836752
+  },
+  "Kia|Telluride (without HDA II)|2023": {
+    "min": 26550,
+    "max": 45998,
+    "url": "https://www.edmunds.com/kia/telluride/2023/",
+    "suggested": null,
+    "avg_used": 34759,
+    "lastUpdated": 1779258597.0715861
+  },
+  "Kia|Telluride (without HDA II)|2024": {
+    "min": 27994,
+    "max": 47984,
+    "url": "https://www.edmunds.com/kia/telluride/2024/",
+    "suggested": null,
+    "avg_used": 34759,
+    "lastUpdated": 1779258598.8263
+  },
+  "Kia|Telluride (without HDA II)|2025": {
+    "min": 36390,
+    "max": 53685,
+    "url": "https://www.edmunds.com/kia/telluride/2025/",
+    "suggested": 34600,
+    "avg_used": null,
+    "lastUpdated": 1779293640.354646
+  },
+  "Kia|Telluride|2020": {
+    "min": 13989,
+    "max": 36998,
+    "url": "https://www.edmunds.com/kia/telluride/2020/review/",
+    "suggested": null,
+    "avg_used": 24291,
+    "lastUpdated": 1779258585.7250402
+  },
+  "Kia|Telluride|2021": {
+    "min": 18995,
+    "max": 34998,
+    "url": "https://www.edmunds.com/kia/telluride/2021/review/",
+    "suggested": null,
+    "avg_used": 27268,
+    "lastUpdated": 1779258587.738006
+  },
+  "Kia|Telluride|2022": {
+    "min": 20891,
+    "max": 37998,
+    "url": "https://www.edmunds.com/kia/telluride/2022/",
+    "suggested": null,
+    "avg_used": 34759,
+    "lastUpdated": 1779258590.3390899
+  },
+  "Kia|Telluride|2023": {
+    "min": 26550,
+    "max": 45998,
+    "url": "https://www.edmunds.com/kia/telluride/2023/",
+    "suggested": null,
+    "avg_used": 34759,
+    "lastUpdated": 1779258592.542722
+  },
+  "Kia|Telluride|2024": {
+    "min": 27994,
+    "max": 47984,
+    "url": "https://www.edmunds.com/kia/telluride/2024/",
+    "suggested": null,
+    "avg_used": 34759,
+    "lastUpdated": 1779258595.28628
+  },
+  "Lexus|CT Hybrid|2017": {
+    "min": 23990,
+    "max": 25590,
+    "url": "https://www.edmunds.com/lexus/ct-200h/2017/review/",
+    "suggested": null,
+    "avg_used": 18461,
+    "lastUpdated": 1779293642.996364
+  },
+  "Lexus|CT Hybrid|2018": null,
+  "Lexus|ES Hybrid|2017": {
+    "min": 23998,
+    "max": 26990,
+    "url": "https://www.edmunds.com/lexus/es-300h/2017/review/",
+    "suggested": null,
+    "avg_used": 22603,
+    "lastUpdated": 1779293710.214165
+  },
+  "Lexus|ES Hybrid|2018": {
+    "min": 23561,
+    "max": 23561,
+    "url": "https://www.edmunds.com/lexus/es-300h/2018/review/",
+    "suggested": null,
+    "avg_used": 23561,
+    "lastUpdated": 1779293713.223722
+  },
+  "Lexus|ES Hybrid|2019": {
+    "min": 30998,
+    "max": 32998,
+    "url": "https://www.edmunds.com/lexus/es-300h/2019/review/",
+    "suggested": null,
+    "avg_used": 28114,
+    "lastUpdated": 1779293715.999497
+  },
+  "Lexus|ES Hybrid|2020": {
+    "min": 25995,
+    "max": 37998,
+    "url": "https://www.edmunds.com/lexus/es-300h/2020/review/",
+    "suggested": null,
+    "avg_used": 31747,
+    "lastUpdated": 1779293718.861944
+  },
+  "Lexus|ES Hybrid|2021": {
+    "min": 18500,
+    "max": 39998,
+    "url": "https://www.edmunds.com/lexus/es-300h/2021/review/",
+    "suggested": null,
+    "avg_used": 29883,
+    "lastUpdated": 1779293721.5595741
+  },
+  "Lexus|ES Hybrid|2022": {
+    "min": 31998,
+    "max": 40998,
+    "url": "https://www.edmunds.com/lexus/es-300h/2022/",
+    "suggested": null,
+    "avg_used": 30527,
+    "lastUpdated": 1779293725.286838
+  },
+  "Lexus|ES Hybrid|2023": {
+    "min": 28990,
+    "max": 43998,
+    "url": "https://www.edmunds.com/lexus/es-300h/2023/",
+    "suggested": null,
+    "avg_used": 30527,
+    "lastUpdated": 1779293729.245497
+  },
+  "Lexus|ES Hybrid|2024": null,
+  "Lexus|ES Hybrid|2025": null,
+  "Lexus|ES|2017": {
+    "min": 12954,
+    "max": 27590,
+    "url": "https://www.edmunds.com/lexus/es-350/2017/review/",
+    "suggested": null,
+    "avg_used": 22206,
+    "lastUpdated": 1779293649.872533
+  },
+  "Lexus|ES|2018": {
+    "min": 20998,
+    "max": 30998,
+    "url": "https://www.edmunds.com/lexus/es-350/2018/review/",
+    "suggested": null,
+    "avg_used": 26546,
+    "lastUpdated": 1779293655.264544
+  },
+  "Lexus|ES|2019": {
+    "min": 22998,
+    "max": 32998,
+    "url": "https://www.edmunds.com/lexus/es-350/2019/review/",
+    "suggested": null,
+    "avg_used": 28560,
+    "lastUpdated": 1779293661.754789
+  },
+  "Lexus|ES|2020": {
+    "min": 25998,
+    "max": 36998,
+    "url": "https://www.edmunds.com/lexus/es-350/2020/review/",
+    "suggested": null,
+    "avg_used": 31584,
+    "lastUpdated": 1779293667.501301
+  },
+  "Lexus|ES|2021": {
+    "min": 28477,
+    "max": 33590,
+    "url": "https://www.edmunds.com/lexus/es-250/2021/review/",
+    "suggested": null,
+    "avg_used": 30514,
+    "lastUpdated": 1779293670.507566
+  },
+  "Lexus|ES|2022": {
+    "min": 33328,
+    "max": 33328,
+    "url": "https://www.edmunds.com/lexus/es-250/2022/",
+    "suggested": null,
+    "avg_used": 33328,
+    "lastUpdated": 1779293702.640436
+  },
+  "Lexus|ES|2023": {
+    "min": 32998,
+    "max": 39590,
+    "url": "https://www.edmunds.com/lexus/es-250/2023/",
+    "suggested": null,
+    "avg_used": 33328,
+    "lastUpdated": 1779293706.993765
+  },
+  "Lexus|ES|2024": {
+    "min": 32482,
+    "max": 51990,
+    "url": "https://www.edmunds.com/lexus/es/2024/",
+    "suggested": null,
+    "avg_used": 44269,
+    "lastUpdated": 1779258617.9850261
+  },
+  "Lexus|ES|2025": {
+    "min": 42140,
+    "max": 52430,
+    "url": "https://www.edmunds.com/lexus/es/",
+    "suggested": 40957,
+    "avg_used": null,
+    "lastUpdated": 1779258620.893444
+  },
+  "Lexus|GS F|2016": {
+    "min": 52704,
+    "max": 52704,
+    "url": "https://www.edmunds.com/lexus/gs-f/2016/review/",
+    "suggested": null,
+    "avg_used": 52704,
+    "lastUpdated": 1779293736.995455
+  },
+  "Lexus|IS|2017": {
+    "min": 22418,
+    "max": 28990,
+    "url": "https://www.edmunds.com/lexus/is-300/2017/review/",
+    "suggested": null,
+    "avg_used": 22102,
+    "lastUpdated": 1779293742.651764
+  },
+  "Lexus|IS|2018": {
+    "min": 14995,
+    "max": 29998,
+    "url": "https://www.edmunds.com/lexus/is-300/2018/review/",
+    "suggested": null,
+    "avg_used": 23356,
+    "lastUpdated": 1779293748.1938078
+  },
+  "Lexus|IS|2019": {
+    "min": 21998,
+    "max": 32990,
+    "url": "https://www.edmunds.com/lexus/is-300/2019/review/",
+    "suggested": null,
+    "avg_used": 26794,
+    "lastUpdated": 1779293753.672714
+  },
+  "Lexus|IS|2022": {
+    "min": 21500,
+    "max": 37000,
+    "url": "https://www.edmunds.com/lexus/is-300/2022/",
+    "suggested": null,
+    "avg_used": 29165,
+    "lastUpdated": 1779293761.882049
+  },
+  "Lexus|IS|2023": null,
+  "Lexus|IS|2024": {
+    "min": 34998,
+    "max": 71998,
+    "url": "https://www.edmunds.com/lexus/is/2024/",
+    "suggested": null,
+    "avg_used": 48524,
+    "lastUpdated": 1779258652.040277
+  },
+  "Lexus|LC|2024": null,
+  "Lexus|LC|2025": {
+    "min": 99750,
+    "max": 102900,
+    "url": "https://www.edmunds.com/lexus/lc/2025/",
+    "suggested": 94196,
+    "avg_used": null,
+    "lastUpdated": 1779258670.698056
+  },
+  "Lexus|LS|2018": null,
+  "Lexus|NS|2022": null,
+  "Lexus|NS|2023": null,
+  "Lexus|NS|2024": null,
+  "Lexus|NS|2025": null,
+  "Lexus|NX Hybrid|2018": null,
+  "Lexus|NX Hybrid|2019": null,
+  "Lexus|NX Hybrid|2020": null,
+  "Lexus|NX Hybrid|2021": null,
+  "Lexus|NX|2018": null,
+  "Lexus|NX|2019": null,
+  "Lexus|NX|2020": null,
+  "Lexus|NX|2021": null,
+  "Lexus|RC|2018": null,
+  "Lexus|RC|2019": null,
+  "Lexus|RC|2020": null,
+  "Lexus|RC|2023": null,
+  "Lexus|RX Hybrid|2016": null,
+  "Lexus|RX Hybrid|2017": null,
+  "Lexus|RX Hybrid|2018": null,
+  "Lexus|RX Hybrid|2019": null,
+  "Lexus|RX Hybrid|2020": null,
+  "Lexus|RX Hybrid|2021": null,
+  "Lexus|RX Hybrid|2022": null,
+  "Lexus|RX|2016": null,
+  "Lexus|RX|2017": null,
+  "Lexus|RX|2018": null,
+  "Lexus|RX|2019": null,
+  "Lexus|RX|2020": null,
+  "Lexus|RX|2021": null,
+  "Lexus|RX|2022": null,
+  "Lexus|UX Hybrid|2019": null,
+  "Lexus|UX Hybrid|2020": null,
+  "Lexus|UX Hybrid|2021": null,
+  "Lexus|UX Hybrid|2022": null,
+  "Lexus|UX Hybrid|2023": null,
+  "Lexus|UX Hybrid|2024": null,
+  "Lincoln|Aviator Plug-in Hybrid|2020": null,
+  "Lincoln|Aviator Plug-in Hybrid|2021": null,
+  "Lincoln|Aviator Plug-in Hybrid|2022": null,
+  "Lincoln|Aviator Plug-in Hybrid|2023": null,
+  "Lincoln|Aviator Plug-in Hybrid|2024": null,
+  "Lincoln|Aviator|2020": {
+    "min": 26590,
+    "max": 41998,
+    "url": "https://www.edmunds.com/lincoln/aviator/2020/review/",
+    "suggested": null,
+    "avg_used": 33493,
+    "lastUpdated": 1779258717.199722
+  },
+  "Lincoln|Aviator|2021": {
+    "min": 30998,
+    "max": 50998,
+    "url": "https://www.edmunds.com/lincoln/aviator/2021/review/",
+    "suggested": null,
+    "avg_used": 38487,
+    "lastUpdated": 1779258718.968933
+  },
+  "Lincoln|Aviator|2022": {
+    "min": 31998,
+    "max": 47990,
+    "url": "https://www.edmunds.com/lincoln/aviator/2022/",
+    "suggested": null,
+    "avg_used": 53197,
+    "lastUpdated": 1779258721.3900712
+  },
+  "Lincoln|Aviator|2023": {
+    "min": 34998,
+    "max": 62995,
+    "url": "https://www.edmunds.com/lincoln/aviator/2023/",
+    "suggested": null,
+    "avg_used": 53197,
+    "lastUpdated": 1779258723.644821
+  },
+  "Lincoln|Aviator|2024": {
+    "min": 46499,
+    "max": 55998,
+    "url": "https://www.edmunds.com/lincoln/aviator/2024/",
+    "suggested": null,
+    "avg_used": 53197,
+    "lastUpdated": 1779258726.367253
+  },
+  "MAN|TGE|2017": null,
+  "MAN|TGE|2018": null,
+  "MAN|TGE|2019": null,
+  "MAN|TGE|2020": null,
+  "MAN|TGE|2021": null,
+  "MAN|TGE|2022": null,
+  "MAN|TGE|2023": null,
+  "MAN|TGE|2024": null,
+  "MAN|eTGE|2020": null,
+  "MAN|eTGE|2021": null,
+  "MAN|eTGE|2022": null,
+  "MAN|eTGE|2023": null,
+  "MAN|eTGE|2024": null,
+  "Mazda|3|2017": {
+    "min": 14678,
+    "max": 20590,
+    "url": "https://www.edmunds.com/mazda/3/2017/review/",
+    "suggested": null,
+    "avg_used": 16107,
+    "lastUpdated": 1779289808.803852
+  },
+  "Mazda|3|2018": {
+    "min": 10602,
+    "max": 21590,
+    "url": "https://www.edmunds.com/mazda/3/2018/review/",
+    "suggested": null,
+    "avg_used": 17975,
+    "lastUpdated": 1779289811.0995169
+  },
+  "Mazda|6|2017": {
+    "min": 9995,
+    "max": 22590,
+    "url": "https://www.edmunds.com/mazda/6/2017/review/",
+    "suggested": null,
+    "avg_used": 18276,
+    "lastUpdated": 1779289815.815095
+  },
+  "Mazda|6|2018": {
+    "min": 15559,
+    "max": 23990,
+    "url": "https://www.edmunds.com/mazda/6/2018/review/",
+    "suggested": null,
+    "avg_used": 18299,
+    "lastUpdated": 1779289820.6312692
+  },
+  "Mazda|6|2019": {
+    "min": 18590,
+    "max": 21590,
+    "url": "https://www.edmunds.com/mazda/6/2019/review/",
+    "suggested": null,
+    "avg_used": 19869,
+    "lastUpdated": 1779289824.836993
+  },
+  "Mazda|6|2020": {
+    "min": 18799,
+    "max": 23894,
+    "url": "https://www.edmunds.com/mazda/6/2020/review/",
+    "suggested": null,
+    "avg_used": 19555,
+    "lastUpdated": 1779289829.170321
+  },
+  "Mazda|CX-5|2017": {
+    "min": 13995,
+    "max": 24590,
+    "url": "https://www.edmunds.com/mazda/cx-5/2017/review/",
+    "suggested": null,
+    "avg_used": 19142,
+    "lastUpdated": 1779289833.2410161
+  },
+  "Mazda|CX-5|2018": {
+    "min": 12980,
+    "max": 23990,
+    "url": "https://www.edmunds.com/mazda/cx-5/2018/review/",
+    "suggested": null,
+    "avg_used": 19333,
+    "lastUpdated": 1779289837.594808
+  },
+  "Mazda|CX-5|2019": {
+    "min": 15990,
+    "max": 27998,
+    "url": "https://www.edmunds.com/mazda/cx-5/2019/review/",
+    "suggested": null,
+    "avg_used": 21067,
+    "lastUpdated": 1779289841.957164
+  },
+  "Mazda|CX-5|2020": {
+    "min": 15888,
+    "max": 28590,
+    "url": "https://www.edmunds.com/mazda/cx-5/2020/review/",
+    "suggested": null,
+    "avg_used": 22070,
+    "lastUpdated": 1779289846.299686
+  },
+  "Mazda|CX-5|2021": {
+    "min": 15999,
+    "max": 27998,
+    "url": "https://www.edmunds.com/mazda/cx-5/2021/review/",
+    "suggested": null,
+    "avg_used": 23809,
+    "lastUpdated": 1779289850.648702
+  },
+  "Mazda|CX-5|2022": {
+    "min": 19998,
+    "max": 29998,
+    "url": "https://www.edmunds.com/mazda/cx-5/2022/",
+    "suggested": null,
+    "avg_used": 27397,
+    "lastUpdated": 1779289855.2144299
+  },
+  "Mazda|CX-5|2023": {
+    "min": 18998,
+    "max": 31998,
+    "url": "https://www.edmunds.com/mazda/cx-5/2023/",
+    "suggested": null,
+    "avg_used": 27392,
+    "lastUpdated": 1779289859.666292
+  },
+  "Mazda|CX-5|2024": {
+    "min": 21999,
+    "max": 34990,
+    "url": "https://www.edmunds.com/mazda/cx-5/2024/",
+    "suggested": null,
+    "avg_used": 27388,
+    "lastUpdated": 1779289868.15613
+  },
+  "Mazda|CX-5|2025": {
+    "min": 29050,
+    "max": 41080,
+    "url": "https://www.edmunds.com/mazda/cx-5/2025/",
+    "suggested": 29753,
+    "avg_used": null,
+    "lastUpdated": 1779289872.678051
+  },
+  "Mazda|CX-9|2016": {
+    "min": 12995,
+    "max": 23998,
+    "url": "https://www.edmunds.com/mazda/cx-9/2016/review/",
+    "suggested": null,
+    "avg_used": 15119,
+    "lastUpdated": 1779289876.956724
+  },
+  "Mazda|CX-9|2017": {
+    "min": 16301,
+    "max": 22998,
+    "url": "https://www.edmunds.com/mazda/cx-9/2017/review/",
+    "suggested": null,
+    "avg_used": 17986,
+    "lastUpdated": 1779289881.392522
+  },
+  "Mazda|CX-9|2018": {
+    "min": 13979,
+    "max": 27998,
+    "url": "https://www.edmunds.com/mazda/cx-9/2018/review/",
+    "suggested": null,
+    "avg_used": 17401,
+    "lastUpdated": 1779289885.6451762
+  },
+  "Mazda|CX-9|2019": {
+    "min": 18495,
+    "max": 27998,
+    "url": "https://www.edmunds.com/mazda/cx-9/2019/review/",
+    "suggested": null,
+    "avg_used": 22656,
+    "lastUpdated": 1779289889.773412
+  },
+  "Mazda|CX-9|2020": {
+    "min": 18990,
+    "max": 29998,
+    "url": "https://www.edmunds.com/mazda/cx-9/2020/review/",
+    "suggested": null,
+    "avg_used": 22360,
+    "lastUpdated": 1779289893.783446
+  },
+  "Mazda|CX-9|2021": {
+    "min": 18495,
+    "max": 29990,
+    "url": "https://www.edmunds.com/mazda/cx-9/2021/review/",
+    "suggested": null,
+    "avg_used": 25748,
+    "lastUpdated": 1779289897.822735
+  },
+  "Mazda|CX-9|2022": {
+    "min": 21990,
+    "max": 32990,
+    "url": "https://www.edmunds.com/mazda/cx-9/2022/",
+    "suggested": null,
+    "avg_used": 20780,
+    "lastUpdated": 1779289902.159159
+  },
+  "Mazda|CX-9|2023": {
+    "min": 20303,
+    "max": 35590,
+    "url": "https://www.edmunds.com/mazda/cx-9/2023/",
+    "suggested": null,
+    "avg_used": 20780,
+    "lastUpdated": 1779289906.590047
+  },
+  "Nissan|Altima|2019": {
+    "min": 9950,
+    "max": 21998,
+    "url": "https://www.edmunds.com/nissan/altima/2019/review/",
+    "suggested": null,
+    "avg_used": 16777,
+    "lastUpdated": 1779289910.7259672
+  },
+  "Nissan|Altima|2020": {
+    "min": 8995,
+    "max": 22998,
+    "url": "https://www.edmunds.com/nissan/altima/2020/review/",
+    "suggested": null,
+    "avg_used": 17403,
+    "lastUpdated": 1779289914.7766871
+  },
+  "Nissan|Altima|2024": {
+    "min": 14987,
+    "max": 28000,
+    "url": "https://www.edmunds.com/nissan/altima/2024/",
+    "suggested": null,
+    "avg_used": 18757,
+    "lastUpdated": 1779289919.513928
+  },
+  "Nissan|Leaf - Instrument Cluster|2018": null,
+  "Nissan|Leaf - Instrument Cluster|2019": null,
+  "Nissan|Leaf - Instrument Cluster|2020": null,
+  "Nissan|Leaf - Instrument Cluster|2021": null,
+  "Nissan|Leaf - Instrument Cluster|2022": null,
+  "Nissan|Leaf - Instrument Cluster|2023": null,
+  "Nissan|Leaf|2018": {
+    "min": 11590,
+    "max": 14990,
+    "url": "https://www.edmunds.com/nissan/leaf/2018/review/",
+    "suggested": null,
+    "avg_used": 10965,
+    "lastUpdated": 1779289923.9864051
+  },
+  "Nissan|Leaf|2019": {
+    "min": 8549,
+    "max": 17590,
+    "url": "https://www.edmunds.com/nissan/leaf/2019/review/",
+    "suggested": null,
+    "avg_used": 12248,
+    "lastUpdated": 1779289928.3574169
+  },
+  "Nissan|Leaf|2020": {
+    "min": 13998,
+    "max": 16998,
+    "url": "https://www.edmunds.com/nissan/leaf/2020/review/",
+    "suggested": null,
+    "avg_used": 13053,
+    "lastUpdated": 1779289932.6793568
+  },
+  "Nissan|Leaf|2021": {
+    "min": 14290,
+    "max": 14990,
+    "url": "https://www.edmunds.com/nissan/leaf/2021/review/",
+    "suggested": null,
+    "avg_used": 13067,
+    "lastUpdated": 1779289936.665591
+  },
+  "Nissan|Leaf|2022": {
+    "min": 12995,
+    "max": 20990,
+    "url": "https://www.edmunds.com/nissan/leaf/2022/",
+    "suggested": null,
+    "avg_used": 25196,
+    "lastUpdated": 1779289941.172726
+  },
+  "Nissan|Leaf|2023": {
+    "min": 14685,
+    "max": 19990,
+    "url": "https://www.edmunds.com/nissan/leaf/2023/",
+    "suggested": null,
+    "avg_used": 25196,
+    "lastUpdated": 1779289945.6852212
+  },
+  "Nissan|Rogue|2018": {
+    "min": 10650,
+    "max": 27990,
+    "url": "https://www.edmunds.com/nissan/rogue/2018/review/",
+    "suggested": null,
+    "avg_used": 16462,
+    "lastUpdated": 1779289955.672142
+  },
+  "Nissan|Rogue|2019": {
+    "min": 9495,
+    "max": 22590,
+    "url": "https://www.edmunds.com/nissan/rogue/2019/review/",
+    "suggested": null,
+    "avg_used": 17247,
+    "lastUpdated": 1779289959.7130911
+  },
+  "Nissan|Rogue|2020": {
+    "min": 13299,
+    "max": 24990,
+    "url": "https://www.edmunds.com/nissan/rogue/2020/review/",
+    "suggested": null,
+    "avg_used": 18883,
+    "lastUpdated": 1779289963.858984
+  },
+  "Nissan|X-Trail|2017": null,
+  "Peugeot|208|2019": null,
+  "Peugeot|208|2020": null,
+  "Peugeot|208|2021": null,
+  "Peugeot|208|2022": null,
+  "Peugeot|208|2023": null,
+  "Peugeot|208|2024": null,
+  "Peugeot|208|2025": null,
+  "Porsche|Macan|2017": null,
+  "Porsche|Macan|2018": null,
+  "Porsche|Macan|2019": null,
+  "Porsche|Macan|2020": null,
+  "Porsche|Macan|2021": null,
+  "Porsche|Macan|2022": null,
+  "Porsche|Macan|2023": null,
+  "Porsche|Macan|2024": null,
+  "Ram|1500|2019": null,
+  "Ram|1500|2020": null,
+  "Ram|1500|2021": null,
+  "Ram|1500|2022": null,
+  "Ram|1500|2023": null,
+  "Ram|1500|2024": null,
+  "Ram|2500|2020": null,
+  "Ram|2500|2021": null,
+  "Ram|2500|2022": null,
+  "Ram|2500|2023": null,
+  "Ram|2500|2024": null,
+  "Ram|3500|2019": null,
+  "Ram|3500|2020": null,
+  "Ram|3500|2021": null,
+  "Ram|3500|2022": null,
+  "Rivian|R1S|2022": null,
+  "Rivian|R1S|2023": null,
+  "Rivian|R1S|2024": null,
+  "Rivian|R1S|2025": null,
+  "Rivian|R1T|2022": null,
+  "Rivian|R1T|2023": null,
+  "Rivian|R1T|2024": null,
+  "Rivian|R1T|2025": null,
+  "SEAT|Alhambra|2018": null,
+  "SEAT|Alhambra|2019": null,
+  "SEAT|Alhambra|2020": null,
+  "SEAT|Ateca|2016": null,
+  "SEAT|Ateca|2017": null,
+  "SEAT|Ateca|2018": null,
+  "SEAT|Ateca|2019": null,
+  "SEAT|Ateca|2020": null,
+  "SEAT|Ateca|2021": null,
+  "SEAT|Ateca|2022": null,
+  "SEAT|Ateca|2023": null,
+  "SEAT|Leon|2014": null,
+  "SEAT|Leon|2015": null,
+  "SEAT|Leon|2016": null,
+  "SEAT|Leon|2017": null,
+  "SEAT|Leon|2018": null,
+  "SEAT|Leon|2019": null,
+  "SEAT|Leon|2020": null,
+  "Skoda|Fabia|2022": null,
+  "Skoda|Fabia|2023": null,
+  "Skoda|Kamiq|2021": null,
+  "Skoda|Kamiq|2022": null,
+  "Skoda|Kamiq|2023": null,
+  "Skoda|Karoq|2019": null,
+  "Skoda|Karoq|2020": null,
+  "Skoda|Karoq|2021": null,
+  "Skoda|Karoq|2022": null,
+  "Skoda|Karoq|2023": null,
+  "Skoda|Kodiaq|2017": null,
+  "Skoda|Kodiaq|2018": null,
+  "Skoda|Kodiaq|2019": null,
+  "Skoda|Kodiaq|2020": null,
+  "Skoda|Kodiaq|2021": null,
+  "Skoda|Kodiaq|2022": null,
+  "Skoda|Kodiaq|2023": null,
+  "Skoda|Octavia RS|2016": null,
+  "Skoda|Octavia Scout|2017": null,
+  "Skoda|Octavia Scout|2018": null,
+  "Skoda|Octavia Scout|2019": null,
+  "Skoda|Octavia|2015": null,
+  "Skoda|Octavia|2016": null,
+  "Skoda|Octavia|2017": null,
+  "Skoda|Octavia|2018": null,
+  "Skoda|Octavia|2019": null,
+  "Skoda|Scala|2020": null,
+  "Skoda|Scala|2021": null,
+  "Skoda|Scala|2022": null,
+  "Skoda|Scala|2023": null,
+  "Skoda|Superb|2015": null,
+  "Skoda|Superb|2016": null,
+  "Skoda|Superb|2017": null,
+  "Skoda|Superb|2018": null,
+  "Skoda|Superb|2019": null,
+  "Skoda|Superb|2020": null,
+  "Skoda|Superb|2021": null,
+  "Skoda|Superb|2022": null,
+  "Subaru|Ascent|2019": null,
+  "Subaru|Ascent|2020": null,
+  "Subaru|Ascent|2021": {
+    "min": 18514,
+    "max": 34998,
+    "url": "https://www.edmunds.com/subaru/ascent/2021/review/",
+    "suggested": null,
+    "avg_used": 25967,
+    "lastUpdated": 1779290342.4164732
+  },
+  "Subaru|Ascent|2023": {
+    "min": 24885,
+    "max": 39998,
+    "url": "https://www.edmunds.com/subaru/ascent/2023/",
+    "suggested": null,
+    "avg_used": 33485,
+    "lastUpdated": 1779290344.985397
+  },
+  "Subaru|Crosstrek Hybrid|2020": null,
+  "Subaru|Crosstrek|2018": {
+    "min": 9959,
+    "max": 25998,
+    "url": "https://www.edmunds.com/subaru/crosstrek/2018/review/",
+    "suggested": null,
+    "avg_used": 18897,
+    "lastUpdated": 1779290346.786906
+  },
+  "Subaru|Crosstrek|2019": {
+    "min": 14702,
+    "max": 26990,
+    "url": "https://www.edmunds.com/subaru/crosstrek/2019/review/",
+    "suggested": null,
+    "avg_used": 20750,
+    "lastUpdated": 1779290348.656839
+  },
+  "Subaru|Crosstrek|2020": {
+    "min": 16995,
+    "max": 26990,
+    "url": "https://www.edmunds.com/subaru/crosstrek/2020/review/",
+    "suggested": null,
+    "avg_used": 22588,
+    "lastUpdated": 1779290350.85297
+  },
+  "Subaru|Crosstrek|2021": {
+    "min": 15660,
+    "max": 29997,
+    "url": "https://www.edmunds.com/subaru/crosstrek/2021/review/",
+    "suggested": null,
+    "avg_used": 23443,
+    "lastUpdated": 1779290352.956349
+  },
+  "Subaru|Crosstrek|2022": {
+    "min": 18933,
+    "max": 27998,
+    "url": "https://www.edmunds.com/subaru/crosstrek/2022/",
+    "suggested": null,
+    "avg_used": 28548,
+    "lastUpdated": 1779290355.195779
+  },
+  "Subaru|Crosstrek|2023": {
+    "min": 18945,
+    "max": 30497,
+    "url": "https://www.edmunds.com/subaru/crosstrek/2023/",
+    "suggested": null,
+    "avg_used": 28547,
+    "lastUpdated": 1779290357.6566248
+  },
+  "Subaru|Forester Hybrid|2020": null,
+  "Subaru|Forester|2017": {
+    "min": 9541,
+    "max": 23998,
+    "url": "https://www.edmunds.com/subaru/forester/2017/review/",
+    "suggested": null,
+    "avg_used": 17876,
+    "lastUpdated": 1779290360.838717
+  },
+  "Subaru|Forester|2018": {
+    "min": 11799,
+    "max": 26998,
+    "url": "https://www.edmunds.com/subaru/forester/2018/review/",
+    "suggested": null,
+    "avg_used": 19356,
+    "lastUpdated": 1779290362.901817
+  },
+  "Subaru|Forester|2019": {
+    "min": 11950,
+    "max": 28998,
+    "url": "https://www.edmunds.com/subaru/forester/2019/review/",
+    "suggested": null,
+    "avg_used": 21408,
+    "lastUpdated": 1779290365.172957
+  },
+  "Subaru|Forester|2020": {
+    "min": 15825,
+    "max": 29990,
+    "url": "https://www.edmunds.com/subaru/forester/2020/review/",
+    "suggested": null,
+    "avg_used": 22892,
+    "lastUpdated": 1779290367.026541
+  },
+  "Subaru|Forester|2021": {
+    "min": 14903,
+    "max": 32590,
+    "url": "https://www.edmunds.com/subaru/forester/2021/review/",
+    "suggested": null,
+    "avg_used": 25173,
+    "lastUpdated": 1779290369.152967
+  },
+  "Subaru|Forester|2022": {
+    "min": 18000,
+    "max": 31998,
+    "url": "https://www.edmunds.com/subaru/forester/2022/",
+    "suggested": null,
+    "avg_used": 27480,
+    "lastUpdated": 1779290371.420646
+  },
+  "Subaru|Forester|2023": {
+    "min": 19995,
+    "max": 35998,
+    "url": "https://www.edmunds.com/subaru/forester/2023/",
+    "suggested": null,
+    "avg_used": 27478,
+    "lastUpdated": 1779290374.086337
+  },
+  "Subaru|Forester|2024": {
+    "min": 22590,
+    "max": 34998,
+    "url": "https://www.edmunds.com/subaru/forester/2024/",
+    "suggested": null,
+    "avg_used": 27479,
+    "lastUpdated": 1779290376.7884202
+  },
+  "Subaru|Impreza|2017": {
+    "min": 13995,
+    "max": 18998,
+    "url": "https://www.edmunds.com/subaru/impreza/2017/review/",
+    "suggested": null,
+    "avg_used": 17538,
+    "lastUpdated": 1779290379.690368
+  },
+  "Subaru|Impreza|2018": {
+    "min": 12148,
+    "max": 19990,
+    "url": "https://www.edmunds.com/subaru/impreza/2018/review/",
+    "suggested": null,
+    "avg_used": 17196,
+    "lastUpdated": 1779290381.753608
+  },
+  "Subaru|Impreza|2019": {
+    "min": 10987,
+    "max": 19998,
+    "url": "https://www.edmunds.com/subaru/impreza/2019/review/",
+    "suggested": null,
+    "avg_used": 17461,
+    "lastUpdated": 1779290383.724792
+  },
+  "Subaru|Impreza|2020": {
+    "min": 14871,
+    "max": 24997,
+    "url": "https://www.edmunds.com/subaru/impreza/2020/review/",
+    "suggested": null,
+    "avg_used": 19564,
+    "lastUpdated": 1779290386.010744
+  },
+  "Subaru|Impreza|2021": {
+    "min": 15998,
+    "max": 23998,
+    "url": "https://www.edmunds.com/subaru/impreza/2021/review/",
+    "suggested": null,
+    "avg_used": 19380,
+    "lastUpdated": 1779290388.355416
+  },
+  "Subaru|Impreza|2022": {
+    "min": 14999,
+    "max": 27995,
+    "url": "https://www.edmunds.com/subaru/impreza/2022/",
+    "suggested": null,
+    "avg_used": 20325,
+    "lastUpdated": 1779290391.2580202
+  },
+  "Subaru|Legacy|2015": {
+    "min": 8465,
+    "max": 19998,
+    "url": "https://www.edmunds.com/subaru/legacy/2015/review/",
+    "suggested": null,
+    "avg_used": 15316,
+    "lastUpdated": 1779290393.3591099
+  },
+  "Subaru|Legacy|2016": {
+    "min": 6990,
+    "max": 19990,
+    "url": "https://www.edmunds.com/subaru/legacy/2016/review/",
+    "suggested": null,
+    "avg_used": 15298,
+    "lastUpdated": 1779290395.0626209
+  },
+  "Subaru|Legacy|2017": {
+    "min": 10950,
+    "max": 21990,
+    "url": "https://www.edmunds.com/subaru/legacy/2017/review/",
+    "suggested": null,
+    "avg_used": 17178,
+    "lastUpdated": 1779290396.991665
+  },
+  "Subaru|Legacy|2018": {
+    "min": 10580,
+    "max": 22590,
+    "url": "https://www.edmunds.com/subaru/legacy/2018/review/",
+    "suggested": null,
+    "avg_used": 18061,
+    "lastUpdated": 1779290398.889746
+  },
+  "Subaru|Legacy|2020": {
+    "min": 14831,
+    "max": 24590,
+    "url": "https://www.edmunds.com/subaru/legacy/2020/review/",
+    "suggested": null,
+    "avg_used": 20267,
+    "lastUpdated": 1779290400.808645
+  },
+  "Subaru|Legacy|2021": {
+    "min": 16655,
+    "max": 22998,
+    "url": "https://www.edmunds.com/subaru/legacy/2021/review/",
+    "suggested": null,
+    "avg_used": 20274,
+    "lastUpdated": 1779290403.448055
+  },
+  "Subaru|Legacy|2022": {
+    "min": 15990,
+    "max": 25998,
+    "url": "https://www.edmunds.com/subaru/legacy/2022/",
+    "suggested": null,
+    "avg_used": 20640,
+    "lastUpdated": 1779290406.081027
+  },
+  "Subaru|Outback|2015": {
+    "min": 7600,
+    "max": 20998,
+    "url": "https://www.edmunds.com/subaru/outback/2015/review/",
+    "suggested": null,
+    "avg_used": 16130,
+    "lastUpdated": 1779290408.120704
+  },
+  "Subaru|Outback|2016": {
+    "min": 8499,
+    "max": 23590,
+    "url": "https://www.edmunds.com/subaru/outback/2016/review/",
+    "suggested": null,
+    "avg_used": 16302,
+    "lastUpdated": 1779290410.178205
+  },
+  "Subaru|Outback|2017": {
+    "min": 8453,
+    "max": 26998,
+    "url": "https://www.edmunds.com/subaru/outback/2017/review/",
+    "suggested": null,
+    "avg_used": 18588,
+    "lastUpdated": 1779290412.160757
+  },
+  "Subaru|Outback|2018": {
+    "min": 9800,
+    "max": 29998,
+    "url": "https://www.edmunds.com/subaru/outback/2018/review/",
+    "suggested": null,
+    "avg_used": 19861,
+    "lastUpdated": 1779290414.2863
+  },
+  "Subaru|Outback|2019": {
+    "min": 10988,
+    "max": 29590,
+    "url": "https://www.edmunds.com/subaru/outback/2019/review/",
+    "suggested": null,
+    "avg_used": 20605,
+    "lastUpdated": 1779290416.251893
+  },
+  "Subaru|Outback|2020": {
+    "min": 13800,
+    "max": 30998,
+    "url": "https://www.edmunds.com/subaru/outback/2020/review/",
+    "suggested": null,
+    "avg_used": 23378,
+    "lastUpdated": 1779290419.243382
+  },
+  "Subaru|Outback|2021": {
+    "min": 16765,
+    "max": 29590,
+    "url": "https://www.edmunds.com/subaru/outback/2021/review/",
+    "suggested": null,
+    "avg_used": 24253,
+    "lastUpdated": 1779290421.1283782
+  },
+  "Subaru|Outback|2022": {
+    "min": 15665,
+    "max": 38340,
+    "url": "https://www.edmunds.com/subaru/outback/2022/",
+    "suggested": null,
+    "avg_used": 29729,
+    "lastUpdated": 1779290424.673185
+  },
+  "Subaru|Outback|2023": {
+    "min": 20307,
+    "max": 36997,
+    "url": "https://www.edmunds.com/subaru/outback/2023/",
+    "suggested": null,
+    "avg_used": 29724,
+    "lastUpdated": 1779290426.722535
+  },
+  "Subaru|Solterra|2023": {
+    "min": 20699,
+    "max": 27590,
+    "url": "https://www.edmunds.com/subaru/solterra/2023/",
+    "suggested": null,
+    "avg_used": 29287,
+    "lastUpdated": 1779290429.123112
+  },
+  "Subaru|Solterra|2024": null,
+  "Subaru|Solterra|2025": {
+    "min": 38495,
+    "max": 45495,
+    "url": "https://www.edmunds.com/subaru/solterra/2025/",
+    "suggested": 35391,
+    "avg_used": null,
+    "lastUpdated": 1779290448.165857
+  },
+  "Subaru|XV|2018": null,
+  "Subaru|XV|2019": null,
+  "Subaru|XV|2020": null,
+  "Subaru|XV|2021": null,
+  "Tesla|Model 3 (with HW3)|2019": {
+    "min": 16900,
+    "max": 28998,
+    "url": "https://www.edmunds.com/tesla/model-3/2019/review/",
+    "suggested": null,
+    "avg_used": 23053,
+    "lastUpdated": 1779290454.025514
+  },
+  "Tesla|Model 3 (with HW3)|2020": {
+    "min": 19590,
+    "max": 30990,
+    "url": "https://www.edmunds.com/tesla/model-3/2020/review/",
+    "suggested": null,
+    "avg_used": 24667,
+    "lastUpdated": 1779290455.764087
+  },
+  "Tesla|Model 3 (with HW3)|2021": {
+    "min": 16995,
+    "max": 31998,
+    "url": "https://www.edmunds.com/tesla/model-3/2021/review/",
+    "suggested": null,
+    "avg_used": 25753,
+    "lastUpdated": 1779290457.832094
+  },
+  "Tesla|Model 3 (with HW3)|2022": {
+    "min": 19900,
+    "max": 34990,
+    "url": "https://www.edmunds.com/tesla/model-3/2022/",
+    "suggested": null,
+    "avg_used": 29988,
+    "lastUpdated": 1779290460.043621
+  },
+  "Tesla|Model 3 (with HW3)|2023": {
+    "min": 22590,
+    "max": 39990,
+    "url": "https://www.edmunds.com/tesla/model-3/2023/",
+    "suggested": null,
+    "avg_used": 29988,
+    "lastUpdated": 1779290462.253355
+  },
+  "Tesla|Model 3 (with HW4)|2024": null,
+  "Tesla|Model 3 (with HW4)|2025": {
+    "min": 42490,
+    "max": 54990,
+    "url": "https://www.edmunds.com/tesla/model-3/2025/",
+    "suggested": 43880,
+    "avg_used": null,
+    "lastUpdated": 1779290474.2228348
+  },
+  "Tesla|Model S (Pre-AP)|2012": null,
+  "Tesla|Model S (Pre-AP)|2013": {
+    "min": 8900,
+    "max": 12595,
+    "url": "https://www.edmunds.com/tesla/model-s/2013/review/",
+    "suggested": null,
+    "avg_used": 13390,
+    "lastUpdated": 1779290492.236332
+  },
+  "Tesla|Model S (Pre-AP)|2014": {
+    "min": 13995,
+    "max": 23590,
+    "url": "https://www.edmunds.com/tesla/model-s/2014/review/",
+    "suggested": null,
+    "avg_used": 17600,
+    "lastUpdated": 1779290493.8395169
+  },
+  "Tesla|Model X (with HW4)|2024": {
+    "min": 63998,
+    "max": 80990,
+    "url": "https://www.edmunds.com/tesla/model-x/2024/",
+    "suggested": null,
+    "avg_used": 46583,
+    "lastUpdated": 1779290495.958495
+  },
+  "Tesla|Model Y (with HW3)|2020": {
+    "min": 20690,
+    "max": 32990,
+    "url": "https://www.edmunds.com/tesla/model-y/2020/review/",
+    "suggested": null,
+    "avg_used": 27415,
+    "lastUpdated": 1779290498.248348
+  },
+  "Tesla|Model Y (with HW3)|2021": {
+    "min": 20995,
+    "max": 35990,
+    "url": "https://www.edmunds.com/tesla/model-y/2021/review/",
+    "suggested": null,
+    "avg_used": 29227,
+    "lastUpdated": 1779290500.276886
+  },
+  "Tesla|Model Y (with HW3)|2022": {
+    "min": 19995,
+    "max": 40998,
+    "url": "https://www.edmunds.com/tesla/model-y/2022/",
+    "suggested": null,
+    "avg_used": 35560,
+    "lastUpdated": 1779290502.6473658
+  },
+  "Tesla|Model Y (with HW3)|2023": {
+    "min": 25595,
+    "max": 40998,
+    "url": "https://www.edmunds.com/tesla/model-y/2023/",
+    "suggested": null,
+    "avg_used": 35560,
+    "lastUpdated": 1779290505.2522812
+  },
+  "Tesla|Model Y (with HW4)|2024": {
+    "min": 29998,
+    "max": 44998,
+    "url": "https://www.edmunds.com/tesla/model-y/2024/",
+    "suggested": null,
+    "avg_used": 35560,
+    "lastUpdated": 1779290508.257129
+  },
+  "Tesla|Model Y (with HW4)|2025": {
+    "min": 44990,
+    "max": 51490,
+    "url": "https://www.edmunds.com/tesla/model-y/2025/",
+    "suggested": 46380,
+    "avg_used": null,
+    "lastUpdated": 1779290518.496326
+  },
+  "Toyota|Alphard Hybrid|2021": null,
+  "Toyota|Alphard|2019": null,
+  "Toyota|Alphard|2020": null,
+  "Toyota|Avalon Hybrid|2019": {
+    "min": 22995,
+    "max": 36998,
+    "url": "https://www.edmunds.com/toyota/avalon-hybrid/2019/review/",
+    "suggested": null,
+    "avg_used": 28130,
+    "lastUpdated": 1779290535.079582
+  },
+  "Toyota|Avalon Hybrid|2020": {
+    "min": 23817,
+    "max": 33525,
+    "url": "https://www.edmunds.com/toyota/avalon-hybrid/2020/review/",
+    "suggested": null,
+    "avg_used": 28263,
+    "lastUpdated": 1779290536.9464488
+  },
+  "Toyota|Avalon Hybrid|2021": {
+    "min": 25899,
+    "max": 35990,
+    "url": "https://www.edmunds.com/toyota/avalon-hybrid/2021/review/",
+    "suggested": null,
+    "avg_used": 29120,
+    "lastUpdated": 1779290538.8029609
+  },
+  "Toyota|Avalon Hybrid|2022": {
+    "min": 30990,
+    "max": 32998,
+    "url": "https://www.edmunds.com/toyota/avalon-hybrid/2022/",
+    "suggested": null,
+    "avg_used": 23829,
+    "lastUpdated": 1779290540.746454
+  },
+  "Toyota|Avalon|2016": {
+    "min": 15998,
+    "max": 25590,
+    "url": "https://www.edmunds.com/toyota/avalon/2016/review/",
+    "suggested": null,
+    "avg_used": 18048,
+    "lastUpdated": 1779290522.186156
+  },
+  "Toyota|Avalon|2017": {
+    "min": 16998,
+    "max": 25998,
+    "url": "https://www.edmunds.com/toyota/avalon/2017/review/",
+    "suggested": null,
+    "avg_used": 21293,
+    "lastUpdated": 1779290523.769109
+  },
+  "Toyota|Avalon|2018": {
+    "min": 17998,
+    "max": 24793,
+    "url": "https://www.edmunds.com/toyota/avalon/2018/review/",
+    "suggested": null,
+    "avg_used": 18936,
+    "lastUpdated": 1779290525.3726132
+  },
+  "Toyota|Avalon|2019": {
+    "min": 16900,
+    "max": 34998,
+    "url": "https://www.edmunds.com/toyota/avalon/2019/review/",
+    "suggested": null,
+    "avg_used": 27198,
+    "lastUpdated": 1779290527.03302
+  },
+  "Toyota|Avalon|2020": {
+    "min": 19990,
+    "max": 33990,
+    "url": "https://www.edmunds.com/toyota/avalon/2020/review/",
+    "suggested": null,
+    "avg_used": 28477,
+    "lastUpdated": 1779290529.522963
+  },
+  "Toyota|Avalon|2021": {
+    "min": 24780,
+    "max": 31998,
+    "url": "https://www.edmunds.com/toyota/avalon/2021/review/",
+    "suggested": null,
+    "avg_used": 30071,
+    "lastUpdated": 1779290531.227133
+  },
+  "Toyota|Avalon|2022": {
+    "min": 21995,
+    "max": 37998,
+    "url": "https://www.edmunds.com/toyota/avalon/2022/",
+    "suggested": null,
+    "avg_used": 17797,
+    "lastUpdated": 1779290533.2832599
+  },
+  "Toyota|C-HR Hybrid|2017": null,
+  "Toyota|C-HR Hybrid|2018": null,
+  "Toyota|C-HR Hybrid|2019": null,
+  "Toyota|C-HR Hybrid|2020": null,
+  "Toyota|C-HR Hybrid|2021": null,
+  "Toyota|C-HR Hybrid|2022": null,
+  "Toyota|C-HR|2017": null,
+  "Toyota|C-HR|2018": {
+    "min": 11499,
+    "max": 22990,
+    "url": "https://www.edmunds.com/toyota/c-hr/2018/review/",
+    "suggested": null,
+    "avg_used": 17590,
+    "lastUpdated": 1779290543.2402072
+  },
+  "Toyota|C-HR|2019": {
+    "min": 15349,
+    "max": 23990,
+    "url": "https://www.edmunds.com/toyota/c-hr/2019/review/",
+    "suggested": null,
+    "avg_used": 19199,
+    "lastUpdated": 1779290545.060545
+  },
+  "Toyota|C-HR|2020": {
+    "min": 10995,
+    "max": 26990,
+    "url": "https://www.edmunds.com/toyota/c-hr/2020/review/",
+    "suggested": null,
+    "avg_used": 20511,
+    "lastUpdated": 1779290546.6569269
+  },
+  "Toyota|C-HR|2021": {
+    "min": 16998,
+    "max": 25998,
+    "url": "https://www.edmunds.com/toyota/c-hr/2021/review/",
+    "suggested": null,
+    "avg_used": 21005,
+    "lastUpdated": 1779290548.1189911
+  },
+  "Toyota|Camry Hybrid|2018": {
+    "min": 14598,
+    "max": 28590,
+    "url": "https://www.edmunds.com/toyota/camry-hybrid/2018/review/",
+    "suggested": null,
+    "avg_used": 20918,
+    "lastUpdated": 1779290579.254863
+  },
+  "Toyota|Camry Hybrid|2019": null,
+  "Toyota|Camry Hybrid|2020": {
+    "min": 14650,
+    "max": 25998,
+    "url": "https://www.edmunds.com/toyota/camry-hybrid/2020/review/",
+    "suggested": null,
+    "avg_used": 22132,
+    "lastUpdated": 1779290597.4726841
+  },
+  "Toyota|Camry Hybrid|2021": {
+    "min": 17995,
+    "max": 29998,
+    "url": "https://www.edmunds.com/toyota/camry-hybrid/2021/review/",
+    "suggested": null,
+    "avg_used": 24566,
+    "lastUpdated": 1779290599.116556
+  },
+  "Toyota|Camry Hybrid|2022": {
+    "min": 18999,
+    "max": 32990,
+    "url": "https://www.edmunds.com/toyota/camry-hybrid/2022/",
+    "suggested": null,
+    "avg_used": 23384,
+    "lastUpdated": 1779290601.1425788
+  },
+  "Toyota|Camry Hybrid|2023": {
+    "min": 20997,
+    "max": 35590,
+    "url": "https://www.edmunds.com/toyota/camry-hybrid/2023/",
+    "suggested": null,
+    "avg_used": 23384,
+    "lastUpdated": 1779290603.009175
+  },
+  "Toyota|Camry Hybrid|2024": {
+    "min": 28855,
+    "max": 34295,
+    "url": "https://www.edmunds.com/toyota/camry-hybrid/",
+    "suggested": 26069,
+    "avg_used": null,
+    "lastUpdated": 1779290605.284383
+  },
+  "Toyota|Camry|2018": {
+    "min": 9995,
+    "max": 29990,
+    "url": "https://www.edmunds.com/toyota/camry/2018/review/",
+    "suggested": null,
+    "avg_used": 19701,
+    "lastUpdated": 1779290562.77296
+  },
+  "Toyota|Camry|2019": {
+    "min": 8495,
+    "max": 29998,
+    "url": "https://www.edmunds.com/toyota/camry/2019/review/",
+    "suggested": null,
+    "avg_used": 21043,
+    "lastUpdated": 1779290564.3754199
+  },
+  "Toyota|Camry|2020": {
+    "min": 12000,
+    "max": 31998,
+    "url": "https://www.edmunds.com/toyota/camry/2020/review/",
+    "suggested": null,
+    "avg_used": 22613,
+    "lastUpdated": 1779290566.301307
+  },
+  "Toyota|Camry|2021": {
+    "min": 14499,
+    "max": 32998,
+    "url": "https://www.edmunds.com/toyota/camry/2021/review/",
+    "suggested": null,
+    "avg_used": 23921,
+    "lastUpdated": 1779290568.343022
+  },
+  "Toyota|Camry|2022": {
+    "min": 16799,
+    "max": 35990,
+    "url": "https://www.edmunds.com/toyota/camry/2022/",
+    "suggested": null,
+    "avg_used": 23836,
+    "lastUpdated": 1779290570.427465
+  },
+  "Toyota|Camry|2023": {
+    "min": 13495,
+    "max": 37990,
+    "url": "https://www.edmunds.com/toyota/camry/2023/",
+    "suggested": null,
+    "avg_used": 23836,
+    "lastUpdated": 1779290572.883486
+  },
+  "Toyota|Camry|2024": {
+    "min": 18656,
+    "max": 45998,
+    "url": "https://www.edmunds.com/toyota/camry/2024/",
+    "suggested": null,
+    "avg_used": 23836,
+    "lastUpdated": 1779290575.2981708
+  },
+  "Toyota|Camry|2025": {
+    "min": 28700,
+    "max": 36425,
+    "url": "https://www.edmunds.com/toyota/camry/2025/",
+    "suggested": 27024,
+    "avg_used": null,
+    "lastUpdated": 1779290577.587561
+  },
+  "Toyota|Corolla Cross (Non-US only)|2020": null,
+  "Toyota|Corolla Cross (Non-US only)|2021": null,
+  "Toyota|Corolla Cross (Non-US only)|2022": {
+    "min": 18987,
+    "max": 29990,
+    "url": "https://www.edmunds.com/toyota/corolla-cross/2022/",
+    "suggested": null,
+    "avg_used": 27677,
+    "lastUpdated": 1779290628.280363
+  },
+  "Toyota|Corolla Cross (Non-US only)|2023": {
+    "min": 21499,
+    "max": 31990,
+    "url": "https://www.edmunds.com/toyota/corolla-cross/2023/",
+    "suggested": null,
+    "avg_used": 27677,
+    "lastUpdated": 1779290629.739006
+  },
+  "Toyota|Corolla Cross Hybrid (Non-US only)|2020": null,
+  "Toyota|Corolla Cross Hybrid (Non-US only)|2021": null,
+  "Toyota|Corolla Cross Hybrid (Non-US only)|2022": null,
+  "Toyota|Corolla Cross|2022": {
+    "min": 18987,
+    "max": 29990,
+    "url": "https://www.edmunds.com/toyota/corolla-cross/2022/",
+    "suggested": null,
+    "avg_used": 27677,
+    "lastUpdated": 1779290619.169492
+  },
+  "Toyota|Corolla Cross|2023": {
+    "min": 21499,
+    "max": 31990,
+    "url": "https://www.edmunds.com/toyota/corolla-cross/2023/",
+    "suggested": null,
+    "avg_used": 27677,
+    "lastUpdated": 1779290621.518925
+  },
+  "Toyota|Corolla Cross|2024": {
+    "min": 21290,
+    "max": 32990,
+    "url": "https://www.edmunds.com/toyota/corolla-cross/2024/",
+    "suggested": null,
+    "avg_used": 27677,
+    "lastUpdated": 1779290623.6789398
+  },
+  "Toyota|Corolla Cross|2025": {
+    "min": 24135,
+    "max": 29660,
+    "url": "https://www.edmunds.com/toyota/corolla-cross/2025/",
+    "suggested": 23972,
+    "avg_used": null,
+    "lastUpdated": 1779290625.369461
+  },
+  "Toyota|Corolla Hatchback|2019": {
+    "min": 11999,
+    "max": 22590,
+    "url": "https://www.edmunds.com/toyota/corolla-hatchback/2019/review/",
+    "suggested": null,
+    "avg_used": 18787,
+    "lastUpdated": 1779290633.889298
+  },
+  "Toyota|Corolla Hatchback|2020": {
+    "min": 15995,
+    "max": 24590,
+    "url": "https://www.edmunds.com/toyota/corolla-hatchback/2020/review/",
+    "suggested": null,
+    "avg_used": 19630,
+    "lastUpdated": 1779290635.500361
+  },
+  "Toyota|Corolla Hatchback|2021": {
+    "min": 16687,
+    "max": 26590,
+    "url": "https://www.edmunds.com/toyota/corolla-hatchback/2021/review/",
+    "suggested": null,
+    "avg_used": 20845,
+    "lastUpdated": 1779290637.151741
+  },
+  "Toyota|Corolla Hatchback|2022": {
+    "min": 17499,
+    "max": 27590,
+    "url": "https://www.edmunds.com/toyota/corolla-hatchback/2022/",
+    "suggested": null,
+    "avg_used": 23403,
+    "lastUpdated": 1779290639.1816509
+  },
+  "Toyota|Corolla Hybrid (South America only)|2020": {
+    "min": 14999,
+    "max": 22998,
+    "url": "https://www.edmunds.com/toyota/corolla-hybrid/2020/review/",
+    "suggested": null,
+    "avg_used": 18234,
+    "lastUpdated": 1779290646.803224
+  },
+  "Toyota|Corolla Hybrid (South America only)|2021": {
+    "min": 17990,
+    "max": 23998,
+    "url": "https://www.edmunds.com/toyota/corolla-hybrid/2021/review/",
+    "suggested": null,
+    "avg_used": 19733,
+    "lastUpdated": 1779290648.5245
+  },
+  "Toyota|Corolla Hybrid (South America only)|2022": {
+    "min": 19970,
+    "max": 24998,
+    "url": "https://www.edmunds.com/toyota/corolla-hybrid/2022/",
+    "suggested": null,
+    "avg_used": 24434,
+    "lastUpdated": 1779290651.239073
+  },
+  "Toyota|Corolla Hybrid (South America only)|2023": null,
+  "Toyota|Corolla Hybrid|2020": {
+    "min": 14999,
+    "max": 22998,
+    "url": "https://www.edmunds.com/toyota/corolla-hybrid/2020/review/",
+    "suggested": null,
+    "avg_used": 18234,
+    "lastUpdated": 1779290640.935072
+  },
+  "Toyota|Corolla Hybrid|2021": {
+    "min": 17990,
+    "max": 23998,
+    "url": "https://www.edmunds.com/toyota/corolla-hybrid/2021/review/",
+    "suggested": null,
+    "avg_used": 19733,
+    "lastUpdated": 1779290642.5886772
+  },
+  "Toyota|Corolla Hybrid|2022": {
+    "min": 19970,
+    "max": 24998,
+    "url": "https://www.edmunds.com/toyota/corolla-hybrid/2022/",
+    "suggested": null,
+    "avg_used": 24434,
+    "lastUpdated": 1779290645.079006
+  },
+  "Toyota|Corolla|2017": {
+    "min": 5677,
+    "max": 20998,
+    "url": "https://www.edmunds.com/toyota/corolla/2017/review/",
+    "suggested": null,
+    "avg_used": 16498,
+    "lastUpdated": 1779290607.0735092
+  },
+  "Toyota|Corolla|2018": {
+    "min": 9800,
+    "max": 22998,
+    "url": "https://www.edmunds.com/toyota/corolla/2018/review/",
+    "suggested": null,
+    "avg_used": 16776,
+    "lastUpdated": 1779290608.6451452
+  },
+  "Toyota|Corolla|2019": {
+    "min": 9500,
+    "max": 21998,
+    "url": "https://www.edmunds.com/toyota/corolla/2019/review/",
+    "suggested": null,
+    "avg_used": 16752,
+    "lastUpdated": 1779290610.4831738
+  },
+  "Toyota|Corolla|2020": {
+    "min": 7999,
+    "max": 24990,
+    "url": "https://www.edmunds.com/toyota/corolla/2020/review/",
+    "suggested": null,
+    "avg_used": 18256,
+    "lastUpdated": 1779290612.453145
+  },
+  "Toyota|Corolla|2021": {
+    "min": 12901,
+    "max": 24590,
+    "url": "https://www.edmunds.com/toyota/corolla/2021/review/",
+    "suggested": null,
+    "avg_used": 18798,
+    "lastUpdated": 1779290614.63798
+  },
+  "Toyota|Corolla|2022": {
+    "min": 13440,
+    "max": 30000,
+    "url": "https://www.edmunds.com/toyota/corolla/2022/",
+    "suggested": null,
+    "avg_used": 19289,
+    "lastUpdated": 1779290617.067172
+  },
+  "Toyota|Highlander Hybrid|2017": {
+    "min": 24990,
+    "max": 35998,
+    "url": "https://www.edmunds.com/toyota/highlander-hybrid/2017/review/",
+    "suggested": null,
+    "avg_used": 23835,
+    "lastUpdated": 1779290727.656096
+  },
+  "Toyota|Highlander Hybrid|2018": {
+    "min": 26998,
+    "max": 35998,
+    "url": "https://www.edmunds.com/toyota/highlander-hybrid/2018/review/",
+    "suggested": null,
+    "avg_used": 24338,
+    "lastUpdated": 1779290729.262485
+  },
+  "Toyota|Highlander Hybrid|2019": {
+    "min": 19655,
+    "max": 36990,
+    "url": "https://www.edmunds.com/toyota/highlander-hybrid/2019/review/",
+    "suggested": null,
+    "avg_used": 26610,
+    "lastUpdated": 1779290731.191447
+  },
+  "Toyota|Highlander Hybrid|2020": {
+    "min": 28998,
+    "max": 37998,
+    "url": "https://www.edmunds.com/toyota/highlander-hybrid/2020/review/",
+    "suggested": null,
+    "avg_used": 33182,
+    "lastUpdated": 1779290732.993761
+  },
+  "Toyota|Highlander Hybrid|2021": {
+    "min": 27628,
+    "max": 49000,
+    "url": "https://www.edmunds.com/toyota/highlander-hybrid/2021/review/",
+    "suggested": null,
+    "avg_used": 37904,
+    "lastUpdated": 1779290735.09349
+  },
+  "Toyota|Highlander Hybrid|2022": {
+    "min": 23993,
+    "max": 46990,
+    "url": "https://www.edmunds.com/toyota/highlander-hybrid/2022/",
+    "suggested": null,
+    "avg_used": 38792,
+    "lastUpdated": 1779290737.4991412
+  },
+  "Toyota|Highlander Hybrid|2023": {
+    "min": 28900,
+    "max": 50998,
+    "url": "https://www.edmunds.com/toyota/highlander-hybrid/2023/",
+    "suggested": null,
+    "avg_used": 38804,
+    "lastUpdated": 1779290740.527221
+  },
+  "Toyota|Highlander|2017": {
+    "min": 15888,
+    "max": 32990,
+    "url": "https://www.edmunds.com/toyota/highlander/2017/review/",
+    "suggested": null,
+    "avg_used": 23847,
+    "lastUpdated": 1779290709.1989892
+  },
+  "Toyota|Highlander|2018": {
+    "min": 15995,
+    "max": 33990,
+    "url": "https://www.edmunds.com/toyota/highlander/2018/review/",
+    "suggested": null,
+    "avg_used": 24338,
+    "lastUpdated": 1779290711.000018
+  },
+  "Toyota|Highlander|2019": {
+    "min": 15980,
+    "max": 40998,
+    "url": "https://www.edmunds.com/toyota/highlander/2019/review/",
+    "suggested": null,
+    "avg_used": 27093,
+    "lastUpdated": 1779290712.811153
+  },
+  "Toyota|Highlander|2020": {
+    "min": 22998,
+    "max": 41990,
+    "url": "https://www.edmunds.com/toyota/highlander/2020/review/",
+    "suggested": null,
+    "avg_used": 31252,
+    "lastUpdated": 1779290714.740874
+  },
+  "Toyota|Highlander|2021": {
+    "min": 21999,
+    "max": 41998,
+    "url": "https://www.edmunds.com/toyota/highlander/2021/review/",
+    "suggested": null,
+    "avg_used": 32144,
+    "lastUpdated": 1779290716.757041
+  },
+  "Toyota|Highlander|2022": {
+    "min": 23397,
+    "max": 48998,
+    "url": "https://www.edmunds.com/toyota/highlander/2022/",
+    "suggested": null,
+    "avg_used": 30209,
+    "lastUpdated": 1779290719.4012291
+  },
+  "Toyota|Highlander|2023": {
+    "min": 26495,
+    "max": 44998,
+    "url": "https://www.edmunds.com/toyota/highlander/2023/",
+    "suggested": null,
+    "avg_used": 30209,
+    "lastUpdated": 1779290721.824808
+  },
+  "Toyota|Highlander|2025": {
+    "min": 40320,
+    "max": 52725,
+    "url": "https://www.edmunds.com/toyota/highlander/2025/",
+    "suggested": 37942,
+    "avg_used": null,
+    "lastUpdated": 1779290725.53608
+  },
+  "Toyota|Mirai|2021": null,
+  "Toyota|Prius Prime|2017": {
+    "min": 12499,
+    "max": 23998,
+    "url": "https://www.edmunds.com/toyota/prius-prime/2017/review/",
+    "suggested": null,
+    "avg_used": 17989,
+    "lastUpdated": 1779290772.575419
+  },
+  "Toyota|Prius Prime|2018": {
+    "min": 18998,
+    "max": 23998,
+    "url": "https://www.edmunds.com/toyota/prius-prime/2018/review/",
+    "suggested": null,
+    "avg_used": 20884,
+    "lastUpdated": 1779290774.313132
+  },
+  "Toyota|Prius Prime|2019": null,
+  "Toyota|Prius Prime|2020": {
+    "min": 21990,
+    "max": 29590,
+    "url": "https://www.edmunds.com/toyota/prius-prime/2020/review/",
+    "suggested": null,
+    "avg_used": 25508,
+    "lastUpdated": 1779290792.488854
+  },
+  "Toyota|Prius Prime|2021": {
+    "min": 22990,
+    "max": 28998,
+    "url": "https://www.edmunds.com/toyota/prius-prime/2021/review/",
+    "suggested": null,
+    "avg_used": 26826,
+    "lastUpdated": 1779290794.136811
+  },
+  "Toyota|Prius Prime|2022": {
+    "min": 26998,
+    "max": 28998,
+    "url": "https://www.edmunds.com/toyota/prius-prime/2022/",
+    "suggested": null,
+    "avg_used": 27945,
+    "lastUpdated": 1779290796.431582
+  },
+  "Toyota|Prius v|2017": {
+    "min": 14490,
+    "max": 20530,
+    "url": "https://www.edmunds.com/toyota/prius-v/2017/review/",
+    "suggested": null,
+    "avg_used": 15826,
+    "lastUpdated": 1779290798.416457
+  },
+  "Toyota|Prius|2016": {
+    "min": 9999,
+    "max": 22998,
+    "url": "https://www.edmunds.com/toyota/prius/2016/review/",
+    "suggested": null,
+    "avg_used": 15983,
+    "lastUpdated": 1779290758.633717
+  },
+  "Toyota|Prius|2017": {
+    "min": 11499,
+    "max": 24998,
+    "url": "https://www.edmunds.com/toyota/prius/2017/review/",
+    "suggested": null,
+    "avg_used": 17329,
+    "lastUpdated": 1779290760.396661
+  },
+  "Toyota|Prius|2018": {
+    "min": 12995,
+    "max": 24998,
+    "url": "https://www.edmunds.com/toyota/prius/2018/review/",
+    "suggested": null,
+    "avg_used": 18715,
+    "lastUpdated": 1779290762.28752
+  },
+  "Toyota|Prius|2019": {
+    "min": 19998,
+    "max": 25990,
+    "url": "https://www.edmunds.com/toyota/prius/2019/review/",
+    "suggested": null,
+    "avg_used": 21524,
+    "lastUpdated": 1779290764.189204
+  },
+  "Toyota|Prius|2020": {
+    "min": 16301,
+    "max": 27998,
+    "url": "https://www.edmunds.com/toyota/prius/2020/review/",
+    "suggested": null,
+    "avg_used": 20035,
+    "lastUpdated": 1779290766.016258
+  },
+  "Toyota|Prius|2021": {
+    "min": 18998,
+    "max": 26998,
+    "url": "https://www.edmunds.com/toyota/prius/2021/review/",
+    "suggested": null,
+    "avg_used": 22439,
+    "lastUpdated": 1779290768.113856
+  },
+  "Toyota|Prius|2022": {
+    "min": 16400,
+    "max": 29998,
+    "url": "https://www.edmunds.com/toyota/prius/2022/",
+    "suggested": null,
+    "avg_used": 20078,
+    "lastUpdated": 1779290770.510744
+  },
+  "Toyota|RAV4 Hybrid|2016": {
+    "min": 15987,
+    "max": 25998,
+    "url": "https://www.edmunds.com/toyota/rav4-hybrid/2016/review/",
+    "suggested": null,
+    "avg_used": 20399,
+    "lastUpdated": 1779290823.120018
+  },
+  "Toyota|RAV4 Hybrid|2017": {
+    "min": 12900,
+    "max": 30990,
+    "url": "https://www.edmunds.com/toyota/rav4-hybrid/2017/review/",
+    "suggested": null,
+    "avg_used": 20180,
+    "lastUpdated": 1779290825.195067
+  },
+  "Toyota|RAV4 Hybrid|2018": {
+    "min": 13125,
+    "max": 31998,
+    "url": "https://www.edmunds.com/toyota/rav4-hybrid/2018/review/",
+    "suggested": null,
+    "avg_used": 25090,
+    "lastUpdated": 1779290827.365186
+  },
+  "Toyota|RAV4 Hybrid|2019": {
+    "min": 20990,
+    "max": 37590,
+    "url": "https://www.edmunds.com/toyota/rav4-hybrid/2019/review/",
+    "suggested": null,
+    "avg_used": 26778,
+    "lastUpdated": 1779290829.570435
+  },
+  "Toyota|RAV4 Hybrid|2020": null,
+  "Toyota|RAV4 Hybrid|2021": {
+    "min": 20375,
+    "max": 37487,
+    "url": "https://www.edmunds.com/toyota/rav4-hybrid/2021/review/",
+    "suggested": null,
+    "avg_used": 30549,
+    "lastUpdated": 1779290842.3161652
+  },
+  "Toyota|RAV4 Hybrid|2022": {
+    "min": 20997,
+    "max": 41990,
+    "url": "https://www.edmunds.com/toyota/rav4-hybrid/2022/",
+    "suggested": null,
+    "avg_used": 33999,
+    "lastUpdated": 1779290845.8549812
+  },
+  "Toyota|RAV4 Hybrid|2023": {
+    "min": 28999,
+    "max": 42990,
+    "url": "https://www.edmunds.com/toyota/rav4-hybrid/2023/",
+    "suggested": null,
+    "avg_used": 33995,
+    "lastUpdated": 1779290848.249098
+  },
+  "Toyota|RAV4 Hybrid|2024": {
+    "min": 28929,
+    "max": 44998,
+    "url": "https://www.edmunds.com/toyota/rav4-hybrid/2024/",
+    "suggested": null,
+    "avg_used": 33999,
+    "lastUpdated": 1779290851.266004
+  },
+  "Toyota|RAV4 Hybrid|2025": {
+    "min": 32850,
+    "max": 41155,
+    "url": "https://www.edmunds.com/toyota/rav4-hybrid/",
+    "suggested": 33854,
+    "avg_used": null,
+    "lastUpdated": 1779290854.0697112
+  },
+  "Toyota|RAV4 Prime|2021": {
+    "min": 28990,
+    "max": 39590,
+    "url": "https://www.edmunds.com/toyota/rav4-prime/2021/review/",
+    "suggested": null,
+    "avg_used": 34470,
+    "lastUpdated": 1779290855.8091571
+  },
+  "Toyota|RAV4 Prime|2022": {
+    "min": 29590,
+    "max": 35990,
+    "url": "https://www.edmunds.com/toyota/rav4-prime/2022/",
+    "suggested": null,
+    "avg_used": 39546,
+    "lastUpdated": 1779290858.663573
+  },
+  "Toyota|RAV4 Prime|2023": {
+    "min": 34530,
+    "max": 45998,
+    "url": "https://www.edmunds.com/toyota/rav4-prime/2023/",
+    "suggested": null,
+    "avg_used": 39546,
+    "lastUpdated": 1779290861.047155
+  },
+  "Toyota|RAV4 Prime|2024": {
+    "min": 43690,
+    "max": 47560,
+    "url": "https://www.edmunds.com/toyota/rav4-prime/",
+    "suggested": 40934,
+    "avg_used": null,
+    "lastUpdated": 1779290863.952544
+  },
+  "Toyota|RAV4 Prime|2025": {
+    "min": 44815,
+    "max": 48685,
+    "url": "https://www.edmunds.com/toyota/rav4-plug-in-hybrid/2025/",
+    "suggested": 45361,
+    "avg_used": null,
+    "lastUpdated": 1779290867.0632699
+  },
+  "Toyota|RAV4|2016": {
+    "min": 12417,
+    "max": 25998,
+    "url": "https://www.edmunds.com/toyota/rav4/2016/review/",
+    "suggested": null,
+    "avg_used": 19264,
+    "lastUpdated": 1779290800.188298
+  },
+  "Toyota|RAV4|2017": {
+    "min": 9995,
+    "max": 29990,
+    "url": "https://www.edmunds.com/toyota/rav4/2017/review/",
+    "suggested": null,
+    "avg_used": 19580,
+    "lastUpdated": 1779290802.163851
+  },
+  "Toyota|RAV4|2018": {
+    "min": 11000,
+    "max": 27998,
+    "url": "https://www.edmunds.com/toyota/rav4/2018/review/",
+    "suggested": null,
+    "avg_used": 20710,
+    "lastUpdated": 1779290804.4939709
+  },
+  "Toyota|RAV4|2019": {
+    "min": 15999,
+    "max": 32998,
+    "url": "https://www.edmunds.com/toyota/rav4/2019/review/",
+    "suggested": null,
+    "avg_used": 24166,
+    "lastUpdated": 1779290806.749556
+  },
+  "Toyota|RAV4|2020": {
+    "min": 14997,
+    "max": 32990,
+    "url": "https://www.edmunds.com/toyota/rav4/2020/review/",
+    "suggested": null,
+    "avg_used": 24665,
+    "lastUpdated": 1779290808.8291829
+  },
+  "Toyota|RAV4|2021": {
+    "min": 19249,
+    "max": 38510,
+    "url": "https://www.edmunds.com/toyota/rav4/2021/review/",
+    "suggested": null,
+    "avg_used": 26029,
+    "lastUpdated": 1779290810.74744
+  },
+  "Toyota|RAV4|2022": {
+    "min": 20000,
+    "max": 39995,
+    "url": "https://www.edmunds.com/toyota/rav4/2022/",
+    "suggested": null,
+    "avg_used": 25680,
+    "lastUpdated": 1779290813.361894
+  },
+  "Toyota|RAV4|2023": {
+    "min": 14999,
+    "max": 39990,
+    "url": "https://www.edmunds.com/toyota/rav4/2023/",
+    "suggested": null,
+    "avg_used": 25680,
+    "lastUpdated": 1779290815.587646
+  },
+  "Toyota|RAV4|2024": {
+    "min": 24507,
+    "max": 39990,
+    "url": "https://www.edmunds.com/toyota/rav4/2024/",
+    "suggested": null,
+    "avg_used": 25680,
+    "lastUpdated": 1779290818.731478
+  },
+  "Toyota|RAV4|2025": {
+    "min": 29800,
+    "max": 39505,
+    "url": "https://www.edmunds.com/toyota/rav4/2025/",
+    "suggested": 29166,
+    "avg_used": null,
+    "lastUpdated": 1779290821.132236
+  },
+  "Toyota|Sequoia|2023": {
+    "min": 52990,
+    "max": 73590,
+    "url": "https://www.edmunds.com/toyota/sequoia/2023/",
+    "suggested": null,
+    "avg_used": 64516,
+    "lastUpdated": 1779290869.930998
+  },
+  "Toyota|Sequoia|2024": {
+    "min": 55991,
+    "max": 76590,
+    "url": "https://www.edmunds.com/toyota/sequoia/2024/",
+    "suggested": null,
+    "avg_used": 64514,
+    "lastUpdated": 1779290872.460277
+  },
+  "Toyota|Sequoia|2025": {
+    "min": 62425,
+    "max": 83915,
+    "url": "https://www.edmunds.com/toyota/sequoia/2025/",
+    "suggested": 60938,
+    "avg_used": null,
+    "lastUpdated": 1779290874.9874618
+  },
+  "Toyota|Sienna|2018": {
+    "min": 14999,
+    "max": 37590,
+    "url": "https://www.edmunds.com/toyota/sienna/2018/review/",
+    "suggested": null,
+    "avg_used": 26968,
+    "lastUpdated": 1779290877.0724852
+  },
+  "Toyota|Sienna|2019": {
+    "min": 19498,
+    "max": 43998,
+    "url": "https://www.edmunds.com/toyota/sienna/2019/review/",
+    "suggested": null,
+    "avg_used": 29190,
+    "lastUpdated": 1779290879.360351
+  },
+  "Toyota|Sienna|2020": {
+    "min": 17596,
+    "max": 43998,
+    "url": "https://www.edmunds.com/toyota/sienna/2020/review/",
+    "suggested": null,
+    "avg_used": 30699,
+    "lastUpdated": 1779290881.531405
+  },
+  "Toyota|Sienna|2021": {
+    "min": 21988,
+    "max": 51997,
+    "url": "https://www.edmunds.com/toyota/sienna/2021/review/",
+    "suggested": null,
+    "avg_used": 38625,
+    "lastUpdated": 1779290884.5298119
+  },
+  "Toyota|Sienna|2022": {
+    "min": 31990,
+    "max": 49990,
+    "url": "https://www.edmunds.com/toyota/sienna/2022/",
+    "suggested": null,
+    "avg_used": 32752,
+    "lastUpdated": 1779290886.943789
+  },
+  "Toyota|Sienna|2023": {
+    "min": 33984,
+    "max": 54590,
+    "url": "https://www.edmunds.com/toyota/sienna/2023/",
+    "suggested": null,
+    "avg_used": 32752,
+    "lastUpdated": 1779290889.546606
+  },
+  "Toyota|Sienna|2024": {
+    "min": 32950,
+    "max": 55095,
+    "url": "https://www.edmunds.com/toyota/sienna/2024/",
+    "suggested": null,
+    "avg_used": 32758,
+    "lastUpdated": 1779290891.7749782
+  },
+  "Toyota|Sienna|2025": {
+    "min": 39485,
+    "max": 57205,
+    "url": "https://www.edmunds.com/toyota/sienna/2025/",
+    "suggested": 40678,
+    "avg_used": null,
+    "lastUpdated": 1779290893.9066482
+  },
+  "Toyota|Tundra|2022": {
+    "min": 31499,
+    "max": 55590,
+    "url": "https://www.edmunds.com/toyota/tundra/2022/",
+    "suggested": null,
+    "avg_used": 48350,
+    "lastUpdated": 1779290896.38841
+  },
+  "Toyota|Tundra|2023": {
+    "min": 32999,
+    "max": 62998,
+    "url": "https://www.edmunds.com/toyota/tundra/2023/",
+    "suggested": null,
+    "avg_used": 48350,
+    "lastUpdated": 1779290899.0080278
+  },
+  "Toyota|Tundra|2024": {
+    "min": 36998,
+    "max": 67962,
+    "url": "https://www.edmunds.com/toyota/tundra/2024/",
+    "suggested": null,
+    "avg_used": 48350,
+    "lastUpdated": 1779290901.6590111
+  },
+  "Toyota|Tundra|2025": null,
+  "Toyota|Venza|2021": null,
+  "Toyota|Venza|2022": {
+    "min": 27707,
+    "max": 35998,
+    "url": "https://www.edmunds.com/toyota/venza/2022/",
+    "suggested": null,
+    "avg_used": 27779,
+    "lastUpdated": 1779290913.0612638
+  },
+  "Toyota|Venza|2023": {
+    "min": 27998,
+    "max": 37998,
+    "url": "https://www.edmunds.com/toyota/venza/2023/",
+    "suggested": null,
+    "avg_used": 27779,
+    "lastUpdated": 1779290915.409984
+  },
+  "Toyota|Venza|2024": {
+    "min": 35070,
+    "max": 43215,
+    "url": "https://www.edmunds.com/toyota/venza/",
+    "suggested": 33051,
+    "avg_used": null,
+    "lastUpdated": 1779290919.100599
+  },
+  "Toyota|Venza|2025": null,
+  "Toyota|Yaris (Non-US only)|2020": null,
+  "Toyota|Yaris (Non-US only)|2023": null,
+  "Toyota|bZ4x|2023": {
+    "min": 20999,
+    "max": 31997,
+    "url": "https://www.edmunds.com/toyota/bz4x/2023/",
+    "suggested": null,
+    "avg_used": 26294,
+    "lastUpdated": 1779290940.939172
+  },
+  "Toyota|bZ4x|2024": {
+    "min": 21500,
+    "max": 30998,
+    "url": "https://www.edmunds.com/toyota/bz4x/2024/",
+    "suggested": null,
+    "avg_used": 26294,
+    "lastUpdated": 1779290943.0846279
+  },
+  "Toyota|bZ4x|2025": {
+    "min": 37070,
+    "max": 43880,
+    "url": "https://www.edmunds.com/toyota/bz4x/",
+    "suggested": 36588,
+    "avg_used": null,
+    "lastUpdated": 1779290945.4470131
+  },
+  "Volkswagen|Arteon R|2020": null,
+  "Volkswagen|Arteon R|2021": null,
+  "Volkswagen|Arteon R|2022": null,
+  "Volkswagen|Arteon R|2023": null,
+  "Volkswagen|Arteon Shooting Brake|2020": null,
+  "Volkswagen|Arteon Shooting Brake|2021": null,
+  "Volkswagen|Arteon Shooting Brake|2022": null,
+  "Volkswagen|Arteon Shooting Brake|2023": null,
+  "Volkswagen|Arteon eHybrid|2020": null,
+  "Volkswagen|Arteon eHybrid|2021": null,
+  "Volkswagen|Arteon eHybrid|2022": null,
+  "Volkswagen|Arteon eHybrid|2023": null,
+  "Volkswagen|Arteon|2018": null,
+  "Volkswagen|Arteon|2019": {
+    "min": 18590,
+    "max": 22998,
+    "url": "https://www.edmunds.com/volkswagen/arteon/2019/review/",
+    "suggested": null,
+    "avg_used": 21950,
+    "lastUpdated": 1779290947.894994
+  },
+  "Volkswagen|Arteon|2020": {
+    "min": 20810,
+    "max": 22998,
+    "url": "https://www.edmunds.com/volkswagen/arteon/2020/review/",
+    "suggested": null,
+    "avg_used": 21065,
+    "lastUpdated": 1779290949.4855008
+  },
+  "Volkswagen|Arteon|2021": {
+    "min": 18590,
+    "max": 31590,
+    "url": "https://www.edmunds.com/volkswagen/arteon/2021/review/",
+    "suggested": null,
+    "avg_used": 25414,
+    "lastUpdated": 1779290951.1135528
+  },
+  "Volkswagen|Arteon|2022": {
+    "min": 23990,
+    "max": 30998,
+    "url": "https://www.edmunds.com/volkswagen/arteon/2022/",
+    "suggested": null,
+    "avg_used": 26328,
+    "lastUpdated": 1779290953.416655
+  },
+  "Volkswagen|Arteon|2023": {
+    "min": 29990,
+    "max": 36990,
+    "url": "https://www.edmunds.com/volkswagen/arteon/2023/",
+    "suggested": null,
+    "avg_used": 26328,
+    "lastUpdated": 1779290955.745833
+  },
+  "Volkswagen|Atlas Cross Sport|2020": {
+    "min": 17998,
+    "max": 32990,
+    "url": "https://www.edmunds.com/volkswagen/atlas-cross-sport/2020/review/",
+    "suggested": null,
+    "avg_used": 23924,
+    "lastUpdated": 1779291018.928768
+  },
+  "Volkswagen|Atlas Cross Sport|2021": {
+    "min": 16250,
+    "max": 32990,
+    "url": "https://www.edmunds.com/volkswagen/atlas-cross-sport/2021/review/",
+    "suggested": null,
+    "avg_used": 24947,
+    "lastUpdated": 1779291020.861432
+  },
+  "Volkswagen|Atlas Cross Sport|2022": {
+    "min": 21497,
+    "max": 32998,
+    "url": "https://www.edmunds.com/volkswagen/atlas-cross-sport/2022/",
+    "suggested": null,
+    "avg_used": 31358,
+    "lastUpdated": 1779291023.1537359
+  },
+  "Volkswagen|Atlas|2018": {
+    "min": 11999,
+    "max": 24998,
+    "url": "https://www.edmunds.com/volkswagen/atlas/2018/review/",
+    "suggested": null,
+    "avg_used": 18535,
+    "lastUpdated": 1779290970.226735
+  },
+  "Volkswagen|Atlas|2019": {
+    "min": 11099,
+    "max": 27998,
+    "url": "https://www.edmunds.com/volkswagen/atlas/2019/review/",
+    "suggested": null,
+    "avg_used": 20951,
+    "lastUpdated": 1779290971.931514
+  },
+  "Volkswagen|Atlas|2020": {
+    "min": 17990,
+    "max": 25590,
+    "url": "https://www.edmunds.com/volkswagen/atlas/2020/review/",
+    "suggested": null,
+    "avg_used": 22762,
+    "lastUpdated": 1779290973.821446
+  },
+  "Volkswagen|Atlas|2021": null,
+  "Volkswagen|Atlas|2022": {
+    "min": 21590,
+    "max": 37998,
+    "url": "https://www.edmunds.com/volkswagen/atlas/2022/",
+    "suggested": null,
+    "avg_used": 28905,
+    "lastUpdated": 1779291013.096651
+  },
+  "Volkswagen|Atlas|2023": {
+    "min": 20999,
+    "max": 39998,
+    "url": "https://www.edmunds.com/volkswagen/atlas/2023/",
+    "suggested": null,
+    "avg_used": 28902,
+    "lastUpdated": 1779291016.7835379
+  },
+  "Volkswagen|CC|2018": null,
+  "Volkswagen|CC|2019": null,
+  "Volkswagen|CC|2020": null,
+  "Volkswagen|CC|2021": null,
+  "Volkswagen|CC|2022": null,
+  "Volkswagen|Caddy Maxi|2019": null,
+  "Volkswagen|Caddy|2019": null,
+  "Volkswagen|California|2021": null,
+  "Volkswagen|California|2022": null,
+  "Volkswagen|California|2023": null,
+  "Volkswagen|Caravelle|2020": null,
+  "Volkswagen|Crafter|2017": null,
+  "Volkswagen|Crafter|2018": null,
+  "Volkswagen|Crafter|2019": null,
+  "Volkswagen|Crafter|2020": null,
+  "Volkswagen|Crafter|2021": null,
+  "Volkswagen|Crafter|2022": null,
+  "Volkswagen|Crafter|2023": null,
+  "Volkswagen|Crafter|2024": null,
+  "Volkswagen|Golf Alltrack|2015": null,
+  "Volkswagen|Golf Alltrack|2016": null,
+  "Volkswagen|Golf Alltrack|2017": {
+    "min": 11981,
+    "max": 23998,
+    "url": "https://www.edmunds.com/volkswagen/golf-alltrack/2017/review/",
+    "suggested": null,
+    "avg_used": 17441,
+    "lastUpdated": 1779291072.762235
+  },
+  "Volkswagen|Golf Alltrack|2018": {
+    "min": 15590,
+    "max": 23590,
+    "url": "https://www.edmunds.com/volkswagen/golf-alltrack/2018/review/",
+    "suggested": null,
+    "avg_used": 20542,
+    "lastUpdated": 1779291074.411027
+  },
+  "Volkswagen|Golf Alltrack|2019": {
+    "min": 17990,
+    "max": 24998,
+    "url": "https://www.edmunds.com/volkswagen/golf-alltrack/2019/review/",
+    "suggested": null,
+    "avg_used": 21893,
+    "lastUpdated": 1779291076.179165
+  },
+  "Volkswagen|Golf GTD|2015": null,
+  "Volkswagen|Golf GTD|2016": null,
+  "Volkswagen|Golf GTD|2017": null,
+  "Volkswagen|Golf GTD|2018": null,
+  "Volkswagen|Golf GTD|2019": null,
+  "Volkswagen|Golf GTD|2020": null,
+  "Volkswagen|Golf GTE|2015": null,
+  "Volkswagen|Golf GTE|2016": null,
+  "Volkswagen|Golf GTE|2017": null,
+  "Volkswagen|Golf GTE|2018": null,
+  "Volkswagen|Golf GTE|2019": null,
+  "Volkswagen|Golf GTE|2020": null,
+  "Volkswagen|Golf GTI|2015": null,
+  "Volkswagen|Golf GTI|2016": null,
+  "Volkswagen|Golf GTI|2017": null,
+  "Volkswagen|Golf GTI|2018": null,
+  "Volkswagen|Golf GTI|2019": null,
+  "Volkswagen|Golf GTI|2020": null,
+  "Volkswagen|Golf GTI|2021": null,
+  "Volkswagen|Golf R|2015": null,
+  "Volkswagen|Golf R|2016": null,
+  "Volkswagen|Golf R|2017": null,
+  "Volkswagen|Golf R|2018": null,
+  "Volkswagen|Golf R|2019": null,
+  "Volkswagen|Golf SportsVan|2015": null,
+  "Volkswagen|Golf SportsVan|2016": null,
+  "Volkswagen|Golf SportsVan|2017": null,
+  "Volkswagen|Golf SportsVan|2018": null,
+  "Volkswagen|Golf SportsVan|2019": null,
+  "Volkswagen|Golf SportsVan|2020": null,
+  "Volkswagen|Golf|2015": {
+    "min": 13990,
+    "max": 14790,
+    "url": "https://www.edmunds.com/volkswagen/golf/2015/review/",
+    "suggested": null,
+    "avg_used": 13101,
+    "lastUpdated": 1779291045.3595982
+  },
+  "Volkswagen|Golf|2016": {
+    "min": 12998,
+    "max": 14599,
+    "url": "https://www.edmunds.com/volkswagen/golf/2016/review/",
+    "suggested": null,
+    "avg_used": 12895,
+    "lastUpdated": 1779291047.277215
+  },
+  "Volkswagen|Golf|2017": {
+    "min": 11998,
+    "max": 18998,
+    "url": "https://www.edmunds.com/volkswagen/golf/2017/review/",
+    "suggested": null,
+    "avg_used": 15998,
+    "lastUpdated": 1779291048.935696
+  },
+  "Volkswagen|Golf|2018": {
+    "min": 14290,
+    "max": 20998,
+    "url": "https://www.edmunds.com/volkswagen/golf/2018/review/",
+    "suggested": null,
+    "avg_used": 17456,
+    "lastUpdated": 1779291050.750867
+  },
+  "Volkswagen|Golf|2019": {
+    "min": 14990,
+    "max": 21590,
+    "url": "https://www.edmunds.com/volkswagen/golf/2019/review/",
+    "suggested": null,
+    "avg_used": 14744,
+    "lastUpdated": 1779291052.795767
+  },
+  "Volkswagen|Golf|2020": null,
+  "Volkswagen|Grand California|2019": null,
+  "Volkswagen|Grand California|2020": null,
+  "Volkswagen|Grand California|2021": null,
+  "Volkswagen|Grand California|2022": null,
+  "Volkswagen|Grand California|2023": null,
+  "Volkswagen|Grand California|2024": null,
+  "Volkswagen|Jetta GLI|2021": null,
+  "Volkswagen|Jetta GLI|2022": null,
+  "Volkswagen|Jetta GLI|2023": null,
+  "Volkswagen|Jetta GLI|2024": null,
+  "Volkswagen|Jetta|2015": null,
+  "Volkswagen|Jetta|2016": null,
+  "Volkswagen|Jetta|2017": null,
+  "Volkswagen|Jetta|2018": null,
+  "Volkswagen|Jetta|2019": null,
+  "Volkswagen|Jetta|2020": null,
+  "Volkswagen|Jetta|2021": null,
+  "Volkswagen|Jetta|2022": null,
+  "Volkswagen|Jetta|2023": null,
+  "Volkswagen|Jetta|2024": null,
+  "Volkswagen|Passat Alltrack|2015": null,
+  "Volkswagen|Passat Alltrack|2016": null,
+  "Volkswagen|Passat Alltrack|2017": null,
+  "Volkswagen|Passat Alltrack|2018": null,
+  "Volkswagen|Passat Alltrack|2019": null,
+  "Volkswagen|Passat Alltrack|2020": null,
+  "Volkswagen|Passat Alltrack|2021": null,
+  "Volkswagen|Passat Alltrack|2022": null,
+  "Volkswagen|Passat GTE|2015": null,
+  "Volkswagen|Passat GTE|2016": null,
+  "Volkswagen|Passat GTE|2017": null,
+  "Volkswagen|Passat GTE|2018": null,
+  "Volkswagen|Passat GTE|2019": null,
+  "Volkswagen|Passat GTE|2020": null,
+  "Volkswagen|Passat GTE|2021": null,
+  "Volkswagen|Passat GTE|2022": null,
+  "Volkswagen|Passat NMS|2017": null,
+  "Volkswagen|Passat NMS|2018": null,
+  "Volkswagen|Passat NMS|2019": null,
+  "Volkswagen|Passat NMS|2020": null,
+  "Volkswagen|Passat NMS|2021": null,
+  "Volkswagen|Passat NMS|2022": null,
+  "Volkswagen|Passat|2015": {
+    "min": 7977,
+    "max": 16990,
+    "url": "https://www.edmunds.com/volkswagen/passat/2015/review/",
+    "suggested": null,
+    "avg_used": 11236,
+    "lastUpdated": 1779291663.321599
+  },
+  "Volkswagen|Passat|2016": {
+    "min": 9995,
+    "max": 17998,
+    "url": "https://www.edmunds.com/volkswagen/passat/2016/review/",
+    "suggested": null,
+    "avg_used": 12098,
+    "lastUpdated": 1779291665.6670551
+  },
+  "Volkswagen|Passat|2017": {
+    "min": 7999,
+    "max": 17998,
+    "url": "https://www.edmunds.com/volkswagen/passat/2017/review/",
+    "suggested": null,
+    "avg_used": 14738,
+    "lastUpdated": 1779291667.2767181
+  },
+  "Volkswagen|Passat|2018": {
+    "min": 13790,
+    "max": 20990,
+    "url": "https://www.edmunds.com/volkswagen/passat/2018/review/",
+    "suggested": null,
+    "avg_used": 16466,
+    "lastUpdated": 1779291668.961409
+  },
+  "Volkswagen|Passat|2019": {
+    "min": 12995,
+    "max": 20998,
+    "url": "https://www.edmunds.com/volkswagen/passat/2019/review/",
+    "suggested": null,
+    "avg_used": 15443,
+    "lastUpdated": 1779291671.0157871
+  },
+  "Volkswagen|Passat|2020": {
+    "min": 11977,
+    "max": 22998,
+    "url": "https://www.edmunds.com/volkswagen/passat/2020/review/",
+    "suggested": null,
+    "avg_used": 16164,
+    "lastUpdated": 1779291673.2477481
+  },
+  "Volkswagen|Passat|2021": {
+    "min": 14493,
+    "max": 22998,
+    "url": "https://www.edmunds.com/volkswagen/passat/2021/review/",
+    "suggested": null,
+    "avg_used": 18565,
+    "lastUpdated": 1779291675.20477
+  },
+  "Volkswagen|Passat|2022": {
+    "min": 15872,
+    "max": 22998,
+    "url": "https://www.edmunds.com/volkswagen/passat/2022/",
+    "suggested": null,
+    "avg_used": 13572,
+    "lastUpdated": 1779291677.789942
+  },
+  "Volkswagen|Polo GTI|2018": null,
+  "Volkswagen|Polo GTI|2019": null,
+  "Volkswagen|Polo GTI|2020": null,
+  "Volkswagen|Polo GTI|2021": null,
+  "Volkswagen|Polo GTI|2022": null,
+  "Volkswagen|Polo GTI|2023": null,
+  "Volkswagen|Polo|2018": null,
+  "Volkswagen|Polo|2019": null,
+  "Volkswagen|Polo|2020": null,
+  "Volkswagen|Polo|2021": null,
+  "Volkswagen|Polo|2022": null,
+  "Volkswagen|Polo|2023": null,
+  "Volkswagen|Sharan|2018": null,
+  "Volkswagen|Sharan|2019": null,
+  "Volkswagen|Sharan|2020": null,
+  "Volkswagen|Sharan|2021": null,
+  "Volkswagen|Sharan|2022": null,
+  "Volkswagen|T-Cross|2021": null,
+  "Volkswagen|T-Roc|2018": null,
+  "Volkswagen|T-Roc|2019": null,
+  "Volkswagen|T-Roc|2020": null,
+  "Volkswagen|T-Roc|2021": null,
+  "Volkswagen|T-Roc|2022": null,
+  "Volkswagen|T-Roc|2023": null,
+  "Volkswagen|Taos|2022": {
+    "min": 14500,
+    "max": 24590,
+    "url": "https://www.edmunds.com/volkswagen/taos/2022/",
+    "suggested": null,
+    "avg_used": 22908,
+    "lastUpdated": 1779291781.054014
+  },
+  "Volkswagen|Taos|2023": {
+    "min": 15490,
+    "max": 26990,
+    "url": "https://www.edmunds.com/volkswagen/taos/2023/",
+    "suggested": null,
+    "avg_used": 22909,
+    "lastUpdated": 1779291783.6027808
+  },
+  "Volkswagen|Taos|2024": {
+    "min": 16991,
+    "max": 28990,
+    "url": "https://www.edmunds.com/volkswagen/taos/2024/",
+    "suggested": null,
+    "avg_used": 22908,
+    "lastUpdated": 1779291786.0964491
+  },
+  "Volkswagen|Teramont Cross Sport|2021": null,
+  "Volkswagen|Teramont Cross Sport|2022": null,
+  "Volkswagen|Teramont X|2021": null,
+  "Volkswagen|Teramont X|2022": null,
+  "Volkswagen|Teramont|2018": null,
+  "Volkswagen|Teramont|2019": null,
+  "Volkswagen|Teramont|2020": null,
+  "Volkswagen|Teramont|2021": null,
+  "Volkswagen|Teramont|2022": null,
+  "Volkswagen|Tiguan eHybrid|2021": null,
+  "Volkswagen|Tiguan eHybrid|2022": null,
+  "Volkswagen|Tiguan eHybrid|2023": null,
+  "Volkswagen|Tiguan|2018": {
+    "min": 8998,
+    "max": 25990,
+    "url": "https://www.edmunds.com/volkswagen/tiguan/2018/review/",
+    "suggested": null,
+    "avg_used": 16636,
+    "lastUpdated": 1779291798.378588
+  },
+  "Volkswagen|Tiguan|2019": {
+    "min": 11995,
+    "max": 26999,
+    "url": "https://www.edmunds.com/volkswagen/tiguan/2019/review/",
+    "suggested": null,
+    "avg_used": 18015,
+    "lastUpdated": 1779291800.0706098
+  },
+  "Volkswagen|Tiguan|2020": {
+    "min": 9999,
+    "max": 26990,
+    "url": "https://www.edmunds.com/volkswagen/tiguan/2020/review/",
+    "suggested": null,
+    "avg_used": 18659,
+    "lastUpdated": 1779291802.116471
+  },
+  "Volkswagen|Tiguan|2021": {
+    "min": 9999,
+    "max": 25590,
+    "url": "https://www.edmunds.com/volkswagen/tiguan/2021/review/",
+    "suggested": null,
+    "avg_used": 19691,
+    "lastUpdated": 1779291804.201795
+  },
+  "Volkswagen|Tiguan|2022": {
+    "min": 14799,
+    "max": 28998,
+    "url": "https://www.edmunds.com/volkswagen/tiguan/2022/",
+    "suggested": null,
+    "avg_used": 24333,
+    "lastUpdated": 1779291806.8495748
+  },
+  "Volkswagen|Tiguan|2023": {
+    "min": 15995,
+    "max": 29990,
+    "url": "https://www.edmunds.com/volkswagen/tiguan/2023/",
+    "suggested": null,
+    "avg_used": 24333,
+    "lastUpdated": 1779291809.3701708
+  },
+  "Volkswagen|Tiguan|2024": {
+    "min": 19206,
+    "max": 33990,
+    "url": "https://www.edmunds.com/volkswagen/tiguan/2024/",
+    "suggested": null,
+    "avg_used": 24333,
+    "lastUpdated": 1779291812.075926
+  },
+  "Volkswagen|Touran|2016": null,
+  "Volkswagen|Touran|2017": null,
+  "Volkswagen|Touran|2018": null,
+  "Volkswagen|Touran|2019": null,
+  "Volkswagen|Touran|2020": null,
+  "Volkswagen|Touran|2021": null,
+  "Volkswagen|Touran|2022": null,
+  "Volkswagen|Touran|2023": null,
+  "Volkswagen|e-Crafter|2018": null,
+  "Volkswagen|e-Crafter|2019": null,
+  "Volkswagen|e-Crafter|2020": null,
+  "Volkswagen|e-Crafter|2021": null,
+  "Volkswagen|e-Crafter|2022": null,
+  "Volkswagen|e-Crafter|2023": null,
+  "Volkswagen|e-Crafter|2024": null,
+  "Volkswagen|e-Golf|2014": null,
+  "Volkswagen|e-Golf|2015": {
+    "min": 8800,
+    "max": 11590,
+    "url": "https://www.edmunds.com/volkswagen/e-golf/2015/review/",
+    "suggested": null,
+    "avg_used": 8635,
+    "lastUpdated": 1779291833.209595
+  },
+  "Volkswagen|e-Golf|2016": {
+    "min": 7100,
+    "max": 11590,
+    "url": "https://www.edmunds.com/volkswagen/e-golf/2016/review/",
+    "suggested": null,
+    "avg_used": 8792,
+    "lastUpdated": 1779291834.7924569
+  },
+  "Volkswagen|e-Golf|2017": null,
+  "Volkswagen|e-Golf|2018": null,
+  "Volkswagen|e-Golf|2019": null,
+  "Volkswagen|e-Golf|2020": null
 }

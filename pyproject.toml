@@ -10,4 +10,5 @@ dependencies = [
   "natsort",
   "opendbc[docs]",
   "playwright>=1.60.0",
+  "requests[socks]>=2.32",
 ]
