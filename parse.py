@@ -44,6 +44,10 @@ from edmunds import (
     fetch_edmunds_cache,
     load_edmunds_cache,
 )
+from jdpower import (
+    fetch_jdpower_cache,
+    load_jdpower_cache,
+)
 from carcomplaints import (
     fetch_cc_cache,
     load_cc_cache,
@@ -94,6 +98,11 @@ def main():
         "--no-fetch-edmunds",
         action="store_true",
         help="Skip fetching Edmunds price data.",
+    )
+    parser.add_argument(
+        "--no-fetch-jdp",
+        action="store_true",
+        help="Skip fetching JD Power price data.",
     )
     parser.add_argument(
         "--edmunds-no-headless",
@@ -152,6 +161,11 @@ def main():
         help="Re-fetch Edmunds cached entries whose stored value is null.",
     )
     parser.add_argument(
+        "--retry-nulls-jdp",
+        action="store_true",
+        help="Re-fetch JD Power cached entries whose stored value is null.",
+    )
+    parser.add_argument(
         "--retry-nulls-all",
         action="store_true",
         help="Re-fetch all cached entries whose stored value is null (implies --retry-nulls-cg/ari/cc).",
@@ -181,7 +195,7 @@ def main():
     if args.retry_nulls_all:
         args.retry_nulls_cg = args.retry_nulls_ari = args.retry_nulls_cc = (
             args.retry_nulls_edmunds
-        ) = True
+        ) = args.retry_nulls_jdp = True
 
     if args.proxy:
         import proxy as _proxy_mod
@@ -285,15 +299,23 @@ def main():
             )
         return load_edmunds_cache()
 
-    with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:
+    def _fetch_jdp():
+        if not args.no_fetch_jdp:
+            print("Fetching JD Power price data...", file=sys.stderr)
+            return fetch_jdpower_cache(cars, retry_nulls=args.retry_nulls_jdp)
+        return load_jdpower_cache()
+
+    with concurrent.futures.ThreadPoolExecutor(max_workers=5) as pool:
         fut_cg = pool.submit(_fetch_cg)
         fut_ari = pool.submit(_fetch_ari)
         fut_cc = pool.submit(_fetch_cc)
         fut_edm = pool.submit(_fetch_edmunds)
+        fut_jdp = pool.submit(_fetch_jdp)
         raw_cache = fut_cg.result()
         ari_cache = fut_ari.result()
         cc_cache = fut_cc.result()
         edmunds_cache = fut_edm.result()
+        jdpower_cache = fut_jdp.result()
 
     cargurus_js_cache = build_cargurus_js_cache(cars, raw_cache)
     warn_unmatched_cargurus(cars, load_cargurus_ids())
@@ -314,6 +336,7 @@ def main():
                     ari_cache,
                     cc_cache,
                     edmunds_cache,
+                    jdpower_cache=jdpower_cache,
                     fork_info=fork_info,
                     minify=not args.no_minify,
                     html_out=args.html_out,

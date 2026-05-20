@@ -133,6 +133,7 @@ def generate_html(
     ari_cache: dict | None = None,
     cc_cache: dict | None = None,
     edmunds_cache: dict | None = None,
+    jdpower_cache: dict | None = None,
     fork_info: list[dict] | None = None,
     minify: bool = True,
     html_out: str | None = None,
@@ -170,6 +171,10 @@ def generate_html(
         ),
         edmunds_cache_json=json.dumps(
             {k: v for k, v in (edmunds_cache or {}).items() if v is not None},
+            separators=(",", ":"),
+        ),
+        jdpower_cache_json=json.dumps(
+            {k: v for k, v in (jdpower_cache or {}).items() if v is not None},
             separators=(",", ":"),
         ),
         model_mappings_json=model_mappings_json,

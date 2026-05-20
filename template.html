@@ -1732,6 +1732,12 @@
                                                 <!-- Price filter -->
                                                 <template x-if="col.price">
                                                     <div class="range-body">
+                                                        <div class="range-lbl-row" style="padding: 4px 0">
+                                                            <label style="display:flex;align-items:center;gap:6px;cursor:pointer">
+                                                                <input type="checkbox" :checked="priceFilter.hasPrice" @change="priceFilter.hasPrice = $event.target.checked" @click.stop />
+                                                                Has price data
+                                                            </label>
+                                                        </div>
                                                         <div>
                                                             <div class="range-lbl-row">
                                                                 <span>Min price</span>
@@ -2080,42 +2086,67 @@
                                                                 <template x-if="car._priceScale">
                                                                     <div style="padding:4px 2px 2px">
                                                                         <template x-for="row in car._priceRows" :key="row.year">
-                                                                            <a :href="row.url" target="_blank" rel="noopener" class="popup-row" style="display:flex;align-items:center;gap:6px;text-decoration:none;color:inherit">
+                                                                            <div class="popup-row" style="display:flex;align-items:center;gap:6px">
                                                                                 <span class="pop-yr" x-text="row.year"></span>
-                                                                                <svg width="120" height="16" style="display:block;flex-shrink:0" aria-hidden="true">
-                                                                                    <rect
-                                                                                        :x="car._priceScale.sc(row.price.min)"
-                                                                                        y="5"
-                                                                                        :width="Math.max(2, car._priceScale.sc(row.price.max) - car._priceScale.sc(row.price.min))"
-                                                                                        height="6"
-                                                                                        fill="rgba(59,130,246,0.25)"
-                                                                                        stroke="rgba(59,130,246,0.8)"
-                                                                                        stroke-width="1"
-                                                                                    />
+                                                                                <svg width="120" height="24" style="display:block;flex-shrink:0" aria-hidden="true">
+                                                                                    <!-- Edmunds range (top) -->
+                                                                                    <template x-if="row.price">
+                                                                                        <rect
+                                                                                            :x="car._priceScale.sc(row.price.min)"
+                                                                                            y="2"
+                                                                                            :width="Math.max(2, car._priceScale.sc(row.price.max) - car._priceScale.sc(row.price.min))"
+                                                                                            height="8"
+                                                                                            fill="rgba(59,130,246,0.25)"
+                                                                                            stroke="rgba(59,130,246,0.8)"
+                                                                                            stroke-width="1"
+                                                                                        />
+                                                                                    </template>
+                                                                                    <!-- JD Power range (bottom) -->
+                                                                                    <template x-if="row.jp">
+                                                                                        <rect
+                                                                                            :x="car._priceScale.sc(row.jp.min)"
+                                                                                            y="14"
+                                                                                            :width="Math.max(2, car._priceScale.sc(row.jp.max) - car._priceScale.sc(row.jp.min))"
+                                                                                            height="8"
+                                                                                            fill="rgba(139,92,246,0.25)"
+                                                                                            stroke="rgba(139,92,246,0.8)"
+                                                                                            stroke-width="1"
+                                                                                        />
+                                                                                    </template>
+                                                                                    <!-- avg_used line -->
                                                                                     <line
                                                                                         :x1="row.avg_used != null ? car._priceScale.sc(row.avg_used) : -99"
-                                                                                        y1="3"
+                                                                                        y1="1"
                                                                                         :x2="row.avg_used != null ? car._priceScale.sc(row.avg_used) : -99"
-                                                                                        y2="13"
+                                                                                        y2="23"
                                                                                         stroke="rgba(234,88,12,0.9)"
                                                                                         stroke-width="2"
                                                                                         :opacity="row.avg_used != null ? 1 : 0"
                                                                                     />
+                                                                                    <!-- suggested line -->
                                                                                     <line
                                                                                         :x1="row.suggested != null ? car._priceScale.sc(row.suggested) : -99"
-                                                                                        y1="3"
+                                                                                        y1="1"
                                                                                         :x2="row.suggested != null ? car._priceScale.sc(row.suggested) : -99"
-                                                                                        y2="13"
+                                                                                        y2="23"
                                                                                         stroke="rgba(22,163,74,0.9)"
                                                                                         stroke-width="2"
                                                                                         :opacity="row.suggested != null ? 1 : 0"
                                                                                     />
                                                                                 </svg>
-                                                                                <span class="tabnum" style="font-size:0.75em;color:var(--text-muted,#666)" x-text="formatPrice(row.price.min) + '–' + formatPrice(row.price.max)"></span>
-                                                                            </a>
+                                                                                <span style="font-size:0.75em;color:var(--text-muted,#666)">
+                                                                                    <template x-if="row.price">
+                                                                                        <a :href="row.url" target="_blank" rel="noopener" class="tabnum" style="display:block;text-decoration:none;color:rgba(59,130,246,0.9)" x-text="formatPrice(row.price.min) + '–' + formatPrice(row.price.max)"></a>
+                                                                                    </template>
+                                                                                    <template x-if="row.jp">
+                                                                                        <a :href="row.jp.url" target="_blank" rel="noopener" class="tabnum" style="display:block;text-decoration:none;color:rgba(139,92,246,0.9)" x-text="formatPrice(row.jp.min) + '–' + formatPrice(row.jp.max)"></a>
+                                                                                    </template>
+                                                                                </span>
+                                                                            </div>
                                                                         </template>
-                                                                        <div style="display:flex;gap:10px;padding:4px 2px 0;font-size:0.7em;opacity:0.7">
-                                                                            <span style="display:flex;align-items:center;gap:3px"><svg width="10" height="10"><rect x="1" y="2" width="8" height="6" fill="rgba(59,130,246,0.25)" stroke="rgba(59,130,246,0.8)" stroke-width="1"/></svg> Range</span>
+                                                                        <div style="display:flex;flex-wrap:wrap;gap:6px 10px;padding:4px 2px 0;font-size:0.7em;opacity:0.7">
+                                                                            <span x-show="car._priceRows.some(r => r.price)" style="display:flex;align-items:center;gap:3px"><svg width="10" height="10"><rect x="1" y="2" width="8" height="6" fill="rgba(59,130,246,0.25)" stroke="rgba(59,130,246,0.8)" stroke-width="1"/></svg> Edmunds</span>
+                                                                            <span x-show="car._priceRows.some(r => r.jp)" style="display:flex;align-items:center;gap:3px"><svg width="10" height="10"><rect x="1" y="2" width="8" height="6" fill="rgba(139,92,246,0.25)" stroke="rgba(139,92,246,0.8)" stroke-width="1"/></svg> JD Power</span>
                                                                             <span x-show="car._priceRows.some(r => r.avg_used != null)" style="display:flex;align-items:center;gap:3px"><svg width="10" height="10"><line x1="5" y1="1" x2="5" y2="9" stroke="rgba(234,88,12,0.9)" stroke-width="2"/></svg> Avg used</span>
                                                                             <span x-show="car._priceRows.some(r => r.suggested != null)" style="display:flex;align-items:center;gap:3px"><svg width="10" height="10"><line x1="5" y1="1" x2="5" y2="9" stroke="rgba(22,163,74,0.9)" stroke-width="2"/></svg> Suggested</span>
                                                                         </div>
@@ -2297,6 +2328,8 @@
         <!-- prettier-ignore -->
         <script type="application/json" id="edmunds-cache">{{ edmunds_cache_json }}</script>
         <!-- prettier-ignore -->
+        <script type="application/json" id="jdpower-cache">{{ jdpower_cache_json }}</script>
+        <!-- prettier-ignore -->
         <script type="application/json" id="model-mappings">{{ model_mappings_json }}</script>
         <!-- prettier-ignore -->
         <script type="application/json" id="autotrader-mappings">{{ autotrader_mappings_json }}</script>
@@ -2341,6 +2374,9 @@
                 );
                 const edmundsCache = JSON.parse(
                     document.getElementById("edmunds-cache").textContent,
+                );
+                const jdpowerCache = JSON.parse(
+                    document.getElementById("jdpower-cache").textContent,
                 );
 
                 return {
@@ -2471,6 +2507,7 @@
                     carGurusCache,
                     ariCache,
                     edmundsCache,
+                    jdpowerCache,
                     ccCache,
                     modelMappings,
                     autotraderMappings,
@@ -2496,15 +2533,15 @@
                         return { min: null, max: null };
                     })(),
                     priceFilter: (() => {
-                        if (location.search) return { min: null, max: null };
+                        if (location.search) return { min: null, max: null, hasPrice: false };
                         try {
                             const saved = JSON.parse(
                                 localStorage.getItem("priceFilter"),
                             );
                             if (saved && typeof saved === "object")
-                                return saved;
+                                return { min: null, max: null, hasPrice: false, ...saved };
                         } catch {}
-                        return { min: null, max: null };
+                        return { min: null, max: null, hasPrice: false };
                     })(),
                     showSettings: false,
                     hiddenColumns: JSON.parse(
@@ -2710,6 +2747,7 @@
                                 label: "Price",
                                 mobileLabel: "Price",
                                 price: true,
+                                filterable: true,
                             },
                             {
                                 key: "cc_seal",
@@ -2754,7 +2792,8 @@
                             this.ariFilter.max !== null;
                         const priceFilterActive =
                             this.priceFilter.min !== null ||
-                            this.priceFilter.max !== null;
+                            this.priceFilter.max !== null ||
+                            this.priceFilter.hasPrice;
 
                         let candidates = null;
                         for (const [key, selected] of activeFilters) {
@@ -3069,7 +3108,7 @@
                         if (colKey === "ari") {
                             this.ariFilter = { min: null, max: null };
                         } else if (colKey === "price") {
-                            this.priceFilter = { min: null, max: null };
+                            this.priceFilter = { min: null, max: null, hasPrice: false };
                         } else if (this.speedFilters[colKey]) {
                             this.speedFilters[colKey] = {
                                 min: null,
@@ -3087,7 +3126,7 @@
                         for (const key of Object.keys(this.speedFilters))
                             this.speedFilters[key] = { min: null, max: null };
                         this.ariFilter = { min: null, max: null };
-                        this.priceFilter = { min: null, max: null };
+                        this.priceFilter = { min: null, max: null, hasPrice: false };
                     },
 
                     get activePresetKeys() {
@@ -3631,13 +3670,17 @@
                         const mins = [],
                             maxs = [];
                         for (const y of years) {
-                            const d =
-                                this.edmundsCache[
-                                    this.edmundsKey(car.make, car.model, y)
-                                ];
+                            const key = this.edmundsKey(car.make, car.model, y);
+                            const d = this.edmundsCache[key];
                             if (d) {
-                                mins.push(d.min);
-                                maxs.push(d.max);
+                                const avg = d.avg_used ?? d.suggested;
+                                const lo = d.min ?? avg;
+                                const hi = d.max ?? avg;
+                                if (lo != null) mins.push(lo);
+                                if (hi != null) maxs.push(hi);
+                            } else {
+                                const jp = this.jdpowerCache[key];
+                                if (jp) { mins.push(jp.min); maxs.push(jp.max); }
                             }
                         }
                         if (!mins.length) return null;
@@ -3664,10 +3707,10 @@
                                             )
                                         ],
                                 ) ?? years[years.length - 1];
+                        const key = this.edmundsKey(car.make, car.model, year);
                         return (
-                            this.edmundsCache[
-                                this.edmundsKey(car.make, car.model, year)
-                            ]?.url ??
+                            this.edmundsCache[key]?.url ??
+                            this.jdpowerCache[key]?.url ??
                             `https://www.edmunds.com/${car.make.toLowerCase()}/${car.model.toLowerCase().replace(/ /g, "-")}/${year}/review/`
                         );
                     },
@@ -3678,17 +3721,20 @@
                         );
                         return years
                             .map((y) => {
-                                const d =
-                                    this.edmundsCache[
-                                        this.edmundsKey(car.make, car.model, y)
-                                    ];
-                                if (!d) return null;
+                                const key = this.edmundsKey(car.make, car.model, y);
+                                const d = this.edmundsCache[key];
+                                const jp = this.jdpowerCache[key] ?? null;
+                                if (!d && !jp) return null;
+                                const avg = d ? (d.avg_used ?? d.suggested) : null;
+                                const lo = d ? (d.min ?? avg) : null;
+                                const hi = d ? (d.max ?? avg) : null;
                                 return {
                                     year: y,
-                                    price: { min: d.min, max: d.max },
-                                    suggested: d.suggested ?? null,
-                                    avg_used: d.avg_used ?? null,
-                                    url: d.url,
+                                    price: lo != null ? { min: lo, max: hi } : null,
+                                    suggested: d?.suggested ?? null,
+                                    avg_used: d?.avg_used ?? null,
+                                    url: d?.url ?? jp?.url ?? null,
+                                    jp,
                                 };
                             })
                             .filter(Boolean);
@@ -3698,10 +3744,12 @@
                         const rows = car._priceRows;
                         if (!rows || !rows.length) return null;
                         const vals = rows.flatMap((r) => [
-                            r.price.min, r.price.max,
+                            ...(r.price ? [r.price.min, r.price.max] : []),
                             ...(r.suggested != null ? [r.suggested] : []),
                             ...(r.avg_used != null ? [r.avg_used] : []),
+                            ...(r.jp ? [r.jp.min, r.jp.max] : []),
                         ]);
+                        if (!vals.length) return null;
                         const min = Math.min(...vals), max = Math.max(...vals);
                         const sc = (v) =>
                             min === max ? 40 : 5 + ((v - min) / (max - min)) * 110;
@@ -3715,7 +3763,8 @@
                     isPriceFilterActive() {
                         return (
                             this.priceFilter.min !== null ||
-                            this.priceFilter.max !== null
+                            this.priceFilter.max !== null ||
+                            this.priceFilter.hasPrice
                         );
                     },
 
@@ -3899,6 +3948,12 @@
                                     this.ariFilter.min = parseInt(v) || null;
                                 } else if (p === "ari_max") {
                                     this.ariFilter.max = parseInt(v) || null;
+                                } else if (p === "price_min") {
+                                    this.priceFilter.min = parseInt(v) || null;
+                                } else if (p === "price_max") {
+                                    this.priceFilter.max = parseInt(v) || null;
+                                } else if (p === "price_has") {
+                                    this.priceFilter.hasPrice = v === "1";
                                 } else if (p === "sort") {
                                     this.sortCol = v || null;
                                 } else if (p === "dir") {
@@ -4028,6 +4083,12 @@
                             params.set("ari_min", this.ariFilter.min);
                         if (this.ariFilter.max !== null)
                             params.set("ari_max", this.ariFilter.max);
+                        if (this.priceFilter.min !== null)
+                            params.set("price_min", this.priceFilter.min);
+                        if (this.priceFilter.max !== null)
+                            params.set("price_max", this.priceFilter.max);
+                        if (this.priceFilter.hasPrice)
+                            params.set("price_has", "1");
                         if (this.sortCol !== null)
                             params.set("sort", this.sortCol);
                         if (this.sortDir !== "asc")

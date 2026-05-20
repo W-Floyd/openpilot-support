@@ -1,0 +1,4947 @@
+{
+  "Acura|ADX|2025": {
+    "min": 31165,
+    "max": 47600,
+    "url": "https://www.jdpower.com/cars/2025/acura/adx",
+    "lastUpdated": 1779319769.4224908
+  },
+  "Acura|ADX|2026": {
+    "min": 31772,
+    "max": 46666,
+    "url": "https://www.jdpower.com/cars/2026/acura/adx",
+    "lastUpdated": 1779319769.710918
+  },
+  "Acura|ILX|2016": {
+    "min": 11014,
+    "max": 14577,
+    "url": "https://www.jdpower.com/cars/2016/acura/ilx",
+    "lastUpdated": 1779319769.583076
+  },
+  "Acura|ILX|2017": {
+    "min": 11876,
+    "max": 15170,
+    "url": "https://www.jdpower.com/cars/2017/acura/ilx",
+    "lastUpdated": 1779319770.647687
+  },
+  "Acura|ILX|2018": {
+    "min": 13432,
+    "max": 17922,
+    "url": "https://www.jdpower.com/cars/2018/acura/ilx",
+    "lastUpdated": 1779319770.5321221
+  },
+  "Acura|ILX|2019": {
+    "min": 15007,
+    "max": 19832,
+    "url": "https://www.jdpower.com/cars/2019/acura/ilx",
+    "lastUpdated": 1779319770.356639
+  },
+  "Acura|Integra|2023": {
+    "min": 22739,
+    "max": 31127,
+    "url": "https://www.jdpower.com/cars/2023/acura/integra",
+    "lastUpdated": 1779319771.010684
+  },
+  "Acura|Integra|2024": {
+    "min": 24757,
+    "max": 51282,
+    "url": "https://www.jdpower.com/cars/2024/acura/integra",
+    "lastUpdated": 1779319770.499615
+  },
+  "Acura|Integra|2025": {
+    "min": 27664,
+    "max": 53694,
+    "url": "https://www.jdpower.com/cars/2025/acura/integra",
+    "lastUpdated": 1779319770.9005508
+  },
+  "Acura|Integra|2026": {
+    "min": 30174,
+    "max": 55241,
+    "url": "https://www.jdpower.com/cars/2026/acura/integra",
+    "lastUpdated": 1779319771.217097
+  },
+  "Acura|MDX Hybrid|2017": null,
+  "Acura|MDX Hybrid|2018": null,
+  "Acura|MDX Hybrid|2019": null,
+  "Acura|MDX Hybrid|2020": null,
+  "Acura|MDX|2014": {
+    "min": 7769,
+    "max": 11428,
+    "url": "https://www.jdpower.com/cars/2014/acura/mdx",
+    "lastUpdated": 1779319771.3000891
+  },
+  "Acura|MDX|2015": {
+    "min": 8479,
+    "max": 13041,
+    "url": "https://www.jdpower.com/cars/2015/acura/mdx",
+    "lastUpdated": 1779319771.679559
+  },
+  "Acura|MDX|2016": {
+    "min": 10170,
+    "max": 14927,
+    "url": "https://www.jdpower.com/cars/2016/acura/mdx",
+    "lastUpdated": 1779319771.9067972
+  },
+  "Acura|MDX|2017": {
+    "min": 12561,
+    "max": 18025,
+    "url": "https://www.jdpower.com/cars/2017/acura/mdx",
+    "lastUpdated": 1779319772.3507469
+  },
+  "Acura|MDX|2018": {
+    "min": 14499,
+    "max": 22802,
+    "url": "https://www.jdpower.com/cars/2018/acura/mdx",
+    "lastUpdated": 1779319772.509299
+  },
+  "Acura|MDX|2019": {
+    "min": 16262,
+    "max": 27242,
+    "url": "https://www.jdpower.com/cars/2019/acura/mdx",
+    "lastUpdated": 1779319772.836583
+  },
+  "Acura|MDX|2020": {
+    "min": 18721,
+    "max": 31010,
+    "url": "https://www.jdpower.com/cars/2020/acura/mdx",
+    "lastUpdated": 1779319772.2304819
+  },
+  "Acura|MDX|2022": {
+    "min": 28909,
+    "max": 48581,
+    "url": "https://www.jdpower.com/cars/2022/acura/mdx",
+    "lastUpdated": 1779319773.041257
+  },
+  "Acura|MDX|2023": {
+    "min": 31712,
+    "max": 56909,
+    "url": "https://www.jdpower.com/cars/2023/acura/mdx",
+    "lastUpdated": 1779319772.832018
+  },
+  "Acura|MDX|2024": {
+    "min": 35804,
+    "max": 61862,
+    "url": "https://www.jdpower.com/cars/2024/acura/mdx",
+    "lastUpdated": 1779319773.051153
+  },
+  "Acura|MDX|2025": {
+    "min": 40512,
+    "max": 72751,
+    "url": "https://www.jdpower.com/cars/2025/acura/mdx",
+    "lastUpdated": 1779319773.986428
+  },
+  "Acura|MDX|2026": {
+    "min": 44194,
+    "max": 78071,
+    "url": "https://www.jdpower.com/cars/2026/acura/mdx",
+    "lastUpdated": 1779319773.072036
+  },
+  "Acura|RDX|2016": {
+    "min": 9919,
+    "max": 13344,
+    "url": "https://www.jdpower.com/cars/2016/acura/rdx",
+    "lastUpdated": 1779319774.46965
+  },
+  "Acura|RDX|2017": {
+    "min": 10986,
+    "max": 14473,
+    "url": "https://www.jdpower.com/cars/2017/acura/rdx",
+    "lastUpdated": 1779319774.682281
+  },
+  "Acura|RDX|2018": null,
+  "Acura|RDX|2019": {
+    "min": 17409,
+    "max": 23882,
+    "url": "https://www.jdpower.com/cars/2019/acura/rdx",
+    "lastUpdated": 1779319774.8228
+  },
+  "Acura|RDX|2020": {
+    "min": 18894,
+    "max": 26468,
+    "url": "https://www.jdpower.com/cars/2020/acura/rdx",
+    "lastUpdated": 1779319774.5788002
+  },
+  "Acura|RDX|2021": {
+    "min": 21735,
+    "max": 33321,
+    "url": "https://www.jdpower.com/cars/2021/acura/rdx",
+    "lastUpdated": 1779319774.866207
+  },
+  "Acura|RDX|2022": {
+    "min": 23610,
+    "max": 36868,
+    "url": "https://www.jdpower.com/cars/2022/acura/rdx",
+    "lastUpdated": 1779319775.074541
+  },
+  "Acura|RDX|2023": {
+    "min": 27052,
+    "max": 42489,
+    "url": "https://www.jdpower.com/cars/2023/acura/rdx",
+    "lastUpdated": 1779319775.502435
+  },
+  "Acura|RDX|2024": {
+    "min": 31553,
+    "max": 46207,
+    "url": "https://www.jdpower.com/cars/2024/acura/rdx",
+    "lastUpdated": 1779319775.686707
+  },
+  "Acura|RDX|2025": {
+    "min": 37209,
+    "max": 55271,
+    "url": "https://www.jdpower.com/cars/2025/acura/rdx",
+    "lastUpdated": 1779319776.22233
+  },
+  "Acura|RDX|2026": {
+    "min": 41088,
+    "max": 56862,
+    "url": "https://www.jdpower.com/cars/2026/acura/rdx",
+    "lastUpdated": 1779319776.416853
+  },
+  "Acura|RLX|2017": {
+    "min": 15780,
+    "max": 21504,
+    "url": "https://www.jdpower.com/cars/2017/acura/rlx",
+    "lastUpdated": 1779319776.51898
+  },
+  "Acura|TLX|2015": {
+    "min": 11729,
+    "max": 15982,
+    "url": "https://www.jdpower.com/cars/2015/acura/tlx",
+    "lastUpdated": 1779319776.518555
+  },
+  "Acura|TLX|2016": {
+    "min": 12475,
+    "max": 17887,
+    "url": "https://www.jdpower.com/cars/2016/acura/tlx",
+    "lastUpdated": 1779319776.6478348
+  },
+  "Acura|TLX|2017": {
+    "min": 13471,
+    "max": 19166,
+    "url": "https://www.jdpower.com/cars/2017/acura/tlx",
+    "lastUpdated": 1779319776.9449668
+  },
+  "Acura|TLX|2018": {
+    "min": 15324,
+    "max": 23490,
+    "url": "https://www.jdpower.com/cars/2018/acura/tlx",
+    "lastUpdated": 1779319776.947411
+  },
+  "Acura|TLX|2019": {
+    "min": 16722,
+    "max": 25023,
+    "url": "https://www.jdpower.com/cars/2019/acura/tlx",
+    "lastUpdated": 1779319777.066376
+  },
+  "Acura|TLX|2020": {
+    "min": 18493,
+    "max": 30839,
+    "url": "https://www.jdpower.com/cars/2020/acura/tlx",
+    "lastUpdated": 1779319777.135131
+  },
+  "Acura|TLX|2021": {
+    "min": 22816,
+    "max": 36539,
+    "url": "https://www.jdpower.com/cars/2021/acura/tlx",
+    "lastUpdated": 1779319777.16206
+  },
+  "Acura|TLX|2022": {
+    "min": 24959,
+    "max": 43376,
+    "url": "https://www.jdpower.com/cars/2022/acura/tlx",
+    "lastUpdated": 1779319777.492249
+  },
+  "Acura|TLX|2023": {
+    "min": 26000,
+    "max": 49129,
+    "url": "https://www.jdpower.com/cars/2023/acura/tlx",
+    "lastUpdated": 1779319777.525812
+  },
+  "Acura|TLX|2024": {
+    "min": 32022,
+    "max": 51248,
+    "url": "https://www.jdpower.com/cars/2024/acura/tlx",
+    "lastUpdated": 1779319777.6965811
+  },
+  "Acura|TLX|2025": {
+    "min": 38163,
+    "max": 56977,
+    "url": "https://www.jdpower.com/cars/2025/acura/tlx",
+    "lastUpdated": 1779319777.9697359
+  },
+  "Acura|ZDX|2024": {
+    "min": 24623,
+    "max": 39872,
+    "url": "https://www.jdpower.com/cars/2024/acura/zdx",
+    "lastUpdated": 1779319778.218795
+  },
+  "Audi|A3 Sportback e-tron|2017": {
+    "min": 12815,
+    "max": 16654,
+    "url": "https://www.jdpower.com/cars/2017/audi/a3-sportback-e-tron",
+    "lastUpdated": 1779319779.022743
+  },
+  "Audi|A3 Sportback e-tron|2018": {
+    "min": 14706,
+    "max": 21182,
+    "url": "https://www.jdpower.com/cars/2018/audi/a3-sportback-e-tron",
+    "lastUpdated": 1779319779.380558
+  },
+  "Audi|A3|2014": null,
+  "Audi|A3|2015": {
+    "min": 7137,
+    "max": 11093,
+    "url": "https://www.jdpower.com/cars/2015/audi/a3",
+    "lastUpdated": 1779319778.526842
+  },
+  "Audi|A3|2016": null,
+  "Audi|A3|2017": {
+    "min": 11178,
+    "max": 15791,
+    "url": "https://www.jdpower.com/cars/2017/audi/a3",
+    "lastUpdated": 1779319778.751661
+  },
+  "Audi|A3|2018": {
+    "min": 11750,
+    "max": 19143,
+    "url": "https://www.jdpower.com/cars/2018/audi/a3",
+    "lastUpdated": 1779319778.848495
+  },
+  "Audi|A3|2019": {
+    "min": 13185,
+    "max": 21358,
+    "url": "https://www.jdpower.com/cars/2019/audi/a3",
+    "lastUpdated": 1779319779.0317812
+  },
+  "Audi|A4|2016": {
+    "min": 9801,
+    "max": 13453,
+    "url": "https://www.jdpower.com/cars/2016/audi/a4",
+    "lastUpdated": 1779319779.728023
+  },
+  "Audi|A4|2017": {
+    "min": 10802,
+    "max": 16886,
+    "url": "https://www.jdpower.com/cars/2017/audi/a4",
+    "lastUpdated": 1779319779.7736251
+  },
+  "Audi|A4|2018": {
+    "min": 12968,
+    "max": 19981,
+    "url": "https://www.jdpower.com/cars/2018/audi/a4",
+    "lastUpdated": 1779319779.770771
+  },
+  "Audi|A4|2019": {
+    "min": 14299,
+    "max": 22324,
+    "url": "https://www.jdpower.com/cars/2019/audi/a4",
+    "lastUpdated": 1779319780.246979
+  },
+  "Audi|A4|2020": {
+    "min": 17491,
+    "max": 24640,
+    "url": "https://www.jdpower.com/cars/2020/audi/a4",
+    "lastUpdated": 1779319780.239369
+  },
+  "Audi|A4|2021": {
+    "min": 19724,
+    "max": 27677,
+    "url": "https://www.jdpower.com/cars/2021/audi/a4",
+    "lastUpdated": 1779319780.608586
+  },
+  "Audi|A4|2022": null,
+  "Audi|A4|2023": {
+    "min": 23152,
+    "max": 34127,
+    "url": "https://www.jdpower.com/cars/2023/audi/a4",
+    "lastUpdated": 1779319780.715189
+  },
+  "Audi|A4|2024": {
+    "min": 23905,
+    "max": 36793,
+    "url": "https://www.jdpower.com/cars/2024/audi/a4",
+    "lastUpdated": 1779319780.8155699
+  },
+  "Audi|A5|2016": {
+    "min": 8575,
+    "max": 11961,
+    "url": "https://www.jdpower.com/cars/2016/audi/a5",
+    "lastUpdated": 1779319780.5889988
+  },
+  "Audi|A5|2017": {
+    "min": 11939,
+    "max": 13389,
+    "url": "https://www.jdpower.com/cars/2017/audi/a5",
+    "lastUpdated": 1779319780.919135
+  },
+  "Audi|A5|2018": {
+    "min": 14396,
+    "max": 18345,
+    "url": "https://www.jdpower.com/cars/2018/audi/a5",
+    "lastUpdated": 1779319781.134768
+  },
+  "Audi|A5|2019": {
+    "min": 17307,
+    "max": 25489,
+    "url": "https://www.jdpower.com/cars/2019/audi/a5",
+    "lastUpdated": 1779319781.5271392
+  },
+  "Audi|A5|2020": {
+    "min": 20552,
+    "max": 28416,
+    "url": "https://www.jdpower.com/cars/2020/audi/a5",
+    "lastUpdated": 1779319781.467071
+  },
+  "Audi|A5|2021": {
+    "min": 23312,
+    "max": 31783,
+    "url": "https://www.jdpower.com/cars/2021/audi/a5",
+    "lastUpdated": 1779319781.535769
+  },
+  "Audi|A5|2022": {
+    "min": 25187,
+    "max": 36499,
+    "url": "https://www.jdpower.com/cars/2022/audi/a5",
+    "lastUpdated": 1779319781.532353
+  },
+  "Audi|A5|2023": {
+    "min": 28037,
+    "max": 39478,
+    "url": "https://www.jdpower.com/cars/2023/audi/a5",
+    "lastUpdated": 1779319781.6931121
+  },
+  "Audi|A5|2024": {
+    "min": 30111,
+    "max": 48306,
+    "url": "https://www.jdpower.com/cars/2024/audi/a5",
+    "lastUpdated": 1779319782.319197
+  },
+  "Audi|Q2|2018": null,
+  "Audi|Q3|2019": null,
+  "Audi|Q3|2020": {
+    "min": 18464,
+    "max": 24941,
+    "url": "https://www.jdpower.com/cars/2020/audi/q3",
+    "lastUpdated": 1779319782.7967098
+  },
+  "Audi|Q3|2021": {
+    "min": 19254,
+    "max": 25254,
+    "url": "https://www.jdpower.com/cars/2021/audi/q3",
+    "lastUpdated": 1779319782.7750819
+  },
+  "Audi|Q3|2022": {
+    "min": 20085,
+    "max": 28337,
+    "url": "https://www.jdpower.com/cars/2022/audi/q3",
+    "lastUpdated": 1779319782.720532
+  },
+  "Audi|Q3|2023": {
+    "min": 21535,
+    "max": 31031,
+    "url": "https://www.jdpower.com/cars/2023/audi/q3",
+    "lastUpdated": 1779319783.215703
+  },
+  "Audi|Q3|2024": {
+    "min": 25228,
+    "max": 37811,
+    "url": "https://www.jdpower.com/cars/2024/audi/q3",
+    "lastUpdated": 1779319782.9405131
+  },
+  "Audi|Q5|2013": {
+    "min": 4493,
+    "max": 6950,
+    "url": "https://www.jdpower.com/cars/2013/audi/q5",
+    "lastUpdated": 1779319783.4060202
+  },
+  "Audi|Q5|2014": {
+    "min": 5250,
+    "max": 8770,
+    "url": "https://www.jdpower.com/cars/2014/audi/q5",
+    "lastUpdated": 1779319784.123842
+  },
+  "Audi|Q5|2015": {
+    "min": 5865,
+    "max": 9551,
+    "url": "https://www.jdpower.com/cars/2015/audi/q5",
+    "lastUpdated": 1779319784.326483
+  },
+  "Audi|Q5|2016": {
+    "min": 6730,
+    "max": 11253,
+    "url": "https://www.jdpower.com/cars/2016/audi/q5",
+    "lastUpdated": 1779319784.830496
+  },
+  "Audi|Q5|2017": {
+    "min": 7471,
+    "max": 11874,
+    "url": "https://www.jdpower.com/cars/2017/audi/q5",
+    "lastUpdated": 1779319785.348088
+  },
+  "Audi|Q5|2018": {
+    "min": 11582,
+    "max": 15703,
+    "url": "https://www.jdpower.com/cars/2018/audi/q5",
+    "lastUpdated": 1779319784.783766
+  },
+  "Audi|Q5|2019": {
+    "min": 13233,
+    "max": 18654,
+    "url": "https://www.jdpower.com/cars/2019/audi/q5",
+    "lastUpdated": 1779319784.8619862
+  },
+  "Audi|Q5|2020": {
+    "min": 15399,
+    "max": 22618,
+    "url": "https://www.jdpower.com/cars/2020/audi/q5",
+    "lastUpdated": 1779319785.4336011
+  },
+  "Audi|Q5|2021": {
+    "min": 19725,
+    "max": 26665,
+    "url": "https://www.jdpower.com/cars/2021/audi/q5",
+    "lastUpdated": 1779319785.6456902
+  },
+  "Audi|Q5|2022": {
+    "min": 20400,
+    "max": 31027,
+    "url": "https://www.jdpower.com/cars/2022/audi/q5",
+    "lastUpdated": 1779319785.898648
+  },
+  "Audi|Q5|2023": {
+    "min": 24334,
+    "max": 37662,
+    "url": "https://www.jdpower.com/cars/2023/audi/q5",
+    "lastUpdated": 1779319786.002233
+  },
+  "Audi|Q5|2024": {
+    "min": 26092,
+    "max": 41969,
+    "url": "https://www.jdpower.com/cars/2024/audi/q5",
+    "lastUpdated": 1779319785.982122
+  },
+  "Audi|RS3|2018": null,
+  "Audi|S3|2015": {
+    "min": 9935,
+    "max": 12085,
+    "url": "https://www.jdpower.com/cars/2015/audi/s3",
+    "lastUpdated": 1779319786.479251
+  },
+  "Audi|S3|2016": {
+    "min": 10528,
+    "max": 13089,
+    "url": "https://www.jdpower.com/cars/2016/audi/s3",
+    "lastUpdated": 1779319786.9055629
+  },
+  "Audi|S3|2017": {
+    "min": 15346,
+    "max": 19580,
+    "url": "https://www.jdpower.com/cars/2017/audi/s3",
+    "lastUpdated": 1779319786.774712
+  },
+  "BMW|E82|2004": null,
+  "BMW|E82|2005": null,
+  "BMW|E82|2006": null,
+  "BMW|E82|2007": null,
+  "BMW|E82|2008": null,
+  "BMW|E82|2009": null,
+  "BMW|E82|2010": null,
+  "BMW|E82|2011": null,
+  "BMW|E82|2012": null,
+  "BMW|E82|2013": null,
+  "BMW|E90|2005": null,
+  "BMW|E90|2006": null,
+  "BMW|E90|2007": null,
+  "BMW|E90|2008": null,
+  "BMW|E90|2009": null,
+  "BMW|E90|2010": null,
+  "BMW|E90|2011": null,
+  "Buick|Baby Enclave|2020": null,
+  "Buick|Baby Enclave|2021": null,
+  "Buick|Baby Enclave|2022": null,
+  "Buick|Baby Enclave|2023": null,
+  "CUPRA|Ateca|2018": null,
+  "CUPRA|Ateca|2019": null,
+  "CUPRA|Ateca|2020": null,
+  "CUPRA|Ateca|2021": null,
+  "CUPRA|Ateca|2022": null,
+  "CUPRA|Ateca|2023": null,
+  "Cadillac|CT6|2017": {
+    "min": 16631,
+    "max": 26433,
+    "url": "https://www.jdpower.com/cars/2017/cadillac/ct6",
+    "lastUpdated": 1779319788.694596
+  },
+  "Cadillac|CT6|2018": {
+    "min": 20093,
+    "max": 35532,
+    "url": "https://www.jdpower.com/cars/2018/cadillac/ct6",
+    "lastUpdated": 1779319788.329452
+  },
+  "Cadillac|Escalade|2018": {
+    "min": 25046,
+    "max": 37161,
+    "url": "https://www.jdpower.com/cars/2018/cadillac/escalade",
+    "lastUpdated": 1779319788.6862998
+  },
+  "Cadillac|XT5|2018": {
+    "min": 11392,
+    "max": 17394,
+    "url": "https://www.jdpower.com/cars/2018/cadillac/xt5",
+    "lastUpdated": 1779319788.327602
+  },
+  "Cadillac|XT6|2020": {
+    "min": 22797,
+    "max": 28000,
+    "url": "https://www.jdpower.com/cars/2020/cadillac/xt6",
+    "lastUpdated": 1779319788.785015
+  },
+  "Chevrolet|Blazer|2019": {
+    "min": 11077,
+    "max": 21871,
+    "url": "https://www.jdpower.com/cars/2019/chevrolet/blazer",
+    "lastUpdated": 1779319788.79455
+  },
+  "Chevrolet|Blazer|2020": {
+    "min": 11998,
+    "max": 24588,
+    "url": "https://www.jdpower.com/cars/2020/chevrolet/blazer",
+    "lastUpdated": 1779319789.5834901
+  },
+  "Chevrolet|Blazer|2021": {
+    "min": 13321,
+    "max": 27908,
+    "url": "https://www.jdpower.com/cars/2021/chevrolet/blazer",
+    "lastUpdated": 1779319789.5263748
+  },
+  "Chevrolet|Blazer|2022": {
+    "min": 19574,
+    "max": 32622,
+    "url": "https://www.jdpower.com/cars/2022/chevrolet/blazer",
+    "lastUpdated": 1779319790.1453161
+  },
+  "Chevrolet|Blazer|2023": {
+    "min": 20954,
+    "max": 36185,
+    "url": "https://www.jdpower.com/cars/2023/chevrolet/blazer",
+    "lastUpdated": 1779319789.811271
+  },
+  "Chevrolet|Blazer|2024": {
+    "min": 24760,
+    "max": 39539,
+    "url": "https://www.jdpower.com/cars/2024/chevrolet/blazer",
+    "lastUpdated": 1779319790.550997
+  },
+  "Chevrolet|Blazer|2025": {
+    "min": 32085,
+    "max": 50991,
+    "url": "https://www.jdpower.com/cars/2025/chevrolet/blazer",
+    "lastUpdated": 1779319790.741267
+  },
+  "Chevrolet|Bolt ACC|2022": null,
+  "Chevrolet|Bolt ACC|2023": null,
+  "Chevrolet|Bolt EUV LT|2022": null,
+  "Chevrolet|Bolt EUV LT|2023": null,
+  "Chevrolet|Bolt EUV|2022": {
+    "min": 14745,
+    "max": 19782,
+    "url": "https://www.jdpower.com/cars/2022/chevrolet/bolt-euv",
+    "lastUpdated": 1779319791.7412758
+  },
+  "Chevrolet|Bolt EUV|2023": {
+    "min": 15498,
+    "max": 22934,
+    "url": "https://www.jdpower.com/cars/2023/chevrolet/bolt-euv",
+    "lastUpdated": 1779319791.4915981
+  },
+  "Chevrolet|Bolt EV LT|2022": null,
+  "Chevrolet|Bolt EV LT|2023": null,
+  "Chevrolet|Bolt EV|2017": {
+    "min": 6262,
+    "max": 7935,
+    "url": "https://www.jdpower.com/cars/2017/chevrolet/bolt-ev",
+    "lastUpdated": 1779319791.9233038
+  },
+  "Chevrolet|Bolt EV|2018": {
+    "min": 6748,
+    "max": 8187,
+    "url": "https://www.jdpower.com/cars/2018/chevrolet/bolt-ev",
+    "lastUpdated": 1779319791.908082
+  },
+  "Chevrolet|Bolt EV|2019": {
+    "min": 7546,
+    "max": 9096,
+    "url": "https://www.jdpower.com/cars/2019/chevrolet/bolt-ev",
+    "lastUpdated": 1779319792.1586509
+  },
+  "Chevrolet|Bolt EV|2020": {
+    "min": 8493,
+    "max": 10385,
+    "url": "https://www.jdpower.com/cars/2020/chevrolet/bolt-ev",
+    "lastUpdated": 1779319792.2970738
+  },
+  "Chevrolet|Bolt EV|2021": null,
+  "Chevrolet|Bolt EV|2022": {
+    "min": 12202,
+    "max": 15867,
+    "url": "https://www.jdpower.com/cars/2022/chevrolet/bolt-ev",
+    "lastUpdated": 1779319793.3779032
+  },
+  "Chevrolet|Bolt EV|2023": {
+    "min": 13064,
+    "max": 16693,
+    "url": "https://www.jdpower.com/cars/2023/chevrolet/bolt-ev",
+    "lastUpdated": 1779319793.35885
+  },
+  "Chevrolet|Equinox|2019": {
+    "min": 10655,
+    "max": 21230,
+    "url": "https://www.jdpower.com/cars/2019/chevrolet/equinox",
+    "lastUpdated": 1779319794.949997
+  },
+  "Chevrolet|Equinox|2020": {
+    "min": 11850,
+    "max": 21474,
+    "url": "https://www.jdpower.com/cars/2020/chevrolet/equinox",
+    "lastUpdated": 1779319795.657353
+  },
+  "Chevrolet|Equinox|2021": {
+    "min": 13186,
+    "max": 23093,
+    "url": "https://www.jdpower.com/cars/2021/chevrolet/equinox",
+    "lastUpdated": 1779319795.6056142
+  },
+  "Chevrolet|Equinox|2022": {
+    "min": 16356,
+    "max": 26400,
+    "url": "https://www.jdpower.com/cars/2022/chevrolet/equinox",
+    "lastUpdated": 1779319795.793988
+  },
+  "Chevrolet|Malibu Hybrid|2017": null,
+  "Chevrolet|Malibu|2016": {
+    "min": 8691,
+    "max": 11891,
+    "url": "https://www.jdpower.com/cars/2016/chevrolet/malibu",
+    "lastUpdated": 1779319796.526361
+  },
+  "Chevrolet|Malibu|2017": {
+    "min": 9786,
+    "max": 13469,
+    "url": "https://www.jdpower.com/cars/2017/chevrolet/malibu",
+    "lastUpdated": 1779319796.5268102
+  },
+  "Chevrolet|Malibu|2018": {
+    "min": 10641,
+    "max": 16032,
+    "url": "https://www.jdpower.com/cars/2018/chevrolet/malibu",
+    "lastUpdated": 1779319796.527263
+  },
+  "Chevrolet|Malibu|2019": {
+    "min": 11105,
+    "max": 16751,
+    "url": "https://www.jdpower.com/cars/2019/chevrolet/malibu",
+    "lastUpdated": 1779319797.96314
+  },
+  "Chevrolet|Malibu|2020": {
+    "min": 11849,
+    "max": 18272,
+    "url": "https://www.jdpower.com/cars/2020/chevrolet/malibu",
+    "lastUpdated": 1779319797.128343
+  },
+  "Chevrolet|Malibu|2021": {
+    "min": 13201,
+    "max": 20099,
+    "url": "https://www.jdpower.com/cars/2021/chevrolet/malibu",
+    "lastUpdated": 1779319796.690367
+  },
+  "Chevrolet|Malibu|2022": {
+    "min": 15693,
+    "max": 22903,
+    "url": "https://www.jdpower.com/cars/2022/chevrolet/malibu",
+    "lastUpdated": 1779319797.08423
+  },
+  "Chevrolet|Malibu|2023": {
+    "min": 16462,
+    "max": 26031,
+    "url": "https://www.jdpower.com/cars/2023/chevrolet/malibu",
+    "lastUpdated": 1779319798.302334
+  },
+  "Chevrolet|Silverado 1500|2020": {
+    "min": 14913,
+    "max": 41579,
+    "url": "https://www.jdpower.com/cars/2020/chevrolet/silverado-1500",
+    "lastUpdated": 1779319798.4424791
+  },
+  "Chevrolet|Silverado 1500|2021": {
+    "min": 17614,
+    "max": 47325,
+    "url": "https://www.jdpower.com/cars/2021/chevrolet/silverado-1500",
+    "lastUpdated": 1779319799.095948
+  },
+  "Chevrolet|Suburban Premier|2016": null,
+  "Chevrolet|Suburban Premier|2017": null,
+  "Chevrolet|Suburban Premier|2018": null,
+  "Chevrolet|Suburban Premier|2019": null,
+  "Chevrolet|Suburban Premier|2020": null,
+  "Chevrolet|Suburban|2016": {
+    "min": 15281,
+    "max": 30815,
+    "url": "https://www.jdpower.com/cars/2016/chevrolet/suburban",
+    "lastUpdated": 1779319798.57983
+  },
+  "Chevrolet|Suburban|2017": {
+    "min": 16133,
+    "max": 33133,
+    "url": "https://www.jdpower.com/cars/2017/chevrolet/suburban",
+    "lastUpdated": 1779319799.238498
+  },
+  "Chevrolet|Suburban|2018": {
+    "min": 17183,
+    "max": 35560,
+    "url": "https://www.jdpower.com/cars/2018/chevrolet/suburban",
+    "lastUpdated": 1779319799.602884
+  },
+  "Chevrolet|Suburban|2019": {
+    "min": 18477,
+    "max": 44349,
+    "url": "https://www.jdpower.com/cars/2019/chevrolet/suburban",
+    "lastUpdated": 1779319799.651427
+  },
+  "Chevrolet|Suburban|2020": {
+    "min": 19709,
+    "max": 41248,
+    "url": "https://www.jdpower.com/cars/2020/chevrolet/suburban",
+    "lastUpdated": 1779319799.607855
+  },
+  "Chevrolet|TRAX|2024": {
+    "min": 17914,
+    "max": 26334,
+    "url": "https://www.jdpower.com/cars/2024/chevrolet/trax",
+    "lastUpdated": 1779319800.569174
+  },
+  "Chevrolet|Trailblazer|2021": {
+    "min": 14210,
+    "max": 21125,
+    "url": "https://www.jdpower.com/cars/2021/chevrolet/trailblazer",
+    "lastUpdated": 1779319803.908394
+  },
+  "Chevrolet|Trailblazer|2022": {
+    "min": 15345,
+    "max": 23502,
+    "url": "https://www.jdpower.com/cars/2022/chevrolet/trailblazer",
+    "lastUpdated": 1779319804.3676422
+  },
+  "Chevrolet|Volt|2017": {
+    "min": 9679,
+    "max": 12959,
+    "url": "https://www.jdpower.com/cars/2017/chevrolet/volt",
+    "lastUpdated": 1779319805.84224
+  },
+  "Chevrolet|Volt|2018": {
+    "min": 10613,
+    "max": 14243,
+    "url": "https://www.jdpower.com/cars/2018/chevrolet/volt",
+    "lastUpdated": 1779319805.610423
+  },
+  "Chrysler|Pacifica Hybrid|2017": null,
+  "Chrysler|Pacifica Hybrid|2018": null,
+  "Chrysler|Pacifica Hybrid|2019": null,
+  "Chrysler|Pacifica Hybrid|2020": null,
+  "Chrysler|Pacifica Hybrid|2021": null,
+  "Chrysler|Pacifica Hybrid|2022": null,
+  "Chrysler|Pacifica Hybrid|2023": null,
+  "Chrysler|Pacifica Hybrid|2024": null,
+  "Chrysler|Pacifica Hybrid|2025": null,
+  "Chrysler|Pacifica|2017": null,
+  "Chrysler|Pacifica|2018": {
+    "min": 9160,
+    "max": 14603,
+    "url": "https://www.jdpower.com/cars/2018/chrysler/pacifica",
+    "lastUpdated": 1779319806.8089468
+  },
+  "Chrysler|Pacifica|2019": {
+    "min": 10779,
+    "max": 18118,
+    "url": "https://www.jdpower.com/cars/2019/chrysler/pacifica",
+    "lastUpdated": 1779319806.4938638
+  },
+  "Chrysler|Pacifica|2020": {
+    "min": 15071,
+    "max": 24640,
+    "url": "https://www.jdpower.com/cars/2020/chrysler/pacifica",
+    "lastUpdated": 1779319805.782393
+  },
+  "Chrysler|Pacifica|2021": {
+    "min": 18832,
+    "max": 30355,
+    "url": "https://www.jdpower.com/cars/2021/chrysler/pacifica",
+    "lastUpdated": 1779319805.989078
+  },
+  "Chrysler|Pacifica|2022": {
+    "min": 19805,
+    "max": 35842,
+    "url": "https://www.jdpower.com/cars/2022/chrysler/pacifica",
+    "lastUpdated": 1779319806.835498
+  },
+  "Chrysler|Pacifica|2023": {
+    "min": 22078,
+    "max": 41058,
+    "url": "https://www.jdpower.com/cars/2023/chrysler/pacifica",
+    "lastUpdated": 1779319806.835095
+  },
+  "Dodge|Durango|2020": {
+    "min": 15109,
+    "max": 42124,
+    "url": "https://www.jdpower.com/cars/2020/dodge/durango",
+    "lastUpdated": 1779319808.511007
+  },
+  "Dodge|Durango|2021": {
+    "min": 17287,
+    "max": 69474,
+    "url": "https://www.jdpower.com/cars/2021/dodge/durango",
+    "lastUpdated": 1779319808.270655
+  },
+  "Ford|Bronco Sport|2021": {
+    "min": 18208,
+    "max": 28924,
+    "url": "https://www.jdpower.com/cars/2021/ford/bronco-sport",
+    "lastUpdated": 1779319808.404764
+  },
+  "Ford|Bronco Sport|2022": {
+    "min": 18003,
+    "max": 29250,
+    "url": "https://www.jdpower.com/cars/2022/ford/bronco-sport",
+    "lastUpdated": 1779319808.157707
+  },
+  "Ford|Bronco Sport|2023": {
+    "min": 21220,
+    "max": 40052,
+    "url": "https://www.jdpower.com/cars/2023/ford/bronco-sport",
+    "lastUpdated": 1779319808.481083
+  },
+  "Ford|Bronco Sport|2024": {
+    "min": 24981,
+    "max": 36356,
+    "url": "https://www.jdpower.com/cars/2024/ford/bronco-sport",
+    "lastUpdated": 1779319808.921243
+  },
+  "Ford|Edge|2022": {
+    "min": 18491,
+    "max": 32088,
+    "url": "https://www.jdpower.com/cars/2022/ford/edge",
+    "lastUpdated": 1779319809.446314
+  },
+  "Ford|Escape Hybrid|2020": null,
+  "Ford|Escape Hybrid|2021": null,
+  "Ford|Escape Hybrid|2022": null,
+  "Ford|Escape Hybrid|2023": null,
+  "Ford|Escape Hybrid|2024": null,
+  "Ford|Escape Plug-in Hybrid|2020": null,
+  "Ford|Escape Plug-in Hybrid|2021": null,
+  "Ford|Escape Plug-in Hybrid|2022": null,
+  "Ford|Escape Plug-in Hybrid|2023": null,
+  "Ford|Escape Plug-in Hybrid|2024": null,
+  "Ford|Escape|2020": {
+    "min": 10813,
+    "max": 20975,
+    "url": "https://www.jdpower.com/cars/2020/ford/escape",
+    "lastUpdated": 1779319809.770993
+  },
+  "Ford|Escape|2021": {
+    "min": 14280,
+    "max": 24782,
+    "url": "https://www.jdpower.com/cars/2021/ford/escape",
+    "lastUpdated": 1779319810.0728178
+  },
+  "Ford|Escape|2022": {
+    "min": 15812,
+    "max": 29060,
+    "url": "https://www.jdpower.com/cars/2022/ford/escape",
+    "lastUpdated": 1779319809.836461
+  },
+  "Ford|Escape|2023": {
+    "min": 17556,
+    "max": 33246,
+    "url": "https://www.jdpower.com/cars/2023/ford/escape",
+    "lastUpdated": 1779319810.333048
+  },
+  "Ford|Escape|2024": {
+    "min": 20005,
+    "max": 36578,
+    "url": "https://www.jdpower.com/cars/2024/ford/escape",
+    "lastUpdated": 1779319809.955646
+  },
+  "Ford|Expedition|2022": {
+    "min": 31255,
+    "max": 59239,
+    "url": "https://www.jdpower.com/cars/2022/ford/expedition",
+    "lastUpdated": 1779319811.5269508
+  },
+  "Ford|Expedition|2023": {
+    "min": 34102,
+    "max": 66736,
+    "url": "https://www.jdpower.com/cars/2023/ford/expedition",
+    "lastUpdated": 1779319812.046756
+  },
+  "Ford|Expedition|2024": {
+    "min": 38249,
+    "max": 75334,
+    "url": "https://www.jdpower.com/cars/2024/ford/expedition",
+    "lastUpdated": 1779319811.298378
+  },
+  "Ford|Explorer Hybrid|2020": null,
+  "Ford|Explorer Hybrid|2021": null,
+  "Ford|Explorer Hybrid|2022": null,
+  "Ford|Explorer Hybrid|2023": null,
+  "Ford|Explorer Hybrid|2024": null,
+  "Ford|Explorer|2020": {
+    "min": 15640,
+    "max": 30332,
+    "url": "https://www.jdpower.com/cars/2020/ford/explorer",
+    "lastUpdated": 1779319811.89904
+  },
+  "Ford|Explorer|2021": {
+    "min": 16522,
+    "max": 33572,
+    "url": "https://www.jdpower.com/cars/2021/ford/explorer",
+    "lastUpdated": 1779319811.94662
+  },
+  "Ford|Explorer|2022": {
+    "min": 18978,
+    "max": 41026,
+    "url": "https://www.jdpower.com/cars/2022/ford/explorer",
+    "lastUpdated": 1779319812.119363
+  },
+  "Ford|Explorer|2023": {
+    "min": 21360,
+    "max": 45889,
+    "url": "https://www.jdpower.com/cars/2023/ford/explorer",
+    "lastUpdated": 1779319812.2272792
+  },
+  "Ford|Explorer|2024": {
+    "min": 23633,
+    "max": 47823,
+    "url": "https://www.jdpower.com/cars/2024/ford/explorer",
+    "lastUpdated": 1779319812.574511
+  },
+  "Ford|F-150 Hybrid|2021": null,
+  "Ford|F-150 Hybrid|2022": null,
+  "Ford|F-150 Hybrid|2023": null,
+  "Ford|F-150|2021": {
+    "min": 22734,
+    "max": 67890,
+    "url": "https://www.jdpower.com/cars/2021/ford/f-150",
+    "lastUpdated": 1779319814.19435
+  },
+  "Ford|F-150|2022": {
+    "min": 24825,
+    "max": 75377,
+    "url": "https://www.jdpower.com/cars/2022/ford/f-150",
+    "lastUpdated": 1779319814.175144
+  },
+  "Ford|F-150|2023": {
+    "min": 25456,
+    "max": 105925,
+    "url": "https://www.jdpower.com/cars/2023/ford/f-150",
+    "lastUpdated": 1779319814.148005
+  },
+  "Ford|Focus Hybrid|2018": null,
+  "Ford|Focus|2018": {
+    "min": 6774,
+    "max": 28130,
+    "url": "https://www.jdpower.com/cars/2018/ford/focus",
+    "lastUpdated": 1779319815.029243
+  },
+  "Ford|Kuga Hybrid|2020": null,
+  "Ford|Kuga Hybrid|2021": null,
+  "Ford|Kuga Hybrid|2022": null,
+  "Ford|Kuga Hybrid|2023": null,
+  "Ford|Kuga Hybrid|2024": null,
+  "Ford|Kuga Plug-in Hybrid|2020": null,
+  "Ford|Kuga Plug-in Hybrid|2021": null,
+  "Ford|Kuga Plug-in Hybrid|2022": null,
+  "Ford|Kuga Plug-in Hybrid|2023": null,
+  "Ford|Kuga Plug-in Hybrid|2024": null,
+  "Ford|Kuga|2020": null,
+  "Ford|Kuga|2021": null,
+  "Ford|Kuga|2022": null,
+  "Ford|Kuga|2023": null,
+  "Ford|Maverick Hybrid|2022": null,
+  "Ford|Maverick Hybrid|2023": null,
+  "Ford|Maverick Hybrid|2024": null,
+  "Ford|Maverick|2022": {
+    "min": 19488,
+    "max": 29460,
+    "url": "https://www.jdpower.com/cars/2022/ford/maverick",
+    "lastUpdated": 1779319815.771574
+  },
+  "Ford|Maverick|2023": {
+    "min": 20807,
+    "max": 36086,
+    "url": "https://www.jdpower.com/cars/2023/ford/maverick",
+    "lastUpdated": 1779319815.999207
+  },
+  "Ford|Maverick|2024": null,
+  "Ford|Mustang Mach-E|2021": {
+    "min": 17853,
+    "max": 26810,
+    "url": "https://www.jdpower.com/cars/2021/ford/mustang-mach-e",
+    "lastUpdated": 1779319816.240067
+  },
+  "Ford|Mustang Mach-E|2022": {
+    "min": 19793,
+    "max": 33007,
+    "url": "https://www.jdpower.com/cars/2022/ford/mustang-mach-e",
+    "lastUpdated": 1779319816.5810099
+  },
+  "Ford|Mustang Mach-E|2023": {
+    "min": 23018,
+    "max": 39776,
+    "url": "https://www.jdpower.com/cars/2023/ford/mustang-mach-e",
+    "lastUpdated": 1779319816.2883499
+  },
+  "Ford|Mustang Mach-E|2024": {
+    "min": 26681,
+    "max": 41048,
+    "url": "https://www.jdpower.com/cars/2024/ford/mustang-mach-e",
+    "lastUpdated": 1779319816.138561
+  },
+  "Ford|Ranger|2024": {
+    "min": 27065,
+    "max": 60546,
+    "url": "https://www.jdpower.com/cars/2024/ford/ranger",
+    "lastUpdated": 1779319816.769879
+  },
+  "GMC|Acadia|2018": {
+    "min": 9298,
+    "max": 18540,
+    "url": "https://www.jdpower.com/cars/2018/gmc/acadia",
+    "lastUpdated": 1779319817.4161851
+  },
+  "GMC|Sierra 1500|2020": {
+    "min": 17830,
+    "max": 43200,
+    "url": "https://www.jdpower.com/cars/2020/gmc/sierra-1500",
+    "lastUpdated": 1779319817.409622
+  },
+  "GMC|Sierra 1500|2021": {
+    "min": 19377,
+    "max": 47600,
+    "url": "https://www.jdpower.com/cars/2021/gmc/sierra-1500",
+    "lastUpdated": 1779319817.817632
+  },
+  "GMC|Yukon|2019": {
+    "min": 21027,
+    "max": 38412,
+    "url": "https://www.jdpower.com/cars/2019/gmc/yukon",
+    "lastUpdated": 1779319817.495256
+  },
+  "GMC|Yukon|2020": {
+    "min": 22928,
+    "max": 41342,
+    "url": "https://www.jdpower.com/cars/2020/gmc/yukon",
+    "lastUpdated": 1779319817.947274
+  },
+  "Genesis|G70|2018": null,
+  "Genesis|G70|2019": {
+    "min": 14609,
+    "max": 23449,
+    "url": "https://www.jdpower.com/cars/2019/genesis/g70",
+    "lastUpdated": 1779319817.885758
+  },
+  "Genesis|G70|2020": {
+    "min": 16675,
+    "max": 24764,
+    "url": "https://www.jdpower.com/cars/2020/genesis/g70",
+    "lastUpdated": 1779319818.174714
+  },
+  "Genesis|G70|2021": {
+    "min": 19436,
+    "max": 28339,
+    "url": "https://www.jdpower.com/cars/2021/genesis/g70",
+    "lastUpdated": 1779319818.3560162
+  },
+  "Genesis|G70|2022": {
+    "min": 23581,
+    "max": 42508,
+    "url": "https://www.jdpower.com/cars/2022/genesis/g70",
+    "lastUpdated": 1779319818.466374
+  },
+  "Genesis|G70|2023": {
+    "min": 26172,
+    "max": 37942,
+    "url": "https://www.jdpower.com/cars/2023/genesis/g70",
+    "lastUpdated": 1779319818.7522812
+  },
+  "Genesis|G80 (2.5T Advanced Trim, with HDA II)|2024": null,
+  "Genesis|G80|2017": {
+    "min": 13892,
+    "max": 17629,
+    "url": "https://www.jdpower.com/cars/2017/genesis/g80",
+    "lastUpdated": 1779319818.666976
+  },
+  "Genesis|G80|2018": {
+    "min": 18792,
+    "max": 25654,
+    "url": "https://www.jdpower.com/cars/2018/genesis/g80",
+    "lastUpdated": 1779319819.025953
+  },
+  "Genesis|G80|2019": {
+    "min": 19731,
+    "max": 27462,
+    "url": "https://www.jdpower.com/cars/2019/genesis/g80",
+    "lastUpdated": 1779319818.913127
+  },
+  "Genesis|G90|2017": {
+    "min": 14720,
+    "max": 17142,
+    "url": "https://www.jdpower.com/cars/2017/genesis/g90",
+    "lastUpdated": 1779319819.153981
+  },
+  "Genesis|G90|2018": {
+    "min": 17232,
+    "max": 23309,
+    "url": "https://www.jdpower.com/cars/2018/genesis/g90",
+    "lastUpdated": 1779319820.162584
+  },
+  "Genesis|G90|2019": null,
+  "Genesis|G90|2020": {
+    "min": 30186,
+    "max": 37072,
+    "url": "https://www.jdpower.com/cars/2020/genesis/g90",
+    "lastUpdated": 1779319819.706799
+  },
+  "Genesis|GV60 (Advanced Trim)|2023": null,
+  "Genesis|GV60 (Performance Trim)|2022": null,
+  "Genesis|GV60 (Performance Trim)|2023": null,
+  "Genesis|GV70 (2.5T Trim, without HDA II)|2022": null,
+  "Genesis|GV70 (2.5T Trim, without HDA II)|2023": null,
+  "Genesis|GV70 (2.5T Trim, without HDA II)|2024": null,
+  "Genesis|GV70 (3.5T Trim, without HDA II)|2022": null,
+  "Genesis|GV70 (3.5T Trim, without HDA II)|2023": null,
+  "Genesis|GV70 Electrified (Australia Only)|2022": null,
+  "Genesis|GV70 Electrified (with HDA II)|2023": null,
+  "Genesis|GV70 Electrified (with HDA II)|2024": null,
+  "Genesis|GV80|2023": {
+    "min": 36451,
+    "max": 51363,
+    "url": "https://www.jdpower.com/cars/2023/genesis/gv80",
+    "lastUpdated": 1779319820.628035
+  },
+  "Honda|Accord Hybrid|2017": {
+    "min": 12951,
+    "max": 17420,
+    "url": "https://www.jdpower.com/cars/2017/honda/accord-hybrid",
+    "lastUpdated": 1779319822.20498
+  },
+  "Honda|Accord Hybrid|2018": {
+    "min": 15093,
+    "max": 21883,
+    "url": "https://www.jdpower.com/cars/2018/honda/accord-hybrid",
+    "lastUpdated": 1779319822.5388339
+  },
+  "Honda|Accord Hybrid|2019": {
+    "min": 16916,
+    "max": 23365,
+    "url": "https://www.jdpower.com/cars/2019/honda/accord-hybrid",
+    "lastUpdated": 1779319822.5401301
+  },
+  "Honda|Accord Hybrid|2020": {
+    "min": 17911,
+    "max": 25591,
+    "url": "https://www.jdpower.com/cars/2020/honda/accord-hybrid",
+    "lastUpdated": 1779319822.821588
+  },
+  "Honda|Accord Hybrid|2021": {
+    "min": 20038,
+    "max": 27606,
+    "url": "https://www.jdpower.com/cars/2021/honda/accord-hybrid",
+    "lastUpdated": 1779319823.4321449
+  },
+  "Honda|Accord Hybrid|2022": {
+    "min": 20916,
+    "max": 29926,
+    "url": "https://www.jdpower.com/cars/2022/honda/accord-hybrid",
+    "lastUpdated": 1779319823.1112509
+  },
+  "Honda|Accord Hybrid|2023": {
+    "min": 24723,
+    "max": 34882,
+    "url": "https://www.jdpower.com/cars/2023/honda/accord-hybrid",
+    "lastUpdated": 1779319823.396131
+  },
+  "Honda|Accord Hybrid|2024": {
+    "min": 25487,
+    "max": 37138,
+    "url": "https://www.jdpower.com/cars/2024/honda/accord-hybrid",
+    "lastUpdated": 1779319823.479776
+  },
+  "Honda|Accord Hybrid|2025": {
+    "min": 29096,
+    "max": 41470,
+    "url": "https://www.jdpower.com/cars/2025/honda/accord-hybrid",
+    "lastUpdated": 1779319823.485235
+  },
+  "Honda|Accord|2016": {
+    "min": 10507,
+    "max": 16145,
+    "url": "https://www.jdpower.com/cars/2016/honda/accord",
+    "lastUpdated": 1779319820.7719219
+  },
+  "Honda|Accord|2017": {
+    "min": 11202,
+    "max": 18348,
+    "url": "https://www.jdpower.com/cars/2017/honda/accord",
+    "lastUpdated": 1779319820.9574988
+  },
+  "Honda|Accord|2018": {
+    "min": 14324,
+    "max": 21965,
+    "url": "https://www.jdpower.com/cars/2018/honda/accord",
+    "lastUpdated": 1779319820.976342
+  },
+  "Honda|Accord|2019": {
+    "min": 16132,
+    "max": 23919,
+    "url": "https://www.jdpower.com/cars/2019/honda/accord",
+    "lastUpdated": 1779319821.0419352
+  },
+  "Honda|Accord|2020": {
+    "min": 17672,
+    "max": 26062,
+    "url": "https://www.jdpower.com/cars/2020/honda/accord",
+    "lastUpdated": 1779319822.296604
+  },
+  "Honda|Accord|2021": {
+    "min": 19812,
+    "max": 28406,
+    "url": "https://www.jdpower.com/cars/2021/honda/accord",
+    "lastUpdated": 1779319821.338584
+  },
+  "Honda|Accord|2022": {
+    "min": 19890,
+    "max": 31585,
+    "url": "https://www.jdpower.com/cars/2022/honda/accord",
+    "lastUpdated": 1779319821.728958
+  },
+  "Honda|Accord|2023": {
+    "min": 21824,
+    "max": 26795,
+    "url": "https://www.jdpower.com/cars/2023/honda/accord",
+    "lastUpdated": 1779319821.605094
+  },
+  "Honda|Accord|2024": {
+    "min": 23384,
+    "max": 28721,
+    "url": "https://www.jdpower.com/cars/2024/honda/accord",
+    "lastUpdated": 1779319822.696727
+  },
+  "Honda|Accord|2025": {
+    "min": 24299,
+    "max": 32073,
+    "url": "https://www.jdpower.com/cars/2025/honda/accord",
+    "lastUpdated": 1779319821.591224
+  },
+  "Honda|CR-V Hybrid|2017": null,
+  "Honda|CR-V Hybrid|2018": null,
+  "Honda|CR-V Hybrid|2019": null,
+  "Honda|CR-V Hybrid|2020": {
+    "min": 19714,
+    "max": 28923,
+    "url": "https://www.jdpower.com/cars/2020/honda/cr-v-hybrid",
+    "lastUpdated": 1779319826.0854778
+  },
+  "Honda|CR-V Hybrid|2021": null,
+  "Honda|CR-V Hybrid|2022": {
+    "min": 24780,
+    "max": 34923,
+    "url": "https://www.jdpower.com/cars/2022/honda/cr-v-hybrid",
+    "lastUpdated": 1779319826.310605
+  },
+  "Honda|CR-V Hybrid|2023": {
+    "min": 24485,
+    "max": 36933,
+    "url": "https://www.jdpower.com/cars/2023/honda/cr-v-hybrid",
+    "lastUpdated": 1779319827.404843
+  },
+  "Honda|CR-V Hybrid|2024": {
+    "min": 28245,
+    "max": 41094,
+    "url": "https://www.jdpower.com/cars/2024/honda/cr-v-hybrid",
+    "lastUpdated": 1779319826.086478
+  },
+  "Honda|CR-V Hybrid|2025": {
+    "min": 31286,
+    "max": 44654,
+    "url": "https://www.jdpower.com/cars/2025/honda/cr-v-hybrid",
+    "lastUpdated": 1779319827.3104541
+  },
+  "Honda|CR-V Hybrid|2026": {
+    "min": 32134,
+    "max": 44753,
+    "url": "https://www.jdpower.com/cars/2026/honda/cr-v-hybrid",
+    "lastUpdated": 1779319826.270307
+  },
+  "Honda|CR-V|2015": {
+    "min": 10495,
+    "max": 15229,
+    "url": "https://www.jdpower.com/cars/2015/honda/cr-v",
+    "lastUpdated": 1779319823.7444968
+  },
+  "Honda|CR-V|2016": {
+    "min": 11356,
+    "max": 16881,
+    "url": "https://www.jdpower.com/cars/2016/honda/cr-v",
+    "lastUpdated": 1779319824.005378
+  },
+  "Honda|CR-V|2017": {
+    "min": 12887,
+    "max": 18890,
+    "url": "https://www.jdpower.com/cars/2017/honda/cr-v",
+    "lastUpdated": 1779319824.391745
+  },
+  "Honda|CR-V|2018": {
+    "min": 14036,
+    "max": 20564,
+    "url": "https://www.jdpower.com/cars/2018/honda/cr-v",
+    "lastUpdated": 1779319824.661488
+  },
+  "Honda|CR-V|2019": {
+    "min": 16143,
+    "max": 24898,
+    "url": "https://www.jdpower.com/cars/2019/honda/cr-v",
+    "lastUpdated": 1779319824.471354
+  },
+  "Honda|CR-V|2020": {
+    "min": 17939,
+    "max": 27623,
+    "url": "https://www.jdpower.com/cars/2020/honda/cr-v",
+    "lastUpdated": 1779319824.630589
+  },
+  "Honda|CR-V|2021": {
+    "min": 19865,
+    "max": 30470,
+    "url": "https://www.jdpower.com/cars/2021/honda/cr-v",
+    "lastUpdated": 1779319824.695172
+  },
+  "Honda|CR-V|2022": {
+    "min": 20764,
+    "max": 33535,
+    "url": "https://www.jdpower.com/cars/2022/honda/cr-v",
+    "lastUpdated": 1779319825.234889
+  },
+  "Honda|CR-V|2023": {
+    "min": 22335,
+    "max": 33525,
+    "url": "https://www.jdpower.com/cars/2023/honda/cr-v",
+    "lastUpdated": 1779319825.464287
+  },
+  "Honda|CR-V|2024": {
+    "min": 24662,
+    "max": 36672,
+    "url": "https://www.jdpower.com/cars/2024/honda/cr-v",
+    "lastUpdated": 1779319825.0517418
+  },
+  "Honda|CR-V|2025": {
+    "min": 26823,
+    "max": 38451,
+    "url": "https://www.jdpower.com/cars/2025/honda/cr-v",
+    "lastUpdated": 1779319825.286329
+  },
+  "Honda|CR-V|2026": {
+    "min": 28193,
+    "max": 38735,
+    "url": "https://www.jdpower.com/cars/2026/honda/cr-v",
+    "lastUpdated": 1779319825.464011
+  },
+  "Honda|City (Brazil only)|2023": null,
+  "Honda|Civic Hatchback Hybrid (Europe only)|2023": null,
+  "Honda|Civic Hatchback Hybrid|2025": {
+    "min": 27528,
+    "max": 34893,
+    "url": "https://www.jdpower.com/cars/2025/honda/civic-hatchback-hybrid",
+    "lastUpdated": 1779319830.121471
+  },
+  "Honda|Civic Hatchback Hybrid|2026": {
+    "min": 28310,
+    "max": 35996,
+    "url": "https://www.jdpower.com/cars/2026/honda/civic-hatchback-hybrid",
+    "lastUpdated": 1779319830.934433
+  },
+  "Honda|Civic Hatchback|2017": {
+    "min": 12167,
+    "max": 16548,
+    "url": "https://www.jdpower.com/cars/2017/honda/civic-hatchback",
+    "lastUpdated": 1779319829.353177
+  },
+  "Honda|Civic Hatchback|2018": {
+    "min": 13766,
+    "max": 18704,
+    "url": "https://www.jdpower.com/cars/2018/honda/civic-hatchback",
+    "lastUpdated": 1779319829.353494
+  },
+  "Honda|Civic Hatchback|2019": {
+    "min": 14924,
+    "max": 21126,
+    "url": "https://www.jdpower.com/cars/2019/honda/civic-hatchback",
+    "lastUpdated": 1779319830.9334369
+  },
+  "Honda|Civic Hatchback|2020": {
+    "min": 16313,
+    "max": 22156,
+    "url": "https://www.jdpower.com/cars/2020/honda/civic-hatchback",
+    "lastUpdated": 1779319829.771968
+  },
+  "Honda|Civic Hatchback|2021": {
+    "min": 17543,
+    "max": 24448,
+    "url": "https://www.jdpower.com/cars/2021/honda/civic-hatchback",
+    "lastUpdated": 1779319828.975893
+  },
+  "Honda|Civic Hatchback|2022": {
+    "min": 19882,
+    "max": 27725,
+    "url": "https://www.jdpower.com/cars/2022/honda/civic-hatchback",
+    "lastUpdated": 1779319829.7745652
+  },
+  "Honda|Civic Hatchback|2023": {
+    "min": 20583,
+    "max": 30095,
+    "url": "https://www.jdpower.com/cars/2023/honda/civic-hatchback",
+    "lastUpdated": 1779319831.233074
+  },
+  "Honda|Civic Hatchback|2024": {
+    "min": 21112,
+    "max": 33262,
+    "url": "https://www.jdpower.com/cars/2024/honda/civic-hatchback",
+    "lastUpdated": 1779319830.404665
+  },
+  "Honda|Civic Hybrid|2025": null,
+  "Honda|Civic Hybrid|2026": null,
+  "Honda|Civic|2016": {
+    "min": 10719,
+    "max": 14280,
+    "url": "https://www.jdpower.com/cars/2016/honda/civic",
+    "lastUpdated": 1779319827.2891278
+  },
+  "Honda|Civic|2017": {
+    "min": 11743,
+    "max": 16362,
+    "url": "https://www.jdpower.com/cars/2017/honda/civic",
+    "lastUpdated": 1779319827.347743
+  },
+  "Honda|Civic|2018": {
+    "min": 12725,
+    "max": 18385,
+    "url": "https://www.jdpower.com/cars/2018/honda/civic",
+    "lastUpdated": 1779319827.52542
+  },
+  "Honda|Civic|2019": {
+    "min": 13919,
+    "max": 20305,
+    "url": "https://www.jdpower.com/cars/2019/honda/civic",
+    "lastUpdated": 1779319827.155136
+  },
+  "Honda|Civic|2020": {
+    "min": 15741,
+    "max": 21786,
+    "url": "https://www.jdpower.com/cars/2020/honda/civic",
+    "lastUpdated": 1779319827.914714
+  },
+  "Honda|Civic|2021": {
+    "min": 16778,
+    "max": 24025,
+    "url": "https://www.jdpower.com/cars/2021/honda/civic",
+    "lastUpdated": 1779319828.1518269
+  },
+  "Honda|Civic|2022": {
+    "min": 19701,
+    "max": 27414,
+    "url": "https://www.jdpower.com/cars/2022/honda/civic",
+    "lastUpdated": 1779319828.136727
+  },
+  "Honda|Civic|2023": {
+    "min": 20469,
+    "max": 29183,
+    "url": "https://www.jdpower.com/cars/2023/honda/civic",
+    "lastUpdated": 1779319828.112015
+  },
+  "Honda|Civic|2024": {
+    "min": 20500,
+    "max": 32273,
+    "url": "https://www.jdpower.com/cars/2024/honda/civic",
+    "lastUpdated": 1779319828.5015721
+  },
+  "Honda|Clarity|2018": {
+    "min": 16074,
+    "max": 19036,
+    "url": "https://www.jdpower.com/cars/2018/honda/clarity",
+    "lastUpdated": 1779319831.335379
+  },
+  "Honda|Clarity|2019": {
+    "min": 17471,
+    "max": 20677,
+    "url": "https://www.jdpower.com/cars/2019/honda/clarity",
+    "lastUpdated": 1779319831.7545972
+  },
+  "Honda|Clarity|2020": {
+    "min": 19772,
+    "max": 23660,
+    "url": "https://www.jdpower.com/cars/2020/honda/clarity",
+    "lastUpdated": 1779319832.4968
+  },
+  "Honda|Clarity|2021": {
+    "min": 21191,
+    "max": 25606,
+    "url": "https://www.jdpower.com/cars/2021/honda/clarity",
+    "lastUpdated": 1779319832.007622
+  },
+  "Honda|Fit (Taiwan)|2021": null,
+  "Honda|Fit (Taiwan)|2024": null,
+  "Honda|Fit (Taiwan)|2025": null,
+  "Honda|Fit|2018": {
+    "min": 10948,
+    "max": 13853,
+    "url": "https://www.jdpower.com/cars/2018/honda/fit",
+    "lastUpdated": 1779319832.6062331
+  },
+  "Honda|Fit|2019": {
+    "min": 11887,
+    "max": 15919,
+    "url": "https://www.jdpower.com/cars/2019/honda/fit",
+    "lastUpdated": 1779319832.558115
+  },
+  "Honda|Fit|2020": {
+    "min": 13404,
+    "max": 18114,
+    "url": "https://www.jdpower.com/cars/2020/honda/fit",
+    "lastUpdated": 1779319832.497798
+  },
+  "Honda|Freed|2020": null,
+  "Honda|HR-V|2019": {
+    "min": 12757,
+    "max": 18905,
+    "url": "https://www.jdpower.com/cars/2019/honda/hr-v",
+    "lastUpdated": 1779319833.291538
+  },
+  "Honda|HR-V|2020": {
+    "min": 14454,
+    "max": 20285,
+    "url": "https://www.jdpower.com/cars/2020/honda/hr-v",
+    "lastUpdated": 1779319833.30915
+  },
+  "Honda|HR-V|2021": {
+    "min": 16365,
+    "max": 23497,
+    "url": "https://www.jdpower.com/cars/2021/honda/hr-v",
+    "lastUpdated": 1779319833.664002
+  },
+  "Honda|HR-V|2022": {
+    "min": 17930,
+    "max": 24401,
+    "url": "https://www.jdpower.com/cars/2022/honda/hr-v",
+    "lastUpdated": 1779319833.375351
+  },
+  "Honda|HR-V|2023": {
+    "min": 20185,
+    "max": 29058,
+    "url": "https://www.jdpower.com/cars/2023/honda/hr-v",
+    "lastUpdated": 1779319833.7335548
+  },
+  "Honda|HR-V|2024": {
+    "min": 22182,
+    "max": 32064,
+    "url": "https://www.jdpower.com/cars/2024/honda/hr-v",
+    "lastUpdated": 1779319833.440305
+  },
+  "Honda|HR-V|2025": {
+    "min": 22622,
+    "max": 33312,
+    "url": "https://www.jdpower.com/cars/2025/honda/hr-v",
+    "lastUpdated": 1779319834.264143
+  },
+  "Honda|Insight|2019": {
+    "min": 13761,
+    "max": 18409,
+    "url": "https://www.jdpower.com/cars/2019/honda/insight",
+    "lastUpdated": 1779319834.190069
+  },
+  "Honda|Insight|2020": {
+    "min": 15513,
+    "max": 20397,
+    "url": "https://www.jdpower.com/cars/2020/honda/insight",
+    "lastUpdated": 1779319834.088892
+  },
+  "Honda|Insight|2021": {
+    "min": 16847,
+    "max": 22733,
+    "url": "https://www.jdpower.com/cars/2021/honda/insight",
+    "lastUpdated": 1779319834.449
+  },
+  "Honda|Insight|2022": {
+    "min": 19274,
+    "max": 24842,
+    "url": "https://www.jdpower.com/cars/2022/honda/insight",
+    "lastUpdated": 1779319834.620262
+  },
+  "Honda|Inspire|2018": null,
+  "Honda|N-Box|2018": null,
+  "Honda|Odyssey (Singapore)|2021": null,
+  "Honda|Odyssey (Taiwan)|2018": null,
+  "Honda|Odyssey (Taiwan)|2019": null,
+  "Honda|Odyssey|2018": {
+    "min": 13518,
+    "max": 22560,
+    "url": "https://www.jdpower.com/cars/2018/honda/odyssey",
+    "lastUpdated": 1779319834.929245
+  },
+  "Honda|Odyssey|2019": {
+    "min": 16136,
+    "max": 28676,
+    "url": "https://www.jdpower.com/cars/2019/honda/odyssey",
+    "lastUpdated": 1779319834.8105888
+  },
+  "Honda|Odyssey|2020": {
+    "min": 17791,
+    "max": 30690,
+    "url": "https://www.jdpower.com/cars/2020/honda/odyssey",
+    "lastUpdated": 1779319835.954911
+  },
+  "Honda|Odyssey|2021": {
+    "min": 20933,
+    "max": 34717,
+    "url": "https://www.jdpower.com/cars/2021/honda/odyssey",
+    "lastUpdated": 1779319835.657252
+  },
+  "Honda|Odyssey|2022": {
+    "min": 23727,
+    "max": 37326,
+    "url": "https://www.jdpower.com/cars/2022/honda/odyssey",
+    "lastUpdated": 1779319835.838921
+  },
+  "Honda|Odyssey|2023": {
+    "min": 27482,
+    "max": 41879,
+    "url": "https://www.jdpower.com/cars/2023/honda/odyssey",
+    "lastUpdated": 1779319836.001205
+  },
+  "Honda|Odyssey|2024": {
+    "min": 30225,
+    "max": 47402,
+    "url": "https://www.jdpower.com/cars/2024/honda/odyssey",
+    "lastUpdated": 1779319835.918736
+  },
+  "Honda|Odyssey|2025": {
+    "min": 34193,
+    "max": 50896,
+    "url": "https://www.jdpower.com/cars/2025/honda/odyssey",
+    "lastUpdated": 1779319836.191489
+  },
+  "Honda|Odyssey|2026": {
+    "min": 38191,
+    "max": 53721,
+    "url": "https://www.jdpower.com/cars/2026/honda/odyssey",
+    "lastUpdated": 1779319836.269822
+  },
+  "Honda|Passport|2019": {
+    "min": 14894,
+    "max": 23166,
+    "url": "https://www.jdpower.com/cars/2019/honda/passport",
+    "lastUpdated": 1779319836.740213
+  },
+  "Honda|Passport|2020": {
+    "min": 17329,
+    "max": 26562,
+    "url": "https://www.jdpower.com/cars/2020/honda/passport",
+    "lastUpdated": 1779319836.905736
+  },
+  "Honda|Passport|2021": {
+    "min": 19375,
+    "max": 28299,
+    "url": "https://www.jdpower.com/cars/2021/honda/passport",
+    "lastUpdated": 1779319839.3462038
+  },
+  "Honda|Passport|2022": {
+    "min": 24260,
+    "max": 34682,
+    "url": "https://www.jdpower.com/cars/2022/honda/passport",
+    "lastUpdated": 1779319836.8914828
+  },
+  "Honda|Passport|2023": {
+    "min": 28885,
+    "max": 39510,
+    "url": "https://www.jdpower.com/cars/2023/honda/passport",
+    "lastUpdated": 1779319837.020729
+  },
+  "Honda|Passport|2024": {
+    "min": 30731,
+    "max": 42673,
+    "url": "https://www.jdpower.com/cars/2024/honda/passport",
+    "lastUpdated": 1779319837.248977
+  },
+  "Honda|Passport|2025": {
+    "min": 37270,
+    "max": 50942,
+    "url": "https://www.jdpower.com/cars/2025/honda/passport",
+    "lastUpdated": 1779319838.168088
+  },
+  "Honda|Passport|2026": {
+    "min": 40961,
+    "max": 54686,
+    "url": "https://www.jdpower.com/cars/2026/honda/passport",
+    "lastUpdated": 1779319838.475326
+  },
+  "Honda|Pilot|2016": {
+    "min": 9398,
+    "max": 15330,
+    "url": "https://www.jdpower.com/cars/2016/honda/pilot",
+    "lastUpdated": 1779319838.64673
+  },
+  "Honda|Pilot|2017": {
+    "min": 10419,
+    "max": 17740,
+    "url": "https://www.jdpower.com/cars/2017/honda/pilot",
+    "lastUpdated": 1779319838.642536
+  },
+  "Honda|Pilot|2018": {
+    "min": 11564,
+    "max": 21391,
+    "url": "https://www.jdpower.com/cars/2018/honda/pilot",
+    "lastUpdated": 1779319838.7908428
+  },
+  "Honda|Pilot|2019": {
+    "min": 13682,
+    "max": 24807,
+    "url": "https://www.jdpower.com/cars/2019/honda/pilot",
+    "lastUpdated": 1779319839.148194
+  },
+  "Honda|Pilot|2020": {
+    "min": 15871,
+    "max": 28132,
+    "url": "https://www.jdpower.com/cars/2020/honda/pilot",
+    "lastUpdated": 1779319839.83509
+  },
+  "Honda|Pilot|2021": {
+    "min": 17759,
+    "max": 31320,
+    "url": "https://www.jdpower.com/cars/2021/honda/pilot",
+    "lastUpdated": 1779319839.415349
+  },
+  "Honda|Pilot|2022": {
+    "min": 22712,
+    "max": 37227,
+    "url": "https://www.jdpower.com/cars/2022/honda/pilot",
+    "lastUpdated": 1779319839.364817
+  },
+  "Honda|Pilot|2023": {
+    "min": 25438,
+    "max": 45804,
+    "url": "https://www.jdpower.com/cars/2023/honda/pilot",
+    "lastUpdated": 1779319839.8687549
+  },
+  "Honda|Pilot|2024": {
+    "min": 27899,
+    "max": 48262,
+    "url": "https://www.jdpower.com/cars/2024/honda/pilot",
+    "lastUpdated": 1779319839.958405
+  },
+  "Honda|Pilot|2025": {
+    "min": 35387,
+    "max": 56392,
+    "url": "https://www.jdpower.com/cars/2025/honda/pilot",
+    "lastUpdated": 1779319840.177917
+  },
+  "Honda|Pilot|2026": {
+    "min": 38518,
+    "max": 57053,
+    "url": "https://www.jdpower.com/cars/2026/honda/pilot",
+    "lastUpdated": 1779319840.1973062
+  },
+  "Honda|Prelude|2026": {
+    "min": 39044,
+    "max": 47454,
+    "url": "https://www.jdpower.com/cars/2026/honda/prelude",
+    "lastUpdated": 1779319840.4049401
+  },
+  "Honda|Prologue|2024": {
+    "min": 19618,
+    "max": 29598,
+    "url": "https://www.jdpower.com/cars/2024/honda/prologue",
+    "lastUpdated": 1779319840.5975208
+  },
+  "Honda|Prologue|2025": {
+    "min": 31968,
+    "max": 54257,
+    "url": "https://www.jdpower.com/cars/2025/honda/prologue",
+    "lastUpdated": 1779319842.4657652
+  },
+  "Honda|Ridgeline|2017": {
+    "min": 15471,
+    "max": 21265,
+    "url": "https://www.jdpower.com/cars/2017/honda/ridgeline",
+    "lastUpdated": 1779319840.9104698
+  },
+  "Honda|Ridgeline|2018": {
+    "min": 16199,
+    "max": 25149,
+    "url": "https://www.jdpower.com/cars/2018/honda/ridgeline",
+    "lastUpdated": 1779319840.910274
+  },
+  "Honda|Ridgeline|2019": {
+    "min": 18589,
+    "max": 28769,
+    "url": "https://www.jdpower.com/cars/2019/honda/ridgeline",
+    "lastUpdated": 1779319841.2094998
+  },
+  "Honda|Ridgeline|2020": {
+    "min": 21359,
+    "max": 30386,
+    "url": "https://www.jdpower.com/cars/2020/honda/ridgeline",
+    "lastUpdated": 1779319841.264433
+  },
+  "Honda|Ridgeline|2021": {
+    "min": 25625,
+    "max": 33748,
+    "url": "https://www.jdpower.com/cars/2021/honda/ridgeline",
+    "lastUpdated": 1779319841.5220811
+  },
+  "Honda|Ridgeline|2022": {
+    "min": 25678,
+    "max": 36646,
+    "url": "https://www.jdpower.com/cars/2022/honda/ridgeline",
+    "lastUpdated": 1779319841.955095
+  },
+  "Honda|Ridgeline|2023": {
+    "min": 28509,
+    "max": 40229,
+    "url": "https://www.jdpower.com/cars/2023/honda/ridgeline",
+    "lastUpdated": 1779319841.693408
+  },
+  "Honda|Ridgeline|2024": {
+    "min": 30219,
+    "max": 42883,
+    "url": "https://www.jdpower.com/cars/2024/honda/ridgeline",
+    "lastUpdated": 1779319843.1283252
+  },
+  "Honda|Ridgeline|2025": {
+    "min": 32724,
+    "max": 46716,
+    "url": "https://www.jdpower.com/cars/2025/honda/ridgeline",
+    "lastUpdated": 1779319842.256355
+  },
+  "Honda|e|2020": null,
+  "Hyundai|Azera Hybrid|2019": null,
+  "Hyundai|Azera Hybrid|2020": null,
+  "Hyundai|Azera|2022": null,
+  "Hyundai|Bayon|2021": null,
+  "Hyundai|Custin|2023": null,
+  "Hyundai|Elantra GT|2017": {
+    "min": 7710,
+    "max": 8955,
+    "url": "https://www.jdpower.com/cars/2017/hyundai/elantra-gt",
+    "lastUpdated": 1779319844.216358
+  },
+  "Hyundai|Elantra GT|2018": {
+    "min": 8690,
+    "max": 11544,
+    "url": "https://www.jdpower.com/cars/2018/hyundai/elantra-gt",
+    "lastUpdated": 1779319844.230398
+  },
+  "Hyundai|Elantra GT|2019": {
+    "min": 10102,
+    "max": 12828,
+    "url": "https://www.jdpower.com/cars/2019/hyundai/elantra-gt",
+    "lastUpdated": 1779319844.262126
+  },
+  "Hyundai|Elantra GT|2020": {
+    "min": 11401,
+    "max": 14489,
+    "url": "https://www.jdpower.com/cars/2020/hyundai/elantra-gt",
+    "lastUpdated": 1779319844.3191092
+  },
+  "Hyundai|Elantra Hybrid|2021": {
+    "min": 14756,
+    "max": 20382,
+    "url": "https://www.jdpower.com/cars/2021/hyundai/elantra-hybrid",
+    "lastUpdated": 1779319844.3942258
+  },
+  "Hyundai|Elantra Hybrid|2022": {
+    "min": 15449,
+    "max": 22528,
+    "url": "https://www.jdpower.com/cars/2022/hyundai/elantra-hybrid",
+    "lastUpdated": 1779319844.842462
+  },
+  "Hyundai|Elantra Hybrid|2023": {
+    "min": 17420,
+    "max": 23690,
+    "url": "https://www.jdpower.com/cars/2023/hyundai/elantra-hybrid",
+    "lastUpdated": 1779319845.426683
+  },
+  "Hyundai|Elantra|2017": {
+    "min": 7474,
+    "max": 9627,
+    "url": "https://www.jdpower.com/cars/2017/hyundai/elantra",
+    "lastUpdated": 1779319842.8241138
+  },
+  "Hyundai|Elantra|2018": {
+    "min": 8041,
+    "max": 11117,
+    "url": "https://www.jdpower.com/cars/2018/hyundai/elantra",
+    "lastUpdated": 1779319842.8832152
+  },
+  "Hyundai|Elantra|2019": {
+    "min": 9048,
+    "max": 12378,
+    "url": "https://www.jdpower.com/cars/2019/hyundai/elantra",
+    "lastUpdated": 1779319843.034115
+  },
+  "Hyundai|Elantra|2021": {
+    "min": 12363,
+    "max": 18668,
+    "url": "https://www.jdpower.com/cars/2021/hyundai/elantra",
+    "lastUpdated": 1779319843.0243762
+  },
+  "Hyundai|Elantra|2022": {
+    "min": 14872,
+    "max": 20867,
+    "url": "https://www.jdpower.com/cars/2022/hyundai/elantra",
+    "lastUpdated": 1779319843.691453
+  },
+  "Hyundai|Elantra|2023": {
+    "min": 15955,
+    "max": 23745,
+    "url": "https://www.jdpower.com/cars/2023/hyundai/elantra",
+    "lastUpdated": 1779319843.537044
+  },
+  "Hyundai|Genesis|2015": {
+    "min": 7821,
+    "max": 11399,
+    "url": "https://www.jdpower.com/cars/2015/hyundai/genesis",
+    "lastUpdated": 1779319845.61267
+  },
+  "Hyundai|Genesis|2016": {
+    "min": 11825,
+    "max": 15619,
+    "url": "https://www.jdpower.com/cars/2016/hyundai/genesis",
+    "lastUpdated": 1779319845.09165
+  },
+  "Hyundai|Ioniq 5 (Non-US only)|2022": null,
+  "Hyundai|Ioniq 5 (Non-US only)|2023": null,
+  "Hyundai|Ioniq 5 (Non-US only)|2024": null,
+  "Hyundai|Ioniq 5 (Southeast Asia and Europe only)|2022": null,
+  "Hyundai|Ioniq 5 (Southeast Asia and Europe only)|2023": null,
+  "Hyundai|Ioniq 5 (Southeast Asia and Europe only)|2024": null,
+  "Hyundai|Ioniq 5 (with HDA II)|2022": null,
+  "Hyundai|Ioniq 5 (with HDA II)|2023": null,
+  "Hyundai|Ioniq 5 (with HDA II)|2024": null,
+  "Hyundai|Ioniq 5 (without HDA II)|2022": null,
+  "Hyundai|Ioniq 5 (without HDA II)|2023": null,
+  "Hyundai|Ioniq 5 (without HDA II)|2024": null,
+  "Hyundai|Ioniq 6 (with HDA II)|2023": null,
+  "Hyundai|Ioniq 6 (with HDA II)|2024": null,
+  "Hyundai|Ioniq 6 (without HDA II)|2023": null,
+  "Hyundai|Ioniq 6 (without HDA II)|2024": null,
+  "Hyundai|Ioniq Electric|2019": {
+    "min": 6265,
+    "max": 8305,
+    "url": "https://www.jdpower.com/cars/2019/hyundai/ioniq-electric",
+    "lastUpdated": 1779319846.8151412
+  },
+  "Hyundai|Ioniq Electric|2020": {
+    "min": 6991,
+    "max": 8896,
+    "url": "https://www.jdpower.com/cars/2020/hyundai/ioniq-electric",
+    "lastUpdated": 1779319846.6539981
+  },
+  "Hyundai|Ioniq Hybrid|2017": {
+    "min": 8263,
+    "max": 11217,
+    "url": "https://www.jdpower.com/cars/2017/hyundai/ioniq-hybrid",
+    "lastUpdated": 1779319846.7069051
+  },
+  "Hyundai|Ioniq Hybrid|2018": {
+    "min": 9335,
+    "max": 12626,
+    "url": "https://www.jdpower.com/cars/2018/hyundai/ioniq-hybrid",
+    "lastUpdated": 1779319847.3097951
+  },
+  "Hyundai|Ioniq Hybrid|2019": {
+    "min": 9350,
+    "max": 15744,
+    "url": "https://www.jdpower.com/cars/2019/hyundai/ioniq-hybrid",
+    "lastUpdated": 1779319847.310081
+  },
+  "Hyundai|Ioniq Hybrid|2020": {
+    "min": 11412,
+    "max": 17949,
+    "url": "https://www.jdpower.com/cars/2020/hyundai/ioniq-hybrid",
+    "lastUpdated": 1779319846.67309
+  },
+  "Hyundai|Ioniq Hybrid|2021": {
+    "min": 13646,
+    "max": 20398,
+    "url": "https://www.jdpower.com/cars/2021/hyundai/ioniq-hybrid",
+    "lastUpdated": 1779319848.022041
+  },
+  "Hyundai|Ioniq Hybrid|2022": {
+    "min": 15824,
+    "max": 22405,
+    "url": "https://www.jdpower.com/cars/2022/hyundai/ioniq-hybrid",
+    "lastUpdated": 1779319847.416221
+  },
+  "Hyundai|Ioniq Plug-in Hybrid|2019": {
+    "min": 12116,
+    "max": 16975,
+    "url": "https://www.jdpower.com/cars/2019/hyundai/ioniq-plug-in-hybrid",
+    "lastUpdated": 1779319847.466007
+  },
+  "Hyundai|Ioniq Plug-in Hybrid|2020": {
+    "min": 13814,
+    "max": 19888,
+    "url": "https://www.jdpower.com/cars/2020/hyundai/ioniq-plug-in-hybrid",
+    "lastUpdated": 1779319848.2274282
+  },
+  "Hyundai|Ioniq Plug-in Hybrid|2021": {
+    "min": 15948,
+    "max": 22366,
+    "url": "https://www.jdpower.com/cars/2021/hyundai/ioniq-plug-in-hybrid",
+    "lastUpdated": 1779319848.045873
+  },
+  "Hyundai|Ioniq Plug-in Hybrid|2022": {
+    "min": 17711,
+    "max": 24812,
+    "url": "https://www.jdpower.com/cars/2022/hyundai/ioniq-plug-in-hybrid",
+    "lastUpdated": 1779319848.255677
+  },
+  "Hyundai|Kona Electric (with HDA II, Korea only)|2023": null,
+  "Hyundai|Kona Electric|2018": null,
+  "Hyundai|Kona Electric|2019": {
+    "min": 9620,
+    "max": 13018,
+    "url": "https://www.jdpower.com/cars/2019/hyundai/kona-electric",
+    "lastUpdated": 1779319849.514549
+  },
+  "Hyundai|Kona Electric|2020": {
+    "min": 10809,
+    "max": 14424,
+    "url": "https://www.jdpower.com/cars/2020/hyundai/kona-electric",
+    "lastUpdated": 1779319849.827682
+  },
+  "Hyundai|Kona Electric|2021": {
+    "min": 11484,
+    "max": 15561,
+    "url": "https://www.jdpower.com/cars/2021/hyundai/kona-electric",
+    "lastUpdated": 1779319850.366092
+  },
+  "Hyundai|Kona Electric|2022": {
+    "min": 17674,
+    "max": 21781,
+    "url": "https://www.jdpower.com/cars/2022/hyundai/kona-electric",
+    "lastUpdated": 1779319849.848313
+  },
+  "Hyundai|Kona Electric|2023": null,
+  "Hyundai|Kona Hybrid|2020": null,
+  "Hyundai|Kona|2019": {
+    "min": 10661,
+    "max": 19831,
+    "url": "https://www.jdpower.com/cars/2019/hyundai/kona",
+    "lastUpdated": 1779319848.107074
+  },
+  "Hyundai|Kona|2020": {
+    "min": 11492,
+    "max": 19597,
+    "url": "https://www.jdpower.com/cars/2020/hyundai/kona",
+    "lastUpdated": 1779319849.276574
+  },
+  "Hyundai|Kona|2022": {
+    "min": 16091,
+    "max": 23616,
+    "url": "https://www.jdpower.com/cars/2022/hyundai/kona",
+    "lastUpdated": 1779319849.309459
+  },
+  "Hyundai|Kona|2023": {
+    "min": 17309,
+    "max": 28234,
+    "url": "https://www.jdpower.com/cars/2023/hyundai/kona",
+    "lastUpdated": 1779319848.905369
+  },
+  "Hyundai|Nexo|2021": {
+    "min": 7183,
+    "max": 8762,
+    "url": "https://www.jdpower.com/cars/2021/hyundai/nexo",
+    "lastUpdated": 1779319850.845118
+  },
+  "Hyundai|Palisade (without HDA II)|2023": null,
+  "Hyundai|Palisade (without HDA II)|2024": null,
+  "Hyundai|Palisade (without HDA II)|2025": null,
+  "Hyundai|Palisade|2020": {
+    "min": 16109,
+    "max": 28498,
+    "url": "https://www.jdpower.com/cars/2020/hyundai/palisade",
+    "lastUpdated": 1779319850.388395
+  },
+  "Hyundai|Palisade|2021": {
+    "min": 18913,
+    "max": 34215,
+    "url": "https://www.jdpower.com/cars/2021/hyundai/palisade",
+    "lastUpdated": 1779319850.411319
+  },
+  "Hyundai|Palisade|2022": {
+    "min": 21459,
+    "max": 36323,
+    "url": "https://www.jdpower.com/cars/2022/hyundai/palisade",
+    "lastUpdated": 1779319851.1482701
+  },
+  "Hyundai|Palisade|2023": {
+    "min": 22857,
+    "max": 40583,
+    "url": "https://www.jdpower.com/cars/2023/hyundai/palisade",
+    "lastUpdated": 1779319850.8731341
+  },
+  "Hyundai|Palisade|2024": {
+    "min": 26166,
+    "max": 43772,
+    "url": "https://www.jdpower.com/cars/2024/hyundai/palisade",
+    "lastUpdated": 1779319851.230675
+  },
+  "Hyundai|Santa Cruz|2022": {
+    "min": 17026,
+    "max": 29173,
+    "url": "https://www.jdpower.com/cars/2022/hyundai/santa-cruz",
+    "lastUpdated": 1779319851.41167
+  },
+  "Hyundai|Santa Cruz|2023": {
+    "min": 19121,
+    "max": 33379,
+    "url": "https://www.jdpower.com/cars/2023/hyundai/santa-cruz",
+    "lastUpdated": 1779319851.6996
+  },
+  "Hyundai|Santa Cruz|2024": {
+    "min": 20160,
+    "max": 37602,
+    "url": "https://www.jdpower.com/cars/2024/hyundai/santa-cruz",
+    "lastUpdated": 1779319851.623913
+  },
+  "Hyundai|Santa Fe Hybrid|2022": {
+    "min": 20919,
+    "max": 28038,
+    "url": "https://www.jdpower.com/cars/2022/hyundai/santa-fe-hybrid",
+    "lastUpdated": 1779319852.474435
+  },
+  "Hyundai|Santa Fe Hybrid|2023": {
+    "min": 22180,
+    "max": 30956,
+    "url": "https://www.jdpower.com/cars/2023/hyundai/santa-fe-hybrid",
+    "lastUpdated": 1779319852.57712
+  },
+  "Hyundai|Santa Fe Plug-in Hybrid|2022": {
+    "min": 22721,
+    "max": 29626,
+    "url": "https://www.jdpower.com/cars/2022/hyundai/santa-fe-plug-in-hybrid",
+    "lastUpdated": 1779319852.977918
+  },
+  "Hyundai|Santa Fe Plug-in Hybrid|2023": {
+    "min": 24578,
+    "max": 32658,
+    "url": "https://www.jdpower.com/cars/2023/hyundai/santa-fe-plug-in-hybrid",
+    "lastUpdated": 1779319853.252063
+  },
+  "Hyundai|Santa Fe|2019": {
+    "min": 11633,
+    "max": 19594,
+    "url": "https://www.jdpower.com/cars/2019/hyundai/santa-fe",
+    "lastUpdated": 1779319851.594659
+  },
+  "Hyundai|Santa Fe|2020": {
+    "min": 12830,
+    "max": 20306,
+    "url": "https://www.jdpower.com/cars/2020/hyundai/santa-fe",
+    "lastUpdated": 1779319851.9029288
+  },
+  "Hyundai|Santa Fe|2021": {
+    "min": 15451,
+    "max": 26884,
+    "url": "https://www.jdpower.com/cars/2021/hyundai/santa-fe",
+    "lastUpdated": 1779319852.203851
+  },
+  "Hyundai|Santa Fe|2022": {
+    "min": 17012,
+    "max": 30331,
+    "url": "https://www.jdpower.com/cars/2022/hyundai/santa-fe",
+    "lastUpdated": 1779319852.730299
+  },
+  "Hyundai|Santa Fe|2023": {
+    "min": 19318,
+    "max": 32983,
+    "url": "https://www.jdpower.com/cars/2023/hyundai/santa-fe",
+    "lastUpdated": 1779319852.277536
+  },
+  "Hyundai|Sonata Hybrid|2020": {
+    "min": 14806,
+    "max": 21030,
+    "url": "https://www.jdpower.com/cars/2020/hyundai/sonata-hybrid",
+    "lastUpdated": 1779319854.3827589
+  },
+  "Hyundai|Sonata Hybrid|2021": {
+    "min": 16962,
+    "max": 23046,
+    "url": "https://www.jdpower.com/cars/2021/hyundai/sonata-hybrid",
+    "lastUpdated": 1779319854.1930208
+  },
+  "Hyundai|Sonata Hybrid|2022": null,
+  "Hyundai|Sonata Hybrid|2023": {
+    "min": 20971,
+    "max": 29983,
+    "url": "https://www.jdpower.com/cars/2023/hyundai/sonata-hybrid",
+    "lastUpdated": 1779319854.409139
+  },
+  "Hyundai|Sonata|2018": {
+    "min": 9615,
+    "max": 14290,
+    "url": "https://www.jdpower.com/cars/2018/hyundai/sonata",
+    "lastUpdated": 1779319853.647261
+  },
+  "Hyundai|Sonata|2019": {
+    "min": 10272,
+    "max": 15848,
+    "url": "https://www.jdpower.com/cars/2019/hyundai/sonata",
+    "lastUpdated": 1779319853.2714748
+  },
+  "Hyundai|Sonata|2020": {
+    "min": 12455,
+    "max": 19342,
+    "url": "https://www.jdpower.com/cars/2020/hyundai/sonata",
+    "lastUpdated": 1779319853.505546
+  },
+  "Hyundai|Sonata|2021": {
+    "min": 14694,
+    "max": 22098,
+    "url": "https://www.jdpower.com/cars/2021/hyundai/sonata",
+    "lastUpdated": 1779319853.727583
+  },
+  "Hyundai|Sonata|2022": {
+    "min": 15506,
+    "max": 25918,
+    "url": "https://www.jdpower.com/cars/2022/hyundai/sonata",
+    "lastUpdated": 1779319854.044706
+  },
+  "Hyundai|Sonata|2023": {
+    "min": 17594,
+    "max": 28244,
+    "url": "https://www.jdpower.com/cars/2023/hyundai/sonata",
+    "lastUpdated": 1779319855.4111
+  },
+  "Hyundai|Staria|2023": null,
+  "Hyundai|Tucson Diesel|2019": null,
+  "Hyundai|Tucson Hybrid|2022": {
+    "min": 19984,
+    "max": 28892,
+    "url": "https://www.jdpower.com/cars/2022/hyundai/tucson-hybrid",
+    "lastUpdated": 1779319855.595052
+  },
+  "Hyundai|Tucson Hybrid|2023": {
+    "min": 24301,
+    "max": 34248,
+    "url": "https://www.jdpower.com/cars/2023/hyundai/tucson-hybrid",
+    "lastUpdated": 1779319855.405248
+  },
+  "Hyundai|Tucson Hybrid|2024": {
+    "min": 25741,
+    "max": 38971,
+    "url": "https://www.jdpower.com/cars/2024/hyundai/tucson-hybrid",
+    "lastUpdated": 1779319855.415167
+  },
+  "Hyundai|Tucson Plug-in Hybrid|2024": {
+    "min": 27903,
+    "max": 39737,
+    "url": "https://www.jdpower.com/cars/2024/hyundai/tucson-plug-in-hybrid",
+    "lastUpdated": 1779319855.809218
+  },
+  "Hyundai|Tucson|2021": {
+    "min": 15137,
+    "max": 25792,
+    "url": "https://www.jdpower.com/cars/2021/hyundai/tucson",
+    "lastUpdated": 1779319854.737705
+  },
+  "Hyundai|Tucson|2022": {
+    "min": 16212,
+    "max": 28378,
+    "url": "https://www.jdpower.com/cars/2022/hyundai/tucson",
+    "lastUpdated": 1779319854.727315
+  },
+  "Hyundai|Tucson|2023": {
+    "min": 18800,
+    "max": 30561,
+    "url": "https://www.jdpower.com/cars/2023/hyundai/tucson",
+    "lastUpdated": 1779319854.83289
+  },
+  "Hyundai|Tucson|2024": null,
+  "Hyundai|Veloster|2019": {
+    "min": 7834,
+    "max": 15135,
+    "url": "https://www.jdpower.com/cars/2019/hyundai/veloster",
+    "lastUpdated": 1779319856.218323
+  },
+  "Hyundai|Veloster|2020": {
+    "min": 9961,
+    "max": 16160,
+    "url": "https://www.jdpower.com/cars/2020/hyundai/veloster",
+    "lastUpdated": 1779319858.591722
+  },
+  "Hyundai|i30|2017": null,
+  "Hyundai|i30|2018": null,
+  "Hyundai|i30|2019": null,
+  "Jeep|Cherokee|2019": {
+    "min": 12200,
+    "max": 21655,
+    "url": "https://www.jdpower.com/cars/2019/jeep/cherokee",
+    "lastUpdated": 1779319856.647242
+  },
+  "Jeep|Cherokee|2020": {
+    "min": 13658,
+    "max": 24219,
+    "url": "https://www.jdpower.com/cars/2020/jeep/cherokee",
+    "lastUpdated": 1779319856.616388
+  },
+  "Jeep|Cherokee|2021": {
+    "min": 14830,
+    "max": 24321,
+    "url": "https://www.jdpower.com/cars/2021/jeep/cherokee",
+    "lastUpdated": 1779319856.503186
+  },
+  "Jeep|Cherokee|2022": {
+    "min": 18635,
+    "max": 29027,
+    "url": "https://www.jdpower.com/cars/2022/jeep/cherokee",
+    "lastUpdated": 1779319856.8360288
+  },
+  "Jeep|Cherokee|2023": {
+    "min": 22643,
+    "max": 31316,
+    "url": "https://www.jdpower.com/cars/2023/jeep/cherokee",
+    "lastUpdated": 1779319856.965158
+  },
+  "Jeep|Grand Cherokee|2016": {
+    "min": 8031,
+    "max": 22830,
+    "url": "https://www.jdpower.com/cars/2016/jeep/grand-cherokee",
+    "lastUpdated": 1779319857.6852639
+  },
+  "Jeep|Grand Cherokee|2017": {
+    "min": 8937,
+    "max": 26411,
+    "url": "https://www.jdpower.com/cars/2017/jeep/grand-cherokee",
+    "lastUpdated": 1779319858.38722
+  },
+  "Jeep|Grand Cherokee|2018": {
+    "min": 11547,
+    "max": 53375,
+    "url": "https://www.jdpower.com/cars/2018/jeep/grand-cherokee",
+    "lastUpdated": 1779319857.510004
+  },
+  "Jeep|Grand Cherokee|2019": {
+    "min": 13403,
+    "max": 60469,
+    "url": "https://www.jdpower.com/cars/2019/jeep/grand-cherokee",
+    "lastUpdated": 1779319858.186283
+  },
+  "Jeep|Grand Cherokee|2020": {
+    "min": 15876,
+    "max": 75285,
+    "url": "https://www.jdpower.com/cars/2020/jeep/grand-cherokee",
+    "lastUpdated": 1779319858.5057862
+  },
+  "Jeep|Grand Cherokee|2021": {
+    "min": 19384,
+    "max": 84264,
+    "url": "https://www.jdpower.com/cars/2021/jeep/grand-cherokee",
+    "lastUpdated": 1779319858.515124
+  },
+  "Kia|Carnival (China only)|2023": null,
+  "Kia|Carnival|2022": {
+    "min": 22754,
+    "max": 34141,
+    "url": "https://www.jdpower.com/cars/2022/kia/carnival",
+    "lastUpdated": 1779319858.373328
+  },
+  "Kia|Carnival|2023": {
+    "min": 24223,
+    "max": 39391,
+    "url": "https://www.jdpower.com/cars/2023/kia/carnival",
+    "lastUpdated": 1779319858.9905212
+  },
+  "Kia|Carnival|2024": null,
+  "Kia|Ceed Plug-in Hybrid|2022": null,
+  "Kia|Ceed|2019": null,
+  "Kia|Ceed|2020": null,
+  "Kia|Ceed|2021": null,
+  "Kia|EV6 (Non-US only)|2022": null,
+  "Kia|EV6 (Non-US only)|2023": null,
+  "Kia|EV6 (Non-US only)|2024": null,
+  "Kia|EV6 (Southeast Asia only)|2022": null,
+  "Kia|EV6 (Southeast Asia only)|2023": null,
+  "Kia|EV6 (Southeast Asia only)|2024": null,
+  "Kia|EV6 (with HDA II)|2022": null,
+  "Kia|EV6 (with HDA II)|2023": null,
+  "Kia|EV6 (with HDA II)|2024": null,
+  "Kia|EV6 (without HDA II)|2022": null,
+  "Kia|EV6 (without HDA II)|2023": null,
+  "Kia|EV6 (without HDA II)|2024": null,
+  "Kia|Forte|2019": {
+    "min": 9940,
+    "max": 12167,
+    "url": "https://www.jdpower.com/cars/2019/kia/forte",
+    "lastUpdated": 1779319860.1178188
+  },
+  "Kia|Forte|2020": {
+    "min": 10573,
+    "max": 15056,
+    "url": "https://www.jdpower.com/cars/2020/kia/forte",
+    "lastUpdated": 1779319860.071468
+  },
+  "Kia|Forte|2021": {
+    "min": 11471,
+    "max": 17368,
+    "url": "https://www.jdpower.com/cars/2021/kia/forte",
+    "lastUpdated": 1779319860.119825
+  },
+  "Kia|Forte|2022": {
+    "min": 14491,
+    "max": 20217,
+    "url": "https://www.jdpower.com/cars/2022/kia/forte",
+    "lastUpdated": 1779319860.310617
+  },
+  "Kia|Forte|2023": {
+    "min": 15206,
+    "max": 23961,
+    "url": "https://www.jdpower.com/cars/2023/kia/forte",
+    "lastUpdated": 1779319860.637663
+  },
+  "Kia|K5 Hybrid|2020": null,
+  "Kia|K5 Hybrid|2021": null,
+  "Kia|K5 Hybrid|2022": null,
+  "Kia|K5|2021": {
+    "min": 13806,
+    "max": 24556,
+    "url": "https://www.jdpower.com/cars/2021/kia/k5",
+    "lastUpdated": 1779319860.927922
+  },
+  "Kia|K5|2022": {
+    "min": 16726,
+    "max": 24680,
+    "url": "https://www.jdpower.com/cars/2022/kia/k5",
+    "lastUpdated": 1779319860.858407
+  },
+  "Kia|K5|2023": {
+    "min": 20441,
+    "max": 29662,
+    "url": "https://www.jdpower.com/cars/2023/kia/k5",
+    "lastUpdated": 1779319860.8119931
+  },
+  "Kia|K5|2024": {
+    "min": 20947,
+    "max": 33883,
+    "url": "https://www.jdpower.com/cars/2024/kia/k5",
+    "lastUpdated": 1779319860.8483999
+  },
+  "Kia|K7|2017": null,
+  "Kia|K8 Hybrid (with HDA II)|2023": null,
+  "Kia|Niro EV (with HDA II)|2024": null,
+  "Kia|Niro EV (with HDA II)|2025": null,
+  "Kia|Niro EV (without HDA II)|2023": null,
+  "Kia|Niro EV (without HDA II)|2024": null,
+  "Kia|Niro EV (without HDA II)|2025": null,
+  "Kia|Niro EV|2019": {
+    "min": 10873,
+    "max": 13561,
+    "url": "https://www.jdpower.com/cars/2019/kia/niro-ev",
+    "lastUpdated": 1779319861.875326
+  },
+  "Kia|Niro EV|2020": {
+    "min": 11639,
+    "max": 14344,
+    "url": "https://www.jdpower.com/cars/2020/kia/niro-ev",
+    "lastUpdated": 1779319861.908504
+  },
+  "Kia|Niro EV|2021": {
+    "min": 12485,
+    "max": 15195,
+    "url": "https://www.jdpower.com/cars/2021/kia/niro-ev",
+    "lastUpdated": 1779319861.996959
+  },
+  "Kia|Niro EV|2022": {
+    "min": 14564,
+    "max": 18771,
+    "url": "https://www.jdpower.com/cars/2022/kia/niro-ev",
+    "lastUpdated": 1779319861.878348
+  },
+  "Kia|Niro EV|2023": {
+    "min": 16906,
+    "max": 23091,
+    "url": "https://www.jdpower.com/cars/2023/kia/niro-ev",
+    "lastUpdated": 1779319862.254315
+  },
+  "Kia|Niro Hybrid|2018": null,
+  "Kia|Niro Hybrid|2021": null,
+  "Kia|Niro Hybrid|2022": null,
+  "Kia|Niro Hybrid|2023": null,
+  "Kia|Niro Hybrid|2024": null,
+  "Kia|Niro Plug-in Hybrid|2018": {
+    "min": 9740,
+    "max": 14272,
+    "url": "https://www.jdpower.com/cars/2018/kia/niro-plug-in-hybrid",
+    "lastUpdated": 1779319863.787742
+  },
+  "Kia|Niro Plug-in Hybrid|2019": {
+    "min": 11738,
+    "max": 16653,
+    "url": "https://www.jdpower.com/cars/2019/kia/niro-plug-in-hybrid",
+    "lastUpdated": 1779319863.644944
+  },
+  "Kia|Niro Plug-in Hybrid|2020": {
+    "min": 15046,
+    "max": 21144,
+    "url": "https://www.jdpower.com/cars/2020/kia/niro-plug-in-hybrid",
+    "lastUpdated": 1779319863.9642198
+  },
+  "Kia|Niro Plug-in Hybrid|2021": {
+    "min": 17849,
+    "max": 23742,
+    "url": "https://www.jdpower.com/cars/2021/kia/niro-plug-in-hybrid",
+    "lastUpdated": 1779319863.9788532
+  },
+  "Kia|Niro Plug-in Hybrid|2022": {
+    "min": 20299,
+    "max": 26496,
+    "url": "https://www.jdpower.com/cars/2022/kia/niro-plug-in-hybrid",
+    "lastUpdated": 1779319864.017044
+  },
+  "Kia|Optima Hybrid|2017": {
+    "min": 7986,
+    "max": 10613,
+    "url": "https://www.jdpower.com/cars/2017/kia/optima-hybrid",
+    "lastUpdated": 1779319865.138968
+  },
+  "Kia|Optima Hybrid|2019": {
+    "min": 12431,
+    "max": 13968,
+    "url": "https://www.jdpower.com/cars/2019/kia/optima-hybrid",
+    "lastUpdated": 1779319864.8752031
+  },
+  "Kia|Optima|2017": {
+    "min": 7815,
+    "max": 12384,
+    "url": "https://www.jdpower.com/cars/2017/kia/optima",
+    "lastUpdated": 1779319864.564896
+  },
+  "Kia|Optima|2019": {
+    "min": 11342,
+    "max": 15445,
+    "url": "https://www.jdpower.com/cars/2019/kia/optima",
+    "lastUpdated": 1779319864.320926
+  },
+  "Kia|Optima|2020": {
+    "min": 12361,
+    "max": 17228,
+    "url": "https://www.jdpower.com/cars/2020/kia/optima",
+    "lastUpdated": 1779319864.5403461
+  },
+  "Kia|Seltos|2021": {
+    "min": 13291,
+    "max": 19592,
+    "url": "https://www.jdpower.com/cars/2021/kia/seltos",
+    "lastUpdated": 1779319864.830049
+  },
+  "Kia|Seltos|2023": {
+    "min": 18030,
+    "max": 26370,
+    "url": "https://www.jdpower.com/cars/2023/kia/seltos",
+    "lastUpdated": 1779319865.327422
+  },
+  "Kia|Seltos|2024": {
+    "min": 19370,
+    "max": 28752,
+    "url": "https://www.jdpower.com/cars/2024/kia/seltos",
+    "lastUpdated": 1779319865.144552
+  },
+  "Kia|Sorento Hybrid|2021": {
+    "min": 18865,
+    "max": 22947,
+    "url": "https://www.jdpower.com/cars/2021/kia/sorento-hybrid",
+    "lastUpdated": 1779319866.0816069
+  },
+  "Kia|Sorento Hybrid|2022": {
+    "min": 21705,
+    "max": 28767,
+    "url": "https://www.jdpower.com/cars/2022/kia/sorento-hybrid",
+    "lastUpdated": 1779319866.3081112
+  },
+  "Kia|Sorento Hybrid|2023": {
+    "min": 23885,
+    "max": 33842,
+    "url": "https://www.jdpower.com/cars/2023/kia/sorento-hybrid",
+    "lastUpdated": 1779319866.464062
+  },
+  "Kia|Sorento Plug-in Hybrid|2022": {
+    "min": 27661,
+    "max": 34972,
+    "url": "https://www.jdpower.com/cars/2022/kia/sorento-plug-in-hybrid",
+    "lastUpdated": 1779319868.343709
+  },
+  "Kia|Sorento Plug-in Hybrid|2023": {
+    "min": 31227,
+    "max": 37075,
+    "url": "https://www.jdpower.com/cars/2023/kia/sorento-plug-in-hybrid",
+    "lastUpdated": 1779319866.859735
+  },
+  "Kia|Sorento|2018": {
+    "min": 7962,
+    "max": 16109,
+    "url": "https://www.jdpower.com/cars/2018/kia/sorento",
+    "lastUpdated": 1779319865.299595
+  },
+  "Kia|Sorento|2019": {
+    "min": 8883,
+    "max": 18124,
+    "url": "https://www.jdpower.com/cars/2019/kia/sorento",
+    "lastUpdated": 1779319865.586664
+  },
+  "Kia|Sorento|2021": {
+    "min": 15696,
+    "max": 26375,
+    "url": "https://www.jdpower.com/cars/2021/kia/sorento",
+    "lastUpdated": 1779319865.526742
+  },
+  "Kia|Sorento|2022": {
+    "min": 17999,
+    "max": 31643,
+    "url": "https://www.jdpower.com/cars/2022/kia/sorento",
+    "lastUpdated": 1779319868.1476638
+  },
+  "Kia|Sorento|2023": {
+    "min": 19996,
+    "max": 35203,
+    "url": "https://www.jdpower.com/cars/2023/kia/sorento",
+    "lastUpdated": 1779319865.813962
+  },
+  "Kia|Sportage Hybrid|2023": {
+    "min": 20737,
+    "max": 34287,
+    "url": "https://www.jdpower.com/cars/2023/kia/sportage-hybrid",
+    "lastUpdated": 1779319867.6722581
+  },
+  "Kia|Sportage Hybrid|2026": {
+    "min": 28034,
+    "max": 42508,
+    "url": "https://www.jdpower.com/cars/2026/kia/sportage-hybrid",
+    "lastUpdated": 1779319869.265957
+  },
+  "Kia|Sportage|2023": {
+    "min": 18812,
+    "max": 34123,
+    "url": "https://www.jdpower.com/cars/2023/kia/sportage",
+    "lastUpdated": 1779319867.096054
+  },
+  "Kia|Sportage|2024": {
+    "min": 21480,
+    "max": 36621,
+    "url": "https://www.jdpower.com/cars/2024/kia/sportage",
+    "lastUpdated": 1779319867.309469
+  },
+  "Kia|Stinger|2018": {
+    "min": 13770,
+    "max": 25536,
+    "url": "https://www.jdpower.com/cars/2018/kia/stinger",
+    "lastUpdated": 1779319868.0351622
+  },
+  "Kia|Stinger|2019": {
+    "min": 16233,
+    "max": 27855,
+    "url": "https://www.jdpower.com/cars/2019/kia/stinger",
+    "lastUpdated": 1779319868.40015
+  },
+  "Kia|Stinger|2020": {
+    "min": 19086,
+    "max": 31920,
+    "url": "https://www.jdpower.com/cars/2020/kia/stinger",
+    "lastUpdated": 1779319868.3435369
+  },
+  "Kia|Stinger|2022": {
+    "min": 22188,
+    "max": 36864,
+    "url": "https://www.jdpower.com/cars/2022/kia/stinger",
+    "lastUpdated": 1779319868.858911
+  },
+  "Kia|Stinger|2023": {
+    "min": 27151,
+    "max": 46262,
+    "url": "https://www.jdpower.com/cars/2023/kia/stinger",
+    "lastUpdated": 1779319869.279802
+  },
+  "Kia|Telluride (without HDA II)|2023": null,
+  "Kia|Telluride (without HDA II)|2024": null,
+  "Kia|Telluride (without HDA II)|2025": null,
+  "Kia|Telluride|2020": {
+    "min": 16192,
+    "max": 23030,
+    "url": "https://www.jdpower.com/cars/2020/kia/telluride",
+    "lastUpdated": 1779319869.354371
+  },
+  "Kia|Telluride|2021": {
+    "min": 19150,
+    "max": 29075,
+    "url": "https://www.jdpower.com/cars/2021/kia/telluride",
+    "lastUpdated": 1779319869.26268
+  },
+  "Kia|Telluride|2022": {
+    "min": 21774,
+    "max": 35259,
+    "url": "https://www.jdpower.com/cars/2022/kia/telluride",
+    "lastUpdated": 1779319869.960611
+  },
+  "Kia|Telluride|2023": {
+    "min": 25471,
+    "max": 42045,
+    "url": "https://www.jdpower.com/cars/2023/kia/telluride",
+    "lastUpdated": 1779319869.951724
+  },
+  "Kia|Telluride|2024": null,
+  "Lexus|CT Hybrid|2017": null,
+  "Lexus|CT Hybrid|2018": null,
+  "Lexus|ES Hybrid|2017": null,
+  "Lexus|ES Hybrid|2018": null,
+  "Lexus|ES Hybrid|2019": null,
+  "Lexus|ES Hybrid|2020": null,
+  "Lexus|ES Hybrid|2021": null,
+  "Lexus|ES Hybrid|2022": null,
+  "Lexus|ES Hybrid|2023": null,
+  "Lexus|ES Hybrid|2024": null,
+  "Lexus|ES Hybrid|2025": null,
+  "Lexus|ES|2017": {
+    "min": 20035,
+    "max": 23091,
+    "url": "https://www.jdpower.com/cars/2017/lexus/es",
+    "lastUpdated": 1779319870.5652218
+  },
+  "Lexus|ES|2018": {
+    "min": 21475,
+    "max": 24683,
+    "url": "https://www.jdpower.com/cars/2018/lexus/es",
+    "lastUpdated": 1779319870.3078852
+  },
+  "Lexus|ES|2019": {
+    "min": 22559,
+    "max": 28799,
+    "url": "https://www.jdpower.com/cars/2019/lexus/es",
+    "lastUpdated": 1779319870.768378
+  },
+  "Lexus|ES|2020": {
+    "min": 27107,
+    "max": 35398,
+    "url": "https://www.jdpower.com/cars/2020/lexus/es",
+    "lastUpdated": 1779319870.788492
+  },
+  "Lexus|ES|2021": {
+    "min": 26924,
+    "max": 37864,
+    "url": "https://www.jdpower.com/cars/2021/lexus/es",
+    "lastUpdated": 1779319870.899752
+  },
+  "Lexus|ES|2022": {
+    "min": 29150,
+    "max": 41916,
+    "url": "https://www.jdpower.com/cars/2022/lexus/es",
+    "lastUpdated": 1779319871.1405098
+  },
+  "Lexus|ES|2023": {
+    "min": 30844,
+    "max": 45562,
+    "url": "https://www.jdpower.com/cars/2023/lexus/es",
+    "lastUpdated": 1779319871.426859
+  },
+  "Lexus|ES|2024": {
+    "min": 35944,
+    "max": 51573,
+    "url": "https://www.jdpower.com/cars/2024/lexus/es",
+    "lastUpdated": 1779319871.839809
+  },
+  "Lexus|ES|2025": {
+    "min": 37715,
+    "max": 53020,
+    "url": "https://www.jdpower.com/cars/2025/lexus/es",
+    "lastUpdated": 1779319871.814532
+  },
+  "Lexus|GS F|2016": {
+    "min": 32918,
+    "max": 37719,
+    "url": "https://www.jdpower.com/cars/2016/lexus/gs-f",
+    "lastUpdated": 1779319872.735785
+  },
+  "Lexus|IS|2017": {
+    "min": 16608,
+    "max": 23873,
+    "url": "https://www.jdpower.com/cars/2017/lexus/is",
+    "lastUpdated": 1779319872.7487428
+  },
+  "Lexus|IS|2018": {
+    "min": 18870,
+    "max": 26387,
+    "url": "https://www.jdpower.com/cars/2018/lexus/is",
+    "lastUpdated": 1779319872.9191082
+  },
+  "Lexus|IS|2019": {
+    "min": 21704,
+    "max": 28819,
+    "url": "https://www.jdpower.com/cars/2019/lexus/is",
+    "lastUpdated": 1779319872.9419231
+  },
+  "Lexus|IS|2022": {
+    "min": 29335,
+    "max": 59699,
+    "url": "https://www.jdpower.com/cars/2022/lexus/is",
+    "lastUpdated": 1779319872.5227132
+  },
+  "Lexus|IS|2023": {
+    "min": 33014,
+    "max": 65447,
+    "url": "https://www.jdpower.com/cars/2023/lexus/is",
+    "lastUpdated": 1779319873.390044
+  },
+  "Lexus|IS|2024": {
+    "min": 36797,
+    "max": 69332,
+    "url": "https://www.jdpower.com/cars/2024/lexus/is",
+    "lastUpdated": 1779319873.9456398
+  },
+  "Lexus|LC|2024": null,
+  "Lexus|LC|2025": {
+    "min": 92018,
+    "max": 123229,
+    "url": "https://www.jdpower.com/cars/2025/lexus/lc",
+    "lastUpdated": 1779319873.6938748
+  },
+  "Lexus|LS|2018": {
+    "min": 33710,
+    "max": 42755,
+    "url": "https://www.jdpower.com/cars/2018/lexus/ls",
+    "lastUpdated": 1779319873.7255008
+  },
+  "Lexus|NS|2022": null,
+  "Lexus|NS|2023": null,
+  "Lexus|NS|2024": null,
+  "Lexus|NS|2025": null,
+  "Lexus|NX Hybrid|2018": null,
+  "Lexus|NX Hybrid|2019": null,
+  "Lexus|NX Hybrid|2020": null,
+  "Lexus|NX Hybrid|2021": null,
+  "Lexus|NX|2018": {
+    "min": 16863,
+    "max": 21755,
+    "url": "https://www.jdpower.com/cars/2018/lexus/nx",
+    "lastUpdated": 1779319874.3110468
+  },
+  "Lexus|NX|2019": {
+    "min": 18711,
+    "max": 24183,
+    "url": "https://www.jdpower.com/cars/2019/lexus/nx",
+    "lastUpdated": 1779319874.528822
+  },
+  "Lexus|NX|2020": {
+    "min": 22212,
+    "max": 30022,
+    "url": "https://www.jdpower.com/cars/2020/lexus/nx",
+    "lastUpdated": 1779319875.356107
+  },
+  "Lexus|NX|2021": {
+    "min": 25769,
+    "max": 33019,
+    "url": "https://www.jdpower.com/cars/2021/lexus/nx",
+    "lastUpdated": 1779319876.254667
+  },
+  "Lexus|RC|2018": {
+    "min": 23567,
+    "max": 30905,
+    "url": "https://www.jdpower.com/cars/2018/lexus/rc",
+    "lastUpdated": 1779319875.8777092
+  },
+  "Lexus|RC|2019": {
+    "min": 24519,
+    "max": 34322,
+    "url": "https://www.jdpower.com/cars/2019/lexus/rc",
+    "lastUpdated": 1779319875.7470012
+  },
+  "Lexus|RC|2020": {
+    "min": 26667,
+    "max": 36483,
+    "url": "https://www.jdpower.com/cars/2020/lexus/rc",
+    "lastUpdated": 1779319875.661144
+  },
+  "Lexus|RC|2023": {
+    "min": 32268,
+    "max": 47207,
+    "url": "https://www.jdpower.com/cars/2023/lexus/rc",
+    "lastUpdated": 1779319877.261955
+  },
+  "Lexus|RX Hybrid|2016": null,
+  "Lexus|RX Hybrid|2017": null,
+  "Lexus|RX Hybrid|2018": null,
+  "Lexus|RX Hybrid|2019": null,
+  "Lexus|RX Hybrid|2020": null,
+  "Lexus|RX Hybrid|2021": null,
+  "Lexus|RX Hybrid|2022": null,
+  "Lexus|RX|2016": {
+    "min": 17164,
+    "max": 19544,
+    "url": "https://www.jdpower.com/cars/2016/lexus/rx",
+    "lastUpdated": 1779319876.040478
+  },
+  "Lexus|RX|2017": {
+    "min": 19242,
+    "max": 23371,
+    "url": "https://www.jdpower.com/cars/2017/lexus/rx",
+    "lastUpdated": 1779319878.6330738
+  },
+  "Lexus|RX|2018": {
+    "min": 21123,
+    "max": 27742,
+    "url": "https://www.jdpower.com/cars/2018/lexus/rx",
+    "lastUpdated": 1779319876.436243
+  },
+  "Lexus|RX|2019": null,
+  "Lexus|RX|2020": {
+    "min": 28509,
+    "max": 37512,
+    "url": "https://www.jdpower.com/cars/2020/lexus/rx",
+    "lastUpdated": 1779319877.405601
+  },
+  "Lexus|RX|2021": {
+    "min": 32698,
+    "max": 43766,
+    "url": "https://www.jdpower.com/cars/2021/lexus/rx",
+    "lastUpdated": 1779319876.925809
+  },
+  "Lexus|RX|2022": {
+    "min": 33496,
+    "max": 49253,
+    "url": "https://www.jdpower.com/cars/2022/lexus/rx",
+    "lastUpdated": 1779319877.288857
+  },
+  "Lexus|UX Hybrid|2019": null,
+  "Lexus|UX Hybrid|2020": null,
+  "Lexus|UX Hybrid|2021": null,
+  "Lexus|UX Hybrid|2022": null,
+  "Lexus|UX Hybrid|2023": null,
+  "Lexus|UX Hybrid|2024": null,
+  "Lincoln|Aviator Plug-in Hybrid|2020": null,
+  "Lincoln|Aviator Plug-in Hybrid|2021": null,
+  "Lincoln|Aviator Plug-in Hybrid|2022": null,
+  "Lincoln|Aviator Plug-in Hybrid|2023": null,
+  "Lincoln|Aviator Plug-in Hybrid|2024": null,
+  "Lincoln|Aviator|2020": {
+    "min": 21368,
+    "max": 43047,
+    "url": "https://www.jdpower.com/cars/2020/lincoln/aviator",
+    "lastUpdated": 1779319878.6598551
+  },
+  "Lincoln|Aviator|2021": {
+    "min": 24183,
+    "max": 48885,
+    "url": "https://www.jdpower.com/cars/2021/lincoln/aviator",
+    "lastUpdated": 1779319878.659324
+  },
+  "Lincoln|Aviator|2022": {
+    "min": 28063,
+    "max": 66647,
+    "url": "https://www.jdpower.com/cars/2022/lincoln/aviator",
+    "lastUpdated": 1779319878.75238
+  },
+  "Lincoln|Aviator|2023": {
+    "min": 32035,
+    "max": 69602,
+    "url": "https://www.jdpower.com/cars/2023/lincoln/aviator",
+    "lastUpdated": 1779319878.739688
+  },
+  "Lincoln|Aviator|2024": {
+    "min": 34181,
+    "max": 68683,
+    "url": "https://www.jdpower.com/cars/2024/lincoln/aviator",
+    "lastUpdated": 1779319878.7693598
+  },
+  "MAN|TGE|2017": null,
+  "MAN|TGE|2018": null,
+  "MAN|TGE|2019": null,
+  "MAN|TGE|2020": null,
+  "MAN|TGE|2021": null,
+  "MAN|TGE|2022": null,
+  "MAN|TGE|2023": null,
+  "MAN|TGE|2024": null,
+  "MAN|eTGE|2020": null,
+  "MAN|eTGE|2021": null,
+  "MAN|eTGE|2022": null,
+  "MAN|eTGE|2023": null,
+  "MAN|eTGE|2024": null,
+  "Mazda|3|2017": null,
+  "Mazda|3|2018": null,
+  "Mazda|6|2017": null,
+  "Mazda|6|2018": null,
+  "Mazda|6|2019": null,
+  "Mazda|6|2020": null,
+  "Mazda|CX-5|2017": {
+    "min": 10542,
+    "max": 14159,
+    "url": "https://www.jdpower.com/cars/2017/mazda/cx-5",
+    "lastUpdated": 1779319880.365217
+  },
+  "Mazda|CX-5|2018": null,
+  "Mazda|CX-5|2019": null,
+  "Mazda|CX-5|2020": {
+    "min": 15347,
+    "max": 23640,
+    "url": "https://www.jdpower.com/cars/2020/mazda/cx-5",
+    "lastUpdated": 1779319880.729762
+  },
+  "Mazda|CX-5|2021": {
+    "min": 16757,
+    "max": 25183,
+    "url": "https://www.jdpower.com/cars/2021/mazda/cx-5",
+    "lastUpdated": 1779319880.450741
+  },
+  "Mazda|CX-5|2022": {
+    "min": 17959,
+    "max": 29106,
+    "url": "https://www.jdpower.com/cars/2022/mazda/cx-5",
+    "lastUpdated": 1779319880.526565
+  },
+  "Mazda|CX-5|2023": {
+    "min": 20549,
+    "max": 34244,
+    "url": "https://www.jdpower.com/cars/2023/mazda/cx-5",
+    "lastUpdated": 1779319880.5125031
+  },
+  "Mazda|CX-5|2024": {
+    "min": 22812,
+    "max": 36540,
+    "url": "https://www.jdpower.com/cars/2024/mazda/cx-5",
+    "lastUpdated": 1779319880.990169
+  },
+  "Mazda|CX-5|2025": {
+    "min": 26613,
+    "max": 42666,
+    "url": "https://www.jdpower.com/cars/2025/mazda/cx-5",
+    "lastUpdated": 1779319881.0283961
+  },
+  "Mazda|CX-9|2016": {
+    "min": 8932,
+    "max": 13434,
+    "url": "https://www.jdpower.com/cars/2016/mazda/cx-9",
+    "lastUpdated": 1779319881.470948
+  },
+  "Mazda|CX-9|2017": null,
+  "Mazda|CX-9|2018": {
+    "min": 11320,
+    "max": 17263,
+    "url": "https://www.jdpower.com/cars/2018/mazda/cx-9",
+    "lastUpdated": 1779319881.017113
+  },
+  "Mazda|CX-9|2019": {
+    "min": 12952,
+    "max": 21093,
+    "url": "https://www.jdpower.com/cars/2019/mazda/cx-9",
+    "lastUpdated": 1779319881.474182
+  },
+  "Mazda|CX-9|2020": {
+    "min": 15143,
+    "max": 23736,
+    "url": "https://www.jdpower.com/cars/2020/mazda/cx-9",
+    "lastUpdated": 1779319882.0810182
+  },
+  "Mazda|CX-9|2021": {
+    "min": 16392,
+    "max": 26177,
+    "url": "https://www.jdpower.com/cars/2021/mazda/cx-9",
+    "lastUpdated": 1779319881.647101
+  },
+  "Mazda|CX-9|2022": {
+    "min": 19092,
+    "max": 28945,
+    "url": "https://www.jdpower.com/cars/2022/mazda/cx-9",
+    "lastUpdated": 1779319881.6779032
+  },
+  "Mazda|CX-9|2023": {
+    "min": 22917,
+    "max": 32583,
+    "url": "https://www.jdpower.com/cars/2023/mazda/cx-9",
+    "lastUpdated": 1779319881.800138
+  },
+  "Nissan|Altima|2019": {
+    "min": 11173,
+    "max": 18563,
+    "url": "https://www.jdpower.com/cars/2019/nissan/altima",
+    "lastUpdated": 1779319882.30311
+  },
+  "Nissan|Altima|2020": {
+    "min": 12353,
+    "max": 18949,
+    "url": "https://www.jdpower.com/cars/2020/nissan/altima",
+    "lastUpdated": 1779319882.195588
+  },
+  "Nissan|Altima|2024": {
+    "min": 18623,
+    "max": 31332,
+    "url": "https://www.jdpower.com/cars/2024/nissan/altima",
+    "lastUpdated": 1779319882.318898
+  },
+  "Nissan|Leaf - Instrument Cluster|2018": null,
+  "Nissan|Leaf - Instrument Cluster|2019": null,
+  "Nissan|Leaf - Instrument Cluster|2020": null,
+  "Nissan|Leaf - Instrument Cluster|2021": null,
+  "Nissan|Leaf - Instrument Cluster|2022": null,
+  "Nissan|Leaf - Instrument Cluster|2023": null,
+  "Nissan|Leaf|2018": {
+    "min": 5620,
+    "max": 7240,
+    "url": "https://www.jdpower.com/cars/2018/nissan/leaf",
+    "lastUpdated": 1779319882.584785
+  },
+  "Nissan|Leaf|2019": {
+    "min": 5983,
+    "max": 9844,
+    "url": "https://www.jdpower.com/cars/2019/nissan/leaf",
+    "lastUpdated": 1779319882.566713
+  },
+  "Nissan|Leaf|2020": {
+    "min": 6420,
+    "max": 10003,
+    "url": "https://www.jdpower.com/cars/2020/nissan/leaf",
+    "lastUpdated": 1779319883.0507169
+  },
+  "Nissan|Leaf|2021": {
+    "min": 7833,
+    "max": 12437,
+    "url": "https://www.jdpower.com/cars/2021/nissan/leaf",
+    "lastUpdated": 1779319883.201236
+  },
+  "Nissan|Leaf|2022": {
+    "min": 8951,
+    "max": 13901,
+    "url": "https://www.jdpower.com/cars/2022/nissan/leaf",
+    "lastUpdated": 1779319883.200617
+  },
+  "Nissan|Leaf|2023": {
+    "min": 10203,
+    "max": 15431,
+    "url": "https://www.jdpower.com/cars/2023/nissan/leaf",
+    "lastUpdated": 1779319883.176348
+  },
+  "Nissan|Rogue|2018": {
+    "min": 9893,
+    "max": 15357,
+    "url": "https://www.jdpower.com/cars/2018/nissan/rogue",
+    "lastUpdated": 1779319883.939243
+  },
+  "Nissan|Rogue|2019": {
+    "min": 10541,
+    "max": 17443,
+    "url": "https://www.jdpower.com/cars/2019/nissan/rogue",
+    "lastUpdated": 1779319884.4310322
+  },
+  "Nissan|Rogue|2020": {
+    "min": 12606,
+    "max": 18721,
+    "url": "https://www.jdpower.com/cars/2020/nissan/rogue",
+    "lastUpdated": 1779319884.469713
+  },
+  "Nissan|X-Trail|2017": null,
+  "Peugeot|208|2019": null,
+  "Peugeot|208|2020": null,
+  "Peugeot|208|2021": null,
+  "Peugeot|208|2022": null,
+  "Peugeot|208|2023": null,
+  "Peugeot|208|2024": null,
+  "Peugeot|208|2025": null,
+  "Porsche|Macan|2017": null,
+  "Porsche|Macan|2018": {
+    "min": 16030,
+    "max": 35299,
+    "url": "https://www.jdpower.com/cars/2018/porsche/macan",
+    "lastUpdated": 1779319885.279032
+  },
+  "Porsche|Macan|2019": {
+    "min": 22343,
+    "max": 28165,
+    "url": "https://www.jdpower.com/cars/2019/porsche/macan",
+    "lastUpdated": 1779319885.343764
+  },
+  "Porsche|Macan|2020": {
+    "min": 25860,
+    "max": 45782,
+    "url": "https://www.jdpower.com/cars/2020/porsche/macan",
+    "lastUpdated": 1779319885.290546
+  },
+  "Porsche|Macan|2021": {
+    "min": 30809,
+    "max": 55270,
+    "url": "https://www.jdpower.com/cars/2021/porsche/macan",
+    "lastUpdated": 1779319885.4692988
+  },
+  "Porsche|Macan|2022": {
+    "min": 36564,
+    "max": 67164,
+    "url": "https://www.jdpower.com/cars/2022/porsche/macan",
+    "lastUpdated": 1779319885.475169
+  },
+  "Porsche|Macan|2023": {
+    "min": 38859,
+    "max": 74209,
+    "url": "https://www.jdpower.com/cars/2023/porsche/macan",
+    "lastUpdated": 1779319886.622977
+  },
+  "Porsche|Macan|2024": {
+    "min": 47673,
+    "max": 99751,
+    "url": "https://www.jdpower.com/cars/2024/porsche/macan",
+    "lastUpdated": 1779319886.705722
+  },
+  "Ram|1500|2019": {
+    "min": 17239,
+    "max": 36258,
+    "url": "https://www.jdpower.com/cars/2019/ram/1500",
+    "lastUpdated": 1779319887.18182
+  },
+  "Ram|1500|2020": {
+    "min": 19407,
+    "max": 43156,
+    "url": "https://www.jdpower.com/cars/2020/ram/1500",
+    "lastUpdated": 1779319888.600738
+  },
+  "Ram|1500|2021": {
+    "min": 22346,
+    "max": 75040,
+    "url": "https://www.jdpower.com/cars/2021/ram/1500",
+    "lastUpdated": 1779319887.184243
+  },
+  "Ram|1500|2022": {
+    "min": 25045,
+    "max": 88563,
+    "url": "https://www.jdpower.com/cars/2022/ram/1500",
+    "lastUpdated": 1779319887.286709
+  },
+  "Ram|1500|2023": {
+    "min": 22311,
+    "max": 102286,
+    "url": "https://www.jdpower.com/cars/2023/ram/1500",
+    "lastUpdated": 1779319887.814124
+  },
+  "Ram|1500|2024": {
+    "min": 25762,
+    "max": 114923,
+    "url": "https://www.jdpower.com/cars/2024/ram/1500",
+    "lastUpdated": 1779319887.873708
+  },
+  "Ram|2500|2020": {
+    "min": 26082,
+    "max": 57462,
+    "url": "https://www.jdpower.com/cars/2020/ram/2500",
+    "lastUpdated": 1779319888.1679208
+  },
+  "Ram|2500|2021": {
+    "min": 28089,
+    "max": 62717,
+    "url": "https://www.jdpower.com/cars/2021/ram/2500",
+    "lastUpdated": 1779319888.109309
+  },
+  "Ram|2500|2022": {
+    "min": 29042,
+    "max": 69546,
+    "url": "https://www.jdpower.com/cars/2022/ram/2500",
+    "lastUpdated": 1779319889.277366
+  },
+  "Ram|2500|2023": {
+    "min": 31617,
+    "max": 78531,
+    "url": "https://www.jdpower.com/cars/2023/ram/2500",
+    "lastUpdated": 1779319889.121527
+  },
+  "Ram|2500|2024": {
+    "min": 35003,
+    "max": 91603,
+    "url": "https://www.jdpower.com/cars/2024/ram/2500",
+    "lastUpdated": 1779319888.734289
+  },
+  "Ram|3500|2019": {
+    "min": 26186,
+    "max": 56489,
+    "url": "https://www.jdpower.com/cars/2019/ram/3500",
+    "lastUpdated": 1779319889.900379
+  },
+  "Ram|3500|2020": {
+    "min": 32214,
+    "max": 58378,
+    "url": "https://www.jdpower.com/cars/2020/ram/3500",
+    "lastUpdated": 1779319889.641619
+  },
+  "Ram|3500|2021": {
+    "min": 34718,
+    "max": 62015,
+    "url": "https://www.jdpower.com/cars/2021/ram/3500",
+    "lastUpdated": 1779319889.816319
+  },
+  "Ram|3500|2022": {
+    "min": 36766,
+    "max": 71273,
+    "url": "https://www.jdpower.com/cars/2022/ram/3500",
+    "lastUpdated": 1779319890.832343
+  },
+  "Rivian|R1S|2022": {
+    "min": 43360,
+    "max": 61540,
+    "url": "https://www.jdpower.com/cars/2022/rivian/r1s",
+    "lastUpdated": 1779319889.89989
+  },
+  "Rivian|R1S|2023": {
+    "min": 55976,
+    "max": 67536,
+    "url": "https://www.jdpower.com/cars/2023/rivian/r1s",
+    "lastUpdated": 1779319890.406956
+  },
+  "Rivian|R1S|2024": {
+    "min": 65005,
+    "max": 78887,
+    "url": "https://www.jdpower.com/cars/2024/rivian/r1s",
+    "lastUpdated": 1779319890.303725
+  },
+  "Rivian|R1S|2025": {
+    "min": 75900,
+    "max": 105900,
+    "url": "https://www.jdpower.com/cars/2025/rivian/r1s",
+    "lastUpdated": 1779319890.493761
+  },
+  "Rivian|R1T|2022": {
+    "min": 43018,
+    "max": 50967,
+    "url": "https://www.jdpower.com/cars/2022/rivian/r1t",
+    "lastUpdated": 1779319891.011936
+  },
+  "Rivian|R1T|2023": {
+    "min": 50476,
+    "max": 63391,
+    "url": "https://www.jdpower.com/cars/2023/rivian/r1t",
+    "lastUpdated": 1779319890.57212
+  },
+  "Rivian|R1T|2024": {
+    "min": 54918,
+    "max": 69644,
+    "url": "https://www.jdpower.com/cars/2024/rivian/r1t",
+    "lastUpdated": 1779319891.0886872
+  },
+  "Rivian|R1T|2025": {
+    "min": 69900,
+    "max": 99900,
+    "url": "https://www.jdpower.com/cars/2025/rivian/r1t",
+    "lastUpdated": 1779319891.243552
+  },
+  "SEAT|Alhambra|2018": null,
+  "SEAT|Alhambra|2019": null,
+  "SEAT|Alhambra|2020": null,
+  "SEAT|Ateca|2016": null,
+  "SEAT|Ateca|2017": null,
+  "SEAT|Ateca|2018": null,
+  "SEAT|Ateca|2019": null,
+  "SEAT|Ateca|2020": null,
+  "SEAT|Ateca|2021": null,
+  "SEAT|Ateca|2022": null,
+  "SEAT|Ateca|2023": null,
+  "SEAT|Leon|2014": null,
+  "SEAT|Leon|2015": null,
+  "SEAT|Leon|2016": null,
+  "SEAT|Leon|2017": null,
+  "SEAT|Leon|2018": null,
+  "SEAT|Leon|2019": null,
+  "SEAT|Leon|2020": null,
+  "Skoda|Fabia|2022": null,
+  "Skoda|Fabia|2023": null,
+  "Skoda|Kamiq|2021": null,
+  "Skoda|Kamiq|2022": null,
+  "Skoda|Kamiq|2023": null,
+  "Skoda|Karoq|2019": null,
+  "Skoda|Karoq|2020": null,
+  "Skoda|Karoq|2021": null,
+  "Skoda|Karoq|2022": null,
+  "Skoda|Karoq|2023": null,
+  "Skoda|Kodiaq|2017": null,
+  "Skoda|Kodiaq|2018": null,
+  "Skoda|Kodiaq|2019": null,
+  "Skoda|Kodiaq|2020": null,
+  "Skoda|Kodiaq|2021": null,
+  "Skoda|Kodiaq|2022": null,
+  "Skoda|Kodiaq|2023": null,
+  "Skoda|Octavia RS|2016": null,
+  "Skoda|Octavia Scout|2017": null,
+  "Skoda|Octavia Scout|2018": null,
+  "Skoda|Octavia Scout|2019": null,
+  "Skoda|Octavia|2015": null,
+  "Skoda|Octavia|2016": null,
+  "Skoda|Octavia|2017": null,
+  "Skoda|Octavia|2018": null,
+  "Skoda|Octavia|2019": null,
+  "Skoda|Scala|2020": null,
+  "Skoda|Scala|2021": null,
+  "Skoda|Scala|2022": null,
+  "Skoda|Scala|2023": null,
+  "Skoda|Superb|2015": null,
+  "Skoda|Superb|2016": null,
+  "Skoda|Superb|2017": null,
+  "Skoda|Superb|2018": null,
+  "Skoda|Superb|2019": null,
+  "Skoda|Superb|2020": null,
+  "Skoda|Superb|2021": null,
+  "Skoda|Superb|2022": null,
+  "Subaru|Ascent|2019": {
+    "min": 14052,
+    "max": 19909,
+    "url": "https://www.jdpower.com/cars/2019/subaru/ascent",
+    "lastUpdated": 1779319892.147862
+  },
+  "Subaru|Ascent|2020": {
+    "min": 15872,
+    "max": 24614,
+    "url": "https://www.jdpower.com/cars/2020/subaru/ascent",
+    "lastUpdated": 1779319892.318078
+  },
+  "Subaru|Ascent|2021": {
+    "min": 18245,
+    "max": 25612,
+    "url": "https://www.jdpower.com/cars/2021/subaru/ascent",
+    "lastUpdated": 1779319892.574921
+  },
+  "Subaru|Ascent|2023": {
+    "min": 21717,
+    "max": 36561,
+    "url": "https://www.jdpower.com/cars/2023/subaru/ascent",
+    "lastUpdated": 1779319892.6042628
+  },
+  "Subaru|Crosstrek Hybrid|2020": {
+    "min": 26089,
+    "max": 28994,
+    "url": "https://www.jdpower.com/cars/2020/subaru/crosstrek-hybrid",
+    "lastUpdated": 1779319893.849694
+  },
+  "Subaru|Crosstrek|2018": {
+    "min": 14618,
+    "max": 19947,
+    "url": "https://www.jdpower.com/cars/2018/subaru/crosstrek",
+    "lastUpdated": 1779319892.533768
+  },
+  "Subaru|Crosstrek|2019": {
+    "min": 16287,
+    "max": 21353,
+    "url": "https://www.jdpower.com/cars/2019/subaru/crosstrek",
+    "lastUpdated": 1779319892.5420642
+  },
+  "Subaru|Crosstrek|2020": null,
+  "Subaru|Crosstrek|2021": {
+    "min": 18314,
+    "max": 26785,
+    "url": "https://www.jdpower.com/cars/2021/subaru/crosstrek",
+    "lastUpdated": 1779319893.018889
+  },
+  "Subaru|Crosstrek|2022": {
+    "min": 19199,
+    "max": 31377,
+    "url": "https://www.jdpower.com/cars/2022/subaru/crosstrek",
+    "lastUpdated": 1779319893.019604
+  },
+  "Subaru|Crosstrek|2023": {
+    "min": 19582,
+    "max": 34092,
+    "url": "https://www.jdpower.com/cars/2023/subaru/crosstrek",
+    "lastUpdated": 1779319893.3592582
+  },
+  "Subaru|Forester Hybrid|2020": null,
+  "Subaru|Forester|2017": {
+    "min": 15214,
+    "max": 23519,
+    "url": "https://www.jdpower.com/cars/2017/subaru/forester",
+    "lastUpdated": 1779319893.1161149
+  },
+  "Subaru|Forester|2018": {
+    "min": 16515,
+    "max": 29718,
+    "url": "https://www.jdpower.com/cars/2018/subaru/forester",
+    "lastUpdated": 1779319893.2057972
+  },
+  "Subaru|Forester|2019": {
+    "min": 18114,
+    "max": 28079,
+    "url": "https://www.jdpower.com/cars/2019/subaru/forester",
+    "lastUpdated": 1779319893.844116
+  },
+  "Subaru|Forester|2020": {
+    "min": 19527,
+    "max": 30329,
+    "url": "https://www.jdpower.com/cars/2020/subaru/forester",
+    "lastUpdated": 1779319893.865371
+  },
+  "Subaru|Forester|2021": {
+    "min": 20868,
+    "max": 32207,
+    "url": "https://www.jdpower.com/cars/2021/subaru/forester",
+    "lastUpdated": 1779319893.842489
+  },
+  "Subaru|Forester|2022": {
+    "min": 20379,
+    "max": 36420,
+    "url": "https://www.jdpower.com/cars/2022/subaru/forester",
+    "lastUpdated": 1779319894.003841
+  },
+  "Subaru|Forester|2023": {
+    "min": 22190,
+    "max": 36996,
+    "url": "https://www.jdpower.com/cars/2023/subaru/forester",
+    "lastUpdated": 1779319894.0473778
+  },
+  "Subaru|Forester|2024": {
+    "min": 24056,
+    "max": 39708,
+    "url": "https://www.jdpower.com/cars/2024/subaru/forester",
+    "lastUpdated": 1779319894.496654
+  },
+  "Subaru|Impreza|2017": {
+    "min": 9408,
+    "max": 12542,
+    "url": "https://www.jdpower.com/cars/2017/subaru/impreza",
+    "lastUpdated": 1779319894.558182
+  },
+  "Subaru|Impreza|2018": {
+    "min": 10119,
+    "max": 15304,
+    "url": "https://www.jdpower.com/cars/2018/subaru/impreza",
+    "lastUpdated": 1779319894.647879
+  },
+  "Subaru|Impreza|2019": {
+    "min": 10946,
+    "max": 16361,
+    "url": "https://www.jdpower.com/cars/2019/subaru/impreza",
+    "lastUpdated": 1779319894.588852
+  },
+  "Subaru|Impreza|2020": {
+    "min": 13866,
+    "max": 19538,
+    "url": "https://www.jdpower.com/cars/2020/subaru/impreza",
+    "lastUpdated": 1779319894.8854249
+  },
+  "Subaru|Impreza|2021": {
+    "min": 14716,
+    "max": 21693,
+    "url": "https://www.jdpower.com/cars/2021/subaru/impreza",
+    "lastUpdated": 1779319896.491832
+  },
+  "Subaru|Impreza|2022": {
+    "min": 16194,
+    "max": 24289,
+    "url": "https://www.jdpower.com/cars/2022/subaru/impreza",
+    "lastUpdated": 1779319895.132158
+  },
+  "Subaru|Legacy|2015": {
+    "min": 8220,
+    "max": 12379,
+    "url": "https://www.jdpower.com/cars/2015/subaru/legacy",
+    "lastUpdated": 1779319897.337543
+  },
+  "Subaru|Legacy|2016": {
+    "min": 8904,
+    "max": 12915,
+    "url": "https://www.jdpower.com/cars/2016/subaru/legacy",
+    "lastUpdated": 1779319895.274524
+  },
+  "Subaru|Legacy|2017": {
+    "min": 9997,
+    "max": 14703,
+    "url": "https://www.jdpower.com/cars/2017/subaru/legacy",
+    "lastUpdated": 1779319895.774501
+  },
+  "Subaru|Legacy|2018": {
+    "min": 11212,
+    "max": 17588,
+    "url": "https://www.jdpower.com/cars/2018/subaru/legacy",
+    "lastUpdated": 1779319895.9341161
+  },
+  "Subaru|Legacy|2020": {
+    "min": 14471,
+    "max": 23019,
+    "url": "https://www.jdpower.com/cars/2020/subaru/legacy",
+    "lastUpdated": 1779319895.8316422
+  },
+  "Subaru|Legacy|2021": {
+    "min": 17097,
+    "max": 26434,
+    "url": "https://www.jdpower.com/cars/2021/subaru/legacy",
+    "lastUpdated": 1779319897.2696419
+  },
+  "Subaru|Legacy|2022": {
+    "min": 18932,
+    "max": 29125,
+    "url": "https://www.jdpower.com/cars/2022/subaru/legacy",
+    "lastUpdated": 1779319896.6090722
+  },
+  "Subaru|Outback|2015": {
+    "min": 7558,
+    "max": 11211,
+    "url": "https://www.jdpower.com/cars/2015/subaru/outback",
+    "lastUpdated": 1779319896.732523
+  },
+  "Subaru|Outback|2016": {
+    "min": 8885,
+    "max": 14242,
+    "url": "https://www.jdpower.com/cars/2016/subaru/outback",
+    "lastUpdated": 1779319896.836438
+  },
+  "Subaru|Outback|2017": {
+    "min": 10854,
+    "max": 16714,
+    "url": "https://www.jdpower.com/cars/2017/subaru/outback",
+    "lastUpdated": 1779319897.103241
+  },
+  "Subaru|Outback|2018": {
+    "min": 12237,
+    "max": 19403,
+    "url": "https://www.jdpower.com/cars/2018/subaru/outback",
+    "lastUpdated": 1779319897.217144
+  },
+  "Subaru|Outback|2019": {
+    "min": 13763,
+    "max": 22012,
+    "url": "https://www.jdpower.com/cars/2019/subaru/outback",
+    "lastUpdated": 1779319897.40342
+  },
+  "Subaru|Outback|2020": {
+    "min": 15701,
+    "max": 23714,
+    "url": "https://www.jdpower.com/cars/2020/subaru/outback",
+    "lastUpdated": 1779319897.7105432
+  },
+  "Subaru|Outback|2021": {
+    "min": 17627,
+    "max": 26924,
+    "url": "https://www.jdpower.com/cars/2021/subaru/outback",
+    "lastUpdated": 1779319898.059756
+  },
+  "Subaru|Outback|2022": {
+    "min": 18276,
+    "max": 29358,
+    "url": "https://www.jdpower.com/cars/2022/subaru/outback",
+    "lastUpdated": 1779319897.8479831
+  },
+  "Subaru|Outback|2023": {
+    "min": 20684,
+    "max": 34276,
+    "url": "https://www.jdpower.com/cars/2023/subaru/outback",
+    "lastUpdated": 1779319898.092659
+  },
+  "Subaru|Solterra|2023": {
+    "min": 18321,
+    "max": 26311,
+    "url": "https://www.jdpower.com/cars/2023/subaru/solterra",
+    "lastUpdated": 1779319898.3005838
+  },
+  "Subaru|Solterra|2024": {
+    "min": 20028,
+    "max": 30625,
+    "url": "https://www.jdpower.com/cars/2024/subaru/solterra",
+    "lastUpdated": 1779319898.65303
+  },
+  "Subaru|Solterra|2025": {
+    "min": 32639,
+    "max": 46316,
+    "url": "https://www.jdpower.com/cars/2025/subaru/solterra",
+    "lastUpdated": 1779319898.632468
+  },
+  "Subaru|XV|2018": null,
+  "Subaru|XV|2019": null,
+  "Subaru|XV|2020": null,
+  "Subaru|XV|2021": null,
+  "Tesla|Model 3 (with HW3)|2019": null,
+  "Tesla|Model 3 (with HW3)|2020": null,
+  "Tesla|Model 3 (with HW3)|2021": null,
+  "Tesla|Model 3 (with HW3)|2022": null,
+  "Tesla|Model 3 (with HW3)|2023": null,
+  "Tesla|Model 3 (with HW4)|2024": null,
+  "Tesla|Model 3 (with HW4)|2025": null,
+  "Tesla|Model S (Pre-AP)|2012": null,
+  "Tesla|Model S (Pre-AP)|2013": null,
+  "Tesla|Model S (Pre-AP)|2014": null,
+  "Tesla|Model X (with HW4)|2024": null,
+  "Tesla|Model Y (with HW3)|2020": null,
+  "Tesla|Model Y (with HW3)|2021": null,
+  "Tesla|Model Y (with HW3)|2022": null,
+  "Tesla|Model Y (with HW3)|2023": null,
+  "Tesla|Model Y (with HW4)|2024": null,
+  "Tesla|Model Y (with HW4)|2025": null,
+  "Toyota|Alphard Hybrid|2021": null,
+  "Toyota|Alphard|2019": null,
+  "Toyota|Alphard|2020": null,
+  "Toyota|Avalon Hybrid|2019": null,
+  "Toyota|Avalon Hybrid|2020": null,
+  "Toyota|Avalon Hybrid|2021": null,
+  "Toyota|Avalon Hybrid|2022": null,
+  "Toyota|Avalon|2016": {
+    "min": 13465,
+    "max": 17832,
+    "url": "https://www.jdpower.com/cars/2016/toyota/avalon",
+    "lastUpdated": 1779319899.977163
+  },
+  "Toyota|Avalon|2017": {
+    "min": 14843,
+    "max": 21099,
+    "url": "https://www.jdpower.com/cars/2017/toyota/avalon",
+    "lastUpdated": 1779319900.266337
+  },
+  "Toyota|Avalon|2018": {
+    "min": 16937,
+    "max": 24684,
+    "url": "https://www.jdpower.com/cars/2018/toyota/avalon",
+    "lastUpdated": 1779319900.1500459
+  },
+  "Toyota|Avalon|2019": {
+    "min": 19098,
+    "max": 27229,
+    "url": "https://www.jdpower.com/cars/2019/toyota/avalon",
+    "lastUpdated": 1779319899.977823
+  },
+  "Toyota|Avalon|2020": {
+    "min": 20700,
+    "max": 29261,
+    "url": "https://www.jdpower.com/cars/2020/toyota/avalon",
+    "lastUpdated": 1779319901.234394
+  },
+  "Toyota|Avalon|2021": {
+    "min": 22853,
+    "max": 31984,
+    "url": "https://www.jdpower.com/cars/2021/toyota/avalon",
+    "lastUpdated": 1779319900.152617
+  },
+  "Toyota|Avalon|2022": {
+    "min": 23243,
+    "max": 36468,
+    "url": "https://www.jdpower.com/cars/2022/toyota/avalon",
+    "lastUpdated": 1779319900.815557
+  },
+  "Toyota|C-HR Hybrid|2017": null,
+  "Toyota|C-HR Hybrid|2018": null,
+  "Toyota|C-HR Hybrid|2019": null,
+  "Toyota|C-HR Hybrid|2020": null,
+  "Toyota|C-HR Hybrid|2021": null,
+  "Toyota|C-HR Hybrid|2022": null,
+  "Toyota|C-HR|2017": null,
+  "Toyota|C-HR|2018": {
+    "min": 11008,
+    "max": 13019,
+    "url": "https://www.jdpower.com/cars/2018/toyota/c-hr",
+    "lastUpdated": 1779319901.456456
+  },
+  "Toyota|C-HR|2019": {
+    "min": 12954,
+    "max": 18594,
+    "url": "https://www.jdpower.com/cars/2019/toyota/c-hr",
+    "lastUpdated": 1779319901.222715
+  },
+  "Toyota|C-HR|2020": {
+    "min": 15276,
+    "max": 20754,
+    "url": "https://www.jdpower.com/cars/2020/toyota/c-hr",
+    "lastUpdated": 1779319901.331591
+  },
+  "Toyota|C-HR|2021": {
+    "min": 19288,
+    "max": 25156,
+    "url": "https://www.jdpower.com/cars/2021/toyota/c-hr",
+    "lastUpdated": 1779319901.7564511
+  },
+  "Toyota|Camry Hybrid|2018": null,
+  "Toyota|Camry Hybrid|2019": null,
+  "Toyota|Camry Hybrid|2020": null,
+  "Toyota|Camry Hybrid|2021": null,
+  "Toyota|Camry Hybrid|2022": null,
+  "Toyota|Camry Hybrid|2023": null,
+  "Toyota|Camry Hybrid|2024": null,
+  "Toyota|Camry|2018": null,
+  "Toyota|Camry|2019": {
+    "min": 13406,
+    "max": 22904,
+    "url": "https://www.jdpower.com/cars/2019/toyota/camry",
+    "lastUpdated": 1779319902.866154
+  },
+  "Toyota|Camry|2020": {
+    "min": 16329,
+    "max": 26228,
+    "url": "https://www.jdpower.com/cars/2020/toyota/camry",
+    "lastUpdated": 1779319903.142952
+  },
+  "Toyota|Camry|2021": {
+    "min": 18552,
+    "max": 30251,
+    "url": "https://www.jdpower.com/cars/2021/toyota/camry",
+    "lastUpdated": 1779319902.653049
+  },
+  "Toyota|Camry|2022": {
+    "min": 20361,
+    "max": 32179,
+    "url": "https://www.jdpower.com/cars/2022/toyota/camry",
+    "lastUpdated": 1779319903.2745018
+  },
+  "Toyota|Camry|2023": {
+    "min": 22096,
+    "max": 35830,
+    "url": "https://www.jdpower.com/cars/2023/toyota/camry",
+    "lastUpdated": 1779319903.3625238
+  },
+  "Toyota|Camry|2024": {
+    "min": 23635,
+    "max": 37659,
+    "url": "https://www.jdpower.com/cars/2024/toyota/camry",
+    "lastUpdated": 1779319903.135199
+  },
+  "Toyota|Camry|2025": {
+    "min": 24706,
+    "max": 37917,
+    "url": "https://www.jdpower.com/cars/2025/toyota/camry",
+    "lastUpdated": 1779319903.799547
+  },
+  "Toyota|Corolla Cross (Non-US only)|2020": null,
+  "Toyota|Corolla Cross (Non-US only)|2021": null,
+  "Toyota|Corolla Cross (Non-US only)|2022": null,
+  "Toyota|Corolla Cross (Non-US only)|2023": null,
+  "Toyota|Corolla Cross Hybrid (Non-US only)|2020": null,
+  "Toyota|Corolla Cross Hybrid (Non-US only)|2021": null,
+  "Toyota|Corolla Cross Hybrid (Non-US only)|2022": null,
+  "Toyota|Corolla Cross|2022": {
+    "min": 17903,
+    "max": 26618,
+    "url": "https://www.jdpower.com/cars/2022/toyota/corolla-cross",
+    "lastUpdated": 1779319905.929742
+  },
+  "Toyota|Corolla Cross|2023": {
+    "min": 20120,
+    "max": 31360,
+    "url": "https://www.jdpower.com/cars/2023/toyota/corolla-cross",
+    "lastUpdated": 1779319905.7535172
+  },
+  "Toyota|Corolla Cross|2024": {
+    "min": 21865,
+    "max": 33573,
+    "url": "https://www.jdpower.com/cars/2024/toyota/corolla-cross",
+    "lastUpdated": 1779319906.6950872
+  },
+  "Toyota|Corolla Cross|2025": {
+    "min": 21955,
+    "max": 34266,
+    "url": "https://www.jdpower.com/cars/2025/toyota/corolla-cross",
+    "lastUpdated": 1779319906.298542
+  },
+  "Toyota|Corolla Hatchback|2019": {
+    "min": 15230,
+    "max": 18692,
+    "url": "https://www.jdpower.com/cars/2019/toyota/corolla-hatchback",
+    "lastUpdated": 1779319907.765907
+  },
+  "Toyota|Corolla Hatchback|2020": {
+    "min": 15917,
+    "max": 19545,
+    "url": "https://www.jdpower.com/cars/2020/toyota/corolla-hatchback",
+    "lastUpdated": 1779319908.12791
+  },
+  "Toyota|Corolla Hatchback|2021": {
+    "min": 16886,
+    "max": 20358,
+    "url": "https://www.jdpower.com/cars/2021/toyota/corolla-hatchback",
+    "lastUpdated": 1779319907.734588
+  },
+  "Toyota|Corolla Hatchback|2022": {
+    "min": 16829,
+    "max": 23456,
+    "url": "https://www.jdpower.com/cars/2022/toyota/corolla-hatchback",
+    "lastUpdated": 1779319907.881907
+  },
+  "Toyota|Corolla Hybrid (South America only)|2020": null,
+  "Toyota|Corolla Hybrid (South America only)|2021": null,
+  "Toyota|Corolla Hybrid (South America only)|2022": null,
+  "Toyota|Corolla Hybrid (South America only)|2023": null,
+  "Toyota|Corolla Hybrid|2020": null,
+  "Toyota|Corolla Hybrid|2021": null,
+  "Toyota|Corolla Hybrid|2022": null,
+  "Toyota|Corolla|2017": {
+    "min": 10818,
+    "max": 15023,
+    "url": "https://www.jdpower.com/cars/2017/toyota/corolla",
+    "lastUpdated": 1779319904.985263
+  },
+  "Toyota|Corolla|2018": {
+    "min": 11775,
+    "max": 15479,
+    "url": "https://www.jdpower.com/cars/2018/toyota/corolla",
+    "lastUpdated": 1779319904.693336
+  },
+  "Toyota|Corolla|2019": {
+    "min": 12149,
+    "max": 16537,
+    "url": "https://www.jdpower.com/cars/2019/toyota/corolla",
+    "lastUpdated": 1779319904.613077
+  },
+  "Toyota|Corolla|2020": {
+    "min": 13692,
+    "max": 18515,
+    "url": "https://www.jdpower.com/cars/2020/toyota/corolla",
+    "lastUpdated": 1779319904.984981
+  },
+  "Toyota|Corolla|2021": {
+    "min": 15054,
+    "max": 20940,
+    "url": "https://www.jdpower.com/cars/2021/toyota/corolla",
+    "lastUpdated": 1779319905.3720791
+  },
+  "Toyota|Corolla|2022": {
+    "min": 14933,
+    "max": 22668,
+    "url": "https://www.jdpower.com/cars/2022/toyota/corolla",
+    "lastUpdated": 1779319905.394839
+  },
+  "Toyota|Highlander Hybrid|2017": null,
+  "Toyota|Highlander Hybrid|2018": null,
+  "Toyota|Highlander Hybrid|2019": null,
+  "Toyota|Highlander Hybrid|2020": null,
+  "Toyota|Highlander Hybrid|2021": null,
+  "Toyota|Highlander Hybrid|2022": null,
+  "Toyota|Highlander Hybrid|2023": null,
+  "Toyota|Highlander|2017": {
+    "min": 13783,
+    "max": 22718,
+    "url": "https://www.jdpower.com/cars/2017/toyota/highlander",
+    "lastUpdated": 1779319909.598429
+  },
+  "Toyota|Highlander|2018": {
+    "min": 15440,
+    "max": 26230,
+    "url": "https://www.jdpower.com/cars/2018/toyota/highlander",
+    "lastUpdated": 1779319909.405343
+  },
+  "Toyota|Highlander|2019": {
+    "min": 17938,
+    "max": 31191,
+    "url": "https://www.jdpower.com/cars/2019/toyota/highlander",
+    "lastUpdated": 1779319909.429558
+  },
+  "Toyota|Highlander|2020": {
+    "min": 20158,
+    "max": 35431,
+    "url": "https://www.jdpower.com/cars/2020/toyota/highlander",
+    "lastUpdated": 1779319910.108175
+  },
+  "Toyota|Highlander|2021": {
+    "min": 22946,
+    "max": 38001,
+    "url": "https://www.jdpower.com/cars/2021/toyota/highlander",
+    "lastUpdated": 1779319909.566308
+  },
+  "Toyota|Highlander|2022": {
+    "min": 24793,
+    "max": 43489,
+    "url": "https://www.jdpower.com/cars/2022/toyota/highlander",
+    "lastUpdated": 1779319909.978493
+  },
+  "Toyota|Highlander|2023": {
+    "min": 27102,
+    "max": 47661,
+    "url": "https://www.jdpower.com/cars/2023/toyota/highlander",
+    "lastUpdated": 1779319910.725441
+  },
+  "Toyota|Highlander|2025": {
+    "min": 36789,
+    "max": 58866,
+    "url": "https://www.jdpower.com/cars/2025/toyota/highlander",
+    "lastUpdated": 1779319910.6717062
+  },
+  "Toyota|Mirai|2021": {
+    "min": 9179,
+    "max": 12211,
+    "url": "https://www.jdpower.com/cars/2021/toyota/mirai",
+    "lastUpdated": 1779319911.4448252
+  },
+  "Toyota|Prius Prime|2017": {
+    "min": 14656,
+    "max": 18493,
+    "url": "https://www.jdpower.com/cars/2017/toyota/prius-prime",
+    "lastUpdated": 1779319912.7092018
+  },
+  "Toyota|Prius Prime|2018": {
+    "min": 16050,
+    "max": 20062,
+    "url": "https://www.jdpower.com/cars/2018/toyota/prius-prime",
+    "lastUpdated": 1779319912.7716749
+  },
+  "Toyota|Prius Prime|2019": {
+    "min": 17591,
+    "max": 21943,
+    "url": "https://www.jdpower.com/cars/2019/toyota/prius-prime",
+    "lastUpdated": 1779319912.864484
+  },
+  "Toyota|Prius Prime|2020": {
+    "min": 18975,
+    "max": 24060,
+    "url": "https://www.jdpower.com/cars/2020/toyota/prius-prime",
+    "lastUpdated": 1779319913.374497
+  },
+  "Toyota|Prius Prime|2021": {
+    "min": 21280,
+    "max": 26616,
+    "url": "https://www.jdpower.com/cars/2021/toyota/prius-prime",
+    "lastUpdated": 1779319913.2347798
+  },
+  "Toyota|Prius Prime|2022": {
+    "min": 21806,
+    "max": 29095,
+    "url": "https://www.jdpower.com/cars/2022/toyota/prius-prime",
+    "lastUpdated": 1779319913.255409
+  },
+  "Toyota|Prius v|2017": {
+    "min": 15715,
+    "max": 19797,
+    "url": "https://www.jdpower.com/cars/2017/toyota/prius-v",
+    "lastUpdated": 1779319915.855606
+  },
+  "Toyota|Prius|2016": {
+    "min": 11609,
+    "max": 15235,
+    "url": "https://www.jdpower.com/cars/2016/toyota/prius",
+    "lastUpdated": 1779319911.140619
+  },
+  "Toyota|Prius|2017": {
+    "min": 12233,
+    "max": 15960,
+    "url": "https://www.jdpower.com/cars/2017/toyota/prius",
+    "lastUpdated": 1779319911.164227
+  },
+  "Toyota|Prius|2018": {
+    "min": 12726,
+    "max": 17736,
+    "url": "https://www.jdpower.com/cars/2018/toyota/prius",
+    "lastUpdated": 1779319911.6922922
+  },
+  "Toyota|Prius|2019": {
+    "min": 14626,
+    "max": 20513,
+    "url": "https://www.jdpower.com/cars/2019/toyota/prius",
+    "lastUpdated": 1779319911.361046
+  },
+  "Toyota|Prius|2020": {
+    "min": 15673,
+    "max": 22786,
+    "url": "https://www.jdpower.com/cars/2020/toyota/prius",
+    "lastUpdated": 1779319912.185716
+  },
+  "Toyota|Prius|2021": {
+    "min": 17377,
+    "max": 24581,
+    "url": "https://www.jdpower.com/cars/2021/toyota/prius",
+    "lastUpdated": 1779319911.960572
+  },
+  "Toyota|Prius|2022": {
+    "min": 17649,
+    "max": 27492,
+    "url": "https://www.jdpower.com/cars/2022/toyota/prius",
+    "lastUpdated": 1779319912.4132721
+  },
+  "Toyota|RAV4 Hybrid|2016": {
+    "min": 14594,
+    "max": 18077,
+    "url": "https://www.jdpower.com/cars/2016/toyota/rav4-hybrid",
+    "lastUpdated": 1779319916.2380831
+  },
+  "Toyota|RAV4 Hybrid|2017": {
+    "min": 16919,
+    "max": 21909,
+    "url": "https://www.jdpower.com/cars/2017/toyota/rav4-hybrid",
+    "lastUpdated": 1779319916.706453
+  },
+  "Toyota|RAV4 Hybrid|2018": null,
+  "Toyota|RAV4 Hybrid|2019": null,
+  "Toyota|RAV4 Hybrid|2020": null,
+  "Toyota|RAV4 Hybrid|2021": null,
+  "Toyota|RAV4 Hybrid|2022": null,
+  "Toyota|RAV4 Hybrid|2023": null,
+  "Toyota|RAV4 Hybrid|2024": null,
+  "Toyota|RAV4 Hybrid|2025": null,
+  "Toyota|RAV4 Prime|2021": {
+    "min": 30108,
+    "max": 41632,
+    "url": "https://www.jdpower.com/cars/2021/toyota/rav4-prime",
+    "lastUpdated": 1779319917.313438
+  },
+  "Toyota|RAV4 Prime|2022": {
+    "min": 32512,
+    "max": 47235,
+    "url": "https://www.jdpower.com/cars/2022/toyota/rav4-prime",
+    "lastUpdated": 1779319917.5146399
+  },
+  "Toyota|RAV4 Prime|2023": {
+    "min": 34537,
+    "max": 53008,
+    "url": "https://www.jdpower.com/cars/2023/toyota/rav4-prime",
+    "lastUpdated": 1779319919.3943622
+  },
+  "Toyota|RAV4 Prime|2024": {
+    "min": 39701,
+    "max": 54519,
+    "url": "https://www.jdpower.com/cars/2024/toyota/rav4-prime",
+    "lastUpdated": 1779319918.364062
+  },
+  "Toyota|RAV4 Prime|2025": null,
+  "Toyota|RAV4|2016": {
+    "min": 12768,
+    "max": 17374,
+    "url": "https://www.jdpower.com/cars/2016/toyota/rav4",
+    "lastUpdated": 1779319913.4957619
+  },
+  "Toyota|RAV4|2017": {
+    "min": 14598,
+    "max": 23463,
+    "url": "https://www.jdpower.com/cars/2017/toyota/rav4",
+    "lastUpdated": 1779319913.79949
+  },
+  "Toyota|RAV4|2018": {
+    "min": 16147,
+    "max": 27028,
+    "url": "https://www.jdpower.com/cars/2018/toyota/rav4",
+    "lastUpdated": 1779319916.087352
+  },
+  "Toyota|RAV4|2019": {
+    "min": 17097,
+    "max": 28702,
+    "url": "https://www.jdpower.com/cars/2019/toyota/rav4",
+    "lastUpdated": 1779319914.172857
+  },
+  "Toyota|RAV4|2020": {
+    "min": 18871,
+    "max": 34878,
+    "url": "https://www.jdpower.com/cars/2020/toyota/rav4",
+    "lastUpdated": 1779319914.566078
+  },
+  "Toyota|RAV4|2021": {
+    "min": 22745,
+    "max": 36868,
+    "url": "https://www.jdpower.com/cars/2021/toyota/rav4",
+    "lastUpdated": 1779319914.396512
+  },
+  "Toyota|RAV4|2022": {
+    "min": 23597,
+    "max": 41811,
+    "url": "https://www.jdpower.com/cars/2022/toyota/rav4",
+    "lastUpdated": 1779319914.704718
+  },
+  "Toyota|RAV4|2023": {
+    "min": 24773,
+    "max": 44721,
+    "url": "https://www.jdpower.com/cars/2023/toyota/rav4",
+    "lastUpdated": 1779319916.13022
+  },
+  "Toyota|RAV4|2024": {
+    "min": 26801,
+    "max": 47293,
+    "url": "https://www.jdpower.com/cars/2024/toyota/rav4",
+    "lastUpdated": 1779319915.980442
+  },
+  "Toyota|RAV4|2025": {
+    "min": 28333,
+    "max": 45285,
+    "url": "https://www.jdpower.com/cars/2025/toyota/rav4",
+    "lastUpdated": 1779319915.993066
+  },
+  "Toyota|Sequoia|2023": {
+    "min": 51995,
+    "max": 78407,
+    "url": "https://www.jdpower.com/cars/2023/toyota/sequoia",
+    "lastUpdated": 1779319917.7595232
+  },
+  "Toyota|Sequoia|2024": {
+    "min": 56013,
+    "max": 83489,
+    "url": "https://www.jdpower.com/cars/2024/toyota/sequoia",
+    "lastUpdated": 1779319918.298902
+  },
+  "Toyota|Sequoia|2025": {
+    "min": 56738,
+    "max": 91164,
+    "url": "https://www.jdpower.com/cars/2025/toyota/sequoia",
+    "lastUpdated": 1779319918.477206
+  },
+  "Toyota|Sienna|2018": {
+    "min": 14938,
+    "max": 27008,
+    "url": "https://www.jdpower.com/cars/2018/toyota/sienna",
+    "lastUpdated": 1779319918.649955
+  },
+  "Toyota|Sienna|2019": {
+    "min": 19232,
+    "max": 31561,
+    "url": "https://www.jdpower.com/cars/2019/toyota/sienna",
+    "lastUpdated": 1779319918.773422
+  },
+  "Toyota|Sienna|2020": {
+    "min": 22589,
+    "max": 35929,
+    "url": "https://www.jdpower.com/cars/2020/toyota/sienna",
+    "lastUpdated": 1779319919.8721018
+  },
+  "Toyota|Sienna|2021": null,
+  "Toyota|Sienna|2022": {
+    "min": 30506,
+    "max": 51640,
+    "url": "https://www.jdpower.com/cars/2022/toyota/sienna",
+    "lastUpdated": 1779319919.907203
+  },
+  "Toyota|Sienna|2023": {
+    "min": 31083,
+    "max": 56172,
+    "url": "https://www.jdpower.com/cars/2023/toyota/sienna",
+    "lastUpdated": 1779319919.55341
+  },
+  "Toyota|Sienna|2024": null,
+  "Toyota|Sienna|2025": {
+    "min": 33500,
+    "max": 60184,
+    "url": "https://www.jdpower.com/cars/2025/toyota/sienna",
+    "lastUpdated": 1779319919.722645
+  },
+  "Toyota|Tundra|2022": {
+    "min": 27600,
+    "max": 54958,
+    "url": "https://www.jdpower.com/cars/2022/toyota/tundra",
+    "lastUpdated": 1779319919.75833
+  },
+  "Toyota|Tundra|2023": {
+    "min": 28492,
+    "max": 59172,
+    "url": "https://www.jdpower.com/cars/2023/toyota/tundra",
+    "lastUpdated": 1779319920.842688
+  },
+  "Toyota|Tundra|2024": {
+    "min": 31065,
+    "max": 70183,
+    "url": "https://www.jdpower.com/cars/2024/toyota/tundra",
+    "lastUpdated": 1779319921.402602
+  },
+  "Toyota|Tundra|2025": {
+    "min": 34595,
+    "max": 71899,
+    "url": "https://www.jdpower.com/cars/2025/toyota/tundra",
+    "lastUpdated": 1779319921.141655
+  },
+  "Toyota|Venza|2021": {
+    "min": 23341,
+    "max": 30123,
+    "url": "https://www.jdpower.com/cars/2021/toyota/venza",
+    "lastUpdated": 1779319921.174691
+  },
+  "Toyota|Venza|2022": {
+    "min": 24082,
+    "max": 32637,
+    "url": "https://www.jdpower.com/cars/2022/toyota/venza",
+    "lastUpdated": 1779319921.246229
+  },
+  "Toyota|Venza|2023": {
+    "min": 26828,
+    "max": 38394,
+    "url": "https://www.jdpower.com/cars/2023/toyota/venza",
+    "lastUpdated": 1779319921.153177
+  },
+  "Toyota|Venza|2024": {
+    "min": 28893,
+    "max": 42531,
+    "url": "https://www.jdpower.com/cars/2024/toyota/venza",
+    "lastUpdated": 1779319922.6924129
+  },
+  "Toyota|Venza|2025": null,
+  "Toyota|Yaris (Non-US only)|2020": null,
+  "Toyota|Yaris (Non-US only)|2023": null,
+  "Toyota|bZ4x|2023": {
+    "min": 17489,
+    "max": 25151,
+    "url": "https://www.jdpower.com/cars/2023/toyota/bz4x",
+    "lastUpdated": 1779319923.406819
+  },
+  "Toyota|bZ4x|2024": {
+    "min": 19459,
+    "max": 26250,
+    "url": "https://www.jdpower.com/cars/2024/toyota/bz4x",
+    "lastUpdated": 1779319923.593887
+  },
+  "Toyota|bZ4x|2025": {
+    "min": 34127,
+    "max": 47333,
+    "url": "https://www.jdpower.com/cars/2025/toyota/bz4x",
+    "lastUpdated": 1779319923.5243149
+  },
+  "Volkswagen|Arteon R|2020": null,
+  "Volkswagen|Arteon R|2021": null,
+  "Volkswagen|Arteon R|2022": null,
+  "Volkswagen|Arteon R|2023": null,
+  "Volkswagen|Arteon Shooting Brake|2020": null,
+  "Volkswagen|Arteon Shooting Brake|2021": null,
+  "Volkswagen|Arteon Shooting Brake|2022": null,
+  "Volkswagen|Arteon Shooting Brake|2023": null,
+  "Volkswagen|Arteon eHybrid|2020": null,
+  "Volkswagen|Arteon eHybrid|2021": null,
+  "Volkswagen|Arteon eHybrid|2022": null,
+  "Volkswagen|Arteon eHybrid|2023": null,
+  "Volkswagen|Arteon|2018": null,
+  "Volkswagen|Arteon|2019": {
+    "min": 13423,
+    "max": 20974,
+    "url": "https://www.jdpower.com/cars/2019/volkswagen/arteon",
+    "lastUpdated": 1779319923.40643
+  },
+  "Volkswagen|Arteon|2020": {
+    "min": 15154,
+    "max": 23803,
+    "url": "https://www.jdpower.com/cars/2020/volkswagen/arteon",
+    "lastUpdated": 1779319923.326256
+  },
+  "Volkswagen|Arteon|2021": {
+    "min": 18101,
+    "max": 25607,
+    "url": "https://www.jdpower.com/cars/2021/volkswagen/arteon",
+    "lastUpdated": 1779319923.908677
+  },
+  "Volkswagen|Arteon|2022": {
+    "min": 21154,
+    "max": 29746,
+    "url": "https://www.jdpower.com/cars/2022/volkswagen/arteon",
+    "lastUpdated": 1779319924.767672
+  },
+  "Volkswagen|Arteon|2023": {
+    "min": 23721,
+    "max": 35222,
+    "url": "https://www.jdpower.com/cars/2023/volkswagen/arteon",
+    "lastUpdated": 1779319924.425795
+  },
+  "Volkswagen|Atlas Cross Sport|2020": {
+    "min": 13006,
+    "max": 25630,
+    "url": "https://www.jdpower.com/cars/2020/volkswagen/atlas-cross-sport",
+    "lastUpdated": 1779319926.86671
+  },
+  "Volkswagen|Atlas Cross Sport|2021": {
+    "min": 15593,
+    "max": 29116,
+    "url": "https://www.jdpower.com/cars/2021/volkswagen/atlas-cross-sport",
+    "lastUpdated": 1779319926.377739
+  },
+  "Volkswagen|Atlas Cross Sport|2022": {
+    "min": 17402,
+    "max": 32131,
+    "url": "https://www.jdpower.com/cars/2022/volkswagen/atlas-cross-sport",
+    "lastUpdated": 1779319926.2097762
+  },
+  "Volkswagen|Atlas|2018": {
+    "min": 9561,
+    "max": 16916,
+    "url": "https://www.jdpower.com/cars/2018/volkswagen/atlas",
+    "lastUpdated": 1779319925.626248
+  },
+  "Volkswagen|Atlas|2019": {
+    "min": 11841,
+    "max": 20665,
+    "url": "https://www.jdpower.com/cars/2019/volkswagen/atlas",
+    "lastUpdated": 1779319925.690634
+  },
+  "Volkswagen|Atlas|2020": {
+    "min": 13576,
+    "max": 25744,
+    "url": "https://www.jdpower.com/cars/2020/volkswagen/atlas",
+    "lastUpdated": 1779319925.817746
+  },
+  "Volkswagen|Atlas|2021": {
+    "min": 15855,
+    "max": 30954,
+    "url": "https://www.jdpower.com/cars/2021/volkswagen/atlas",
+    "lastUpdated": 1779319925.5945961
+  },
+  "Volkswagen|Atlas|2022": {
+    "min": 18043,
+    "max": 34197,
+    "url": "https://www.jdpower.com/cars/2022/volkswagen/atlas",
+    "lastUpdated": 1779319925.549264
+  },
+  "Volkswagen|Atlas|2023": {
+    "min": 21561,
+    "max": 38029,
+    "url": "https://www.jdpower.com/cars/2023/volkswagen/atlas",
+    "lastUpdated": 1779319925.53642
+  },
+  "Volkswagen|CC|2018": null,
+  "Volkswagen|CC|2019": null,
+  "Volkswagen|CC|2020": null,
+  "Volkswagen|CC|2021": null,
+  "Volkswagen|CC|2022": null,
+  "Volkswagen|Caddy Maxi|2019": null,
+  "Volkswagen|Caddy|2019": null,
+  "Volkswagen|California|2021": null,
+  "Volkswagen|California|2022": null,
+  "Volkswagen|California|2023": null,
+  "Volkswagen|Caravelle|2020": null,
+  "Volkswagen|Crafter|2017": null,
+  "Volkswagen|Crafter|2018": null,
+  "Volkswagen|Crafter|2019": null,
+  "Volkswagen|Crafter|2020": null,
+  "Volkswagen|Crafter|2021": null,
+  "Volkswagen|Crafter|2022": null,
+  "Volkswagen|Crafter|2023": null,
+  "Volkswagen|Crafter|2024": null,
+  "Volkswagen|Golf Alltrack|2015": null,
+  "Volkswagen|Golf Alltrack|2016": null,
+  "Volkswagen|Golf Alltrack|2017": {
+    "min": 12742,
+    "max": 17288,
+    "url": "https://www.jdpower.com/cars/2017/volkswagen/golf-alltrack",
+    "lastUpdated": 1779319928.5728629
+  },
+  "Volkswagen|Golf Alltrack|2018": {
+    "min": 14843,
+    "max": 20564,
+    "url": "https://www.jdpower.com/cars/2018/volkswagen/golf-alltrack",
+    "lastUpdated": 1779319929.5227
+  },
+  "Volkswagen|Golf Alltrack|2019": {
+    "min": 16057,
+    "max": 21364,
+    "url": "https://www.jdpower.com/cars/2019/volkswagen/golf-alltrack",
+    "lastUpdated": 1779319928.699706
+  },
+  "Volkswagen|Golf GTD|2015": null,
+  "Volkswagen|Golf GTD|2016": null,
+  "Volkswagen|Golf GTD|2017": null,
+  "Volkswagen|Golf GTD|2018": null,
+  "Volkswagen|Golf GTD|2019": null,
+  "Volkswagen|Golf GTD|2020": null,
+  "Volkswagen|Golf GTE|2015": null,
+  "Volkswagen|Golf GTE|2016": null,
+  "Volkswagen|Golf GTE|2017": null,
+  "Volkswagen|Golf GTE|2018": null,
+  "Volkswagen|Golf GTE|2019": null,
+  "Volkswagen|Golf GTE|2020": null,
+  "Volkswagen|Golf GTI|2015": {
+    "min": 8068,
+    "max": 10685,
+    "url": "https://www.jdpower.com/cars/2015/volkswagen/golf-gti",
+    "lastUpdated": 1779319930.2303119
+  },
+  "Volkswagen|Golf GTI|2016": {
+    "min": 8869,
+    "max": 12063,
+    "url": "https://www.jdpower.com/cars/2016/volkswagen/golf-gti",
+    "lastUpdated": 1779319930.1708522
+  },
+  "Volkswagen|Golf GTI|2017": {
+    "min": 10575,
+    "max": 14993,
+    "url": "https://www.jdpower.com/cars/2017/volkswagen/golf-gti",
+    "lastUpdated": 1779319930.104702
+  },
+  "Volkswagen|Golf GTI|2018": {
+    "min": 12728,
+    "max": 17839,
+    "url": "https://www.jdpower.com/cars/2018/volkswagen/golf-gti",
+    "lastUpdated": 1779319930.269891
+  },
+  "Volkswagen|Golf GTI|2019": {
+    "min": 15049,
+    "max": 20611,
+    "url": "https://www.jdpower.com/cars/2019/volkswagen/golf-gti",
+    "lastUpdated": 1779319930.700646
+  },
+  "Volkswagen|Golf GTI|2020": {
+    "min": 16371,
+    "max": 22410,
+    "url": "https://www.jdpower.com/cars/2020/volkswagen/golf-gti",
+    "lastUpdated": 1779319930.6636631
+  },
+  "Volkswagen|Golf GTI|2021": {
+    "min": 18510,
+    "max": 24695,
+    "url": "https://www.jdpower.com/cars/2021/volkswagen/golf-gti",
+    "lastUpdated": 1779319931.716735
+  },
+  "Volkswagen|Golf R|2015": {
+    "min": 14177,
+    "max": 16095,
+    "url": "https://www.jdpower.com/cars/2015/volkswagen/golf-r",
+    "lastUpdated": 1779319931.869122
+  },
+  "Volkswagen|Golf R|2016": {
+    "min": 15542,
+    "max": 17571,
+    "url": "https://www.jdpower.com/cars/2016/volkswagen/golf-r",
+    "lastUpdated": 1779319931.582953
+  },
+  "Volkswagen|Golf R|2017": {
+    "min": 17876,
+    "max": 20364,
+    "url": "https://www.jdpower.com/cars/2017/volkswagen/golf-r",
+    "lastUpdated": 1779319931.093505
+  },
+  "Volkswagen|Golf R|2018": {
+    "min": 19964,
+    "max": 22556,
+    "url": "https://www.jdpower.com/cars/2018/volkswagen/golf-r",
+    "lastUpdated": 1779319931.9185789
+  },
+  "Volkswagen|Golf R|2019": {
+    "min": 22545,
+    "max": 25308,
+    "url": "https://www.jdpower.com/cars/2019/volkswagen/golf-r",
+    "lastUpdated": 1779319931.7767
+  },
+  "Volkswagen|Golf SportsVan|2015": null,
+  "Volkswagen|Golf SportsVan|2016": null,
+  "Volkswagen|Golf SportsVan|2017": null,
+  "Volkswagen|Golf SportsVan|2018": null,
+  "Volkswagen|Golf SportsVan|2019": null,
+  "Volkswagen|Golf SportsVan|2020": null,
+  "Volkswagen|Golf|2015": {
+    "min": 8063,
+    "max": 11141,
+    "url": "https://www.jdpower.com/cars/2015/volkswagen/golf",
+    "lastUpdated": 1779319927.913425
+  },
+  "Volkswagen|Golf|2016": {
+    "min": 8557,
+    "max": 11662,
+    "url": "https://www.jdpower.com/cars/2016/volkswagen/golf",
+    "lastUpdated": 1779319927.943233
+  },
+  "Volkswagen|Golf|2017": {
+    "min": 9931,
+    "max": 12585,
+    "url": "https://www.jdpower.com/cars/2017/volkswagen/golf",
+    "lastUpdated": 1779319929.3091562
+  },
+  "Volkswagen|Golf|2018": {
+    "min": 10278,
+    "max": 12862,
+    "url": "https://www.jdpower.com/cars/2018/volkswagen/golf",
+    "lastUpdated": 1779319927.623619
+  },
+  "Volkswagen|Golf|2019": {
+    "min": 11276,
+    "max": 13664,
+    "url": "https://www.jdpower.com/cars/2019/volkswagen/golf",
+    "lastUpdated": 1779319927.937933
+  },
+  "Volkswagen|Golf|2020": {
+    "min": 13300,
+    "max": 15022,
+    "url": "https://www.jdpower.com/cars/2020/volkswagen/golf",
+    "lastUpdated": 1779319927.921771
+  },
+  "Volkswagen|Grand California|2019": null,
+  "Volkswagen|Grand California|2020": null,
+  "Volkswagen|Grand California|2021": null,
+  "Volkswagen|Grand California|2022": null,
+  "Volkswagen|Grand California|2023": null,
+  "Volkswagen|Grand California|2024": null,
+  "Volkswagen|Jetta GLI|2021": {
+    "min": 16569,
+    "max": 20396,
+    "url": "https://www.jdpower.com/cars/2021/volkswagen/jetta-gli",
+    "lastUpdated": 1779319934.483357
+  },
+  "Volkswagen|Jetta GLI|2022": {
+    "min": 19929,
+    "max": 23620,
+    "url": "https://www.jdpower.com/cars/2022/volkswagen/jetta-gli",
+    "lastUpdated": 1779319934.819339
+  },
+  "Volkswagen|Jetta GLI|2023": {
+    "min": 22173,
+    "max": 26634,
+    "url": "https://www.jdpower.com/cars/2023/volkswagen/jetta-gli",
+    "lastUpdated": 1779319934.779569
+  },
+  "Volkswagen|Jetta GLI|2024": {
+    "min": 20674,
+    "max": 28376,
+    "url": "https://www.jdpower.com/cars/2024/volkswagen/jetta-gli",
+    "lastUpdated": 1779319934.9921112
+  },
+  "Volkswagen|Jetta|2015": {
+    "min": 7030,
+    "max": 10605,
+    "url": "https://www.jdpower.com/cars/2015/volkswagen/jetta",
+    "lastUpdated": 1779319932.988467
+  },
+  "Volkswagen|Jetta|2016": {
+    "min": 7388,
+    "max": 10916,
+    "url": "https://www.jdpower.com/cars/2016/volkswagen/jetta",
+    "lastUpdated": 1779319932.9199512
+  },
+  "Volkswagen|Jetta|2017": {
+    "min": 7989,
+    "max": 12228,
+    "url": "https://www.jdpower.com/cars/2017/volkswagen/jetta",
+    "lastUpdated": 1779319932.9091132
+  },
+  "Volkswagen|Jetta|2018": {
+    "min": 8918,
+    "max": 13730,
+    "url": "https://www.jdpower.com/cars/2018/volkswagen/jetta",
+    "lastUpdated": 1779319933.679584
+  },
+  "Volkswagen|Jetta|2019": {
+    "min": 11241,
+    "max": 14267,
+    "url": "https://www.jdpower.com/cars/2019/volkswagen/jetta",
+    "lastUpdated": 1779319933.7041721
+  },
+  "Volkswagen|Jetta|2020": {
+    "min": 11917,
+    "max": 16440,
+    "url": "https://www.jdpower.com/cars/2020/volkswagen/jetta",
+    "lastUpdated": 1779319933.7377448
+  },
+  "Volkswagen|Jetta|2021": {
+    "min": 12866,
+    "max": 18329,
+    "url": "https://www.jdpower.com/cars/2021/volkswagen/jetta",
+    "lastUpdated": 1779319933.800092
+  },
+  "Volkswagen|Jetta|2022": {
+    "min": 14882,
+    "max": 21516,
+    "url": "https://www.jdpower.com/cars/2022/volkswagen/jetta",
+    "lastUpdated": 1779319935.459658
+  },
+  "Volkswagen|Jetta|2023": {
+    "min": 15629,
+    "max": 23039,
+    "url": "https://www.jdpower.com/cars/2023/volkswagen/jetta",
+    "lastUpdated": 1779319934.987214
+  },
+  "Volkswagen|Jetta|2024": {
+    "min": 16771,
+    "max": 25803,
+    "url": "https://www.jdpower.com/cars/2024/volkswagen/jetta",
+    "lastUpdated": 1779319934.399136
+  },
+  "Volkswagen|Passat Alltrack|2015": null,
+  "Volkswagen|Passat Alltrack|2016": null,
+  "Volkswagen|Passat Alltrack|2017": null,
+  "Volkswagen|Passat Alltrack|2018": null,
+  "Volkswagen|Passat Alltrack|2019": null,
+  "Volkswagen|Passat Alltrack|2020": null,
+  "Volkswagen|Passat Alltrack|2021": null,
+  "Volkswagen|Passat Alltrack|2022": null,
+  "Volkswagen|Passat GTE|2015": null,
+  "Volkswagen|Passat GTE|2016": null,
+  "Volkswagen|Passat GTE|2017": null,
+  "Volkswagen|Passat GTE|2018": null,
+  "Volkswagen|Passat GTE|2019": null,
+  "Volkswagen|Passat GTE|2020": null,
+  "Volkswagen|Passat GTE|2021": null,
+  "Volkswagen|Passat GTE|2022": null,
+  "Volkswagen|Passat NMS|2017": null,
+  "Volkswagen|Passat NMS|2018": null,
+  "Volkswagen|Passat NMS|2019": null,
+  "Volkswagen|Passat NMS|2020": null,
+  "Volkswagen|Passat NMS|2021": null,
+  "Volkswagen|Passat NMS|2022": null,
+  "Volkswagen|Passat|2015": {
+    "min": 7598,
+    "max": 10981,
+    "url": "https://www.jdpower.com/cars/2015/volkswagen/passat",
+    "lastUpdated": 1779319935.378986
+  },
+  "Volkswagen|Passat|2016": {
+    "min": 8525,
+    "max": 13301,
+    "url": "https://www.jdpower.com/cars/2016/volkswagen/passat",
+    "lastUpdated": 1779319935.489161
+  },
+  "Volkswagen|Passat|2017": {
+    "min": 10430,
+    "max": 15701,
+    "url": "https://www.jdpower.com/cars/2017/volkswagen/passat",
+    "lastUpdated": 1779319935.487689
+  },
+  "Volkswagen|Passat|2018": {
+    "min": 10731,
+    "max": 17191,
+    "url": "https://www.jdpower.com/cars/2018/volkswagen/passat",
+    "lastUpdated": 1779319935.998882
+  },
+  "Volkswagen|Passat|2019": {
+    "min": 11697,
+    "max": 15256,
+    "url": "https://www.jdpower.com/cars/2019/volkswagen/passat",
+    "lastUpdated": 1779319935.877573
+  },
+  "Volkswagen|Passat|2020": {
+    "min": 12235,
+    "max": 16807,
+    "url": "https://www.jdpower.com/cars/2020/volkswagen/passat",
+    "lastUpdated": 1779319936.182209
+  },
+  "Volkswagen|Passat|2021": {
+    "min": 13197,
+    "max": 18994,
+    "url": "https://www.jdpower.com/cars/2021/volkswagen/passat",
+    "lastUpdated": 1779319936.190482
+  },
+  "Volkswagen|Passat|2022": {
+    "min": 17004,
+    "max": 21629,
+    "url": "https://www.jdpower.com/cars/2022/volkswagen/passat",
+    "lastUpdated": 1779319936.2101288
+  },
+  "Volkswagen|Polo GTI|2018": null,
+  "Volkswagen|Polo GTI|2019": null,
+  "Volkswagen|Polo GTI|2020": null,
+  "Volkswagen|Polo GTI|2021": null,
+  "Volkswagen|Polo GTI|2022": null,
+  "Volkswagen|Polo GTI|2023": null,
+  "Volkswagen|Polo|2018": null,
+  "Volkswagen|Polo|2019": null,
+  "Volkswagen|Polo|2020": null,
+  "Volkswagen|Polo|2021": null,
+  "Volkswagen|Polo|2022": null,
+  "Volkswagen|Polo|2023": null,
+  "Volkswagen|Sharan|2018": null,
+  "Volkswagen|Sharan|2019": null,
+  "Volkswagen|Sharan|2020": null,
+  "Volkswagen|Sharan|2021": null,
+  "Volkswagen|Sharan|2022": null,
+  "Volkswagen|T-Cross|2021": null,
+  "Volkswagen|T-Roc|2018": null,
+  "Volkswagen|T-Roc|2019": null,
+  "Volkswagen|T-Roc|2020": null,
+  "Volkswagen|T-Roc|2021": null,
+  "Volkswagen|T-Roc|2022": null,
+  "Volkswagen|T-Roc|2023": null,
+  "Volkswagen|Taos|2022": {
+    "min": 13687,
+    "max": 22546,
+    "url": "https://www.jdpower.com/cars/2022/volkswagen/taos",
+    "lastUpdated": 1779319938.467202
+  },
+  "Volkswagen|Taos|2023": {
+    "min": 17697,
+    "max": 27733,
+    "url": "https://www.jdpower.com/cars/2023/volkswagen/taos",
+    "lastUpdated": 1779319938.477908
+  },
+  "Volkswagen|Taos|2024": {
+    "min": 18451,
+    "max": 31192,
+    "url": "https://www.jdpower.com/cars/2024/volkswagen/taos",
+    "lastUpdated": 1779319938.5014899
+  },
+  "Volkswagen|Teramont Cross Sport|2021": null,
+  "Volkswagen|Teramont Cross Sport|2022": null,
+  "Volkswagen|Teramont X|2021": null,
+  "Volkswagen|Teramont X|2022": null,
+  "Volkswagen|Teramont|2018": null,
+  "Volkswagen|Teramont|2019": null,
+  "Volkswagen|Teramont|2020": null,
+  "Volkswagen|Teramont|2021": null,
+  "Volkswagen|Teramont|2022": null,
+  "Volkswagen|Tiguan eHybrid|2021": null,
+  "Volkswagen|Tiguan eHybrid|2022": null,
+  "Volkswagen|Tiguan eHybrid|2023": null,
+  "Volkswagen|Tiguan|2018": {
+    "min": 8912,
+    "max": 15521,
+    "url": "https://www.jdpower.com/cars/2018/volkswagen/tiguan",
+    "lastUpdated": 1779319939.481312
+  },
+  "Volkswagen|Tiguan|2019": {
+    "min": 10591,
+    "max": 17239,
+    "url": "https://www.jdpower.com/cars/2019/volkswagen/tiguan",
+    "lastUpdated": 1779319939.5124202
+  },
+  "Volkswagen|Tiguan|2020": {
+    "min": 11634,
+    "max": 20351,
+    "url": "https://www.jdpower.com/cars/2020/volkswagen/tiguan",
+    "lastUpdated": 1779319939.6146402
+  },
+  "Volkswagen|Tiguan|2021": {
+    "min": 14536,
+    "max": 25479,
+    "url": "https://www.jdpower.com/cars/2021/volkswagen/tiguan",
+    "lastUpdated": 1779319939.584907
+  },
+  "Volkswagen|Tiguan|2022": {
+    "min": 15452,
+    "max": 25420,
+    "url": "https://www.jdpower.com/cars/2022/volkswagen/tiguan",
+    "lastUpdated": 1779319939.482023
+  },
+  "Volkswagen|Tiguan|2023": {
+    "min": 16906,
+    "max": 32100,
+    "url": "https://www.jdpower.com/cars/2023/volkswagen/tiguan",
+    "lastUpdated": 1779319939.745752
+  },
+  "Volkswagen|Tiguan|2024": {
+    "min": 18977,
+    "max": 34745,
+    "url": "https://www.jdpower.com/cars/2024/volkswagen/tiguan",
+    "lastUpdated": 1779319940.0805771
+  },
+  "Volkswagen|Touran|2016": null,
+  "Volkswagen|Touran|2017": null,
+  "Volkswagen|Touran|2018": null,
+  "Volkswagen|Touran|2019": null,
+  "Volkswagen|Touran|2020": null,
+  "Volkswagen|Touran|2021": null,
+  "Volkswagen|Touran|2022": null,
+  "Volkswagen|Touran|2023": null,
+  "Volkswagen|e-Crafter|2018": null,
+  "Volkswagen|e-Crafter|2019": null,
+  "Volkswagen|e-Crafter|2020": null,
+  "Volkswagen|e-Crafter|2021": null,
+  "Volkswagen|e-Crafter|2022": null,
+  "Volkswagen|e-Crafter|2023": null,
+  "Volkswagen|e-Crafter|2024": null,
+  "Volkswagen|e-Golf|2014": null,
+  "Volkswagen|e-Golf|2015": {
+    "min": 5680,
+    "max": 6875,
+    "url": "https://www.jdpower.com/cars/2015/volkswagen/e-golf",
+    "lastUpdated": 1779319941.053652
+  },
+  "Volkswagen|e-Golf|2016": {
+    "min": 6008,
+    "max": 7499,
+    "url": "https://www.jdpower.com/cars/2016/volkswagen/e-golf",
+    "lastUpdated": 1779319941.023357
+  },
+  "Volkswagen|e-Golf|2017": {
+    "min": 6544,
+    "max": 8012,
+    "url": "https://www.jdpower.com/cars/2017/volkswagen/e-golf",
+    "lastUpdated": 1779319941.25975
+  },
+  "Volkswagen|e-Golf|2018": {
+    "min": 8619,
+    "max": 10788,
+    "url": "https://www.jdpower.com/cars/2018/volkswagen/e-golf",
+    "lastUpdated": 1779319941.545999
+  },
+  "Volkswagen|e-Golf|2019": {
+    "min": 9307,
+    "max": 12347,
+    "url": "https://www.jdpower.com/cars/2019/volkswagen/e-golf",
+    "lastUpdated": 1779319941.230617
+  },
+  "Volkswagen|e-Golf|2020": null
+}
