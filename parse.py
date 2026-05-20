@@ -777,11 +777,12 @@ def cargurus_query(car: dict) -> str | None:
 
 PROXIFLY_URL = "https://raw.githubusercontent.com/proxifly/free-proxy-list/main/proxies/all/data.json"
 PROXIFLY_VERIFIED_CACHE_FILE = os.path.join(HERE, ".proxifly_verified_cache.json")
+PROXIFLY_BLACKLIST_FILE = os.path.join(HERE, ".proxifly_blacklist_cache.json")
 IP_CHECK_URL = "https://ip.notmy.space/json"
 
-_ACTIVE_PROXIES: list[str] = []   # for urllib random-pick; read-only after init
+_ACTIVE_PROXIES: list[str] = []  # for urllib random-pick; read-only after init
 _READY_PROXIES: queue.Queue = queue.Queue()  # pre-validated proxies ready to use
-_proxy_pool_done = threading.Event()         # set when the check pool finishes
+_proxy_pool_done = threading.Event()  # set when the check pool finishes
 _proxy_direct_ip: str | None = None
 _proxy_ip_check_url: str = IP_CHECK_URL
 _proxy_tested_count: int = 0  # protected by a threading.Lock
@@ -790,7 +791,8 @@ _proxy_count_lock = threading.Lock()
 
 
 class _ProxyBlocked(Exception):
-    pass
+    def __init__(self, blacklist: bool = False):
+        self.blacklist = blacklist
 
 
 def load_proxy_list(max_age_seconds: int = 3600) -> list[str]:
@@ -808,23 +810,25 @@ def load_proxy_list(max_age_seconds: int = 3600) -> list[str]:
                 pass
     if not raw:
         print("  Fetching proxy list from proxifly...", file=sys.stderr)
-        req = urllib.request.Request(PROXIFLY_URL, headers={"User-Agent": "Mozilla/5.0"})
+        req = urllib.request.Request(
+            PROXIFLY_URL, headers={"User-Agent": "Mozilla/5.0"}
+        )
         with urllib.request.urlopen(req, timeout=15) as resp:
             raw = json.loads(resp.read())
         with open(PROXIFLY_CACHE_FILE, "w") as f:
             json.dump(raw, f)
-    proxies = [
-        p["proxy"]
-        for p in raw
-        if p.get("protocol") in ("http", "https")
-    ]
+    proxies = [p["proxy"] for p in raw if p.get("protocol") in ("http", "https")]
     print(f"  Loaded {len(proxies)} http/https proxies.", file=sys.stderr)
     return proxies
 
 
-def _fetch_ip(proxy: str | None = None, ip_check_url: str = IP_CHECK_URL, timeout: int = 5) -> str | None:
+def _fetch_ip(
+    proxy: str | None = None, ip_check_url: str = IP_CHECK_URL, timeout: int = 5
+) -> str | None:
     try:
-        req = urllib.request.Request(ip_check_url, headers={"User-Agent": "Mozilla/5.0"})
+        req = urllib.request.Request(
+            ip_check_url, headers={"User-Agent": "Mozilla/5.0"}
+        )
         if proxy:
             opener = urllib.request.build_opener(
                 urllib.request.ProxyHandler({"http": proxy, "https": proxy})
@@ -842,7 +846,9 @@ def _load_verified_proxy_cache() -> list[str] | None:
         return None
     if not os.path.exists(PROXIFLY_CACHE_FILE):
         return None
-    if os.path.getmtime(PROXIFLY_VERIFIED_CACHE_FILE) < os.path.getmtime(PROXIFLY_CACHE_FILE):
+    if os.path.getmtime(PROXIFLY_VERIFIED_CACHE_FILE) < os.path.getmtime(
+        PROXIFLY_CACHE_FILE
+    ):
         return None
     try:
         with open(PROXIFLY_VERIFIED_CACHE_FILE) as f:
@@ -876,23 +882,39 @@ def _start_proxy_pool(candidates: list[str], workers: int = 20) -> None:
             _READY_PROXIES.put(proxy)
             with verified_lock:
                 verified.append(proxy)
+                _save_verified_proxy_cache(verified)
         else:
             print(f"  [{n}/{total}] {proxy} ✗", file=sys.stderr)
 
     def _run() -> None:
         with concurrent.futures.ThreadPoolExecutor(max_workers=workers) as pool:
             list(pool.map(_check, candidates))
-        _save_verified_proxy_cache(verified)
         _proxy_pool_done.set()
 
     threading.Thread(target=_run, daemon=True).start()
 
 
-def _find_next_proxy() -> str | None:
-    """Return the next verified proxy from the ready queue, blocking until one is available."""
+def _load_proxy_blacklist() -> set[str]:
+    try:
+        with open(PROXIFLY_BLACKLIST_FILE) as f:
+            return set(json.load(f))
+    except (FileNotFoundError, json.JSONDecodeError, ValueError):
+        return set()
+
+
+def _save_proxy_blacklist(blacklist: set[str]) -> None:
+    with open(PROXIFLY_BLACKLIST_FILE, "w") as f:
+        json.dump(sorted(blacklist), f)
+
+
+def _find_next_proxy(blacklist: set[str] | None = None) -> str | None:
+    """Return the next verified proxy from the ready queue, skipping any blacklisted entries."""
     while not _proxy_pool_done.is_set() or not _READY_PROXIES.empty():
         try:
-            return _READY_PROXIES.get(timeout=0.5)
+            proxy = _READY_PROXIES.get(timeout=0.5)
+            if blacklist and proxy in blacklist:
+                continue
+            return proxy
         except queue.Empty:
             continue
     return None
@@ -1124,9 +1146,11 @@ def build_cargurus_js_cache(cars: list[dict], raw_cache: dict) -> dict:
             continue
         pkg = car.get("package", "")
         want_trim = pkg not in _CG_TRIVIAL_PACKAGES
-        queries = list(dict.fromkeys(
-            q for q in (cargurus_query(car), cargurus_query_base(car)) if q
-        ))
+        queries = list(
+            dict.fromkeys(
+                q for q in (cargurus_query(car), cargurus_query_base(car)) if q
+            )
+        )
         matched = False
         for i, query in enumerate(queries):
             entry = raw_cache.get(query)
@@ -1300,8 +1324,16 @@ def edmunds_cache_key(make: str, model: str, year: int) -> str:
 
 
 def _load_firefox_edmunds_cookies() -> list[dict]:
-    import glob, shutil, sqlite3, tempfile
-    profiles = glob.glob(os.path.expanduser("~/Library/Application Support/Firefox/Profiles/*/cookies.sqlite"))
+    import glob
+    import shutil
+    import sqlite3
+    import tempfile
+
+    profiles = glob.glob(
+        os.path.expanduser(
+            "~/Library/Application Support/Firefox/Profiles/*/cookies.sqlite"
+        )
+    )
     if not profiles:
         return []
     # Use the most recently modified profile
@@ -1322,8 +1354,17 @@ def _load_firefox_edmunds_cookies() -> list[dict]:
         domain = host if host.startswith(".") else host
         # Firefox stores expiry in seconds; values >1e11 are milliseconds
         expires = expiry / 1000 if expiry > 1e11 else float(expiry)
-        cookies.append({"name": name, "value": value, "domain": domain, "path": path,
-                        "secure": bool(secure), "httpOnly": bool(http_only), "expires": expires})
+        cookies.append(
+            {
+                "name": name,
+                "value": value,
+                "domain": domain,
+                "path": path,
+                "secure": bool(secure),
+                "httpOnly": bool(http_only),
+                "expires": expires,
+            }
+        )
     return cookies
 
 
@@ -1334,31 +1375,10 @@ def _parse_edmunds_price(text: str) -> dict | None:
     return {"min": min(prices), "max": max(prices)}
 
 
-async def _human_mouse_wiggle(page) -> None:
-    """Move the mouse in a randomised arc to mimic human presence."""
-    import asyncio
-    vw = page.viewport_size or {"width": 1280, "height": 800}
-    w, h = vw["width"], vw["height"]
-    cx = random.randint(w // 4, 3 * w // 4)
-    cy = random.randint(h // 4, 3 * h // 4)
-    rx = random.randint(80, 200)
-    ry = random.randint(50, 130)
-    n = random.randint(6, 12)
-    start = random.uniform(0, 2 * math.pi)
-    sweep = random.uniform(math.pi / 2, math.pi * 1.5) * random.choice([-1, 1])
-    points = [
-        (cx + int(rx * math.cos(start + sweep * i / n)),
-         cy + int(ry * math.sin(start + sweep * i / n)))
-        for i in range(n)
-    ]
-    points += [(cx + random.randint(-80, 80), cy + random.randint(-50, 50))
-               for _ in range(random.randint(2, 5))]
-    for x, y in points:
-        await page.mouse.move(x, y)
-        await asyncio.sleep(random.uniform(0.03, 0.15))
 
-
-async def _edmunds_single_price(page, *label_texts: str, timeout: int = 3000) -> int | None:
+async def _edmunds_single_price(
+    page, *label_texts: str, timeout: int = 3000
+) -> int | None:
     """Extract the first dollar amount following any of the given label texts."""
     for label in label_texts:
         try:
@@ -1373,30 +1393,61 @@ async def _edmunds_single_price(page, *label_texts: str, timeout: int = 3000) ->
     return None
 
 
-async def _fetch_edmunds_price_with_page(make: str, model: str, year: int, page) -> dict | None:
+async def _fetch_edmunds_price_with_page(
+    make: str, model: str, year: int, page
+) -> dict | None:
     url = edmunds_url(make, model, year)
     try:
-        response = await page.goto(url, timeout=8000, wait_until="domcontentloaded")
+        response = await page.goto(url, timeout=12000, wait_until="domcontentloaded")
+        actual_title = await page.title()
+        print(f"    car page: HTTP {response.status if response else '?'}, title={actual_title!r}, url={page.url}", file=sys.stderr)
+        if response and response.status == 404:
+            return None
         if response and response.status >= 400:
-            print(f"  HTTP {response.status} fetching Edmunds {make} {model} {year} — rotating proxy", file=sys.stderr)
-            raise _ProxyBlocked()
-        await _human_mouse_wiggle(page)
+            title = await page.title()
+            headers = dict(response.headers)
+            screenshot_path = os.path.join(HERE, f"_edmunds_debug_{response.status}.png")
+            try:
+                await page.screenshot(path=screenshot_path)
+            except Exception:
+                screenshot_path = "(screenshot failed)"
+            print(
+                f"  HTTP {response.status} fetching Edmunds {make} {model} {year}\n"
+                f"    title: {title!r}\n"
+                f"    url: {page.url}\n"
+                f"    screenshot: {screenshot_path}\n"
+                f"    headers: { {k: v for k, v in headers.items() if k.lower() in ('server','cf-ray','x-amz-cf-id','x-cache','via','location','content-type','x-powered-by')} }",
+                file=sys.stderr,
+            )
+            raise _ProxyBlocked(blacklist=True)
+        if "page not found" in actual_title.lower():
+            return None
+        # Scroll to trigger lazy-loading of the below-fold price section
+        await page.mouse.wheel(0, 600)
+        await page.mouse.wheel(0, 600)
         loc = page.locator("text=Price Range:").first
-        await loc.wait_for(timeout=5000)
-        price_str = await loc.text_content(timeout=3000)
+        await loc.wait_for(timeout=15000)
+        price_str = await loc.text_content(timeout=5000)
         entry = _parse_edmunds_price(price_str or "")
         if not entry:
             return None
         entry["url"] = page.url
-        entry["suggested"] = await _edmunds_single_price(page, "Edmunds Suggested Price", "Edmunds suggests you pay")
+        entry["suggested"] = await _edmunds_single_price(
+            page, "Edmunds Suggested Price", "Edmunds suggests you pay"
+        )
         entry["avg_used"] = await _edmunds_single_price(page, "Average price")
         entry["lastUpdated"] = time.time()
         return entry
     except _ProxyBlocked:
         raise
     except Exception as e:
-        if "Target page, context or browser has been closed" in str(e):
-            raise SystemExit("error: Edmunds browser was closed unexpectedly — exiting.")
+        err = str(e)
+        if "Target page, context or browser has been closed" in err:
+            raise SystemExit(
+                "error: Edmunds browser was closed unexpectedly — exiting."
+            )
+        if "Timeout" in err and ("goto" in err or "navigation" in err):
+            raise _ProxyBlocked(blacklist=True)
         print(f"  Error fetching Edmunds {make} {model} {year}: {e}", file=sys.stderr)
         return None
 
@@ -1416,55 +1467,114 @@ def save_edmunds_cache(cache: dict) -> None:
         json.dump(dict(sorted(cache.items())), f, indent=2)
 
 
-async def _fetch_edmunds_cache_async(pending: list, cache: dict, headless: bool, sleep: float, jitter: float, use_firefox_cookies: bool = False) -> dict:
+async def _fetch_edmunds_cache_async(
+    pending: list,
+    cache: dict,
+    headless: bool,
+    sleep: float,
+    jitter: float,
+    use_firefox_cookies: bool = False,
+) -> dict:
     import asyncio
+
+    from camoufox.async_api import AsyncNewBrowser
     from playwright.async_api import async_playwright
-    from playwright_stealth import Stealth
 
+    MAX_RETRIES = 3
     total = len(pending)
-    idx = 0  # next item to fetch
+    idx = 0
     iter_times: list[float] = []
+    retries: dict[int, int] = {}
+    blacklist: set[str] = _load_proxy_blacklist()
 
-    async def _open_context(browser, proxy: str | None):
-        ctx = await browser.new_context(
-            proxy={"server": proxy} if proxy else None,
-            ignore_https_errors=bool(proxy),
-        )
+    async def _make_page(browser):
+        ctx_kwargs: dict = {
+            "locale": "en-US",
+            "timezone_id": "America/New_York",
+            "extra_http_headers": {"Accept-Language": "en-US,en;q=0.9"},
+        }
+        ctx = await browser.new_context(**ctx_kwargs)
         if use_firefox_cookies:
             cookies = _load_firefox_edmunds_cookies()
             if cookies:
                 await ctx.add_cookies(cookies)
         page = await ctx.new_page()
-        print(f"  Visiting Edmunds homepage{f' via {proxy}' if proxy else ''}...", file=sys.stderr)
-        try:
-            await page.goto("https://www.edmunds.com/", timeout=15000, wait_until="load")
-        except Exception as e:
-            print(f"  Homepage failed ({e}) — rotating proxy", file=sys.stderr)
-            await ctx.close()
-            raise _ProxyBlocked()
-        await _human_mouse_wiggle(page)
         return ctx, page
 
-    async with Stealth().use_async(async_playwright()) as p:
-        browser = await p.chromium.launch(headless=headless)
-        proxy = await asyncio.to_thread(_find_next_proxy) if _ACTIVE_PROXIES else None
+    async with async_playwright() as p:
+        proxy = await asyncio.to_thread(_find_next_proxy, blacklist) if _ACTIVE_PROXIES else None
+        browser: object = None
         ctx: object = None
         page: object = None
 
-        async def _rotate() -> None:
-            nonlocal proxy, ctx, page
-            if ctx is not None:
-                await ctx.close()
-                ctx = page = None
-            proxy = await asyncio.to_thread(_find_next_proxy) if _ACTIVE_PROXIES else None
+        async def _launch_browser() -> None:
+            nonlocal browser, ctx, page
+            if browser is not None:
+                await browser.close()
+                browser = ctx = page = None
+            proxy_arg = {"server": proxy} if proxy else None
+            browser = await AsyncNewBrowser(
+                p,
+                headless=headless,
+                humanize=True,
+                block_webrtc=True,
+                os=["windows", "macos"],
+                proxy=proxy_arg,
+                geoip=proxy is not None,
+            )
+
+        async def _rotate(exc: _ProxyBlocked | None = None) -> None:
+            nonlocal proxy, browser, ctx, page
+            if exc and exc.blacklist and proxy:
+                blacklist.add(proxy)
+                _save_proxy_blacklist(blacklist)
+                print(f"  Blacklisted proxy {proxy}", file=sys.stderr)
+            if browser is not None:
+                await browser.close()
+                browser = ctx = page = None
+            proxy = (
+                await asyncio.to_thread(_find_next_proxy, blacklist) if _ACTIVE_PROXIES else None
+            )
 
         while idx < total:
-            if ctx is None:
+            if browser is None:
                 try:
-                    ctx, page = await _open_context(browser, proxy)
-                except _ProxyBlocked:
+                    await _launch_browser()
+                except Exception as e:
+                    print(f"  Browser launch failed ({e}) — rotating", file=sys.stderr)
+                    await _rotate(_ProxyBlocked(blacklist=True))
+                    continue
+                ctx, page = await _make_page(browser)
+
+                print(
+                    f"  Visiting Edmunds homepage{f' via {proxy}' if proxy else ''}...",
+                    file=sys.stderr,
+                )
+                try:
+                    hp_resp = await page.goto(
+                        "https://www.edmunds.com/", timeout=12000, wait_until="load"
+                    )
+                    hp_status = hp_resp.status if hp_resp else "?"
+                    hp_title = await page.title()
+                    print(
+                        f"  Homepage: HTTP {hp_status}, title={hp_title!r}, url={page.url}",
+                        file=sys.stderr,
+                    )
+                    homepage_ok = hp_resp is None or hp_resp.status < 400
+                    if not homepage_ok:
+                        screenshot_path = os.path.join(HERE, "_edmunds_debug_homepage.png")
+                        try:
+                            await page.screenshot(path=screenshot_path)
+                        except Exception:
+                            screenshot_path = "(failed)"
+                        print(f"  Homepage blocked — screenshot: {screenshot_path}", file=sys.stderr)
+                except Exception as e:
+                    print(f"  Homepage failed ({e}) — rotating", file=sys.stderr)
+                    homepage_ok = False
+                if not homepage_ok:
                     await _rotate()
                     continue
+
             make, model, year = pending[idx]
             i = idx + 1
             t0 = asyncio.get_event_loop().time()
@@ -1475,22 +1585,57 @@ async def _fetch_edmunds_cache_async(pending: list, cache: dict, headless: bool,
                 remaining_secs = avg * (total - i + 1) + delay
                 m, s = divmod(int(remaining_secs), 60)
                 eta_str = f"  ETA ~{m}m{s:02d}s" if m else f"  ETA ~{s}s"
-            print(f"  [{i}/{total}] Fetching Edmunds: {make} {model} {year}{eta_str}", file=sys.stderr)
+            print(
+                f"  [{i}/{total}] Fetching Edmunds: {make} {model} {year}{eta_str}",
+                file=sys.stderr,
+            )
             try:
                 key = edmunds_cache_key(make, model, year)
-                cache[key] = await _fetch_edmunds_price_with_page(make, model, year, page)
+                cache[key] = await _fetch_edmunds_price_with_page(
+                    make, model, year, page
+                )
                 save_edmunds_cache(cache)
                 if delay > 0:
                     await asyncio.sleep(delay)
                 iter_times.append(asyncio.get_event_loop().time() - t0)
                 idx += 1
-            except _ProxyBlocked:
-                await _rotate()
-        await browser.close()
+            except _ProxyBlocked as exc:
+                await _rotate(exc)
+            except Exception as e:
+                err_str = str(e)
+                if "Target page, context or browser has been closed" in err_str:
+                    print("  Browser closed unexpectedly — exiting", file=sys.stderr)
+                    if browser:
+                        await browser.close()
+                    return cache
+                retries[idx] = retries.get(idx, 0) + 1
+                if retries[idx] >= MAX_RETRIES:
+                    cache[edmunds_cache_key(make, model, year)] = None
+                    print(
+                        f"  Giving up on Edmunds {make} {model} {year} ({retries[idx]} failures)",
+                        file=sys.stderr,
+                    )
+                    idx += 1
+                else:
+                    print(
+                        f"  Fetch error ({e}) ({retries[idx]}/{MAX_RETRIES}) — retrying...",
+                        file=sys.stderr,
+                    )
+                    await _rotate()
+
+        if browser:
+            await browser.close()
     return cache
 
 
-def fetch_edmunds_cache(cars: list[dict], retry_nulls: bool = False, headless: bool = True, sleep: float = 15.0, jitter: float = 5.0, use_firefox_cookies: bool = False) -> dict:
+def fetch_edmunds_cache(
+    cars: list[dict],
+    retry_nulls: bool = False,
+    headless: bool = True,
+    sleep: float = 15.0,
+    jitter: float = 5.0,
+    use_firefox_cookies: bool = False,
+) -> dict:
     """Fetch Edmunds price data per car/year using stealth Chromium."""
     import asyncio
 
@@ -1519,7 +1664,11 @@ def fetch_edmunds_cache(cars: list[dict], retry_nulls: bool = False, headless: b
     ]
     if not pending:
         return cache
-    return asyncio.run(_fetch_edmunds_cache_async(pending, cache, headless, sleep, jitter, use_firefox_cookies))
+    return asyncio.run(
+        _fetch_edmunds_cache_async(
+            pending, cache, headless, sleep, jitter, use_firefox_cookies
+        )
+    )
 
 
 AUTOTRADER_MODELS_CACHE_FILE = os.path.join(HERE, ".autotrader_models_cache.json")
@@ -1865,7 +2014,10 @@ def generate_html(
     env = jinja2.Environment(loader=jinja2.FileSystemLoader(here))
     template = env.get_template("template.html")
     model_mappings_json = json.dumps(
-        {f"{make}|{model}": mapped for (make, model), mapped in FAMILY_MAPPINGS.items()},
+        {
+            f"{make}|{model}": mapped
+            for (make, model), mapped in FAMILY_MAPPINGS.items()
+        },
         separators=(",", ":"),
     )
     autotrader_mappings_json = json.dumps(
@@ -2072,7 +2224,7 @@ def main():
         "--ip-check-url",
         default=IP_CHECK_URL,
         metavar="URL",
-        help=f"JSON endpoint returning {{\"ip\": ...}} used to verify proxy routing (default: {IP_CHECK_URL}).",
+        help=f'JSON endpoint returning {{"ip": ...}} used to verify proxy routing (default: {IP_CHECK_URL}).',
     )
     parser.add_argument(
         "--enumerate-cg",
@@ -2086,7 +2238,9 @@ def main():
     )
     args = parser.parse_args()
     if args.retry_nulls_all:
-        args.retry_nulls_cg = args.retry_nulls_ari = args.retry_nulls_cc = args.retry_nulls_edmunds = True
+        args.retry_nulls_cg = args.retry_nulls_ari = args.retry_nulls_cc = (
+            args.retry_nulls_edmunds
+        ) = True
 
     if args.proxy:
         global _proxy_direct_ip, _proxy_ip_check_url
@@ -2181,7 +2335,14 @@ def main():
     def _fetch_edmunds():
         if not args.no_fetch_edmunds:
             print("Fetching Edmunds price data...", file=sys.stderr)
-            return fetch_edmunds_cache(cars, retry_nulls=args.retry_nulls_edmunds, headless=not args.edmunds_no_headless, sleep=args.edmunds_sleep, jitter=args.edmunds_jitter, use_firefox_cookies=args.edmunds_firefox_cookies)
+            return fetch_edmunds_cache(
+                cars,
+                retry_nulls=args.retry_nulls_edmunds,
+                headless=not args.edmunds_no_headless,
+                sleep=args.edmunds_sleep,
+                jitter=args.edmunds_jitter,
+                use_firefox_cookies=args.edmunds_firefox_cookies,
+            )
         return load_edmunds_cache()
 
     with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:
