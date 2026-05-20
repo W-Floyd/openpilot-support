@@ -29,12 +29,19 @@ uv run parse.py --html-out index.html
 | `--no-fetch-cg` | Skip fetching CarGurus data |
 | `--no-fetch-ari` | Skip fetching AutoReliabilityIndex data |
 | `--no-fetch-cc` | Skip fetching CarComplaints data |
+| `--no-fetch-edmunds` | Skip fetching Edmunds price data |
 | `--no-minify` | Skip HTML/JS/CSS minification (useful for debugging) |
 | `--no-cache-openpilot` | Re-fetch all fork data (still updates cache) |
 | `--retry-nulls-cg` | Retry previously failed CarGurus cache entries |
 | `--retry-nulls-ari` | Retry previously failed ARI cache entries |
 | `--retry-nulls-cc` | Retry previously failed CarComplaints cache entries |
+| `--retry-nulls-edmunds` | Retry previously failed Edmunds cache entries |
 | `--retry-nulls-all` | Retry all previously failed cache entries |
+| `--edmunds-no-headless` | Show browser window when fetching Edmunds data |
+| `--edmunds-firefox-cookies` | Load Edmunds cookies from Firefox profile |
+| `--edmunds-sleep SECONDS` | Delay between Edmunds fetches (default: 10) |
+| `--edmunds-jitter SECONDS` | Max random jitter added to each Edmunds sleep (default: 5) |
+| `--proxy` | Route requests through proxifly free proxy list |
 | `--watch` | Watch template.html and rebuild on changes |
 
 ### Caching
@@ -47,6 +54,22 @@ Results are cached to avoid re-fetching on every run. Stale entries (for cars no
 | `.cargurus_cache.json` | CarGurus listings |
 | `.carcomplaints_cache.json` | CarComplaints complaint/recall data |
 | `.ari_cache.json` | AutoReliabilityIndex scores |
+| `.edmunds_cache.json` | Edmunds price ranges |
+| `.edmunds_html_cache/` | Raw rendered Edmunds pages (avoids re-fetching) |
+
+## Code Structure
+
+| File | Responsibility |
+|------|---------------|
+| `parse.py` | CLI entry point and orchestration |
+| `car_data.py` | Fork loading, model name cleaning, alias/family mapping |
+| `proxy.py` | Proxy pool, validation, `_ProxyBlocked`/`_BrowserDied` exceptions |
+| `cargurus.py` | CarGurus API scraper and JS cache builder |
+| `ari.py` | AutoReliabilityIndex scraper |
+| `edmunds.py` | Edmunds price scraper (Playwright/camoufox) |
+| `carcomplaints.py` | CarComplaints scraper |
+| `html_gen.py` | HTML generation, asset caching, live-reload server |
+| `template.html` | Jinja2 template with AlpineJS + PureCSS |
 
 ## Search Parameter Support
 
