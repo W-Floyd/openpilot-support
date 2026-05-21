@@ -133,6 +133,9 @@ def _parse_cc_html(body: str, url: str) -> dict | None:
                     if headline:
                         top_problems.append(headline)
 
+    crash_tests = _parse_cc_count(p.counts.get("ctdNav", ""))
+    lemon_law = _parse_cc_count(p.counts.get("lmnNav", ""))
+
     if complaints is None and not top_problems:
         return None
 
@@ -142,6 +145,8 @@ def _parse_cc_html(body: str, url: str) -> dict | None:
         "recalls": recalls,
         "tsbs": tsbs,
         "investigations": investigations,
+        "crash_tests": crash_tests,
+        "lemon_law": lemon_law,
         "top_problems": top_problems,
         "seal": p.seal,
     }
@@ -161,6 +166,31 @@ def fetch_cc_response(make: str, raw_model: str, year: int) -> dict | None:
         return None
     _save_cc_html_cache(make, raw_model, year, body)
     return _parse_cc_html(body, url)
+
+
+def reparse_cc_cache() -> dict:
+    cache = load_cc_cache()
+    changed = 0
+    for key in list(cache.keys()):
+        parts = key.split("|")
+        if len(parts) != 3:
+            continue
+        make, raw_model, year_str = parts
+        try:
+            year = int(year_str)
+        except ValueError:
+            continue
+        html = _load_cc_html_cache(make, raw_model, year)
+        if html is None:
+            continue
+        new_val = _parse_cc_html(html, cc_url(make, raw_model, year))
+        if new_val != cache[key]:
+            cache[key] = new_val
+            changed += 1
+    if changed:
+        save_cc_cache(cache)
+    print(f"  CC: re-parsed {len(cache)} entries, {changed} updated.", file=sys.stderr)
+    return cache
 
 
 def load_cc_cache() -> dict:

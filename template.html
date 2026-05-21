@@ -1957,51 +1957,47 @@
                                         <!-- ari score -->
                                         <template x-if="col.ari">
                                             <span>
-                                                <template
-                                                    x-if="car._ariScore !== null"
-                                                >
+                                                <template x-if="car._ariScore !== null || car._jpReliability !== null">
                                                     <span
                                                         class="ari-wrap"
                                                         x-data="{ ariOpen: false, ariStyle: '' }"
                                                         @mouseenter="const rect = $el.getBoundingClientRect(); const right = window.innerWidth - rect.right; ariStyle = `position:fixed;z-index:9999;bottom:${window.innerHeight - rect.top + 6}px;right:${right}px`; ariOpen = true; $nextTick(() => { if ($refs.ariPopup.getBoundingClientRect().top < 0) ariStyle = `position:fixed;z-index:9999;top:${rect.bottom + 6}px;right:${right}px` })"
                                                         @mouseleave="ariOpen = false"
                                                     >
-                                                        <a
-                                                            :href="car._ariLink"
-                                                            target="_blank"
-                                                            rel="noopener"
-                                                            class="ari-link tabnum"
-                                                        >
-                                                            <template
-                                                                x-if="car._ariScore.min === car._ariScore.max"
+                                                        <template x-if="car._ariScore !== null">
+                                                            <a
+                                                                :href="car._ariLink"
+                                                                target="_blank"
+                                                                rel="noopener"
+                                                                class="ari-link tabnum"
                                                             >
-                                                                <span
-                                                                    :style="`color:${car._ariColorMin}`"
-                                                                    x-text="car._ariScore.min"
-                                                                ></span>
-                                                            </template>
-                                                            <template
-                                                                x-if="car._ariScore.min !== car._ariScore.max"
-                                                            >
-                                                                <span>
-                                                                    <span
-                                                                        :style="`color:${car._ariColorMin}`"
-                                                                        x-text="car._ariScore.min"
-                                                                    ></span>
-                                                                    <span
-                                                                        class="v-nil"
-                                                                        >–</span
-                                                                    >
-                                                                    <span
-                                                                        :style="`color:${car._ariColorMax}`"
-                                                                        x-text="car._ariScore.max"
-                                                                    ></span>
-                                                                </span>
-                                                            </template>
-                                                        </a>
-                                                        <template
-                                                            x-teleport="body"
-                                                        >
+                                                                <template x-if="car._ariScore.min === car._ariScore.max">
+                                                                    <span :style="`color:${car._ariColorMin}`" x-text="car._ariScore.min"></span>
+                                                                </template>
+                                                                <template x-if="car._ariScore.min !== car._ariScore.max">
+                                                                    <span>
+                                                                        <span :style="`color:${car._ariColorMin}`" x-text="car._ariScore.min"></span>
+                                                                        <span class="v-nil">–</span>
+                                                                        <span :style="`color:${car._ariColorMax}`" x-text="car._ariScore.max"></span>
+                                                                    </span>
+                                                                </template>
+                                                            </a>
+                                                        </template>
+                                                        <template x-if="car._jpReliability !== null">
+                                                            <a :href="car._jpReliability.url" target="_blank" rel="noopener" class="ari-link tabnum" style="display:block;color:rgba(139,92,246,0.85)">
+                                                                <template x-if="car._jpReliability.min === car._jpReliability.max">
+                                                                    <span x-text="car._jpReliability.min"></span>
+                                                                </template>
+                                                                <template x-if="car._jpReliability.min !== car._jpReliability.max">
+                                                                    <span>
+                                                                        <span x-text="car._jpReliability.min"></span>
+                                                                        <span class="v-nil">–</span>
+                                                                        <span x-text="car._jpReliability.max"></span>
+                                                                    </span>
+                                                                </template>
+                                                            </a>
+                                                        </template>
+                                                        <template x-teleport="body">
                                                             <div
                                                                 x-show="ariOpen"
                                                                 x-cloak
@@ -2009,40 +2005,39 @@
                                                                 class="popup"
                                                                 :style="ariStyle"
                                                             >
-                                                                <template
-                                                                    x-for="row in car._ariYearRows"
-                                                                    :key="row.year"
-                                                                >
-                                                                    <div
-                                                                        class="popup-row"
-                                                                    >
-                                                                        <span
-                                                                            class="pop-yr"
-                                                                            x-text="row.year"
-                                                                        ></span>
-                                                                        <a
-                                                                            :href="row.url"
-                                                                            target="_blank"
-                                                                            rel="noopener"
-                                                                            class="ari-link tabnum"
-                                                                            :style="`color:${row.color}`"
-                                                                            x-text="row.score"
-                                                                        ></a>
-                                                                        <span class="ari-bar-wrap">
-                                                                            <span
-                                                                                class="ari-bar"
-                                                                                :style="`width:${row.score}%;background:${row.color}`"
-                                                                            ></span>
-                                                                        </span>
+                                                                <template x-if="car._ariYearRows.length > 0">
+                                                                    <div>
+                                                                        <div style="font-size:0.7em;opacity:0.6;padding:0 2px 2px">ARI</div>
+                                                                        <template x-for="row in car._ariYearRows" :key="row.year">
+                                                                            <div class="popup-row">
+                                                                                <span class="pop-yr" x-text="row.year"></span>
+                                                                                <a :href="row.url" target="_blank" rel="noopener" class="ari-link tabnum" :style="`color:${row.color}`" x-text="row.score"></a>
+                                                                                <span class="ari-bar-wrap">
+                                                                                    <span class="ari-bar" :style="`width:${row.score}%;background:${row.color}`"></span>
+                                                                                </span>
+                                                                            </div>
+                                                                        </template>
+                                                                    </div>
+                                                                </template>
+                                                                <template x-if="car._priceRows.some(r => r.jp && r.jp.score != null)">
+                                                                    <div>
+                                                                        <div style="font-size:0.7em;opacity:0.6;padding:4px 2px 2px;color:rgba(139,92,246,0.9)">JD Power</div>
+                                                                        <template x-for="row in car._priceRows.filter(r => r.jp && r.jp.score != null)" :key="row.year">
+                                                                            <div class="popup-row">
+                                                                                <span class="pop-yr" x-text="row.year"></span>
+                                                                                <a :href="row.jp.url" target="_blank" rel="noopener" class="ari-link tabnum" style="color:rgba(139,92,246,0.85)" x-text="row.jp.score"></a>
+                                                                                <span class="ari-bar-wrap">
+                                                                                    <span class="ari-bar" :style="`width:${row.jp.score}%;background:rgba(139,92,246,0.75)`"></span>
+                                                                                </span>
+                                                                            </div>
+                                                                        </template>
                                                                     </div>
                                                                 </template>
                                                             </div>
                                                         </template>
                                                     </span>
                                                 </template>
-                                                <template
-                                                    x-if="car._ariScore === null"
-                                                >
+                                                <template x-if="car._ariScore === null && car._jpReliability === null">
                                                     <span class="v-nil">—</span>
                                                 </template>
                                             </span>
@@ -2252,6 +2247,8 @@
                                                                         class="pop-tsb tabnum"
                                                                         x-text="row.tsbs + ' TSBs'"
                                                                     ></span>
+                                                                    <span x-show="row.crash_tests != null" class="pop-tsb tabnum" x-text="row.crash_tests + ' crash tests'"></span>
+                                                                    <span x-show="row.lemon_law != null" class="pop-tsb tabnum" x-text="row.lemon_law + ' lemon'"></span>
                                                                     <span
                                                                         x-show="row.seal"
                                                                         class="pop-seal"
@@ -2288,9 +2285,41 @@
                                             ></span>
                                         </template>
 
+                                        <!-- mpg column -->
+                                        <template x-if="col.mpg">
+                                            <span>
+                                                <template x-if="car._mpg">
+                                                    <span
+                                                        class="ari-wrap"
+                                                        x-data="{ mpgOpen: false, mpgStyle: '' }"
+                                                        @mouseenter="const rect = $el.getBoundingClientRect(); const right = window.innerWidth - rect.right; mpgStyle = `position:fixed;z-index:9999;bottom:${window.innerHeight - rect.top + 6}px;right:${right}px`; mpgOpen = true; $nextTick(() => { if ($refs.mpgPopup.getBoundingClientRect().top < 0) mpgStyle = `position:fixed;z-index:9999;top:${rect.bottom + 6}px;right:${right}px` })"
+                                                        @mouseleave="mpgOpen = false"
+                                                    >
+                                                        <a :href="car._mpg.url" target="_blank" rel="noopener" class="ari-link tabnum" x-text="car._mpg.mpg_city + ' mpg'"></a>
+                                                        <template x-teleport="body">
+                                                            <div x-show="mpgOpen" x-cloak x-ref="mpgPopup" class="popup" :style="mpgStyle">
+                                                                <template x-for="row in car._priceRows.filter(r => r.jp && r.jp.mpg_city)" :key="row.year">
+                                                                    <div class="popup-row" style="display:flex;align-items:center;gap:6px">
+                                                                        <span class="pop-yr" x-text="row.year"></span>
+                                                                        <a :href="row.jp.url" target="_blank" rel="noopener" class="tabnum" style="text-decoration:none;color:rgba(139,92,246,0.9)" x-text="row.jp.mpg_city + ' mpg city'"></a>
+                                                                        <template x-if="row.jp.fuel_cost_min != null">
+                                                                            <span class="tabnum" style="color:var(--text-muted,#666)" x-text="'$' + row.jp.fuel_cost_min.toLocaleString() + (row.jp.fuel_cost_max !== row.jp.fuel_cost_min ? '–$' + row.jp.fuel_cost_max.toLocaleString() : '') + '/yr fuel'"></span>
+                                                                        </template>
+                                                                    </div>
+                                                                </template>
+                                                            </div>
+                                                        </template>
+                                                    </span>
+                                                </template>
+                                                <template x-if="!car._mpg">
+                                                    <span class="v-nil">—</span>
+                                                </template>
+                                            </span>
+                                        </template>
+
                                         <!-- default string/number -->
                                         <template
-                                            x-if="!col.speed && !col.search && !col.ari && !col.price && !col.cc_seal && !col.forks && col.key !== 'support_type' && col.key !== 'years' && col.key !== 'model' && car[col.key] !== null && typeof car[col.key] !== 'boolean'"
+                                            x-if="!col.speed && !col.search && !col.ari && !col.price && !col.mpg && !col.cc_seal && !col.forks && col.key !== 'support_type' && col.key !== 'years' && col.key !== 'model' && car[col.key] !== null && typeof car[col.key] !== 'boolean'"
                                         >
                                             <span x-text="car[col.key]"></span>
                                         </template>
@@ -2686,6 +2715,7 @@
                         "min_enable_speed",
                         "ari",
                         "price",
+                        "mpg",
                         "cc_seal",
                         "search",
                     ],
@@ -2746,6 +2776,11 @@
                                 mobileLabel: "Price",
                                 price: true,
                                 filterable: true,
+                            },
+                            {
+                                key: "mpg",
+                                label: "MPG",
+                                mpg: true,
                             },
                             {
                                 key: "cc_seal",
@@ -3534,6 +3569,8 @@
                                         complaints: d.complaints ?? 0,
                                         recalls: d.recalls ?? 0,
                                         tsbs: d.tsbs ?? 0,
+                                        crash_tests: d.crash_tests ?? null,
+                                        lemon_law: d.lemon_law ?? null,
                                         seal: d.seal,
                                     });
                             }
@@ -3654,7 +3691,13 @@
                                 const url =
                                     d.url ??
                                     `https://autoreliabilityindex.com/${this.toAscii(car.make).toLowerCase().replace(/ /g, "-")}/${this.toAscii(car.model).toLowerCase().replace(/ /g, "-")}/${y}`;
-                                return { year: y, score: d.score, url };
+                                return {
+                                    year: y, score: d.score, url,
+                                    complaint_rate: d.complaint_rate ?? null,
+                                    repair_cost: d.repair_cost ?? null,
+                                    fuel_cost_min: d.fuel_cost_min ?? null,
+                                    fuel_cost_max: d.fuel_cost_max ?? null,
+                                };
                             })
                             .filter(Boolean);
                     },
@@ -3831,6 +3874,7 @@
                                   "min_enable_speed",
                                   "ari",
                                   "cc_seal",
+                                  "mpg",
                                   "ebay",
                                   "cargurus",
                               ]
@@ -3848,6 +3892,14 @@
                             car._priceLink = this.edmundsLink(car);
                             car._priceRows = this.edmundsYearRows(car);
                             car._priceScale = this.priceScale(car);
+                            const _mpgRows = car._priceRows.filter(r => r.jp && r.jp.mpg_city);
+                            car._mpg = _mpgRows.length ? _mpgRows[_mpgRows.length - 1].jp : null;
+                            const _jpRelRows = car._priceRows.filter(r => r.jp && r.jp.score != null);
+                            car._jpReliability = _jpRelRows.length ? {
+                                min: Math.min(..._jpRelRows.map(r => r.jp.score)),
+                                max: Math.max(..._jpRelRows.map(r => r.jp.score)),
+                                url: _jpRelRows[_jpRelRows.length - 1].jp.url,
+                            } : null;
 
                             if (car._ariScore !== null) {
                                 car._ariColorMin = this.ariColor(

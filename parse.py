@@ -39,6 +39,7 @@ from cargurus import (
 from ari import (
     fetch_ari_cache,
     load_ari_cache,
+    reparse_ari_cache,
 )
 from edmunds import (
     fetch_edmunds_cache,
@@ -47,10 +48,12 @@ from edmunds import (
 from jdpower import (
     fetch_jdpower_cache,
     load_jdpower_cache,
+    reparse_jdpower_cache,
 )
 from carcomplaints import (
     fetch_cc_cache,
     load_cc_cache,
+    reparse_cc_cache,
 )
 from html_gen import (
     _RELOAD_SCRIPT,
@@ -187,6 +190,11 @@ def main():
         help="Fetch the full CarGurus make/model taxonomy and save to .cargurus_ids.json, then exit.",
     )
     parser.add_argument(
+        "--reparse-html",
+        action="store_true",
+        help="Re-parse cached HTML for ARI, CarComplaints, and JD Power without re-fetching.",
+    )
+    parser.add_argument(
         "--watch",
         action="store_true",
         help="Watch template.html for changes and regenerate HTML automatically.",
@@ -275,12 +283,18 @@ def main():
         return load_cargurus_cache()
 
     def _fetch_ari():
+        if args.reparse_html:
+            print("Re-parsing ARI HTML cache...", file=sys.stderr)
+            return reparse_ari_cache()
         if not args.no_fetch_ari:
             print("Fetching Auto Reliability Index data...", file=sys.stderr)
             return fetch_ari_cache(cars, retry_nulls=args.retry_nulls_ari)
         return load_ari_cache()
 
     def _fetch_cc():
+        if args.reparse_html:
+            print("Re-parsing CarComplaints HTML cache...", file=sys.stderr)
+            return reparse_cc_cache()
         if not args.no_fetch_cc:
             print("Fetching CarComplaints data...", file=sys.stderr)
             return fetch_cc_cache(cars, retry_nulls=args.retry_nulls_cc)
@@ -300,6 +314,9 @@ def main():
         return load_edmunds_cache()
 
     def _fetch_jdp():
+        if args.reparse_html:
+            print("Re-parsing JD Power HTML cache...", file=sys.stderr)
+            return reparse_jdpower_cache()
         if not args.no_fetch_jdp:
             print("Fetching JD Power price data...", file=sys.stderr)
             return fetch_jdpower_cache(cars, retry_nulls=args.retry_nulls_jdp)

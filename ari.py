@@ -75,8 +75,10 @@ def _save_ari_html_cache(make: str, model: str, year: int, html: str) -> None:
 
 
 def _parse_ari_html(body: str, url: str) -> dict | None:
+    import re as _re
     parser = JsonLdExtractor()
     parser.feed(body)
+    score = None
     for block in parser.blocks:
         entity = block.get("mainEntity", {})
         entities = entity if isinstance(entity, list) else [entity]
@@ -87,10 +89,33 @@ def _parse_ari_html(body: str, url: str) -> dict | None:
             if isinstance(review, list):
                 review = review[0] if review else {}
             rating = review.get("reviewRating", {}) if isinstance(review, dict) else {}
-            score = rating.get("ratingValue")
-            if score is not None:
-                return {"score": score, "url": url}
-    return None
+            if rating.get("ratingValue") is not None:
+                score = rating["ratingValue"]
+    if score is None:
+        return None
+
+    m = _re.search(r'Complaint Rate.*?<span[^>]*>([\d.]+)</span>', body, _re.S)
+    complaint_rate = float(m.group(1)) if m else None
+
+    m = _re.search(r'Est\. Repair Cost.*?\$([\d,]+)', body, _re.S)
+    repair_cost = int(m.group(1).replace(",", "")) if m else None
+
+    m = _re.search(r'Annual Fuel Cost.*?\$([\d,]+)[–\-]\$?([\d,]+)', body, _re.S)
+    if m:
+        fuel_cost_min = int(m.group(1).replace(",", ""))
+        fuel_cost_max = int(m.group(2).replace(",", ""))
+    else:
+        m = _re.search(r'Annual Fuel Cost.*?\$([\d,]+)', body, _re.S)
+        fuel_cost_min = fuel_cost_max = int(m.group(1).replace(",", "")) if m else None
+
+    return {
+        "score": score,
+        "url": url,
+        "complaint_rate": complaint_rate,
+        "repair_cost": repair_cost,
+        "fuel_cost_min": fuel_cost_min,
+        "fuel_cost_max": fuel_cost_max,
+    }
 
 
 def fetch_ari_response(make: str, model: str, year: int) -> dict | None:
@@ -107,6 +132,31 @@ def fetch_ari_response(make: str, model: str, year: int) -> dict | None:
         return None
     _save_ari_html_cache(make, model, year, body)
     return _parse_ari_html(body, url)
+
+
+def reparse_ari_cache() -> dict:
+    cache = load_ari_cache()
+    changed = 0
+    for key in list(cache.keys()):
+        parts = key.split("|")
+        if len(parts) != 3:
+            continue
+        make, model, year_str = parts
+        try:
+            year = int(year_str)
+        except ValueError:
+            continue
+        html = _load_ari_html_cache(make, model, year)
+        if html is None:
+            continue
+        new_val = _parse_ari_html(html, ari_url(make, model, year))
+        if new_val != cache[key]:
+            cache[key] = new_val
+            changed += 1
+    if changed:
+        save_ari_cache(cache)
+    print(f"  ARI: re-parsed {len(cache)} entries, {changed} updated.", file=sys.stderr)
+    return cache
 
 
 def load_ari_cache() -> dict:

@@ -56,9 +56,24 @@ def _extract_jdp_prices(html: str, url: str) -> dict | None:
     hi = re.search(r'highPrice[\\\"]+\s*:\s*(\d+)', window)
     if not lo or not hi:
         return None
+
+    score = None
+    for sm in re.finditer(r'Review', html):
+        rv = re.search(r'ratingValue[\\\"]+\s*:\s*(\d+)', html[sm.start():sm.start() + 300])
+        if rv:
+            score = int(rv.group(1))
+            break
+
+    mpg_city = None
+    mc = re.search(r'MPG City:[^>]*>[\s\S]{0,50}?<label[^>]*class="value"[^>]*>([\d\-–]+)</label>', html)
+    if mc:
+        mpg_city = mc.group(1)
+
     return {
         "min": int(lo.group(1)),
         "max": int(hi.group(1)),
+        "score": score,
+        "mpg_city": mpg_city,
         "url": url,
         "lastUpdated": time.time(),
     }
@@ -82,6 +97,32 @@ def _fetch_jdpower_entry(make: str, model: str, year: int) -> dict | None:
     except Exception as e:
         print(f"  Error fetching JD Power {make} {model} {year}: {e}", file=sys.stderr)
         return None
+
+
+def reparse_jdpower_cache() -> dict:
+    cache = load_jdpower_cache()
+    changed = 0
+    for key in list(cache.keys()):
+        parts = key.split("|")
+        if len(parts) != 3:
+            continue
+        make, model, year_str = parts
+        try:
+            year = int(year_str)
+        except ValueError:
+            continue
+        html = _load_jdp_html_cache(make, model, year)
+        if html is None:
+            continue
+        url = f"https://www.jdpower.com/cars/{year}/{_jdp_slug(make)}/{_jdp_slug(model)}"
+        new_val = _extract_jdp_prices(html, url)
+        if new_val != cache[key]:
+            cache[key] = new_val
+            changed += 1
+    if changed:
+        save_jdpower_cache(cache)
+    print(f"  JDP: re-parsed {len(cache)} entries, {changed} updated.", file=sys.stderr)
+    return cache
 
 
 def load_jdpower_cache() -> dict:

@@ -2,62 +2,82 @@
   "Acura|ADX|2025": {
     "min": 31165,
     "max": 47600,
+    "score": null,
+    "mpg_city": "25-26",
     "url": "https://www.jdpower.com/cars/2025/acura/adx",
-    "lastUpdated": 1779319769.4224908
+    "lastUpdated": 1779376093.764501
   },
   "Acura|ADX|2026": {
     "min": 31772,
     "max": 46666,
+    "score": null,
+    "mpg_city": "26-27",
     "url": "https://www.jdpower.com/cars/2026/acura/adx",
-    "lastUpdated": 1779319769.710918
+    "lastUpdated": 1779376093.7738209
   },
   "Acura|ILX|2016": {
     "min": 11014,
     "max": 14577,
+    "score": 78,
+    "mpg_city": "25",
     "url": "https://www.jdpower.com/cars/2016/acura/ilx",
-    "lastUpdated": 1779319769.583076
+    "lastUpdated": 1779376093.781972
   },
   "Acura|ILX|2017": {
     "min": 11876,
     "max": 15170,
+    "score": 75,
+    "mpg_city": "25",
     "url": "https://www.jdpower.com/cars/2017/acura/ilx",
-    "lastUpdated": 1779319770.647687
+    "lastUpdated": 1779376093.783078
   },
   "Acura|ILX|2018": {
     "min": 13432,
     "max": 17922,
+    "score": 73,
+    "mpg_city": "25",
     "url": "https://www.jdpower.com/cars/2018/acura/ilx",
-    "lastUpdated": 1779319770.5321221
+    "lastUpdated": 1779376093.793727
   },
   "Acura|ILX|2019": {
     "min": 15007,
     "max": 19832,
+    "score": 72,
+    "mpg_city": "24",
     "url": "https://www.jdpower.com/cars/2019/acura/ilx",
-    "lastUpdated": 1779319770.356639
+    "lastUpdated": 1779376093.8119628
   },
   "Acura|Integra|2023": {
     "min": 22739,
     "max": 31127,
+    "score": 78,
+    "mpg_city": "26-30",
     "url": "https://www.jdpower.com/cars/2023/acura/integra",
-    "lastUpdated": 1779319771.010684
+    "lastUpdated": 1779376093.8226502
   },
   "Acura|Integra|2024": {
     "min": 24757,
     "max": 51282,
+    "score": 79,
+    "mpg_city": "21-30",
     "url": "https://www.jdpower.com/cars/2024/acura/integra",
-    "lastUpdated": 1779319770.499615
+    "lastUpdated": 1779376093.832116
   },
   "Acura|Integra|2025": {
     "min": 27664,
     "max": 53694,
+    "score": 82,
+    "mpg_city": "21-30",
     "url": "https://www.jdpower.com/cars/2025/acura/integra",
-    "lastUpdated": 1779319770.9005508
+    "lastUpdated": 1779376093.844644
   },
   "Acura|Integra|2026": {
     "min": 30174,
     "max": 55241,
+    "score": 82,
+    "mpg_city": "21-29",
     "url": "https://www.jdpower.com/cars/2026/acura/integra",
-    "lastUpdated": 1779319771.217097
+    "lastUpdated": 1779376093.848922
   },
   "Acura|MDX Hybrid|2017": null,
   "Acura|MDX Hybrid|2018": null,
@@ -66,477 +86,633 @@
   "Acura|MDX|2014": {
     "min": 7769,
     "max": 11428,
+    "score": 73,
+    "mpg_city": "18-20",
     "url": "https://www.jdpower.com/cars/2014/acura/mdx",
-    "lastUpdated": 1779319771.3000891
+    "lastUpdated": 1779376093.8604531
   },
   "Acura|MDX|2015": {
     "min": 8479,
     "max": 13041,
+    "score": 77,
+    "mpg_city": "18-20",
     "url": "https://www.jdpower.com/cars/2015/acura/mdx",
-    "lastUpdated": 1779319771.679559
+    "lastUpdated": 1779376093.87271
   },
   "Acura|MDX|2016": {
     "min": 10170,
     "max": 14927,
+    "score": 69,
+    "mpg_city": "18-20",
     "url": "https://www.jdpower.com/cars/2016/acura/mdx",
-    "lastUpdated": 1779319771.9067972
+    "lastUpdated": 1779376093.878932
   },
   "Acura|MDX|2017": {
     "min": 12561,
     "max": 18025,
+    "score": 73,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2017/acura/mdx",
-    "lastUpdated": 1779319772.3507469
+    "lastUpdated": 1779376093.8848388
   },
   "Acura|MDX|2018": {
     "min": 14499,
     "max": 22802,
+    "score": 75,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2018/acura/mdx",
-    "lastUpdated": 1779319772.509299
+    "lastUpdated": 1779376093.903133
   },
   "Acura|MDX|2019": {
     "min": 16262,
     "max": 27242,
+    "score": 74,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2019/acura/mdx",
-    "lastUpdated": 1779319772.836583
+    "lastUpdated": 1779376093.92174
   },
   "Acura|MDX|2020": {
     "min": 18721,
     "max": 31010,
+    "score": 76,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2020/acura/mdx",
-    "lastUpdated": 1779319772.2304819
+    "lastUpdated": 1779376093.925374
   },
   "Acura|MDX|2022": {
     "min": 28909,
     "max": 48581,
+    "score": 75,
+    "mpg_city": "17-19",
     "url": "https://www.jdpower.com/cars/2022/acura/mdx",
-    "lastUpdated": 1779319773.041257
+    "lastUpdated": 1779376093.9295459
   },
   "Acura|MDX|2023": {
     "min": 31712,
     "max": 56909,
+    "score": 79,
+    "mpg_city": "17-19",
     "url": "https://www.jdpower.com/cars/2023/acura/mdx",
-    "lastUpdated": 1779319772.832018
+    "lastUpdated": 1779376093.9407518
   },
   "Acura|MDX|2024": {
     "min": 35804,
     "max": 61862,
+    "score": 80,
+    "mpg_city": "17-19",
     "url": "https://www.jdpower.com/cars/2024/acura/mdx",
-    "lastUpdated": 1779319773.051153
+    "lastUpdated": 1779376093.9511218
   },
   "Acura|MDX|2025": {
     "min": 40512,
     "max": 72751,
+    "score": 77,
+    "mpg_city": "17-19",
     "url": "https://www.jdpower.com/cars/2025/acura/mdx",
-    "lastUpdated": 1779319773.986428
+    "lastUpdated": 1779376093.961468
   },
   "Acura|MDX|2026": {
     "min": 44194,
     "max": 78071,
+    "score": 77,
+    "mpg_city": "17-19",
     "url": "https://www.jdpower.com/cars/2026/acura/mdx",
-    "lastUpdated": 1779319773.072036
+    "lastUpdated": 1779376093.9693599
   },
   "Acura|RDX|2016": {
     "min": 9919,
     "max": 13344,
+    "score": 79,
+    "mpg_city": "19-20",
     "url": "https://www.jdpower.com/cars/2016/acura/rdx",
-    "lastUpdated": 1779319774.46965
+    "lastUpdated": 1779376093.978976
   },
   "Acura|RDX|2017": {
     "min": 10986,
     "max": 14473,
+    "score": 77,
+    "mpg_city": "19-20",
     "url": "https://www.jdpower.com/cars/2017/acura/rdx",
-    "lastUpdated": 1779319774.682281
+    "lastUpdated": 1779376093.987981
   },
   "Acura|RDX|2018": null,
   "Acura|RDX|2019": {
     "min": 17409,
     "max": 23882,
+    "score": 69,
+    "mpg_city": "21-22",
     "url": "https://www.jdpower.com/cars/2019/acura/rdx",
-    "lastUpdated": 1779319774.8228
+    "lastUpdated": 1779376093.9970691
   },
   "Acura|RDX|2020": {
     "min": 18894,
     "max": 26468,
+    "score": 73,
+    "mpg_city": "21-22",
     "url": "https://www.jdpower.com/cars/2020/acura/rdx",
-    "lastUpdated": 1779319774.5788002
+    "lastUpdated": 1779376094.006068
   },
   "Acura|RDX|2021": {
     "min": 21735,
     "max": 33321,
+    "score": 77,
+    "mpg_city": "21-22",
     "url": "https://www.jdpower.com/cars/2021/acura/rdx",
-    "lastUpdated": 1779319774.866207
+    "lastUpdated": 1779376094.0172212
   },
   "Acura|RDX|2022": {
     "min": 23610,
     "max": 36868,
+    "score": 78,
+    "mpg_city": "21-22",
     "url": "https://www.jdpower.com/cars/2022/acura/rdx",
-    "lastUpdated": 1779319775.074541
+    "lastUpdated": 1779376094.0202339
   },
   "Acura|RDX|2023": {
     "min": 27052,
     "max": 42489,
+    "score": 79,
+    "mpg_city": "21-22",
     "url": "https://www.jdpower.com/cars/2023/acura/rdx",
-    "lastUpdated": 1779319775.502435
+    "lastUpdated": 1779376094.0289888
   },
   "Acura|RDX|2024": {
     "min": 31553,
     "max": 46207,
+    "score": 79,
+    "mpg_city": "21",
     "url": "https://www.jdpower.com/cars/2024/acura/rdx",
-    "lastUpdated": 1779319775.686707
+    "lastUpdated": 1779376094.039758
   },
   "Acura|RDX|2025": {
     "min": 37209,
     "max": 55271,
+    "score": 81,
+    "mpg_city": "21",
     "url": "https://www.jdpower.com/cars/2025/acura/rdx",
-    "lastUpdated": 1779319776.22233
+    "lastUpdated": 1779376094.054094
   },
   "Acura|RDX|2026": {
     "min": 41088,
     "max": 56862,
+    "score": 81,
+    "mpg_city": "21",
     "url": "https://www.jdpower.com/cars/2026/acura/rdx",
-    "lastUpdated": 1779319776.416853
+    "lastUpdated": 1779376094.0574908
   },
   "Acura|RLX|2017": {
     "min": 15780,
     "max": 21504,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2017/acura/rlx",
-    "lastUpdated": 1779319776.51898
+    "lastUpdated": 1779376094.074574
   },
   "Acura|TLX|2015": {
     "min": 11729,
     "max": 15982,
+    "score": 76,
+    "mpg_city": "21-24",
     "url": "https://www.jdpower.com/cars/2015/acura/tlx",
-    "lastUpdated": 1779319776.518555
+    "lastUpdated": 1779376094.0803368
   },
   "Acura|TLX|2016": {
     "min": 12475,
     "max": 17887,
+    "score": 79,
+    "mpg_city": "21-24",
     "url": "https://www.jdpower.com/cars/2016/acura/tlx",
-    "lastUpdated": 1779319776.6478348
+    "lastUpdated": 1779376094.086664
   },
   "Acura|TLX|2017": {
     "min": 13471,
     "max": 19166,
+    "score": 79,
+    "mpg_city": "21-24",
     "url": "https://www.jdpower.com/cars/2017/acura/tlx",
-    "lastUpdated": 1779319776.9449668
+    "lastUpdated": 1779376094.1037052
   },
   "Acura|TLX|2018": {
     "min": 15324,
     "max": 23490,
+    "score": 80,
+    "mpg_city": "20-23",
     "url": "https://www.jdpower.com/cars/2018/acura/tlx",
-    "lastUpdated": 1779319776.947411
+    "lastUpdated": 1779376094.114264
   },
   "Acura|TLX|2019": {
     "min": 16722,
     "max": 25023,
+    "score": 79,
+    "mpg_city": "20-23",
     "url": "https://www.jdpower.com/cars/2019/acura/tlx",
-    "lastUpdated": 1779319777.066376
+    "lastUpdated": 1779376094.125649
   },
   "Acura|TLX|2020": {
     "min": 18493,
     "max": 30839,
+    "score": 79,
+    "mpg_city": "20-23",
     "url": "https://www.jdpower.com/cars/2020/acura/tlx",
-    "lastUpdated": 1779319777.135131
+    "lastUpdated": 1779376094.1311622
   },
   "Acura|TLX|2021": {
     "min": 22816,
     "max": 36539,
+    "score": 76,
+    "mpg_city": "19-22",
     "url": "https://www.jdpower.com/cars/2021/acura/tlx",
-    "lastUpdated": 1779319777.16206
+    "lastUpdated": 1779376094.1397278
   },
   "Acura|TLX|2022": {
     "min": 24959,
     "max": 43376,
+    "score": null,
+    "mpg_city": "19-22",
     "url": "https://www.jdpower.com/cars/2022/acura/tlx",
-    "lastUpdated": 1779319777.492249
+    "lastUpdated": 1779376094.151395
   },
   "Acura|TLX|2023": {
     "min": 26000,
     "max": 49129,
+    "score": 79,
+    "mpg_city": "19-22",
     "url": "https://www.jdpower.com/cars/2023/acura/tlx",
-    "lastUpdated": 1779319777.525812
+    "lastUpdated": 1779376094.160994
   },
   "Acura|TLX|2024": {
     "min": 32022,
     "max": 51248,
+    "score": null,
+    "mpg_city": "19-22",
     "url": "https://www.jdpower.com/cars/2024/acura/tlx",
-    "lastUpdated": 1779319777.6965811
+    "lastUpdated": 1779376094.169166
   },
   "Acura|TLX|2025": {
     "min": 38163,
     "max": 56977,
+    "score": 79,
+    "mpg_city": "19-22",
     "url": "https://www.jdpower.com/cars/2025/acura/tlx",
-    "lastUpdated": 1779319777.9697359
+    "lastUpdated": 1779376094.1777651
   },
   "Acura|ZDX|2024": {
     "min": 24623,
     "max": 39872,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2024/acura/zdx",
-    "lastUpdated": 1779319778.218795
+    "lastUpdated": 1779376094.183295
   },
   "Audi|A3 Sportback e-tron|2017": {
     "min": 12815,
     "max": 16654,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2017/audi/a3-sportback-e-tron",
-    "lastUpdated": 1779319779.022743
+    "lastUpdated": 1779376094.194429
   },
   "Audi|A3 Sportback e-tron|2018": {
     "min": 14706,
     "max": 21182,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2018/audi/a3-sportback-e-tron",
-    "lastUpdated": 1779319779.380558
+    "lastUpdated": 1779376094.203466
   },
   "Audi|A3|2014": null,
   "Audi|A3|2015": {
     "min": 7137,
     "max": 11093,
+    "score": 82,
+    "mpg_city": "23-31",
     "url": "https://www.jdpower.com/cars/2015/audi/a3",
-    "lastUpdated": 1779319778.526842
+    "lastUpdated": 1779376094.212512
   },
   "Audi|A3|2016": null,
   "Audi|A3|2017": {
     "min": 11178,
     "max": 15791,
+    "score": 81,
+    "mpg_city": "24-26",
     "url": "https://www.jdpower.com/cars/2017/audi/a3",
-    "lastUpdated": 1779319778.751661
+    "lastUpdated": 1779376094.220879
   },
   "Audi|A3|2018": {
     "min": 11750,
     "max": 19143,
+    "score": 82,
+    "mpg_city": "24-26",
     "url": "https://www.jdpower.com/cars/2018/audi/a3",
-    "lastUpdated": 1779319778.848495
+    "lastUpdated": 1779376094.2240891
   },
   "Audi|A3|2019": {
     "min": 13185,
     "max": 21358,
+    "score": null,
+    "mpg_city": "22-26",
     "url": "https://www.jdpower.com/cars/2019/audi/a3",
-    "lastUpdated": 1779319779.0317812
+    "lastUpdated": 1779376094.23349
   },
   "Audi|A4|2016": {
     "min": 9801,
     "max": 13453,
+    "score": 85,
+    "mpg_city": "21-24",
     "url": "https://www.jdpower.com/cars/2016/audi/a4",
-    "lastUpdated": 1779319779.728023
+    "lastUpdated": 1779376094.252813
   },
   "Audi|A4|2017": {
     "min": 10802,
     "max": 16886,
+    "score": 84,
+    "mpg_city": "24-27",
     "url": "https://www.jdpower.com/cars/2017/audi/a4",
-    "lastUpdated": 1779319779.7736251
+    "lastUpdated": 1779376094.264981
   },
   "Audi|A4|2018": {
     "min": 12968,
     "max": 19981,
+    "score": 84,
+    "mpg_city": "24-27",
     "url": "https://www.jdpower.com/cars/2018/audi/a4",
-    "lastUpdated": 1779319779.770771
+    "lastUpdated": 1779376094.2745779
   },
   "Audi|A4|2019": {
     "min": 14299,
     "max": 22324,
+    "score": 83,
+    "mpg_city": "23-27",
     "url": "https://www.jdpower.com/cars/2019/audi/a4",
-    "lastUpdated": 1779319780.246979
+    "lastUpdated": 1779376094.284193
   },
   "Audi|A4|2020": {
     "min": 17491,
     "max": 24640,
+    "score": null,
+    "mpg_city": "24-27",
     "url": "https://www.jdpower.com/cars/2020/audi/a4",
-    "lastUpdated": 1779319780.239369
+    "lastUpdated": 1779376094.287788
   },
   "Audi|A4|2021": {
     "min": 19724,
     "max": 27677,
+    "score": 76,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2021/audi/a4",
-    "lastUpdated": 1779319780.608586
+    "lastUpdated": 1779376094.29702
   },
   "Audi|A4|2022": null,
   "Audi|A4|2023": {
     "min": 23152,
     "max": 34127,
+    "score": 78,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2023/audi/a4",
-    "lastUpdated": 1779319780.715189
+    "lastUpdated": 1779376094.306587
   },
   "Audi|A4|2024": {
     "min": 23905,
     "max": 36793,
+    "score": 74,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2024/audi/a4",
-    "lastUpdated": 1779319780.8155699
+    "lastUpdated": 1779376094.3152242
   },
   "Audi|A5|2016": {
     "min": 8575,
     "max": 11961,
+    "score": 85,
+    "mpg_city": "21-22",
     "url": "https://www.jdpower.com/cars/2016/audi/a5",
-    "lastUpdated": 1779319780.5889988
+    "lastUpdated": 1779376094.324585
   },
   "Audi|A5|2017": {
     "min": 11939,
     "max": 13389,
+    "score": 83,
+    "mpg_city": "21-23",
     "url": "https://www.jdpower.com/cars/2017/audi/a5",
-    "lastUpdated": 1779319780.919135
+    "lastUpdated": 1779376094.342038
   },
   "Audi|A5|2018": {
     "min": 14396,
     "max": 18345,
+    "score": null,
+    "mpg_city": "24",
     "url": "https://www.jdpower.com/cars/2018/audi/a5",
-    "lastUpdated": 1779319781.134768
+    "lastUpdated": 1779376094.353291
   },
   "Audi|A5|2019": {
     "min": 17307,
     "max": 25489,
+    "score": 83,
+    "mpg_city": "23",
     "url": "https://www.jdpower.com/cars/2019/audi/a5",
-    "lastUpdated": 1779319781.5271392
+    "lastUpdated": 1779376094.36813
   },
   "Audi|A5|2020": {
     "min": 20552,
     "max": 28416,
+    "score": null,
+    "mpg_city": "24",
     "url": "https://www.jdpower.com/cars/2020/audi/a5",
-    "lastUpdated": 1779319781.467071
+    "lastUpdated": 1779376094.377033
   },
   "Audi|A5|2021": {
     "min": 23312,
     "max": 31783,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2021/audi/a5",
-    "lastUpdated": 1779319781.535769
+    "lastUpdated": 1779376094.382642
   },
   "Audi|A5|2022": {
     "min": 25187,
     "max": 36499,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2022/audi/a5",
-    "lastUpdated": 1779319781.532353
+    "lastUpdated": 1779376094.394939
   },
   "Audi|A5|2023": {
     "min": 28037,
     "max": 39478,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2023/audi/a5",
-    "lastUpdated": 1779319781.6931121
+    "lastUpdated": 1779376094.407732
   },
   "Audi|A5|2024": {
     "min": 30111,
     "max": 48306,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2024/audi/a5",
-    "lastUpdated": 1779319782.319197
+    "lastUpdated": 1779376094.4147892
   },
   "Audi|Q2|2018": null,
   "Audi|Q3|2019": null,
   "Audi|Q3|2020": {
     "min": 18464,
     "max": 24941,
+    "score": 71,
+    "mpg_city": "19",
     "url": "https://www.jdpower.com/cars/2020/audi/q3",
-    "lastUpdated": 1779319782.7967098
+    "lastUpdated": 1779376094.424184
   },
   "Audi|Q3|2021": {
     "min": 19254,
     "max": 25254,
+    "score": 76,
+    "mpg_city": "20-22",
     "url": "https://www.jdpower.com/cars/2021/audi/q3",
-    "lastUpdated": 1779319782.7750819
+    "lastUpdated": 1779376094.434041
   },
   "Audi|Q3|2022": {
     "min": 20085,
     "max": 28337,
+    "score": 77,
+    "mpg_city": "21-23",
     "url": "https://www.jdpower.com/cars/2022/audi/q3",
-    "lastUpdated": 1779319782.720532
+    "lastUpdated": 1779376094.4475179
   },
   "Audi|Q3|2023": {
     "min": 21535,
     "max": 31031,
+    "score": 79,
+    "mpg_city": "21-22",
     "url": "https://www.jdpower.com/cars/2023/audi/q3",
-    "lastUpdated": 1779319783.215703
+    "lastUpdated": 1779376094.45067
   },
   "Audi|Q3|2024": {
     "min": 25228,
     "max": 37811,
+    "score": 80,
+    "mpg_city": "20-22",
     "url": "https://www.jdpower.com/cars/2024/audi/q3",
-    "lastUpdated": 1779319782.9405131
+    "lastUpdated": 1779376094.4601269
   },
   "Audi|Q5|2013": {
     "min": 4493,
     "max": 6950,
+    "score": 81,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2013/audi/q5",
-    "lastUpdated": 1779319783.4060202
+    "lastUpdated": 1779376094.4640288
   },
   "Audi|Q5|2014": {
     "min": 5250,
     "max": 8770,
+    "score": 81,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2014/audi/q5",
-    "lastUpdated": 1779319784.123842
+    "lastUpdated": 1779376094.4824052
   },
   "Audi|Q5|2015": {
     "min": 5865,
     "max": 9551,
+    "score": 81,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2015/audi/q5",
-    "lastUpdated": 1779319784.326483
+    "lastUpdated": 1779376094.499969
   },
   "Audi|Q5|2016": {
     "min": 6730,
     "max": 11253,
+    "score": 79,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2016/audi/q5",
-    "lastUpdated": 1779319784.830496
+    "lastUpdated": 1779376094.512814
   },
   "Audi|Q5|2017": {
     "min": 7471,
     "max": 11874,
+    "score": 79,
+    "mpg_city": "18-20",
     "url": "https://www.jdpower.com/cars/2017/audi/q5",
-    "lastUpdated": 1779319785.348088
+    "lastUpdated": 1779376094.516337
   },
   "Audi|Q5|2018": {
     "min": 11582,
     "max": 15703,
+    "score": 76,
+    "mpg_city": "23",
     "url": "https://www.jdpower.com/cars/2018/audi/q5",
-    "lastUpdated": 1779319784.783766
+    "lastUpdated": 1779376094.5260081
   },
   "Audi|Q5|2019": {
     "min": 13233,
     "max": 18654,
+    "score": 76,
+    "mpg_city": "22",
     "url": "https://www.jdpower.com/cars/2019/audi/q5",
-    "lastUpdated": 1779319784.8619862
+    "lastUpdated": 1779376094.5405178
   },
   "Audi|Q5|2020": {
     "min": 15399,
     "max": 22618,
+    "score": 75,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2020/audi/q5",
-    "lastUpdated": 1779319785.4336011
+    "lastUpdated": 1779376094.558626
   },
   "Audi|Q5|2021": {
     "min": 19725,
     "max": 26665,
+    "score": 74,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2021/audi/q5",
-    "lastUpdated": 1779319785.6456902
+    "lastUpdated": 1779376094.570962
   },
   "Audi|Q5|2022": {
     "min": 20400,
     "max": 31027,
+    "score": 73,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2022/audi/q5",
-    "lastUpdated": 1779319785.898648
+    "lastUpdated": 1779376094.577632
   },
   "Audi|Q5|2023": {
     "min": 24334,
     "max": 37662,
+    "score": 77,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2023/audi/q5",
-    "lastUpdated": 1779319786.002233
+    "lastUpdated": 1779376094.596661
   },
   "Audi|Q5|2024": {
     "min": 26092,
     "max": 41969,
+    "score": 75,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2024/audi/q5",
-    "lastUpdated": 1779319785.982122
+    "lastUpdated": 1779376094.600149
   },
   "Audi|RS3|2018": null,
   "Audi|S3|2015": {
     "min": 9935,
     "max": 12085,
+    "score": null,
+    "mpg_city": "23",
     "url": "https://www.jdpower.com/cars/2015/audi/s3",
-    "lastUpdated": 1779319786.479251
+    "lastUpdated": 1779376094.60968
   },
   "Audi|S3|2016": {
     "min": 10528,
     "max": 13089,
+    "score": null,
+    "mpg_city": "23",
     "url": "https://www.jdpower.com/cars/2016/audi/s3",
-    "lastUpdated": 1779319786.9055629
+    "lastUpdated": 1779376094.618757
   },
   "Audi|S3|2017": {
     "min": 15346,
     "max": 19580,
+    "score": null,
+    "mpg_city": "21",
     "url": "https://www.jdpower.com/cars/2017/audi/s3",
-    "lastUpdated": 1779319786.774712
+    "lastUpdated": 1779376094.6215749
   },
   "BMW|E82|2004": null,
   "BMW|E82|2005": null,
@@ -568,74 +744,98 @@
   "Cadillac|CT6|2017": {
     "min": 16631,
     "max": 26433,
+    "score": 78,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2017/cadillac/ct6",
-    "lastUpdated": 1779319788.694596
+    "lastUpdated": 1779376094.64787
   },
   "Cadillac|CT6|2018": {
     "min": 20093,
     "max": 35532,
+    "score": 81,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2018/cadillac/ct6",
-    "lastUpdated": 1779319788.329452
+    "lastUpdated": 1779376094.656496
   },
   "Cadillac|Escalade|2018": {
     "min": 25046,
     "max": 37161,
+    "score": 79,
+    "mpg_city": "14",
     "url": "https://www.jdpower.com/cars/2018/cadillac/escalade",
-    "lastUpdated": 1779319788.6862998
+    "lastUpdated": 1779376094.6608279
   },
   "Cadillac|XT5|2018": {
     "min": 11392,
     "max": 17394,
+    "score": 80,
+    "mpg_city": "18-19",
     "url": "https://www.jdpower.com/cars/2018/cadillac/xt5",
-    "lastUpdated": 1779319788.327602
+    "lastUpdated": 1779376094.670418
   },
   "Cadillac|XT6|2020": {
     "min": 22797,
     "max": 28000,
+    "score": 79,
+    "mpg_city": "17-18",
     "url": "https://www.jdpower.com/cars/2020/cadillac/xt6",
-    "lastUpdated": 1779319788.785015
+    "lastUpdated": 1779376094.671345
   },
   "Chevrolet|Blazer|2019": {
     "min": 11077,
     "max": 21871,
+    "score": 86,
+    "mpg_city": "18-22",
     "url": "https://www.jdpower.com/cars/2019/chevrolet/blazer",
-    "lastUpdated": 1779319788.79455
+    "lastUpdated": 1779376094.68164
   },
   "Chevrolet|Blazer|2020": {
     "min": 11998,
     "max": 24588,
+    "score": 85,
+    "mpg_city": "18-21",
     "url": "https://www.jdpower.com/cars/2020/chevrolet/blazer",
-    "lastUpdated": 1779319789.5834901
+    "lastUpdated": 1779376094.6924329
   },
   "Chevrolet|Blazer|2021": {
     "min": 13321,
     "max": 27908,
+    "score": 82,
+    "mpg_city": "19-22",
     "url": "https://www.jdpower.com/cars/2021/chevrolet/blazer",
-    "lastUpdated": 1779319789.5263748
+    "lastUpdated": 1779376094.711769
   },
   "Chevrolet|Blazer|2022": {
     "min": 19574,
     "max": 32622,
+    "score": 85,
+    "mpg_city": "19-22",
     "url": "https://www.jdpower.com/cars/2022/chevrolet/blazer",
-    "lastUpdated": 1779319790.1453161
+    "lastUpdated": 1779376094.7279449
   },
   "Chevrolet|Blazer|2023": {
     "min": 20954,
     "max": 36185,
+    "score": 87,
+    "mpg_city": "19-22",
     "url": "https://www.jdpower.com/cars/2023/chevrolet/blazer",
-    "lastUpdated": 1779319789.811271
+    "lastUpdated": 1779376094.7347999
   },
   "Chevrolet|Blazer|2024": {
     "min": 24760,
     "max": 39539,
+    "score": 85,
+    "mpg_city": "19-22",
     "url": "https://www.jdpower.com/cars/2024/chevrolet/blazer",
-    "lastUpdated": 1779319790.550997
+    "lastUpdated": 1779376094.7426171
   },
   "Chevrolet|Blazer|2025": {
     "min": 32085,
     "max": 50991,
+    "score": 84,
+    "mpg_city": "18-22",
     "url": "https://www.jdpower.com/cars/2025/chevrolet/blazer",
-    "lastUpdated": 1779319790.741267
+    "lastUpdated": 1779376094.754257
   },
   "Chevrolet|Bolt ACC|2022": null,
   "Chevrolet|Bolt ACC|2023": null,
@@ -644,138 +844,182 @@
   "Chevrolet|Bolt EUV|2022": {
     "min": 14745,
     "max": 19782,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2022/chevrolet/bolt-euv",
-    "lastUpdated": 1779319791.7412758
+    "lastUpdated": 1779376094.767932
   },
   "Chevrolet|Bolt EUV|2023": {
     "min": 15498,
     "max": 22934,
+    "score": 81,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2023/chevrolet/bolt-euv",
-    "lastUpdated": 1779319791.4915981
+    "lastUpdated": 1779376094.7809181
   },
   "Chevrolet|Bolt EV LT|2022": null,
   "Chevrolet|Bolt EV LT|2023": null,
   "Chevrolet|Bolt EV|2017": {
     "min": 6262,
     "max": 7935,
+    "score": 83,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2017/chevrolet/bolt-ev",
-    "lastUpdated": 1779319791.9233038
+    "lastUpdated": 1779376094.791949
   },
   "Chevrolet|Bolt EV|2018": {
     "min": 6748,
     "max": 8187,
+    "score": 80,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2018/chevrolet/bolt-ev",
-    "lastUpdated": 1779319791.908082
+    "lastUpdated": 1779376094.8022358
   },
   "Chevrolet|Bolt EV|2019": {
     "min": 7546,
     "max": 9096,
+    "score": 77,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2019/chevrolet/bolt-ev",
-    "lastUpdated": 1779319792.1586509
+    "lastUpdated": 1779376094.8226829
   },
   "Chevrolet|Bolt EV|2020": {
     "min": 8493,
     "max": 10385,
+    "score": 79,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2020/chevrolet/bolt-ev",
-    "lastUpdated": 1779319792.2970738
+    "lastUpdated": 1779376094.826863
   },
   "Chevrolet|Bolt EV|2021": null,
   "Chevrolet|Bolt EV|2022": {
     "min": 12202,
     "max": 15867,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2022/chevrolet/bolt-ev",
-    "lastUpdated": 1779319793.3779032
+    "lastUpdated": 1779376094.844356
   },
   "Chevrolet|Bolt EV|2023": {
     "min": 13064,
     "max": 16693,
+    "score": 80,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2023/chevrolet/bolt-ev",
-    "lastUpdated": 1779319793.35885
+    "lastUpdated": 1779376094.8479161
   },
   "Chevrolet|Equinox|2019": {
     "min": 10655,
     "max": 21230,
+    "score": 85,
+    "mpg_city": "22-28",
     "url": "https://www.jdpower.com/cars/2019/chevrolet/equinox",
-    "lastUpdated": 1779319794.949997
+    "lastUpdated": 1779376094.8642828
   },
   "Chevrolet|Equinox|2020": {
     "min": 11850,
     "max": 21474,
+    "score": 84,
+    "mpg_city": "22-28",
     "url": "https://www.jdpower.com/cars/2020/chevrolet/equinox",
-    "lastUpdated": 1779319795.657353
+    "lastUpdated": 1779376094.8841941
   },
   "Chevrolet|Equinox|2021": {
     "min": 13186,
     "max": 23093,
+    "score": 85,
+    "mpg_city": "25-26",
     "url": "https://www.jdpower.com/cars/2021/chevrolet/equinox",
-    "lastUpdated": 1779319795.6056142
+    "lastUpdated": 1779376094.887993
   },
   "Chevrolet|Equinox|2022": {
     "min": 16356,
     "max": 26400,
+    "score": 83,
+    "mpg_city": "25-26",
     "url": "https://www.jdpower.com/cars/2022/chevrolet/equinox",
-    "lastUpdated": 1779319795.793988
+    "lastUpdated": 1779376094.895798
   },
   "Chevrolet|Malibu Hybrid|2017": null,
   "Chevrolet|Malibu|2016": {
     "min": 8691,
     "max": 11891,
+    "score": 79,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2016/chevrolet/malibu",
-    "lastUpdated": 1779319796.526361
+    "lastUpdated": 1779376094.905521
   },
   "Chevrolet|Malibu|2017": {
     "min": 9786,
     "max": 13469,
+    "score": 80,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2017/chevrolet/malibu",
-    "lastUpdated": 1779319796.5268102
+    "lastUpdated": 1779376094.9096599
   },
   "Chevrolet|Malibu|2018": {
     "min": 10641,
     "max": 16032,
+    "score": 82,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2018/chevrolet/malibu",
-    "lastUpdated": 1779319796.527263
+    "lastUpdated": 1779376094.919898
   },
   "Chevrolet|Malibu|2019": {
     "min": 11105,
     "max": 16751,
+    "score": 85,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2019/chevrolet/malibu",
-    "lastUpdated": 1779319797.96314
+    "lastUpdated": 1779376094.933512
   },
   "Chevrolet|Malibu|2020": {
     "min": 11849,
     "max": 18272,
+    "score": 81,
+    "mpg_city": "22-29",
     "url": "https://www.jdpower.com/cars/2020/chevrolet/malibu",
-    "lastUpdated": 1779319797.128343
+    "lastUpdated": 1779376094.946209
   },
   "Chevrolet|Malibu|2021": {
     "min": 13201,
     "max": 20099,
+    "score": 81,
+    "mpg_city": "22-29",
     "url": "https://www.jdpower.com/cars/2021/chevrolet/malibu",
-    "lastUpdated": 1779319796.690367
+    "lastUpdated": 1779376094.952595
   },
   "Chevrolet|Malibu|2022": {
     "min": 15693,
     "max": 22903,
+    "score": 79,
+    "mpg_city": "22-29",
     "url": "https://www.jdpower.com/cars/2022/chevrolet/malibu",
-    "lastUpdated": 1779319797.08423
+    "lastUpdated": 1779376094.9584131
   },
   "Chevrolet|Malibu|2023": {
     "min": 16462,
     "max": 26031,
+    "score": 81,
+    "mpg_city": "27",
     "url": "https://www.jdpower.com/cars/2023/chevrolet/malibu",
-    "lastUpdated": 1779319798.302334
+    "lastUpdated": 1779376094.967169
   },
   "Chevrolet|Silverado 1500|2020": {
     "min": 14913,
     "max": 41579,
+    "score": 82,
+    "mpg_city": "14-20",
     "url": "https://www.jdpower.com/cars/2020/chevrolet/silverado-1500",
-    "lastUpdated": 1779319798.4424791
+    "lastUpdated": 1779376094.9760609
   },
   "Chevrolet|Silverado 1500|2021": {
     "min": 17614,
     "max": 47325,
+    "score": 82,
+    "mpg_city": "14-20",
     "url": "https://www.jdpower.com/cars/2021/chevrolet/silverado-1500",
-    "lastUpdated": 1779319799.095948
+    "lastUpdated": 1779376094.982211
   },
   "Chevrolet|Suburban Premier|2016": null,
   "Chevrolet|Suburban Premier|2017": null,
@@ -785,62 +1029,82 @@
   "Chevrolet|Suburban|2016": {
     "min": 15281,
     "max": 30815,
+    "score": 78,
+    "mpg_city": "15-16",
     "url": "https://www.jdpower.com/cars/2016/chevrolet/suburban",
-    "lastUpdated": 1779319798.57983
+    "lastUpdated": 1779376094.989059
   },
   "Chevrolet|Suburban|2017": {
     "min": 16133,
     "max": 33133,
+    "score": 79,
+    "mpg_city": "15-16",
     "url": "https://www.jdpower.com/cars/2017/chevrolet/suburban",
-    "lastUpdated": 1779319799.238498
+    "lastUpdated": 1779376095.003684
   },
   "Chevrolet|Suburban|2018": {
     "min": 17183,
     "max": 35560,
+    "score": 81,
+    "mpg_city": "15-16",
     "url": "https://www.jdpower.com/cars/2018/chevrolet/suburban",
-    "lastUpdated": 1779319799.602884
+    "lastUpdated": 1779376095.015338
   },
   "Chevrolet|Suburban|2019": {
     "min": 18477,
     "max": 44349,
+    "score": 79,
+    "mpg_city": "14-15",
     "url": "https://www.jdpower.com/cars/2019/chevrolet/suburban",
-    "lastUpdated": 1779319799.651427
+    "lastUpdated": 1779376095.018665
   },
   "Chevrolet|Suburban|2020": {
     "min": 19709,
     "max": 41248,
+    "score": 79,
+    "mpg_city": "14-15",
     "url": "https://www.jdpower.com/cars/2020/chevrolet/suburban",
-    "lastUpdated": 1779319799.607855
+    "lastUpdated": 1779376095.038639
   },
   "Chevrolet|TRAX|2024": {
     "min": 17914,
     "max": 26334,
+    "score": 84,
+    "mpg_city": "28",
     "url": "https://www.jdpower.com/cars/2024/chevrolet/trax",
-    "lastUpdated": 1779319800.569174
+    "lastUpdated": 1779376095.042867
   },
   "Chevrolet|Trailblazer|2021": {
     "min": 14210,
     "max": 21125,
+    "score": 84,
+    "mpg_city": "26-29",
     "url": "https://www.jdpower.com/cars/2021/chevrolet/trailblazer",
-    "lastUpdated": 1779319803.908394
+    "lastUpdated": 1779376095.0537322
   },
   "Chevrolet|Trailblazer|2022": {
     "min": 15345,
     "max": 23502,
+    "score": 83,
+    "mpg_city": "26-29",
     "url": "https://www.jdpower.com/cars/2022/chevrolet/trailblazer",
-    "lastUpdated": 1779319804.3676422
+    "lastUpdated": 1779376095.063949
   },
   "Chevrolet|Volt|2017": {
     "min": 9679,
     "max": 12959,
+    "score": 77,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2017/chevrolet/volt",
-    "lastUpdated": 1779319805.84224
+    "lastUpdated": 1779376095.074374
   },
   "Chevrolet|Volt|2018": {
     "min": 10613,
     "max": 14243,
+    "score": 78,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2018/chevrolet/volt",
-    "lastUpdated": 1779319805.610423
+    "lastUpdated": 1779376095.084532
   },
   "Chrysler|Pacifica Hybrid|2017": null,
   "Chrysler|Pacifica Hybrid|2018": null,
@@ -855,80 +1119,106 @@
   "Chrysler|Pacifica|2018": {
     "min": 9160,
     "max": 14603,
+    "score": 74,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2018/chrysler/pacifica",
-    "lastUpdated": 1779319806.8089468
+    "lastUpdated": 1779376095.090932
   },
   "Chrysler|Pacifica|2019": {
     "min": 10779,
     "max": 18118,
+    "score": 74,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2019/chrysler/pacifica",
-    "lastUpdated": 1779319806.4938638
+    "lastUpdated": 1779376095.100329
   },
   "Chrysler|Pacifica|2020": {
     "min": 15071,
     "max": 24640,
+    "score": 76,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2020/chrysler/pacifica",
-    "lastUpdated": 1779319805.782393
+    "lastUpdated": 1779376095.110382
   },
   "Chrysler|Pacifica|2021": {
     "min": 18832,
     "max": 30355,
+    "score": 70,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2021/chrysler/pacifica",
-    "lastUpdated": 1779319805.989078
+    "lastUpdated": 1779376095.1177778
   },
   "Chrysler|Pacifica|2022": {
     "min": 19805,
     "max": 35842,
+    "score": 75,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2022/chrysler/pacifica",
-    "lastUpdated": 1779319806.835498
+    "lastUpdated": 1779376095.121891
   },
   "Chrysler|Pacifica|2023": {
     "min": 22078,
     "max": 41058,
+    "score": 72,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2023/chrysler/pacifica",
-    "lastUpdated": 1779319806.835095
+    "lastUpdated": 1779376095.131192
   },
   "Dodge|Durango|2020": {
     "min": 15109,
     "max": 42124,
+    "score": 80,
+    "mpg_city": "13-19",
     "url": "https://www.jdpower.com/cars/2020/dodge/durango",
-    "lastUpdated": 1779319808.511007
+    "lastUpdated": 1779376095.136221
   },
   "Dodge|Durango|2021": {
     "min": 17287,
     "max": 69474,
+    "score": 78,
+    "mpg_city": "12-19",
     "url": "https://www.jdpower.com/cars/2021/dodge/durango",
-    "lastUpdated": 1779319808.270655
+    "lastUpdated": 1779376095.1547241
   },
   "Ford|Bronco Sport|2021": {
     "min": 18208,
     "max": 28924,
+    "score": 81,
+    "mpg_city": "21-25",
     "url": "https://www.jdpower.com/cars/2021/ford/bronco-sport",
-    "lastUpdated": 1779319808.404764
+    "lastUpdated": 1779376095.163956
   },
   "Ford|Bronco Sport|2022": {
     "min": 18003,
     "max": 29250,
+    "score": 81,
+    "mpg_city": "21-25",
     "url": "https://www.jdpower.com/cars/2022/ford/bronco-sport",
-    "lastUpdated": 1779319808.157707
+    "lastUpdated": 1779376095.1734421
   },
   "Ford|Bronco Sport|2023": {
     "min": 21220,
     "max": 40052,
+    "score": 83,
+    "mpg_city": "21-25",
     "url": "https://www.jdpower.com/cars/2023/ford/bronco-sport",
-    "lastUpdated": 1779319808.481083
+    "lastUpdated": 1779376095.176018
   },
   "Ford|Bronco Sport|2024": {
     "min": 24981,
     "max": 36356,
+    "score": 83,
+    "mpg_city": "21-25",
     "url": "https://www.jdpower.com/cars/2024/ford/bronco-sport",
-    "lastUpdated": 1779319808.921243
+    "lastUpdated": 1779376095.184897
   },
   "Ford|Edge|2022": {
     "min": 18491,
     "max": 32088,
+    "score": 80,
+    "mpg_city": "19-21",
     "url": "https://www.jdpower.com/cars/2022/ford/edge",
-    "lastUpdated": 1779319809.446314
+    "lastUpdated": 1779376095.187733
   },
   "Ford|Escape Hybrid|2020": null,
   "Ford|Escape Hybrid|2021": null,
@@ -943,50 +1233,66 @@
   "Ford|Escape|2020": {
     "min": 10813,
     "max": 20975,
+    "score": 79,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2020/ford/escape",
-    "lastUpdated": 1779319809.770993
+    "lastUpdated": 1779376095.1969678
   },
   "Ford|Escape|2021": {
     "min": 14280,
     "max": 24782,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2021/ford/escape",
-    "lastUpdated": 1779319810.0728178
+    "lastUpdated": 1779376095.2115111
   },
   "Ford|Escape|2022": {
     "min": 15812,
     "max": 29060,
+    "score": 81,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2022/ford/escape",
-    "lastUpdated": 1779319809.836461
+    "lastUpdated": 1779376095.221816
   },
   "Ford|Escape|2023": {
     "min": 17556,
     "max": 33246,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2023/ford/escape",
-    "lastUpdated": 1779319810.333048
+    "lastUpdated": 1779376095.2315571
   },
   "Ford|Escape|2024": {
     "min": 20005,
     "max": 36578,
+    "score": 82,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2024/ford/escape",
-    "lastUpdated": 1779319809.955646
+    "lastUpdated": 1779376095.245086
   },
   "Ford|Expedition|2022": {
     "min": 31255,
     "max": 59239,
+    "score": null,
+    "mpg_city": "16-17",
     "url": "https://www.jdpower.com/cars/2022/ford/expedition",
-    "lastUpdated": 1779319811.5269508
+    "lastUpdated": 1779376095.2546098
   },
   "Ford|Expedition|2023": {
     "min": 34102,
     "max": 66736,
+    "score": 78,
+    "mpg_city": "16-17",
     "url": "https://www.jdpower.com/cars/2023/ford/expedition",
-    "lastUpdated": 1779319812.046756
+    "lastUpdated": 1779376095.263693
   },
   "Ford|Expedition|2024": {
     "min": 38249,
     "max": 75334,
+    "score": 78,
+    "mpg_city": "16-17",
     "url": "https://www.jdpower.com/cars/2024/ford/expedition",
-    "lastUpdated": 1779319811.298378
+    "lastUpdated": 1779376095.272876
   },
   "Ford|Explorer Hybrid|2020": null,
   "Ford|Explorer Hybrid|2021": null,
@@ -996,32 +1302,42 @@
   "Ford|Explorer|2020": {
     "min": 15640,
     "max": 30332,
+    "score": 71,
+    "mpg_city": "18-21",
     "url": "https://www.jdpower.com/cars/2020/ford/explorer",
-    "lastUpdated": 1779319811.89904
+    "lastUpdated": 1779376095.292138
   },
   "Ford|Explorer|2021": {
     "min": 16522,
     "max": 33572,
+    "score": 78,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2021/ford/explorer",
-    "lastUpdated": 1779319811.94662
+    "lastUpdated": 1779376095.304249
   },
   "Ford|Explorer|2022": {
     "min": 18978,
     "max": 41026,
+    "score": 83,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2022/ford/explorer",
-    "lastUpdated": 1779319812.119363
+    "lastUpdated": 1779376095.318232
   },
   "Ford|Explorer|2023": {
     "min": 21360,
     "max": 45889,
+    "score": 81,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2023/ford/explorer",
-    "lastUpdated": 1779319812.2272792
+    "lastUpdated": 1779376095.327894
   },
   "Ford|Explorer|2024": {
     "min": 23633,
     "max": 47823,
+    "score": 84,
+    "mpg_city": "18-21",
     "url": "https://www.jdpower.com/cars/2024/ford/explorer",
-    "lastUpdated": 1779319812.574511
+    "lastUpdated": 1779376095.339493
   },
   "Ford|F-150 Hybrid|2021": null,
   "Ford|F-150 Hybrid|2022": null,
@@ -1029,27 +1345,35 @@
   "Ford|F-150|2021": {
     "min": 22734,
     "max": 67890,
+    "score": 79,
+    "mpg_city": "14-20",
     "url": "https://www.jdpower.com/cars/2021/ford/f-150",
-    "lastUpdated": 1779319814.19435
+    "lastUpdated": 1779376095.351528
   },
   "Ford|F-150|2022": {
     "min": 24825,
     "max": 75377,
+    "score": 82,
+    "mpg_city": "15-20",
     "url": "https://www.jdpower.com/cars/2022/ford/f-150",
-    "lastUpdated": 1779319814.175144
+    "lastUpdated": 1779376095.366802
   },
   "Ford|F-150|2023": {
     "min": 25456,
     "max": 105925,
+    "score": 80,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2023/ford/f-150",
-    "lastUpdated": 1779319814.148005
+    "lastUpdated": 1779376095.3808498
   },
   "Ford|Focus Hybrid|2018": null,
   "Ford|Focus|2018": {
     "min": 6774,
     "max": 28130,
+    "score": 78,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2018/ford/focus",
-    "lastUpdated": 1779319815.029243
+    "lastUpdated": 1779376095.391943
   },
   "Ford|Kuga Hybrid|2020": null,
   "Ford|Kuga Hybrid|2021": null,
@@ -1071,144 +1395,190 @@
   "Ford|Maverick|2022": {
     "min": 19488,
     "max": 29460,
+    "score": 80,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2022/ford/maverick",
-    "lastUpdated": 1779319815.771574
+    "lastUpdated": 1779376095.4086149
   },
   "Ford|Maverick|2023": {
     "min": 20807,
     "max": 36086,
+    "score": 81,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2023/ford/maverick",
-    "lastUpdated": 1779319815.999207
+    "lastUpdated": 1779376095.412666
   },
   "Ford|Maverick|2024": null,
   "Ford|Mustang Mach-E|2021": {
     "min": 17853,
     "max": 26810,
+    "score": 78,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2021/ford/mustang-mach-e",
-    "lastUpdated": 1779319816.240067
+    "lastUpdated": 1779376095.432707
   },
   "Ford|Mustang Mach-E|2022": {
     "min": 19793,
     "max": 33007,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2022/ford/mustang-mach-e",
-    "lastUpdated": 1779319816.5810099
+    "lastUpdated": 1779376095.447401
   },
   "Ford|Mustang Mach-E|2023": {
     "min": 23018,
     "max": 39776,
+    "score": 78,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2023/ford/mustang-mach-e",
-    "lastUpdated": 1779319816.2883499
+    "lastUpdated": 1779376095.45774
   },
   "Ford|Mustang Mach-E|2024": {
     "min": 26681,
     "max": 41048,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2024/ford/mustang-mach-e",
-    "lastUpdated": 1779319816.138561
+    "lastUpdated": 1779376095.466455
   },
   "Ford|Ranger|2024": {
     "min": 27065,
     "max": 60546,
+    "score": null,
+    "mpg_city": "16-21",
     "url": "https://www.jdpower.com/cars/2024/ford/ranger",
-    "lastUpdated": 1779319816.769879
+    "lastUpdated": 1779376095.471452
   },
   "GMC|Acadia|2018": {
     "min": 9298,
     "max": 18540,
+    "score": 75,
+    "mpg_city": "17-21",
     "url": "https://www.jdpower.com/cars/2018/gmc/acadia",
-    "lastUpdated": 1779319817.4161851
+    "lastUpdated": 1779376095.481229
   },
   "GMC|Sierra 1500|2020": {
     "min": 17830,
     "max": 43200,
+    "score": 85,
+    "mpg_city": "15-20",
     "url": "https://www.jdpower.com/cars/2020/gmc/sierra-1500",
-    "lastUpdated": 1779319817.409622
+    "lastUpdated": 1779376095.501887
   },
   "GMC|Sierra 1500|2021": {
     "min": 19377,
     "max": 47600,
+    "score": 84,
+    "mpg_city": "14-22",
     "url": "https://www.jdpower.com/cars/2021/gmc/sierra-1500",
-    "lastUpdated": 1779319817.817632
+    "lastUpdated": 1779376095.5135
   },
   "GMC|Yukon|2019": {
     "min": 21027,
     "max": 38412,
+    "score": 78,
+    "mpg_city": "14-15",
     "url": "https://www.jdpower.com/cars/2019/gmc/yukon",
-    "lastUpdated": 1779319817.495256
+    "lastUpdated": 1779376095.5196018
   },
   "GMC|Yukon|2020": {
     "min": 22928,
     "max": 41342,
+    "score": 81,
+    "mpg_city": "14-15",
     "url": "https://www.jdpower.com/cars/2020/gmc/yukon",
-    "lastUpdated": 1779319817.947274
+    "lastUpdated": 1779376095.534647
   },
   "Genesis|G70|2018": null,
   "Genesis|G70|2019": {
     "min": 14609,
     "max": 23449,
+    "score": 85,
+    "mpg_city": "17-22",
     "url": "https://www.jdpower.com/cars/2019/genesis/g70",
-    "lastUpdated": 1779319817.885758
+    "lastUpdated": 1779376095.5447948
   },
   "Genesis|G70|2020": {
     "min": 16675,
     "max": 24764,
+    "score": 85,
+    "mpg_city": "17-22",
     "url": "https://www.jdpower.com/cars/2020/genesis/g70",
-    "lastUpdated": 1779319818.174714
+    "lastUpdated": 1779376095.554005
   },
   "Genesis|G70|2021": {
     "min": 19436,
     "max": 28339,
+    "score": 74,
+    "mpg_city": "17-22",
     "url": "https://www.jdpower.com/cars/2021/genesis/g70",
-    "lastUpdated": 1779319818.3560162
+    "lastUpdated": 1779376095.556072
   },
   "Genesis|G70|2022": {
     "min": 23581,
     "max": 42508,
+    "score": 77,
+    "mpg_city": "17-21",
     "url": "https://www.jdpower.com/cars/2022/genesis/g70",
-    "lastUpdated": 1779319818.466374
+    "lastUpdated": 1779376095.5659032
   },
   "Genesis|G70|2023": {
     "min": 26172,
     "max": 37942,
+    "score": 78,
+    "mpg_city": "17-21",
     "url": "https://www.jdpower.com/cars/2023/genesis/g70",
-    "lastUpdated": 1779319818.7522812
+    "lastUpdated": 1779376095.575681
   },
   "Genesis|G80 (2.5T Advanced Trim, with HDA II)|2024": null,
   "Genesis|G80|2017": {
     "min": 13892,
     "max": 17629,
+    "score": 83,
+    "mpg_city": "15-18",
     "url": "https://www.jdpower.com/cars/2017/genesis/g80",
-    "lastUpdated": 1779319818.666976
+    "lastUpdated": 1779376095.5857978
   },
   "Genesis|G80|2018": {
     "min": 18792,
     "max": 25654,
+    "score": 83,
+    "mpg_city": "15-19",
     "url": "https://www.jdpower.com/cars/2018/genesis/g80",
-    "lastUpdated": 1779319819.025953
+    "lastUpdated": 1779376095.598194
   },
   "Genesis|G80|2019": {
     "min": 19731,
     "max": 27462,
+    "score": 78,
+    "mpg_city": "15-18",
     "url": "https://www.jdpower.com/cars/2019/genesis/g80",
-    "lastUpdated": 1779319818.913127
+    "lastUpdated": 1779376095.601887
   },
   "Genesis|G90|2017": {
     "min": 14720,
     "max": 17142,
+    "score": 82,
+    "mpg_city": "15-17",
     "url": "https://www.jdpower.com/cars/2017/genesis/g90",
-    "lastUpdated": 1779319819.153981
+    "lastUpdated": 1779376095.6113348
   },
   "Genesis|G90|2018": {
     "min": 17232,
     "max": 23309,
+    "score": 79,
+    "mpg_city": "15-17",
     "url": "https://www.jdpower.com/cars/2018/genesis/g90",
-    "lastUpdated": 1779319820.162584
+    "lastUpdated": 1779376095.6254458
   },
   "Genesis|G90|2019": null,
   "Genesis|G90|2020": {
     "min": 30186,
     "max": 37072,
+    "score": null,
+    "mpg_city": "15-17",
     "url": "https://www.jdpower.com/cars/2020/genesis/g90",
-    "lastUpdated": 1779319819.706799
+    "lastUpdated": 1779376095.6424918
   },
   "Genesis|GV60 (Advanced Trim)|2023": null,
   "Genesis|GV60 (Performance Trim)|2022": null,
@@ -1224,122 +1594,162 @@
   "Genesis|GV80|2023": {
     "min": 36451,
     "max": 51363,
+    "score": 76,
+    "mpg_city": "18-20",
     "url": "https://www.jdpower.com/cars/2023/genesis/gv80",
-    "lastUpdated": 1779319820.628035
+    "lastUpdated": 1779376095.6606212
   },
   "Honda|Accord Hybrid|2017": {
     "min": 12951,
     "max": 17420,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2017/honda/accord-hybrid",
-    "lastUpdated": 1779319822.20498
+    "lastUpdated": 1779376095.667059
   },
   "Honda|Accord Hybrid|2018": {
     "min": 15093,
     "max": 21883,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2018/honda/accord-hybrid",
-    "lastUpdated": 1779319822.5388339
+    "lastUpdated": 1779376095.676648
   },
   "Honda|Accord Hybrid|2019": {
     "min": 16916,
     "max": 23365,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2019/honda/accord-hybrid",
-    "lastUpdated": 1779319822.5401301
+    "lastUpdated": 1779376095.690801
   },
   "Honda|Accord Hybrid|2020": {
     "min": 17911,
     "max": 25591,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2020/honda/accord-hybrid",
-    "lastUpdated": 1779319822.821588
+    "lastUpdated": 1779376095.710363
   },
   "Honda|Accord Hybrid|2021": {
     "min": 20038,
     "max": 27606,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2021/honda/accord-hybrid",
-    "lastUpdated": 1779319823.4321449
+    "lastUpdated": 1779376095.719473
   },
   "Honda|Accord Hybrid|2022": {
     "min": 20916,
     "max": 29926,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2022/honda/accord-hybrid",
-    "lastUpdated": 1779319823.1112509
+    "lastUpdated": 1779376095.722839
   },
   "Honda|Accord Hybrid|2023": {
     "min": 24723,
     "max": 34882,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2023/honda/accord-hybrid",
-    "lastUpdated": 1779319823.396131
+    "lastUpdated": 1779376095.735297
   },
   "Honda|Accord Hybrid|2024": {
     "min": 25487,
     "max": 37138,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2024/honda/accord-hybrid",
-    "lastUpdated": 1779319823.479776
+    "lastUpdated": 1779376095.750926
   },
   "Honda|Accord Hybrid|2025": {
     "min": 29096,
     "max": 41470,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2025/honda/accord-hybrid",
-    "lastUpdated": 1779319823.485235
+    "lastUpdated": 1779376095.7575622
   },
   "Honda|Accord|2016": {
     "min": 10507,
     "max": 16145,
+    "score": 83,
+    "mpg_city": "21-27",
     "url": "https://www.jdpower.com/cars/2016/honda/accord",
-    "lastUpdated": 1779319820.7719219
+    "lastUpdated": 1779376095.771713
   },
   "Honda|Accord|2017": {
     "min": 11202,
     "max": 18348,
+    "score": 84,
+    "mpg_city": "21-27",
     "url": "https://www.jdpower.com/cars/2017/honda/accord",
-    "lastUpdated": 1779319820.9574988
+    "lastUpdated": 1779376095.783586
   },
   "Honda|Accord|2018": {
     "min": 14324,
     "max": 21965,
+    "score": 82,
+    "mpg_city": "22-30",
     "url": "https://www.jdpower.com/cars/2018/honda/accord",
-    "lastUpdated": 1779319820.976342
+    "lastUpdated": 1779376095.787961
   },
   "Honda|Accord|2019": {
     "min": 16132,
     "max": 23919,
+    "score": 80,
+    "mpg_city": "22-30",
     "url": "https://www.jdpower.com/cars/2019/honda/accord",
-    "lastUpdated": 1779319821.0419352
+    "lastUpdated": 1779376095.797348
   },
   "Honda|Accord|2020": {
     "min": 17672,
     "max": 26062,
+    "score": 82,
+    "mpg_city": "22-30",
     "url": "https://www.jdpower.com/cars/2020/honda/accord",
-    "lastUpdated": 1779319822.296604
+    "lastUpdated": 1779376095.809814
   },
   "Honda|Accord|2021": {
     "min": 19812,
     "max": 28406,
+    "score": 82,
+    "mpg_city": "22-30",
     "url": "https://www.jdpower.com/cars/2021/honda/accord",
-    "lastUpdated": 1779319821.338584
+    "lastUpdated": 1779376095.819521
   },
   "Honda|Accord|2022": {
     "min": 19890,
     "max": 31585,
+    "score": 79,
+    "mpg_city": "22-30",
     "url": "https://www.jdpower.com/cars/2022/honda/accord",
-    "lastUpdated": 1779319821.728958
+    "lastUpdated": 1779376095.833646
   },
   "Honda|Accord|2023": {
     "min": 21824,
     "max": 26795,
+    "score": 81,
+    "mpg_city": "29",
     "url": "https://www.jdpower.com/cars/2023/honda/accord",
-    "lastUpdated": 1779319821.605094
+    "lastUpdated": 1779376095.8366458
   },
   "Honda|Accord|2024": {
     "min": 23384,
     "max": 28721,
+    "score": 82,
+    "mpg_city": "29",
     "url": "https://www.jdpower.com/cars/2024/honda/accord",
-    "lastUpdated": 1779319822.696727
+    "lastUpdated": 1779376095.8459961
   },
   "Honda|Accord|2025": {
     "min": 24299,
     "max": 32073,
+    "score": 82,
+    "mpg_city": "29",
     "url": "https://www.jdpower.com/cars/2025/honda/accord",
-    "lastUpdated": 1779319821.591224
+    "lastUpdated": 1779376095.861495
   },
   "Honda|CR-V Hybrid|2017": null,
   "Honda|CR-V Hybrid|2018": null,
@@ -1347,253 +1757,335 @@
   "Honda|CR-V Hybrid|2020": {
     "min": 19714,
     "max": 28923,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2020/honda/cr-v-hybrid",
-    "lastUpdated": 1779319826.0854778
+    "lastUpdated": 1779376095.8710861
   },
   "Honda|CR-V Hybrid|2021": null,
   "Honda|CR-V Hybrid|2022": {
     "min": 24780,
     "max": 34923,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2022/honda/cr-v-hybrid",
-    "lastUpdated": 1779319826.310605
+    "lastUpdated": 1779376095.8748338
   },
   "Honda|CR-V Hybrid|2023": {
     "min": 24485,
     "max": 36933,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2023/honda/cr-v-hybrid",
-    "lastUpdated": 1779319827.404843
+    "lastUpdated": 1779376095.8897111
   },
   "Honda|CR-V Hybrid|2024": {
     "min": 28245,
     "max": 41094,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2024/honda/cr-v-hybrid",
-    "lastUpdated": 1779319826.086478
+    "lastUpdated": 1779376095.8990989
   },
   "Honda|CR-V Hybrid|2025": {
     "min": 31286,
     "max": 44654,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2025/honda/cr-v-hybrid",
-    "lastUpdated": 1779319827.3104541
+    "lastUpdated": 1779376095.908512
   },
   "Honda|CR-V Hybrid|2026": {
     "min": 32134,
     "max": 44753,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2026/honda/cr-v-hybrid",
-    "lastUpdated": 1779319826.270307
+    "lastUpdated": 1779376095.914579
   },
   "Honda|CR-V|2015": {
     "min": 10495,
     "max": 15229,
+    "score": 80,
+    "mpg_city": "26-27",
     "url": "https://www.jdpower.com/cars/2015/honda/cr-v",
-    "lastUpdated": 1779319823.7444968
+    "lastUpdated": 1779376095.924361
   },
   "Honda|CR-V|2016": {
     "min": 11356,
     "max": 16881,
+    "score": 81,
+    "mpg_city": "25-26",
     "url": "https://www.jdpower.com/cars/2016/honda/cr-v",
-    "lastUpdated": 1779319824.005378
+    "lastUpdated": 1779376095.9401212
   },
   "Honda|CR-V|2017": {
     "min": 12887,
     "max": 18890,
+    "score": 80,
+    "mpg_city": "25-28",
     "url": "https://www.jdpower.com/cars/2017/honda/cr-v",
-    "lastUpdated": 1779319824.391745
+    "lastUpdated": 1779376095.9525719
   },
   "Honda|CR-V|2018": {
     "min": 14036,
     "max": 20564,
+    "score": 81,
+    "mpg_city": "25-28",
     "url": "https://www.jdpower.com/cars/2018/honda/cr-v",
-    "lastUpdated": 1779319824.661488
+    "lastUpdated": 1779376095.96302
   },
   "Honda|CR-V|2019": {
     "min": 16143,
     "max": 24898,
+    "score": 78,
+    "mpg_city": "25-28",
     "url": "https://www.jdpower.com/cars/2019/honda/cr-v",
-    "lastUpdated": 1779319824.471354
+    "lastUpdated": 1779376095.9762602
   },
   "Honda|CR-V|2020": {
     "min": 17939,
     "max": 27623,
+    "score": 82,
+    "mpg_city": "27-28",
     "url": "https://www.jdpower.com/cars/2020/honda/cr-v",
-    "lastUpdated": 1779319824.630589
+    "lastUpdated": 1779376095.9931772
   },
   "Honda|CR-V|2021": {
     "min": 19865,
     "max": 30470,
+    "score": 81,
+    "mpg_city": "27-28",
     "url": "https://www.jdpower.com/cars/2021/honda/cr-v",
-    "lastUpdated": 1779319824.695172
+    "lastUpdated": 1779376096.0051122
   },
   "Honda|CR-V|2022": {
     "min": 20764,
     "max": 33535,
+    "score": 81,
+    "mpg_city": "27-28",
     "url": "https://www.jdpower.com/cars/2022/honda/cr-v",
-    "lastUpdated": 1779319825.234889
+    "lastUpdated": 1779376096.010029
   },
   "Honda|CR-V|2023": {
     "min": 22335,
     "max": 33525,
+    "score": 81,
+    "mpg_city": "27-28",
     "url": "https://www.jdpower.com/cars/2023/honda/cr-v",
-    "lastUpdated": 1779319825.464287
+    "lastUpdated": 1779376096.025855
   },
   "Honda|CR-V|2024": {
     "min": 24662,
     "max": 36672,
+    "score": 84,
+    "mpg_city": "27-28",
     "url": "https://www.jdpower.com/cars/2024/honda/cr-v",
-    "lastUpdated": 1779319825.0517418
+    "lastUpdated": 1779376096.029147
   },
   "Honda|CR-V|2025": {
     "min": 26823,
     "max": 38451,
+    "score": 83,
+    "mpg_city": "26-28",
     "url": "https://www.jdpower.com/cars/2025/honda/cr-v",
-    "lastUpdated": 1779319825.286329
+    "lastUpdated": 1779376096.038093
   },
   "Honda|CR-V|2026": {
     "min": 28193,
     "max": 38735,
+    "score": 83,
+    "mpg_city": "27-28",
     "url": "https://www.jdpower.com/cars/2026/honda/cr-v",
-    "lastUpdated": 1779319825.464011
+    "lastUpdated": 1779376096.048498
   },
   "Honda|City (Brazil only)|2023": null,
   "Honda|Civic Hatchback Hybrid (Europe only)|2023": null,
   "Honda|Civic Hatchback Hybrid|2025": {
     "min": 27528,
     "max": 34893,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2025/honda/civic-hatchback-hybrid",
-    "lastUpdated": 1779319830.121471
+    "lastUpdated": 1779376096.065485
   },
   "Honda|Civic Hatchback Hybrid|2026": {
     "min": 28310,
     "max": 35996,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2026/honda/civic-hatchback-hybrid",
-    "lastUpdated": 1779319830.934433
+    "lastUpdated": 1779376096.07735
   },
   "Honda|Civic Hatchback|2017": {
     "min": 12167,
     "max": 16548,
+    "score": null,
+    "mpg_city": "30-31",
     "url": "https://www.jdpower.com/cars/2017/honda/civic-hatchback",
-    "lastUpdated": 1779319829.353177
+    "lastUpdated": 1779376096.0904052
   },
   "Honda|Civic Hatchback|2018": {
     "min": 13766,
     "max": 18704,
+    "score": null,
+    "mpg_city": "29-31",
     "url": "https://www.jdpower.com/cars/2018/honda/civic-hatchback",
-    "lastUpdated": 1779319829.353494
+    "lastUpdated": 1779376096.0938802
   },
   "Honda|Civic Hatchback|2019": {
     "min": 14924,
     "max": 21126,
+    "score": null,
+    "mpg_city": "29-31",
     "url": "https://www.jdpower.com/cars/2019/honda/civic-hatchback",
-    "lastUpdated": 1779319830.9334369
+    "lastUpdated": 1779376096.106548
   },
   "Honda|Civic Hatchback|2020": {
     "min": 16313,
     "max": 22156,
+    "score": null,
+    "mpg_city": "29-31",
     "url": "https://www.jdpower.com/cars/2020/honda/civic-hatchback",
-    "lastUpdated": 1779319829.771968
+    "lastUpdated": 1779376096.116459
   },
   "Honda|Civic Hatchback|2021": {
     "min": 17543,
     "max": 24448,
+    "score": null,
+    "mpg_city": "29-31",
     "url": "https://www.jdpower.com/cars/2021/honda/civic-hatchback",
-    "lastUpdated": 1779319828.975893
+    "lastUpdated": 1779376096.1263518
   },
   "Honda|Civic Hatchback|2022": {
     "min": 19882,
     "max": 27725,
+    "score": null,
+    "mpg_city": "29-31",
     "url": "https://www.jdpower.com/cars/2022/honda/civic-hatchback",
-    "lastUpdated": 1779319829.7745652
+    "lastUpdated": 1779376096.129896
   },
   "Honda|Civic Hatchback|2023": {
     "min": 20583,
     "max": 30095,
+    "score": null,
+    "mpg_city": "29-31",
     "url": "https://www.jdpower.com/cars/2023/honda/civic-hatchback",
-    "lastUpdated": 1779319831.233074
+    "lastUpdated": 1779376096.137074
   },
   "Honda|Civic Hatchback|2024": {
     "min": 21112,
     "max": 33262,
+    "score": null,
+    "mpg_city": "29-31",
     "url": "https://www.jdpower.com/cars/2024/honda/civic-hatchback",
-    "lastUpdated": 1779319830.404665
+    "lastUpdated": 1779376096.148607
   },
   "Honda|Civic Hybrid|2025": null,
   "Honda|Civic Hybrid|2026": null,
   "Honda|Civic|2016": {
     "min": 10719,
     "max": 14280,
+    "score": 79,
+    "mpg_city": "27-31",
     "url": "https://www.jdpower.com/cars/2016/honda/civic",
-    "lastUpdated": 1779319827.2891278
+    "lastUpdated": 1779376096.1578581
   },
   "Honda|Civic|2017": {
     "min": 11743,
     "max": 16362,
+    "score": 81,
+    "mpg_city": "28-32",
     "url": "https://www.jdpower.com/cars/2017/honda/civic",
-    "lastUpdated": 1779319827.347743
+    "lastUpdated": 1779376096.1683059
   },
   "Honda|Civic|2018": {
     "min": 12725,
     "max": 18385,
+    "score": 81,
+    "mpg_city": "28-32",
     "url": "https://www.jdpower.com/cars/2018/honda/civic",
-    "lastUpdated": 1779319827.52542
+    "lastUpdated": 1779376096.1786711
   },
   "Honda|Civic|2019": {
     "min": 13919,
     "max": 20305,
+    "score": 82,
+    "mpg_city": "25-32",
     "url": "https://www.jdpower.com/cars/2019/honda/civic",
-    "lastUpdated": 1779319827.155136
+    "lastUpdated": 1779376096.1817431
   },
   "Honda|Civic|2020": {
     "min": 15741,
     "max": 21786,
+    "score": null,
+    "mpg_city": "25-32",
     "url": "https://www.jdpower.com/cars/2020/honda/civic",
-    "lastUpdated": 1779319827.914714
+    "lastUpdated": 1779376096.1849651
   },
   "Honda|Civic|2021": {
     "min": 16778,
     "max": 24025,
+    "score": 85,
+    "mpg_city": "29-32",
     "url": "https://www.jdpower.com/cars/2021/honda/civic",
-    "lastUpdated": 1779319828.1518269
+    "lastUpdated": 1779376096.2021031
   },
   "Honda|Civic|2022": {
     "min": 19701,
     "max": 27414,
+    "score": 82,
+    "mpg_city": "30-33",
     "url": "https://www.jdpower.com/cars/2022/honda/civic",
-    "lastUpdated": 1779319828.136727
+    "lastUpdated": 1779376096.205296
   },
   "Honda|Civic|2023": {
     "min": 20469,
     "max": 29183,
+    "score": 82,
+    "mpg_city": "30-33",
     "url": "https://www.jdpower.com/cars/2023/honda/civic",
-    "lastUpdated": 1779319828.112015
+    "lastUpdated": 1779376096.214401
   },
   "Honda|Civic|2024": {
     "min": 20500,
     "max": 32273,
+    "score": 84,
+    "mpg_city": "30-33",
     "url": "https://www.jdpower.com/cars/2024/honda/civic",
-    "lastUpdated": 1779319828.5015721
+    "lastUpdated": 1779376096.2210891
   },
   "Honda|Clarity|2018": {
     "min": 16074,
     "max": 19036,
+    "score": 80,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2018/honda/clarity",
-    "lastUpdated": 1779319831.335379
+    "lastUpdated": 1779376096.229963
   },
   "Honda|Clarity|2019": {
     "min": 17471,
     "max": 20677,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2019/honda/clarity",
-    "lastUpdated": 1779319831.7545972
+    "lastUpdated": 1779376096.2388911
   },
   "Honda|Clarity|2020": {
     "min": 19772,
     "max": 23660,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2020/honda/clarity",
-    "lastUpdated": 1779319832.4968
+    "lastUpdated": 1779376096.24207
   },
   "Honda|Clarity|2021": {
     "min": 21191,
     "max": 25606,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2021/honda/clarity",
-    "lastUpdated": 1779319832.007622
+    "lastUpdated": 1779376096.251452
   },
   "Honda|Fit (Taiwan)|2021": null,
   "Honda|Fit (Taiwan)|2024": null,
@@ -1601,87 +2093,115 @@
   "Honda|Fit|2018": {
     "min": 10948,
     "max": 13853,
+    "score": 76,
+    "mpg_city": "29-33",
     "url": "https://www.jdpower.com/cars/2018/honda/fit",
-    "lastUpdated": 1779319832.6062331
+    "lastUpdated": 1779376096.261162
   },
   "Honda|Fit|2019": {
     "min": 11887,
     "max": 15919,
+    "score": 81,
+    "mpg_city": "29-33",
     "url": "https://www.jdpower.com/cars/2019/honda/fit",
-    "lastUpdated": 1779319832.558115
+    "lastUpdated": 1779376096.2794151
   },
   "Honda|Fit|2020": {
     "min": 13404,
     "max": 18114,
+    "score": 74,
+    "mpg_city": "29-33",
     "url": "https://www.jdpower.com/cars/2020/honda/fit",
-    "lastUpdated": 1779319832.497798
+    "lastUpdated": 1779376096.289031
   },
   "Honda|Freed|2020": null,
   "Honda|HR-V|2019": {
     "min": 12757,
     "max": 18905,
+    "score": 78,
+    "mpg_city": "26-28",
     "url": "https://www.jdpower.com/cars/2019/honda/hr-v",
-    "lastUpdated": 1779319833.291538
+    "lastUpdated": 1779376096.302411
   },
   "Honda|HR-V|2020": {
     "min": 14454,
     "max": 20285,
+    "score": 78,
+    "mpg_city": "26-28",
     "url": "https://www.jdpower.com/cars/2020/honda/hr-v",
-    "lastUpdated": 1779319833.30915
+    "lastUpdated": 1779376096.306164
   },
   "Honda|HR-V|2021": {
     "min": 16365,
     "max": 23497,
+    "score": 80,
+    "mpg_city": "26-28",
     "url": "https://www.jdpower.com/cars/2021/honda/hr-v",
-    "lastUpdated": 1779319833.664002
+    "lastUpdated": 1779376096.326425
   },
   "Honda|HR-V|2022": {
     "min": 17930,
     "max": 24401,
+    "score": 79,
+    "mpg_city": "26-28",
     "url": "https://www.jdpower.com/cars/2022/honda/hr-v",
-    "lastUpdated": 1779319833.375351
+    "lastUpdated": 1779376096.329546
   },
   "Honda|HR-V|2023": {
     "min": 20185,
     "max": 29058,
+    "score": 83,
+    "mpg_city": "25-26",
     "url": "https://www.jdpower.com/cars/2023/honda/hr-v",
-    "lastUpdated": 1779319833.7335548
+    "lastUpdated": 1779376096.337396
   },
   "Honda|HR-V|2024": {
     "min": 22182,
     "max": 32064,
+    "score": 82,
+    "mpg_city": "25-26",
     "url": "https://www.jdpower.com/cars/2024/honda/hr-v",
-    "lastUpdated": 1779319833.440305
+    "lastUpdated": 1779376096.350341
   },
   "Honda|HR-V|2025": {
     "min": 22622,
     "max": 33312,
+    "score": 82,
+    "mpg_city": "25-26",
     "url": "https://www.jdpower.com/cars/2025/honda/hr-v",
-    "lastUpdated": 1779319834.264143
+    "lastUpdated": 1779376096.356622
   },
   "Honda|Insight|2019": {
     "min": 13761,
     "max": 18409,
+    "score": 80,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2019/honda/insight",
-    "lastUpdated": 1779319834.190069
+    "lastUpdated": 1779376096.373267
   },
   "Honda|Insight|2020": {
     "min": 15513,
     "max": 20397,
+    "score": 77,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2020/honda/insight",
-    "lastUpdated": 1779319834.088892
+    "lastUpdated": 1779376096.3827982
   },
   "Honda|Insight|2021": {
     "min": 16847,
     "max": 22733,
+    "score": 80,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2021/honda/insight",
-    "lastUpdated": 1779319834.449
+    "lastUpdated": 1779376096.392218
   },
   "Honda|Insight|2022": {
     "min": 19274,
     "max": 24842,
+    "score": 79,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2022/honda/insight",
-    "lastUpdated": 1779319834.620262
+    "lastUpdated": 1779376096.403488
   },
   "Honda|Inspire|2018": null,
   "Honda|N-Box|2018": null,
@@ -1691,242 +2211,322 @@
   "Honda|Odyssey|2018": {
     "min": 13518,
     "max": 22560,
+    "score": 71,
+    "mpg_city": "19",
     "url": "https://www.jdpower.com/cars/2018/honda/odyssey",
-    "lastUpdated": 1779319834.929245
+    "lastUpdated": 1779376096.404604
   },
   "Honda|Odyssey|2019": {
     "min": 16136,
     "max": 28676,
+    "score": 71,
+    "mpg_city": "19",
     "url": "https://www.jdpower.com/cars/2019/honda/odyssey",
-    "lastUpdated": 1779319834.8105888
+    "lastUpdated": 1779376096.415477
   },
   "Honda|Odyssey|2020": {
     "min": 17791,
     "max": 30690,
+    "score": 76,
+    "mpg_city": "19",
     "url": "https://www.jdpower.com/cars/2020/honda/odyssey",
-    "lastUpdated": 1779319835.954911
+    "lastUpdated": 1779376096.4252229
   },
   "Honda|Odyssey|2021": {
     "min": 20933,
     "max": 34717,
+    "score": 79,
+    "mpg_city": "19",
     "url": "https://www.jdpower.com/cars/2021/honda/odyssey",
-    "lastUpdated": 1779319835.657252
+    "lastUpdated": 1779376096.434156
   },
   "Honda|Odyssey|2022": {
     "min": 23727,
     "max": 37326,
+    "score": 78,
+    "mpg_city": "19",
     "url": "https://www.jdpower.com/cars/2022/honda/odyssey",
-    "lastUpdated": 1779319835.838921
+    "lastUpdated": 1779376096.4436228
   },
   "Honda|Odyssey|2023": {
     "min": 27482,
     "max": 41879,
+    "score": 80,
+    "mpg_city": "19",
     "url": "https://www.jdpower.com/cars/2023/honda/odyssey",
-    "lastUpdated": 1779319836.001205
+    "lastUpdated": 1779376096.453907
   },
   "Honda|Odyssey|2024": {
     "min": 30225,
     "max": 47402,
+    "score": 79,
+    "mpg_city": "19",
     "url": "https://www.jdpower.com/cars/2024/honda/odyssey",
-    "lastUpdated": 1779319835.918736
+    "lastUpdated": 1779376096.4577842
   },
   "Honda|Odyssey|2025": {
     "min": 34193,
     "max": 50896,
+    "score": 81,
+    "mpg_city": "19",
     "url": "https://www.jdpower.com/cars/2025/honda/odyssey",
-    "lastUpdated": 1779319836.191489
+    "lastUpdated": 1779376096.4682162
   },
   "Honda|Odyssey|2026": {
     "min": 38191,
     "max": 53721,
+    "score": 81,
+    "mpg_city": "19",
     "url": "https://www.jdpower.com/cars/2026/honda/odyssey",
-    "lastUpdated": 1779319836.269822
+    "lastUpdated": 1779376096.4777842
   },
   "Honda|Passport|2019": {
     "min": 14894,
     "max": 23166,
+    "score": 82,
+    "mpg_city": "19-20",
     "url": "https://www.jdpower.com/cars/2019/honda/passport",
-    "lastUpdated": 1779319836.740213
+    "lastUpdated": 1779376096.487112
   },
   "Honda|Passport|2020": {
     "min": 17329,
     "max": 26562,
+    "score": 80,
+    "mpg_city": "19-20",
     "url": "https://www.jdpower.com/cars/2020/honda/passport",
-    "lastUpdated": 1779319836.905736
+    "lastUpdated": 1779376096.496486
   },
   "Honda|Passport|2021": {
     "min": 19375,
     "max": 28299,
+    "score": 79,
+    "mpg_city": "19-20",
     "url": "https://www.jdpower.com/cars/2021/honda/passport",
-    "lastUpdated": 1779319839.3462038
+    "lastUpdated": 1779376096.5035038
   },
   "Honda|Passport|2022": {
     "min": 24260,
     "max": 34682,
+    "score": 83,
+    "mpg_city": "19-20",
     "url": "https://www.jdpower.com/cars/2022/honda/passport",
-    "lastUpdated": 1779319836.8914828
+    "lastUpdated": 1779376096.515181
   },
   "Honda|Passport|2023": {
     "min": 28885,
     "max": 39510,
+    "score": 84,
+    "mpg_city": "19",
     "url": "https://www.jdpower.com/cars/2023/honda/passport",
-    "lastUpdated": 1779319837.020729
+    "lastUpdated": 1779376096.523943
   },
   "Honda|Passport|2024": {
     "min": 30731,
     "max": 42673,
+    "score": 81,
+    "mpg_city": "19",
     "url": "https://www.jdpower.com/cars/2024/honda/passport",
-    "lastUpdated": 1779319837.248977
+    "lastUpdated": 1779376096.527541
   },
   "Honda|Passport|2025": {
     "min": 37270,
     "max": 50942,
+    "score": 81,
+    "mpg_city": "19",
     "url": "https://www.jdpower.com/cars/2025/honda/passport",
-    "lastUpdated": 1779319838.168088
+    "lastUpdated": 1779376096.5442612
   },
   "Honda|Passport|2026": {
     "min": 40961,
     "max": 54686,
+    "score": 81,
+    "mpg_city": "18-19",
     "url": "https://www.jdpower.com/cars/2026/honda/passport",
-    "lastUpdated": 1779319838.475326
+    "lastUpdated": 1779376096.550133
   },
   "Honda|Pilot|2016": {
     "min": 9398,
     "max": 15330,
+    "score": 77,
+    "mpg_city": "18-20",
     "url": "https://www.jdpower.com/cars/2016/honda/pilot",
-    "lastUpdated": 1779319838.64673
+    "lastUpdated": 1779376096.567442
   },
   "Honda|Pilot|2017": {
     "min": 10419,
     "max": 17740,
+    "score": 77,
+    "mpg_city": "18-20",
     "url": "https://www.jdpower.com/cars/2017/honda/pilot",
-    "lastUpdated": 1779319838.642536
+    "lastUpdated": 1779376096.570529
   },
   "Honda|Pilot|2018": {
     "min": 11564,
     "max": 21391,
+    "score": 80,
+    "mpg_city": "18-20",
     "url": "https://www.jdpower.com/cars/2018/honda/pilot",
-    "lastUpdated": 1779319838.7908428
+    "lastUpdated": 1779376096.5875971
   },
   "Honda|Pilot|2019": {
     "min": 13682,
     "max": 24807,
+    "score": 76,
+    "mpg_city": "18-20",
     "url": "https://www.jdpower.com/cars/2019/honda/pilot",
-    "lastUpdated": 1779319839.148194
+    "lastUpdated": 1779376096.5995462
   },
   "Honda|Pilot|2020": {
     "min": 15871,
     "max": 28132,
+    "score": 76,
+    "mpg_city": "18-20",
     "url": "https://www.jdpower.com/cars/2020/honda/pilot",
-    "lastUpdated": 1779319839.83509
+    "lastUpdated": 1779376096.60883
   },
   "Honda|Pilot|2021": {
     "min": 17759,
     "max": 31320,
+    "score": 79,
+    "mpg_city": "19-20",
     "url": "https://www.jdpower.com/cars/2021/honda/pilot",
-    "lastUpdated": 1779319839.415349
+    "lastUpdated": 1779376096.618521
   },
   "Honda|Pilot|2022": {
     "min": 22712,
     "max": 37227,
+    "score": 81,
+    "mpg_city": "19-20",
     "url": "https://www.jdpower.com/cars/2022/honda/pilot",
-    "lastUpdated": 1779319839.364817
+    "lastUpdated": 1779376096.621654
   },
   "Honda|Pilot|2023": {
     "min": 25438,
     "max": 45804,
+    "score": 83,
+    "mpg_city": "18-19",
     "url": "https://www.jdpower.com/cars/2023/honda/pilot",
-    "lastUpdated": 1779319839.8687549
+    "lastUpdated": 1779376096.630999
   },
   "Honda|Pilot|2024": {
     "min": 27899,
     "max": 48262,
+    "score": 83,
+    "mpg_city": "18-19",
     "url": "https://www.jdpower.com/cars/2024/honda/pilot",
-    "lastUpdated": 1779319839.958405
+    "lastUpdated": 1779376096.639323
   },
   "Honda|Pilot|2025": {
     "min": 35387,
     "max": 56392,
+    "score": 83,
+    "mpg_city": "18-19",
     "url": "https://www.jdpower.com/cars/2025/honda/pilot",
-    "lastUpdated": 1779319840.177917
+    "lastUpdated": 1779376096.6461592
   },
   "Honda|Pilot|2026": {
     "min": 38518,
     "max": 57053,
+    "score": 83,
+    "mpg_city": "18-19",
     "url": "https://www.jdpower.com/cars/2026/honda/pilot",
-    "lastUpdated": 1779319840.1973062
+    "lastUpdated": 1779376096.655078
   },
   "Honda|Prelude|2026": {
     "min": 39044,
     "max": 47454,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2026/honda/prelude",
-    "lastUpdated": 1779319840.4049401
+    "lastUpdated": 1779376096.6661649
   },
   "Honda|Prologue|2024": {
     "min": 19618,
     "max": 29598,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2024/honda/prologue",
-    "lastUpdated": 1779319840.5975208
+    "lastUpdated": 1779376096.680455
   },
   "Honda|Prologue|2025": {
     "min": 31968,
     "max": 54257,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2025/honda/prologue",
-    "lastUpdated": 1779319842.4657652
+    "lastUpdated": 1779376096.689172
   },
   "Honda|Ridgeline|2017": {
     "min": 15471,
     "max": 21265,
+    "score": 83,
+    "mpg_city": "18-19",
     "url": "https://www.jdpower.com/cars/2017/honda/ridgeline",
-    "lastUpdated": 1779319840.9104698
+    "lastUpdated": 1779376096.698085
   },
   "Honda|Ridgeline|2018": {
     "min": 16199,
     "max": 25149,
+    "score": 84,
+    "mpg_city": "18-19",
     "url": "https://www.jdpower.com/cars/2018/honda/ridgeline",
-    "lastUpdated": 1779319840.910274
+    "lastUpdated": 1779376096.706974
   },
   "Honda|Ridgeline|2019": {
     "min": 18589,
     "max": 28769,
+    "score": 83,
+    "mpg_city": "18-19",
     "url": "https://www.jdpower.com/cars/2019/honda/ridgeline",
-    "lastUpdated": 1779319841.2094998
+    "lastUpdated": 1779376096.712491
   },
   "Honda|Ridgeline|2020": {
     "min": 21359,
     "max": 30386,
+    "score": 81,
+    "mpg_city": "19",
     "url": "https://www.jdpower.com/cars/2020/honda/ridgeline",
-    "lastUpdated": 1779319841.264433
+    "lastUpdated": 1779376096.727376
   },
   "Honda|Ridgeline|2021": {
     "min": 25625,
     "max": 33748,
+    "score": 82,
+    "mpg_city": "18",
     "url": "https://www.jdpower.com/cars/2021/honda/ridgeline",
-    "lastUpdated": 1779319841.5220811
+    "lastUpdated": 1779376096.734124
   },
   "Honda|Ridgeline|2022": {
     "min": 25678,
     "max": 36646,
+    "score": 80,
+    "mpg_city": "18",
     "url": "https://www.jdpower.com/cars/2022/honda/ridgeline",
-    "lastUpdated": 1779319841.955095
+    "lastUpdated": 1779376096.745445
   },
   "Honda|Ridgeline|2023": {
     "min": 28509,
     "max": 40229,
+    "score": 81,
+    "mpg_city": "18",
     "url": "https://www.jdpower.com/cars/2023/honda/ridgeline",
-    "lastUpdated": 1779319841.693408
+    "lastUpdated": 1779376096.7547688
   },
   "Honda|Ridgeline|2024": {
     "min": 30219,
     "max": 42883,
+    "score": 83,
+    "mpg_city": "18",
     "url": "https://www.jdpower.com/cars/2024/honda/ridgeline",
-    "lastUpdated": 1779319843.1283252
+    "lastUpdated": 1779376096.7575839
   },
   "Honda|Ridgeline|2025": {
     "min": 32724,
     "max": 46716,
+    "score": 81,
+    "mpg_city": "18",
     "url": "https://www.jdpower.com/cars/2025/honda/ridgeline",
-    "lastUpdated": 1779319842.256355
+    "lastUpdated": 1779376096.7739031
   },
   "Honda|e|2020": null,
   "Hyundai|Azera Hybrid|2019": null,
@@ -1937,92 +2537,122 @@
   "Hyundai|Elantra GT|2017": {
     "min": 7710,
     "max": 8955,
+    "score": null,
+    "mpg_city": "24",
     "url": "https://www.jdpower.com/cars/2017/hyundai/elantra-gt",
-    "lastUpdated": 1779319844.216358
+    "lastUpdated": 1779376096.7841039
   },
   "Hyundai|Elantra GT|2018": {
     "min": 8690,
     "max": 11544,
+    "score": null,
+    "mpg_city": "22-26",
     "url": "https://www.jdpower.com/cars/2018/hyundai/elantra-gt",
-    "lastUpdated": 1779319844.230398
+    "lastUpdated": 1779376096.799597
   },
   "Hyundai|Elantra GT|2019": {
     "min": 10102,
     "max": 12828,
+    "score": null,
+    "mpg_city": "23-25",
     "url": "https://www.jdpower.com/cars/2019/hyundai/elantra-gt",
-    "lastUpdated": 1779319844.262126
+    "lastUpdated": 1779376096.806881
   },
   "Hyundai|Elantra GT|2020": {
     "min": 11401,
     "max": 14489,
+    "score": null,
+    "mpg_city": "23-25",
     "url": "https://www.jdpower.com/cars/2020/hyundai/elantra-gt",
-    "lastUpdated": 1779319844.3191092
+    "lastUpdated": 1779376096.8097742
   },
   "Hyundai|Elantra Hybrid|2021": {
     "min": 14756,
     "max": 20382,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2021/hyundai/elantra-hybrid",
-    "lastUpdated": 1779319844.3942258
+    "lastUpdated": 1779376096.821857
   },
   "Hyundai|Elantra Hybrid|2022": {
     "min": 15449,
     "max": 22528,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2022/hyundai/elantra-hybrid",
-    "lastUpdated": 1779319844.842462
+    "lastUpdated": 1779376096.824668
   },
   "Hyundai|Elantra Hybrid|2023": {
     "min": 17420,
     "max": 23690,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2023/hyundai/elantra-hybrid",
-    "lastUpdated": 1779319845.426683
+    "lastUpdated": 1779376096.833622
   },
   "Hyundai|Elantra|2017": {
     "min": 7474,
     "max": 9627,
+    "score": 82,
+    "mpg_city": "22-32",
     "url": "https://www.jdpower.com/cars/2017/hyundai/elantra",
-    "lastUpdated": 1779319842.8241138
+    "lastUpdated": 1779376096.84555
   },
   "Hyundai|Elantra|2018": {
     "min": 8041,
     "max": 11117,
+    "score": 84,
+    "mpg_city": "22-32",
     "url": "https://www.jdpower.com/cars/2018/hyundai/elantra",
-    "lastUpdated": 1779319842.8832152
+    "lastUpdated": 1779376096.854671
   },
   "Hyundai|Elantra|2019": {
     "min": 9048,
     "max": 12378,
+    "score": 85,
+    "mpg_city": "22-32",
     "url": "https://www.jdpower.com/cars/2019/hyundai/elantra",
-    "lastUpdated": 1779319843.034115
+    "lastUpdated": 1779376096.864258
   },
   "Hyundai|Elantra|2021": {
     "min": 12363,
     "max": 18668,
+    "score": 77,
+    "mpg_city": "25-33",
     "url": "https://www.jdpower.com/cars/2021/hyundai/elantra",
-    "lastUpdated": 1779319843.0243762
+    "lastUpdated": 1779376096.874015
   },
   "Hyundai|Elantra|2022": {
     "min": 14872,
     "max": 20867,
+    "score": 78,
+    "mpg_city": "25-33",
     "url": "https://www.jdpower.com/cars/2022/hyundai/elantra",
-    "lastUpdated": 1779319843.691453
+    "lastUpdated": 1779376096.886421
   },
   "Hyundai|Elantra|2023": {
     "min": 15955,
     "max": 23745,
+    "score": 80,
+    "mpg_city": "28-33",
     "url": "https://www.jdpower.com/cars/2023/hyundai/elantra",
-    "lastUpdated": 1779319843.537044
+    "lastUpdated": 1779376096.895334
   },
   "Hyundai|Genesis|2015": {
     "min": 7821,
     "max": 11399,
+    "score": 82,
+    "mpg_city": "16",
     "url": "https://www.jdpower.com/cars/2015/hyundai/genesis",
-    "lastUpdated": 1779319845.61267
+    "lastUpdated": 1779376096.904267
   },
   "Hyundai|Genesis|2016": {
     "min": 11825,
     "max": 15619,
+    "score": null,
+    "mpg_city": "16-17",
     "url": "https://www.jdpower.com/cars/2016/hyundai/genesis",
-    "lastUpdated": 1779319845.09165
+    "lastUpdated": 1779376096.912698
   },
   "Hyundai|Ioniq 5 (Non-US only)|2022": null,
   "Hyundai|Ioniq 5 (Non-US only)|2023": null,
@@ -2043,132 +2673,174 @@
   "Hyundai|Ioniq Electric|2019": {
     "min": 6265,
     "max": 8305,
+    "score": 81,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2019/hyundai/ioniq-electric",
-    "lastUpdated": 1779319846.8151412
+    "lastUpdated": 1779376096.924107
   },
   "Hyundai|Ioniq Electric|2020": {
     "min": 6991,
     "max": 8896,
+    "score": 81,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2020/hyundai/ioniq-electric",
-    "lastUpdated": 1779319846.6539981
+    "lastUpdated": 1779376096.932658
   },
   "Hyundai|Ioniq Hybrid|2017": {
     "min": 8263,
     "max": 11217,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2017/hyundai/ioniq-hybrid",
-    "lastUpdated": 1779319846.7069051
+    "lastUpdated": 1779376096.944171
   },
   "Hyundai|Ioniq Hybrid|2018": {
     "min": 9335,
     "max": 12626,
+    "score": 80,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2018/hyundai/ioniq-hybrid",
-    "lastUpdated": 1779319847.3097951
+    "lastUpdated": 1779376096.9539268
   },
   "Hyundai|Ioniq Hybrid|2019": {
     "min": 9350,
     "max": 15744,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2019/hyundai/ioniq-hybrid",
-    "lastUpdated": 1779319847.310081
+    "lastUpdated": 1779376096.9627001
   },
   "Hyundai|Ioniq Hybrid|2020": {
     "min": 11412,
     "max": 17949,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2020/hyundai/ioniq-hybrid",
-    "lastUpdated": 1779319846.67309
+    "lastUpdated": 1779376096.974012
   },
   "Hyundai|Ioniq Hybrid|2021": {
     "min": 13646,
     "max": 20398,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2021/hyundai/ioniq-hybrid",
-    "lastUpdated": 1779319848.022041
+    "lastUpdated": 1779376096.983565
   },
   "Hyundai|Ioniq Hybrid|2022": {
     "min": 15824,
     "max": 22405,
+    "score": 75,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2022/hyundai/ioniq-hybrid",
-    "lastUpdated": 1779319847.416221
+    "lastUpdated": 1779376096.9868329
   },
   "Hyundai|Ioniq Plug-in Hybrid|2019": {
     "min": 12116,
     "max": 16975,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2019/hyundai/ioniq-plug-in-hybrid",
-    "lastUpdated": 1779319847.466007
+    "lastUpdated": 1779376096.9966989
   },
   "Hyundai|Ioniq Plug-in Hybrid|2020": {
     "min": 13814,
     "max": 19888,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2020/hyundai/ioniq-plug-in-hybrid",
-    "lastUpdated": 1779319848.2274282
+    "lastUpdated": 1779376097.009239
   },
   "Hyundai|Ioniq Plug-in Hybrid|2021": {
     "min": 15948,
     "max": 22366,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2021/hyundai/ioniq-plug-in-hybrid",
-    "lastUpdated": 1779319848.045873
+    "lastUpdated": 1779376097.016362
   },
   "Hyundai|Ioniq Plug-in Hybrid|2022": {
     "min": 17711,
     "max": 24812,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2022/hyundai/ioniq-plug-in-hybrid",
-    "lastUpdated": 1779319848.255677
+    "lastUpdated": 1779376097.025388
   },
   "Hyundai|Kona Electric (with HDA II, Korea only)|2023": null,
   "Hyundai|Kona Electric|2018": null,
   "Hyundai|Kona Electric|2019": {
     "min": 9620,
     "max": 13018,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2019/hyundai/kona-electric",
-    "lastUpdated": 1779319849.514549
+    "lastUpdated": 1779376097.033441
   },
   "Hyundai|Kona Electric|2020": {
     "min": 10809,
     "max": 14424,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2020/hyundai/kona-electric",
-    "lastUpdated": 1779319849.827682
+    "lastUpdated": 1779376097.0433059
   },
   "Hyundai|Kona Electric|2021": {
     "min": 11484,
     "max": 15561,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2021/hyundai/kona-electric",
-    "lastUpdated": 1779319850.366092
+    "lastUpdated": 1779376097.054404
   },
   "Hyundai|Kona Electric|2022": {
     "min": 17674,
     "max": 21781,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2022/hyundai/kona-electric",
-    "lastUpdated": 1779319849.848313
+    "lastUpdated": 1779376097.0574899
   },
   "Hyundai|Kona Electric|2023": null,
   "Hyundai|Kona Hybrid|2020": null,
   "Hyundai|Kona|2019": {
     "min": 10661,
     "max": 19831,
+    "score": 82,
+    "mpg_city": "25-28",
     "url": "https://www.jdpower.com/cars/2019/hyundai/kona",
-    "lastUpdated": 1779319848.107074
+    "lastUpdated": 1779376097.0758579
   },
   "Hyundai|Kona|2020": {
     "min": 11492,
     "max": 19597,
+    "score": 81,
+    "mpg_city": "26-28",
     "url": "https://www.jdpower.com/cars/2020/hyundai/kona",
-    "lastUpdated": 1779319849.276574
+    "lastUpdated": 1779376097.081144
   },
   "Hyundai|Kona|2022": {
     "min": 16091,
     "max": 23616,
+    "score": 78,
+    "mpg_city": "27-30",
     "url": "https://www.jdpower.com/cars/2022/hyundai/kona",
-    "lastUpdated": 1779319849.309459
+    "lastUpdated": 1779376097.087866
   },
   "Hyundai|Kona|2023": {
     "min": 17309,
     "max": 28234,
+    "score": 79,
+    "mpg_city": "27-30",
     "url": "https://www.jdpower.com/cars/2023/hyundai/kona",
-    "lastUpdated": 1779319848.905369
+    "lastUpdated": 1779376097.103712
   },
   "Hyundai|Nexo|2021": {
     "min": 7183,
     "max": 8762,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2021/hyundai/nexo",
-    "lastUpdated": 1779319850.845118
+    "lastUpdated": 1779376097.104973
   },
   "Hyundai|Palisade (without HDA II)|2023": null,
   "Hyundai|Palisade (without HDA II)|2024": null,
@@ -2176,216 +2848,286 @@
   "Hyundai|Palisade|2020": {
     "min": 16109,
     "max": 28498,
+    "score": 81,
+    "mpg_city": "19",
     "url": "https://www.jdpower.com/cars/2020/hyundai/palisade",
-    "lastUpdated": 1779319850.388395
+    "lastUpdated": 1779376097.114969
   },
   "Hyundai|Palisade|2021": {
     "min": 18913,
     "max": 34215,
+    "score": 77,
+    "mpg_city": "19",
     "url": "https://www.jdpower.com/cars/2021/hyundai/palisade",
-    "lastUpdated": 1779319850.411319
+    "lastUpdated": 1779376097.115963
   },
   "Hyundai|Palisade|2022": {
     "min": 21459,
     "max": 36323,
+    "score": 78,
+    "mpg_city": "19",
     "url": "https://www.jdpower.com/cars/2022/hyundai/palisade",
-    "lastUpdated": 1779319851.1482701
+    "lastUpdated": 1779376097.13282
   },
   "Hyundai|Palisade|2023": {
     "min": 22857,
     "max": 40583,
+    "score": 81,
+    "mpg_city": "19",
     "url": "https://www.jdpower.com/cars/2023/hyundai/palisade",
-    "lastUpdated": 1779319850.8731341
+    "lastUpdated": 1779376097.1392682
   },
   "Hyundai|Palisade|2024": {
     "min": 26166,
     "max": 43772,
+    "score": 83,
+    "mpg_city": "19",
     "url": "https://www.jdpower.com/cars/2024/hyundai/palisade",
-    "lastUpdated": 1779319851.230675
+    "lastUpdated": 1779376097.150313
   },
   "Hyundai|Santa Cruz|2022": {
     "min": 17026,
     "max": 29173,
+    "score": 78,
+    "mpg_city": "19-21",
     "url": "https://www.jdpower.com/cars/2022/hyundai/santa-cruz",
-    "lastUpdated": 1779319851.41167
+    "lastUpdated": 1779376097.159231
   },
   "Hyundai|Santa Cruz|2023": {
     "min": 19121,
     "max": 33379,
+    "score": 81,
+    "mpg_city": "19-22",
     "url": "https://www.jdpower.com/cars/2023/hyundai/santa-cruz",
-    "lastUpdated": 1779319851.6996
+    "lastUpdated": 1779376097.167891
   },
   "Hyundai|Santa Cruz|2024": {
     "min": 20160,
     "max": 37602,
+    "score": 81,
+    "mpg_city": "19-22",
     "url": "https://www.jdpower.com/cars/2024/hyundai/santa-cruz",
-    "lastUpdated": 1779319851.623913
+    "lastUpdated": 1779376097.182972
   },
   "Hyundai|Santa Fe Hybrid|2022": {
     "min": 20919,
     "max": 28038,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2022/hyundai/santa-fe-hybrid",
-    "lastUpdated": 1779319852.474435
+    "lastUpdated": 1779376097.1858282
   },
   "Hyundai|Santa Fe Hybrid|2023": {
     "min": 22180,
     "max": 30956,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2023/hyundai/santa-fe-hybrid",
-    "lastUpdated": 1779319852.57712
+    "lastUpdated": 1779376097.1924329
   },
   "Hyundai|Santa Fe Plug-in Hybrid|2022": {
     "min": 22721,
     "max": 29626,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2022/hyundai/santa-fe-plug-in-hybrid",
-    "lastUpdated": 1779319852.977918
+    "lastUpdated": 1779376097.1982028
   },
   "Hyundai|Santa Fe Plug-in Hybrid|2023": {
     "min": 24578,
     "max": 32658,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2023/hyundai/santa-fe-plug-in-hybrid",
-    "lastUpdated": 1779319853.252063
+    "lastUpdated": 1779376097.2072861
   },
   "Hyundai|Santa Fe|2019": {
     "min": 11633,
     "max": 19594,
+    "score": 83,
+    "mpg_city": "19-22",
     "url": "https://www.jdpower.com/cars/2019/hyundai/santa-fe",
-    "lastUpdated": 1779319851.594659
+    "lastUpdated": 1779376097.21679
   },
   "Hyundai|Santa Fe|2020": {
     "min": 12830,
     "max": 20306,
+    "score": 84,
+    "mpg_city": "20-22",
     "url": "https://www.jdpower.com/cars/2020/hyundai/santa-fe",
-    "lastUpdated": 1779319851.9029288
+    "lastUpdated": 1779376097.226367
   },
   "Hyundai|Santa Fe|2021": {
     "min": 15451,
     "max": 26884,
+    "score": 77,
+    "mpg_city": "21-25",
     "url": "https://www.jdpower.com/cars/2021/hyundai/santa-fe",
-    "lastUpdated": 1779319852.203851
+    "lastUpdated": 1779376097.230124
   },
   "Hyundai|Santa Fe|2022": {
     "min": 17012,
     "max": 30331,
+    "score": 79,
+    "mpg_city": "21-25",
     "url": "https://www.jdpower.com/cars/2022/hyundai/santa-fe",
-    "lastUpdated": 1779319852.730299
+    "lastUpdated": 1779376097.2398112
   },
   "Hyundai|Santa Fe|2023": {
     "min": 19318,
     "max": 32983,
+    "score": 81,
+    "mpg_city": "21-25",
     "url": "https://www.jdpower.com/cars/2023/hyundai/santa-fe",
-    "lastUpdated": 1779319852.277536
+    "lastUpdated": 1779376097.240753
   },
   "Hyundai|Sonata Hybrid|2020": {
     "min": 14806,
     "max": 21030,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2020/hyundai/sonata-hybrid",
-    "lastUpdated": 1779319854.3827589
+    "lastUpdated": 1779376097.25088
   },
   "Hyundai|Sonata Hybrid|2021": {
     "min": 16962,
     "max": 23046,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2021/hyundai/sonata-hybrid",
-    "lastUpdated": 1779319854.1930208
+    "lastUpdated": 1779376097.260451
   },
   "Hyundai|Sonata Hybrid|2022": null,
   "Hyundai|Sonata Hybrid|2023": {
     "min": 20971,
     "max": 29983,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2023/hyundai/sonata-hybrid",
-    "lastUpdated": 1779319854.409139
+    "lastUpdated": 1779376097.272449
   },
   "Hyundai|Sonata|2018": {
     "min": 9615,
     "max": 14290,
+    "score": 85,
+    "mpg_city": "23-28",
     "url": "https://www.jdpower.com/cars/2018/hyundai/sonata",
-    "lastUpdated": 1779319853.647261
+    "lastUpdated": 1779376097.281547
   },
   "Hyundai|Sonata|2019": {
     "min": 10272,
     "max": 15848,
+    "score": 87,
+    "mpg_city": "23-28",
     "url": "https://www.jdpower.com/cars/2019/hyundai/sonata",
-    "lastUpdated": 1779319853.2714748
+    "lastUpdated": 1779376097.289855
   },
   "Hyundai|Sonata|2020": {
     "min": 12455,
     "max": 19342,
+    "score": 86,
+    "mpg_city": "27-28",
     "url": "https://www.jdpower.com/cars/2020/hyundai/sonata",
-    "lastUpdated": 1779319853.505546
+    "lastUpdated": 1779376097.301119
   },
   "Hyundai|Sonata|2021": {
     "min": 14694,
     "max": 22098,
+    "score": 82,
+    "mpg_city": "23-28",
     "url": "https://www.jdpower.com/cars/2021/hyundai/sonata",
-    "lastUpdated": 1779319853.727583
+    "lastUpdated": 1779376097.315615
   },
   "Hyundai|Sonata|2022": {
     "min": 15506,
     "max": 25918,
+    "score": 82,
+    "mpg_city": "23-28",
     "url": "https://www.jdpower.com/cars/2022/hyundai/sonata",
-    "lastUpdated": 1779319854.044706
+    "lastUpdated": 1779376097.325933
   },
   "Hyundai|Sonata|2023": {
     "min": 17594,
     "max": 28244,
+    "score": 82,
+    "mpg_city": "23-28",
     "url": "https://www.jdpower.com/cars/2023/hyundai/sonata",
-    "lastUpdated": 1779319855.4111
+    "lastUpdated": 1779376097.335868
   },
   "Hyundai|Staria|2023": null,
   "Hyundai|Tucson Diesel|2019": null,
   "Hyundai|Tucson Hybrid|2022": {
     "min": 19984,
     "max": 28892,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2022/hyundai/tucson-hybrid",
-    "lastUpdated": 1779319855.595052
+    "lastUpdated": 1779376097.348043
   },
   "Hyundai|Tucson Hybrid|2023": {
     "min": 24301,
     "max": 34248,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2023/hyundai/tucson-hybrid",
-    "lastUpdated": 1779319855.405248
+    "lastUpdated": 1779376097.357826
   },
   "Hyundai|Tucson Hybrid|2024": {
     "min": 25741,
     "max": 38971,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2024/hyundai/tucson-hybrid",
-    "lastUpdated": 1779319855.415167
+    "lastUpdated": 1779376097.374539
   },
   "Hyundai|Tucson Plug-in Hybrid|2024": {
     "min": 27903,
     "max": 39737,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2024/hyundai/tucson-plug-in-hybrid",
-    "lastUpdated": 1779319855.809218
+    "lastUpdated": 1779376097.387223
   },
   "Hyundai|Tucson|2021": {
     "min": 15137,
     "max": 25792,
+    "score": 81,
+    "mpg_city": "21-23",
     "url": "https://www.jdpower.com/cars/2021/hyundai/tucson",
-    "lastUpdated": 1779319854.737705
+    "lastUpdated": 1779376097.390521
   },
   "Hyundai|Tucson|2022": {
     "min": 16212,
     "max": 28378,
+    "score": 78,
+    "mpg_city": "24-26",
     "url": "https://www.jdpower.com/cars/2022/hyundai/tucson",
-    "lastUpdated": 1779319854.727315
+    "lastUpdated": 1779376097.4002402
   },
   "Hyundai|Tucson|2023": {
     "min": 18800,
     "max": 30561,
+    "score": 80,
+    "mpg_city": "23-25",
     "url": "https://www.jdpower.com/cars/2023/hyundai/tucson",
-    "lastUpdated": 1779319854.83289
+    "lastUpdated": 1779376097.409865
   },
   "Hyundai|Tucson|2024": null,
   "Hyundai|Veloster|2019": {
     "min": 7834,
     "max": 15135,
+    "score": 84,
+    "mpg_city": "22-28",
     "url": "https://www.jdpower.com/cars/2019/hyundai/veloster",
-    "lastUpdated": 1779319856.218323
+    "lastUpdated": 1779376097.423718
   },
   "Hyundai|Veloster|2020": {
     "min": 9961,
     "max": 16160,
+    "score": 82,
+    "mpg_city": "25-28",
     "url": "https://www.jdpower.com/cars/2020/hyundai/veloster",
-    "lastUpdated": 1779319858.591722
+    "lastUpdated": 1779376097.4359329
   },
   "Hyundai|i30|2017": null,
   "Hyundai|i30|2018": null,
@@ -2393,81 +3135,107 @@
   "Jeep|Cherokee|2019": {
     "min": 12200,
     "max": 21655,
+    "score": 80,
+    "mpg_city": "18-23",
     "url": "https://www.jdpower.com/cars/2019/jeep/cherokee",
-    "lastUpdated": 1779319856.647242
+    "lastUpdated": 1779376097.4480221
   },
   "Jeep|Cherokee|2020": {
     "min": 13658,
     "max": 24219,
+    "score": 84,
+    "mpg_city": "18-23",
     "url": "https://www.jdpower.com/cars/2020/jeep/cherokee",
-    "lastUpdated": 1779319856.616388
+    "lastUpdated": 1779376097.457435
   },
   "Jeep|Cherokee|2021": {
     "min": 14830,
     "max": 24321,
+    "score": 83,
+    "mpg_city": "18-23",
     "url": "https://www.jdpower.com/cars/2021/jeep/cherokee",
-    "lastUpdated": 1779319856.503186
+    "lastUpdated": 1779376097.460754
   },
   "Jeep|Cherokee|2022": {
     "min": 18635,
     "max": 29027,
+    "score": null,
+    "mpg_city": "18-22",
     "url": "https://www.jdpower.com/cars/2022/jeep/cherokee",
-    "lastUpdated": 1779319856.8360288
+    "lastUpdated": 1779376097.4707289
   },
   "Jeep|Cherokee|2023": {
     "min": 22643,
     "max": 31316,
+    "score": null,
+    "mpg_city": "20-21",
     "url": "https://www.jdpower.com/cars/2023/jeep/cherokee",
-    "lastUpdated": 1779319856.965158
+    "lastUpdated": 1779376097.4820611
   },
   "Jeep|Grand Cherokee|2016": {
     "min": 8031,
     "max": 22830,
+    "score": 81,
+    "mpg_city": "13-19",
     "url": "https://www.jdpower.com/cars/2016/jeep/grand-cherokee",
-    "lastUpdated": 1779319857.6852639
+    "lastUpdated": 1779376097.488596
   },
   "Jeep|Grand Cherokee|2017": {
     "min": 8937,
     "max": 26411,
+    "score": 80,
+    "mpg_city": "13-19",
     "url": "https://www.jdpower.com/cars/2017/jeep/grand-cherokee",
-    "lastUpdated": 1779319858.38722
+    "lastUpdated": 1779376097.497581
   },
   "Jeep|Grand Cherokee|2018": {
     "min": 11547,
     "max": 53375,
+    "score": 79,
+    "mpg_city": "11-19",
     "url": "https://www.jdpower.com/cars/2018/jeep/grand-cherokee",
-    "lastUpdated": 1779319857.510004
+    "lastUpdated": 1779376097.506325
   },
   "Jeep|Grand Cherokee|2019": {
     "min": 13403,
     "max": 60469,
+    "score": 80,
+    "mpg_city": "11-19",
     "url": "https://www.jdpower.com/cars/2019/jeep/grand-cherokee",
-    "lastUpdated": 1779319858.186283
+    "lastUpdated": 1779376097.5090072
   },
   "Jeep|Grand Cherokee|2020": {
     "min": 15876,
     "max": 75285,
+    "score": 82,
+    "mpg_city": "11-19",
     "url": "https://www.jdpower.com/cars/2020/jeep/grand-cherokee",
-    "lastUpdated": 1779319858.5057862
+    "lastUpdated": 1779376097.520298
   },
   "Jeep|Grand Cherokee|2021": {
     "min": 19384,
     "max": 84264,
+    "score": 83,
+    "mpg_city": "11-19",
     "url": "https://www.jdpower.com/cars/2021/jeep/grand-cherokee",
-    "lastUpdated": 1779319858.515124
+    "lastUpdated": 1779376097.522961
   },
   "Kia|Carnival (China only)|2023": null,
   "Kia|Carnival|2022": {
     "min": 22754,
     "max": 34141,
+    "score": 74,
+    "mpg_city": "19",
     "url": "https://www.jdpower.com/cars/2022/kia/carnival",
-    "lastUpdated": 1779319858.373328
+    "lastUpdated": 1779376097.5320902
   },
   "Kia|Carnival|2023": {
     "min": 24223,
     "max": 39391,
+    "score": 78,
+    "mpg_city": "19",
     "url": "https://www.jdpower.com/cars/2023/kia/carnival",
-    "lastUpdated": 1779319858.9905212
+    "lastUpdated": 1779376097.543709
   },
   "Kia|Carnival|2024": null,
   "Kia|Ceed Plug-in Hybrid|2022": null,
@@ -2489,32 +3257,42 @@
   "Kia|Forte|2019": {
     "min": 9940,
     "max": 12167,
+    "score": 85,
+    "mpg_city": "27-31",
     "url": "https://www.jdpower.com/cars/2019/kia/forte",
-    "lastUpdated": 1779319860.1178188
+    "lastUpdated": 1779376097.556353
   },
   "Kia|Forte|2020": {
     "min": 10573,
     "max": 15056,
+    "score": 83,
+    "mpg_city": "25-31",
     "url": "https://www.jdpower.com/cars/2020/kia/forte",
-    "lastUpdated": 1779319860.071468
+    "lastUpdated": 1779376097.574393
   },
   "Kia|Forte|2021": {
     "min": 11471,
     "max": 17368,
+    "score": 80,
+    "mpg_city": "25-31",
     "url": "https://www.jdpower.com/cars/2021/kia/forte",
-    "lastUpdated": 1779319860.119825
+    "lastUpdated": 1779376097.586532
   },
   "Kia|Forte|2022": {
     "min": 14491,
     "max": 20217,
+    "score": 80,
+    "mpg_city": "22-31",
     "url": "https://www.jdpower.com/cars/2022/kia/forte",
-    "lastUpdated": 1779319860.310617
+    "lastUpdated": 1779376097.5896451
   },
   "Kia|Forte|2023": {
     "min": 15206,
     "max": 23961,
+    "score": 81,
+    "mpg_city": "22-30",
     "url": "https://www.jdpower.com/cars/2023/kia/forte",
-    "lastUpdated": 1779319860.637663
+    "lastUpdated": 1779376097.598829
   },
   "Kia|K5 Hybrid|2020": null,
   "Kia|K5 Hybrid|2021": null,
@@ -2522,26 +3300,34 @@
   "Kia|K5|2021": {
     "min": 13806,
     "max": 24556,
+    "score": 80,
+    "mpg_city": "24-29",
     "url": "https://www.jdpower.com/cars/2021/kia/k5",
-    "lastUpdated": 1779319860.927922
+    "lastUpdated": 1779376097.609474
   },
   "Kia|K5|2022": {
     "min": 16726,
     "max": 24680,
+    "score": 81,
+    "mpg_city": "24-29",
     "url": "https://www.jdpower.com/cars/2022/kia/k5",
-    "lastUpdated": 1779319860.858407
+    "lastUpdated": 1779376097.623605
   },
   "Kia|K5|2023": {
     "min": 20441,
     "max": 29662,
+    "score": 83,
+    "mpg_city": "24-27",
     "url": "https://www.jdpower.com/cars/2023/kia/k5",
-    "lastUpdated": 1779319860.8119931
+    "lastUpdated": 1779376097.6264582
   },
   "Kia|K5|2024": {
     "min": 20947,
     "max": 33883,
+    "score": 82,
+    "mpg_city": "24-27",
     "url": "https://www.jdpower.com/cars/2024/kia/k5",
-    "lastUpdated": 1779319860.8483999
+    "lastUpdated": 1779376097.639303
   },
   "Kia|K7|2017": null,
   "Kia|K8 Hybrid (with HDA II)|2023": null,
@@ -2553,32 +3339,42 @@
   "Kia|Niro EV|2019": {
     "min": 10873,
     "max": 13561,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2019/kia/niro-ev",
-    "lastUpdated": 1779319861.875326
+    "lastUpdated": 1779376097.642206
   },
   "Kia|Niro EV|2020": {
     "min": 11639,
     "max": 14344,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2020/kia/niro-ev",
-    "lastUpdated": 1779319861.908504
+    "lastUpdated": 1779376097.6578062
   },
   "Kia|Niro EV|2021": {
     "min": 12485,
     "max": 15195,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2021/kia/niro-ev",
-    "lastUpdated": 1779319861.996959
+    "lastUpdated": 1779376097.665772
   },
   "Kia|Niro EV|2022": {
     "min": 14564,
     "max": 18771,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2022/kia/niro-ev",
-    "lastUpdated": 1779319861.878348
+    "lastUpdated": 1779376097.674921
   },
   "Kia|Niro EV|2023": {
     "min": 16906,
     "max": 23091,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2023/kia/niro-ev",
-    "lastUpdated": 1779319862.254315
+    "lastUpdated": 1779376097.6773021
   },
   "Kia|Niro Hybrid|2018": null,
   "Kia|Niro Hybrid|2021": null,
@@ -2588,194 +3384,258 @@
   "Kia|Niro Plug-in Hybrid|2018": {
     "min": 9740,
     "max": 14272,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2018/kia/niro-plug-in-hybrid",
-    "lastUpdated": 1779319863.787742
+    "lastUpdated": 1779376097.6844878
   },
   "Kia|Niro Plug-in Hybrid|2019": {
     "min": 11738,
     "max": 16653,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2019/kia/niro-plug-in-hybrid",
-    "lastUpdated": 1779319863.644944
+    "lastUpdated": 1779376097.6936178
   },
   "Kia|Niro Plug-in Hybrid|2020": {
     "min": 15046,
     "max": 21144,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2020/kia/niro-plug-in-hybrid",
-    "lastUpdated": 1779319863.9642198
+    "lastUpdated": 1779376097.7052412
   },
   "Kia|Niro Plug-in Hybrid|2021": {
     "min": 17849,
     "max": 23742,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2021/kia/niro-plug-in-hybrid",
-    "lastUpdated": 1779319863.9788532
+    "lastUpdated": 1779376097.712925
   },
   "Kia|Niro Plug-in Hybrid|2022": {
     "min": 20299,
     "max": 26496,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2022/kia/niro-plug-in-hybrid",
-    "lastUpdated": 1779319864.017044
+    "lastUpdated": 1779376097.7242591
   },
   "Kia|Optima Hybrid|2017": {
     "min": 7986,
     "max": 10613,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2017/kia/optima-hybrid",
-    "lastUpdated": 1779319865.138968
+    "lastUpdated": 1779376097.741791
   },
   "Kia|Optima Hybrid|2019": {
     "min": 12431,
     "max": 13968,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2019/kia/optima-hybrid",
-    "lastUpdated": 1779319864.8752031
+    "lastUpdated": 1779376097.744843
   },
   "Kia|Optima|2017": {
     "min": 7815,
     "max": 12384,
+    "score": 85,
+    "mpg_city": "22-28",
     "url": "https://www.jdpower.com/cars/2017/kia/optima",
-    "lastUpdated": 1779319864.564896
+    "lastUpdated": 1779376097.7610528
   },
   "Kia|Optima|2019": {
     "min": 11342,
     "max": 15445,
+    "score": 85,
+    "mpg_city": "21-27",
     "url": "https://www.jdpower.com/cars/2019/kia/optima",
-    "lastUpdated": 1779319864.320926
+    "lastUpdated": 1779376097.764002
   },
   "Kia|Optima|2020": {
     "min": 12361,
     "max": 17228,
+    "score": 85,
+    "mpg_city": "21-27",
     "url": "https://www.jdpower.com/cars/2020/kia/optima",
-    "lastUpdated": 1779319864.5403461
+    "lastUpdated": 1779376097.7720408
   },
   "Kia|Seltos|2021": {
     "min": 13291,
     "max": 19592,
+    "score": 80,
+    "mpg_city": "25-29",
     "url": "https://www.jdpower.com/cars/2021/kia/seltos",
-    "lastUpdated": 1779319864.830049
+    "lastUpdated": 1779376097.787858
   },
   "Kia|Seltos|2023": {
     "min": 18030,
     "max": 26370,
+    "score": 82,
+    "mpg_city": "25-29",
     "url": "https://www.jdpower.com/cars/2023/kia/seltos",
-    "lastUpdated": 1779319865.327422
+    "lastUpdated": 1779376097.7913039
   },
   "Kia|Seltos|2024": {
     "min": 19370,
     "max": 28752,
+    "score": 83,
+    "mpg_city": "25-28",
     "url": "https://www.jdpower.com/cars/2024/kia/seltos",
-    "lastUpdated": 1779319865.144552
+    "lastUpdated": 1779376097.806619
   },
   "Kia|Sorento Hybrid|2021": {
     "min": 18865,
     "max": 22947,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2021/kia/sorento-hybrid",
-    "lastUpdated": 1779319866.0816069
+    "lastUpdated": 1779376097.8123689
   },
   "Kia|Sorento Hybrid|2022": {
     "min": 21705,
     "max": 28767,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2022/kia/sorento-hybrid",
-    "lastUpdated": 1779319866.3081112
+    "lastUpdated": 1779376097.821064
   },
   "Kia|Sorento Hybrid|2023": {
     "min": 23885,
     "max": 33842,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2023/kia/sorento-hybrid",
-    "lastUpdated": 1779319866.464062
+    "lastUpdated": 1779376097.827787
   },
   "Kia|Sorento Plug-in Hybrid|2022": {
     "min": 27661,
     "max": 34972,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2022/kia/sorento-plug-in-hybrid",
-    "lastUpdated": 1779319868.343709
+    "lastUpdated": 1779376097.839007
   },
   "Kia|Sorento Plug-in Hybrid|2023": {
     "min": 31227,
     "max": 37075,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2023/kia/sorento-plug-in-hybrid",
-    "lastUpdated": 1779319866.859735
+    "lastUpdated": 1779376097.8483489
   },
   "Kia|Sorento|2018": {
     "min": 7962,
     "max": 16109,
+    "score": 83,
+    "mpg_city": "17-21",
     "url": "https://www.jdpower.com/cars/2018/kia/sorento",
-    "lastUpdated": 1779319865.299595
+    "lastUpdated": 1779376097.859497
   },
   "Kia|Sorento|2019": {
     "min": 8883,
     "max": 18124,
+    "score": 82,
+    "mpg_city": "19-22",
     "url": "https://www.jdpower.com/cars/2019/kia/sorento",
-    "lastUpdated": 1779319865.586664
+    "lastUpdated": 1779376097.864445
   },
   "Kia|Sorento|2021": {
     "min": 15696,
     "max": 26375,
+    "score": 77,
+    "mpg_city": "21-24",
     "url": "https://www.jdpower.com/cars/2021/kia/sorento",
-    "lastUpdated": 1779319865.526742
+    "lastUpdated": 1779376097.873865
   },
   "Kia|Sorento|2022": {
     "min": 17999,
     "max": 31643,
+    "score": 77,
+    "mpg_city": "22-24",
     "url": "https://www.jdpower.com/cars/2022/kia/sorento",
-    "lastUpdated": 1779319868.1476638
+    "lastUpdated": 1779376097.8833568
   },
   "Kia|Sorento|2023": {
     "min": 19996,
     "max": 35203,
+    "score": 80,
+    "mpg_city": "22-24",
     "url": "https://www.jdpower.com/cars/2023/kia/sorento",
-    "lastUpdated": 1779319865.813962
+    "lastUpdated": 1779376097.8988469
   },
   "Kia|Sportage Hybrid|2023": {
     "min": 20737,
     "max": 34287,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2023/kia/sportage-hybrid",
-    "lastUpdated": 1779319867.6722581
+    "lastUpdated": 1779376097.905689
   },
   "Kia|Sportage Hybrid|2026": {
     "min": 28034,
     "max": 42508,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2026/kia/sportage-hybrid",
-    "lastUpdated": 1779319869.265957
+    "lastUpdated": 1779376097.9173682
   },
   "Kia|Sportage|2023": {
     "min": 18812,
     "max": 34123,
+    "score": 82,
+    "mpg_city": "23-25",
     "url": "https://www.jdpower.com/cars/2023/kia/sportage",
-    "lastUpdated": 1779319867.096054
+    "lastUpdated": 1779376097.9287198
   },
   "Kia|Sportage|2024": {
     "min": 21480,
     "max": 36621,
+    "score": 83,
+    "mpg_city": "23-25",
     "url": "https://www.jdpower.com/cars/2024/kia/sportage",
-    "lastUpdated": 1779319867.309469
+    "lastUpdated": 1779376097.937718
   },
   "Kia|Stinger|2018": {
     "min": 13770,
     "max": 25536,
+    "score": 78,
+    "mpg_city": "17-22",
     "url": "https://www.jdpower.com/cars/2018/kia/stinger",
-    "lastUpdated": 1779319868.0351622
+    "lastUpdated": 1779376097.9464588
   },
   "Kia|Stinger|2019": {
     "min": 16233,
     "max": 27855,
+    "score": 86,
+    "mpg_city": "17-22",
     "url": "https://www.jdpower.com/cars/2019/kia/stinger",
-    "lastUpdated": 1779319868.40015
+    "lastUpdated": 1779376097.949847
   },
   "Kia|Stinger|2020": {
     "min": 19086,
     "max": 31920,
+    "score": 81,
+    "mpg_city": "17-22",
     "url": "https://www.jdpower.com/cars/2020/kia/stinger",
-    "lastUpdated": 1779319868.3435369
+    "lastUpdated": 1779376097.964588
   },
   "Kia|Stinger|2022": {
     "min": 22188,
     "max": 36864,
+    "score": 76,
+    "mpg_city": "17-22",
     "url": "https://www.jdpower.com/cars/2022/kia/stinger",
-    "lastUpdated": 1779319868.858911
+    "lastUpdated": 1779376097.973875
   },
   "Kia|Stinger|2023": {
     "min": 27151,
     "max": 46262,
+    "score": 80,
+    "mpg_city": "17-22",
     "url": "https://www.jdpower.com/cars/2023/kia/stinger",
-    "lastUpdated": 1779319869.279802
+    "lastUpdated": 1779376097.976782
   },
   "Kia|Telluride (without HDA II)|2023": null,
   "Kia|Telluride (without HDA II)|2024": null,
@@ -2783,26 +3643,34 @@
   "Kia|Telluride|2020": {
     "min": 16192,
     "max": 23030,
+    "score": 82,
+    "mpg_city": "19-20",
     "url": "https://www.jdpower.com/cars/2020/kia/telluride",
-    "lastUpdated": 1779319869.354371
+    "lastUpdated": 1779376097.985663
   },
   "Kia|Telluride|2021": {
     "min": 19150,
     "max": 29075,
+    "score": 80,
+    "mpg_city": "19-20",
     "url": "https://www.jdpower.com/cars/2021/kia/telluride",
-    "lastUpdated": 1779319869.26268
+    "lastUpdated": 1779376098.002655
   },
   "Kia|Telluride|2022": {
     "min": 21774,
     "max": 35259,
+    "score": 80,
+    "mpg_city": "19-20",
     "url": "https://www.jdpower.com/cars/2022/kia/telluride",
-    "lastUpdated": 1779319869.960611
+    "lastUpdated": 1779376098.013592
   },
   "Kia|Telluride|2023": {
     "min": 25471,
     "max": 42045,
+    "score": 83,
+    "mpg_city": "18-20",
     "url": "https://www.jdpower.com/cars/2023/kia/telluride",
-    "lastUpdated": 1779319869.951724
+    "lastUpdated": 1779376098.02243
   },
   "Kia|Telluride|2024": null,
   "Lexus|CT Hybrid|2017": null,
@@ -2819,111 +3687,147 @@
   "Lexus|ES|2017": {
     "min": 20035,
     "max": 23091,
+    "score": 88,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2017/lexus/es",
-    "lastUpdated": 1779319870.5652218
+    "lastUpdated": 1779376098.025207
   },
   "Lexus|ES|2018": {
     "min": 21475,
     "max": 24683,
+    "score": 84,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2018/lexus/es",
-    "lastUpdated": 1779319870.3078852
+    "lastUpdated": 1779376098.027992
   },
   "Lexus|ES|2019": {
     "min": 22559,
     "max": 28799,
+    "score": 82,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2019/lexus/es",
-    "lastUpdated": 1779319870.768378
+    "lastUpdated": 1779376098.033565
   },
   "Lexus|ES|2020": {
     "min": 27107,
     "max": 35398,
+    "score": 80,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2020/lexus/es",
-    "lastUpdated": 1779319870.788492
+    "lastUpdated": 1779376098.039254
   },
   "Lexus|ES|2021": {
     "min": 26924,
     "max": 37864,
+    "score": 83,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2021/lexus/es",
-    "lastUpdated": 1779319870.899752
+    "lastUpdated": 1779376098.042811
   },
   "Lexus|ES|2022": {
     "min": 29150,
     "max": 41916,
+    "score": 83,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2022/lexus/es",
-    "lastUpdated": 1779319871.1405098
+    "lastUpdated": 1779376098.0490549
   },
   "Lexus|ES|2023": {
     "min": 30844,
     "max": 45562,
+    "score": 82,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2023/lexus/es",
-    "lastUpdated": 1779319871.426859
+    "lastUpdated": 1779376098.0524979
   },
   "Lexus|ES|2024": {
     "min": 35944,
     "max": 51573,
+    "score": 83,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2024/lexus/es",
-    "lastUpdated": 1779319871.839809
+    "lastUpdated": 1779376098.055583
   },
   "Lexus|ES|2025": {
     "min": 37715,
     "max": 53020,
+    "score": 83,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2025/lexus/es",
-    "lastUpdated": 1779319871.814532
+    "lastUpdated": 1779376098.058736
   },
   "Lexus|GS F|2016": {
     "min": 32918,
     "max": 37719,
+    "score": null,
+    "mpg_city": "16",
     "url": "https://www.jdpower.com/cars/2016/lexus/gs-f",
-    "lastUpdated": 1779319872.735785
+    "lastUpdated": 1779376098.061943
   },
   "Lexus|IS|2017": {
     "min": 16608,
     "max": 23873,
+    "score": 84,
+    "mpg_city": "19-22",
     "url": "https://www.jdpower.com/cars/2017/lexus/is",
-    "lastUpdated": 1779319872.7487428
+    "lastUpdated": 1779376098.067758
   },
   "Lexus|IS|2018": {
     "min": 18870,
     "max": 26387,
+    "score": 78,
+    "mpg_city": "19-22",
     "url": "https://www.jdpower.com/cars/2018/lexus/is",
-    "lastUpdated": 1779319872.9191082
+    "lastUpdated": 1779376098.071002
   },
   "Lexus|IS|2019": {
     "min": 21704,
     "max": 28819,
+    "score": 79,
+    "mpg_city": "19-21",
     "url": "https://www.jdpower.com/cars/2019/lexus/is",
-    "lastUpdated": 1779319872.9419231
+    "lastUpdated": 1779376098.07434
   },
   "Lexus|IS|2022": {
     "min": 29335,
     "max": 59699,
+    "score": 86,
+    "mpg_city": "17-21",
     "url": "https://www.jdpower.com/cars/2022/lexus/is",
-    "lastUpdated": 1779319872.5227132
+    "lastUpdated": 1779376098.0773592
   },
   "Lexus|IS|2023": {
     "min": 33014,
     "max": 65447,
+    "score": 86,
+    "mpg_city": "17-21",
     "url": "https://www.jdpower.com/cars/2023/lexus/is",
-    "lastUpdated": 1779319873.390044
+    "lastUpdated": 1779376098.0809522
   },
   "Lexus|IS|2024": {
     "min": 36797,
     "max": 69332,
+    "score": 87,
+    "mpg_city": "17-21",
     "url": "https://www.jdpower.com/cars/2024/lexus/is",
-    "lastUpdated": 1779319873.9456398
+    "lastUpdated": 1779376098.084438
   },
   "Lexus|LC|2024": null,
   "Lexus|LC|2025": {
     "min": 92018,
     "max": 123229,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2025/lexus/lc",
-    "lastUpdated": 1779319873.6938748
+    "lastUpdated": 1779376098.090508
   },
   "Lexus|LS|2018": {
     "min": 33710,
     "max": 42755,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2018/lexus/ls",
-    "lastUpdated": 1779319873.7255008
+    "lastUpdated": 1779376098.0939782
   },
   "Lexus|NS|2022": null,
   "Lexus|NS|2023": null,
@@ -2936,50 +3840,66 @@
   "Lexus|NX|2018": {
     "min": 16863,
     "max": 21755,
+    "score": 80,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2018/lexus/nx",
-    "lastUpdated": 1779319874.3110468
+    "lastUpdated": 1779376098.1006641
   },
   "Lexus|NX|2019": {
     "min": 18711,
     "max": 24183,
+    "score": 79,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2019/lexus/nx",
-    "lastUpdated": 1779319874.528822
+    "lastUpdated": 1779376098.104649
   },
   "Lexus|NX|2020": {
     "min": 22212,
     "max": 30022,
+    "score": 82,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2020/lexus/nx",
-    "lastUpdated": 1779319875.356107
+    "lastUpdated": 1779376098.108646
   },
   "Lexus|NX|2021": {
     "min": 25769,
     "max": 33019,
+    "score": 83,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2021/lexus/nx",
-    "lastUpdated": 1779319876.254667
+    "lastUpdated": 1779376098.115388
   },
   "Lexus|RC|2018": {
     "min": 23567,
     "max": 30905,
+    "score": null,
+    "mpg_city": "18-22",
     "url": "https://www.jdpower.com/cars/2018/lexus/rc",
-    "lastUpdated": 1779319875.8777092
+    "lastUpdated": 1779376098.1190012
   },
   "Lexus|RC|2019": {
     "min": 24519,
     "max": 34322,
+    "score": null,
+    "mpg_city": "18-21",
     "url": "https://www.jdpower.com/cars/2019/lexus/rc",
-    "lastUpdated": 1779319875.7470012
+    "lastUpdated": 1779376098.125538
   },
   "Lexus|RC|2020": {
     "min": 26667,
     "max": 36483,
+    "score": null,
+    "mpg_city": "18-21",
     "url": "https://www.jdpower.com/cars/2020/lexus/rc",
-    "lastUpdated": 1779319875.661144
+    "lastUpdated": 1779376098.128723
   },
   "Lexus|RC|2023": {
     "min": 32268,
     "max": 47207,
+    "score": null,
+    "mpg_city": "19-21",
     "url": "https://www.jdpower.com/cars/2023/lexus/rc",
-    "lastUpdated": 1779319877.261955
+    "lastUpdated": 1779376098.13205
   },
   "Lexus|RX Hybrid|2016": null,
   "Lexus|RX Hybrid|2017": null,
@@ -2991,39 +3911,51 @@
   "Lexus|RX|2016": {
     "min": 17164,
     "max": 19544,
+    "score": 83,
+    "mpg_city": "19-20",
     "url": "https://www.jdpower.com/cars/2016/lexus/rx",
-    "lastUpdated": 1779319876.040478
+    "lastUpdated": 1779376098.135235
   },
   "Lexus|RX|2017": {
     "min": 19242,
     "max": 23371,
+    "score": 80,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2017/lexus/rx",
-    "lastUpdated": 1779319878.6330738
+    "lastUpdated": 1779376098.1408799
   },
   "Lexus|RX|2018": {
     "min": 21123,
     "max": 27742,
+    "score": 82,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2018/lexus/rx",
-    "lastUpdated": 1779319876.436243
+    "lastUpdated": 1779376098.1441832
   },
   "Lexus|RX|2019": null,
   "Lexus|RX|2020": {
     "min": 28509,
     "max": 37512,
+    "score": 84,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2020/lexus/rx",
-    "lastUpdated": 1779319877.405601
+    "lastUpdated": 1779376098.149954
   },
   "Lexus|RX|2021": {
     "min": 32698,
     "max": 43766,
+    "score": 82,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2021/lexus/rx",
-    "lastUpdated": 1779319876.925809
+    "lastUpdated": 1779376098.152871
   },
   "Lexus|RX|2022": {
     "min": 33496,
     "max": 49253,
+    "score": 82,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2022/lexus/rx",
-    "lastUpdated": 1779319877.288857
+    "lastUpdated": 1779376098.158634
   },
   "Lexus|UX Hybrid|2019": null,
   "Lexus|UX Hybrid|2020": null,
@@ -3039,32 +3971,42 @@
   "Lincoln|Aviator|2020": {
     "min": 21368,
     "max": 43047,
+    "score": 68,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2020/lincoln/aviator",
-    "lastUpdated": 1779319878.6598551
+    "lastUpdated": 1779376098.1623402
   },
   "Lincoln|Aviator|2021": {
     "min": 24183,
     "max": 48885,
+    "score": 75,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2021/lincoln/aviator",
-    "lastUpdated": 1779319878.659324
+    "lastUpdated": 1779376098.1658182
   },
   "Lincoln|Aviator|2022": {
     "min": 28063,
     "max": 66647,
+    "score": 77,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2022/lincoln/aviator",
-    "lastUpdated": 1779319878.75238
+    "lastUpdated": 1779376098.169272
   },
   "Lincoln|Aviator|2023": {
     "min": 32035,
     "max": 69602,
+    "score": 78,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2023/lincoln/aviator",
-    "lastUpdated": 1779319878.739688
+    "lastUpdated": 1779376098.173019
   },
   "Lincoln|Aviator|2024": {
     "min": 34181,
     "max": 68683,
+    "score": null,
+    "mpg_city": "17-18",
     "url": "https://www.jdpower.com/cars/2024/lincoln/aviator",
-    "lastUpdated": 1779319878.7693598
+    "lastUpdated": 1779376098.176696
   },
   "MAN|TGE|2017": null,
   "MAN|TGE|2018": null,
@@ -3088,107 +4030,141 @@
   "Mazda|CX-5|2017": {
     "min": 10542,
     "max": 14159,
+    "score": null,
+    "mpg_city": "23-24",
     "url": "https://www.jdpower.com/cars/2017/mazda/cx-5",
-    "lastUpdated": 1779319880.365217
+    "lastUpdated": 1779376098.182961
   },
   "Mazda|CX-5|2018": null,
   "Mazda|CX-5|2019": null,
   "Mazda|CX-5|2020": {
     "min": 15347,
     "max": 23640,
+    "score": 83,
+    "mpg_city": "22-25",
     "url": "https://www.jdpower.com/cars/2020/mazda/cx-5",
-    "lastUpdated": 1779319880.729762
+    "lastUpdated": 1779376098.186209
   },
   "Mazda|CX-5|2021": {
     "min": 16757,
     "max": 25183,
+    "score": 82,
+    "mpg_city": "22-25",
     "url": "https://www.jdpower.com/cars/2021/mazda/cx-5",
-    "lastUpdated": 1779319880.450741
+    "lastUpdated": 1779376098.1892228
   },
   "Mazda|CX-5|2022": {
     "min": 17959,
     "max": 29106,
+    "score": 83,
+    "mpg_city": "22-24",
     "url": "https://www.jdpower.com/cars/2022/mazda/cx-5",
-    "lastUpdated": 1779319880.526565
+    "lastUpdated": 1779376098.1923132
   },
   "Mazda|CX-5|2023": {
     "min": 20549,
     "max": 34244,
+    "score": 81,
+    "mpg_city": "22-24",
     "url": "https://www.jdpower.com/cars/2023/mazda/cx-5",
-    "lastUpdated": 1779319880.5125031
+    "lastUpdated": 1779376098.195265
   },
   "Mazda|CX-5|2024": {
     "min": 22812,
     "max": 36540,
+    "score": 82,
+    "mpg_city": "22-23",
     "url": "https://www.jdpower.com/cars/2024/mazda/cx-5",
-    "lastUpdated": 1779319880.990169
+    "lastUpdated": 1779376098.1984
   },
   "Mazda|CX-5|2025": {
     "min": 26613,
     "max": 42666,
+    "score": 82,
+    "mpg_city": "22-26",
     "url": "https://www.jdpower.com/cars/2025/mazda/cx-5",
-    "lastUpdated": 1779319881.0283961
+    "lastUpdated": 1779376098.2019358
   },
   "Mazda|CX-9|2016": {
     "min": 8932,
     "max": 13434,
+    "score": null,
+    "mpg_city": "21-22",
     "url": "https://www.jdpower.com/cars/2016/mazda/cx-9",
-    "lastUpdated": 1779319881.470948
+    "lastUpdated": 1779376098.205639
   },
   "Mazda|CX-9|2017": null,
   "Mazda|CX-9|2018": {
     "min": 11320,
     "max": 17263,
+    "score": 78,
+    "mpg_city": "20-22",
     "url": "https://www.jdpower.com/cars/2018/mazda/cx-9",
-    "lastUpdated": 1779319881.017113
+    "lastUpdated": 1779376098.20946
   },
   "Mazda|CX-9|2019": {
     "min": 12952,
     "max": 21093,
+    "score": 79,
+    "mpg_city": "20-22",
     "url": "https://www.jdpower.com/cars/2019/mazda/cx-9",
-    "lastUpdated": 1779319881.474182
+    "lastUpdated": 1779376098.215955
   },
   "Mazda|CX-9|2020": {
     "min": 15143,
     "max": 23736,
+    "score": 77,
+    "mpg_city": "20-22",
     "url": "https://www.jdpower.com/cars/2020/mazda/cx-9",
-    "lastUpdated": 1779319882.0810182
+    "lastUpdated": 1779376098.2224991
   },
   "Mazda|CX-9|2021": {
     "min": 16392,
     "max": 26177,
+    "score": 81,
+    "mpg_city": "20-22",
     "url": "https://www.jdpower.com/cars/2021/mazda/cx-9",
-    "lastUpdated": 1779319881.647101
+    "lastUpdated": 1779376098.225751
   },
   "Mazda|CX-9|2022": {
     "min": 19092,
     "max": 28945,
+    "score": 83,
+    "mpg_city": "20",
     "url": "https://www.jdpower.com/cars/2022/mazda/cx-9",
-    "lastUpdated": 1779319881.6779032
+    "lastUpdated": 1779376098.2286139
   },
   "Mazda|CX-9|2023": {
     "min": 22917,
     "max": 32583,
+    "score": 80,
+    "mpg_city": "20",
     "url": "https://www.jdpower.com/cars/2023/mazda/cx-9",
-    "lastUpdated": 1779319881.800138
+    "lastUpdated": 1779376098.231584
   },
   "Nissan|Altima|2019": {
     "min": 11173,
     "max": 18563,
+    "score": 79,
+    "mpg_city": "25-28",
     "url": "https://www.jdpower.com/cars/2019/nissan/altima",
-    "lastUpdated": 1779319882.30311
+    "lastUpdated": 1779376098.235001
   },
   "Nissan|Altima|2020": {
     "min": 12353,
     "max": 18949,
+    "score": 82,
+    "mpg_city": "25-28",
     "url": "https://www.jdpower.com/cars/2020/nissan/altima",
-    "lastUpdated": 1779319882.195588
+    "lastUpdated": 1779376098.2380521
   },
   "Nissan|Altima|2024": {
     "min": 18623,
     "max": 31332,
+    "score": 83,
+    "mpg_city": "25-27",
     "url": "https://www.jdpower.com/cars/2024/nissan/altima",
-    "lastUpdated": 1779319882.318898
+    "lastUpdated": 1779376098.241054
   },
   "Nissan|Leaf - Instrument Cluster|2018": null,
   "Nissan|Leaf - Instrument Cluster|2019": null,
@@ -3199,56 +4175,74 @@
   "Nissan|Leaf|2018": {
     "min": 5620,
     "max": 7240,
+    "score": 70,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2018/nissan/leaf",
-    "lastUpdated": 1779319882.584785
+    "lastUpdated": 1779376098.2470038
   },
   "Nissan|Leaf|2019": {
     "min": 5983,
     "max": 9844,
+    "score": 75,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2019/nissan/leaf",
-    "lastUpdated": 1779319882.566713
+    "lastUpdated": 1779376098.250047
   },
   "Nissan|Leaf|2020": {
     "min": 6420,
     "max": 10003,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2020/nissan/leaf",
-    "lastUpdated": 1779319883.0507169
+    "lastUpdated": 1779376098.2535172
   },
   "Nissan|Leaf|2021": {
     "min": 7833,
     "max": 12437,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2021/nissan/leaf",
-    "lastUpdated": 1779319883.201236
+    "lastUpdated": 1779376098.2600698
   },
   "Nissan|Leaf|2022": {
     "min": 8951,
     "max": 13901,
+    "score": 77,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2022/nissan/leaf",
-    "lastUpdated": 1779319883.200617
+    "lastUpdated": 1779376098.263641
   },
   "Nissan|Leaf|2023": {
     "min": 10203,
     "max": 15431,
+    "score": 75,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2023/nissan/leaf",
-    "lastUpdated": 1779319883.176348
+    "lastUpdated": 1779376098.267179
   },
   "Nissan|Rogue|2018": {
     "min": 9893,
     "max": 15357,
+    "score": 80,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2018/nissan/rogue",
-    "lastUpdated": 1779319883.939243
+    "lastUpdated": 1779376098.270582
   },
   "Nissan|Rogue|2019": {
     "min": 10541,
     "max": 17443,
+    "score": 79,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2019/nissan/rogue",
-    "lastUpdated": 1779319884.4310322
+    "lastUpdated": 1779376098.274122
   },
   "Nissan|Rogue|2020": {
     "min": 12606,
     "max": 18721,
+    "score": 82,
+    "mpg_city": "25-26",
     "url": "https://www.jdpower.com/cars/2020/nissan/rogue",
-    "lastUpdated": 1779319884.469713
+    "lastUpdated": 1779376098.280076
   },
   "Nissan|X-Trail|2017": null,
   "Peugeot|208|2019": null,
@@ -3262,182 +4256,242 @@
   "Porsche|Macan|2018": {
     "min": 16030,
     "max": 35299,
+    "score": 84,
+    "mpg_city": "17-20",
     "url": "https://www.jdpower.com/cars/2018/porsche/macan",
-    "lastUpdated": 1779319885.279032
+    "lastUpdated": 1779376098.306019
   },
   "Porsche|Macan|2019": {
     "min": 22343,
     "max": 28165,
+    "score": null,
+    "mpg_city": "18-19",
     "url": "https://www.jdpower.com/cars/2019/porsche/macan",
-    "lastUpdated": 1779319885.343764
+    "lastUpdated": 1779376098.3092039
   },
   "Porsche|Macan|2020": {
     "min": 25860,
     "max": 45782,
+    "score": 80,
+    "mpg_city": "17-19",
     "url": "https://www.jdpower.com/cars/2020/porsche/macan",
-    "lastUpdated": 1779319885.290546
+    "lastUpdated": 1779376098.314831
   },
   "Porsche|Macan|2021": {
     "min": 30809,
     "max": 55270,
+    "score": 84,
+    "mpg_city": "17-19",
     "url": "https://www.jdpower.com/cars/2021/porsche/macan",
-    "lastUpdated": 1779319885.4692988
+    "lastUpdated": 1779376098.315577
   },
   "Porsche|Macan|2022": {
     "min": 36564,
     "max": 67164,
+    "score": 82,
+    "mpg_city": "17-19",
     "url": "https://www.jdpower.com/cars/2022/porsche/macan",
-    "lastUpdated": 1779319885.475169
+    "lastUpdated": 1779376098.3221319
   },
   "Porsche|Macan|2023": {
     "min": 38859,
     "max": 74209,
+    "score": 84,
+    "mpg_city": "17-19",
     "url": "https://www.jdpower.com/cars/2023/porsche/macan",
-    "lastUpdated": 1779319886.622977
+    "lastUpdated": 1779376098.325449
   },
   "Porsche|Macan|2024": {
     "min": 47673,
     "max": 99751,
+    "score": 86,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2024/porsche/macan",
-    "lastUpdated": 1779319886.705722
+    "lastUpdated": 1779376098.329129
   },
   "Ram|1500|2019": {
     "min": 17239,
     "max": 36258,
+    "score": 77,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2019/ram/1500",
-    "lastUpdated": 1779319887.18182
+    "lastUpdated": 1779376098.335954
   },
   "Ram|1500|2020": {
     "min": 19407,
     "max": 43156,
+    "score": 83,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2020/ram/1500",
-    "lastUpdated": 1779319888.600738
+    "lastUpdated": 1779376098.339616
   },
   "Ram|1500|2021": {
     "min": 22346,
     "max": 75040,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2021/ram/1500",
-    "lastUpdated": 1779319887.184243
+    "lastUpdated": 1779376098.346446
   },
   "Ram|1500|2022": {
     "min": 25045,
     "max": 88563,
+    "score": 81,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2022/ram/1500",
-    "lastUpdated": 1779319887.286709
+    "lastUpdated": 1779376098.3527942
   },
   "Ram|1500|2023": {
     "min": 22311,
     "max": 102286,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2023/ram/1500",
-    "lastUpdated": 1779319887.814124
+    "lastUpdated": 1779376098.3562
   },
   "Ram|1500|2024": {
     "min": 25762,
     "max": 114923,
+    "score": 83,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2024/ram/1500",
-    "lastUpdated": 1779319887.873708
+    "lastUpdated": 1779376098.362391
   },
   "Ram|2500|2020": {
     "min": 26082,
     "max": 57462,
+    "score": 81,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2020/ram/2500",
-    "lastUpdated": 1779319888.1679208
+    "lastUpdated": 1779376098.3687732
   },
   "Ram|2500|2021": {
     "min": 28089,
     "max": 62717,
+    "score": 78,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2021/ram/2500",
-    "lastUpdated": 1779319888.109309
+    "lastUpdated": 1779376098.3722339
   },
   "Ram|2500|2022": {
     "min": 29042,
     "max": 69546,
+    "score": 76,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2022/ram/2500",
-    "lastUpdated": 1779319889.277366
+    "lastUpdated": 1779376098.378426
   },
   "Ram|2500|2023": {
     "min": 31617,
     "max": 78531,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2023/ram/2500",
-    "lastUpdated": 1779319889.121527
+    "lastUpdated": 1779376098.3819032
   },
   "Ram|2500|2024": {
     "min": 35003,
     "max": 91603,
+    "score": 77,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2024/ram/2500",
-    "lastUpdated": 1779319888.734289
+    "lastUpdated": 1779376098.3849652
   },
   "Ram|3500|2019": {
     "min": 26186,
     "max": 56489,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2019/ram/3500",
-    "lastUpdated": 1779319889.900379
+    "lastUpdated": 1779376098.38874
   },
   "Ram|3500|2020": {
     "min": 32214,
     "max": 58378,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2020/ram/3500",
-    "lastUpdated": 1779319889.641619
+    "lastUpdated": 1779376098.39533
   },
   "Ram|3500|2021": {
     "min": 34718,
     "max": 62015,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2021/ram/3500",
-    "lastUpdated": 1779319889.816319
+    "lastUpdated": 1779376098.401825
   },
   "Ram|3500|2022": {
     "min": 36766,
     "max": 71273,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2022/ram/3500",
-    "lastUpdated": 1779319890.832343
+    "lastUpdated": 1779376098.4079518
   },
   "Rivian|R1S|2022": {
     "min": 43360,
     "max": 61540,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2022/rivian/r1s",
-    "lastUpdated": 1779319889.89989
+    "lastUpdated": 1779376098.4110012
   },
   "Rivian|R1S|2023": {
     "min": 55976,
     "max": 67536,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2023/rivian/r1s",
-    "lastUpdated": 1779319890.406956
+    "lastUpdated": 1779376098.4138398
   },
   "Rivian|R1S|2024": {
     "min": 65005,
     "max": 78887,
+    "score": 80,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2024/rivian/r1s",
-    "lastUpdated": 1779319890.303725
+    "lastUpdated": 1779376098.416538
   },
   "Rivian|R1S|2025": {
     "min": 75900,
     "max": 105900,
+    "score": 77,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2025/rivian/r1s",
-    "lastUpdated": 1779319890.493761
+    "lastUpdated": 1779376098.4192
   },
   "Rivian|R1T|2022": {
     "min": 43018,
     "max": 50967,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2022/rivian/r1t",
-    "lastUpdated": 1779319891.011936
+    "lastUpdated": 1779376098.421996
   },
   "Rivian|R1T|2023": {
     "min": 50476,
     "max": 63391,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2023/rivian/r1t",
-    "lastUpdated": 1779319890.57212
+    "lastUpdated": 1779376098.4277902
   },
   "Rivian|R1T|2024": {
     "min": 54918,
     "max": 69644,
+    "score": 81,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2024/rivian/r1t",
-    "lastUpdated": 1779319891.0886872
+    "lastUpdated": 1779376098.43063
   },
   "Rivian|R1T|2025": {
     "min": 69900,
     "max": 99900,
+    "score": 78,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2025/rivian/r1t",
-    "lastUpdated": 1779319891.243552
+    "lastUpdated": 1779376098.433912
   },
   "SEAT|Alhambra|2018": null,
   "SEAT|Alhambra|2019": null,
@@ -3498,262 +4552,348 @@
   "Subaru|Ascent|2019": {
     "min": 14052,
     "max": 19909,
+    "score": 71,
+    "mpg_city": "20-21",
     "url": "https://www.jdpower.com/cars/2019/subaru/ascent",
-    "lastUpdated": 1779319892.147862
+    "lastUpdated": 1779376098.439585
   },
   "Subaru|Ascent|2020": {
     "min": 15872,
     "max": 24614,
+    "score": 80,
+    "mpg_city": "20-21",
     "url": "https://www.jdpower.com/cars/2020/subaru/ascent",
-    "lastUpdated": 1779319892.318078
+    "lastUpdated": 1779376098.442584
   },
   "Subaru|Ascent|2021": {
     "min": 18245,
     "max": 25612,
+    "score": 82,
+    "mpg_city": "20-21",
     "url": "https://www.jdpower.com/cars/2021/subaru/ascent",
-    "lastUpdated": 1779319892.574921
+    "lastUpdated": 1779376098.44526
   },
   "Subaru|Ascent|2023": {
     "min": 21717,
     "max": 36561,
+    "score": 84,
+    "mpg_city": "19-20",
     "url": "https://www.jdpower.com/cars/2023/subaru/ascent",
-    "lastUpdated": 1779319892.6042628
+    "lastUpdated": 1779376098.450837
   },
   "Subaru|Crosstrek Hybrid|2020": {
     "min": 26089,
     "max": 28994,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2020/subaru/crosstrek-hybrid",
-    "lastUpdated": 1779319893.849694
+    "lastUpdated": 1779376098.453731
   },
   "Subaru|Crosstrek|2018": {
     "min": 14618,
     "max": 19947,
+    "score": 78,
+    "mpg_city": "23-27",
     "url": "https://www.jdpower.com/cars/2018/subaru/crosstrek",
-    "lastUpdated": 1779319892.533768
+    "lastUpdated": 1779376098.456745
   },
   "Subaru|Crosstrek|2019": {
     "min": 16287,
     "max": 21353,
+    "score": 79,
+    "mpg_city": "23-27",
     "url": "https://www.jdpower.com/cars/2019/subaru/crosstrek",
-    "lastUpdated": 1779319892.5420642
+    "lastUpdated": 1779376098.461886
   },
   "Subaru|Crosstrek|2020": null,
   "Subaru|Crosstrek|2021": {
     "min": 18314,
     "max": 26785,
+    "score": 85,
+    "mpg_city": "22-28",
     "url": "https://www.jdpower.com/cars/2021/subaru/crosstrek",
-    "lastUpdated": 1779319893.018889
+    "lastUpdated": 1779376098.46464
   },
   "Subaru|Crosstrek|2022": {
     "min": 19199,
     "max": 31377,
+    "score": 85,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2022/subaru/crosstrek",
-    "lastUpdated": 1779319893.019604
+    "lastUpdated": 1779376098.4673731
   },
   "Subaru|Crosstrek|2023": {
     "min": 19582,
     "max": 34092,
+    "score": 83,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2023/subaru/crosstrek",
-    "lastUpdated": 1779319893.3592582
+    "lastUpdated": 1779376098.4705348
   },
   "Subaru|Forester Hybrid|2020": null,
   "Subaru|Forester|2017": {
     "min": 15214,
     "max": 23519,
+    "score": 79,
+    "mpg_city": "22-26",
     "url": "https://www.jdpower.com/cars/2017/subaru/forester",
-    "lastUpdated": 1779319893.1161149
+    "lastUpdated": 1779376098.473328
   },
   "Subaru|Forester|2018": {
     "min": 16515,
     "max": 29718,
+    "score": 83,
+    "mpg_city": "22-26",
     "url": "https://www.jdpower.com/cars/2018/subaru/forester",
-    "lastUpdated": 1779319893.2057972
+    "lastUpdated": 1779376098.476125
   },
   "Subaru|Forester|2019": {
     "min": 18114,
     "max": 28079,
+    "score": 78,
+    "mpg_city": "26",
     "url": "https://www.jdpower.com/cars/2019/subaru/forester",
-    "lastUpdated": 1779319893.844116
+    "lastUpdated": 1779376098.479234
   },
   "Subaru|Forester|2020": {
     "min": 19527,
     "max": 30329,
+    "score": 79,
+    "mpg_city": "26",
     "url": "https://www.jdpower.com/cars/2020/subaru/forester",
-    "lastUpdated": 1779319893.865371
+    "lastUpdated": 1779376098.484725
   },
   "Subaru|Forester|2021": {
     "min": 20868,
     "max": 32207,
+    "score": 83,
+    "mpg_city": "26",
     "url": "https://www.jdpower.com/cars/2021/subaru/forester",
-    "lastUpdated": 1779319893.842489
+    "lastUpdated": 1779376098.487714
   },
   "Subaru|Forester|2022": {
     "min": 20379,
     "max": 36420,
+    "score": 84,
+    "mpg_city": "25-26",
     "url": "https://www.jdpower.com/cars/2022/subaru/forester",
-    "lastUpdated": 1779319894.003841
+    "lastUpdated": 1779376098.488533
   },
   "Subaru|Forester|2023": {
     "min": 22190,
     "max": 36996,
+    "score": 84,
+    "mpg_city": "25-26",
     "url": "https://www.jdpower.com/cars/2023/subaru/forester",
-    "lastUpdated": 1779319894.0473778
+    "lastUpdated": 1779376098.49438
   },
   "Subaru|Forester|2024": {
     "min": 24056,
     "max": 39708,
+    "score": 84,
+    "mpg_city": "25-26",
     "url": "https://www.jdpower.com/cars/2024/subaru/forester",
-    "lastUpdated": 1779319894.496654
+    "lastUpdated": 1779376098.497657
   },
   "Subaru|Impreza|2017": {
     "min": 9408,
     "max": 12542,
+    "score": 76,
+    "mpg_city": "22-28",
     "url": "https://www.jdpower.com/cars/2017/subaru/impreza",
-    "lastUpdated": 1779319894.558182
+    "lastUpdated": 1779376098.503158
   },
   "Subaru|Impreza|2018": {
     "min": 10119,
     "max": 15304,
+    "score": 76,
+    "mpg_city": "22-28",
     "url": "https://www.jdpower.com/cars/2018/subaru/impreza",
-    "lastUpdated": 1779319894.647879
+    "lastUpdated": 1779376098.50593
   },
   "Subaru|Impreza|2019": {
     "min": 10946,
     "max": 16361,
+    "score": 79,
+    "mpg_city": "22-28",
     "url": "https://www.jdpower.com/cars/2019/subaru/impreza",
-    "lastUpdated": 1779319894.588852
+    "lastUpdated": 1779376098.5087821
   },
   "Subaru|Impreza|2020": {
     "min": 13866,
     "max": 19538,
+    "score": 79,
+    "mpg_city": "22-28",
     "url": "https://www.jdpower.com/cars/2020/subaru/impreza",
-    "lastUpdated": 1779319894.8854249
+    "lastUpdated": 1779376098.5120552
   },
   "Subaru|Impreza|2021": {
     "min": 14716,
     "max": 21693,
+    "score": 81,
+    "mpg_city": "22-28",
     "url": "https://www.jdpower.com/cars/2021/subaru/impreza",
-    "lastUpdated": 1779319896.491832
+    "lastUpdated": 1779376098.515413
   },
   "Subaru|Impreza|2022": {
     "min": 16194,
     "max": 24289,
+    "score": 84,
+    "mpg_city": "27-28",
     "url": "https://www.jdpower.com/cars/2022/subaru/impreza",
-    "lastUpdated": 1779319895.132158
+    "lastUpdated": 1779376098.518749
   },
   "Subaru|Legacy|2015": {
     "min": 8220,
     "max": 12379,
+    "score": 77,
+    "mpg_city": "20-26",
     "url": "https://www.jdpower.com/cars/2015/subaru/legacy",
-    "lastUpdated": 1779319897.337543
+    "lastUpdated": 1779376098.5216691
   },
   "Subaru|Legacy|2016": {
     "min": 8904,
     "max": 12915,
+    "score": 80,
+    "mpg_city": "20-26",
     "url": "https://www.jdpower.com/cars/2016/subaru/legacy",
-    "lastUpdated": 1779319895.274524
+    "lastUpdated": 1779376098.52491
   },
   "Subaru|Legacy|2017": {
     "min": 9997,
     "max": 14703,
+    "score": 81,
+    "mpg_city": "20-25",
     "url": "https://www.jdpower.com/cars/2017/subaru/legacy",
-    "lastUpdated": 1779319895.774501
+    "lastUpdated": 1779376098.528081
   },
   "Subaru|Legacy|2018": {
     "min": 11212,
     "max": 17588,
+    "score": 83,
+    "mpg_city": "20-25",
     "url": "https://www.jdpower.com/cars/2018/subaru/legacy",
-    "lastUpdated": 1779319895.9341161
+    "lastUpdated": 1779376098.5341141
   },
   "Subaru|Legacy|2020": {
     "min": 14471,
     "max": 23019,
+    "score": 76,
+    "mpg_city": "24-27",
     "url": "https://www.jdpower.com/cars/2020/subaru/legacy",
-    "lastUpdated": 1779319895.8316422
+    "lastUpdated": 1779376098.537408
   },
   "Subaru|Legacy|2021": {
     "min": 17097,
     "max": 26434,
+    "score": 82,
+    "mpg_city": "24-27",
     "url": "https://www.jdpower.com/cars/2021/subaru/legacy",
-    "lastUpdated": 1779319897.2696419
+    "lastUpdated": 1779376098.540619
   },
   "Subaru|Legacy|2022": {
     "min": 18932,
     "max": 29125,
+    "score": 81,
+    "mpg_city": "24-27",
     "url": "https://www.jdpower.com/cars/2022/subaru/legacy",
-    "lastUpdated": 1779319896.6090722
+    "lastUpdated": 1779376098.5439801
   },
   "Subaru|Outback|2015": {
     "min": 7558,
     "max": 11211,
+    "score": 79,
+    "mpg_city": "20-25",
     "url": "https://www.jdpower.com/cars/2015/subaru/outback",
-    "lastUpdated": 1779319896.732523
+    "lastUpdated": 1779376098.549567
   },
   "Subaru|Outback|2016": {
     "min": 8885,
     "max": 14242,
+    "score": 80,
+    "mpg_city": "20-25",
     "url": "https://www.jdpower.com/cars/2016/subaru/outback",
-    "lastUpdated": 1779319896.836438
+    "lastUpdated": 1779376098.552453
   },
   "Subaru|Outback|2017": {
     "min": 10854,
     "max": 16714,
+    "score": 80,
+    "mpg_city": "20-25",
     "url": "https://www.jdpower.com/cars/2017/subaru/outback",
-    "lastUpdated": 1779319897.103241
+    "lastUpdated": 1779376098.555371
   },
   "Subaru|Outback|2018": {
     "min": 12237,
     "max": 19403,
+    "score": 79,
+    "mpg_city": "20-25",
     "url": "https://www.jdpower.com/cars/2018/subaru/outback",
-    "lastUpdated": 1779319897.217144
+    "lastUpdated": 1779376098.5560892
   },
   "Subaru|Outback|2019": {
     "min": 13763,
     "max": 22012,
+    "score": 78,
+    "mpg_city": "20-25",
     "url": "https://www.jdpower.com/cars/2019/subaru/outback",
-    "lastUpdated": 1779319897.40342
+    "lastUpdated": 1779376098.561404
   },
   "Subaru|Outback|2020": {
     "min": 15701,
     "max": 23714,
+    "score": 74,
+    "mpg_city": "23-26",
     "url": "https://www.jdpower.com/cars/2020/subaru/outback",
-    "lastUpdated": 1779319897.7105432
+    "lastUpdated": 1779376098.564079
   },
   "Subaru|Outback|2021": {
     "min": 17627,
     "max": 26924,
+    "score": 78,
+    "mpg_city": "23-26",
     "url": "https://www.jdpower.com/cars/2021/subaru/outback",
-    "lastUpdated": 1779319898.059756
+    "lastUpdated": 1779376098.5649128
   },
   "Subaru|Outback|2022": {
     "min": 18276,
     "max": 29358,
+    "score": 80,
+    "mpg_city": "22-26",
     "url": "https://www.jdpower.com/cars/2022/subaru/outback",
-    "lastUpdated": 1779319897.8479831
+    "lastUpdated": 1779376098.5677881
   },
   "Subaru|Outback|2023": {
     "min": 20684,
     "max": 34276,
+    "score": 82,
+    "mpg_city": "21-26",
     "url": "https://www.jdpower.com/cars/2023/subaru/outback",
-    "lastUpdated": 1779319898.092659
+    "lastUpdated": 1779376098.5707378
   },
   "Subaru|Solterra|2023": {
     "min": 18321,
     "max": 26311,
+    "score": 77,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2023/subaru/solterra",
-    "lastUpdated": 1779319898.3005838
+    "lastUpdated": 1779376098.5715358
   },
   "Subaru|Solterra|2024": {
     "min": 20028,
     "max": 30625,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2024/subaru/solterra",
-    "lastUpdated": 1779319898.65303
+    "lastUpdated": 1779376098.577216
   },
   "Subaru|Solterra|2025": {
     "min": 32639,
     "max": 46316,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2025/subaru/solterra",
-    "lastUpdated": 1779319898.632468
+    "lastUpdated": 1779376098.580437
   },
   "Subaru|XV|2018": null,
   "Subaru|XV|2019": null,
@@ -3786,44 +4926,58 @@
   "Toyota|Avalon|2016": {
     "min": 13465,
     "max": 17832,
+    "score": 80,
+    "mpg_city": "21",
     "url": "https://www.jdpower.com/cars/2016/toyota/avalon",
-    "lastUpdated": 1779319899.977163
+    "lastUpdated": 1779376098.58361
   },
   "Toyota|Avalon|2017": {
     "min": 14843,
     "max": 21099,
+    "score": 81,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2017/toyota/avalon",
-    "lastUpdated": 1779319900.266337
+    "lastUpdated": 1779376098.5885599
   },
   "Toyota|Avalon|2018": {
     "min": 16937,
     "max": 24684,
+    "score": 82,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2018/toyota/avalon",
-    "lastUpdated": 1779319900.1500459
+    "lastUpdated": 1779376098.591488
   },
   "Toyota|Avalon|2019": {
     "min": 19098,
     "max": 27229,
+    "score": 84,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2019/toyota/avalon",
-    "lastUpdated": 1779319899.977823
+    "lastUpdated": 1779376098.594292
   },
   "Toyota|Avalon|2020": {
     "min": 20700,
     "max": 29261,
+    "score": 81,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2020/toyota/avalon",
-    "lastUpdated": 1779319901.234394
+    "lastUpdated": 1779376098.597573
   },
   "Toyota|Avalon|2021": {
     "min": 22853,
     "max": 31984,
+    "score": 83,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2021/toyota/avalon",
-    "lastUpdated": 1779319900.152617
+    "lastUpdated": 1779376098.6008031
   },
   "Toyota|Avalon|2022": {
     "min": 23243,
     "max": 36468,
+    "score": 83,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2022/toyota/avalon",
-    "lastUpdated": 1779319900.815557
+    "lastUpdated": 1779376098.601651
   },
   "Toyota|C-HR Hybrid|2017": null,
   "Toyota|C-HR Hybrid|2018": null,
@@ -3835,26 +4989,34 @@
   "Toyota|C-HR|2018": {
     "min": 11008,
     "max": 13019,
+    "score": 81,
+    "mpg_city": "27",
     "url": "https://www.jdpower.com/cars/2018/toyota/c-hr",
-    "lastUpdated": 1779319901.456456
+    "lastUpdated": 1779376098.602392
   },
   "Toyota|C-HR|2019": {
     "min": 12954,
     "max": 18594,
+    "score": 83,
+    "mpg_city": "27",
     "url": "https://www.jdpower.com/cars/2019/toyota/c-hr",
-    "lastUpdated": 1779319901.222715
+    "lastUpdated": 1779376098.603182
   },
   "Toyota|C-HR|2020": {
     "min": 15276,
     "max": 20754,
+    "score": 89,
+    "mpg_city": "27",
     "url": "https://www.jdpower.com/cars/2020/toyota/c-hr",
-    "lastUpdated": 1779319901.331591
+    "lastUpdated": 1779376098.603955
   },
   "Toyota|C-HR|2021": {
     "min": 19288,
     "max": 25156,
+    "score": 84,
+    "mpg_city": "27",
     "url": "https://www.jdpower.com/cars/2021/toyota/c-hr",
-    "lastUpdated": 1779319901.7564511
+    "lastUpdated": 1779376098.604696
   },
   "Toyota|Camry Hybrid|2018": null,
   "Toyota|Camry Hybrid|2019": null,
@@ -3867,44 +5029,58 @@
   "Toyota|Camry|2019": {
     "min": 13406,
     "max": 22904,
+    "score": 84,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2019/toyota/camry",
-    "lastUpdated": 1779319902.866154
+    "lastUpdated": 1779376098.605553
   },
   "Toyota|Camry|2020": {
     "min": 16329,
     "max": 26228,
+    "score": 81,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2020/toyota/camry",
-    "lastUpdated": 1779319903.142952
+    "lastUpdated": 1779376098.606514
   },
   "Toyota|Camry|2021": {
     "min": 18552,
     "max": 30251,
+    "score": 82,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2021/toyota/camry",
-    "lastUpdated": 1779319902.653049
+    "lastUpdated": 1779376098.6075132
   },
   "Toyota|Camry|2022": {
     "min": 20361,
     "max": 32179,
+    "score": 82,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2022/toyota/camry",
-    "lastUpdated": 1779319903.2745018
+    "lastUpdated": 1779376098.6083908
   },
   "Toyota|Camry|2023": {
     "min": 22096,
     "max": 35830,
+    "score": 83,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2023/toyota/camry",
-    "lastUpdated": 1779319903.3625238
+    "lastUpdated": 1779376098.6093361
   },
   "Toyota|Camry|2024": {
     "min": 23635,
     "max": 37659,
+    "score": 83,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2024/toyota/camry",
-    "lastUpdated": 1779319903.135199
+    "lastUpdated": 1779376098.610202
   },
   "Toyota|Camry|2025": {
     "min": 24706,
     "max": 37917,
+    "score": 82,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2025/toyota/camry",
-    "lastUpdated": 1779319903.799547
+    "lastUpdated": 1779376098.611024
   },
   "Toyota|Corolla Cross (Non-US only)|2020": null,
   "Toyota|Corolla Cross (Non-US only)|2021": null,
@@ -3916,50 +5092,66 @@
   "Toyota|Corolla Cross|2022": {
     "min": 17903,
     "max": 26618,
+    "score": 81,
+    "mpg_city": "29-31",
     "url": "https://www.jdpower.com/cars/2022/toyota/corolla-cross",
-    "lastUpdated": 1779319905.929742
+    "lastUpdated": 1779376098.611789
   },
   "Toyota|Corolla Cross|2023": {
     "min": 20120,
     "max": 31360,
+    "score": 77,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2023/toyota/corolla-cross",
-    "lastUpdated": 1779319905.7535172
+    "lastUpdated": 1779376098.612643
   },
   "Toyota|Corolla Cross|2024": {
     "min": 21865,
     "max": 33573,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2024/toyota/corolla-cross",
-    "lastUpdated": 1779319906.6950872
+    "lastUpdated": 1779376098.613545
   },
   "Toyota|Corolla Cross|2025": {
     "min": 21955,
     "max": 34266,
+    "score": 80,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2025/toyota/corolla-cross",
-    "lastUpdated": 1779319906.298542
+    "lastUpdated": 1779376098.6143758
   },
   "Toyota|Corolla Hatchback|2019": {
     "min": 15230,
     "max": 18692,
+    "score": null,
+    "mpg_city": "28-32",
     "url": "https://www.jdpower.com/cars/2019/toyota/corolla-hatchback",
-    "lastUpdated": 1779319907.765907
+    "lastUpdated": 1779376098.61504
   },
   "Toyota|Corolla Hatchback|2020": {
     "min": 15917,
     "max": 19545,
+    "score": null,
+    "mpg_city": "28-32",
     "url": "https://www.jdpower.com/cars/2020/toyota/corolla-hatchback",
-    "lastUpdated": 1779319908.12791
+    "lastUpdated": 1779376098.615839
   },
   "Toyota|Corolla Hatchback|2021": {
     "min": 16886,
     "max": 20358,
+    "score": 83,
+    "mpg_city": "28-32",
     "url": "https://www.jdpower.com/cars/2021/toyota/corolla-hatchback",
-    "lastUpdated": 1779319907.734588
+    "lastUpdated": 1779376098.616695
   },
   "Toyota|Corolla Hatchback|2022": {
     "min": 16829,
     "max": 23456,
+    "score": null,
+    "mpg_city": "28-32",
     "url": "https://www.jdpower.com/cars/2022/toyota/corolla-hatchback",
-    "lastUpdated": 1779319907.881907
+    "lastUpdated": 1779376098.617433
   },
   "Toyota|Corolla Hybrid (South America only)|2020": null,
   "Toyota|Corolla Hybrid (South America only)|2021": null,
@@ -3971,38 +5163,50 @@
   "Toyota|Corolla|2017": {
     "min": 10818,
     "max": 15023,
+    "score": 85,
+    "mpg_city": "27-30",
     "url": "https://www.jdpower.com/cars/2017/toyota/corolla",
-    "lastUpdated": 1779319904.985263
+    "lastUpdated": 1779376098.6182048
   },
   "Toyota|Corolla|2018": {
     "min": 11775,
     "max": 15479,
+    "score": 86,
+    "mpg_city": "27-30",
     "url": "https://www.jdpower.com/cars/2018/toyota/corolla",
-    "lastUpdated": 1779319904.693336
+    "lastUpdated": 1779376098.618948
   },
   "Toyota|Corolla|2019": {
     "min": 12149,
     "max": 16537,
+    "score": 87,
+    "mpg_city": "27-30",
     "url": "https://www.jdpower.com/cars/2019/toyota/corolla",
-    "lastUpdated": 1779319904.613077
+    "lastUpdated": 1779376098.61967
   },
   "Toyota|Corolla|2020": {
     "min": 13692,
     "max": 18515,
+    "score": 82,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2020/toyota/corolla",
-    "lastUpdated": 1779319904.984981
+    "lastUpdated": 1779376098.6205199
   },
   "Toyota|Corolla|2021": {
     "min": 15054,
     "max": 20940,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2021/toyota/corolla",
-    "lastUpdated": 1779319905.3720791
+    "lastUpdated": 1779376098.6214669
   },
   "Toyota|Corolla|2022": {
     "min": 14933,
     "max": 22668,
+    "score": 81,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2022/toyota/corolla",
-    "lastUpdated": 1779319905.394839
+    "lastUpdated": 1779376098.622339
   },
   "Toyota|Highlander Hybrid|2017": null,
   "Toyota|Highlander Hybrid|2018": null,
@@ -4014,152 +5218,202 @@
   "Toyota|Highlander|2017": {
     "min": 13783,
     "max": 22718,
+    "score": 81,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2017/toyota/highlander",
-    "lastUpdated": 1779319909.598429
+    "lastUpdated": 1779376098.6232588
   },
   "Toyota|Highlander|2018": {
     "min": 15440,
     "max": 26230,
+    "score": 81,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2018/toyota/highlander",
-    "lastUpdated": 1779319909.405343
+    "lastUpdated": 1779376098.624047
   },
   "Toyota|Highlander|2019": {
     "min": 17938,
     "max": 31191,
+    "score": 79,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2019/toyota/highlander",
-    "lastUpdated": 1779319909.429558
+    "lastUpdated": 1779376098.6248782
   },
   "Toyota|Highlander|2020": {
     "min": 20158,
     "max": 35431,
+    "score": 84,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2020/toyota/highlander",
-    "lastUpdated": 1779319910.108175
+    "lastUpdated": 1779376098.625791
   },
   "Toyota|Highlander|2021": {
     "min": 22946,
     "max": 38001,
+    "score": 80,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2021/toyota/highlander",
-    "lastUpdated": 1779319909.566308
+    "lastUpdated": 1779376098.6267798
   },
   "Toyota|Highlander|2022": {
     "min": 24793,
     "max": 43489,
+    "score": 80,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2022/toyota/highlander",
-    "lastUpdated": 1779319909.978493
+    "lastUpdated": 1779376098.627597
   },
   "Toyota|Highlander|2023": {
     "min": 27102,
     "max": 47661,
+    "score": 78,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2023/toyota/highlander",
-    "lastUpdated": 1779319910.725441
+    "lastUpdated": 1779376098.628581
   },
   "Toyota|Highlander|2025": {
     "min": 36789,
     "max": 58866,
+    "score": 82,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2025/toyota/highlander",
-    "lastUpdated": 1779319910.6717062
+    "lastUpdated": 1779376098.629499
   },
   "Toyota|Mirai|2021": {
     "min": 9179,
     "max": 12211,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2021/toyota/mirai",
-    "lastUpdated": 1779319911.4448252
+    "lastUpdated": 1779376098.63
   },
   "Toyota|Prius Prime|2017": {
     "min": 14656,
     "max": 18493,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2017/toyota/prius-prime",
-    "lastUpdated": 1779319912.7092018
+    "lastUpdated": 1779376098.6307359
   },
   "Toyota|Prius Prime|2018": {
     "min": 16050,
     "max": 20062,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2018/toyota/prius-prime",
-    "lastUpdated": 1779319912.7716749
+    "lastUpdated": 1779376098.631469
   },
   "Toyota|Prius Prime|2019": {
     "min": 17591,
     "max": 21943,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2019/toyota/prius-prime",
-    "lastUpdated": 1779319912.864484
+    "lastUpdated": 1779376098.632224
   },
   "Toyota|Prius Prime|2020": {
     "min": 18975,
     "max": 24060,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2020/toyota/prius-prime",
-    "lastUpdated": 1779319913.374497
+    "lastUpdated": 1779376098.632912
   },
   "Toyota|Prius Prime|2021": {
     "min": 21280,
     "max": 26616,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2021/toyota/prius-prime",
-    "lastUpdated": 1779319913.2347798
+    "lastUpdated": 1779376098.63363
   },
   "Toyota|Prius Prime|2022": {
     "min": 21806,
     "max": 29095,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2022/toyota/prius-prime",
-    "lastUpdated": 1779319913.255409
+    "lastUpdated": 1779376098.634322
   },
   "Toyota|Prius v|2017": {
     "min": 15715,
     "max": 19797,
+    "score": 84,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2017/toyota/prius-v",
-    "lastUpdated": 1779319915.855606
+    "lastUpdated": 1779376098.6350489
   },
   "Toyota|Prius|2016": {
     "min": 11609,
     "max": 15235,
+    "score": 84,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2016/toyota/prius",
-    "lastUpdated": 1779319911.140619
+    "lastUpdated": 1779376098.6357849
   },
   "Toyota|Prius|2017": {
     "min": 12233,
     "max": 15960,
+    "score": 85,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2017/toyota/prius",
-    "lastUpdated": 1779319911.164227
+    "lastUpdated": 1779376098.6365728
   },
   "Toyota|Prius|2018": {
     "min": 12726,
     "max": 17736,
+    "score": 85,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2018/toyota/prius",
-    "lastUpdated": 1779319911.6922922
+    "lastUpdated": 1779376098.637355
   },
   "Toyota|Prius|2019": {
     "min": 14626,
     "max": 20513,
+    "score": 83,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2019/toyota/prius",
-    "lastUpdated": 1779319911.361046
+    "lastUpdated": 1779376098.638124
   },
   "Toyota|Prius|2020": {
     "min": 15673,
     "max": 22786,
+    "score": 77,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2020/toyota/prius",
-    "lastUpdated": 1779319912.185716
+    "lastUpdated": 1779376098.638829
   },
   "Toyota|Prius|2021": {
     "min": 17377,
     "max": 24581,
+    "score": 80,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2021/toyota/prius",
-    "lastUpdated": 1779319911.960572
+    "lastUpdated": 1779376098.6395469
   },
   "Toyota|Prius|2022": {
     "min": 17649,
     "max": 27492,
+    "score": 79,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2022/toyota/prius",
-    "lastUpdated": 1779319912.4132721
+    "lastUpdated": 1779376098.640268
   },
   "Toyota|RAV4 Hybrid|2016": {
     "min": 14594,
     "max": 18077,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2016/toyota/rav4-hybrid",
-    "lastUpdated": 1779319916.2380831
+    "lastUpdated": 1779376098.64097
   },
   "Toyota|RAV4 Hybrid|2017": {
     "min": 16919,
     "max": 21909,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2017/toyota/rav4-hybrid",
-    "lastUpdated": 1779319916.706453
+    "lastUpdated": 1779376098.641788
   },
   "Toyota|RAV4 Hybrid|2018": null,
   "Toyota|RAV4 Hybrid|2019": null,
@@ -4172,191 +5426,253 @@
   "Toyota|RAV4 Prime|2021": {
     "min": 30108,
     "max": 41632,
+    "score": 82,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2021/toyota/rav4-prime",
-    "lastUpdated": 1779319917.313438
+    "lastUpdated": 1779376098.642675
   },
   "Toyota|RAV4 Prime|2022": {
     "min": 32512,
     "max": 47235,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2022/toyota/rav4-prime",
-    "lastUpdated": 1779319917.5146399
+    "lastUpdated": 1779376098.643442
   },
   "Toyota|RAV4 Prime|2023": {
     "min": 34537,
     "max": 53008,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2023/toyota/rav4-prime",
-    "lastUpdated": 1779319919.3943622
+    "lastUpdated": 1779376098.644211
   },
   "Toyota|RAV4 Prime|2024": {
     "min": 39701,
     "max": 54519,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2024/toyota/rav4-prime",
-    "lastUpdated": 1779319918.364062
+    "lastUpdated": 1779376098.644964
   },
   "Toyota|RAV4 Prime|2025": null,
   "Toyota|RAV4|2016": {
     "min": 12768,
     "max": 17374,
+    "score": 85,
+    "mpg_city": "22-23",
     "url": "https://www.jdpower.com/cars/2016/toyota/rav4",
-    "lastUpdated": 1779319913.4957619
+    "lastUpdated": 1779376098.645665
   },
   "Toyota|RAV4|2017": {
     "min": 14598,
     "max": 23463,
+    "score": 83,
+    "mpg_city": "22-23",
     "url": "https://www.jdpower.com/cars/2017/toyota/rav4",
-    "lastUpdated": 1779319913.79949
+    "lastUpdated": 1779376098.646417
   },
   "Toyota|RAV4|2018": {
     "min": 16147,
     "max": 27028,
+    "score": 84,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2018/toyota/rav4",
-    "lastUpdated": 1779319916.087352
+    "lastUpdated": 1779376098.647265
   },
   "Toyota|RAV4|2019": {
     "min": 17097,
     "max": 28702,
+    "score": 79,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2019/toyota/rav4",
-    "lastUpdated": 1779319914.172857
+    "lastUpdated": 1779376098.6480541
   },
   "Toyota|RAV4|2020": {
     "min": 18871,
     "max": 34878,
+    "score": 78,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2020/toyota/rav4",
-    "lastUpdated": 1779319914.566078
+    "lastUpdated": 1779376098.648959
   },
   "Toyota|RAV4|2021": {
     "min": 22745,
     "max": 36868,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2021/toyota/rav4",
-    "lastUpdated": 1779319914.396512
+    "lastUpdated": 1779376098.649848
   },
   "Toyota|RAV4|2022": {
     "min": 23597,
     "max": 41811,
+    "score": 81,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2022/toyota/rav4",
-    "lastUpdated": 1779319914.704718
+    "lastUpdated": 1779376098.650694
   },
   "Toyota|RAV4|2023": {
     "min": 24773,
     "max": 44721,
+    "score": 76,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2023/toyota/rav4",
-    "lastUpdated": 1779319916.13022
+    "lastUpdated": 1779376098.6516511
   },
   "Toyota|RAV4|2024": {
     "min": 26801,
     "max": 47293,
+    "score": 79,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2024/toyota/rav4",
-    "lastUpdated": 1779319915.980442
+    "lastUpdated": 1779376098.652432
   },
   "Toyota|RAV4|2025": {
     "min": 28333,
     "max": 45285,
+    "score": 79,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2025/toyota/rav4",
-    "lastUpdated": 1779319915.993066
+    "lastUpdated": 1779376098.653383
   },
   "Toyota|Sequoia|2023": {
     "min": 51995,
     "max": 78407,
+    "score": 78,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2023/toyota/sequoia",
-    "lastUpdated": 1779319917.7595232
+    "lastUpdated": 1779376098.654392
   },
   "Toyota|Sequoia|2024": {
     "min": 56013,
     "max": 83489,
+    "score": 79,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2024/toyota/sequoia",
-    "lastUpdated": 1779319918.298902
+    "lastUpdated": 1779376098.655156
   },
   "Toyota|Sequoia|2025": {
     "min": 56738,
     "max": 91164,
+    "score": 79,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2025/toyota/sequoia",
-    "lastUpdated": 1779319918.477206
+    "lastUpdated": 1779376098.6558878
   },
   "Toyota|Sienna|2018": {
     "min": 14938,
     "max": 27008,
+    "score": 77,
+    "mpg_city": "18-19",
     "url": "https://www.jdpower.com/cars/2018/toyota/sienna",
-    "lastUpdated": 1779319918.649955
+    "lastUpdated": 1779376098.656571
   },
   "Toyota|Sienna|2019": {
     "min": 19232,
     "max": 31561,
+    "score": 78,
+    "mpg_city": "18-19",
     "url": "https://www.jdpower.com/cars/2019/toyota/sienna",
-    "lastUpdated": 1779319918.773422
+    "lastUpdated": 1779376098.657206
   },
   "Toyota|Sienna|2020": {
     "min": 22589,
     "max": 35929,
+    "score": 79,
+    "mpg_city": "18-19",
     "url": "https://www.jdpower.com/cars/2020/toyota/sienna",
-    "lastUpdated": 1779319919.8721018
+    "lastUpdated": 1779376098.658061
   },
   "Toyota|Sienna|2021": null,
   "Toyota|Sienna|2022": {
     "min": 30506,
     "max": 51640,
+    "score": 77,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2022/toyota/sienna",
-    "lastUpdated": 1779319919.907203
+    "lastUpdated": 1779376098.658842
   },
   "Toyota|Sienna|2023": {
     "min": 31083,
     "max": 56172,
+    "score": 76,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2023/toyota/sienna",
-    "lastUpdated": 1779319919.55341
+    "lastUpdated": 1779376098.659646
   },
   "Toyota|Sienna|2024": null,
   "Toyota|Sienna|2025": {
     "min": 33500,
     "max": 60184,
+    "score": 77,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2025/toyota/sienna",
-    "lastUpdated": 1779319919.722645
+    "lastUpdated": 1779376098.660424
   },
   "Toyota|Tundra|2022": {
     "min": 27600,
     "max": 54958,
+    "score": 74,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2022/toyota/tundra",
-    "lastUpdated": 1779319919.75833
+    "lastUpdated": 1779376098.661349
   },
   "Toyota|Tundra|2023": {
     "min": 28492,
     "max": 59172,
+    "score": 80,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2023/toyota/tundra",
-    "lastUpdated": 1779319920.842688
+    "lastUpdated": 1779376098.662205
   },
   "Toyota|Tundra|2024": {
     "min": 31065,
     "max": 70183,
+    "score": 81,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2024/toyota/tundra",
-    "lastUpdated": 1779319921.402602
+    "lastUpdated": 1779376098.663007
   },
   "Toyota|Tundra|2025": {
     "min": 34595,
     "max": 71899,
+    "score": 82,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2025/toyota/tundra",
-    "lastUpdated": 1779319921.141655
+    "lastUpdated": 1779376098.663858
   },
   "Toyota|Venza|2021": {
     "min": 23341,
     "max": 30123,
+    "score": 81,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2021/toyota/venza",
-    "lastUpdated": 1779319921.174691
+    "lastUpdated": 1779376098.664644
   },
   "Toyota|Venza|2022": {
     "min": 24082,
     "max": 32637,
+    "score": 81,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2022/toyota/venza",
-    "lastUpdated": 1779319921.246229
+    "lastUpdated": 1779376098.66534
   },
   "Toyota|Venza|2023": {
     "min": 26828,
     "max": 38394,
+    "score": 78,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2023/toyota/venza",
-    "lastUpdated": 1779319921.153177
+    "lastUpdated": 1779376098.666071
   },
   "Toyota|Venza|2024": {
     "min": 28893,
     "max": 42531,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2024/toyota/venza",
-    "lastUpdated": 1779319922.6924129
+    "lastUpdated": 1779376098.666827
   },
   "Toyota|Venza|2025": null,
   "Toyota|Yaris (Non-US only)|2020": null,
@@ -4364,20 +5680,26 @@
   "Toyota|bZ4x|2023": {
     "min": 17489,
     "max": 25151,
+    "score": 74,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2023/toyota/bz4x",
-    "lastUpdated": 1779319923.406819
+    "lastUpdated": 1779376098.66769
   },
   "Toyota|bZ4x|2024": {
     "min": 19459,
     "max": 26250,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2024/toyota/bz4x",
-    "lastUpdated": 1779319923.593887
+    "lastUpdated": 1779376098.668412
   },
   "Toyota|bZ4x|2025": {
     "min": 34127,
     "max": 47333,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2025/toyota/bz4x",
-    "lastUpdated": 1779319923.5243149
+    "lastUpdated": 1779376098.669177
   },
   "Volkswagen|Arteon R|2020": null,
   "Volkswagen|Arteon R|2021": null,
@@ -4395,86 +5717,114 @@
   "Volkswagen|Arteon|2019": {
     "min": 13423,
     "max": 20974,
+    "score": null,
+    "mpg_city": "20-22",
     "url": "https://www.jdpower.com/cars/2019/volkswagen/arteon",
-    "lastUpdated": 1779319923.40643
+    "lastUpdated": 1779376098.6699038
   },
   "Volkswagen|Arteon|2020": {
     "min": 15154,
     "max": 23803,
+    "score": null,
+    "mpg_city": "20-22",
     "url": "https://www.jdpower.com/cars/2020/volkswagen/arteon",
-    "lastUpdated": 1779319923.326256
+    "lastUpdated": 1779376098.670578
   },
   "Volkswagen|Arteon|2021": {
     "min": 18101,
     "max": 25607,
+    "score": null,
+    "mpg_city": "20-22",
     "url": "https://www.jdpower.com/cars/2021/volkswagen/arteon",
-    "lastUpdated": 1779319923.908677
+    "lastUpdated": 1779376098.671275
   },
   "Volkswagen|Arteon|2022": {
     "min": 21154,
     "max": 29746,
+    "score": null,
+    "mpg_city": "22-24",
     "url": "https://www.jdpower.com/cars/2022/volkswagen/arteon",
-    "lastUpdated": 1779319924.767672
+    "lastUpdated": 1779376098.6720388
   },
   "Volkswagen|Arteon|2023": {
     "min": 23721,
     "max": 35222,
+    "score": null,
+    "mpg_city": "22-25",
     "url": "https://www.jdpower.com/cars/2023/volkswagen/arteon",
-    "lastUpdated": 1779319924.425795
+    "lastUpdated": 1779376098.6727412
   },
   "Volkswagen|Atlas Cross Sport|2020": {
     "min": 13006,
     "max": 25630,
+    "score": null,
+    "mpg_city": "16-21",
     "url": "https://www.jdpower.com/cars/2020/volkswagen/atlas-cross-sport",
-    "lastUpdated": 1779319926.86671
+    "lastUpdated": 1779376098.673712
   },
   "Volkswagen|Atlas Cross Sport|2021": {
     "min": 15593,
     "max": 29116,
+    "score": null,
+    "mpg_city": "17-21",
     "url": "https://www.jdpower.com/cars/2021/volkswagen/atlas-cross-sport",
-    "lastUpdated": 1779319926.377739
+    "lastUpdated": 1779376098.674474
   },
   "Volkswagen|Atlas Cross Sport|2022": {
     "min": 17402,
     "max": 32131,
+    "score": null,
+    "mpg_city": "18-21",
     "url": "https://www.jdpower.com/cars/2022/volkswagen/atlas-cross-sport",
-    "lastUpdated": 1779319926.2097762
+    "lastUpdated": 1779376098.675245
   },
   "Volkswagen|Atlas|2018": {
     "min": 9561,
     "max": 16916,
+    "score": 73,
+    "mpg_city": "17-22",
     "url": "https://www.jdpower.com/cars/2018/volkswagen/atlas",
-    "lastUpdated": 1779319925.626248
+    "lastUpdated": 1779376098.6759481
   },
   "Volkswagen|Atlas|2019": {
     "min": 11841,
     "max": 20665,
+    "score": 75,
+    "mpg_city": "17-20",
     "url": "https://www.jdpower.com/cars/2019/volkswagen/atlas",
-    "lastUpdated": 1779319925.690634
+    "lastUpdated": 1779376098.676703
   },
   "Volkswagen|Atlas|2020": {
     "min": 13576,
     "max": 25744,
+    "score": null,
+    "mpg_city": "16-20",
     "url": "https://www.jdpower.com/cars/2020/volkswagen/atlas",
-    "lastUpdated": 1779319925.817746
+    "lastUpdated": 1779376098.677485
   },
   "Volkswagen|Atlas|2021": {
     "min": 15855,
     "max": 30954,
+    "score": 73,
+    "mpg_city": "16-21",
     "url": "https://www.jdpower.com/cars/2021/volkswagen/atlas",
-    "lastUpdated": 1779319925.5945961
+    "lastUpdated": 1779376098.67825
   },
   "Volkswagen|Atlas|2022": {
     "min": 18043,
     "max": 34197,
+    "score": 73,
+    "mpg_city": "17-21",
     "url": "https://www.jdpower.com/cars/2022/volkswagen/atlas",
-    "lastUpdated": 1779319925.549264
+    "lastUpdated": 1779376098.6789892
   },
   "Volkswagen|Atlas|2023": {
     "min": 21561,
     "max": 38029,
+    "score": 77,
+    "mpg_city": "18-21",
     "url": "https://www.jdpower.com/cars/2023/volkswagen/atlas",
-    "lastUpdated": 1779319925.53642
+    "lastUpdated": 1779376098.679701
   },
   "Volkswagen|CC|2018": null,
   "Volkswagen|CC|2019": null,
@@ -4500,20 +5850,26 @@
   "Volkswagen|Golf Alltrack|2017": {
     "min": 12742,
     "max": 17288,
+    "score": null,
+    "mpg_city": "22",
     "url": "https://www.jdpower.com/cars/2017/volkswagen/golf-alltrack",
-    "lastUpdated": 1779319928.5728629
+    "lastUpdated": 1779376098.680369
   },
   "Volkswagen|Golf Alltrack|2018": {
     "min": 14843,
     "max": 20564,
+    "score": null,
+    "mpg_city": "21-22",
     "url": "https://www.jdpower.com/cars/2018/volkswagen/golf-alltrack",
-    "lastUpdated": 1779319929.5227
+    "lastUpdated": 1779376098.6810439
   },
   "Volkswagen|Golf Alltrack|2019": {
     "min": 16057,
     "max": 21364,
+    "score": null,
+    "mpg_city": "21-22",
     "url": "https://www.jdpower.com/cars/2019/volkswagen/golf-alltrack",
-    "lastUpdated": 1779319928.699706
+    "lastUpdated": 1779376098.6816819
   },
   "Volkswagen|Golf GTD|2015": null,
   "Volkswagen|Golf GTD|2016": null,
@@ -4530,74 +5886,98 @@
   "Volkswagen|Golf GTI|2015": {
     "min": 8068,
     "max": 10685,
+    "score": null,
+    "mpg_city": "25",
     "url": "https://www.jdpower.com/cars/2015/volkswagen/golf-gti",
-    "lastUpdated": 1779319930.2303119
+    "lastUpdated": 1779376098.6824121
   },
   "Volkswagen|Golf GTI|2016": {
     "min": 8869,
     "max": 12063,
+    "score": null,
+    "mpg_city": "25",
     "url": "https://www.jdpower.com/cars/2016/volkswagen/golf-gti",
-    "lastUpdated": 1779319930.1708522
+    "lastUpdated": 1779376098.683059
   },
   "Volkswagen|Golf GTI|2017": {
     "min": 10575,
     "max": 14993,
+    "score": null,
+    "mpg_city": "24",
     "url": "https://www.jdpower.com/cars/2017/volkswagen/golf-gti",
-    "lastUpdated": 1779319930.104702
+    "lastUpdated": 1779376098.683716
   },
   "Volkswagen|Golf GTI|2018": {
     "min": 12728,
     "max": 17839,
+    "score": null,
+    "mpg_city": "24-25",
     "url": "https://www.jdpower.com/cars/2018/volkswagen/golf-gti",
-    "lastUpdated": 1779319930.269891
+    "lastUpdated": 1779376098.684443
   },
   "Volkswagen|Golf GTI|2019": {
     "min": 15049,
     "max": 20611,
+    "score": null,
+    "mpg_city": "24-25",
     "url": "https://www.jdpower.com/cars/2019/volkswagen/golf-gti",
-    "lastUpdated": 1779319930.700646
+    "lastUpdated": 1779376098.6851149
   },
   "Volkswagen|Golf GTI|2020": {
     "min": 16371,
     "max": 22410,
+    "score": null,
+    "mpg_city": "24",
     "url": "https://www.jdpower.com/cars/2020/volkswagen/golf-gti",
-    "lastUpdated": 1779319930.6636631
+    "lastUpdated": 1779376098.685775
   },
   "Volkswagen|Golf GTI|2021": {
     "min": 18510,
     "max": 24695,
+    "score": null,
+    "mpg_city": "23-24",
     "url": "https://www.jdpower.com/cars/2021/volkswagen/golf-gti",
-    "lastUpdated": 1779319931.716735
+    "lastUpdated": 1779376098.686424
   },
   "Volkswagen|Golf R|2015": {
     "min": 14177,
     "max": 16095,
+    "score": null,
+    "mpg_city": "23",
     "url": "https://www.jdpower.com/cars/2015/volkswagen/golf-r",
-    "lastUpdated": 1779319931.869122
+    "lastUpdated": 1779376098.687104
   },
   "Volkswagen|Golf R|2016": {
     "min": 15542,
     "max": 17571,
+    "score": null,
+    "mpg_city": "22-23",
     "url": "https://www.jdpower.com/cars/2016/volkswagen/golf-r",
-    "lastUpdated": 1779319931.582953
+    "lastUpdated": 1779376098.687724
   },
   "Volkswagen|Golf R|2017": {
     "min": 17876,
     "max": 20364,
+    "score": null,
+    "mpg_city": "22-23",
     "url": "https://www.jdpower.com/cars/2017/volkswagen/golf-r",
-    "lastUpdated": 1779319931.093505
+    "lastUpdated": 1779376098.688388
   },
   "Volkswagen|Golf R|2018": {
     "min": 19964,
     "max": 22556,
+    "score": null,
+    "mpg_city": "21-22",
     "url": "https://www.jdpower.com/cars/2018/volkswagen/golf-r",
-    "lastUpdated": 1779319931.9185789
+    "lastUpdated": 1779376098.689023
   },
   "Volkswagen|Golf R|2019": {
     "min": 22545,
     "max": 25308,
+    "score": null,
+    "mpg_city": "21-23",
     "url": "https://www.jdpower.com/cars/2019/volkswagen/golf-r",
-    "lastUpdated": 1779319931.7767
+    "lastUpdated": 1779376098.689734
   },
   "Volkswagen|Golf SportsVan|2015": null,
   "Volkswagen|Golf SportsVan|2016": null,
@@ -4608,38 +5988,50 @@
   "Volkswagen|Golf|2015": {
     "min": 8063,
     "max": 11141,
+    "score": 78,
+    "mpg_city": "25-31",
     "url": "https://www.jdpower.com/cars/2015/volkswagen/golf",
-    "lastUpdated": 1779319927.913425
+    "lastUpdated": 1779376098.690453
   },
   "Volkswagen|Golf|2016": {
     "min": 8557,
     "max": 11662,
+    "score": 77,
+    "mpg_city": "25",
     "url": "https://www.jdpower.com/cars/2016/volkswagen/golf",
-    "lastUpdated": 1779319927.943233
+    "lastUpdated": 1779376098.691157
   },
   "Volkswagen|Golf|2017": {
     "min": 9931,
     "max": 12585,
+    "score": 81,
+    "mpg_city": "25",
     "url": "https://www.jdpower.com/cars/2017/volkswagen/golf",
-    "lastUpdated": 1779319929.3091562
+    "lastUpdated": 1779376098.6918468
   },
   "Volkswagen|Golf|2018": {
     "min": 10278,
     "max": 12862,
+    "score": 86,
+    "mpg_city": "24-25",
     "url": "https://www.jdpower.com/cars/2018/volkswagen/golf",
-    "lastUpdated": 1779319927.623619
+    "lastUpdated": 1779376098.692519
   },
   "Volkswagen|Golf|2019": {
     "min": 11276,
     "max": 13664,
+    "score": 85,
+    "mpg_city": "29",
     "url": "https://www.jdpower.com/cars/2019/volkswagen/golf",
-    "lastUpdated": 1779319927.937933
+    "lastUpdated": 1779376098.693177
   },
   "Volkswagen|Golf|2020": {
     "min": 13300,
     "max": 15022,
+    "score": null,
+    "mpg_city": "28-29",
     "url": "https://www.jdpower.com/cars/2020/volkswagen/golf",
-    "lastUpdated": 1779319927.921771
+    "lastUpdated": 1779376098.693884
   },
   "Volkswagen|Grand California|2019": null,
   "Volkswagen|Grand California|2020": null,
@@ -4650,86 +6042,114 @@
   "Volkswagen|Jetta GLI|2021": {
     "min": 16569,
     "max": 20396,
+    "score": 76,
+    "mpg_city": "24",
     "url": "https://www.jdpower.com/cars/2021/volkswagen/jetta-gli",
-    "lastUpdated": 1779319934.483357
+    "lastUpdated": 1779376098.6945589
   },
   "Volkswagen|Jetta GLI|2022": {
     "min": 19929,
     "max": 23620,
+    "score": null,
+    "mpg_city": "26",
     "url": "https://www.jdpower.com/cars/2022/volkswagen/jetta-gli",
-    "lastUpdated": 1779319934.819339
+    "lastUpdated": 1779376098.695314
   },
   "Volkswagen|Jetta GLI|2023": {
     "min": 22173,
     "max": 26634,
+    "score": null,
+    "mpg_city": "26",
     "url": "https://www.jdpower.com/cars/2023/volkswagen/jetta-gli",
-    "lastUpdated": 1779319934.779569
+    "lastUpdated": 1779376098.695949
   },
   "Volkswagen|Jetta GLI|2024": {
     "min": 20674,
     "max": 28376,
+    "score": null,
+    "mpg_city": "26",
     "url": "https://www.jdpower.com/cars/2024/volkswagen/jetta-gli",
-    "lastUpdated": 1779319934.9921112
+    "lastUpdated": 1779376098.6965928
   },
   "Volkswagen|Jetta|2015": {
     "min": 7030,
     "max": 10605,
+    "score": 79,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2015/volkswagen/jetta",
-    "lastUpdated": 1779319932.988467
+    "lastUpdated": 1779376098.697381
   },
   "Volkswagen|Jetta|2016": {
     "min": 7388,
     "max": 10916,
+    "score": 83,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2016/volkswagen/jetta",
-    "lastUpdated": 1779319932.9199512
+    "lastUpdated": 1779376098.698267
   },
   "Volkswagen|Jetta|2017": {
     "min": 7989,
     "max": 12228,
+    "score": 86,
+    "mpg_city": "23-28",
     "url": "https://www.jdpower.com/cars/2017/volkswagen/jetta",
-    "lastUpdated": 1779319932.9091132
+    "lastUpdated": 1779376098.69898
   },
   "Volkswagen|Jetta|2018": {
     "min": 8918,
     "max": 13730,
+    "score": 87,
+    "mpg_city": "24-28",
     "url": "https://www.jdpower.com/cars/2018/volkswagen/jetta",
-    "lastUpdated": 1779319933.679584
+    "lastUpdated": 1779376098.699712
   },
   "Volkswagen|Jetta|2019": {
     "min": 11241,
     "max": 14267,
+    "score": 82,
+    "mpg_city": "30",
     "url": "https://www.jdpower.com/cars/2019/volkswagen/jetta",
-    "lastUpdated": 1779319933.7041721
+    "lastUpdated": 1779376098.700438
   },
   "Volkswagen|Jetta|2020": {
     "min": 11917,
     "max": 16440,
+    "score": 86,
+    "mpg_city": "30",
     "url": "https://www.jdpower.com/cars/2020/volkswagen/jetta",
-    "lastUpdated": 1779319933.7377448
+    "lastUpdated": 1779376098.7011478
   },
   "Volkswagen|Jetta|2021": {
     "min": 12866,
     "max": 18329,
+    "score": null,
+    "mpg_city": "29-30",
     "url": "https://www.jdpower.com/cars/2021/volkswagen/jetta",
-    "lastUpdated": 1779319933.800092
+    "lastUpdated": 1779376098.701893
   },
   "Volkswagen|Jetta|2022": {
     "min": 14882,
     "max": 21516,
+    "score": null,
+    "mpg_city": "29-31",
     "url": "https://www.jdpower.com/cars/2022/volkswagen/jetta",
-    "lastUpdated": 1779319935.459658
+    "lastUpdated": 1779376098.702643
   },
   "Volkswagen|Jetta|2023": {
     "min": 15629,
     "max": 23039,
+    "score": 78,
+    "mpg_city": "29-31",
     "url": "https://www.jdpower.com/cars/2023/volkswagen/jetta",
-    "lastUpdated": 1779319934.987214
+    "lastUpdated": 1779376098.703299
   },
   "Volkswagen|Jetta|2024": {
     "min": 16771,
     "max": 25803,
+    "score": 78,
+    "mpg_city": "29-30",
     "url": "https://www.jdpower.com/cars/2024/volkswagen/jetta",
-    "lastUpdated": 1779319934.399136
+    "lastUpdated": 1779376098.703969
   },
   "Volkswagen|Passat Alltrack|2015": null,
   "Volkswagen|Passat Alltrack|2016": null,
@@ -4756,50 +6176,66 @@
   "Volkswagen|Passat|2015": {
     "min": 7598,
     "max": 10981,
+    "score": 79,
+    "mpg_city": "20-30",
     "url": "https://www.jdpower.com/cars/2015/volkswagen/passat",
-    "lastUpdated": 1779319935.378986
+    "lastUpdated": 1779376098.704683
   },
   "Volkswagen|Passat|2016": {
     "min": 8525,
     "max": 13301,
+    "score": 84,
+    "mpg_city": "20-25",
     "url": "https://www.jdpower.com/cars/2016/volkswagen/passat",
-    "lastUpdated": 1779319935.489161
+    "lastUpdated": 1779376098.705292
   },
   "Volkswagen|Passat|2017": {
     "min": 10430,
     "max": 15701,
+    "score": 87,
+    "mpg_city": "20-23",
     "url": "https://www.jdpower.com/cars/2017/volkswagen/passat",
-    "lastUpdated": 1779319935.487689
+    "lastUpdated": 1779376098.705917
   },
   "Volkswagen|Passat|2018": {
     "min": 10731,
     "max": 17191,
+    "score": 83,
+    "mpg_city": "19-25",
     "url": "https://www.jdpower.com/cars/2018/volkswagen/passat",
-    "lastUpdated": 1779319935.998882
+    "lastUpdated": 1779376098.706602
   },
   "Volkswagen|Passat|2019": {
     "min": 11697,
     "max": 15256,
+    "score": 87,
+    "mpg_city": "25",
     "url": "https://www.jdpower.com/cars/2019/volkswagen/passat",
-    "lastUpdated": 1779319935.877573
+    "lastUpdated": 1779376098.707358
   },
   "Volkswagen|Passat|2020": {
     "min": 12235,
     "max": 16807,
+    "score": 85,
+    "mpg_city": "23",
     "url": "https://www.jdpower.com/cars/2020/volkswagen/passat",
-    "lastUpdated": 1779319936.182209
+    "lastUpdated": 1779376098.708019
   },
   "Volkswagen|Passat|2021": {
     "min": 13197,
     "max": 18994,
+    "score": null,
+    "mpg_city": "24",
     "url": "https://www.jdpower.com/cars/2021/volkswagen/passat",
-    "lastUpdated": 1779319936.190482
+    "lastUpdated": 1779376098.708687
   },
   "Volkswagen|Passat|2022": {
     "min": 17004,
     "max": 21629,
+    "score": null,
+    "mpg_city": "24",
     "url": "https://www.jdpower.com/cars/2022/volkswagen/passat",
-    "lastUpdated": 1779319936.2101288
+    "lastUpdated": 1779376098.7093592
   },
   "Volkswagen|Polo GTI|2018": null,
   "Volkswagen|Polo GTI|2019": null,
@@ -4828,20 +6264,26 @@
   "Volkswagen|Taos|2022": {
     "min": 13687,
     "max": 22546,
+    "score": 76,
+    "mpg_city": "25-28",
     "url": "https://www.jdpower.com/cars/2022/volkswagen/taos",
-    "lastUpdated": 1779319938.467202
+    "lastUpdated": 1779376098.710128
   },
   "Volkswagen|Taos|2023": {
     "min": 17697,
     "max": 27733,
+    "score": 77,
+    "mpg_city": "25-28",
     "url": "https://www.jdpower.com/cars/2023/volkswagen/taos",
-    "lastUpdated": 1779319938.477908
+    "lastUpdated": 1779376098.7107909
   },
   "Volkswagen|Taos|2024": {
     "min": 18451,
     "max": 31192,
+    "score": 79,
+    "mpg_city": "24-28",
     "url": "https://www.jdpower.com/cars/2024/volkswagen/taos",
-    "lastUpdated": 1779319938.5014899
+    "lastUpdated": 1779376098.711458
   },
   "Volkswagen|Teramont Cross Sport|2021": null,
   "Volkswagen|Teramont Cross Sport|2022": null,
@@ -4858,44 +6300,58 @@
   "Volkswagen|Tiguan|2018": {
     "min": 8912,
     "max": 15521,
+    "score": 77,
+    "mpg_city": "21-22",
     "url": "https://www.jdpower.com/cars/2018/volkswagen/tiguan",
-    "lastUpdated": 1779319939.481312
+    "lastUpdated": 1779376098.7122738
   },
   "Volkswagen|Tiguan|2019": {
     "min": 10591,
     "max": 17239,
+    "score": 81,
+    "mpg_city": "21-22",
     "url": "https://www.jdpower.com/cars/2019/volkswagen/tiguan",
-    "lastUpdated": 1779319939.5124202
+    "lastUpdated": 1779376098.7129412
   },
   "Volkswagen|Tiguan|2020": {
     "min": 11634,
     "max": 20351,
+    "score": 79,
+    "mpg_city": "20-22",
     "url": "https://www.jdpower.com/cars/2020/volkswagen/tiguan",
-    "lastUpdated": 1779319939.6146402
+    "lastUpdated": 1779376098.713749
   },
   "Volkswagen|Tiguan|2021": {
     "min": 14536,
     "max": 25479,
+    "score": 76,
+    "mpg_city": "21-23",
     "url": "https://www.jdpower.com/cars/2021/volkswagen/tiguan",
-    "lastUpdated": 1779319939.584907
+    "lastUpdated": 1779376098.714426
   },
   "Volkswagen|Tiguan|2022": {
     "min": 15452,
     "max": 25420,
+    "score": 77,
+    "mpg_city": "21-23",
     "url": "https://www.jdpower.com/cars/2022/volkswagen/tiguan",
-    "lastUpdated": 1779319939.482023
+    "lastUpdated": 1779376098.715125
   },
   "Volkswagen|Tiguan|2023": {
     "min": 16906,
     "max": 32100,
+    "score": 77,
+    "mpg_city": "21-24",
     "url": "https://www.jdpower.com/cars/2023/volkswagen/tiguan",
-    "lastUpdated": 1779319939.745752
+    "lastUpdated": 1779376098.7157938
   },
   "Volkswagen|Tiguan|2024": {
     "min": 18977,
     "max": 34745,
+    "score": 80,
+    "mpg_city": "22-23",
     "url": "https://www.jdpower.com/cars/2024/volkswagen/tiguan",
-    "lastUpdated": 1779319940.0805771
+    "lastUpdated": 1779376098.716584
   },
   "Volkswagen|Touran|2016": null,
   "Volkswagen|Touran|2017": null,
@@ -4916,32 +6372,42 @@
   "Volkswagen|e-Golf|2015": {
     "min": 5680,
     "max": 6875,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2015/volkswagen/e-golf",
-    "lastUpdated": 1779319941.053652
+    "lastUpdated": 1779376098.717314
   },
   "Volkswagen|e-Golf|2016": {
     "min": 6008,
     "max": 7499,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2016/volkswagen/e-golf",
-    "lastUpdated": 1779319941.023357
+    "lastUpdated": 1779376098.7180521
   },
   "Volkswagen|e-Golf|2017": {
     "min": 6544,
     "max": 8012,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2017/volkswagen/e-golf",
-    "lastUpdated": 1779319941.25975
+    "lastUpdated": 1779376098.71876
   },
   "Volkswagen|e-Golf|2018": {
     "min": 8619,
     "max": 10788,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2018/volkswagen/e-golf",
-    "lastUpdated": 1779319941.545999
+    "lastUpdated": 1779376098.7195032
   },
   "Volkswagen|e-Golf|2019": {
     "min": 9307,
     "max": 12347,
+    "score": null,
+    "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2019/volkswagen/e-golf",
-    "lastUpdated": 1779319941.230617
+    "lastUpdated": 1779376098.720195
   },
   "Volkswagen|e-Golf|2020": null
 }

@@ -7,6 +7,8 @@
     "recalls": 5,
     "tsbs": 168,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Accelerates When Braking in the 2016 Acura ILX",
       "Transmission Slips/Jerks in the 2016 Acura ILX",
@@ -20,6 +22,8 @@
     "recalls": 3,
     "tsbs": 128,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Battery Drains After Sitting A Few Days in the 2017 Acura ILX",
       "Ignition/Starting Problems in the 2017 Acura ILX",
@@ -33,6 +37,8 @@
     "recalls": 3,
     "tsbs": 87,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Axle Disconnected From Shaft in the 2018 Acura ILX",
       "Battery Drain in the 2018 Acura ILX",
@@ -46,6 +52,8 @@
     "recalls": 4,
     "tsbs": 103,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -55,6 +63,8 @@
     "recalls": 2,
     "tsbs": 5,
     "investigations": 1,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Steering Wheel Seems To Lock Up /Sticky in the 2023 Acura Integra"
     ],
@@ -73,6 +83,8 @@
     "recalls": 7,
     "tsbs": 391,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Paint Issues in the 2014 Acura MDX",
       "Either Stalls Or Lurches On Light Acceleration in the 2014 Acura MDX",
@@ -86,6 +98,8 @@
     "recalls": 6,
     "tsbs": 363,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Paint Is Peeling in the 2015 Acura MDX",
       "Extremely Uncomfortable Seats in the 2015 Acura MDX",
@@ -99,6 +113,8 @@
     "recalls": 5,
     "tsbs": 517,
     "investigations": 1,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Transmission Shifts Erratically in the 2016 Acura MDX",
       "Engine Makes Rattling Noise in the 2016 Acura MDX",
@@ -112,6 +128,8 @@
     "recalls": 5,
     "tsbs": 343,
     "investigations": 1,
+    "crash_tests": 3,
+    "lemon_law": null,
     "top_problems": [
       "Poor Acceleration, Hesitation in the 2017 Acura MDX",
       "Automatic Braking Malfunction in the 2017 Acura MDX",
@@ -125,6 +143,8 @@
     "recalls": 7,
     "tsbs": 194,
     "investigations": 1,
+    "crash_tests": 3,
+    "lemon_law": null,
     "top_problems": [
       "All Electric Warning Problem Lights Lit Up For No Reason in the 2018 Acura MDX",
       "Died While Driving in the 2018 Acura MDX",
@@ -138,6 +158,8 @@
     "recalls": 6,
     "tsbs": 186,
     "investigations": 1,
+    "crash_tests": 3,
+    "lemon_law": null,
     "top_problems": [
       "Cruise Control Radar Sensor Failure in the 2019 Acura MDX",
       "Paint On Rear Hatch in the 2019 Acura MDX",
@@ -151,6 +173,8 @@
     "recalls": 6,
     "tsbs": 163,
     "investigations": 3,
+    "crash_tests": 3,
+    "lemon_law": null,
     "top_problems": [
       "Dead Battery in the 2020 Acura MDX",
       "Trans Failure. Car Did Not Start. Many Warning Lights in the 2020 Acura MDX",
@@ -164,6 +188,8 @@
     "recalls": 1,
     "tsbs": 334,
     "investigations": 1,
+    "crash_tests": 3,
+    "lemon_law": null,
     "top_problems": [
       "Gas Pedal Vibration When Driving in the 2022 Acura MDX",
       "Rocks Stuck In Brakes in the 2022 Acura MDX",
@@ -177,6 +203,8 @@
     "recalls": null,
     "tsbs": 124,
     "investigations": 1,
+    "crash_tests": 3,
+    "lemon_law": null,
     "top_problems": [
       "Whine / Gear Grinding in the 2023 Acura MDX",
       "Charging Pad Overheats And Will Drop Connection With Screen in the 2023 Acura MDX",
@@ -190,6 +218,8 @@
     "recalls": null,
     "tsbs": 28,
     "investigations": 1,
+    "crash_tests": 3,
+    "lemon_law": null,
     "top_problems": [
       "Rear Brake Squeal in the 2024 Acura MDX"
     ],
@@ -201,6 +231,8 @@
     "recalls": 1,
     "tsbs": null,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -211,6 +243,8 @@
     "recalls": 2,
     "tsbs": 240,
     "investigations": 1,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Brake Squealing in the 2016 Acura RDX",
       "Won't Start in the 2016 Acura RDX",
@@ -224,6 +258,8 @@
     "recalls": 1,
     "tsbs": 176,
     "investigations": 1,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Navigation System Not Working Properly in the 2017 Acura RDX",
       "Warped Brake Rotors in the 2017 Acura RDX",
@@ -237,6 +273,8 @@
     "recalls": 1,
     "tsbs": 81,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Transmission Shudder in the 2018 Acura RDX",
       "Acura Link Failure Despite Paying Full Subscription in the 2018 Acura RDX",
@@ -250,6 +288,8 @@
     "recalls": 4,
     "tsbs": 329,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Brakes Squeak in the 2019 Acura RDX",
       "Lost Acceleration &quot;Limp Mode&quot; in the 2019 Acura RDX",
@@ -263,6 +303,8 @@
     "recalls": 4,
     "tsbs": 369,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Lost Acceleration In &quot;Limp Home&quot; Mode in the 2020 Acura RDX",
       "Brakes Grind And Squeal in the 2020 Acura RDX",
@@ -276,6 +318,8 @@
     "recalls": 2,
     "tsbs": 302,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Engine Stalled When Accelerating in the 2021 Acura RDX",
       "Rear Windshield Shatter With No External Impact in the 2021 Acura RDX",
@@ -289,6 +333,8 @@
     "recalls": 1,
     "tsbs": 215,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -298,6 +344,8 @@
     "recalls": 1,
     "tsbs": 57,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Audio System No Fm Or Xm Connection in the 2023 Acura RDX",
       "Youtube Music From My Phone Is Skipping On My Bluetooth in the 2023 Acura RDX",
@@ -311,6 +359,8 @@
     "recalls": 1,
     "tsbs": 8,
     "investigations": null,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -320,6 +370,8 @@
     "recalls": null,
     "tsbs": null,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Pebbles Impact/Puncture A/C Condenser The Refrigerant Leaks in the 2025 Acura RDX"
     ],
@@ -332,6 +384,8 @@
     "recalls": null,
     "tsbs": 70,
     "investigations": 2,
+    "crash_tests": 3,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -341,6 +395,8 @@
     "recalls": 6,
     "tsbs": 645,
     "investigations": 1,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Jerks Between Gears in the 2015 Acura TLX",
       "Transmission Jerkiness In Stop And Go Traffic in the 2015 Acura TLX",
@@ -354,6 +410,8 @@
     "recalls": 3,
     "tsbs": 373,
     "investigations": 1,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Transmission Jerks in the 2016 Acura TLX",
       "ABS Failure in the 2016 Acura TLX",
@@ -367,6 +425,8 @@
     "recalls": 3,
     "tsbs": 213,
     "investigations": 1,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Car Lurches Forward When Coming To A Stop in the 2017 Acura TLX",
       "Jerking Between Gears in the 2017 Acura TLX",
@@ -380,6 +440,8 @@
     "recalls": 3,
     "tsbs": 149,
     "investigations": 1,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Electronic Power Steering Failed in the 2018 Acura TLX",
       "Calls 911 By Itself in the 2018 Acura TLX",
@@ -393,6 +455,8 @@
     "recalls": 5,
     "tsbs": 103,
     "investigations": 1,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Seats Are Terribly Designed And Painful in the 2019 Acura TLX",
       "Infotainment in the 2019 Acura TLX"
@@ -405,6 +469,8 @@
     "recalls": 4,
     "tsbs": 77,
     "investigations": 1,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Passenger Seat Buckling in the 2020 Acura TLX",
       "Difficult To Latch Front Seat Belt in the 2020 Acura TLX"
@@ -417,6 +483,8 @@
     "recalls": 2,
     "tsbs": 129,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Transmission Failed in the 2021 Acura TLX",
       "Excessive Moisture Inside in the 2021 Acura TLX",
@@ -430,6 +498,8 @@
     "recalls": 2,
     "tsbs": 78,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -439,6 +509,8 @@
     "recalls": 1,
     "tsbs": 18,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Car Knocked/Jumped When The Speed Go Down To 28 Mph in the 2023 Acura TLX",
       "Noise Whilst At 62 Mph (100 Km/H) in the 2023 Acura TLX"
@@ -451,6 +523,8 @@
     "recalls": null,
     "tsbs": null,
     "investigations": null,
+    "crash_tests": null,
+    "lemon_law": null,
     "top_problems": [
       "Hood Gap Uneven in the 2024 Acura TLX"
     ],
@@ -466,6 +540,8 @@
     "recalls": null,
     "tsbs": 454,
     "investigations": null,
+    "crash_tests": null,
+    "lemon_law": null,
     "top_problems": [
       "Panel Fell Off in the 2014 Audi A3"
     ],
@@ -477,6 +553,8 @@
     "recalls": 2,
     "tsbs": 553,
     "investigations": 1,
+    "crash_tests": 3,
+    "lemon_law": null,
     "top_problems": [
       "Excessive Oil Consumption in the 2015 Audi A3",
       "Transmission Warning Light in the 2015 Audi A3",
@@ -490,6 +568,8 @@
     "recalls": 3,
     "tsbs": 410,
     "investigations": 1,
+    "crash_tests": 5,
+    "lemon_law": null,
     "top_problems": [
       "Jerks And Hesitates in the 2016 Audi A3",
       "Water Leaking In in the 2016 Audi A3",
@@ -503,6 +583,8 @@
     "recalls": 2,
     "tsbs": 504,
     "investigations": 1,
+    "crash_tests": 6,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -512,6 +594,8 @@
     "recalls": 2,
     "tsbs": 549,
     "investigations": 1,
+    "crash_tests": 4,
+    "lemon_law": null,
     "top_problems": [
       "Low Quality Microphone in the 2018 Audi A3"
     ],
@@ -523,6 +607,8 @@
     "recalls": 3,
     "tsbs": 542,
     "investigations": 1,
+    "crash_tests": 4,
+    "lemon_law": null,
     "top_problems": [
       "Catastrophic Engine Failure in the 2019 Audi A3"
     ],
@@ -534,6 +620,8 @@
     "recalls": null,
     "tsbs": 361,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Clicking Sound While Driving in the 2016 Audi A4",
       "Vehicle Will Not Track Straight At Highway Speeds in the 2016 Audi A4",
@@ -547,6 +635,8 @@
     "recalls": 1,
     "tsbs": 675,
     "investigations": null,
+    "crash_tests": 3,
+    "lemon_law": null,
     "top_problems": [
       "Transmission Leak in the 2017 Audi A4",
       "The Thermostat Housing And Water Pump Leaking in the 2017 Audi A4",
@@ -560,6 +650,8 @@
     "recalls": 1,
     "tsbs": 693,
     "investigations": null,
+    "crash_tests": 4,
+    "lemon_law": null,
     "top_problems": [
       "Severe Hesitation When Accelerating From A Dead Stop in the 2018 Audi A4"
     ],
@@ -571,6 +663,8 @@
     "recalls": 1,
     "tsbs": 739,
     "investigations": null,
+    "crash_tests": 5,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -580,6 +674,8 @@
     "recalls": 3,
     "tsbs": 895,
     "investigations": null,
+    "crash_tests": 4,
+    "lemon_law": null,
     "top_problems": [
       "Start Stop Not Functioning in the 2020 Audi A4"
     ],
@@ -591,6 +687,8 @@
     "recalls": 4,
     "tsbs": 823,
     "investigations": null,
+    "crash_tests": 4,
+    "lemon_law": null,
     "top_problems": [
       "Steering Wheel Heats To Slow in the 2021 Audi A4"
     ],
@@ -602,6 +700,8 @@
     "recalls": 3,
     "tsbs": 595,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -611,6 +711,8 @@
     "recalls": null,
     "tsbs": 473,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -621,6 +723,8 @@
     "recalls": 3,
     "tsbs": 725,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Engine Blew Due To &quot;Oil Consuption&quot; in the 2016 Audi A5",
       "Bang Olufsen Trim Making Noise in the 2016 Audi A5"
@@ -633,6 +737,8 @@
     "recalls": 2,
     "tsbs": 706,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -642,6 +748,8 @@
     "recalls": 6,
     "tsbs": 1122,
     "investigations": null,
+    "crash_tests": 5,
+    "lemon_law": null,
     "top_problems": [
       "Excessive Oil Consumption, Destroyed The Turbo in the 2018 Audi A5",
       "Front Passenger Tire Explosion And Extensive Damage in the 2018 Audi A5",
@@ -655,6 +763,8 @@
     "recalls": 3,
     "tsbs": 980,
     "investigations": null,
+    "crash_tests": 5,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -664,6 +774,8 @@
     "recalls": 4,
     "tsbs": 928,
     "investigations": null,
+    "crash_tests": 6,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -673,6 +785,8 @@
     "recalls": 5,
     "tsbs": 895,
     "investigations": null,
+    "crash_tests": 6,
+    "lemon_law": null,
     "top_problems": [
       "Engine Stalls When Driving in the 2021 Audi A5"
     ],
@@ -684,6 +798,8 @@
     "recalls": 2,
     "tsbs": 658,
     "investigations": null,
+    "crash_tests": 3,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -693,6 +809,8 @@
     "recalls": null,
     "tsbs": 507,
     "investigations": null,
+    "crash_tests": 3,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -703,6 +821,8 @@
     "recalls": null,
     "tsbs": null,
     "investigations": null,
+    "crash_tests": null,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -712,6 +832,8 @@
     "recalls": 3,
     "tsbs": 769,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Panoramic Sunroof Leaking in the 2019 Audi Q3"
     ],
@@ -723,6 +845,8 @@
     "recalls": 2,
     "tsbs": 799,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Sun Roof Leaking in the 2020 Audi Q3",
       "Stalls Unexpectedly And Wheel Locks in the 2020 Audi Q3"
@@ -735,6 +859,8 @@
     "recalls": 2,
     "tsbs": 690,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Sunroof Leak in the 2021 Audi Q3",
       "Windshield Fluid Dispenser Shoots Fluid Too Low in the 2021 Audi Q3",
@@ -748,6 +874,8 @@
     "recalls": 5,
     "tsbs": 549,
     "investigations": null,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [
       "Car Randomly Shut Off At Stop Light in the 2022 Audi Q3",
       "Loud Brake Squeal At Low Speed in the 2022 Audi Q3"
@@ -762,6 +890,8 @@
     "recalls": 5,
     "tsbs": 1942,
     "investigations": null,
+    "crash_tests": 3,
+    "lemon_law": null,
     "top_problems": [
       "Timing Chain Bad in the 2013 Audi Q5",
       "Excessive Oil Consumption in the 2013 Audi Q5",
@@ -775,6 +905,8 @@
     "recalls": 5,
     "tsbs": 1603,
     "investigations": null,
+    "crash_tests": 3,
+    "lemon_law": null,
     "top_problems": [
       "Excessive Oil Consumption in the 2014 Audi Q5",
       "Timing Chain in the 2014 Audi Q5",
@@ -788,6 +920,8 @@
     "recalls": 6,
     "tsbs": 1190,
     "investigations": null,
+    "crash_tests": 3,
+    "lemon_law": null,
     "top_problems": [
       "Excessive Oil Consumption in the 2015 Audi Q5",
       "Uncomfortable Seats in the 2015 Audi Q5",
@@ -801,6 +935,8 @@
     "recalls": 5,
     "tsbs": 876,
     "investigations": null,
+    "crash_tests": 3,
+    "lemon_law": null,
     "top_problems": [
       "Steering Wheel Locked Up in the 2016 Audi Q5",
       "Excessive Oil Consumption in the 2016 Audi Q5",
@@ -814,6 +950,8 @@
     "recalls": 5,
     "tsbs": 711,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Blown Engine in the 2017 Audi Q5"
     ],
@@ -825,6 +963,8 @@
     "recalls": 6,
     "tsbs": 1156,
     "investigations": null,
+    "crash_tests": 3,
+    "lemon_law": null,
     "top_problems": [
       "Sunroof Leaks Into Comfort Control Module in the 2018 Audi Q5",
       "Gateway Control Module Failed in the 2018 Audi Q5",
@@ -838,6 +978,8 @@
     "recalls": 5,
     "tsbs": 1001,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Sunroof Drain Leak Caused Electrical System Failures in the 2019 Audi Q5",
       "Control To Hands On Wheel Is Generating False Alerts in the 2019 Audi Q5"
@@ -850,6 +992,8 @@
     "recalls": 6,
     "tsbs": 944,
     "investigations": null,
+    "crash_tests": 3,
+    "lemon_law": null,
     "top_problems": [
       "Excessive Oil Consumption in the 2020 Audi Q5",
       "Would Not Start in the 2020 Audi Q5",
@@ -863,6 +1007,8 @@
     "recalls": 7,
     "tsbs": 909,
     "investigations": null,
+    "crash_tests": 5,
+    "lemon_law": null,
     "top_problems": [
       "Electrical Malfunction in the 2021 Audi Q5"
     ],
@@ -878,6 +1024,8 @@
     "recalls": 2,
     "tsbs": 661,
     "investigations": 1,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [
       "Rough Down Shift in the 2015 Audi S3",
       "Coolant Leak At Thermostat Housing in the 2015 Audi S3"
@@ -890,6 +1038,8 @@
     "recalls": 3,
     "tsbs": 581,
     "investigations": 1,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -899,6 +1049,8 @@
     "recalls": 2,
     "tsbs": 549,
     "investigations": 1,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -935,6 +1087,8 @@
     "recalls": 2,
     "tsbs": 1631,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Rough Shifting in the 2017 Cadillac CT6",
       "Turbo Lag in the 2017 Cadillac CT6",
@@ -948,6 +1102,8 @@
     "recalls": 2,
     "tsbs": 1340,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Engine Runs Rough In 4 Cylinder Mode in the 2018 Cadillac CT6",
       "Hesitation, Feels Like It Is Slipping At Any Speed in the 2018 Cadillac CT6"
@@ -960,6 +1116,8 @@
     "recalls": 1,
     "tsbs": 1420,
     "investigations": null,
+    "crash_tests": 4,
+    "lemon_law": null,
     "top_problems": [
       "Screen Delaminating in the 2018 Cadillac Escalade",
       "1/8 Inch Gap On Dash in the 2018 Cadillac Escalade"
@@ -972,6 +1130,8 @@
     "recalls": null,
     "tsbs": 1262,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Tires in the 2018 Cadillac XT5",
       "Brake Switch Faulty in the 2018 Cadillac XT5",
@@ -985,6 +1145,8 @@
     "recalls": 4,
     "tsbs": 1035,
     "investigations": 1,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Won't Shift To 2nd Gear Until 5500 Rpm in the 2020 Cadillac XT6",
       "Stabilink Service Light Keeps Coming On in the 2020 Cadillac XT6",
@@ -998,6 +1160,8 @@
     "recalls": 2,
     "tsbs": 1044,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Car Won't Turn Off After Parking in the 2019 Chevrolet Blazer",
       "Interior Trim Rattles in the 2019 Chevrolet Blazer",
@@ -1011,6 +1175,8 @@
     "recalls": 3,
     "tsbs": 1017,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Rear Lift Gate Keeps Opening in the 2020 Chevrolet Blazer",
       "Shift To Park Displays Even When Car In Park in the 2020 Chevrolet Blazer",
@@ -1024,6 +1190,8 @@
     "recalls": 1,
     "tsbs": 896,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Service Light, Steering Assist Problem, Traction Control in the 2021 Chevrolet Blazer"
     ],
@@ -1054,6 +1222,8 @@
     "recalls": 4,
     "tsbs": 1292,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Charge Cooler Tube Failure in the 2019 Chevrolet Equinox",
       "Computer Malfunction in the 2019 Chevrolet Equinox",
@@ -1067,6 +1237,8 @@
     "recalls": 4,
     "tsbs": 1050,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Engine Hesitation in the 2020 Chevrolet Equinox",
       "Service Brake Assist Alert in the 2020 Chevrolet Equinox",
@@ -1080,6 +1252,8 @@
     "recalls": 4,
     "tsbs": 766,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Loud Rumbling Noise At Low Acceleration in the 2021 Chevrolet Equinox",
       "Missing Factory Installed Options in the 2021 Chevrolet Equinox",
@@ -1093,6 +1267,8 @@
     "recalls": 5,
     "tsbs": 675,
     "investigations": null,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [
       "20398 Internal Module Circuit Failure 13554821-4-3d 0.70 in the 2022 Chevrolet Equinox",
       "Car Lost All Power After Hearing A Popping Nosie in the 2022 Chevrolet Equinox",
@@ -1106,6 +1282,8 @@
     "recalls": null,
     "tsbs": 298,
     "investigations": 1,
+    "crash_tests": null,
+    "lemon_law": null,
     "top_problems": [
       "Car Won't Turn Off When In Park in the 2017 Chevrolet Malibu Hybrid",
       "Shift To Park Failure in the 2017 Chevrolet Malibu Hybrid",
@@ -1119,6 +1297,8 @@
     "recalls": 9,
     "tsbs": 1997,
     "investigations": null,
+    "crash_tests": 5,
+    "lemon_law": null,
     "top_problems": [
       "Loss Of Power in the 2016 Chevrolet Malibu",
       "Check Engine Light Is On in the 2016 Chevrolet Malibu",
@@ -1132,6 +1312,8 @@
     "recalls": 4,
     "tsbs": 1692,
     "investigations": null,
+    "crash_tests": 3,
+    "lemon_law": null,
     "top_problems": [
       "&quot;Shift To Park&quot; Alert in the 2017 Chevrolet Malibu",
       "Shift To Park in the 2017 Chevrolet Malibu",
@@ -1145,6 +1327,8 @@
     "recalls": 6,
     "tsbs": 1349,
     "investigations": null,
+    "crash_tests": 3,
+    "lemon_law": null,
     "top_problems": [
       "Poor Acceleration in the 2018 Chevrolet Malibu",
       "Loses Power, Stalls in the 2018 Chevrolet Malibu",
@@ -1158,6 +1342,8 @@
     "recalls": 1,
     "tsbs": 1059,
     "investigations": null,
+    "crash_tests": 3,
+    "lemon_law": null,
     "top_problems": [
       "Shift To Park Issue in the 2019 Chevrolet Malibu",
       "Seats Uncomfortable On Long Trips in the 2019 Chevrolet Malibu",
@@ -1171,6 +1357,8 @@
     "recalls": 1,
     "tsbs": 885,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "The Brakes Stopped Working in the 2020 Chevrolet Malibu",
       "Engine Failure in the 2020 Chevrolet Malibu"
@@ -1183,6 +1371,8 @@
     "recalls": 2,
     "tsbs": 729,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Car Will Not Shut Off While In Park in the 2021 Chevrolet Malibu",
       "On A Hill Press Throttle And Serious Sluggish Response in the 2021 Chevrolet Malibu"
@@ -1195,6 +1385,8 @@
     "recalls": 1,
     "tsbs": 613,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Ant Infestation In Blower Motor in the 2022 Chevrolet Malibu",
       "Code P0299 Indicated A Turbo Charger Underboost in the 2022 Chevrolet Malibu"
@@ -1207,6 +1399,8 @@
     "recalls": 1,
     "tsbs": 332,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -1216,6 +1410,8 @@
     "recalls": 11,
     "tsbs": 1831,
     "investigations": 3,
+    "crash_tests": 5,
+    "lemon_law": null,
     "top_problems": [
       "Engine Light Comes On in the 2020 Chevrolet Silverado 1500",
       "Power Steering Failure in the 2020 Chevrolet Silverado 1500",
@@ -1229,6 +1425,8 @@
     "recalls": 7,
     "tsbs": 1601,
     "investigations": 4,
+    "crash_tests": 5,
+    "lemon_law": null,
     "top_problems": [
       "Ecm Warning Light Comes On, Loss Of Steering, Can't Drive in the 2021 Chevrolet Silverado 1500",
       "P0011,P0016,P0089,P146b,P0330,P146f,P228d in the 2021 Chevrolet Silverado 1500",
@@ -1247,6 +1445,8 @@
     "recalls": 6,
     "tsbs": 2358,
     "investigations": 1,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Transmission Failure in the 2016 Chevrolet Suburban",
       "A/C Condenser Failure in the 2016 Chevrolet Suburban",
@@ -1260,6 +1460,8 @@
     "recalls": 4,
     "tsbs": 2017,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Air Conditioning Blowing Hot Air, Condenser Leaking in the 2017 Chevrolet Suburban",
       "Failed A/C in the 2017 Chevrolet Suburban",
@@ -1273,6 +1475,8 @@
     "recalls": 3,
     "tsbs": 1578,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "A/C Condenser Failure in the 2018 Chevrolet Suburban",
       "Engine Failure in the 2018 Chevrolet Suburban",
@@ -1286,6 +1490,8 @@
     "recalls": 2,
     "tsbs": 1159,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Shifter Clutch Pack Failure Killed 6l80 6 Sp Trans in the 2019 Chevrolet Suburban",
       "Engine Failure in the 2019 Chevrolet Suburban",
@@ -1299,6 +1505,8 @@
     "recalls": 3,
     "tsbs": 942,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Misfiring, Fuel Pump, Fuel Injection Issues, Struts, Engine in the 2020 Chevrolet Suburban",
       "Nav Screen Randomly Clicks Jumping Between Apps/Buttons in the 2020 Chevrolet Suburban"
@@ -1312,6 +1520,8 @@
     "recalls": 4,
     "tsbs": 803,
     "investigations": null,
+    "crash_tests": 5,
+    "lemon_law": null,
     "top_problems": [
       "55 Mph With 4000 Rpm in the 2021 Chevrolet Trailblazer",
       "Fuel Issue in the 2021 Chevrolet Trailblazer",
@@ -1325,6 +1535,8 @@
     "recalls": null,
     "tsbs": null,
     "investigations": null,
+    "crash_tests": null,
+    "lemon_law": null,
     "top_problems": [
       "Engine Power Reduced Message in the 2022 Chevrolet Trailblazer"
     ],
@@ -1336,6 +1548,8 @@
     "recalls": null,
     "tsbs": 1505,
     "investigations": 2,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Lost Power Steering While Driving in the 2017 Chevrolet Volt",
       "Infotainment Failure in the 2017 Chevrolet Volt",
@@ -1349,6 +1563,8 @@
     "recalls": 2,
     "tsbs": 1056,
     "investigations": 2,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Brakes Failed On Downhill Slope in the 2018 Chevrolet Volt",
       "Shift To Park Error in the 2018 Chevrolet Volt",
@@ -1362,6 +1578,8 @@
     "recalls": 6,
     "tsbs": 153,
     "investigations": 3,
+    "crash_tests": null,
+    "lemon_law": null,
     "top_problems": [
       "Bad Struts/Shocks Poor Design in the 2017 Chrysler Pacifica Hybrid",
       "Shifts Hard in the 2017 Chrysler Pacifica Hybrid",
@@ -1375,6 +1593,8 @@
     "recalls": 6,
     "tsbs": 117,
     "investigations": 5,
+    "crash_tests": null,
+    "lemon_law": null,
     "top_problems": [
       "Transmission Failed in the 2018 Chrysler Pacifica Hybrid",
       "Catalytic Converter Melted in the 2018 Chrysler Pacifica Hybrid",
@@ -1388,6 +1608,8 @@
     "recalls": 2,
     "tsbs": 79,
     "investigations": 3,
+    "crash_tests": null,
+    "lemon_law": null,
     "top_problems": [
       "Can't Change Gear From Park in the 2019 Chrysler Pacifica Hybrid",
       "Battery Recall Told Not To Park Close And Not To Charge in the 2019 Chrysler Pacifica Hybrid"
@@ -1400,6 +1622,8 @@
     "recalls": 2,
     "tsbs": 68,
     "investigations": 3,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [
       "Vehicle Stalled In Traffic in the 2020 Chrysler Pacifica Hybrid",
       "Power Inverter Module Failed in the 2020 Chrysler Pacifica Hybrid",
@@ -1413,6 +1637,8 @@
     "recalls": 1,
     "tsbs": 40,
     "investigations": 2,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [
       "Service Hybrid System Light Came On in the 2021 Chrysler Pacifica Hybrid",
       "Hybrid Powertrain Defective in the 2021 Chrysler Pacifica Hybrid",
@@ -1426,6 +1652,8 @@
     "recalls": null,
     "tsbs": 49,
     "investigations": 3,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [
       "Service Hybrid Charging System Warning Message in the 2022 Chrysler Pacifica Hybrid",
       "Vehicle Stalling At Speed in the 2022 Chrysler Pacifica Hybrid"
@@ -1438,6 +1666,8 @@
     "recalls": null,
     "tsbs": 6,
     "investigations": 1,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -1449,6 +1679,8 @@
     "recalls": 9,
     "tsbs": 727,
     "investigations": 2,
+    "crash_tests": 3,
+    "lemon_law": null,
     "top_problems": [
       "Hard Shifting in the 2017 Chrysler Pacifica",
       "Difficulty Fueling in the 2017 Chrysler Pacifica",
@@ -1462,6 +1694,8 @@
     "recalls": 11,
     "tsbs": 577,
     "investigations": 4,
+    "crash_tests": 4,
+    "lemon_law": null,
     "top_problems": [
       "Transmission Slips And Jerks in the 2018 Chrysler Pacifica",
       "Head Cylinder Blew in the 2018 Chrysler Pacifica",
@@ -1475,6 +1709,8 @@
     "recalls": 5,
     "tsbs": 600,
     "investigations": 2,
+    "crash_tests": 3,
+    "lemon_law": null,
     "top_problems": [
       "Code P0306 Cylinder 6 Misfire - Hydro Lock in the 2019 Chrysler Pacifica",
       "Uconnect Never Connects in the 2019 Chrysler Pacifica",
@@ -1488,6 +1724,8 @@
     "recalls": 3,
     "tsbs": 647,
     "investigations": 2,
+    "crash_tests": 4,
+    "lemon_law": null,
     "top_problems": [
       "No Spare Tire Of Any Kind in the 2020 Chrysler Pacifica",
       "Coolant Temp. Unit Not Installed Properly in the 2020 Chrysler Pacifica",
@@ -1501,6 +1739,8 @@
     "recalls": 4,
     "tsbs": 779,
     "investigations": 2,
+    "crash_tests": 4,
+    "lemon_law": null,
     "top_problems": [
       "Differential Failure in the 2021 Chrysler Pacifica",
       "Loses Power And Stalls On Highway in the 2021 Chrysler Pacifica",
@@ -1514,6 +1754,8 @@
     "recalls": 5,
     "tsbs": 585,
     "investigations": 2,
+    "crash_tests": 4,
+    "lemon_law": null,
     "top_problems": [
       "Piercing Noise After Caution Light On / Off in the 2022 Chrysler Pacifica",
       "One Push Of The Fob Opens The Driver's Side Slider Also in the 2022 Chrysler Pacifica"
@@ -1527,6 +1769,8 @@
     "recalls": 2,
     "tsbs": 537,
     "investigations": null,
+    "crash_tests": 4,
+    "lemon_law": null,
     "top_problems": [
       "Rocker Arms And Cam Failure in the 2020 Dodge Durango",
       "Rear 'race Track' Lighting. Fading Or Out in the 2020 Dodge Durango"
@@ -1539,6 +1783,8 @@
     "recalls": 7,
     "tsbs": 540,
     "investigations": null,
+    "crash_tests": 5,
+    "lemon_law": null,
     "top_problems": [
       "Engine Turns Over But Will Not Start Problem Is Intermitten in the 2021 Dodge Durango",
       "Ear Piercing Sound From Radio, Then It Resets in the 2021 Dodge Durango",
@@ -1552,6 +1798,8 @@
     "recalls": 12,
     "tsbs": 186,
     "investigations": 2,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [
       "Charging System in the 2021 Ford Bronco Sport",
       "A/C Compressor Locked Up in the 2021 Ford Bronco Sport",
@@ -1565,6 +1813,8 @@
     "recalls": 11,
     "tsbs": 127,
     "investigations": 3,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [
       "Vapor Management Valve-Failure in the 2022 Ford Bronco Sport",
       "Car Wont Start At Gas Station in the 2022 Ford Bronco Sport",
@@ -1578,6 +1828,8 @@
     "recalls": 10,
     "tsbs": 59,
     "investigations": 3,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [
       "Touch Screen Doesn't Work in the 2023 Ford Bronco Sport",
       "Water Pump in the 2023 Ford Bronco Sport"
@@ -1590,6 +1842,8 @@
     "recalls": 4,
     "tsbs": 11,
     "investigations": 1,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -1599,6 +1853,8 @@
     "recalls": 3,
     "tsbs": 72,
     "investigations": 1,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Rattling Noise in the 2022 Ford Edge",
       "Starter Failure in the 2022 Ford Edge",
@@ -1612,6 +1868,8 @@
     "recalls": null,
     "tsbs": 25,
     "investigations": 2,
+    "crash_tests": null,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -1621,6 +1879,8 @@
     "recalls": 1,
     "tsbs": 32,
     "investigations": 2,
+    "crash_tests": null,
+    "lemon_law": null,
     "top_problems": [
       "Drivetrain Disengages, Loses Power in the 2021 Ford Escape Hybrid"
     ],
@@ -1632,6 +1892,8 @@
     "recalls": null,
     "tsbs": 13,
     "investigations": 1,
+    "crash_tests": null,
+    "lemon_law": null,
     "top_problems": [
       "Car Is Dead in the 2022 Ford Escape Hybrid",
       "Coil Harness Keeps Backing It's Self Off in the 2022 Ford Escape Hybrid",
@@ -1652,6 +1914,8 @@
     "recalls": 15,
     "tsbs": 317,
     "investigations": 2,
+    "crash_tests": 4,
+    "lemon_law": null,
     "top_problems": [
       "Door Won't Shut - Hinge Broken From Tack Weld in the 2020 Ford Escape",
       "Loses Power Steering in the 2020 Ford Escape",
@@ -1665,6 +1929,8 @@
     "recalls": 12,
     "tsbs": 209,
     "investigations": 2,
+    "crash_tests": 4,
+    "lemon_law": null,
     "top_problems": [
       "Transmission Failure in the 2021 Ford Escape",
       "Groans in the 2021 Ford Escape",
@@ -1678,6 +1944,8 @@
     "recalls": 11,
     "tsbs": 126,
     "investigations": 2,
+    "crash_tests": 4,
+    "lemon_law": null,
     "top_problems": [
       "Rodents Gnawed Vital Wires in the 2022 Ford Escape",
       "Loud Grinding When Brakes Applied While Backing in the 2022 Ford Escape",
@@ -1691,6 +1959,8 @@
     "recalls": 7,
     "tsbs": 90,
     "investigations": null,
+    "crash_tests": 3,
+    "lemon_law": null,
     "top_problems": [
       "Gas Mileage Is Significatly Less Than What Is Listed On Stic in the 2023 Ford Escape",
       "The Charging Ports Don\u2019T Work in the 2023 Ford Escape",
@@ -1704,6 +1974,8 @@
     "recalls": 5,
     "tsbs": 20,
     "investigations": null,
+    "crash_tests": 5,
+    "lemon_law": null,
     "top_problems": [
       "Engine Coolant Over Temperature in the 2024 Ford Escape",
       "Communications System And ABS in the 2024 Ford Escape",
@@ -1717,6 +1989,8 @@
     "recalls": 4,
     "tsbs": 159,
     "investigations": null,
+    "crash_tests": 4,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -1726,6 +2000,8 @@
     "recalls": 3,
     "tsbs": 110,
     "investigations": null,
+    "crash_tests": 4,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -1735,6 +2011,8 @@
     "recalls": 2,
     "tsbs": 30,
     "investigations": null,
+    "crash_tests": 4,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -1749,6 +2027,8 @@
     "recalls": 25,
     "tsbs": 436,
     "investigations": 2,
+    "crash_tests": 4,
+    "lemon_law": null,
     "top_problems": [
       "Full Transmission Failure in the 2020 Ford Explorer",
       "Brakes Did Not Work Going Forward in the 2020 Ford Explorer",
@@ -1762,6 +2042,8 @@
     "recalls": 16,
     "tsbs": 326,
     "investigations": 2,
+    "crash_tests": 3,
+    "lemon_law": null,
     "top_problems": [
       "Hard Down Shifting, Jerking Down Shifting in the 2021 Ford Explorer",
       "Rodent Chewed Wiring in the 2021 Ford Explorer",
@@ -1775,6 +2057,8 @@
     "recalls": 15,
     "tsbs": 204,
     "investigations": 2,
+    "crash_tests": 3,
+    "lemon_law": null,
     "top_problems": [
       "Transmission Failure in the 2022 Ford Explorer",
       "Hill Assist Failure After Car Grinds From Transmission in the 2022 Ford Explorer",
@@ -1788,6 +2072,8 @@
     "recalls": 8,
     "tsbs": 114,
     "investigations": null,
+    "crash_tests": 3,
+    "lemon_law": null,
     "top_problems": [
       "Right Front Suspension Failed Causing Accident in the 2023 Ford Explorer"
     ],
@@ -1799,6 +2085,8 @@
     "recalls": 2,
     "tsbs": 20,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -1808,6 +2096,8 @@
     "recalls": null,
     "tsbs": null,
     "investigations": null,
+    "crash_tests": null,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -1817,6 +2107,8 @@
     "recalls": null,
     "tsbs": null,
     "investigations": null,
+    "crash_tests": null,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -1826,6 +2118,8 @@
     "recalls": null,
     "tsbs": null,
     "investigations": null,
+    "crash_tests": null,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -1835,6 +2129,8 @@
     "recalls": 22,
     "tsbs": 673,
     "investigations": 1,
+    "crash_tests": 8,
+    "lemon_law": null,
     "top_problems": [
       "10 Speed Automatic Issues in the 2021 Ford F-150",
       "Rodent Or Squirrel Ate Wiring Insulation in the 2021 Ford F-150",
@@ -1848,6 +2144,8 @@
     "recalls": 16,
     "tsbs": 374,
     "investigations": 2,
+    "crash_tests": 9,
+    "lemon_law": null,
     "top_problems": [
       "Failure Of Factory Battery in the 2022 Ford F-150",
       "Hard Shifts in the 2022 Ford F-150",
@@ -1861,6 +2159,8 @@
     "recalls": 7,
     "tsbs": 246,
     "investigations": null,
+    "crash_tests": 7,
+    "lemon_law": null,
     "top_problems": [
       "Knock Sensor Wiring Chewed Into By Rodent in the 2023 Ford F-150",
       "Screen/Apple Car Play in the 2023 Ford F-150",
@@ -1875,6 +2175,8 @@
     "recalls": 3,
     "tsbs": 130,
     "investigations": 3,
+    "crash_tests": 6,
+    "lemon_law": null,
     "top_problems": [
       "Power Steering Failed in the 2018 Ford Focus",
       "Improper Shifting in the 2018 Ford Focus",
@@ -1902,6 +2204,8 @@
     "recalls": null,
     "tsbs": null,
     "investigations": 1,
+    "crash_tests": null,
+    "lemon_law": null,
     "top_problems": [
       "Electrical System Shut Down While Driving in the 2022 Ford Maverick Hybrid",
       "Battery Died in the 2022 Ford Maverick Hybrid",
@@ -1915,6 +2219,8 @@
     "recalls": null,
     "tsbs": null,
     "investigations": null,
+    "crash_tests": null,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -1924,6 +2230,8 @@
     "recalls": null,
     "tsbs": null,
     "investigations": null,
+    "crash_tests": null,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -1933,6 +2241,8 @@
     "recalls": 23,
     "tsbs": 134,
     "investigations": 1,
+    "crash_tests": 3,
+    "lemon_law": null,
     "top_problems": [
       "Rubbing/ Squeal Noise When Applying Brakes in the 2022 Ford Maverick",
       "Drivers Side Window Switch Failure - Rear Passenger Window in the 2022 Ford Maverick",
@@ -1946,6 +2256,8 @@
     "recalls": 16,
     "tsbs": 60,
     "investigations": 1,
+    "crash_tests": 3,
+    "lemon_law": null,
     "top_problems": [
       "Roof Trim Piece Falling Off in the 2023 Ford Maverick",
       "Rodents Eating Soy Based Wiring Harnesses in the 2023 Ford Maverick",
@@ -1959,6 +2271,8 @@
     "recalls": 11,
     "tsbs": 7,
     "investigations": null,
+    "crash_tests": 3,
+    "lemon_law": null,
     "top_problems": [
       "Vehicle Goes Into &quot;Deep Sleep&quot;, Total Dead Battery in the 2024 Ford Maverick",
       "Cold Weather Electrical Problems in the 2024 Ford Maverick"
@@ -1971,6 +2285,8 @@
     "recalls": null,
     "tsbs": null,
     "investigations": null,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [
       "Hvbjb High Volt Junction Box in the 2021 Ford Mustang Mach-E",
       "Pre-Collision Assist Not Working in the 2021 Ford Mustang Mach-E"
@@ -1983,6 +2299,8 @@
     "recalls": null,
     "tsbs": null,
     "investigations": null,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [
       "Jittery Bluecruise Autopilot in the 2022 Ford Mustang Mach-E",
       "Loose Steering in the 2022 Ford Mustang Mach-E",
@@ -1996,6 +2314,8 @@
     "recalls": null,
     "tsbs": null,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Rodents Eating Wiring in the 2023 Ford Mustang Mach-E"
     ],
@@ -2007,6 +2327,8 @@
     "recalls": null,
     "tsbs": null,
     "investigations": null,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -2016,6 +2338,8 @@
     "recalls": 5,
     "tsbs": 34,
     "investigations": null,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [
       "Does Nothing After Stepping On Accelerator in the 2024 Ford Ranger"
     ],
@@ -2027,6 +2351,8 @@
     "recalls": 2,
     "tsbs": 1355,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "&quot;Shift To Park&quot; Message in the 2018 GMC Acadia",
       "&quot;Shift To Park&quot; Issue in the 2018 GMC Acadia",
@@ -2040,6 +2366,8 @@
     "recalls": 11,
     "tsbs": 1814,
     "investigations": 3,
+    "crash_tests": 5,
+    "lemon_law": null,
     "top_problems": [
       "Rear Window Leaking in the 2020 GMC Sierra 1500",
       "Infotainment Screen in the 2020 GMC Sierra 1500",
@@ -2053,6 +2381,8 @@
     "recalls": 6,
     "tsbs": 1597,
     "investigations": 3,
+    "crash_tests": 5,
+    "lemon_law": null,
     "top_problems": [
       "Collapsed Lifters And Bent Push Rods in the 2021 GMC Sierra 1500",
       "Lifter Failure in the 2021 GMC Sierra 1500",
@@ -2066,6 +2396,8 @@
     "recalls": 1,
     "tsbs": 959,
     "investigations": null,
+    "crash_tests": 4,
+    "lemon_law": null,
     "top_problems": [
       "Transmission Failure in the 2019 GMC Yukon",
       "Air Compressor in the 2019 GMC Yukon",
@@ -2079,6 +2411,8 @@
     "recalls": 3,
     "tsbs": 844,
     "investigations": null,
+    "crash_tests": 4,
+    "lemon_law": null,
     "top_problems": [
       "Dynamic Fuel Management Lifter Failure in the 2020 GMC Yukon",
       "Paint Peeling in the 2020 GMC Yukon"
@@ -2092,6 +2426,8 @@
     "recalls": null,
     "tsbs": null,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -2101,6 +2437,8 @@
     "recalls": null,
     "tsbs": null,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Defective Engine Mounts in the 2020 Genesis G70",
       "Repeated Gas Filler Valve Failure in the 2020 Genesis G70",
@@ -2114,6 +2452,8 @@
     "recalls": null,
     "tsbs": null,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -2123,6 +2463,8 @@
     "recalls": null,
     "tsbs": null,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -2132,6 +2474,8 @@
     "recalls": null,
     "tsbs": null,
     "investigations": null,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [
       "Loss Of Power in the 2023 Genesis G70",
       "Glass And Trim And Body Panels in the 2023 Genesis G70"
@@ -2146,6 +2490,8 @@
     "recalls": null,
     "tsbs": null,
     "investigations": null,
+    "crash_tests": 3,
+    "lemon_law": null,
     "top_problems": [
       "Water Pump Leak in the 2018 Genesis G80",
       "Thermostat Unit Is Broken in the 2018 Genesis G80",
@@ -2159,6 +2505,8 @@
     "recalls": null,
     "tsbs": null,
     "investigations": null,
+    "crash_tests": 3,
+    "lemon_law": null,
     "top_problems": [
       "Driver Seatback Lowers Fully After Parking in the 2019 Genesis G80",
       "The Pipe Connecting To Muffler Is Separating in the 2019 Genesis G80",
@@ -2172,6 +2520,8 @@
     "recalls": null,
     "tsbs": null,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Leather Fading On The Front And Back Seats in the 2017 Genesis G90",
       "Won't Go Forward But It Will Go In Reverse in the 2017 Genesis G90",
@@ -2185,6 +2535,8 @@
     "recalls": null,
     "tsbs": null,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Rodent Chewing On Wires For Air Bags in the 2018 Genesis G90"
     ],
@@ -2196,6 +2548,8 @@
     "recalls": null,
     "tsbs": null,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Trunk Open And Stereo Not Working For Long Periods in the 2019 Genesis G90",
       "Front Parking Sensors Go Off At Random While Stopped in the 2019 Genesis G90"
@@ -2208,6 +2562,8 @@
     "recalls": null,
     "tsbs": null,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -2229,6 +2585,8 @@
     "recalls": 1,
     "tsbs": 26,
     "investigations": 1,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [
       "Collision Mitigation System Faulty in the 2017 Honda Accord Hybrid",
       "Easily Cracked Windshield in the 2017 Honda Accord Hybrid",
@@ -2242,6 +2600,8 @@
     "recalls": 3,
     "tsbs": 57,
     "investigations": 3,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [
       "Windshield Cracked in the 2018 Honda Accord Hybrid",
       "Engine Overheating Indicator in the 2018 Honda Accord Hybrid",
@@ -2255,6 +2615,8 @@
     "recalls": 4,
     "tsbs": 50,
     "investigations": 2,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [
       "Blown Head Gasket in the 2019 Honda Accord Hybrid",
       "Tires Were Bad in the 2019 Honda Accord Hybrid",
@@ -2268,6 +2630,8 @@
     "recalls": 4,
     "tsbs": 52,
     "investigations": 2,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [
       "Several Electrical And Computer Systems Failed in the 2020 Honda Accord Hybrid"
     ],
@@ -2280,6 +2644,8 @@
     "recalls": null,
     "tsbs": 23,
     "investigations": 2,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [
       "Warning Lights Lit Up In Dashboard in the 2022 Honda Accord Hybrid",
       "Rear Brake Howls In Reverse in the 2022 Honda Accord Hybrid",
@@ -2294,6 +2660,8 @@
     "recalls": 2,
     "tsbs": 1,
     "investigations": null,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [
       "Wires Made Out Of Squirrel Food in the 2024 Honda Accord Hybrid",
       "All Of The Alerts Are Going Off in the 2024 Honda Accord Hybrid",
@@ -2307,6 +2675,8 @@
     "recalls": null,
     "tsbs": null,
     "investigations": null,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [
       "Rodents Chewing Wiring in the 2025 Honda Accord Hybrid",
       "Body Control Module (Bcm) in the 2025 Honda Accord Hybrid",
@@ -2320,6 +2690,8 @@
     "recalls": 3,
     "tsbs": 232,
     "investigations": null,
+    "crash_tests": 4,
+    "lemon_law": null,
     "top_problems": [
       "Daytime Led Lights Burning Out in the 2016 Honda Accord",
       "Uncomfortable Seats in the 2016 Honda Accord",
@@ -2333,6 +2705,8 @@
     "recalls": 2,
     "tsbs": 117,
     "investigations": null,
+    "crash_tests": 5,
+    "lemon_law": null,
     "top_problems": [
       "Uncomfortable Seats in the 2017 Honda Accord",
       "Daytime Running Lights Out in the 2017 Honda Accord",
@@ -2346,6 +2720,8 @@
     "recalls": 5,
     "tsbs": 386,
     "investigations": 2,
+    "crash_tests": 3,
+    "lemon_law": null,
     "top_problems": [
       "Gasoline In Oil in the 2018 Honda Accord",
       "Windshield Cracked in the 2018 Honda Accord",
@@ -2359,6 +2735,8 @@
     "recalls": 5,
     "tsbs": 378,
     "investigations": 2,
+    "crash_tests": 3,
+    "lemon_law": null,
     "top_problems": [
       "Blown Head Gasket in the 2019 Honda Accord",
       "Collision Mitigation System Malfunction in the 2019 Honda Accord",
@@ -2372,6 +2750,8 @@
     "recalls": 4,
     "tsbs": 333,
     "investigations": 1,
+    "crash_tests": 3,
+    "lemon_law": null,
     "top_problems": [
       "Noise And Rattle in the 2020 Honda Accord",
       "Seats Are Painful To Sit In in the 2020 Honda Accord",
@@ -2385,6 +2765,8 @@
     "recalls": 3,
     "tsbs": 173,
     "investigations": 1,
+    "crash_tests": 3,
+    "lemon_law": null,
     "top_problems": [
       "Car Stops in the 2021 Honda Accord",
       "Car Goes Into Limp Mode in the 2021 Honda Accord",
@@ -2398,6 +2780,8 @@
     "recalls": 3,
     "tsbs": 76,
     "investigations": 1,
+    "crash_tests": 3,
+    "lemon_law": null,
     "top_problems": [
       "Rear Brakes Hum Loud When Reversing in the 2022 Honda Accord",
       "All Warning Lights On In The Instrument Panel in the 2022 Honda Accord",
@@ -2411,6 +2795,8 @@
     "recalls": 4,
     "tsbs": 27,
     "investigations": 1,
+    "crash_tests": 3,
+    "lemon_law": null,
     "top_problems": [
       "Phone Connection Problems in the 2023 Honda Accord",
       "Check Engine Light-Emission System Prob, Power May Be Reducd in the 2023 Honda Accord",
@@ -2424,6 +2810,8 @@
     "recalls": 3,
     "tsbs": 4,
     "investigations": 1,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Vehicle Pulling in the 2024 Honda Accord"
     ],
@@ -2435,6 +2823,8 @@
     "recalls": null,
     "tsbs": null,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -2447,6 +2837,8 @@
     "recalls": 4,
     "tsbs": 21,
     "investigations": 3,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [
       "Noisy Avas System in the 2020 Honda CR-V Hybrid",
       "Very Noisy Avas System in the 2020 Honda CR-V Hybrid",
@@ -2460,6 +2852,8 @@
     "recalls": 2,
     "tsbs": 26,
     "investigations": 3,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [
       "Check Engine Light & Failure To Accelerate in the 2021 Honda CR-V Hybrid",
       "Head Gasket Failure in the 2021 Honda CR-V Hybrid"
@@ -2472,6 +2866,8 @@
     "recalls": 3,
     "tsbs": 19,
     "investigations": 2,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [
       "Battery Is Dead in the 2022 Honda CR-V Hybrid",
       "Blind Spot Monitor in the 2022 Honda CR-V Hybrid",
@@ -2485,6 +2881,8 @@
     "recalls": 4,
     "tsbs": 14,
     "investigations": 1,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Sticky Steering in the 2023 Honda CR-V Hybrid",
       "Run Away Acceleration Despite Foot On Brake in the 2023 Honda CR-V Hybrid"
@@ -2498,6 +2896,8 @@
     "recalls": 2,
     "tsbs": null,
     "investigations": null,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [
       "They Took The Garage Door Opener Out Of These Vehicles in the 2025 Honda CR-V Hybrid",
       "Engine Failure And Fire in the 2025 Honda CR-V Hybrid",
@@ -2511,6 +2911,8 @@
     "recalls": null,
     "tsbs": null,
     "investigations": null,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [
       "Very Poor Mpg in the 2026 Honda CR-V Hybrid",
       "Sudden/Unintended Acceleration in the 2026 Honda CR-V Hybrid",
@@ -2524,6 +2926,8 @@
     "recalls": 3,
     "tsbs": 201,
     "investigations": 2,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Vibrates Like Crazy in the 2015 Honda CR-V",
       "Tire Pressure Light On in the 2015 Honda CR-V",
@@ -2537,6 +2941,8 @@
     "recalls": 3,
     "tsbs": 121,
     "investigations": 1,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Vibration At Idle in the 2016 Honda CR-V",
       "Extremely Uncomfortable Seats in the 2016 Honda CR-V",
@@ -2550,6 +2956,8 @@
     "recalls": 6,
     "tsbs": 374,
     "investigations": 2,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Heat Not Working Properly in the 2017 Honda CR-V",
       "Battery Keeps Going Dead in the 2017 Honda CR-V",
@@ -2563,6 +2971,8 @@
     "recalls": 4,
     "tsbs": 370,
     "investigations": 3,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Fuel In Oil With Overfilled Oil Level, Gas Smell In Cabin in the 2018 Honda CR-V",
       "Infotainment Glitches in the 2018 Honda CR-V",
@@ -2576,6 +2986,8 @@
     "recalls": 7,
     "tsbs": 307,
     "investigations": 3,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Dead Battery in the 2019 Honda CR-V",
       "Steering Stick When Making Minor Corrections in the 2019 Honda CR-V",
@@ -2589,6 +3001,8 @@
     "recalls": 6,
     "tsbs": 270,
     "investigations": 2,
+    "crash_tests": 3,
+    "lemon_law": null,
     "top_problems": [
       "Won't Start in the 2020 Honda CR-V",
       "Awd System Problem Alert in the 2020 Honda CR-V",
@@ -2602,6 +3016,8 @@
     "recalls": 3,
     "tsbs": 159,
     "investigations": 2,
+    "crash_tests": 3,
+    "lemon_law": null,
     "top_problems": [
       "Crack In Windshield Without Impact in the 2021 Honda CR-V",
       "Parasitic Battery Drain in the 2021 Honda CR-V",
@@ -2615,6 +3031,8 @@
     "recalls": 2,
     "tsbs": 75,
     "investigations": 2,
+    "crash_tests": 3,
+    "lemon_law": null,
     "top_problems": [
       "Engine Stopped Loss Of Propulsion, All Warning Lights ... in the 2022 Honda CR-V",
       "Drivers Seat + Head Rest Causing Major Body Pain in the 2022 Honda CR-V",
@@ -2628,6 +3046,8 @@
     "recalls": 3,
     "tsbs": 39,
     "investigations": 1,
+    "crash_tests": 4,
+    "lemon_law": null,
     "top_problems": [
       "Steering Wheel Sticking in the 2023 Honda CR-V",
       "Car Wouldn't Start Even After Battery Boost in the 2023 Honda CR-V",
@@ -2641,6 +3061,8 @@
     "recalls": 2,
     "tsbs": 27,
     "investigations": 1,
+    "crash_tests": 3,
+    "lemon_law": null,
     "top_problems": [
       "Sticky Steering in the 2024 Honda CR-V",
       "Wiper Washer Only Cleans Driver Side Windshield in the 2024 Honda CR-V",
@@ -2654,6 +3076,8 @@
     "recalls": 1,
     "tsbs": null,
     "investigations": null,
+    "crash_tests": 4,
+    "lemon_law": null,
     "top_problems": [
       "Collision Mitigation Failure in the 2025 Honda CR-V",
       "Unexpected And Unwarranted Stalling in the 2025 Honda CR-V",
@@ -2672,6 +3096,8 @@
     "recalls": null,
     "tsbs": null,
     "investigations": null,
+    "crash_tests": null,
+    "lemon_law": null,
     "top_problems": [
       "Rodents Chew Soy Based Wire Covering in the 2017 Honda Civic Hatchback",
       "A/C Not Working in the 2017 Honda Civic Hatchback",
@@ -2685,6 +3111,8 @@
     "recalls": null,
     "tsbs": null,
     "investigations": null,
+    "crash_tests": null,
+    "lemon_law": null,
     "top_problems": [
       "Extremely Uncomfortable Seats in the 2018 Honda Civic Hatchback",
       "Driver Side Blows Cool/Warm Air And Passenger Blows Cold in the 2018 Honda Civic Hatchback",
@@ -2698,6 +3126,8 @@
     "recalls": null,
     "tsbs": null,
     "investigations": null,
+    "crash_tests": null,
+    "lemon_law": null,
     "top_problems": [
       "Windshield Cracks Way Too Easily in the 2019 Honda Civic Hatchback",
       "A/C Failure in the 2019 Honda Civic Hatchback",
@@ -2716,6 +3146,8 @@
     "recalls": 2,
     "tsbs": null,
     "investigations": null,
+    "crash_tests": null,
+    "lemon_law": null,
     "top_problems": [
       "Multiple Warnings Coming Up On Center Display in the 2025 Honda Civic Hybrid",
       "Power Steering Failing in the 2025 Honda Civic Hybrid",
@@ -2730,6 +3162,8 @@
     "recalls": 4,
     "tsbs": 436,
     "investigations": null,
+    "crash_tests": 4,
+    "lemon_law": null,
     "top_problems": [
       "A/C Not Working Properly in the 2016 Honda Civic",
       "Rats Ate Wires/Coils in the 2016 Honda Civic",
@@ -2743,6 +3177,8 @@
     "recalls": 5,
     "tsbs": 348,
     "investigations": null,
+    "crash_tests": 9,
+    "lemon_law": null,
     "top_problems": [
       "A/C Not Working in the 2017 Honda Civic",
       "Rodents Chew Soy Based Wire Covering in the 2017 Honda Civic",
@@ -2756,6 +3192,8 @@
     "recalls": 5,
     "tsbs": 311,
     "investigations": null,
+    "crash_tests": 9,
+    "lemon_law": null,
     "top_problems": [
       "A/C Not Working in the 2018 Honda Civic",
       "Soy Based Wires Chewed By Rodents in the 2018 Honda Civic",
@@ -2769,6 +3207,8 @@
     "recalls": 3,
     "tsbs": 265,
     "investigations": null,
+    "crash_tests": 9,
+    "lemon_law": null,
     "top_problems": [
       "Windshield Cracks Easily in the 2019 Honda Civic",
       "Air Conditioning Is Not Working Correctly in the 2019 Honda Civic",
@@ -2782,6 +3222,8 @@
     "recalls": 4,
     "tsbs": 227,
     "investigations": null,
+    "crash_tests": 9,
+    "lemon_law": null,
     "top_problems": [
       "Computer Went Out While Driving in the 2020 Honda Civic",
       "Gear Shift Leaver Gets Very Hot In The Sun in the 2020 Honda Civic",
@@ -2795,6 +3237,8 @@
     "recalls": 3,
     "tsbs": 88,
     "investigations": null,
+    "crash_tests": 5,
+    "lemon_law": null,
     "top_problems": [
       "Front Sensor Too Sensitive in the 2021 Honda Civic",
       "A/C Does Not Work in the 2021 Honda Civic",
@@ -2808,6 +3252,8 @@
     "recalls": 3,
     "tsbs": 109,
     "investigations": 2,
+    "crash_tests": 5,
+    "lemon_law": null,
     "top_problems": [
       "Steering Sticking After Warmed Up in the 2022 Honda Civic",
       "The Lane Departure Assist Feature Malfunctioned in the 2022 Honda Civic",
@@ -2821,6 +3267,8 @@
     "recalls": 4,
     "tsbs": 36,
     "investigations": 2,
+    "crash_tests": 6,
+    "lemon_law": null,
     "top_problems": [
       "Steering Feels Weird And Sometimes Sticky in the 2023 Honda Civic",
       "Erratic Driver Information Interface in the 2023 Honda Civic"
@@ -2833,6 +3281,8 @@
     "recalls": 3,
     "tsbs": 10,
     "investigations": 1,
+    "crash_tests": 4,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -2849,6 +3299,8 @@
     "recalls": 3,
     "tsbs": 70,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Misfire in the 2018 Honda Fit",
       "Extremely Uncomfortable Seats in the 2018 Honda Fit",
@@ -2862,6 +3314,8 @@
     "recalls": 5,
     "tsbs": 47,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "All Dashboard Warning Lights Comes On in the 2019 Honda Fit",
       "Collision Mitigation System Light Is On in the 2019 Honda Fit",
@@ -2875,6 +3329,8 @@
     "recalls": 3,
     "tsbs": 69,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -2885,6 +3341,8 @@
     "recalls": 6,
     "tsbs": 126,
     "investigations": 1,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Door Won't Open From Inside The Vehicle in the 2019 Honda HR-V",
       "Infotainment Display Screen Problems in the 2019 Honda HR-V",
@@ -2898,6 +3356,8 @@
     "recalls": 4,
     "tsbs": 125,
     "investigations": 1,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "The Display Panel Does Not Turn On in the 2020 Honda HR-V",
       "Display Screen Not Working in the 2020 Honda HR-V",
@@ -2911,6 +3371,8 @@
     "recalls": 3,
     "tsbs": 48,
     "investigations": 1,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "No Acceleration in the 2021 Honda HR-V",
       "Can Bus Issue - Code U0155 in the 2021 Honda HR-V"
@@ -2923,6 +3385,8 @@
     "recalls": 3,
     "tsbs": 11,
     "investigations": 1,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Omg Seats in the 2022 Honda HR-V",
       "Loud Engine Noise & Increased With Accel in the 2022 Honda HR-V",
@@ -2936,6 +3400,8 @@
     "recalls": 3,
     "tsbs": 16,
     "investigations": 1,
+    "crash_tests": 3,
+    "lemon_law": null,
     "top_problems": [
       "Rattle On Right Side Dashboard in the 2023 Honda HR-V",
       "Dash Lights Come On When Drop In Temperature in the 2023 Honda HR-V"
@@ -2948,6 +3414,8 @@
     "recalls": 3,
     "tsbs": 6,
     "investigations": 1,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Driver Window Not Aligned, Gets Stuck And Slams Shut in the 2024 Honda HR-V",
       "Sensors Braking Hard At Speed With Nothing There in the 2024 Honda HR-V",
@@ -2961,6 +3429,8 @@
     "recalls": 1,
     "tsbs": null,
     "investigations": null,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -2970,6 +3440,8 @@
     "recalls": 7,
     "tsbs": 63,
     "investigations": 3,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Dashboard Creak And Crackling Sound in the 2019 Honda Insight",
       "Infotainment System Crashes in the 2019 Honda Insight",
@@ -2983,6 +3455,8 @@
     "recalls": 5,
     "tsbs": 70,
     "investigations": 3,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Seat Belt Won't Click Into Place in the 2020 Honda Insight"
     ],
@@ -3001,6 +3475,8 @@
     "recalls": 13,
     "tsbs": 421,
     "investigations": 3,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Transmission Failure in the 2018 Honda Odyssey",
       "Jerks When Shifting in the 2018 Honda Odyssey",
@@ -3014,6 +3490,8 @@
     "recalls": 17,
     "tsbs": 393,
     "investigations": 4,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Audio System Failure in the 2019 Honda Odyssey",
       "Engine Knocking in the 2019 Honda Odyssey",
@@ -3027,6 +3505,8 @@
     "recalls": 11,
     "tsbs": 257,
     "investigations": 1,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Entertainment System Failure in the 2020 Honda Odyssey",
       "Sensing Camera Failure in the 2020 Honda Odyssey",
@@ -3040,6 +3520,8 @@
     "recalls": 5,
     "tsbs": 205,
     "investigations": 1,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Car Shuts Off In Stop And Go Traffic in the 2021 Honda Odyssey",
       "Electric Parking, Collision Mitigation, Lane Assist Off in the 2021 Honda Odyssey",
@@ -3053,6 +3535,8 @@
     "recalls": 6,
     "tsbs": 161,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Most Uncomfortable Driver Seat Ever Made in the 2022 Honda Odyssey",
       "Engine Wire Harness Stays Broke And Battery Failed in the 2022 Honda Odyssey",
@@ -3066,6 +3550,8 @@
     "recalls": 3,
     "tsbs": 68,
     "investigations": null,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -3075,6 +3561,8 @@
     "recalls": 1,
     "tsbs": 17,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Body Paint in the 2024 Honda Odyssey",
       "Water Leaking Into Rear Storage Area in the 2024 Honda Odyssey"
@@ -3087,6 +3575,8 @@
     "recalls": null,
     "tsbs": null,
     "investigations": null,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [
       "Clicking Noise In Dash in the 2025 Honda Odyssey"
     ],
@@ -3099,6 +3589,8 @@
     "recalls": 8,
     "tsbs": 245,
     "investigations": 2,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Cracked Windshield in the 2019 Honda Passport",
       "Grinding, Lurching, No Power While Driving in the 2019 Honda Passport",
@@ -3112,6 +3604,8 @@
     "recalls": 8,
     "tsbs": 178,
     "investigations": 2,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Grumbling Sound When Turning in the 2020 Honda Passport"
     ],
@@ -3123,6 +3617,8 @@
     "recalls": 5,
     "tsbs": 142,
     "investigations": 3,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Check Engine Light Shows Emissions Prob & Awd Off in the 2021 Honda Passport"
     ],
@@ -3134,6 +3630,8 @@
     "recalls": 3,
     "tsbs": 97,
     "investigations": 2,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -3143,6 +3641,8 @@
     "recalls": 4,
     "tsbs": 59,
     "investigations": 2,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Parasitic Battery Drain Causes Vehicle To Not Start in the 2023 Honda Passport"
     ],
@@ -3154,6 +3654,8 @@
     "recalls": 1,
     "tsbs": 8,
     "investigations": null,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -3163,6 +3665,8 @@
     "recalls": null,
     "tsbs": null,
     "investigations": null,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -3172,6 +3676,8 @@
     "recalls": null,
     "tsbs": null,
     "investigations": null,
+    "crash_tests": null,
+    "lemon_law": null,
     "top_problems": [
       "Poor Fm Radio Reception in the 2026 Honda Passport"
     ],
@@ -3183,6 +3689,8 @@
     "recalls": 7,
     "tsbs": 525,
     "investigations": 4,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Fuel Injector Malfunction in the 2016 Honda Pilot",
       "Transmission Jerks in the 2016 Honda Pilot",
@@ -3196,6 +3704,8 @@
     "recalls": 2,
     "tsbs": 275,
     "investigations": 4,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Check Emissions Light On in the 2017 Honda Pilot",
       "Hard Shifting in the 2017 Honda Pilot",
@@ -3209,6 +3719,8 @@
     "recalls": 5,
     "tsbs": 199,
     "investigations": 3,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Shift Flair, Transmission Slipping in the 2018 Honda Pilot",
       "Driver Side Seat Belt Is Too Short in the 2018 Honda Pilot",
@@ -3222,6 +3734,8 @@
     "recalls": 11,
     "tsbs": 299,
     "investigations": 4,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Transmission Jerks in the 2019 Honda Pilot",
       "Radio Screen Not Working in the 2019 Honda Pilot",
@@ -3235,6 +3749,8 @@
     "recalls": 9,
     "tsbs": 216,
     "investigations": 2,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Infotainment System Crackling Noise in the 2020 Honda Pilot",
       "Infotainment System Crashes, Crackling Noise in the 2020 Honda Pilot",
@@ -3248,6 +3764,8 @@
     "recalls": 8,
     "tsbs": 139,
     "investigations": 1,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Automatic Braking False Engagement in the 2021 Honda Pilot",
       "Cracked/Chipped Windshield in the 2021 Honda Pilot",
@@ -3261,6 +3779,8 @@
     "recalls": 3,
     "tsbs": 109,
     "investigations": 1,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "A/C Blowing Warm Air in the 2022 Honda Pilot",
       "Brakes Applied Automatically in the 2022 Honda Pilot",
@@ -3274,6 +3794,8 @@
     "recalls": 4,
     "tsbs": 68,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Battery Failure in the 2023 Honda Pilot",
       "Wheel Sensor Failure in the 2023 Honda Pilot",
@@ -3287,6 +3809,8 @@
     "recalls": 4,
     "tsbs": 18,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Puddle Light Blown in the 2024 Honda Pilot"
     ],
@@ -3298,6 +3822,8 @@
     "recalls": 3,
     "tsbs": null,
     "investigations": 1,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Pressing Brakes On Highway Speeds Cause Vibration in the 2025 Honda Pilot",
       "Cracking Or Spring Sound In Steering Wheel in the 2025 Honda Pilot",
@@ -3312,6 +3838,8 @@
     "recalls": null,
     "tsbs": null,
     "investigations": null,
+    "crash_tests": null,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -3321,6 +3849,8 @@
     "recalls": 1,
     "tsbs": null,
     "investigations": null,
+    "crash_tests": 3,
+    "lemon_law": null,
     "top_problems": [
       "Rear Cross Traffic Auto Braking in the 2024 Honda Prologue",
       "While In Drive The Car Switches To Neutral in the 2024 Honda Prologue",
@@ -3334,6 +3864,8 @@
     "recalls": null,
     "tsbs": null,
     "investigations": null,
+    "crash_tests": 3,
+    "lemon_law": null,
     "top_problems": [
       "Cracked Paint After A Few Months Of Ownership in the 2025 Honda Prologue"
     ],
@@ -3345,6 +3877,8 @@
     "recalls": 7,
     "tsbs": 232,
     "investigations": 4,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Fuel Injectors Failed in the 2017 Honda Ridgeline",
       "Vehicle Failed To Come To Complete Stop in the 2017 Honda Ridgeline",
@@ -3358,6 +3892,8 @@
     "recalls": 6,
     "tsbs": 154,
     "investigations": 4,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Transmission System Problem Displayed On Dash in the 2018 Honda Ridgeline",
       "Failed Backup Camera in the 2018 Honda Ridgeline",
@@ -3371,6 +3907,8 @@
     "recalls": 10,
     "tsbs": 150,
     "investigations": 3,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Transmission Failure in the 2019 Honda Ridgeline",
       "Anti-Collision/Autobrake Function Failed in the 2019 Honda Ridgeline",
@@ -3384,6 +3922,8 @@
     "recalls": 7,
     "tsbs": 125,
     "investigations": 2,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Brakes Went Soft, ABS Failure, Car Almost Crashed in the 2020 Honda Ridgeline",
       "Apple Car Play Audio in the 2020 Honda Ridgeline",
@@ -3397,6 +3937,8 @@
     "recalls": 5,
     "tsbs": 137,
     "investigations": 2,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Fender Flares Detaching in the 2021 Honda Ridgeline",
       "Leaking Oil Transmission Cooler Line in the 2021 Honda Ridgeline",
@@ -3410,6 +3952,8 @@
     "recalls": 2,
     "tsbs": 124,
     "investigations": 1,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Engine Stalled - Tach To 0 While Driving On Interstate in the 2022 Honda Ridgeline",
       "Toxic Smell In Bed Liners Storage Compartment in the 2022 Honda Ridgeline",
@@ -3423,6 +3967,8 @@
     "recalls": 3,
     "tsbs": 83,
     "investigations": 2,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Passenger Seat Is Atrocious in the 2023 Honda Ridgeline",
       "Poor Infotainment System in the 2023 Honda Ridgeline",
@@ -3436,6 +3982,8 @@
     "recalls": 1,
     "tsbs": 1,
     "investigations": null,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -3445,6 +3993,8 @@
     "recalls": 1,
     "tsbs": null,
     "investigations": 1,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Auto High Low Beam Work So Poorley Can't Use Them in the 2025 Honda Ridgeline",
       "Vehicle Surges During Engine Braking in the 2025 Honda Ridgeline"
@@ -3463,6 +4013,8 @@
     "recalls": null,
     "tsbs": 125,
     "investigations": null,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [
       "Stuck In Fourth Gear in the 2017 Hyundai Elantra GT",
       "Engine Seized in the 2017 Hyundai Elantra GT",
@@ -3476,6 +4028,8 @@
     "recalls": 1,
     "tsbs": 165,
     "investigations": null,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [
       "Shaking And Vibrating in the 2018 Hyundai Elantra GT",
       "Complete Brake Failure in the 2018 Hyundai Elantra GT",
@@ -3489,6 +4043,8 @@
     "recalls": null,
     "tsbs": 136,
     "investigations": null,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [
       "Windshield 75% Detached From Vehicle in the 2019 Hyundai Elantra GT",
       "Brake Pads Constantly Getting Stuck in the 2019 Hyundai Elantra GT",
@@ -3502,6 +4058,8 @@
     "recalls": null,
     "tsbs": 104,
     "investigations": null,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [
       "A/C Not Working in the 2020 Hyundai Elantra GT",
       "Upper Radiator Hose Broke in the 2020 Hyundai Elantra GT",
@@ -3515,6 +4073,8 @@
     "recalls": 4,
     "tsbs": null,
     "investigations": null,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [
       "Poor Fuel Efficiency in the 2021 Hyundai Elantra Hybrid",
       "Engine Threw A Rod in the 2021 Hyundai Elantra Hybrid",
@@ -3530,6 +4090,8 @@
     "recalls": 4,
     "tsbs": 195,
     "investigations": 1,
+    "crash_tests": 4,
+    "lemon_law": null,
     "top_problems": [
       "Paint Peeling in the 2017 Hyundai Elantra",
       "Engine Failure in the 2017 Hyundai Elantra",
@@ -3543,6 +4105,8 @@
     "recalls": null,
     "tsbs": 162,
     "investigations": null,
+    "crash_tests": 4,
+    "lemon_law": null,
     "top_problems": [
       "Engine Pinging/Rattling in the 2018 Hyundai Elantra",
       "Rod Bearings in the 2018 Hyundai Elantra",
@@ -3556,6 +4120,8 @@
     "recalls": 1,
     "tsbs": 168,
     "investigations": null,
+    "crash_tests": 4,
+    "lemon_law": null,
     "top_problems": [
       "High Beams Will Not Turn On in the 2019 Hyundai Elantra",
       "Cold Weather Piston Slap in the 2019 Hyundai Elantra",
@@ -3569,6 +4135,8 @@
     "recalls": 6,
     "tsbs": 82,
     "investigations": 2,
+    "crash_tests": 4,
+    "lemon_law": null,
     "top_problems": [
       "All Dashboard Warning Lights Came On in the 2021 Hyundai Elantra",
       "Power Steering Turned Off - Very Hard To Steer Car in the 2021 Hyundai Elantra",
@@ -3582,6 +4150,8 @@
     "recalls": 5,
     "tsbs": 67,
     "investigations": 1,
+    "crash_tests": 4,
+    "lemon_law": null,
     "top_problems": [
       "Stalled And Check Engine Light Came On. Hev Mcu Code in the 2022 Hyundai Elantra",
       "Horn Stopped Working in the 2022 Hyundai Elantra",
@@ -3595,6 +4165,8 @@
     "recalls": 2,
     "tsbs": 29,
     "investigations": null,
+    "crash_tests": 4,
+    "lemon_law": null,
     "top_problems": [
       "Sidewall Of Tires Are Bursting in the 2023 Hyundai Elantra",
       "Multiple Bulges On Sidewall Causing Blowout in the 2023 Hyundai Elantra",
@@ -3608,6 +4180,8 @@
     "recalls": 6,
     "tsbs": 158,
     "investigations": 1,
+    "crash_tests": 3,
+    "lemon_law": null,
     "top_problems": [
       "Multiple Electrical Failure in the 2015 Hyundai Genesis",
       "Air Bag Deployed Bumping A Curb in the 2015 Hyundai Genesis",
@@ -3621,6 +4195,8 @@
     "recalls": 3,
     "tsbs": 117,
     "investigations": 1,
+    "crash_tests": 3,
+    "lemon_law": null,
     "top_problems": [
       "All Lights Went Out While Driving in the 2016 Hyundai Genesis",
       "Dash Display Not Working Properly in the 2016 Hyundai Genesis",
@@ -3650,6 +4226,8 @@
     "recalls": 1,
     "tsbs": 78,
     "investigations": 1,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -3659,6 +4237,8 @@
     "recalls": 1,
     "tsbs": 47,
     "investigations": 1,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -3668,6 +4248,8 @@
     "recalls": 3,
     "tsbs": 104,
     "investigations": 1,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Soy Based Wires Chewed By Rodents in the 2017 Hyundai Ioniq Hybrid",
       "Air Pump Given By Manufacturer Blew Up in the 2017 Hyundai Ioniq Hybrid",
@@ -3681,6 +4263,8 @@
     "recalls": 2,
     "tsbs": 100,
     "investigations": 1,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Brakes Don't Respond in the 2018 Hyundai Ioniq Hybrid",
       "Transmission Shaft Failure in the 2018 Hyundai Ioniq Hybrid",
@@ -3694,6 +4278,8 @@
     "recalls": 1,
     "tsbs": 102,
     "investigations": 1,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Very Poor Mpg in the 2019 Hyundai Ioniq Hybrid",
       "Sunglasses Holder Does Not Stay Closed in the 2019 Hyundai Ioniq Hybrid",
@@ -3707,6 +4293,8 @@
     "recalls": null,
     "tsbs": 53,
     "investigations": 1,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Acorns In The Headliner in the 2020 Hyundai Ioniq Hybrid",
       "Repeated Electronic Component Failure in the 2020 Hyundai Ioniq Hybrid",
@@ -3720,6 +4308,8 @@
     "recalls": null,
     "tsbs": 22,
     "investigations": 1,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [
       "Front Passenger Window Exploded Inward in the 2021 Hyundai Ioniq Hybrid"
     ],
@@ -3731,6 +4321,8 @@
     "recalls": null,
     "tsbs": null,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Poor Mileage in the 2022 Hyundai Ioniq Hybrid",
       "Poor Mileage in the 2022 Hyundai Ioniq Hybrid"
@@ -3743,6 +4335,8 @@
     "recalls": null,
     "tsbs": 92,
     "investigations": 1,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [
       "Random Sudden Jolts When Accelerating in the 2019 Hyundai Ioniq Plug-in Hybrid",
       "Radio/Touch Screen Goes Black & Reboots in the 2019 Hyundai Ioniq Plug-in Hybrid"
@@ -3755,6 +4349,8 @@
     "recalls": null,
     "tsbs": 52,
     "investigations": 1,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Brakes Failed, Caused Accident in the 2020 Hyundai Ioniq Plug-in Hybrid"
     ],
@@ -3766,6 +4362,8 @@
     "recalls": null,
     "tsbs": 1,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Remote Start Does Not Work in the 2021 Hyundai Ioniq Plug-in Hybrid"
     ],
@@ -3780,6 +4378,8 @@
     "recalls": 3,
     "tsbs": 84,
     "investigations": 1,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [
       "Check Electric Vehicle System in the 2019 Hyundai Kona Electric"
     ],
@@ -3791,6 +4391,8 @@
     "recalls": 3,
     "tsbs": 59,
     "investigations": 1,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [
       "Ev Battery Failed in the 2020 Hyundai Kona Electric",
       "Constant Clicking (Especially When Slowing) in the 2020 Hyundai Kona Electric"
@@ -3803,6 +4405,8 @@
     "recalls": 2,
     "tsbs": 33,
     "investigations": 1,
+    "crash_tests": null,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -3812,6 +4416,8 @@
     "recalls": null,
     "tsbs": 19,
     "investigations": 1,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [
       "Battery Will Not Charge Past 50% in the 2022 Hyundai Kona Electric",
       "Did Not Get Mileage On Single Charging Of Battery in the 2022 Hyundai Kona Electric"
@@ -3826,6 +4432,8 @@
     "recalls": 1,
     "tsbs": 129,
     "investigations": 2,
+    "crash_tests": 3,
+    "lemon_law": null,
     "top_problems": [
       "Excessive Oil Consumption in the 2019 Hyundai Kona",
       "Fuel Pump Leak in the 2019 Hyundai Kona",
@@ -3839,6 +4447,8 @@
     "recalls": 2,
     "tsbs": 112,
     "investigations": 2,
+    "crash_tests": 3,
+    "lemon_law": null,
     "top_problems": [
       "Burns Oil & Coolant in the 2020 Hyundai Kona",
       "A/C Unit Not Working in the 2020 Hyundai Kona",
@@ -3853,6 +4463,8 @@
     "recalls": 1,
     "tsbs": 15,
     "investigations": null,
+    "crash_tests": 4,
+    "lemon_law": null,
     "top_problems": [
       "Cruise Control Won\u2019T Maintain The Set Speed in the 2023 Hyundai Kona",
       "Cruise Control Will Not Maintain Set Speed in the 2023 Hyundai Kona"
@@ -3869,6 +4481,8 @@
     "recalls": 3,
     "tsbs": 193,
     "investigations": 1,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Windshield Cracks Easily in the 2020 Hyundai Palisade",
       "Wind Noise in the 2020 Hyundai Palisade",
@@ -3882,6 +4496,8 @@
     "recalls": 4,
     "tsbs": 115,
     "investigations": 2,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Cracked Windshield With No Impact in the 2021 Hyundai Palisade",
       "Rodents Chewed Wires Due To Soy Based Wiring in the 2021 Hyundai Palisade",
@@ -3895,6 +4511,8 @@
     "recalls": 3,
     "tsbs": 56,
     "investigations": 2,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Horn in the 2022 Hyundai Palisade",
       "Seat Belt Unlatching in the 2022 Hyundai Palisade",
@@ -3908,6 +4526,8 @@
     "recalls": 3,
     "tsbs": 27,
     "investigations": 2,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Brake Failure in the 2023 Hyundai Palisade",
       "Wipers Do Not Work When Snow And Ice On Windshield in the 2023 Hyundai Palisade",
@@ -3921,6 +4541,8 @@
     "recalls": 3,
     "tsbs": 14,
     "investigations": null,
+    "crash_tests": 3,
+    "lemon_law": null,
     "top_problems": [
       "Bad Sensors in the 2024 Hyundai Palisade",
       "Chassis in the 2024 Hyundai Palisade",
@@ -3934,6 +4556,8 @@
     "recalls": 4,
     "tsbs": 44,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Car Won't Accelerate Past 20 Mph in the 2022 Hyundai Santa Cruz",
       "Roof Rail Issues in the 2022 Hyundai Santa Cruz",
@@ -3947,6 +4571,8 @@
     "recalls": 2,
     "tsbs": 27,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -3956,6 +4582,8 @@
     "recalls": 1,
     "tsbs": 11,
     "investigations": null,
+    "crash_tests": 5,
+    "lemon_law": null,
     "top_problems": [
       "Dct Transmission Noisy Above 40mph in the 2024 Hyundai Santa Cruz",
       "Gasoline Vapors Coming From Parked Vehicle in the 2024 Hyundai Santa Cruz"
@@ -3968,6 +4596,8 @@
     "recalls": null,
     "tsbs": null,
     "investigations": null,
+    "crash_tests": null,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -3977,6 +4607,8 @@
     "recalls": null,
     "tsbs": null,
     "investigations": null,
+    "crash_tests": null,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -3988,6 +4620,8 @@
     "recalls": 2,
     "tsbs": 244,
     "investigations": 1,
+    "crash_tests": 4,
+    "lemon_law": null,
     "top_problems": [
       "Stalled While Driving in the 2019 Hyundai Santa Fe",
       "Shattered Sunroof Glass in the 2019 Hyundai Santa Fe",
@@ -4001,6 +4635,8 @@
     "recalls": 2,
     "tsbs": 136,
     "investigations": 1,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Start Button Won't Activate Starter in the 2020 Hyundai Santa Fe",
       "Cloth Front Seat Backs Fraying in the 2020 Hyundai Santa Fe",
@@ -4014,6 +4650,8 @@
     "recalls": 7,
     "tsbs": 106,
     "investigations": 1,
+    "crash_tests": 3,
+    "lemon_law": null,
     "top_problems": [
       "Windshield Cracked After Stone Struck It in the 2021 Hyundai Santa Fe",
       "Transmission Failure in the 2021 Hyundai Santa Fe",
@@ -4027,6 +4665,8 @@
     "recalls": 5,
     "tsbs": 97,
     "investigations": null,
+    "crash_tests": 4,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -4036,6 +4676,8 @@
     "recalls": 1,
     "tsbs": 33,
     "investigations": null,
+    "crash_tests": 4,
+    "lemon_law": null,
     "top_problems": [
       "Radiator Does Not Have A Screen In Front To Prevent Damage in the 2023 Hyundai Santa Fe",
       "Rpm's Drop While Driving On Highway in the 2023 Hyundai Santa Fe",
@@ -4049,6 +4691,8 @@
     "recalls": 1,
     "tsbs": 66,
     "investigations": 1,
+    "crash_tests": null,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -4058,6 +4702,8 @@
     "recalls": null,
     "tsbs": 43,
     "investigations": 1,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [
       "Excessive Wind Noise In Cabin in the 2021 Hyundai Sonata Hybrid",
       "Coolant Leak Through The Exhaust System in the 2021 Hyundai Sonata Hybrid",
@@ -4071,6 +4717,8 @@
     "recalls": null,
     "tsbs": 33,
     "investigations": 1,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [
       "Pinging Sound When I Drive Up Hills in the 2022 Hyundai Sonata Hybrid",
       "Loss Of Coolant And Water In Engine Oil Milky White in the 2022 Hyundai Sonata Hybrid",
@@ -4085,6 +4733,8 @@
     "recalls": 1,
     "tsbs": 278,
     "investigations": 2,
+    "crash_tests": 4,
+    "lemon_law": null,
     "top_problems": [
       "Check Engine Light On in the 2018 Hyundai Sonata",
       "Hard Downshifts in the 2018 Hyundai Sonata",
@@ -4098,6 +4748,8 @@
     "recalls": null,
     "tsbs": 219,
     "investigations": 2,
+    "crash_tests": 4,
+    "lemon_law": null,
     "top_problems": [
       "Crack In Oil Pan in the 2019 Hyundai Sonata",
       "Very Poor Mileage in the 2019 Hyundai Sonata",
@@ -4111,6 +4763,8 @@
     "recalls": 3,
     "tsbs": 123,
     "investigations": 1,
+    "crash_tests": 3,
+    "lemon_law": null,
     "top_problems": [
       "Blindspot Collision Warning System Wire Burnt Or Chewed in the 2020 Hyundai Sonata",
       "Burning Coolant Smell From Engine Compartment in the 2020 Hyundai Sonata",
@@ -4124,6 +4778,8 @@
     "recalls": 3,
     "tsbs": 85,
     "investigations": 1,
+    "crash_tests": 4,
+    "lemon_law": null,
     "top_problems": [
       "Whistling Wind Noise in the 2021 Hyundai Sonata",
       "Xm Satellite Antenna Reception in the 2021 Hyundai Sonata"
@@ -4136,6 +4792,8 @@
     "recalls": 2,
     "tsbs": 67,
     "investigations": null,
+    "crash_tests": 3,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -4145,6 +4803,8 @@
     "recalls": 1,
     "tsbs": 33,
     "investigations": null,
+    "crash_tests": 3,
+    "lemon_law": null,
     "top_problems": [
       "3 Cracked Windshields In Six Months in the 2023 Hyundai Sonata",
       "Bad Fuel Injector in the 2023 Hyundai Sonata",
@@ -4160,6 +4820,8 @@
     "recalls": null,
     "tsbs": 47,
     "investigations": 1,
+    "crash_tests": 4,
+    "lemon_law": null,
     "top_problems": [
       "Rodent Chewed Some Of The Wiring in the 2022 Hyundai Tucson Hybrid",
       "Ev Failure - Undrivable in the 2022 Hyundai Tucson Hybrid",
@@ -4174,6 +4836,8 @@
     "recalls": null,
     "tsbs": null,
     "investigations": null,
+    "crash_tests": null,
+    "lemon_law": null,
     "top_problems": [
       "Terrible Mpg, Advertised 37, Actual 29.8 in the 2024 Hyundai Tucson Hybrid",
       "Automatic Wipers Activate With No Rain Or Wetness in the 2024 Hyundai Tucson Hybrid",
@@ -4188,6 +4852,8 @@
     "recalls": 1,
     "tsbs": 74,
     "investigations": 1,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Front Collision Warning System in the 2021 Hyundai Tucson",
       "Dangerous Delay In Acceleration in the 2021 Hyundai Tucson",
@@ -4201,6 +4867,8 @@
     "recalls": 2,
     "tsbs": 95,
     "investigations": 2,
+    "crash_tests": 10,
+    "lemon_law": null,
     "top_problems": [
       "Car Will Not Start, Engine Does Not Turn Over in the 2022 Hyundai Tucson",
       "Significant Cracked Windshield, No Impact, Not Driving in the 2022 Hyundai Tucson",
@@ -4214,6 +4882,8 @@
     "recalls": 1,
     "tsbs": 36,
     "investigations": null,
+    "crash_tests": 4,
+    "lemon_law": null,
     "top_problems": [
       "Car 12v System Completely Dead in the 2023 Hyundai Tucson",
       "Hybrid System Failure in the 2023 Hyundai Tucson",
@@ -4227,6 +4897,8 @@
     "recalls": 3,
     "tsbs": 20,
     "investigations": null,
+    "crash_tests": 7,
+    "lemon_law": null,
     "top_problems": [
       "Emergency Braking System Activating With No Obstacles in the 2024 Hyundai Tucson"
     ],
@@ -4238,6 +4910,8 @@
     "recalls": 2,
     "tsbs": 225,
     "investigations": null,
+    "crash_tests": 3,
+    "lemon_law": null,
     "top_problems": [
       "Battery Keeps Dying in the 2019 Hyundai Veloster",
       "Engine Shuts Down While Driving in the 2019 Hyundai Veloster",
@@ -4251,6 +4925,8 @@
     "recalls": 1,
     "tsbs": 116,
     "investigations": null,
+    "crash_tests": 3,
+    "lemon_law": null,
     "top_problems": [
       "Dashboard Rattle in the 2020 Hyundai Veloster",
       "Slipped Out Of Gear in the 2020 Hyundai Veloster"
@@ -4266,6 +4942,8 @@
     "recalls": 10,
     "tsbs": 562,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Engine Shut Down in the 2019 Jeep Cherokee",
       "Multiple Engine Problems in the 2019 Jeep Cherokee",
@@ -4279,6 +4957,8 @@
     "recalls": 2,
     "tsbs": 554,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "U-Connect Overheating, Freezing Up in the 2020 Jeep Cherokee",
       "Excessive Oil Consumption in the 2020 Jeep Cherokee",
@@ -4292,6 +4972,8 @@
     "recalls": 3,
     "tsbs": 304,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Ptu Failure in the 2021 Jeep Cherokee",
       "3-4 Sec Delay Between Down Shifting in the 2021 Jeep Cherokee",
@@ -4305,6 +4987,8 @@
     "recalls": 2,
     "tsbs": 172,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -4314,6 +4998,8 @@
     "recalls": null,
     "tsbs": 61,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -4323,6 +5009,8 @@
     "recalls": 9,
     "tsbs": 551,
     "investigations": 2,
+    "crash_tests": 4,
+    "lemon_law": null,
     "top_problems": [
       "Unintended Acceleration in the 2016 Jeep Grand Cherokee",
       "Leather Covering Coming Off Dashboard in the 2016 Jeep Grand Cherokee",
@@ -4336,6 +5024,8 @@
     "recalls": 6,
     "tsbs": 484,
     "investigations": 2,
+    "crash_tests": 4,
+    "lemon_law": null,
     "top_problems": [
       "Not Shifting Properly in the 2017 Jeep Grand Cherokee",
       "Won't Start in the 2017 Jeep Grand Cherokee",
@@ -4349,6 +5039,8 @@
     "recalls": 11,
     "tsbs": 588,
     "investigations": 3,
+    "crash_tests": 5,
+    "lemon_law": null,
     "top_problems": [
       "Leather Dash Defect in the 2018 Jeep Grand Cherokee",
       "Radiator Leak in the 2018 Jeep Grand Cherokee",
@@ -4362,6 +5054,8 @@
     "recalls": 7,
     "tsbs": 637,
     "investigations": 2,
+    "crash_tests": 5,
+    "lemon_law": null,
     "top_problems": [
       "Auto Parking Break Failure in the 2019 Jeep Grand Cherokee",
       "A/C Leaking-Hissing Sound in the 2019 Jeep Grand Cherokee",
@@ -4375,6 +5069,8 @@
     "recalls": 3,
     "tsbs": 629,
     "investigations": 1,
+    "crash_tests": 5,
+    "lemon_law": null,
     "top_problems": [
       "Engine Running Rough, Engine Light On in the 2020 Jeep Grand Cherokee",
       "Short Life On Brakes in the 2020 Jeep Grand Cherokee",
@@ -4388,6 +5084,8 @@
     "recalls": 12,
     "tsbs": 1569,
     "investigations": null,
+    "crash_tests": 7,
+    "lemon_law": null,
     "top_problems": [
       "Windshield Cracked From Inside in the 2021 Jeep Grand Cherokee",
       "Uconnect Not Functional in the 2021 Jeep Grand Cherokee",
@@ -4402,6 +5100,8 @@
     "recalls": 5,
     "tsbs": 92,
     "investigations": 1,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Air Bags Did Not Deploy in the 2022 Kia Carnival",
       "Noisy Sound When A/C Is Turned On/Off in the 2022 Kia Carnival",
@@ -4415,6 +5115,8 @@
     "recalls": 3,
     "tsbs": 53,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Second Row Seating Force in the 2023 Kia Carnival"
     ],
@@ -4443,6 +5145,8 @@
     "recalls": 2,
     "tsbs": 152,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Transmission Failure in the 2019 Kia Forte",
       "Loud Screech/Grind, Car Stalled in the 2019 Kia Forte",
@@ -4456,6 +5160,8 @@
     "recalls": null,
     "tsbs": 146,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Bubbles Are Spreading In The Screen, Can't Use Touch in the 2020 Kia Forte",
       "Windshield Wipers Chipping Paint in the 2020 Kia Forte",
@@ -4469,6 +5175,8 @@
     "recalls": 2,
     "tsbs": 90,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Piston Rings in the 2021 Kia Forte",
       "Loud Noise While Shifting, Car Would Not Accelerate in the 2021 Kia Forte",
@@ -4482,6 +5190,8 @@
     "recalls": 1,
     "tsbs": 38,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Clutch Assembly Completely Broke In 2 Weeks in the 2022 Kia Forte"
     ],
@@ -4493,6 +5203,8 @@
     "recalls": null,
     "tsbs": null,
     "investigations": null,
+    "crash_tests": null,
+    "lemon_law": null,
     "top_problems": [
       "Transmission in the 2023 Kia Forte"
     ],
@@ -4507,6 +5219,8 @@
     "recalls": 5,
     "tsbs": 147,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Engine Will Not Turn Over in the 2021 Kia K5",
       "Air Conditioner Stopped Working in the 2021 Kia K5",
@@ -4520,6 +5234,8 @@
     "recalls": 4,
     "tsbs": 130,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Sulphur Smell In Cabin in the 2022 Kia K5",
       "Fuel Tank Expanding in the 2022 Kia K5",
@@ -4533,6 +5249,8 @@
     "recalls": 2,
     "tsbs": 84,
     "investigations": 1,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Faulty Gas Flap in the 2023 Kia K5",
       "Gas Tank Is Swelling/Expanding in the 2023 Kia K5",
@@ -4546,6 +5264,8 @@
     "recalls": null,
     "tsbs": null,
     "investigations": null,
+    "crash_tests": null,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -4562,6 +5282,8 @@
     "recalls": null,
     "tsbs": 71,
     "investigations": 1,
+    "crash_tests": null,
+    "lemon_law": null,
     "top_problems": [
       "Ticking Noise In Power Train in the 2019 Kia Niro EV",
       "Check Regenerative Braking in the 2019 Kia Niro EV",
@@ -4584,6 +5306,8 @@
     "recalls": null,
     "tsbs": null,
     "investigations": null,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [
       "Check Engine Light in the 2018 Kia Niro Plug-in Hybrid",
       "Head Unit Failure in the 2018 Kia Niro Plug-in Hybrid",
@@ -4597,6 +5321,8 @@
     "recalls": null,
     "tsbs": 61,
     "investigations": null,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [
       "Rear Seat Latch Broken in the 2019 Kia Niro Plug-in Hybrid"
     ],
@@ -4608,6 +5334,8 @@
     "recalls": null,
     "tsbs": null,
     "investigations": null,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -4617,6 +5345,8 @@
     "recalls": null,
     "tsbs": null,
     "investigations": null,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -4626,6 +5356,8 @@
     "recalls": null,
     "tsbs": null,
     "investigations": null,
+    "crash_tests": null,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -4635,6 +5367,8 @@
     "recalls": 2,
     "tsbs": 97,
     "investigations": 3,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [
       "Engine Failure in the 2017 Kia Optima Hybrid",
       "P0456 Code in the 2017 Kia Optima Hybrid"
@@ -4647,6 +5381,8 @@
     "recalls": null,
     "tsbs": 61,
     "investigations": 2,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -4656,6 +5392,8 @@
     "recalls": 3,
     "tsbs": 235,
     "investigations": 3,
+    "crash_tests": 4,
+    "lemon_law": null,
     "top_problems": [
       "No Power, Acceleration in the 2017 Kia Optima",
       "Peeling Chrome in the 2017 Kia Optima",
@@ -4669,6 +5407,8 @@
     "recalls": 1,
     "tsbs": 126,
     "investigations": 2,
+    "crash_tests": 4,
+    "lemon_law": null,
     "top_problems": [
       "Inoperable When Starting Vehicle in the 2019 Kia Optima",
       "Steering Control Arm Failed in the 2019 Kia Optima",
@@ -4682,6 +5422,8 @@
     "recalls": null,
     "tsbs": 86,
     "investigations": 1,
+    "crash_tests": 4,
+    "lemon_law": null,
     "top_problems": [
       "Both Headlights Consistently Going Out in the 2020 Kia Optima",
       "Seatbelt Fails To Retrack Properly in the 2020 Kia Optima",
@@ -4695,6 +5437,8 @@
     "recalls": 2,
     "tsbs": 168,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Transmission Stopped Shifting Properly in the 2021 Kia Seltos",
       "Transmission Overheating in the 2021 Kia Seltos",
@@ -4708,6 +5452,8 @@
     "recalls": 2,
     "tsbs": 48,
     "investigations": 1,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Horn No Longer Functioning in the 2023 Kia Seltos",
       "Rear, Driver Side Window Won't Roll Down in the 2023 Kia Seltos",
@@ -4722,6 +5468,8 @@
     "recalls": 2,
     "tsbs": 63,
     "investigations": 1,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -4731,6 +5479,8 @@
     "recalls": 4,
     "tsbs": 42,
     "investigations": 2,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [
       "Malfunction Light in the 2022 Kia Sorento Hybrid"
     ],
@@ -4742,6 +5492,8 @@
     "recalls": 2,
     "tsbs": 26,
     "investigations": null,
+    "crash_tests": null,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -4753,6 +5505,8 @@
     "recalls": 3,
     "tsbs": 259,
     "investigations": 1,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Engine Failure, No Warning Light - Hole In Block in the 2018 Kia Sorento",
       "Wires Chewed By Rodents in the 2018 Kia Sorento",
@@ -4766,6 +5520,8 @@
     "recalls": 2,
     "tsbs": 125,
     "investigations": 1,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Windshield Cracked in the 2019 Kia Sorento",
       "Excessive Oil Consumption in the 2019 Kia Sorento",
@@ -4779,6 +5535,8 @@
     "recalls": 3,
     "tsbs": 117,
     "investigations": 1,
+    "crash_tests": 7,
+    "lemon_law": null,
     "top_problems": [
       "Vibration From Rear End in the 2021 Kia Sorento",
       "Transmission Delays Shifting Under Acceleration in the 2021 Kia Sorento",
@@ -4792,6 +5550,8 @@
     "recalls": 5,
     "tsbs": 104,
     "investigations": null,
+    "crash_tests": 4,
+    "lemon_law": null,
     "top_problems": [
       "Transmission Failed in the 2022 Kia Sorento",
       "Car Shuts Off While Driving in the 2022 Kia Sorento",
@@ -4808,6 +5568,8 @@
     "recalls": 6,
     "tsbs": 78,
     "investigations": null,
+    "crash_tests": 6,
+    "lemon_law": null,
     "top_problems": [
       "Bad Rear Shocks in the 2023 Kia Sportage",
       "Direct From Factory Defective Air Conditioner in the 2023 Kia Sportage",
@@ -4822,6 +5584,8 @@
     "recalls": 4,
     "tsbs": 142,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Oil Pressure Switch Leaking Onto Sub Harness in the 2018 Kia Stinger",
       "Paint Flaking/Chips in the 2018 Kia Stinger",
@@ -4835,6 +5599,8 @@
     "recalls": 3,
     "tsbs": 73,
     "investigations": 1,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Rear Fuse Panel Caught Fire And Burned Car To The Ground in the 2019 Kia Stinger",
       "Headlights Not Bright Enough in the 2019 Kia Stinger",
@@ -4848,6 +5614,8 @@
     "recalls": 6,
     "tsbs": 67,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Paint Chipping in the 2020 Kia Stinger"
     ],
@@ -4859,6 +5627,8 @@
     "recalls": 1,
     "tsbs": 46,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Gas Fumes In Car in the 2022 Kia Stinger",
       "License Plate Lights Fell Out in the 2022 Kia Stinger",
@@ -4872,6 +5642,8 @@
     "recalls": 1,
     "tsbs": 34,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -4884,6 +5656,8 @@
     "recalls": 6,
     "tsbs": 191,
     "investigations": 1,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "High Oil Consumption in the 2020 Kia Telluride",
       "The Bright Lights Stopped Working in the 2020 Kia Telluride",
@@ -4897,6 +5671,8 @@
     "recalls": 4,
     "tsbs": 108,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Sunroof Glass Shattered On The Freeway in the 2021 Kia Telluride",
       "Rear Shocks Failed Due To Design Flaw (Tsb113) in the 2021 Kia Telluride",
@@ -4910,6 +5686,8 @@
     "recalls": 6,
     "tsbs": 110,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Windshield Crack in the 2022 Kia Telluride",
       "Instrumentation Screen Goes Black in the 2022 Kia Telluride",
@@ -4923,6 +5701,8 @@
     "recalls": 4,
     "tsbs": 52,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Rock Cracked Front Windshield in the 2023 Kia Telluride",
       "Low Beams To Low in the 2023 Kia Telluride",
@@ -4936,6 +5716,8 @@
     "recalls": 3,
     "tsbs": 18,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Windshield Cracking in the 2024 Kia Telluride",
       "Trim Coming Loose After Going Through Carwash in the 2024 Kia Telluride",
@@ -4955,6 +5737,8 @@
     "recalls": 1,
     "tsbs": 72,
     "investigations": null,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [
       "Power Steering Malfunction in the 2021 Lexus ES 250"
     ],
@@ -4970,6 +5754,8 @@
     "recalls": null,
     "tsbs": 1,
     "investigations": null,
+    "crash_tests": null,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -4979,6 +5765,8 @@
     "recalls": null,
     "tsbs": 1,
     "investigations": null,
+    "crash_tests": null,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -4988,6 +5776,8 @@
     "recalls": 1,
     "tsbs": 31,
     "investigations": null,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [
       "Surround Sound Doesn't Work in the 2019 Lexus ES 300h",
       "Poor Stereo System Sound in the 2019 Lexus ES 300h",
@@ -5001,6 +5791,8 @@
     "recalls": 1,
     "tsbs": 7,
     "investigations": null,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -5042,6 +5834,8 @@
     "recalls": 1,
     "tsbs": 147,
     "investigations": null,
+    "crash_tests": null,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -5051,6 +5845,8 @@
     "recalls": 2,
     "tsbs": 101,
     "investigations": null,
+    "crash_tests": null,
+    "lemon_law": null,
     "top_problems": [
       "Car Accelerated, Lurched Forward On Its Own.  in the 2018 Lexus ES 350"
     ],
@@ -5062,6 +5858,8 @@
     "recalls": 3,
     "tsbs": 181,
     "investigations": null,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -5073,6 +5871,8 @@
     "recalls": null,
     "tsbs": 64,
     "investigations": null,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [
       "Trunk Suddenly Closes When Not Activatged in the 2022 Lexus ES 350",
       "Backseat Seat Belt Alarms in the 2022 Lexus ES 350"
@@ -5088,6 +5888,8 @@
     "recalls": 1,
     "tsbs": 232,
     "investigations": null,
+    "crash_tests": null,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -5115,6 +5917,8 @@
     "recalls": null,
     "tsbs": 170,
     "investigations": 1,
+    "crash_tests": null,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -5124,6 +5928,8 @@
     "recalls": 1,
     "tsbs": 161,
     "investigations": 1,
+    "crash_tests": null,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -5133,6 +5939,8 @@
     "recalls": 2,
     "tsbs": 119,
     "investigations": null,
+    "crash_tests": null,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -5145,6 +5953,8 @@
     "recalls": null,
     "tsbs": 181,
     "investigations": 1,
+    "crash_tests": null,
+    "lemon_law": null,
     "top_problems": [
       "3 Windshield Replacements In 2.5 Yrs in the 2017 Lexus IS 350"
     ],
@@ -5156,6 +5966,8 @@
     "recalls": 1,
     "tsbs": 135,
     "investigations": 1,
+    "crash_tests": null,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -5165,6 +5977,8 @@
     "recalls": 2,
     "tsbs": 115,
     "investigations": null,
+    "crash_tests": null,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -5180,6 +5994,8 @@
     "recalls": null,
     "tsbs": 33,
     "investigations": null,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -5189,6 +6005,8 @@
     "recalls": null,
     "tsbs": 16,
     "investigations": null,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -5204,6 +6022,8 @@
     "recalls": 4,
     "tsbs": 206,
     "investigations": null,
+    "crash_tests": null,
+    "lemon_law": null,
     "top_problems": [
       "Repeated Fun Flat Tire Blowouts in the 2018 Lexus LS 500",
       "Tire Recall in the 2018 Lexus LS 500",
@@ -5253,6 +6073,8 @@
     "recalls": null,
     "tsbs": 28,
     "investigations": null,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -5269,6 +6091,8 @@
     "recalls": 1,
     "tsbs": 179,
     "investigations": 1,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -5278,6 +6102,8 @@
     "recalls": 2,
     "tsbs": 156,
     "investigations": null,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [
       "Passenger A/C Blows Warm Air, Even On Cold Setting in the 2019 Lexus RC 300"
     ],
@@ -5291,6 +6117,8 @@
     "recalls": 1,
     "tsbs": 202,
     "investigations": 1,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -5300,6 +6128,8 @@
     "recalls": 2,
     "tsbs": 167,
     "investigations": null,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -5311,6 +6141,8 @@
     "recalls": 1,
     "tsbs": 160,
     "investigations": 1,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -5320,6 +6152,8 @@
     "recalls": null,
     "tsbs": 145,
     "investigations": null,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -5329,6 +6163,8 @@
     "recalls": 1,
     "tsbs": 102,
     "investigations": null,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -5338,6 +6174,8 @@
     "recalls": null,
     "tsbs": 19,
     "investigations": null,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -5368,6 +6206,8 @@
     "recalls": 3,
     "tsbs": 296,
     "investigations": null,
+    "crash_tests": null,
+    "lemon_law": null,
     "top_problems": [
       "Not Shifting Properly in the 2016 Lexus RX 350",
       "Blue Tooth Issues in the 2016 Lexus RX 350",
@@ -5381,6 +6221,8 @@
     "recalls": 3,
     "tsbs": 255,
     "investigations": null,
+    "crash_tests": null,
+    "lemon_law": null,
     "top_problems": [
       "Ventilated Seats Don't Work Properly in the 2017 Lexus RX 350",
       "Engine Shudders And Vibrates in the 2017 Lexus RX 350",
@@ -5394,6 +6236,8 @@
     "recalls": 1,
     "tsbs": 199,
     "investigations": null,
+    "crash_tests": null,
+    "lemon_law": null,
     "top_problems": [
       "Bad Struts in the 2018 Lexus RX 350",
       "Dashboard Cracking in the 2018 Lexus RX 350",
@@ -5407,6 +6251,8 @@
     "recalls": 4,
     "tsbs": 177,
     "investigations": null,
+    "crash_tests": null,
+    "lemon_law": null,
     "top_problems": [
       "Stalling in the 2019 Lexus RX 350"
     ],
@@ -5418,6 +6264,8 @@
     "recalls": 2,
     "tsbs": 140,
     "investigations": null,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [
       "Droning Noise Vibration in the 2020 Lexus RX 350"
     ],
@@ -5429,6 +6277,8 @@
     "recalls": 2,
     "tsbs": 141,
     "investigations": null,
+    "crash_tests": 4,
+    "lemon_law": null,
     "top_problems": [
       "Slides In Rain Up To 15 Feet After Braking in the 2021 Lexus RX 350"
     ],
@@ -5455,6 +6305,8 @@
     "recalls": null,
     "tsbs": 17,
     "investigations": null,
+    "crash_tests": null,
+    "lemon_law": null,
     "top_problems": [
       "Fuel Gauge Sensor Not Working in the 2016 Lexus RX 450h"
     ],
@@ -5496,6 +6348,8 @@
     "recalls": 20,
     "tsbs": 406,
     "investigations": null,
+    "crash_tests": 3,
+    "lemon_law": null,
     "top_problems": [
       "Loud Engine Noise Under Light Acceleration in the 2020 Lincoln Aviator",
       "Tires Replaced With 23,000 Miles On Them in the 2020 Lincoln Aviator",
@@ -5509,6 +6363,8 @@
     "recalls": 17,
     "tsbs": 299,
     "investigations": 1,
+    "crash_tests": 3,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -5518,6 +6374,8 @@
     "recalls": 12,
     "tsbs": 188,
     "investigations": 1,
+    "crash_tests": 3,
+    "lemon_law": null,
     "top_problems": [
       "Bad Heater in the 2022 Lincoln Aviator",
       "Defective Seat Base in the 2022 Lincoln Aviator",
@@ -5531,6 +6389,8 @@
     "recalls": 8,
     "tsbs": 96,
     "investigations": null,
+    "crash_tests": 3,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -5540,6 +6400,8 @@
     "recalls": 2,
     "tsbs": 16,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -5568,6 +6430,8 @@
     "recalls": 1,
     "tsbs": 815,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Brake Failure in the 2017 Mazda CX-5",
       "Vibrate In Cold Temperature in the 2017 Mazda CX-5",
@@ -5581,6 +6445,8 @@
     "recalls": 3,
     "tsbs": 841,
     "investigations": null,
+    "crash_tests": 5,
+    "lemon_law": null,
     "top_problems": [
       "Brakes Dragging in the 2018 Mazda CX-5",
       "Cylinder Deactivation Causes Resistance in the 2018 Mazda CX-5",
@@ -5594,6 +6460,8 @@
     "recalls": 2,
     "tsbs": 738,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Unexplained Acceleration While Brakes Were Applied in the 2019 Mazda CX-5",
       "Cracked Cylinder Head - Major Oil Leak in the 2019 Mazda CX-5",
@@ -5607,6 +6475,8 @@
     "recalls": null,
     "tsbs": 558,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Cracked Cylinder Head in the 2020 Mazda CX-5",
       "Check Engine Light On in the 2020 Mazda CX-5",
@@ -5620,6 +6490,8 @@
     "recalls": null,
     "tsbs": 585,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Rear Camera No Longer Visible - Error Message in the 2021 Mazda CX-5",
       "Oil Light Coming On in the 2021 Mazda CX-5",
@@ -5633,6 +6505,8 @@
     "recalls": null,
     "tsbs": 345,
     "investigations": null,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [
       "Auto Level Or Adaptive Headlight Motor Noise in the 2022 Mazda CX-5",
       "Smoke Pouring Out Of Vents After Turning A/C On in the 2022 Mazda CX-5",
@@ -5646,6 +6520,8 @@
     "recalls": null,
     "tsbs": 232,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Brake & Steering Wheel Locked in the 2023 Mazda CX-5",
       "Acceleration Issues in the 2023 Mazda CX-5",
@@ -5659,6 +6535,8 @@
     "recalls": null,
     "tsbs": 99,
     "investigations": null,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [
       "New Car From Dealer W/ Toyo Tires. They're Worn Out in the 2024 Mazda CX-5",
       "Clicking Noise Emanating From The Rear Passenger Seats in the 2024 Mazda CX-5"
@@ -5672,6 +6550,8 @@
     "recalls": null,
     "tsbs": 836,
     "investigations": null,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [
       "Leaking Coolant From Crack On Cylinder Head in the 2016 Mazda CX-9",
       "Premature Brake Wear in the 2016 Mazda CX-9",
@@ -5685,6 +6565,8 @@
     "recalls": null,
     "tsbs": 704,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Overheats Due To Major Coolant Leak in the 2017 Mazda CX-9",
       "Creaking Noise From Suspension in the 2017 Mazda CX-9",
@@ -5698,6 +6580,8 @@
     "recalls": 2,
     "tsbs": 672,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Catastrophic Engine Overheating in the 2018 Mazda CX-9",
       "Infotainment Screen Spider Crackng in the 2018 Mazda CX-9",
@@ -5711,6 +6595,8 @@
     "recalls": 2,
     "tsbs": 557,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Xm Radio Resets / Can't Connect in the 2019 Mazda CX-9",
       "Flaking Paint in the 2019 Mazda CX-9",
@@ -5724,6 +6610,8 @@
     "recalls": 1,
     "tsbs": 448,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "A/C Does Not Work in the 2020 Mazda CX-9",
       "Power Folding Side Mirror Motor Failed in the 2020 Mazda CX-9",
@@ -5737,6 +6625,8 @@
     "recalls": 1,
     "tsbs": 555,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Transmission Failed in the 2021 Mazda CX-9",
       "Bumper Cover Popped Out Of Position in the 2021 Mazda CX-9",
@@ -5752,6 +6642,8 @@
     "recalls": 6,
     "tsbs": 266,
     "investigations": 2,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Aeb Activates Sporadically, No Obstuction in the 2019 Nissan Altima",
       "Cracked Windshield in the 2019 Nissan Altima",
@@ -5765,6 +6657,8 @@
     "recalls": 5,
     "tsbs": 206,
     "investigations": 2,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Windshield Cracked For No Reason in the 2020 Nissan Altima",
       "Automatic Emergency Brake Malfunction in the 2020 Nissan Altima",
@@ -5785,6 +6679,8 @@
     "recalls": 4,
     "tsbs": 167,
     "investigations": 1,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Unintended Braking in the 2018 Nissan Leaf",
       "Car Locked Itself With Keys Inside in the 2018 Nissan Leaf",
@@ -5798,6 +6694,8 @@
     "recalls": 5,
     "tsbs": 150,
     "investigations": 1,
+    "crash_tests": 4,
+    "lemon_law": null,
     "top_problems": [
       "Only Charges At Certain Charge Stations in the 2019 Nissan Leaf",
       "Back Up Camera Not Working in the 2019 Nissan Leaf"
@@ -5810,6 +6708,8 @@
     "recalls": 6,
     "tsbs": 114,
     "investigations": 1,
+    "crash_tests": 4,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -5819,6 +6719,8 @@
     "recalls": 3,
     "tsbs": 99,
     "investigations": 1,
+    "crash_tests": 4,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -5828,6 +6730,8 @@
     "recalls": 3,
     "tsbs": 93,
     "investigations": 1,
+    "crash_tests": 4,
+    "lemon_law": null,
     "top_problems": [
       "Brakes Ineffective In An Emergency in the 2022 Nissan Leaf",
       "Ev Malfunction in the 2022 Nissan Leaf"
@@ -5840,6 +6744,8 @@
     "recalls": 3,
     "tsbs": 59,
     "investigations": null,
+    "crash_tests": 4,
+    "lemon_law": null,
     "top_problems": [
       "2023 Nissan Leaf_sudden Unintended Acceleration in the 2023 Nissan Leaf",
       "Navigation Error in the 2023 Nissan Leaf"
@@ -5852,6 +6758,8 @@
     "recalls": 3,
     "tsbs": 364,
     "investigations": 2,
+    "crash_tests": 8,
+    "lemon_law": null,
     "top_problems": [
       "Low Oil Pressure Light On in the 2018 Nissan Rogue",
       "Aeb System Engaging Spontaneously in the 2018 Nissan Rogue",
@@ -5865,6 +6773,8 @@
     "recalls": 3,
     "tsbs": 240,
     "investigations": 1,
+    "crash_tests": 5,
+    "lemon_law": null,
     "top_problems": [
       "Transmission Slipping in the 2019 Nissan Rogue",
       "Fan Quits When Snow Builds Up On Outside Window in the 2019 Nissan Rogue",
@@ -5878,6 +6788,8 @@
     "recalls": 1,
     "tsbs": 171,
     "investigations": null,
+    "crash_tests": 4,
+    "lemon_law": null,
     "top_problems": [
       "Emergency Breaking System in the 2020 Nissan Rogue",
       "Braking Sensor Came On By Itself And Would Stop Vehicle in the 2020 Nissan Rogue",
@@ -5891,6 +6803,8 @@
     "recalls": null,
     "tsbs": null,
     "investigations": null,
+    "crash_tests": null,
+    "lemon_law": null,
     "top_problems": [
       "Delay When Accelerating in the 2017 Nissan X-Trail",
       "Gearbox Whine in the 2017 Nissan X-Trail"
@@ -5910,6 +6824,8 @@
     "recalls": 6,
     "tsbs": 413,
     "investigations": 1,
+    "crash_tests": 4,
+    "lemon_law": null,
     "top_problems": [
       "Speedometer Inaccurate in the 2017 Porsche Macan",
       "Too Much Brake Pedal Travel in the 2017 Porsche Macan",
@@ -5923,6 +6839,8 @@
     "recalls": 5,
     "tsbs": 394,
     "investigations": 1,
+    "crash_tests": 5,
+    "lemon_law": null,
     "top_problems": [
       "Head Cracked All Cylenders Near Sparkplug in the 2018 Porsche Macan",
       "Panoramic Sunroof Drains Clog, Fried Bcm + Pcm in the 2018 Porsche Macan",
@@ -5936,6 +6854,8 @@
     "recalls": 1,
     "tsbs": 436,
     "investigations": null,
+    "crash_tests": 3,
+    "lemon_law": null,
     "top_problems": [
       "Brake Warning Lights On in the 2019 Porsche Macan",
       "Headlight in the 2019 Porsche Macan"
@@ -5948,6 +6868,8 @@
     "recalls": 2,
     "tsbs": 433,
     "investigations": null,
+    "crash_tests": 4,
+    "lemon_law": null,
     "top_problems": [
       "Belly Pan Damaged in the 2020 Porsche Macan"
     ],
@@ -5959,6 +6881,8 @@
     "recalls": 1,
     "tsbs": 337,
     "investigations": null,
+    "crash_tests": 4,
+    "lemon_law": null,
     "top_problems": [
       "Paid For Comfort System Which Was Not Installed in the 2021 Porsche Macan"
     ],
@@ -5970,6 +6894,8 @@
     "recalls": null,
     "tsbs": 240,
     "investigations": null,
+    "crash_tests": 3,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -5979,6 +6905,8 @@
     "recalls": null,
     "tsbs": 140,
     "investigations": null,
+    "crash_tests": 4,
+    "lemon_law": null,
     "top_problems": [
       "Rides Rough Over Any Sort Of Bump in the 2023 Porsche Macan",
       "Airbag Warning Light On Overhead And Dashboard in the 2023 Porsche Macan"
@@ -5991,6 +6919,8 @@
     "recalls": null,
     "tsbs": null,
     "investigations": null,
+    "crash_tests": 6,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -6000,6 +6930,8 @@
     "recalls": 27,
     "tsbs": 1509,
     "investigations": 1,
+    "crash_tests": 10,
+    "lemon_law": null,
     "top_problems": [
       "Leaking Rear Window in the 2019 Ram 1500",
       "Loud Clacking Noise in the 2019 Ram 1500",
@@ -6013,6 +6945,8 @@
     "recalls": 12,
     "tsbs": 1568,
     "investigations": 1,
+    "crash_tests": 10,
+    "lemon_law": null,
     "top_problems": [
       "Rear Windshield Leaking in the 2020 Ram 1500",
       "Uconnect Freezes in the 2020 Ram 1500",
@@ -6026,6 +6960,8 @@
     "recalls": 12,
     "tsbs": 1413,
     "investigations": 1,
+    "crash_tests": 11,
+    "lemon_law": null,
     "top_problems": [
       "Back Window Leaking in the 2021 Ram 1500",
       "Leather Dash Delaminating in the 2021 Ram 1500",
@@ -6039,6 +6975,8 @@
     "recalls": 13,
     "tsbs": 915,
     "investigations": 2,
+    "crash_tests": 11,
+    "lemon_law": null,
     "top_problems": [
       "Engine Auto Shuts Off And Engages Parking Brake in the 2022 Ram 1500",
       "Truck Vibration Between 50 And 70 Mph in the 2022 Ram 1500",
@@ -6052,6 +6990,8 @@
     "recalls": 9,
     "tsbs": 349,
     "investigations": null,
+    "crash_tests": 5,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -6061,6 +7001,8 @@
     "recalls": 3,
     "tsbs": 42,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Engine Failure in the 2024 Ram 1500",
       "Engine Control Module Failure in the 2024 Ram 1500",
@@ -6074,6 +7016,8 @@
     "recalls": 10,
     "tsbs": 925,
     "investigations": 2,
+    "crash_tests": 5,
+    "lemon_law": null,
     "top_problems": [
       "Tailgate Won't Stay Shut Or Open in the 2020 Ram 2500",
       "Rambox Lid Warped in the 2020 Ram 2500",
@@ -6087,6 +7031,8 @@
     "recalls": 7,
     "tsbs": 591,
     "investigations": null,
+    "crash_tests": 5,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -6096,6 +7042,8 @@
     "recalls": 11,
     "tsbs": 546,
     "investigations": null,
+    "crash_tests": 5,
+    "lemon_law": null,
     "top_problems": [
       "Loss Of Power Steering in the 2022 Ram 2500",
       "Stereo Screen Freezes, Carplay Disconnects in the 2022 Ram 2500",
@@ -6109,6 +7057,8 @@
     "recalls": 7,
     "tsbs": 174,
     "investigations": null,
+    "crash_tests": 5,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -6118,6 +7068,8 @@
     "recalls": 3,
     "tsbs": 25,
     "investigations": null,
+    "crash_tests": null,
+    "lemon_law": null,
     "top_problems": [
       "Truck Will Not Start, Engine Wont Turn Over in the 2024 Ram 2500"
     ],
@@ -6129,6 +7081,8 @@
     "recalls": 13,
     "tsbs": 1059,
     "investigations": 2,
+    "crash_tests": null,
+    "lemon_law": null,
     "top_problems": [
       "Stock Nexen Tires Fail Repeatedly in the 2019 Ram 3500",
       "Front Wheel Bearings Failed in the 2019 Ram 3500",
@@ -6142,6 +7096,8 @@
     "recalls": 11,
     "tsbs": 998,
     "investigations": 2,
+    "crash_tests": null,
+    "lemon_law": null,
     "top_problems": [
       "High Pressure Fuel Pump (Recall) in the 2020 Ram 3500",
       "Injection Pump Failure in the 2020 Ram 3500"
@@ -6154,6 +7110,8 @@
     "recalls": 8,
     "tsbs": 635,
     "investigations": 1,
+    "crash_tests": null,
+    "lemon_law": null,
     "top_problems": [
       "Heater Doesn't Blow Hot Air in the 2021 Ram 3500",
       "Hood Vibrates In High Wind Conditions in the 2021 Ram 3500",
@@ -6167,6 +7125,8 @@
     "recalls": 11,
     "tsbs": 601,
     "investigations": 1,
+    "crash_tests": null,
+    "lemon_law": null,
     "top_problems": [
       "Sudden Loss Of Transmission Power in the 2022 Ram 3500"
     ],
@@ -6178,6 +7138,8 @@
     "recalls": null,
     "tsbs": null,
     "investigations": null,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -6187,6 +7149,8 @@
     "recalls": null,
     "tsbs": null,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -6198,6 +7162,8 @@
     "recalls": null,
     "tsbs": null,
     "investigations": null,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -6207,6 +7173,8 @@
     "recalls": null,
     "tsbs": null,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -6267,6 +7235,8 @@
     "recalls": null,
     "tsbs": null,
     "investigations": null,
+    "crash_tests": null,
+    "lemon_law": null,
     "top_problems": [
       "Brake Not Working Properly in the 2016 Skoda Superb"
     ],
@@ -6284,6 +7254,8 @@
     "recalls": 8,
     "tsbs": 786,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Open Tailgate Drains Battery in the 2019 Subaru Ascent",
       "Doesn't Start in the 2019 Subaru Ascent",
@@ -6297,6 +7269,8 @@
     "recalls": 4,
     "tsbs": 602,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Windshield Easily Cracks in the 2020 Subaru Ascent",
       "Tailgate Opened Itself Once, Now Battery Keeps Dying in the 2020 Subaru Ascent",
@@ -6310,6 +7284,8 @@
     "recalls": 1,
     "tsbs": 362,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Engine Start And Stop in the 2021 Subaru Ascent"
     ],
@@ -6321,6 +7297,8 @@
     "recalls": 3,
     "tsbs": 180,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Crash Due To Unintended Acceleration in the 2023 Subaru Ascent",
       "Window Cracked in the 2023 Subaru Ascent"
@@ -6333,6 +7311,8 @@
     "recalls": 1,
     "tsbs": 91,
     "investigations": 1,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -6342,6 +7322,8 @@
     "recalls": 5,
     "tsbs": 672,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Cracked Windshield in the 2018 Subaru Crosstrek",
       "Radio Doesn't Work in the 2018 Subaru Crosstrek",
@@ -6355,6 +7337,8 @@
     "recalls": 7,
     "tsbs": 670,
     "investigations": null,
+    "crash_tests": 4,
+    "lemon_law": null,
     "top_problems": [
       "Cracked Windshield in the 2019 Subaru Crosstrek",
       "Head Gasket Failure in the 2019 Subaru Crosstrek",
@@ -6368,6 +7352,8 @@
     "recalls": null,
     "tsbs": 450,
     "investigations": null,
+    "crash_tests": 4,
+    "lemon_law": null,
     "top_problems": [
       "Cvt Started Making Whining Noise in the 2020 Subaru Crosstrek",
       "Gear Broken in the 2020 Subaru Crosstrek",
@@ -6381,6 +7367,8 @@
     "recalls": 1,
     "tsbs": 339,
     "investigations": null,
+    "crash_tests": 4,
+    "lemon_law": null,
     "top_problems": [
       "Gear Whining Noise From Powertrain in the 2021 Subaru Crosstrek",
       "Vehicle Acceleration While In Park in the 2021 Subaru Crosstrek",
@@ -6394,6 +7382,8 @@
     "recalls": null,
     "tsbs": 208,
     "investigations": null,
+    "crash_tests": 4,
+    "lemon_law": null,
     "top_problems": [
       "Radio Interface Stops Working in the 2022 Subaru Crosstrek",
       "Windshield Cracked Immediately in the 2022 Subaru Crosstrek",
@@ -6407,6 +7397,8 @@
     "recalls": null,
     "tsbs": 128,
     "investigations": null,
+    "crash_tests": 4,
+    "lemon_law": null,
     "top_problems": [
       "Windshield Replacement Less Than 8k Miles in the 2023 Subaru Crosstrek",
       "Passenger Door Locks Not Working in the 2023 Subaru Crosstrek"
@@ -6420,6 +7412,8 @@
     "recalls": 1,
     "tsbs": 569,
     "investigations": 1,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Shuddering And Jerking in the 2017 Subaru Forester",
       "Airbag Light On in the 2017 Subaru Forester",
@@ -6433,6 +7427,8 @@
     "recalls": 3,
     "tsbs": 510,
     "investigations": 1,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Cracked Windshield in the 2018 Subaru Forester",
       "Control Arm Bushings Failure in the 2018 Subaru Forester",
@@ -6446,6 +7442,8 @@
     "recalls": 3,
     "tsbs": 729,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Thermo Control Valve Assembly in the 2019 Subaru Forester",
       "Battery Always Dying in the 2019 Subaru Forester",
@@ -6459,6 +7457,8 @@
     "recalls": null,
     "tsbs": 581,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Windshield Chip, Growing Crack in the 2020 Subaru Forester",
       "Battery Drains Within A Few Days in the 2020 Subaru Forester",
@@ -6472,6 +7472,8 @@
     "recalls": null,
     "tsbs": 383,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Soy Based Wiring In My Car Is Being Eaten By Rats in the 2021 Subaru Forester",
       "Chipped Windshield Immediately in the 2021 Subaru Forester",
@@ -6485,6 +7487,8 @@
     "recalls": 1,
     "tsbs": 301,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Cracked Windshield in the 2022 Subaru Forester",
       "Radio Turns Off Nav Screen in the 2022 Subaru Forester"
@@ -6497,6 +7501,8 @@
     "recalls": 1,
     "tsbs": 182,
     "investigations": null,
+    "crash_tests": 3,
+    "lemon_law": null,
     "top_problems": [
       "Rear Tires Bald Due To Alignment Issue in the 2023 Subaru Forester",
       "Engine Oil Leak in the 2023 Subaru Forester",
@@ -6510,6 +7516,8 @@
     "recalls": 2,
     "tsbs": 76,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Eyesight Keeps Turning On And Off in the 2024 Subaru Forester",
       "Warranty Harassment From Edurance in the 2024 Subaru Forester"
@@ -6522,6 +7530,8 @@
     "recalls": 7,
     "tsbs": 738,
     "investigations": null,
+    "crash_tests": 4,
+    "lemon_law": null,
     "top_problems": [
       "Faulty Led Headlights in the 2017 Subaru Impreza",
       "Soy Wiring Attracts And Chewed By Rodents in the 2017 Subaru Impreza",
@@ -6535,6 +7545,8 @@
     "recalls": 5,
     "tsbs": 667,
     "investigations": null,
+    "crash_tests": 4,
+    "lemon_law": null,
     "top_problems": [
       "Windshield Cracked No Reason in the 2018 Subaru Impreza",
       "Battery Died in the 2018 Subaru Impreza",
@@ -6548,6 +7560,8 @@
     "recalls": 5,
     "tsbs": 653,
     "investigations": null,
+    "crash_tests": 4,
+    "lemon_law": null,
     "top_problems": [
       "Windshield Cracking in the 2019 Subaru Impreza",
       "Steering Too Sensitive in the 2019 Subaru Impreza",
@@ -6561,6 +7575,8 @@
     "recalls": 1,
     "tsbs": 445,
     "investigations": null,
+    "crash_tests": 4,
+    "lemon_law": null,
     "top_problems": [
       "Windshield Cracking in the 2020 Subaru Impreza",
       "Eyesight System Makes A Ticking/Creaking Noise in the 2020 Subaru Impreza"
@@ -6573,6 +7589,8 @@
     "recalls": 2,
     "tsbs": 309,
     "investigations": null,
+    "crash_tests": 4,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -6582,6 +7600,8 @@
     "recalls": 1,
     "tsbs": 209,
     "investigations": null,
+    "crash_tests": 4,
+    "lemon_law": null,
     "top_problems": [
       "Head Unit Freezes - Ongoing Issues Experienced in the 2022 Subaru Impreza"
     ],
@@ -6593,6 +7613,8 @@
     "recalls": 3,
     "tsbs": 687,
     "investigations": 1,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Wind Noise in the 2015 Subaru Legacy",
       "Won't Start in the 2015 Subaru Legacy",
@@ -6606,6 +7628,8 @@
     "recalls": 3,
     "tsbs": 607,
     "investigations": 1,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Battery Constantly Drains Requiring Jumps in the 2016 Subaru Legacy",
       "Unexpected Acceleration in the 2016 Subaru Legacy",
@@ -6619,6 +7643,8 @@
     "recalls": 2,
     "tsbs": 481,
     "investigations": 1,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Cracked Windshield in the 2017 Subaru Legacy",
       "Wires Chewed By Rodents in the 2017 Subaru Legacy",
@@ -6632,6 +7658,8 @@
     "recalls": 3,
     "tsbs": 604,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Radio, Navigation, Back Up Camera Screen Blank in the 2018 Subaru Legacy",
       "Cam Carrier Oil Leak in the 2018 Subaru Legacy",
@@ -6645,6 +7673,8 @@
     "recalls": 6,
     "tsbs": 658,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Dead Battery in the 2020 Subaru Legacy",
       "Windshield Cracked For No Reason in the 2020 Subaru Legacy"
@@ -6657,6 +7687,8 @@
     "recalls": 3,
     "tsbs": 441,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Windshield Cracks Easily in the 2021 Subaru Legacy",
       "Ccu Unit &quot;Cockpit Control Unit&quot; Doesn't Work Properly in the 2021 Subaru Legacy",
@@ -6670,6 +7702,8 @@
     "recalls": 2,
     "tsbs": 319,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Crack In Windshield in the 2022 Subaru Legacy",
       "Water Leaking Onto Driver's Side Floor in the 2022 Subaru Legacy"
@@ -6682,6 +7716,8 @@
     "recalls": 5,
     "tsbs": 719,
     "investigations": 1,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Cracks Easily in the 2015 Subaru Outback",
       "Battery Died in the 2015 Subaru Outback",
@@ -6695,6 +7731,8 @@
     "recalls": 4,
     "tsbs": 621,
     "investigations": 1,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Blistered Paint in the 2016 Subaru Outback",
       "Drained Battery in the 2016 Subaru Outback",
@@ -6708,6 +7746,8 @@
     "recalls": 4,
     "tsbs": 490,
     "investigations": 1,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Dead Battery in the 2017 Subaru Outback",
       "Cracked Windshield in the 2017 Subaru Outback",
@@ -6721,6 +7761,8 @@
     "recalls": 3,
     "tsbs": 598,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Windshield Cracks Easily in the 2018 Subaru Outback",
       "Dead Battery in the 2018 Subaru Outback",
@@ -6734,6 +7776,8 @@
     "recalls": 3,
     "tsbs": 559,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Windshield Crack in the 2019 Subaru Outback",
       "Dead Battery in the 2019 Subaru Outback",
@@ -6747,6 +7791,8 @@
     "recalls": 6,
     "tsbs": 699,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Windshield Cracked in the 2020 Subaru Outback",
       "Dead Battery in the 2020 Subaru Outback",
@@ -6760,6 +7806,8 @@
     "recalls": 4,
     "tsbs": 486,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Battery Dies in the 2021 Subaru Outback",
       "Battery Has Needed Repeated Charges in the 2021 Subaru Outback",
@@ -6773,6 +7821,8 @@
     "recalls": 4,
     "tsbs": 379,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Windshield Easily Cracks in the 2022 Subaru Outback",
       "Battery Drain Resulting In Car Not Starting in the 2022 Subaru Outback",
@@ -6786,6 +7836,8 @@
     "recalls": 2,
     "tsbs": 228,
     "investigations": null,
+    "crash_tests": 3,
+    "lemon_law": null,
     "top_problems": [
       "Cracks When Small Pebble Hit Windshield in the 2023 Subaru Outback",
       "Intermittent Dead Battery in the 2023 Subaru Outback",
@@ -6799,6 +7851,8 @@
     "recalls": 2,
     "tsbs": 121,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -6808,6 +7862,8 @@
     "recalls": null,
     "tsbs": null,
     "investigations": null,
+    "crash_tests": null,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -6817,6 +7873,8 @@
     "recalls": null,
     "tsbs": null,
     "investigations": null,
+    "crash_tests": null,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -6850,6 +7908,8 @@
     "recalls": 3,
     "tsbs": 130,
     "investigations": 1,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [
       "Unable To Fill Gas Tank Intermittently in the 2019 Toyota Avalon Hybrid"
     ],
@@ -6861,6 +7921,8 @@
     "recalls": 3,
     "tsbs": 105,
     "investigations": 1,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -6870,6 +7932,8 @@
     "recalls": 1,
     "tsbs": 97,
     "investigations": 1,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [
       "Right Blind Spot Monitor Intermittently Does Not Work in the 2021 Toyota Avalon Hybrid",
       "My Car Was Totaled, Airbags Failed To Deploy in the 2021 Toyota Avalon Hybrid",
@@ -6883,6 +7947,8 @@
     "recalls": null,
     "tsbs": 68,
     "investigations": 1,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -6892,6 +7958,8 @@
     "recalls": 3,
     "tsbs": 349,
     "investigations": 1,
+    "crash_tests": 3,
+    "lemon_law": null,
     "top_problems": [
       "A/C Not Working Properly in the 2016 Toyota Avalon",
       "Extremely Unformfortable Seats in the 2016 Toyota Avalon",
@@ -6905,6 +7973,8 @@
     "recalls": 2,
     "tsbs": 274,
     "investigations": 1,
+    "crash_tests": 3,
+    "lemon_law": null,
     "top_problems": [
       "Grab Handles Secured Unsatisfactorily in the 2017 Toyota Avalon",
       "A/C Blowing Hot Air in the 2017 Toyota Avalon"
@@ -6917,6 +7987,8 @@
     "recalls": 2,
     "tsbs": 218,
     "investigations": 1,
+    "crash_tests": 3,
+    "lemon_law": null,
     "top_problems": [
       "Cruise Control Not Working Properly in the 2018 Toyota Avalon",
       "Navigation System Does Not Work in the 2018 Toyota Avalon",
@@ -6930,6 +8002,8 @@
     "recalls": 4,
     "tsbs": 251,
     "investigations": null,
+    "crash_tests": 3,
+    "lemon_law": null,
     "top_problems": [
       "Excessive Oil Consumption in the 2019 Toyota Avalon",
       "Blind Spot Monitoring Malfunction Messages in the 2019 Toyota Avalon",
@@ -6943,6 +8017,8 @@
     "recalls": 3,
     "tsbs": 212,
     "investigations": null,
+    "crash_tests": 3,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -6952,6 +8028,8 @@
     "recalls": 2,
     "tsbs": 157,
     "investigations": null,
+    "crash_tests": 3,
+    "lemon_law": null,
     "top_problems": [
       "Navigation Gps in the 2021 Toyota Avalon"
     ],
@@ -6963,6 +8041,8 @@
     "recalls": null,
     "tsbs": 87,
     "investigations": null,
+    "crash_tests": 3,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -6978,6 +8058,8 @@
     "recalls": null,
     "tsbs": 60,
     "investigations": null,
+    "crash_tests": null,
+    "lemon_law": null,
     "top_problems": [
       "Engine Power Reduction, Bad Smell, Shaking Car in the 2017 Toyota C-HR"
     ],
@@ -6989,6 +8071,8 @@
     "recalls": 1,
     "tsbs": 169,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Transmission Failure in the 2018 Toyota C-HR",
       "Doors Rattle While Driving in the 2018 Toyota C-HR",
@@ -7002,6 +8086,8 @@
     "recalls": 3,
     "tsbs": 135,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "A/C Not Working in the 2019 Toyota C-HR",
       "Windshield Cracks Easily in the 2019 Toyota C-HR",
@@ -7015,6 +8101,8 @@
     "recalls": 1,
     "tsbs": 122,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Transmission Failure in the 2020 Toyota C-HR"
     ],
@@ -7026,6 +8114,8 @@
     "recalls": 1,
     "tsbs": 105,
     "investigations": null,
+    "crash_tests": 3,
+    "lemon_law": null,
     "top_problems": [
       "Fuel Range Not Accurate in the 2021 Toyota C-HR",
       "While Parking Car Suddenly Accelerated in the 2021 Toyota C-HR"
@@ -7038,6 +8128,8 @@
     "recalls": null,
     "tsbs": 168,
     "investigations": 1,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [
       "Gas Intake Leak in the 2018 Toyota Camry Hybrid",
       "Did Not Accelerate When Stepping The Gas Pedal in the 2018 Toyota Camry Hybrid",
@@ -7051,6 +8143,8 @@
     "recalls": 2,
     "tsbs": 138,
     "investigations": 1,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [
       "Low Braking Power Hybrid System Malfunction in the 2019 Toyota Camry Hybrid"
     ],
@@ -7062,6 +8156,8 @@
     "recalls": 2,
     "tsbs": 138,
     "investigations": 1,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [
       "Multiple Error Messages, Then Died in the 2020 Toyota Camry Hybrid",
       "Hybrid Malfunction, Pre-Collision Brake Fail in the 2020 Toyota Camry Hybrid",
@@ -7075,6 +8171,8 @@
     "recalls": 1,
     "tsbs": 101,
     "investigations": 1,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [
       "Car Was Locked In Park. Brakes Would Not Disengage in the 2021 Toyota Camry Hybrid",
       "Rodent Damage To Wiring in the 2021 Toyota Camry Hybrid"
@@ -7087,6 +8185,8 @@
     "recalls": 1,
     "tsbs": 82,
     "investigations": 1,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [
       "Spilled Gas On Paint, Yellowed Paint in the 2022 Toyota Camry Hybrid"
     ],
@@ -7098,6 +8198,8 @@
     "recalls": 2,
     "tsbs": 34,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -7108,6 +8210,8 @@
     "recalls": 8,
     "tsbs": 460,
     "investigations": null,
+    "crash_tests": 3,
+    "lemon_law": null,
     "top_problems": [
       "Shifting Roughly in the 2018 Toyota Camry",
       "Transmission Failure in the 2018 Toyota Camry",
@@ -7121,6 +8225,8 @@
     "recalls": 6,
     "tsbs": 265,
     "investigations": null,
+    "crash_tests": 3,
+    "lemon_law": null,
     "top_problems": [
       "Total Failure in the 2019 Toyota Camry",
       "Jerks From Stop in the 2019 Toyota Camry",
@@ -7134,6 +8240,8 @@
     "recalls": 3,
     "tsbs": 301,
     "investigations": null,
+    "crash_tests": 3,
+    "lemon_law": null,
     "top_problems": [
       "Battery Dies Easily in the 2020 Toyota Camry",
       "Dead Battery After Only 3157 Miles in the 2020 Toyota Camry",
@@ -7147,6 +8255,8 @@
     "recalls": 1,
     "tsbs": 180,
     "investigations": null,
+    "crash_tests": 3,
+    "lemon_law": null,
     "top_problems": [
       "Transmission Failure in the 2021 Toyota Camry",
       "Oil Leaking in the 2021 Toyota Camry",
@@ -7160,6 +8270,8 @@
     "recalls": 1,
     "tsbs": 125,
     "investigations": null,
+    "crash_tests": 3,
+    "lemon_law": null,
     "top_problems": [
       "Multiple Safety And Infotainment Systems Not Working in the 2022 Toyota Camry",
       "Turns Over, Acts Like It's Flooded in the 2022 Toyota Camry"
@@ -7172,6 +8284,8 @@
     "recalls": 2,
     "tsbs": 68,
     "investigations": null,
+    "crash_tests": 6,
+    "lemon_law": null,
     "top_problems": [
       "Clunking & Squeaking Noise in the 2023 Toyota Camry",
       "Excess Vibration When Braking in the 2023 Toyota Camry",
@@ -7185,6 +8299,8 @@
     "recalls": 1,
     "tsbs": 33,
     "investigations": null,
+    "crash_tests": 3,
+    "lemon_law": null,
     "top_problems": [
       "Sunroof in the 2024 Toyota Camry",
       "Paint Chipping in the 2024 Toyota Camry",
@@ -7198,6 +8314,8 @@
     "recalls": null,
     "tsbs": null,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Air Bag Exploded in the 2025 Toyota Camry",
       "Driver\u2019S Seat Thump In Mid-Back When Braking in the 2025 Toyota Camry",
@@ -7218,6 +8336,8 @@
     "recalls": 2,
     "tsbs": 23,
     "investigations": null,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [
       "Oil Pan Gasket Leak in the 2022 Toyota Corolla Cross"
     ],
@@ -7229,6 +8349,8 @@
     "recalls": 4,
     "tsbs": 33,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "In Subzero Temperature Computer Mulfunctions in the 2023 Toyota Corolla Cross",
       "When The Sun Shines In, You Can\u2019T See The Dash Board in the 2023 Toyota Corolla Cross"
@@ -7241,6 +8363,8 @@
     "recalls": null,
     "tsbs": 30,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Front Headlights Do Not Illuminate Properly in the 2024 Toyota Corolla Cross"
     ],
@@ -7252,6 +8376,8 @@
     "recalls": null,
     "tsbs": 4,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -7261,6 +8387,8 @@
     "recalls": 1,
     "tsbs": 81,
     "investigations": null,
+    "crash_tests": null,
+    "lemon_law": null,
     "top_problems": [
       "Blower Noise in the 2019 Toyota Corolla Hatchback",
       "Internal Bearing Failure In The Transmission in the 2019 Toyota Corolla Hatchback",
@@ -7274,6 +8402,8 @@
     "recalls": 2,
     "tsbs": 161,
     "investigations": null,
+    "crash_tests": null,
+    "lemon_law": null,
     "top_problems": [
       "Transmission Failure in the 2020 Toyota Corolla Hatchback",
       "Need Replacement Rear Disc Brake in the 2020 Toyota Corolla Hatchback",
@@ -7287,6 +8417,8 @@
     "recalls": null,
     "tsbs": 136,
     "investigations": null,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [
       "Compressor Stopped Working After 50,000 Miles in the 2021 Toyota Corolla Hatchback",
       "Slipping in the 2021 Toyota Corolla Hatchback"
@@ -7299,6 +8431,8 @@
     "recalls": null,
     "tsbs": 16,
     "investigations": null,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [
       "High Frequency Noise From Blower in the 2022 Toyota Corolla Hatchback",
       "Smell in the 2022 Toyota Corolla Hatchback"
@@ -7315,6 +8449,8 @@
     "recalls": 2,
     "tsbs": 76,
     "investigations": 1,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -7324,6 +8460,8 @@
     "recalls": null,
     "tsbs": 77,
     "investigations": 1,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [
       "Steering Wheel Comes Off in the 2021 Toyota Corolla Hybrid",
       "Seat Comfortability Issue in the 2021 Toyota Corolla Hybrid"
@@ -7336,6 +8474,8 @@
     "recalls": null,
     "tsbs": 46,
     "investigations": 1,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -7345,6 +8485,8 @@
     "recalls": 3,
     "tsbs": 315,
     "investigations": 2,
+    "crash_tests": 3,
+    "lemon_law": null,
     "top_problems": [
       "Premature Brake Failure in the 2017 Toyota Corolla",
       "Over Revving in the 2017 Toyota Corolla",
@@ -7358,6 +8500,8 @@
     "recalls": 3,
     "tsbs": 219,
     "investigations": 2,
+    "crash_tests": 4,
+    "lemon_law": null,
     "top_problems": [
       "Mice Ate Soy Wiring in the 2018 Toyota Corolla",
       "Accelerates Over Hills In Cruise Control in the 2018 Toyota Corolla",
@@ -7371,6 +8515,8 @@
     "recalls": 5,
     "tsbs": 246,
     "investigations": 1,
+    "crash_tests": 4,
+    "lemon_law": null,
     "top_problems": [
       "Uncomfortable Seats in the 2019 Toyota Corolla",
       "High Pitch Noise When Hvac Is On in the 2019 Toyota Corolla",
@@ -7384,6 +8530,8 @@
     "recalls": 3,
     "tsbs": 198,
     "investigations": null,
+    "crash_tests": 5,
+    "lemon_law": null,
     "top_problems": [
       "Sour A/C Smell in the 2020 Toyota Corolla",
       "Failed A/C Condenser in the 2020 Toyota Corolla",
@@ -7397,6 +8545,8 @@
     "recalls": 1,
     "tsbs": 163,
     "investigations": null,
+    "crash_tests": 5,
+    "lemon_law": null,
     "top_problems": [
       "Driver Seat Belt Failed in the 2021 Toyota Corolla",
       "Whining Or Grinding Sound in the 2021 Toyota Corolla"
@@ -7409,6 +8559,8 @@
     "recalls": null,
     "tsbs": 92,
     "investigations": null,
+    "crash_tests": 7,
+    "lemon_law": null,
     "top_problems": [
       "Transmission Oil Leak in the 2022 Toyota Corolla",
       "Noise In Sunroof When Is Tilt Up in the 2022 Toyota Corolla",
@@ -7422,6 +8574,8 @@
     "recalls": 2,
     "tsbs": 102,
     "investigations": 1,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [
       "Bluetooth Echo in the 2017 Toyota Highlander Hybrid",
       "Leather Seats Stain Easy in the 2017 Toyota Highlander Hybrid",
@@ -7435,6 +8589,8 @@
     "recalls": null,
     "tsbs": 103,
     "investigations": 1,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [
       "No Oil Life Monitor in the 2018 Toyota Highlander Hybrid",
       "No Tire Pressure Monitor in the 2018 Toyota Highlander Hybrid",
@@ -7448,6 +8604,8 @@
     "recalls": null,
     "tsbs": 82,
     "investigations": 1,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [
       "&quot;Hybrid System Has Stopped&quot; Message in the 2019 Toyota Highlander Hybrid",
       "Horrible Voice Recognition System in the 2019 Toyota Highlander Hybrid",
@@ -7461,6 +8619,8 @@
     "recalls": 4,
     "tsbs": 112,
     "investigations": 1,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [
       "Can't Fill Fuel Tank All The Way in the 2020 Toyota Highlander Hybrid",
       "Front Bumper Fell Off in the 2020 Toyota Highlander Hybrid",
@@ -7474,6 +8634,8 @@
     "recalls": 3,
     "tsbs": 114,
     "investigations": 1,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [
       "Front Bumper Fell Off in the 2021 Toyota Highlander Hybrid"
     ],
@@ -7485,6 +8647,8 @@
     "recalls": 3,
     "tsbs": 94,
     "investigations": 1,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -7494,6 +8658,8 @@
     "recalls": 4,
     "tsbs": 39,
     "investigations": null,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [
       "Vehicle Was Stolen Almost A Year Ago, Waiting For Parts in the 2023 Toyota Highlander Hybrid",
       "Air Conditioning Not Working in the 2023 Toyota Highlander Hybrid"
@@ -7506,6 +8672,8 @@
     "recalls": 4,
     "tsbs": 360,
     "investigations": null,
+    "crash_tests": 3,
+    "lemon_law": null,
     "top_problems": [
       "Transmission Failure in the 2017 Toyota Highlander",
       "Excessive Wind Noise Inside Vehicle in the 2017 Toyota Highlander",
@@ -7519,6 +8687,8 @@
     "recalls": 5,
     "tsbs": 338,
     "investigations": null,
+    "crash_tests": 3,
+    "lemon_law": null,
     "top_problems": [
       "Premature Brake Wear in the 2018 Toyota Highlander",
       "Wiring Chewed By Rodent in the 2018 Toyota Highlander",
@@ -7532,6 +8702,8 @@
     "recalls": 3,
     "tsbs": 207,
     "investigations": null,
+    "crash_tests": 3,
+    "lemon_law": null,
     "top_problems": [
       "Whining Noise Upon Acceleration in the 2019 Toyota Highlander",
       "Dashboard Defect in the 2019 Toyota Highlander",
@@ -7545,6 +8717,8 @@
     "recalls": 4,
     "tsbs": 231,
     "investigations": null,
+    "crash_tests": 3,
+    "lemon_law": null,
     "top_problems": [
       "A/C Condenser Damage in the 2020 Toyota Highlander",
       "Uncomfortable Seats in the 2020 Toyota Highlander",
@@ -7558,6 +8732,8 @@
     "recalls": 3,
     "tsbs": 193,
     "investigations": null,
+    "crash_tests": 3,
+    "lemon_law": null,
     "top_problems": [
       "A/C Condenser Punctured With Rock Chip in the 2021 Toyota Highlander",
       "Transmission Slips Out Of Gear in the 2021 Toyota Highlander",
@@ -7571,6 +8747,8 @@
     "recalls": 4,
     "tsbs": 137,
     "investigations": null,
+    "crash_tests": 3,
+    "lemon_law": null,
     "top_problems": [
       "Lane Departure System Defect in the 2022 Toyota Highlander",
       "Valve Seals / Burning Oil On Startup in the 2022 Toyota Highlander",
@@ -7584,6 +8762,8 @@
     "recalls": 6,
     "tsbs": 65,
     "investigations": null,
+    "crash_tests": 3,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -7593,6 +8773,8 @@
     "recalls": null,
     "tsbs": 4,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -7602,6 +8784,8 @@
     "recalls": 1,
     "tsbs": 95,
     "investigations": null,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [
       "Hydrogen Is Too Expensive in the 2021 Toyota Mirai"
     ],
@@ -7613,6 +8797,8 @@
     "recalls": null,
     "tsbs": 107,
     "investigations": 1,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Wires Chewed By Rodents in the 2017 Toyota Prius Prime",
       "Windshield Chips And Cracks Easily in the 2017 Toyota Prius Prime",
@@ -7626,6 +8812,8 @@
     "recalls": null,
     "tsbs": 94,
     "investigations": 1,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Windshield Cracks Easily in the 2018 Toyota Prius Prime"
     ],
@@ -7637,6 +8825,8 @@
     "recalls": 1,
     "tsbs": 132,
     "investigations": 1,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [
       "Windshield Cracked in the 2019 Toyota Prius Prime"
     ],
@@ -7648,6 +8838,8 @@
     "recalls": 1,
     "tsbs": 127,
     "investigations": 1,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Wires Eaten By Rodents in the 2020 Toyota Prius Prime",
       "Rodent Ate My Wiring in the 2020 Toyota Prius Prime",
@@ -7661,6 +8853,8 @@
     "recalls": null,
     "tsbs": 109,
     "investigations": 1,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -7670,6 +8864,8 @@
     "recalls": 1,
     "tsbs": 73,
     "investigations": 1,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [
       "Tire Problem On New Car in the 2022 Toyota Prius Prime"
     ],
@@ -7681,6 +8877,8 @@
     "recalls": 1,
     "tsbs": 312,
     "investigations": null,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [
       "Usb Port Stopped Charging in the 2017 Toyota Prius v"
     ],
@@ -7692,6 +8890,8 @@
     "recalls": 5,
     "tsbs": 413,
     "investigations": 1,
+    "crash_tests": 6,
+    "lemon_law": null,
     "top_problems": [
       "Windshield Cracks Easily in the 2016 Toyota Prius",
       "Radio/Navigation System Not Working Properly in the 2016 Toyota Prius",
@@ -7705,6 +8905,8 @@
     "recalls": 3,
     "tsbs": 318,
     "investigations": 1,
+    "crash_tests": 7,
+    "lemon_law": null,
     "top_problems": [
       "Brakes Not Working Properly in the 2017 Toyota Prius",
       "Windshield Cracked in the 2017 Toyota Prius",
@@ -7718,6 +8920,8 @@
     "recalls": 1,
     "tsbs": 243,
     "investigations": 1,
+    "crash_tests": 5,
+    "lemon_law": null,
     "top_problems": [
       "Rear Window Exploded in the 2018 Toyota Prius",
       "Excessive Noise From Moon Roof in the 2018 Toyota Prius",
@@ -7731,6 +8935,8 @@
     "recalls": 3,
     "tsbs": 162,
     "investigations": 1,
+    "crash_tests": 5,
+    "lemon_law": null,
     "top_problems": [
       "Poor Mpg in the 2019 Toyota Prius",
       "Car Doesn't Accurately Gauge Lane Limits in the 2019 Toyota Prius",
@@ -7744,6 +8950,8 @@
     "recalls": null,
     "tsbs": 162,
     "investigations": 1,
+    "crash_tests": 4,
+    "lemon_law": null,
     "top_problems": [
       "Wiring Harness Soy Product in the 2020 Toyota Prius",
       "Unintended Acceleration in the 2020 Toyota Prius"
@@ -7756,6 +8964,8 @@
     "recalls": null,
     "tsbs": 110,
     "investigations": 1,
+    "crash_tests": 4,
+    "lemon_law": null,
     "top_problems": [
       "Windshield Cracked Very Easily in the 2021 Toyota Prius",
       "Lane Tracking System Will Follow Tire Tracks in the 2021 Toyota Prius"
@@ -7768,6 +8978,8 @@
     "recalls": 1,
     "tsbs": 78,
     "investigations": 1,
+    "crash_tests": 4,
+    "lemon_law": null,
     "top_problems": [
       "Windshield Wipers Too Slow in the 2022 Toyota Prius"
     ],
@@ -7779,6 +8991,8 @@
     "recalls": null,
     "tsbs": 3,
     "investigations": null,
+    "crash_tests": null,
+    "lemon_law": null,
     "top_problems": [
       "Door Does Not Close Properly in the 2016 Toyota RAV4 Hybrid",
       "Roof Rack Weatherstrip Blew Off in the 2016 Toyota RAV4 Hybrid",
@@ -7792,6 +9006,8 @@
     "recalls": 1,
     "tsbs": 207,
     "investigations": 1,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [
       "A/C Condensation Hose Became Clogged in the 2017 Toyota RAV4 Hybrid",
       "Engine Started Automatically In Middle Of Night in the 2017 Toyota RAV4 Hybrid",
@@ -7805,6 +9021,8 @@
     "recalls": null,
     "tsbs": 64,
     "investigations": 1,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [
       "Plastic Parts Melt In Sun in the 2018 Toyota RAV4 Hybrid",
       "Brake Failure in the 2018 Toyota RAV4 Hybrid",
@@ -7818,6 +9036,8 @@
     "recalls": 3,
     "tsbs": 156,
     "investigations": 1,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [
       "Cannot Fill Fuel Tank Completely in the 2019 Toyota RAV4 Hybrid",
       "Engine Light Comes On, Car Won't Start in the 2019 Toyota RAV4 Hybrid",
@@ -7831,6 +9051,8 @@
     "recalls": 5,
     "tsbs": 163,
     "investigations": 1,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [
       "Can't Fill Fuel Tank in the 2020 Toyota RAV4 Hybrid",
       "Battery Dead in the 2020 Toyota RAV4 Hybrid",
@@ -7844,6 +9066,8 @@
     "recalls": 1,
     "tsbs": 134,
     "investigations": 1,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [
       "Fuel Tank Errors in the 2021 Toyota RAV4 Hybrid",
       "Battery Dies All Of The Time in the 2021 Toyota RAV4 Hybrid",
@@ -7857,6 +9081,8 @@
     "recalls": 2,
     "tsbs": 88,
     "investigations": 1,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [
       "High Voltage Cable Corrosion/Cablegate in the 2022 Toyota RAV4 Hybrid",
       "Can Not Load Software in the 2022 Toyota RAV4 Hybrid",
@@ -7870,6 +9096,8 @@
     "recalls": null,
     "tsbs": 34,
     "investigations": null,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -7879,6 +9107,8 @@
     "recalls": null,
     "tsbs": 30,
     "investigations": null,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [
       "Bad Catalytic Converter in the 2024 Toyota RAV4 Hybrid"
     ],
@@ -7890,6 +9120,8 @@
     "recalls": null,
     "tsbs": 5,
     "investigations": null,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [
       "Black Wheels Not Completely Painted in the 2025 Toyota RAV4 Hybrid"
     ],
@@ -7901,6 +9133,8 @@
     "recalls": 4,
     "tsbs": 197,
     "investigations": 1,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [
       "Ev Wont Run To Save The Battery in the 2021 Toyota RAV4 Prime",
       "Fuel Tank Capacity in the 2021 Toyota RAV4 Prime",
@@ -7914,6 +9148,8 @@
     "recalls": 3,
     "tsbs": 50,
     "investigations": 1,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [
       "Acoustic Vehicle Alerting System Is Obnoxiously Loud in the 2022 Toyota RAV4 Prime"
     ],
@@ -7925,6 +9161,8 @@
     "recalls": null,
     "tsbs": 41,
     "investigations": null,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [
       "&quot;Favorites&quot; In Navigation System Keep Disappearing in the 2023 Toyota RAV4 Prime"
     ],
@@ -7938,6 +9176,8 @@
     "recalls": 3,
     "tsbs": 306,
     "investigations": 1,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Transmission Failure in the 2016 Toyota RAV4",
       "Tailgate Not Working Properly in the 2016 Toyota RAV4",
@@ -7951,6 +9191,8 @@
     "recalls": 3,
     "tsbs": 230,
     "investigations": 1,
+    "crash_tests": 3,
+    "lemon_law": null,
     "top_problems": [
       "Pulls To One Side in the 2017 Toyota RAV4",
       "Poor Headlights in the 2017 Toyota RAV4",
@@ -7964,6 +9206,8 @@
     "recalls": 3,
     "tsbs": 192,
     "investigations": 1,
+    "crash_tests": 3,
+    "lemon_law": null,
     "top_problems": [
       "Electrical Harness Failure in the 2018 Toyota RAV4",
       "Gas Went Into Smog Vent Hose in the 2018 Toyota RAV4",
@@ -7977,6 +9221,8 @@
     "recalls": 7,
     "tsbs": 388,
     "investigations": null,
+    "crash_tests": 3,
+    "lemon_law": null,
     "top_problems": [
       "Hesitates And Lurches At Slower Speeds in the 2019 Toyota RAV4",
       "Roof Rack Rails Leaking in the 2019 Toyota RAV4",
@@ -7990,6 +9236,8 @@
     "recalls": 6,
     "tsbs": 382,
     "investigations": null,
+    "crash_tests": 3,
+    "lemon_law": null,
     "top_problems": [
       "Soy Based Wiring in the 2020 Toyota RAV4",
       "Dead Battery in the 2020 Toyota RAV4",
@@ -8003,6 +9251,8 @@
     "recalls": 1,
     "tsbs": 248,
     "investigations": null,
+    "crash_tests": 5,
+    "lemon_law": null,
     "top_problems": [
       "Rattling Noise From Left Pillar Where Seatbelt Is Attached in the 2021 Toyota RAV4",
       "Unexplained Acceleration While Brakes Were Applied in the 2021 Toyota RAV4",
@@ -8016,6 +9266,8 @@
     "recalls": 1,
     "tsbs": 140,
     "investigations": null,
+    "crash_tests": 5,
+    "lemon_law": null,
     "top_problems": [
       "Engine Rev Up High But Car Takes Awhile To Speed Up in the 2022 Toyota RAV4",
       "SRS Airbag Malfunction in the 2022 Toyota RAV4"
@@ -8028,6 +9280,8 @@
     "recalls": 1,
     "tsbs": 48,
     "investigations": null,
+    "crash_tests": 4,
+    "lemon_law": null,
     "top_problems": [
       "Sunroof Exploded While Driving in the 2023 Toyota RAV4",
       "Plastic On Exterior Door Panel Melting/Warping in the 2023 Toyota RAV4",
@@ -8041,6 +9295,8 @@
     "recalls": 1,
     "tsbs": 18,
     "investigations": null,
+    "crash_tests": 5,
+    "lemon_law": null,
     "top_problems": [
       "Spontanous Crack Without Being Hit By Rock in the 2024 Toyota RAV4",
       "Final Drive Was Defective. Whining When Decelerating in the 2024 Toyota RAV4",
@@ -8054,6 +9310,8 @@
     "recalls": null,
     "tsbs": 4,
     "investigations": null,
+    "crash_tests": 5,
+    "lemon_law": null,
     "top_problems": [
       "Oil Leak Noticed On The Undercarriage in the 2025 Toyota RAV4",
       "Fuel Tank Defects in the 2025 Toyota RAV4"
@@ -8066,6 +9324,8 @@
     "recalls": null,
     "tsbs": 54,
     "investigations": null,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -8075,6 +9335,8 @@
     "recalls": null,
     "tsbs": 23,
     "investigations": null,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -8084,6 +9346,8 @@
     "recalls": null,
     "tsbs": 3,
     "investigations": null,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -8093,6 +9357,8 @@
     "recalls": 7,
     "tsbs": 403,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Poor Fuel Economy in the 2018 Toyota Sienna",
       "Pcs Randomly Stopped in the 2018 Toyota Sienna",
@@ -8106,6 +9372,8 @@
     "recalls": 7,
     "tsbs": 235,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Upshift Shuddering in the 2019 Toyota Sienna",
       "Navigation Issue in the 2019 Toyota Sienna",
@@ -8119,6 +9387,8 @@
     "recalls": 2,
     "tsbs": 176,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Lack Of Acceleration And Check Engine Light in the 2020 Toyota Sienna",
       "Wiring Chewed By Mice Or Animals in the 2020 Toyota Sienna",
@@ -8132,6 +9402,8 @@
     "recalls": 1,
     "tsbs": 107,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Intermittent Brake Release in the 2021 Toyota Sienna",
       "No Spare Tire in the 2021 Toyota Sienna"
@@ -8144,6 +9416,8 @@
     "recalls": 2,
     "tsbs": 104,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Drl Rapidly Burning / Yellow Rapidly After New in the 2022 Toyota Sienna",
       "Vehicle Is Dead in the 2022 Toyota Sienna"
@@ -8156,6 +9430,8 @@
     "recalls": null,
     "tsbs": 59,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -8165,6 +9441,8 @@
     "recalls": null,
     "tsbs": 37,
     "investigations": null,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -8174,6 +9452,8 @@
     "recalls": null,
     "tsbs": null,
     "investigations": null,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -8183,6 +9463,8 @@
     "recalls": 10,
     "tsbs": 158,
     "investigations": null,
+    "crash_tests": 8,
+    "lemon_law": null,
     "top_problems": [
       "High-Pitched Squeaking Noise When In Reverse in the 2022 Toyota Tundra",
       "Mpg Sucks in the 2022 Toyota Tundra",
@@ -8196,6 +9478,8 @@
     "recalls": 10,
     "tsbs": 80,
     "investigations": null,
+    "crash_tests": 8,
+    "lemon_law": null,
     "top_problems": [
       "Steering Pulling Really Bad in the 2023 Toyota Tundra",
       "Vehicle Goes In Start/Stop Mode After Shifting To Park in the 2023 Toyota Tundra",
@@ -8209,6 +9493,8 @@
     "recalls": 4,
     "tsbs": 40,
     "investigations": null,
+    "crash_tests": 8,
+    "lemon_law": null,
     "top_problems": [
       "Cv Joints Fail Completely If You Turn In 4 Wheel Drive in the 2024 Toyota Tundra",
       "Cruise Control Not Available And Warning Lights Turn On in the 2024 Toyota Tundra",
@@ -8222,6 +9508,8 @@
     "recalls": null,
     "tsbs": 5,
     "investigations": null,
+    "crash_tests": 5,
+    "lemon_law": null,
     "top_problems": [
       "Drivers Door Locks When Tailgate Is Operated in the 2025 Toyota Tundra",
       "High Pitch Squeal Noise in the 2025 Toyota Tundra"
@@ -8234,6 +9522,8 @@
     "recalls": 1,
     "tsbs": 85,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Defective Windshield in the 2021 Toyota Venza",
       "Trouble Fueling Up To Capacity in the 2021 Toyota Venza",
@@ -8247,6 +9537,8 @@
     "recalls": 1,
     "tsbs": 58,
     "investigations": null,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -8256,6 +9548,8 @@
     "recalls": null,
     "tsbs": 40,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Exhaust Rusted Badly in the 2023 Toyota Venza",
       "The Radio Goes On And Off in the 2023 Toyota Venza"
@@ -8268,6 +9562,8 @@
     "recalls": null,
     "tsbs": 33,
     "investigations": null,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -8295,6 +9591,8 @@
     "recalls": null,
     "tsbs": null,
     "investigations": null,
+    "crash_tests": null,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -8304,6 +9602,8 @@
     "recalls": 1,
     "tsbs": 453,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -8313,6 +9613,8 @@
     "recalls": null,
     "tsbs": 438,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -8322,6 +9624,8 @@
     "recalls": 4,
     "tsbs": 373,
     "investigations": null,
+    "crash_tests": 4,
+    "lemon_law": null,
     "top_problems": [
       "Water Pump Leak in the 2021 Volkswagen Arteon"
     ],
@@ -8335,6 +9639,8 @@
     "recalls": 11,
     "tsbs": 600,
     "investigations": 1,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [
       "Unidentified Warning Light in the 2020 Volkswagen Atlas Cross Sport",
       "Unidentified Red Warning Light in the 2020 Volkswagen Atlas Cross Sport",
@@ -8348,6 +9654,8 @@
     "recalls": 14,
     "tsbs": 716,
     "investigations": null,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [
       "Memory Seat Recall Stopped Working in the 2021 Volkswagen Atlas Cross Sport",
       "Noticeable Road Noise, Tires Starting To Chop in the 2021 Volkswagen Atlas Cross Sport",
@@ -8361,6 +9669,8 @@
     "recalls": 7,
     "tsbs": 544,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Front Assist Coming On When No Cars Around in the 2022 Volkswagen Atlas Cross Sport",
       "Engine Shuts Off While Driving in the 2022 Volkswagen Atlas Cross Sport"
@@ -8373,6 +9683,8 @@
     "recalls": 16,
     "tsbs": 1048,
     "investigations": 2,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Radiator Leak in the 2018 Volkswagen Atlas",
       "Axle Broke in the 2018 Volkswagen Atlas",
@@ -8386,6 +9698,8 @@
     "recalls": 11,
     "tsbs": 874,
     "investigations": 3,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Vibration Issue in the 2019 Volkswagen Atlas",
       "Water Flooding Interior in the 2019 Volkswagen Atlas",
@@ -8399,6 +9713,8 @@
     "recalls": 4,
     "tsbs": 773,
     "investigations": 2,
+    "crash_tests": 4,
+    "lemon_law": null,
     "top_problems": [
       "A/C Does Not Work in the 2020 Volkswagen Atlas",
       "Heated Steering Wheel Doesn\u2019T Work in the 2020 Volkswagen Atlas",
@@ -8412,6 +9728,8 @@
     "recalls": 17,
     "tsbs": 844,
     "investigations": 1,
+    "crash_tests": 4,
+    "lemon_law": null,
     "top_problems": [
       "Transmission Rattling Noise From 2nd To 3rd Gear in the 2021 Volkswagen Atlas",
       "Incredibly Noisy Interior in the 2021 Volkswagen Atlas",
@@ -8425,6 +9743,8 @@
     "recalls": 7,
     "tsbs": 574,
     "investigations": 1,
+    "crash_tests": 3,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -8434,6 +9754,8 @@
     "recalls": 4,
     "tsbs": 356,
     "investigations": 1,
+    "crash_tests": 4,
+    "lemon_law": null,
     "top_problems": [
       "Terrible Gas Mileage In City in the 2023 Volkswagen Atlas"
     ],
@@ -8466,6 +9788,8 @@
     "recalls": 1,
     "tsbs": 355,
     "investigations": null,
+    "crash_tests": null,
+    "lemon_law": null,
     "top_problems": [
       "Faulty Clockspring in the 2017 Volkswagen Golf Alltrack",
       "Paint Is Chipping in the 2017 Volkswagen Golf Alltrack",
@@ -8480,6 +9804,8 @@
     "recalls": 3,
     "tsbs": 324,
     "investigations": null,
+    "crash_tests": null,
+    "lemon_law": null,
     "top_problems": [
       "Epc Warning And Wastegate Error Code #P256300 in the 2019 Volkswagen Golf Alltrack",
       "Sunroof Drain / Water Damage / Mold in the 2019 Volkswagen Golf Alltrack"
@@ -8504,6 +9830,8 @@
     "recalls": null,
     "tsbs": null,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "A/C Not Working in the 2015 Volkswagen Golf GTI",
       "Clutch Disk And Flywheel Worn Out Early in the 2015 Volkswagen Golf GTI",
@@ -8517,6 +9845,8 @@
     "recalls": null,
     "tsbs": null,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Tire Pressure Warning Light On in the 2016 Volkswagen Golf GTI",
       "Check Engine Light On in the 2016 Volkswagen Golf GTI",
@@ -8530,6 +9860,8 @@
     "recalls": null,
     "tsbs": null,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Gouged Cylinder Likely Caused By Piston Ring Failure in the 2017 Volkswagen Golf GTI",
       "Fuel Leaking On Rear Right Wheel Well, Bogging Down in the 2017 Volkswagen Golf GTI",
@@ -8543,6 +9875,8 @@
     "recalls": null,
     "tsbs": null,
     "investigations": null,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [
       "Leaking Fuel And Faulty Fuel Pump Repairs in the 2018 Volkswagen Golf GTI",
       "Cannot Add Gas To Car, Car Stutters On Acceleration in the 2018 Volkswagen Golf GTI"
@@ -8555,6 +9889,8 @@
     "recalls": null,
     "tsbs": null,
     "investigations": null,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [
       "Engine Is Randomly Stalling When Sitting At Idle in the 2019 Volkswagen Golf GTI",
       "Front Brake Assist Comes On Without An Obstacle in the 2019 Volkswagen Golf GTI"
@@ -8567,6 +9903,8 @@
     "recalls": null,
     "tsbs": null,
     "investigations": null,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [
       "$3,000 Maintenance After 2 Years in the 2020 Volkswagen Golf GTI"
     ],
@@ -8578,6 +9916,8 @@
     "recalls": null,
     "tsbs": null,
     "investigations": null,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -8587,6 +9927,8 @@
     "recalls": null,
     "tsbs": 680,
     "investigations": 1,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -8596,6 +9938,8 @@
     "recalls": 4,
     "tsbs": 694,
     "investigations": 1,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [
       "Bad Radio Reception On Am Band in the 2016 Volkswagen Golf R",
       "Drivers Sideview Mirror Vibration in the 2016 Volkswagen Golf R",
@@ -8609,6 +9953,8 @@
     "recalls": null,
     "tsbs": 529,
     "investigations": 1,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -8618,6 +9964,8 @@
     "recalls": 4,
     "tsbs": 540,
     "investigations": 1,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [
       "Distance Control Deactivated in the 2018 Volkswagen Golf R",
       "Leather Seats Bolster Worn Out in the 2018 Volkswagen Golf R"
@@ -8630,6 +9978,8 @@
     "recalls": 2,
     "tsbs": 430,
     "investigations": 1,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [
       "Dash Rattles in the 2019 Volkswagen Golf R",
       "Driver Assist Brakes Lock When No Object Exists, Slow Speed in the 2019 Volkswagen Golf R"
@@ -8648,6 +9998,8 @@
     "recalls": 12,
     "tsbs": 1541,
     "investigations": 1,
+    "crash_tests": 8,
+    "lemon_law": null,
     "top_problems": [
       "Timing Chain Cover Defective And Leaking Oil in the 2015 Volkswagen Golf",
       "Hydraulic System Leakage in the 2015 Volkswagen Golf",
@@ -8661,6 +10013,8 @@
     "recalls": 9,
     "tsbs": 1212,
     "investigations": 1,
+    "crash_tests": 8,
+    "lemon_law": null,
     "top_problems": [
       "Panoramic Sunroof Leaks in the 2016 Volkswagen Golf",
       "Engine Misfire in the 2016 Volkswagen Golf",
@@ -8674,6 +10028,8 @@
     "recalls": 5,
     "tsbs": 909,
     "investigations": 1,
+    "crash_tests": 8,
+    "lemon_law": null,
     "top_problems": [
       "Panoramic Sunroof Leaking in the 2017 Volkswagen Golf",
       "Panoramic Sunroof Leak in the 2017 Volkswagen Golf",
@@ -8687,6 +10043,8 @@
     "recalls": 6,
     "tsbs": 794,
     "investigations": 1,
+    "crash_tests": 7,
+    "lemon_law": null,
     "top_problems": [
       "Sunroof Leaks in the 2018 Volkswagen Golf",
       "Infotainment System Goes Out in the 2018 Volkswagen Golf",
@@ -8700,6 +10058,8 @@
     "recalls": 6,
     "tsbs": 686,
     "investigations": 3,
+    "crash_tests": 7,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -8709,6 +10069,8 @@
     "recalls": 2,
     "tsbs": 526,
     "investigations": 1,
+    "crash_tests": 3,
+    "lemon_law": null,
     "top_problems": [
       "A/C Not Working in the 2020 Volkswagen Golf"
     ],
@@ -8726,6 +10088,8 @@
     "recalls": null,
     "tsbs": null,
     "investigations": null,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -8738,6 +10102,8 @@
     "recalls": 8,
     "tsbs": 1444,
     "investigations": null,
+    "crash_tests": 3,
+    "lemon_law": null,
     "top_problems": [
       "Clutch Failure in the 2015 Volkswagen Jetta",
       "Engine Stalls/Shuts Off While Driving in the 2015 Volkswagen Jetta",
@@ -8751,6 +10117,8 @@
     "recalls": 5,
     "tsbs": 1151,
     "investigations": null,
+    "crash_tests": 3,
+    "lemon_law": null,
     "top_problems": [
       "Clutch Burned Out in the 2016 Volkswagen Jetta",
       "Turbocharger Valve Pin Has Metal Fatigue Failure in the 2016 Volkswagen Jetta",
@@ -8764,6 +10132,8 @@
     "recalls": 7,
     "tsbs": 918,
     "investigations": null,
+    "crash_tests": 3,
+    "lemon_law": null,
     "top_problems": [
       "Rodents Chewed Soy-Based Wiring in the 2017 Volkswagen Jetta",
       "Turbo Failure in the 2017 Volkswagen Jetta",
@@ -8777,6 +10147,8 @@
     "recalls": 3,
     "tsbs": 891,
     "investigations": null,
+    "crash_tests": 3,
+    "lemon_law": null,
     "top_problems": [
       "Higher Speed Vibration in the 2018 Volkswagen Jetta",
       "Throttle Body in the 2018 Volkswagen Jetta",
@@ -8790,6 +10162,8 @@
     "recalls": 11,
     "tsbs": 1046,
     "investigations": 2,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Grinding Noise From Transmission in the 2019 Volkswagen Jetta",
       "Clutch Failed in the 2019 Volkswagen Jetta",
@@ -8803,6 +10177,8 @@
     "recalls": 6,
     "tsbs": 595,
     "investigations": 1,
+    "crash_tests": 3,
+    "lemon_law": null,
     "top_problems": [
       "Oil Consumption (High) in the 2020 Volkswagen Jetta",
       "Scraping Noise When Transmission Shifts in the 2020 Volkswagen Jetta",
@@ -8816,6 +10192,8 @@
     "recalls": 4,
     "tsbs": 547,
     "investigations": null,
+    "crash_tests": 3,
+    "lemon_law": null,
     "top_problems": [
       "Starting System Went Out in the 2021 Volkswagen Jetta",
       "02 Sensor Malfunction in the 2021 Volkswagen Jetta",
@@ -8854,6 +10232,8 @@
     "recalls": 7,
     "tsbs": 1521,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Excessive Oil Consumption in the 2015 Volkswagen Passat",
       "Hesitates Upon Acceleration in the 2015 Volkswagen Passat",
@@ -8867,6 +10247,8 @@
     "recalls": 5,
     "tsbs": 1161,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Unintended Braking in the 2016 Volkswagen Passat",
       "Warped Rotors in the 2016 Volkswagen Passat",
@@ -8880,6 +10262,8 @@
     "recalls": 7,
     "tsbs": 961,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Front Assist Sensors Faulty in the 2017 Volkswagen Passat",
       "Suspension Fell Apart While Ddriving in the 2017 Volkswagen Passat",
@@ -8893,6 +10277,8 @@
     "recalls": 4,
     "tsbs": 838,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Engine Has Low Rpm And Will Not Accelerate in the 2018 Volkswagen Passat",
       "Epc Light On, Car Did Not Start in the 2018 Volkswagen Passat",
@@ -8906,6 +10292,8 @@
     "recalls": 1,
     "tsbs": 728,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Car Drifting in the 2019 Volkswagen Passat",
       "Acceleration Hesitation Issue in the 2019 Volkswagen Passat"
@@ -8918,6 +10306,8 @@
     "recalls": 3,
     "tsbs": 500,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Transmission Downshifting Hard in the 2020 Volkswagen Passat",
       "A/C/Heater Vent Clips Snapped in the 2020 Volkswagen Passat",
@@ -8931,6 +10321,8 @@
     "recalls": 1,
     "tsbs": 342,
     "investigations": null,
+    "crash_tests": 3,
+    "lemon_law": null,
     "top_problems": [
       "Fuel Tank Is Not Protected In The Front in the 2021 Volkswagen Passat",
       "Windshield Scratches Easily in the 2021 Volkswagen Passat"
@@ -8943,6 +10335,8 @@
     "recalls": null,
     "tsbs": 239,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Rear Brakes Failed in the 2022 Volkswagen Passat"
     ],
@@ -8978,6 +10372,8 @@
     "recalls": 6,
     "tsbs": 605,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Epc Light And Check Engine Light, Car Jerks And Won't Drive in the 2022 Volkswagen Taos",
       "Brakes And Rotors in the 2022 Volkswagen Taos",
@@ -8991,6 +10387,8 @@
     "recalls": null,
     "tsbs": 326,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Squeaking When Accelerating in the 2023 Volkswagen Taos",
       "Brakes Grind When Applied in the 2023 Volkswagen Taos",
@@ -9004,6 +10402,8 @@
     "recalls": null,
     "tsbs": 120,
     "investigations": null,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [
       "Apple Carplay (Apple Maps) in the 2024 Volkswagen Taos"
     ],
@@ -9027,6 +10427,8 @@
     "recalls": 13,
     "tsbs": 1013,
     "investigations": 2,
+    "crash_tests": 5,
+    "lemon_law": null,
     "top_problems": [
       "Burning Oil in the 2018 Volkswagen Tiguan",
       "Premature Brake Wear in the 2018 Volkswagen Tiguan",
@@ -9040,6 +10442,8 @@
     "recalls": 5,
     "tsbs": 933,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Driver Lane Assist Dangerously Faulty in the 2019 Volkswagen Tiguan",
       "Loss Of Acceleration in the 2019 Volkswagen Tiguan",
@@ -9053,6 +10457,8 @@
     "recalls": 3,
     "tsbs": 591,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Bad Moonroof Drain And Now Mildew Smell In Interior in the 2020 Volkswagen Tiguan",
       "Sunroof Drains Blocked in the 2020 Volkswagen Tiguan",
@@ -9066,6 +10472,8 @@
     "recalls": 5,
     "tsbs": 605,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "Leaks Or Gushes Oil in the 2021 Volkswagen Tiguan",
       "Car Play Technology Issues in the 2021 Volkswagen Tiguan",
@@ -9079,6 +10487,8 @@
     "recalls": 5,
     "tsbs": 570,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [
       "No Power At 1%-5% Throttle in the 2022 Volkswagen Tiguan",
       "Excesive Oil Consumption in the 2022 Volkswagen Tiguan",
@@ -9093,6 +10503,8 @@
     "recalls": 1,
     "tsbs": 125,
     "investigations": null,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [
       "Car Races Or Lags When Entering Traffic, No Warning in the 2024 Volkswagen Tiguan",
       "Infotainment Cluster Freezes, Turns Itself Off, Sos On/Off in the 2024 Volkswagen Tiguan",
@@ -9122,6 +10534,8 @@
     "recalls": 3,
     "tsbs": 482,
     "investigations": 1,
+    "crash_tests": null,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -9131,6 +10545,8 @@
     "recalls": 5,
     "tsbs": 403,
     "investigations": 1,
+    "crash_tests": null,
+    "lemon_law": null,
     "top_problems": [
       "Doesn't Start, Doesn't Charge in the 2016 Volkswagen e-Golf"
     ],
@@ -9142,6 +10558,8 @@
     "recalls": 1,
     "tsbs": 334,
     "investigations": 1,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [
       "Car Shutdown And Would Not Drive In D Or R in the 2017 Volkswagen e-Golf",
       "Shut Down in the 2017 Volkswagen e-Golf",
@@ -9155,6 +10573,8 @@
     "recalls": 1,
     "tsbs": 312,
     "investigations": 1,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [
       "A/C Compressor And Dryer B155ono in the 2018 Volkswagen e-Golf"
     ],
@@ -9166,6 +10586,8 @@
     "recalls": null,
     "tsbs": 377,
     "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   },
@@ -9175,6 +10597,8 @@
     "recalls": null,
     "tsbs": 96,
     "investigations": null,
+    "crash_tests": 1,
+    "lemon_law": null,
     "top_problems": [],
     "seal": null
   }
