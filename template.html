@@ -2884,8 +2884,8 @@
                             result = [...result].sort((a, b) => {
                                 let av, bv;
                                 if (this.sortCol === "reliability") {
-                                    av = a._reliabilityAvg ?? 0;
-                                    bv = b._reliabilityAvg ?? 0;
+                                    av = a._reliabilitySortKey ?? -1;
+                                    bv = b._reliabilitySortKey ?? -1;
                                 } else if (this.sortCol === "price") {
                                     const sa = a._price,
                                         sb = b._price;
@@ -3918,6 +3918,25 @@
                                 /(\s*\([^)]*\))/g,
                                 '<span class="mp">$1</span>',
                             );
+                        }
+
+                        const _pctRank = (val, sorted) => {
+                            if (val === null || !sorted.length) return null;
+                            return sorted.filter(v => v < val).length / sorted.length;
+                        };
+                        const _ariAvgs = this.cars.map(car => {
+                            const rows = car._ariYearRows;
+                            return rows.length ? rows.reduce((s, r) => s + r.score, 0) / rows.length : null;
+                        });
+                        const _jpAvgs = this.cars.map(car => {
+                            const rows = car._priceRows.filter(r => r.jp && r.jp.score != null);
+                            return rows.length ? rows.reduce((s, r) => s + r.jp.score, 0) / rows.length : null;
+                        });
+                        const _ariSorted = _ariAvgs.filter(v => v !== null).sort((a, b) => a - b);
+                        const _jpSorted = _jpAvgs.filter(v => v !== null).sort((a, b) => a - b);
+                        for (let i = 0; i < this.cars.length; i++) {
+                            const pcts = [_pctRank(_ariAvgs[i], _ariSorted), _pctRank(_jpAvgs[i], _jpSorted)].filter(p => p !== null);
+                            this.cars[i]._reliabilitySortKey = pcts.length ? pcts.reduce((a, b) => a + b, 0) / pcts.length : null;
                         }
 
                         const rawIdx = JSON.parse(
