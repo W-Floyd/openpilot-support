@@ -5254,6 +5254,23 @@
     "seal": null
   },
   "Kia|Carnival (China only)|2023": null,
+  "Kia|Carnival (with HDA II)|2025": null,
+  "Kia|Carnival Hybrid (with HDA II)|2025": null,
+  "Kia|Carnival Hybrid (with HDA II)|2026": null,
+  "Kia|Carnival Hybrid|2025": null,
+  "Kia|Carnival Hybrid|2026": {
+    "url": "https://www.carcomplaints.com/Kia/Carnival_Hybrid/2026/",
+    "complaints": 2,
+    "recalls": null,
+    "tsbs": null,
+    "investigations": null,
+    "crash_tests": null,
+    "lemon_law": null,
+    "top_problems": [
+      "Loss Of Propulsion in the 2026 Kia Carnival Hybrid"
+    ],
+    "seal": null
+  },
   "Kia|Carnival|2022": {
     "url": "https://www.carcomplaints.com/Kia/Carnival/2022/",
     "complaints": 137,
@@ -5283,6 +5300,19 @@
     "seal": null
   },
   "Kia|Carnival|2024": null,
+  "Kia|Carnival|2025": {
+    "url": "https://www.carcomplaints.com/Kia/Carnival/2025/",
+    "complaints": 135,
+    "recalls": null,
+    "tsbs": null,
+    "investigations": null,
+    "crash_tests": 3,
+    "lemon_law": null,
+    "top_problems": [
+      "Battery Discarge To Empty In 2 Days After Fully Charged in the 2025 Kia Carnival"
+    ],
+    "seal": null
+  },
   "Kia|Ceed Plug-in Hybrid|2022": null,
   "Kia|Ceed|2019": null,
   "Kia|Ceed|2020": null,
@@ -6905,6 +6935,12 @@
   "Nissan|Leaf - Instrument Cluster|2021": null,
   "Nissan|Leaf - Instrument Cluster|2022": null,
   "Nissan|Leaf - Instrument Cluster|2023": null,
+  "Nissan|Leaf IC|2018": null,
+  "Nissan|Leaf IC|2019": null,
+  "Nissan|Leaf IC|2020": null,
+  "Nissan|Leaf IC|2021": null,
+  "Nissan|Leaf IC|2022": null,
+  "Nissan|Leaf IC|2023": null,
   "Nissan|Leaf|2018": {
     "url": "https://www.carcomplaints.com/Nissan/Leaf/2018/",
     "complaints": 101,

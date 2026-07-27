@@ -578,6 +578,7 @@
       "m1"
     ]
   },
+  "Chevrolet Bolt EUV LT Adaptive Cruise Control (ACC)": null,
   "Chevrolet Bolt EUV LT No Adaptive Cruise Control (Non-ACC)": {
     "trim_paths": [
       "m1/d3116/LT FWD",
@@ -622,6 +623,7 @@
       "m1/d2397"
     ]
   },
+  "Chevrolet Bolt EV Adaptive Cruise Control (ACC)": null,
   "Chevrolet Bolt EV Adaptive Cruise Control (ACC) + Pedal": {
     "trim_paths": [
       "m1/d2397/LT FWD",
@@ -644,6 +646,7 @@
       "m1/d2397"
     ]
   },
+  "Chevrolet Bolt EV LT Adaptive Cruise Control (ACC)": null,
   "Chevrolet Bolt EV LT No Adaptive Cruise Control (Non-ACC)": {
     "trim_paths": [
       "m1/d2397/LT FWD",
@@ -799,6 +802,7 @@
       "m1/d638"
     ]
   },
+  "Chevrolet Suburban Adaptive Cruise Control (ACC)": null,
   "Chevrolet Suburban No Adaptive Cruise Control (Non-ACC)": {
     "trim_paths": [
       "m1/d638/Premier RWD",
@@ -2534,6 +2538,10 @@
       "m33/d3117"
     ]
   },
+  "Kia Carnival Highway Driving Assist II": null,
+  "Kia Carnival Hybrid": null,
+  "Kia Carnival Hybrid Highway Driving Assist II": null,
+  "Kia Carnival Hybrid Smart Cruise Control (SCC)": null,
   "Kia Carnival Smart Cruise Control (SCC)": {
     "trim_paths": [
       "m33/d3117/EX FWD",
@@ -3409,6 +3417,8 @@
       "m12"
     ]
   },
+  "Nissan Leaf IC": null,
+  "Nissan Leaf IC ProPILOT Assist": null,
   "Nissan Rogue": {
     "trim_paths": [
       "m12/d1047/S",

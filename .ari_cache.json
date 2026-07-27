@@ -2149,6 +2149,11 @@
     "fuel_cost_max": 5300
   },
   "Kia|Carnival (China only)|2023": null,
+  "Kia|Carnival (with HDA II)|2025": null,
+  "Kia|Carnival Hybrid (with HDA II)|2025": null,
+  "Kia|Carnival Hybrid (with HDA II)|2026": null,
+  "Kia|Carnival Hybrid|2025": null,
+  "Kia|Carnival Hybrid|2026": null,
   "Kia|Carnival|2022": {
     "score": 80,
     "url": "https://autoreliabilityindex.com/kia/carnival/2022",
@@ -2166,6 +2171,14 @@
     "fuel_cost_max": 2700
   },
   "Kia|Carnival|2024": null,
+  "Kia|Carnival|2025": {
+    "score": 88,
+    "url": "https://autoreliabilityindex.com/kia/carnival/2025",
+    "complaint_rate": 1.6,
+    "repair_cost": 2850,
+    "fuel_cost_min": 2850,
+    "fuel_cost_max": 2850
+  },
   "Kia|Ceed Plug-in Hybrid|2022": null,
   "Kia|Ceed|2019": null,
   "Kia|Ceed|2020": null,
@@ -2792,6 +2805,12 @@
   "Nissan|Leaf - Instrument Cluster|2021": null,
   "Nissan|Leaf - Instrument Cluster|2022": null,
   "Nissan|Leaf - Instrument Cluster|2023": null,
+  "Nissan|Leaf IC|2018": null,
+  "Nissan|Leaf IC|2019": null,
+  "Nissan|Leaf IC|2020": null,
+  "Nissan|Leaf IC|2021": null,
+  "Nissan|Leaf IC|2022": null,
+  "Nissan|Leaf IC|2023": null,
   "Nissan|Leaf|2018": null,
   "Nissan|Leaf|2019": null,
   "Nissan|Leaf|2020": null,

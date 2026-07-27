@@ -3353,6 +3353,25 @@
     "lastUpdated": 1779376097.522961
   },
   "Kia|Carnival (China only)|2023": null,
+  "Kia|Carnival (with HDA II)|2025": null,
+  "Kia|Carnival Hybrid (with HDA II)|2025": null,
+  "Kia|Carnival Hybrid (with HDA II)|2026": null,
+  "Kia|Carnival Hybrid|2025": {
+    "min": 34911,
+    "max": 57303,
+    "score": null,
+    "mpg_city": null,
+    "url": "https://www.jdpower.com/cars/2025/kia/carnival-hybrid",
+    "lastUpdated": 1785182849.15903
+  },
+  "Kia|Carnival Hybrid|2026": {
+    "min": 38808,
+    "max": 55584,
+    "score": null,
+    "mpg_city": null,
+    "url": "https://www.jdpower.com/cars/2026/kia/carnival-hybrid",
+    "lastUpdated": 1785182849.042659
+  },
   "Kia|Carnival|2022": {
     "min": 22754,
     "max": 34141,
@@ -3370,6 +3389,14 @@
     "lastUpdated": 1779376097.543709
   },
   "Kia|Carnival|2024": null,
+  "Kia|Carnival|2025": {
+    "min": 32015,
+    "max": 53330,
+    "score": 78,
+    "mpg_city": "18",
+    "url": "https://www.jdpower.com/cars/2025/kia/carnival",
+    "lastUpdated": 1785182848.726766
+  },
   "Kia|Ceed Plug-in Hybrid|2022": null,
   "Kia|Ceed|2019": null,
   "Kia|Ceed|2020": null,
@@ -4360,6 +4387,12 @@
   "Nissan|Leaf - Instrument Cluster|2021": null,
   "Nissan|Leaf - Instrument Cluster|2022": null,
   "Nissan|Leaf - Instrument Cluster|2023": null,
+  "Nissan|Leaf IC|2018": null,
+  "Nissan|Leaf IC|2019": null,
+  "Nissan|Leaf IC|2020": null,
+  "Nissan|Leaf IC|2021": null,
+  "Nissan|Leaf IC|2022": null,
+  "Nissan|Leaf IC|2023": null,
   "Nissan|Leaf|2018": {
     "min": 5620,
     "max": 7240,
