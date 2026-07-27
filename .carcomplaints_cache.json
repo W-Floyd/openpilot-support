@@ -1075,12 +1075,57 @@
   "Buick|Baby Enclave|2021": null,
   "Buick|Baby Enclave|2022": null,
   "Buick|Baby Enclave|2023": null,
+  "Buick|LaCrosse US|2019": null,
+  "Buick|LaCrosse|2017": {
+    "url": "https://www.carcomplaints.com/Buick/LaCrosse/2017/",
+    "complaints": 48,
+    "recalls": 2,
+    "tsbs": 1537,
+    "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
+    "top_problems": [
+      "After Fueling Up The Car Sputters And Stalls in the 2017 Buick LaCrosse",
+      "Paint Peeling in the 2017 Buick LaCrosse",
+      "Seat Belt Broken in the 2017 Buick LaCrosse"
+    ],
+    "seal": null
+  },
+  "Buick|LaCrosse|2018": {
+    "url": "https://www.carcomplaints.com/Buick/LaCrosse/2018/",
+    "complaints": 17,
+    "recalls": 3,
+    "tsbs": 1239,
+    "investigations": null,
+    "crash_tests": 3,
+    "lemon_law": null,
+    "top_problems": [
+      "On/Off Switch Faulty in the 2018 Buick LaCrosse",
+      "Alarm Went Off/Won't Start in the 2018 Buick LaCrosse",
+      "Jerks When Shifting in the 2018 Buick LaCrosse"
+    ],
+    "seal": null
+  },
+  "Buick|LaCrosse|2019": {
+    "url": "https://www.carcomplaints.com/Buick/LaCrosse/2019/",
+    "complaints": 5,
+    "recalls": 2,
+    "tsbs": 813,
+    "investigations": null,
+    "crash_tests": 3,
+    "lemon_law": null,
+    "top_problems": [],
+    "seal": null
+  },
   "CUPRA|Ateca|2018": null,
   "CUPRA|Ateca|2019": null,
   "CUPRA|Ateca|2020": null,
   "CUPRA|Ateca|2021": null,
   "CUPRA|Ateca|2022": null,
   "CUPRA|Ateca|2023": null,
+  "CUPRA|Born|2021": null,
+  "CUPRA|Born|2022": null,
+  "CUPRA|Born|2023": null,
   "Cadillac|CT6|2017": {
     "url": "https://www.carcomplaints.com/Cadillac/CT6/2017/",
     "complaints": 37,
@@ -1110,6 +1155,7 @@
     ],
     "seal": null
   },
+  "Cadillac|Escalade ESV Platinum|2019": null,
   "Cadillac|Escalade|2018": {
     "url": "https://www.carcomplaints.com/Cadillac/Escalade/2018/",
     "complaints": 18,
@@ -1404,6 +1450,7 @@
     "top_problems": [],
     "seal": null
   },
+  "Chevrolet|Silverado 1500|1500": null,
   "Chevrolet|Silverado 1500|2020": {
     "url": "https://www.carcomplaints.com/Chevrolet/Silverado_1500/2020/",
     "complaints": 939,
@@ -2169,6 +2216,10 @@
     "seal": null
   },
   "Ford|Focus Hybrid|2018": null,
+  "Ford|Focus Hybrid|2019": null,
+  "Ford|Focus Hybrid|2020": null,
+  "Ford|Focus Hybrid|2021": null,
+  "Ford|Focus Hybrid|2022": null,
   "Ford|Focus|2018": {
     "url": "https://www.carcomplaints.com/Ford/Focus/2018/",
     "complaints": 1000,
@@ -2184,6 +2235,24 @@
     ],
     "seal": null
   },
+  "Ford|Focus|2019": {
+    "url": "https://www.carcomplaints.com/Ford/Focus/2019/",
+    "complaints": 3,
+    "recalls": null,
+    "tsbs": null,
+    "investigations": null,
+    "crash_tests": null,
+    "lemon_law": null,
+    "top_problems": [
+      "Loses Traction Control And ABS in the 2019 Ford Focus",
+      "Sync Sound Stuttering Issue When Wirelessly Connected in the 2019 Ford Focus",
+      "Exhaust Tips And Muffler Corroding in the 2019 Ford Focus"
+    ],
+    "seal": null
+  },
+  "Ford|Focus|2020": null,
+  "Ford|Focus|2021": null,
+  "Ford|Focus|2022": null,
   "Ford|Kuga Hybrid|2020": null,
   "Ford|Kuga Hybrid|2021": null,
   "Ford|Kuga Hybrid|2022": null,
@@ -2279,6 +2348,25 @@
     ],
     "seal": null
   },
+  "Ford|Mondeo|2014": null,
+  "Ford|Mondeo|2015": {
+    "url": "https://www.carcomplaints.com/Ford/Mondeo/2015/",
+    "complaints": 1,
+    "recalls": null,
+    "tsbs": null,
+    "investigations": null,
+    "crash_tests": null,
+    "lemon_law": null,
+    "top_problems": [
+      "Front Brake Hose Rupture Right Side in the 2015 Ford Mondeo"
+    ],
+    "seal": null
+  },
+  "Ford|Mondeo|2016": null,
+  "Ford|Mondeo|2017": null,
+  "Ford|Mondeo|2018": null,
+  "Ford|Mondeo|2019": null,
+  "Ford|Mondeo|2020": null,
   "Ford|Mustang Mach-E|2021": {
     "url": "https://www.carcomplaints.com/Ford/Mustang_Mach-E/2021/",
     "complaints": 2,
@@ -2345,6 +2433,17 @@
     ],
     "seal": null
   },
+  "Ford|Transit|2025": {
+    "url": "https://www.carcomplaints.com/Ford/Transit/2025/",
+    "complaints": 0,
+    "recalls": null,
+    "tsbs": null,
+    "investigations": null,
+    "crash_tests": 13,
+    "lemon_law": null,
+    "top_problems": [],
+    "seal": null
+  },
   "GMC|Acadia|2018": {
     "url": "https://www.carcomplaints.com/GMC/Acadia/2018/",
     "complaints": 473,
@@ -2360,6 +2459,7 @@
     ],
     "seal": null
   },
+  "GMC|Sierra 1500|1500": null,
   "GMC|Sierra 1500|2020": {
     "url": "https://www.carcomplaints.com/GMC/Sierra_1500/2020/",
     "complaints": 597,
@@ -2578,6 +2678,9 @@
   "Genesis|GV70 Electrified (Australia Only)|2022": null,
   "Genesis|GV70 Electrified (with HDA II)|2023": null,
   "Genesis|GV70 Electrified (with HDA II)|2024": null,
+  "Genesis|GV70 Electrified|2026": null,
+  "Genesis|GV80 (3.5T Prestige Trim, with HDA II & LFA2)|2025": null,
+  "Genesis|GV80 Coupe (with HDA II & LFA2)|2025": null,
   "Genesis|GV80|2023": null,
   "Honda|Accord Hybrid|2017": {
     "url": "https://www.carcomplaints.com/Honda/Accord_Hybrid/2017/",
@@ -2684,6 +2787,7 @@
     ],
     "seal": null
   },
+  "Honda|Accord Hybrid|2026": null,
   "Honda|Accord|2016": {
     "url": "https://www.carcomplaints.com/Honda/Accord/2016/",
     "complaints": 282,
@@ -3871,6 +3975,17 @@
     ],
     "seal": null
   },
+  "Honda|Prologue|2026": {
+    "url": "https://www.carcomplaints.com/Honda/Prologue/2026/",
+    "complaints": 0,
+    "recalls": null,
+    "tsbs": null,
+    "investigations": null,
+    "crash_tests": null,
+    "lemon_law": null,
+    "top_problems": [],
+    "seal": null
+  },
   "Honda|Ridgeline|2017": {
     "url": "https://www.carcomplaints.com/Honda/Ridgeline/2017/",
     "complaints": 429,
@@ -4001,7 +4116,9 @@
     ],
     "seal": null
   },
+  "Honda|Ridgeline|2026": null,
   "Honda|e|2020": null,
+  "Hyundai|Azera Hybrid (with HDA II & LFA2)|2025": null,
   "Hyundai|Azera Hybrid|2019": null,
   "Hyundai|Azera Hybrid|2020": null,
   "Hyundai|Azera|2022": null,
@@ -4084,6 +4201,9 @@
   },
   "Hyundai|Elantra Hybrid|2022": null,
   "Hyundai|Elantra Hybrid|2023": null,
+  "Hyundai|Elantra Hybrid|2024": null,
+  "Hyundai|Elantra Hybrid|2025": null,
+  "Hyundai|Elantra Hybrid|2026": null,
   "Hyundai|Elantra|2017": {
     "url": "https://www.carcomplaints.com/Hyundai/Elantra/2017/",
     "complaints": 1000,
@@ -4174,6 +4294,22 @@
     ],
     "seal": null
   },
+  "Hyundai|Elantra|2024": {
+    "url": "https://www.carcomplaints.com/Hyundai/Elantra/2024/",
+    "complaints": 87,
+    "recalls": 1,
+    "tsbs": 3,
+    "investigations": null,
+    "crash_tests": 4,
+    "lemon_law": null,
+    "top_problems": [
+      "&quot;Take A Break&quot; With A Audible Bell in the 2024 Hyundai Elantra",
+      "Dtc P001600 in the 2024 Hyundai Elantra",
+      "Window Rattle in the 2024 Hyundai Elantra"
+    ],
+    "seal": null
+  },
+  "Hyundai|Elantra|2025": null,
   "Hyundai|Genesis|2015": {
     "url": "https://www.carcomplaints.com/Hyundai/Genesis/2015/",
     "complaints": 459,
@@ -4216,10 +4352,15 @@
   "Hyundai|Ioniq 5 (without HDA II)|2022": null,
   "Hyundai|Ioniq 5 (without HDA II)|2023": null,
   "Hyundai|Ioniq 5 (without HDA II)|2024": null,
+  "Hyundai|Ioniq 5 N (with HDA II)|2024": null,
+  "Hyundai|Ioniq 5 PE (with HDA II & LFA2)|2025": null,
+  "Hyundai|Ioniq 5 PE (with HDA II & LFA2)|2026": null,
   "Hyundai|Ioniq 6 (with HDA II)|2023": null,
   "Hyundai|Ioniq 6 (with HDA II)|2024": null,
   "Hyundai|Ioniq 6 (without HDA II)|2023": null,
   "Hyundai|Ioniq 6 (without HDA II)|2024": null,
+  "Hyundai|Ioniq 9 (with HDA II & LFA2)|2025": null,
+  "Hyundai|Ioniq 9 (with HDA II & LFA2)|2026": null,
   "Hyundai|Ioniq Electric|2019": {
     "url": "https://www.carcomplaints.com/Hyundai/Ioniq_Electric/2019/",
     "complaints": 12,
@@ -4370,7 +4511,10 @@
     "seal": null
   },
   "Hyundai|Ioniq Plug-in Hybrid|2022": null,
+  "Hyundai|Kona (without HDA II)|2024": null,
+  "Hyundai|Kona (without HDA II)|2025": null,
   "Hyundai|Kona Electric (with HDA II, Korea only)|2023": null,
+  "Hyundai|Kona Electric (without HDA II)|2024": null,
   "Hyundai|Kona Electric|2018": null,
   "Hyundai|Kona Electric|2019": {
     "url": "https://www.carcomplaints.com/Hyundai/Kona_Electric/2019/",
@@ -4425,6 +4569,7 @@
     "seal": null
   },
   "Hyundai|Kona Electric|2023": null,
+  "Hyundai|Kona Hybrid (without HDA II)|2024": null,
   "Hyundai|Kona Hybrid|2020": null,
   "Hyundai|Kona|2019": {
     "url": "https://www.carcomplaints.com/Hyundai/Kona/2019/",
@@ -4550,6 +4695,7 @@
     ],
     "seal": null
   },
+  "Hyundai|Santa Cruz (without HDA II)|2025": null,
   "Hyundai|Santa Cruz|2022": {
     "url": "https://www.carcomplaints.com/Hyundai/Santa_Cruz/2022/",
     "complaints": 239,
@@ -4590,6 +4736,10 @@
     ],
     "seal": null
   },
+  "Hyundai|Santa Fe Hybrid (with HDA II & LFA2)|2024": null,
+  "Hyundai|Santa Fe Hybrid (with HDA II & LFA2)|2025": null,
+  "Hyundai|Santa Fe Hybrid (without HDA II, LFA2)|2025": null,
+  "Hyundai|Santa Fe Hybrid (without HDA II, LFA2)|2026": null,
   "Hyundai|Santa Fe Hybrid|2022": {
     "url": "https://www.carcomplaints.com/Hyundai/Santa_Fe_Hybrid/2022/",
     "complaints": 0,
@@ -4685,6 +4835,10 @@
     ],
     "seal": null
   },
+  "Hyundai|Sonata (without HDA II)|2024": null,
+  "Hyundai|Sonata (without HDA II)|2025": null,
+  "Hyundai|Sonata Hybrid (without HDA II)|2024": null,
+  "Hyundai|Sonata Hybrid (without HDA II)|2025": null,
   "Hyundai|Sonata Hybrid|2020": {
     "url": "https://www.carcomplaints.com/Hyundai/Sonata_Hybrid/2020/",
     "complaints": 0,
@@ -4813,7 +4967,11 @@
     "seal": null
   },
   "Hyundai|Staria|2023": null,
+  "Hyundai|Tucson (without HDA II)|2025": null,
+  "Hyundai|Tucson (without HDA II)|2026": null,
   "Hyundai|Tucson Diesel|2019": null,
+  "Hyundai|Tucson Hybrid (without HDA II)|2025": null,
+  "Hyundai|Tucson Hybrid (without HDA II)|2026": null,
   "Hyundai|Tucson Hybrid|2022": {
     "url": "https://www.carcomplaints.com/Hyundai/Tucson_Hybrid/2022/",
     "complaints": 14,
@@ -4845,6 +5003,7 @@
     ],
     "seal": null
   },
+  "Hyundai|Tucson Plug-in Hybrid (without HDA II)|2025": null,
   "Hyundai|Tucson Plug-in Hybrid|2024": null,
   "Hyundai|Tucson|2021": {
     "url": "https://www.carcomplaints.com/Hyundai/Tucson/2021/",
@@ -4933,6 +5092,7 @@
     ],
     "seal": null
   },
+  "Hyundai|i30 Hybrid|2024": null,
   "Hyundai|i30|2017": null,
   "Hyundai|i30|2018": null,
   "Hyundai|i30|2019": null,
@@ -5133,12 +5293,35 @@
   "Kia|EV6 (Southeast Asia only)|2022": null,
   "Kia|EV6 (Southeast Asia only)|2023": null,
   "Kia|EV6 (Southeast Asia only)|2024": null,
+  "Kia|EV6 (with HDA I)|2025": null,
   "Kia|EV6 (with HDA II)|2022": null,
   "Kia|EV6 (with HDA II)|2023": null,
   "Kia|EV6 (with HDA II)|2024": null,
   "Kia|EV6 (without HDA II)|2022": null,
   "Kia|EV6 (without HDA II)|2023": null,
   "Kia|EV6 (without HDA II)|2024": null,
+  "Kia|EV9|2025": {
+    "url": "https://www.carcomplaints.com/Kia/EV9/2025/",
+    "complaints": 5,
+    "recalls": 3,
+    "tsbs": null,
+    "investigations": null,
+    "crash_tests": 1,
+    "lemon_law": null,
+    "top_problems": [],
+    "seal": null
+  },
+  "Kia|EV9|2026": {
+    "url": "https://www.carcomplaints.com/Kia/EV9/2026/",
+    "complaints": 0,
+    "recalls": null,
+    "tsbs": null,
+    "investigations": null,
+    "crash_tests": null,
+    "lemon_law": null,
+    "top_problems": [],
+    "seal": null
+  },
   "Kia|Forte|2019": {
     "url": "https://www.carcomplaints.com/Kia/Forte/2019/",
     "complaints": 195,
@@ -5210,6 +5393,9 @@
     ],
     "seal": null
   },
+  "Kia|K4 (with HDA II)|2025": null,
+  "Kia|K4 (without HDA II)|2025": null,
+  "Kia|K5 (without HDA II)|2025": null,
   "Kia|K5 Hybrid|2020": null,
   "Kia|K5 Hybrid|2021": null,
   "Kia|K5 Hybrid|2022": null,
@@ -5462,6 +5648,8 @@
     "seal": null
   },
   "Kia|Seltos|2024": null,
+  "Kia|Sorento (without HDA II)|2024": null,
+  "Kia|Sorento (without HDA II)|2025": null,
   "Kia|Sorento Hybrid|2021": {
     "url": "https://www.carcomplaints.com/Kia/Sorento_Hybrid/2021/",
     "complaints": 2,
@@ -5497,6 +5685,7 @@
     "top_problems": [],
     "seal": null
   },
+  "Kia|Sorento Hybrid|2026": null,
   "Kia|Sorento Plug-in Hybrid|2022": null,
   "Kia|Sorento Plug-in Hybrid|2023": null,
   "Kia|Sorento|2018": {
@@ -5560,6 +5749,7 @@
     "seal": null
   },
   "Kia|Sorento|2023": null,
+  "Kia|Sportage (without HDA II)|2026": null,
   "Kia|Sportage Hybrid|2023": null,
   "Kia|Sportage Hybrid|2026": null,
   "Kia|Sportage|2023": {
@@ -5725,6 +5915,7 @@
     ],
     "seal": null
   },
+  "Kia|XCeed Plug-in Hybrid|2021": null,
   "Lexus|CT 200h|2017": null,
   "Lexus|CT 200h|2018": null,
   "Lexus|ES 250|2017": null,
@@ -6663,6 +6854,47 @@
       "Windshield Cracked For No Reason in the 2020 Nissan Altima",
       "Automatic Emergency Brake Malfunction in the 2020 Nissan Altima",
       "&quot;Engine Malfunction Power Reduced Service Now&quot; in the 2020 Nissan Altima"
+    ],
+    "seal": null
+  },
+  "Nissan|Altima|2021": {
+    "url": "https://www.carcomplaints.com/Nissan/Altima/2021/",
+    "complaints": 73,
+    "recalls": 2,
+    "tsbs": 140,
+    "investigations": 2,
+    "crash_tests": 2,
+    "lemon_law": null,
+    "top_problems": [],
+    "seal": null
+  },
+  "Nissan|Altima|2022": {
+    "url": "https://www.carcomplaints.com/Nissan/Altima/2022/",
+    "complaints": 32,
+    "recalls": null,
+    "tsbs": 130,
+    "investigations": 1,
+    "crash_tests": 2,
+    "lemon_law": null,
+    "top_problems": [
+      "Brakes Failed in the 2022 Nissan Altima",
+      "Head Unit Resets Every 5 Minutes in the 2022 Nissan Altima",
+      "Severe Grinding And Brakes Failing in the 2022 Nissan Altima"
+    ],
+    "seal": null
+  },
+  "Nissan|Altima|2023": {
+    "url": "https://www.carcomplaints.com/Nissan/Altima/2023/",
+    "complaints": 21,
+    "recalls": null,
+    "tsbs": 80,
+    "investigations": null,
+    "crash_tests": 2,
+    "lemon_law": null,
+    "top_problems": [
+      "Terrible Back Up Camera - Night Time Especially in the 2023 Nissan Altima",
+      "Check Engine Light in the 2023 Nissan Altima",
+      "Backup Camera Failure-Stopped Displaying in the 2023 Nissan Altima"
     ],
     "seal": null
   },
@@ -8778,6 +9010,7 @@
     "top_problems": [],
     "seal": null
   },
+  "Toyota|Matrix Retrofit|2005": null,
   "Toyota|Mirai|2021": {
     "url": "https://www.carcomplaints.com/Toyota/Mirai/2021/",
     "complaints": 2,
@@ -10082,6 +10315,11 @@
   "Volkswagen|Grand California|2022": null,
   "Volkswagen|Grand California|2023": null,
   "Volkswagen|Grand California|2024": null,
+  "Volkswagen|ID.4|2021": null,
+  "Volkswagen|ID.4|2022": null,
+  "Volkswagen|ID.4|2023": null,
+  "Volkswagen|ID.4|2024": null,
+  "Volkswagen|ID.4|2025": null,
   "Volkswagen|Jetta GLI|2021": {
     "url": "https://www.carcomplaints.com/Volkswagen/Jetta_GLI/2021/",
     "complaints": 0,

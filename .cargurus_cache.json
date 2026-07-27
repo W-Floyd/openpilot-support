@@ -404,6 +404,10 @@
       "m21"
     ]
   },
+  "Buick LaCrosse": null,
+  "Buick LaCrosse Adaptive Cruise Control (ACC) + ASCM Harness": null,
+  "Buick LaCrosse US": null,
+  "Buick LaCrosse US Adaptive Cruise Control (ACC) + ASCM Harness": null,
   "CUPRA Ateca": null,
   "CUPRA Ateca Adaptive Cruise Control (ACC) & Lane Assist": {
     "trim_paths": [
@@ -416,6 +420,8 @@
       "m7"
     ]
   },
+  "CUPRA Born": null,
+  "CUPRA Born Adaptive Cruise Control (ACC) & Lane Assist": null,
   "Cadillac CT6": {
     "trim_paths": [
       "m22/d2352",
@@ -460,6 +466,8 @@
       "m22"
     ]
   },
+  "Cadillac Escalade ESV Platinum": null,
+  "Cadillac Escalade ESV Platinum Adaptive Cruise Control (ACC) & LKAS + ASCM Harness": null,
   "Cadillac XT5": {
     "trim_paths": [
       "m22/d2393/FWD",
@@ -768,6 +776,7 @@
       "m1"
     ]
   },
+  "Chevrolet Silverado 1500 No Adaptive Cruise Control (Non-ACC)": null,
   "Chevrolet Silverado 1500 Safety Package II": {
     "trim_paths": [
       "m1/d630/LT",
@@ -1285,6 +1294,8 @@
       "m2/d1293"
     ]
   },
+  "Ford Mondeo": null,
+  "Ford Mondeo Adaptive Cruise Control with Lane Centering": null,
   "Ford Mustang Mach-E": {
     "trim_paths": [
       "m2/d2990/GT AWD",
@@ -1318,6 +1329,8 @@
       "m2/d354"
     ]
   },
+  "Ford Transit": null,
+  "Ford Transit Co-Pilot360 Assist+": null,
   "GMC Acadia": {
     "trim_paths": [
       "m26",
@@ -1362,6 +1375,7 @@
       "m26/d116"
     ]
   },
+  "GMC Sierra 1500 No Adaptive Cruise Control (Non-ACC)": null,
   "GMC Yukon": {
     "trim_paths": [
       "m26",
@@ -1494,6 +1508,9 @@
       "m203/d3038"
     ]
   },
+  "Genesis GV80 Coupe": null,
+  "Genesis GV80 Coupe Highway Driving Assist II & Lane Follow Assist 2": null,
+  "Genesis GV80 Highway Driving Assist II & Lane Follow Assist 2": null,
   "Honda Accord": {
     "trim_paths": [
       "m6/d585",
@@ -1889,6 +1906,7 @@
       "m28/d831"
     ]
   },
+  "Hyundai Azera Highway Driving Assist II & Lane Follow Assist 2": null,
   "Hyundai Bayon": {
     "trim_paths": [
       "m28",
@@ -1964,6 +1982,7 @@
       "m28/d3139"
     ]
   },
+  "Hyundai Elantra Hybrid No Smart Cruise Control (Non-SCC)": null,
   "Hyundai Elantra Hybrid Smart Cruise Control (SCC)": {
     "trim_paths": [
       "m28",
@@ -2052,6 +2071,10 @@
       "m28/d3120"
     ]
   },
+  "Hyundai Ioniq 5 N": null,
+  "Hyundai Ioniq 5 N Smart Cruise Control (SCC)": null,
+  "Hyundai Ioniq 5 PE": null,
+  "Hyundai Ioniq 5 PE Highway Driving Assist II & Lane Follow Assist 2": null,
   "Hyundai Ioniq 6": {
     "trim_paths": [
       "m28",
@@ -2085,6 +2108,8 @@
       "m28/d3297"
     ]
   },
+  "Hyundai Ioniq 9": null,
+  "Hyundai Ioniq 9 Highway Driving Assist II & Lane Follow Assist 2": null,
   "Hyundai Ioniq Electric": {
     "trim_paths": [
       "m28",
@@ -2305,6 +2330,8 @@
       "m28"
     ]
   },
+  "Hyundai Santa Fe Hybrid Highway Driving Assist II & Lane Follow Assist 2": null,
+  "Hyundai Santa Fe Hybrid Lane Follow Assist 2": null,
   "Hyundai Santa Fe Hybrid Plug-In": {
     "trim_paths": [
       "m28",
@@ -2338,6 +2365,7 @@
       "m28/d2107"
     ]
   },
+  "Hyundai Sonata Hybrid Smart Cruise Control (SCC)": null,
   "Hyundai Sonata Smart Cruise Control (SCC)": {
     "trim_paths": [
       "m28/d96",
@@ -2392,6 +2420,8 @@
       "m28/d3241"
     ]
   },
+  "Hyundai Tucson Hybrid Plug-In Smart Cruise Control (SCC)": null,
+  "Hyundai Tucson Hybrid Smart Cruise Control (SCC)": null,
   "Hyundai Tucson Smart Cruise Control (SCC)": {
     "trim_paths": [
       "m28",
@@ -2436,6 +2466,8 @@
       "m84/d577"
     ]
   },
+  "Hyundai i30 Hybrid": null,
+  "Hyundai i30 Hybrid Smart Cruise Control (SCC)": null,
   "Hyundai i30 Smart Cruise Control (SCC)": {
     "trim_paths": [
       "m84/d577/FWD",
@@ -2578,6 +2610,7 @@
       "m33"
     ]
   },
+  "Kia EV6 Highway Driving Assist I": null,
   "Kia EV6 Highway Driving Assist II": {
     "trim_paths": [
       "m33/d3127/Wind AWD",
@@ -2589,6 +2622,8 @@
       "m33"
     ]
   },
+  "Kia EV9": null,
+  "Kia EV9 Smart Cruise Control (SCC)": null,
   "Kia Forte": {
     "trim_paths": [
       "m33/d2043",
@@ -2622,6 +2657,8 @@
       "m33"
     ]
   },
+  "Kia K4": null,
+  "Kia K4 Smart Cruise Control (SCC)": null,
   "Kia K5": {
     "trim_paths": [
       "m33/d3092",
@@ -3007,6 +3044,8 @@
       "m33"
     ]
   },
+  "Kia XCeed Plug-in Hybrid": null,
+  "Kia XCeed Plug-in Hybrid Smart Cruise Control (SCC)": null,
   "Lexus CT Hybrid": {
     "trim_paths": [
       "m37",
@@ -4116,6 +4155,8 @@
       "m7/d757"
     ]
   },
+  "Toyota Matrix Retrofit": null,
+  "Toyota Matrix Retrofit Custom retrofit": null,
   "Toyota Mirai": {
     "trim_paths": [
       "m7/d2359",
@@ -4646,6 +4687,8 @@
       "m25/d2005"
     ]
   },
+  "Volkswagen ID.4": null,
+  "Volkswagen ID.4 Adaptive Cruise Control (ACC) & Lane Assist": null,
   "Volkswagen Jetta": {
     "trim_paths": [
       "m55/d200/S",

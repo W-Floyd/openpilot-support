@@ -768,12 +768,19 @@
   "Buick|Baby Enclave|2021": null,
   "Buick|Baby Enclave|2022": null,
   "Buick|Baby Enclave|2023": null,
+  "Buick|LaCrosse US|2019": null,
+  "Buick|LaCrosse|2017": null,
+  "Buick|LaCrosse|2018": null,
+  "Buick|LaCrosse|2019": null,
   "CUPRA|Ateca|2018": null,
   "CUPRA|Ateca|2019": null,
   "CUPRA|Ateca|2020": null,
   "CUPRA|Ateca|2021": null,
   "CUPRA|Ateca|2022": null,
   "CUPRA|Ateca|2023": null,
+  "CUPRA|Born|2021": null,
+  "CUPRA|Born|2022": null,
+  "CUPRA|Born|2023": null,
   "Cadillac|CT6|2017": {
     "min": 14995,
     "max": 30990,
@@ -790,6 +797,7 @@
     "avg_used": 23587,
     "lastUpdated": 1779256185.045123
   },
+  "Cadillac|Escalade ESV Platinum|2019": null,
   "Cadillac|Escalade|2018": {
     "min": 24775,
     "max": 41990,
@@ -1045,6 +1053,7 @@
     "avg_used": 17271,
     "lastUpdated": 1779256524.4754822
   },
+  "Chevrolet|Silverado 1500|1500": null,
   "Chevrolet|Silverado 1500|2020": {
     "min": 15995,
     "max": 49995,
@@ -1449,6 +1458,10 @@
     "lastUpdated": 1779257168.785915
   },
   "Ford|Focus Hybrid|2018": null,
+  "Ford|Focus Hybrid|2019": null,
+  "Ford|Focus Hybrid|2020": null,
+  "Ford|Focus Hybrid|2021": null,
+  "Ford|Focus Hybrid|2022": null,
   "Ford|Focus|2018": {
     "min": 6290,
     "max": 20990,
@@ -1457,6 +1470,10 @@
     "avg_used": 13312,
     "lastUpdated": 1779257176.63248
   },
+  "Ford|Focus|2019": null,
+  "Ford|Focus|2020": null,
+  "Ford|Focus|2021": null,
+  "Ford|Focus|2022": null,
   "Ford|Kuga Hybrid|2020": null,
   "Ford|Kuga Hybrid|2021": null,
   "Ford|Kuga Hybrid|2022": null,
@@ -1498,6 +1515,13 @@
     "avg_used": 32942,
     "lastUpdated": 1779257207.7291782
   },
+  "Ford|Mondeo|2014": null,
+  "Ford|Mondeo|2015": null,
+  "Ford|Mondeo|2016": null,
+  "Ford|Mondeo|2017": null,
+  "Ford|Mondeo|2018": null,
+  "Ford|Mondeo|2019": null,
+  "Ford|Mondeo|2020": null,
   "Ford|Mustang Mach-E|2021": {
     "min": 23590,
     "max": 30527,
@@ -1538,6 +1562,7 @@
     "avg_used": 32322,
     "lastUpdated": 1779257234.8027542
   },
+  "Ford|Transit|2025": null,
   "GMC|Acadia|2018": {
     "min": 9891,
     "max": 40791,
@@ -1546,6 +1571,7 @@
     "avg_used": 20812,
     "lastUpdated": 1779257238.969267
   },
+  "GMC|Sierra 1500|1500": null,
   "GMC|Sierra 1500|2020": {
     "min": 21500,
     "max": 51682,
@@ -1715,6 +1741,9 @@
   "Genesis|GV70 Electrified (Australia Only)|2022": null,
   "Genesis|GV70 Electrified (with HDA II)|2023": null,
   "Genesis|GV70 Electrified (with HDA II)|2024": null,
+  "Genesis|GV70 Electrified|2026": null,
+  "Genesis|GV80 (3.5T Prestige Trim, with HDA II & LFA2)|2025": null,
+  "Genesis|GV80 Coupe (with HDA II & LFA2)|2025": null,
   "Genesis|GV80|2023": {
     "min": 27998,
     "max": 50450,
@@ -1774,6 +1803,7 @@
   "Honda|Accord Hybrid|2023": null,
   "Honda|Accord Hybrid|2024": null,
   "Honda|Accord Hybrid|2025": null,
+  "Honda|Accord Hybrid|2026": null,
   "Honda|Accord|2016": {
     "min": 8900,
     "max": 27590,
@@ -2489,6 +2519,7 @@
     "avg_used": null,
     "lastUpdated": 1779257818.545587
   },
+  "Honda|Prologue|2026": null,
   "Honda|Ridgeline|2017": {
     "min": 13200,
     "max": 26998,
@@ -2561,7 +2592,9 @@
     "avg_used": null,
     "lastUpdated": 1779257858.741913
   },
+  "Honda|Ridgeline|2026": null,
   "Honda|e|2020": null,
+  "Hyundai|Azera Hybrid (with HDA II & LFA2)|2025": null,
   "Hyundai|Azera Hybrid|2019": null,
   "Hyundai|Azera Hybrid|2020": null,
   "Hyundai|Azera|2022": null,
@@ -2581,6 +2614,9 @@
   "Hyundai|Elantra Hybrid|2021": null,
   "Hyundai|Elantra Hybrid|2022": null,
   "Hyundai|Elantra Hybrid|2023": null,
+  "Hyundai|Elantra Hybrid|2024": null,
+  "Hyundai|Elantra Hybrid|2025": null,
+  "Hyundai|Elantra Hybrid|2026": null,
   "Hyundai|Elantra|2017": {
     "min": 6500,
     "max": 18990,
@@ -2629,6 +2665,8 @@
     "avg_used": 19719,
     "lastUpdated": 1779257889.737271
   },
+  "Hyundai|Elantra|2024": null,
+  "Hyundai|Elantra|2025": null,
   "Hyundai|Genesis|2015": {
     "min": 7500,
     "max": 20590,
@@ -2741,6 +2779,9 @@
     "avg_used": 36352,
     "lastUpdated": 1779257992.0968142
   },
+  "Hyundai|Ioniq 5 N (with HDA II)|2024": null,
+  "Hyundai|Ioniq 5 PE (with HDA II & LFA2)|2025": null,
+  "Hyundai|Ioniq 5 PE (with HDA II & LFA2)|2026": null,
   "Hyundai|Ioniq 6 (with HDA II)|2023": {
     "min": 18999,
     "max": 31998,
@@ -2759,6 +2800,15 @@
   },
   "Hyundai|Ioniq 6 (without HDA II)|2023": null,
   "Hyundai|Ioniq 6 (without HDA II)|2024": null,
+  "Hyundai|Ioniq 9 (with HDA II & LFA2)|2025": null,
+  "Hyundai|Ioniq 9 (with HDA II & LFA2)|2026": {
+    "min": 58955,
+    "max": 76490,
+    "url": "https://www.edmunds.com/hyundai/ioniq-9/",
+    "suggested": 49524,
+    "avg_used": null,
+    "lastUpdated": 1785181653.140137
+  },
   "Hyundai|Ioniq Electric|2019": null,
   "Hyundai|Ioniq Electric|2020": null,
   "Hyundai|Ioniq Hybrid|2017": null,
@@ -2771,13 +2821,38 @@
   "Hyundai|Ioniq Plug-in Hybrid|2020": null,
   "Hyundai|Ioniq Plug-in Hybrid|2021": null,
   "Hyundai|Ioniq Plug-in Hybrid|2022": null,
+  "Hyundai|Kona (without HDA II)|2024": {
+    "min": 16999,
+    "max": 28998,
+    "url": "https://www.edmunds.com/hyundai/kona/2024/",
+    "suggested": null,
+    "avg_used": 21676,
+    "lastUpdated": 1785181665.760226
+  },
+  "Hyundai|Kona (without HDA II)|2025": {
+    "min": 24550,
+    "max": 33600,
+    "url": "https://www.edmunds.com/hyundai/kona/2025/",
+    "suggested": 23329,
+    "avg_used": null,
+    "lastUpdated": 1785181699.991376
+  },
   "Hyundai|Kona Electric (with HDA II, Korea only)|2023": null,
+  "Hyundai|Kona Electric (without HDA II)|2024": {
+    "min": 21752,
+    "max": 29590,
+    "url": "https://www.edmunds.com/hyundai/kona-electric/2024/",
+    "suggested": null,
+    "avg_used": 22611,
+    "lastUpdated": 1785181715.051564
+  },
   "Hyundai|Kona Electric|2018": null,
   "Hyundai|Kona Electric|2019": null,
   "Hyundai|Kona Electric|2020": null,
   "Hyundai|Kona Electric|2021": null,
   "Hyundai|Kona Electric|2022": null,
   "Hyundai|Kona Electric|2023": null,
+  "Hyundai|Kona Hybrid (without HDA II)|2024": null,
   "Hyundai|Kona Hybrid|2020": null,
   "Hyundai|Kona|2019": null,
   "Hyundai|Kona|2020": null,
@@ -2792,9 +2867,21 @@
   "Hyundai|Palisade|2022": null,
   "Hyundai|Palisade|2023": null,
   "Hyundai|Palisade|2024": null,
+  "Hyundai|Santa Cruz (without HDA II)|2025": {
+    "min": 28750,
+    "max": 42750,
+    "url": "https://www.edmunds.com/hyundai/santa-cruz/2025/",
+    "suggested": 28305,
+    "avg_used": null,
+    "lastUpdated": 1785181742.274037
+  },
   "Hyundai|Santa Cruz|2022": null,
   "Hyundai|Santa Cruz|2023": null,
   "Hyundai|Santa Cruz|2024": null,
+  "Hyundai|Santa Fe Hybrid (with HDA II & LFA2)|2024": null,
+  "Hyundai|Santa Fe Hybrid (with HDA II & LFA2)|2025": null,
+  "Hyundai|Santa Fe Hybrid (without HDA II, LFA2)|2025": null,
+  "Hyundai|Santa Fe Hybrid (without HDA II, LFA2)|2026": null,
   "Hyundai|Santa Fe Hybrid|2022": null,
   "Hyundai|Santa Fe Hybrid|2023": null,
   "Hyundai|Santa Fe Plug-in Hybrid|2022": null,
@@ -2804,6 +2891,24 @@
   "Hyundai|Santa Fe|2021": null,
   "Hyundai|Santa Fe|2022": null,
   "Hyundai|Santa Fe|2023": null,
+  "Hyundai|Sonata (without HDA II)|2024": {
+    "min": 17413,
+    "max": 32998,
+    "url": "https://www.edmunds.com/hyundai/sonata/2024/",
+    "suggested": null,
+    "avg_used": 20307,
+    "lastUpdated": 1785181811.947412
+  },
+  "Hyundai|Sonata (without HDA II)|2025": {
+    "min": 26900,
+    "max": 37700,
+    "url": "https://www.edmunds.com/hyundai/sonata/2025/",
+    "suggested": 25223,
+    "avg_used": null,
+    "lastUpdated": 1785181835.472227
+  },
+  "Hyundai|Sonata Hybrid (without HDA II)|2024": null,
+  "Hyundai|Sonata Hybrid (without HDA II)|2025": null,
   "Hyundai|Sonata Hybrid|2020": null,
   "Hyundai|Sonata Hybrid|2021": null,
   "Hyundai|Sonata Hybrid|2022": null,
@@ -2815,10 +2920,36 @@
   "Hyundai|Sonata|2022": null,
   "Hyundai|Sonata|2023": null,
   "Hyundai|Staria|2023": null,
+  "Hyundai|Tucson (without HDA II)|2025": {
+    "min": 28705,
+    "max": 41295,
+    "url": "https://www.edmunds.com/hyundai/tucson/2025/",
+    "suggested": 27238,
+    "avg_used": null,
+    "lastUpdated": 1785181882.1240819
+  },
+  "Hyundai|Tucson (without HDA II)|2026": {
+    "min": 29450,
+    "max": 42575,
+    "url": "https://www.edmunds.com/hyundai/tucson/",
+    "suggested": 30099,
+    "avg_used": null,
+    "lastUpdated": 1785181902.9827359
+  },
   "Hyundai|Tucson Diesel|2019": null,
+  "Hyundai|Tucson Hybrid (without HDA II)|2025": null,
+  "Hyundai|Tucson Hybrid (without HDA II)|2026": null,
   "Hyundai|Tucson Hybrid|2022": null,
   "Hyundai|Tucson Hybrid|2023": null,
   "Hyundai|Tucson Hybrid|2024": null,
+  "Hyundai|Tucson Plug-in Hybrid (without HDA II)|2025": {
+    "min": 39730,
+    "max": 47440,
+    "url": "https://www.edmunds.com/hyundai/tucson-plug-in-hybrid/2025/",
+    "suggested": 37376,
+    "avg_used": null,
+    "lastUpdated": 1785181940.972057
+  },
   "Hyundai|Tucson Plug-in Hybrid|2024": null,
   "Hyundai|Tucson|2021": null,
   "Hyundai|Tucson|2022": null,
@@ -2833,6 +2964,7 @@
     "avg_used": 21858,
     "lastUpdated": 1779293534.384819
   },
+  "Hyundai|i30 Hybrid|2024": null,
   "Hyundai|i30|2017": null,
   "Hyundai|i30|2018": null,
   "Hyundai|i30|2019": null,
@@ -3008,6 +3140,14 @@
     "avg_used": 33305,
     "lastUpdated": 1779258312.866133
   },
+  "Kia|EV6 (with HDA I)|2025": {
+    "min": 42900,
+    "max": 63800,
+    "url": "https://www.edmunds.com/kia/ev6/2025/",
+    "suggested": 39567,
+    "avg_used": null,
+    "lastUpdated": 1785181974.197808
+  },
   "Kia|EV6 (with HDA II)|2022": {
     "min": 25990,
     "max": 28998,
@@ -3056,6 +3196,22 @@
     "avg_used": 29644,
     "lastUpdated": 1779293553.0270321
   },
+  "Kia|EV9|2025": {
+    "min": 54900,
+    "max": 73900,
+    "url": "https://www.edmunds.com/kia/ev9/2025/",
+    "suggested": 50393,
+    "avg_used": null,
+    "lastUpdated": 1785181993.282099
+  },
+  "Kia|EV9|2026": {
+    "min": 54900,
+    "max": 71900,
+    "url": "https://www.edmunds.com/kia/ev9/",
+    "suggested": 43520,
+    "avg_used": null,
+    "lastUpdated": 1785182009.674192
+  },
   "Kia|Forte|2019": {
     "min": 9998,
     "max": 19590,
@@ -3082,6 +3238,30 @@
   },
   "Kia|Forte|2022": null,
   "Kia|Forte|2023": null,
+  "Kia|K4 (with HDA II)|2025": {
+    "min": 21990,
+    "max": 28090,
+    "url": "https://www.edmunds.com/kia/k4/2025/",
+    "suggested": 20950,
+    "avg_used": null,
+    "lastUpdated": 1785182029.629285
+  },
+  "Kia|K4 (without HDA II)|2025": {
+    "min": 21990,
+    "max": 28090,
+    "url": "https://www.edmunds.com/kia/k4/2025/",
+    "suggested": 20950,
+    "avg_used": null,
+    "lastUpdated": 1785182051.989525
+  },
+  "Kia|K5 (without HDA II)|2025": {
+    "min": 27190,
+    "max": 34960,
+    "url": "https://www.edmunds.com/kia/k5/2025/",
+    "suggested": 25031,
+    "avg_used": null,
+    "lastUpdated": 1785182072.534623
+  },
   "Kia|K5 Hybrid|2020": null,
   "Kia|K5 Hybrid|2021": null,
   "Kia|K5 Hybrid|2022": null,
@@ -3308,6 +3488,22 @@
     "avg_used": 25221,
     "lastUpdated": 1779258539.522422
   },
+  "Kia|Sorento (without HDA II)|2024": {
+    "min": 23472,
+    "max": 38990,
+    "url": "https://www.edmunds.com/kia/sorento/2024/",
+    "suggested": null,
+    "avg_used": 24954,
+    "lastUpdated": 1785182085.028408
+  },
+  "Kia|Sorento (without HDA II)|2025": {
+    "min": 31990,
+    "max": 47390,
+    "url": "https://www.edmunds.com/kia/sorento/2025/",
+    "suggested": 29470,
+    "avg_used": null,
+    "lastUpdated": 1785182106.719362
+  },
   "Kia|Sorento Hybrid|2021": {
     "min": 19900,
     "max": 25998,
@@ -3331,6 +3527,14 @@
     "suggested": null,
     "avg_used": 37354,
     "lastUpdated": 1779258561.614988
+  },
+  "Kia|Sorento Hybrid|2026": {
+    "min": 38890,
+    "max": 47190,
+    "url": "https://www.edmunds.com/kia/sorento-hybrid/",
+    "suggested": 35676,
+    "avg_used": null,
+    "lastUpdated": 1785182130.192848
   },
   "Kia|Sorento Plug-in Hybrid|2022": {
     "min": 20084,
@@ -3387,6 +3591,14 @@
     "suggested": null,
     "avg_used": 25060,
     "lastUpdated": 1779258556.065448
+  },
+  "Kia|Sportage (without HDA II)|2026": {
+    "min": 28790,
+    "max": 39690,
+    "url": "https://www.edmunds.com/kia/sportage/",
+    "suggested": 28277,
+    "avg_used": null,
+    "lastUpdated": 1785182149.6208398
   },
   "Kia|Sportage Hybrid|2023": {
     "min": 19750,
@@ -3524,6 +3736,7 @@
     "avg_used": 34759,
     "lastUpdated": 1779258595.28628
   },
+  "Kia|XCeed Plug-in Hybrid|2021": null,
   "Lexus|CT Hybrid|2017": {
     "min": 23990,
     "max": 25590,
@@ -4015,6 +4228,30 @@
     "suggested": null,
     "avg_used": 17403,
     "lastUpdated": 1779289914.7766871
+  },
+  "Nissan|Altima|2021": {
+    "min": 11995,
+    "max": 24590,
+    "url": "https://www.edmunds.com/nissan/altima/2021/review/",
+    "suggested": null,
+    "avg_used": 19038,
+    "lastUpdated": 1785182177.349911
+  },
+  "Nissan|Altima|2022": {
+    "min": 14985,
+    "max": 23590,
+    "url": "https://www.edmunds.com/nissan/altima/2022/",
+    "suggested": null,
+    "avg_used": 19227,
+    "lastUpdated": 1785182191.739011
+  },
+  "Nissan|Altima|2023": {
+    "min": 12714,
+    "max": 27395,
+    "url": "https://www.edmunds.com/nissan/altima/2023/",
+    "suggested": null,
+    "avg_used": 19226,
+    "lastUpdated": 1785182206.904407
   },
   "Nissan|Altima|2024": {
     "min": 14987,
@@ -5193,6 +5430,7 @@
     "avg_used": null,
     "lastUpdated": 1779290725.53608
   },
+  "Toyota|Matrix Retrofit|2005": null,
   "Toyota|Mirai|2021": null,
   "Toyota|Prius Prime|2017": {
     "min": 12499,
@@ -5897,6 +6135,30 @@
   "Volkswagen|Grand California|2022": null,
   "Volkswagen|Grand California|2023": null,
   "Volkswagen|Grand California|2024": null,
+  "Volkswagen|ID.4|2021": {
+    "min": 16990,
+    "max": 25998,
+    "url": "https://www.edmunds.com/volkswagen/id4/2021/review/",
+    "suggested": null,
+    "avg_used": 21995,
+    "lastUpdated": 1785182237.7303371
+  },
+  "Volkswagen|ID.4|2022": {
+    "min": 20990,
+    "max": 27998,
+    "url": "https://www.edmunds.com/volkswagen/id4/2022/",
+    "suggested": null,
+    "avg_used": 25456,
+    "lastUpdated": 1785182249.819923
+  },
+  "Volkswagen|ID.4|2023": {
+    "min": 18443,
+    "max": 30998,
+    "url": "https://www.edmunds.com/volkswagen/id4/2023/",
+    "suggested": null,
+    "avg_used": 25456,
+    "lastUpdated": 1785182266.023138
+  },
   "Volkswagen|Jetta GLI|2021": null,
   "Volkswagen|Jetta GLI|2022": null,
   "Volkswagen|Jetta GLI|2023": null,

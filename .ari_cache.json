@@ -469,14 +469,22 @@
   "Buick|Baby Enclave|2021": null,
   "Buick|Baby Enclave|2022": null,
   "Buick|Baby Enclave|2023": null,
+  "Buick|LaCrosse US|2019": null,
+  "Buick|LaCrosse|2017": null,
+  "Buick|LaCrosse|2018": null,
+  "Buick|LaCrosse|2019": null,
   "CUPRA|Ateca|2018": null,
   "CUPRA|Ateca|2019": null,
   "CUPRA|Ateca|2020": null,
   "CUPRA|Ateca|2021": null,
   "CUPRA|Ateca|2022": null,
   "CUPRA|Ateca|2023": null,
+  "CUPRA|Born|2021": null,
+  "CUPRA|Born|2022": null,
+  "CUPRA|Born|2023": null,
   "Cadillac|CT6|2017": null,
   "Cadillac|CT6|2018": null,
+  "Cadillac|Escalade ESV Platinum|2019": null,
   "Cadillac|Escalade|2018": null,
   "Cadillac|XT5|2018": {
     "score": 77,
@@ -641,6 +649,7 @@
     "fuel_cost_min": 2000,
     "fuel_cost_max": 2000
   },
+  "Chevrolet|Silverado 1500|1500": null,
   "Chevrolet|Silverado 1500|2020": null,
   "Chevrolet|Silverado 1500|2021": null,
   "Chevrolet|Suburban Premier|2016": null,
@@ -919,7 +928,15 @@
     "fuel_cost_max": 5000
   },
   "Ford|Focus Hybrid|2018": null,
+  "Ford|Focus Hybrid|2019": null,
+  "Ford|Focus Hybrid|2020": null,
+  "Ford|Focus Hybrid|2021": null,
+  "Ford|Focus Hybrid|2022": null,
   "Ford|Focus|2018": null,
+  "Ford|Focus|2019": null,
+  "Ford|Focus|2020": null,
+  "Ford|Focus|2021": null,
+  "Ford|Focus|2022": null,
   "Ford|Kuga Hybrid|2020": null,
   "Ford|Kuga Hybrid|2021": null,
   "Ford|Kuga Hybrid|2022": null,
@@ -961,6 +978,13 @@
     "fuel_cost_min": 2300,
     "fuel_cost_max": 2850
   },
+  "Ford|Mondeo|2014": null,
+  "Ford|Mondeo|2015": null,
+  "Ford|Mondeo|2016": null,
+  "Ford|Mondeo|2017": null,
+  "Ford|Mondeo|2018": null,
+  "Ford|Mondeo|2019": null,
+  "Ford|Mondeo|2020": null,
   "Ford|Mustang Mach-E|2021": null,
   "Ford|Mustang Mach-E|2022": null,
   "Ford|Mustang Mach-E|2023": {
@@ -987,6 +1011,7 @@
     "fuel_cost_min": 2700,
     "fuel_cost_max": 3500
   },
+  "Ford|Transit|2025": null,
   "GMC|Acadia|2018": {
     "score": 68,
     "url": "https://autoreliabilityindex.com/gmc/acadia/2018",
@@ -995,6 +1020,7 @@
     "fuel_cost_min": 2600,
     "fuel_cost_max": 3000
   },
+  "GMC|Sierra 1500|1500": null,
   "GMC|Sierra 1500|2020": {
     "score": 63,
     "url": "https://autoreliabilityindex.com/gmc/sierra-1500/2020",
@@ -1087,6 +1113,9 @@
   "Genesis|GV70 Electrified (Australia Only)|2022": null,
   "Genesis|GV70 Electrified (with HDA II)|2023": null,
   "Genesis|GV70 Electrified (with HDA II)|2024": null,
+  "Genesis|GV70 Electrified|2026": null,
+  "Genesis|GV80 (3.5T Prestige Trim, with HDA II & LFA2)|2025": null,
+  "Genesis|GV80 Coupe (with HDA II & LFA2)|2025": null,
   "Genesis|GV80|2023": null,
   "Honda|Accord Hybrid|2017": null,
   "Honda|Accord Hybrid|2018": null,
@@ -1097,6 +1126,7 @@
   "Honda|Accord Hybrid|2023": null,
   "Honda|Accord Hybrid|2024": null,
   "Honda|Accord Hybrid|2025": null,
+  "Honda|Accord Hybrid|2026": null,
   "Honda|Accord|2016": null,
   "Honda|Accord|2017": null,
   "Honda|Accord|2018": {
@@ -1595,6 +1625,14 @@
     "fuel_cost_min": null,
     "fuel_cost_max": null
   },
+  "Honda|Prologue|2026": {
+    "score": 64,
+    "url": "https://autoreliabilityindex.com/honda/prologue/2026",
+    "complaint_rate": 5.0,
+    "repair_cost": 428,
+    "fuel_cost_min": null,
+    "fuel_cost_max": null
+  },
   "Honda|Ridgeline|2017": null,
   "Honda|Ridgeline|2018": {
     "score": 70,
@@ -1660,7 +1698,16 @@
     "fuel_cost_min": 2850,
     "fuel_cost_max": 3000
   },
+  "Honda|Ridgeline|2026": {
+    "score": 86,
+    "url": "https://autoreliabilityindex.com/honda/ridgeline/2026",
+    "complaint_rate": 5.5,
+    "repair_cost": 2850,
+    "fuel_cost_min": 2850,
+    "fuel_cost_max": 3000
+  },
   "Honda|e|2020": null,
+  "Hyundai|Azera Hybrid (with HDA II & LFA2)|2025": null,
   "Hyundai|Azera Hybrid|2019": null,
   "Hyundai|Azera Hybrid|2020": null,
   "Hyundai|Azera|2022": null,
@@ -1673,6 +1720,9 @@
   "Hyundai|Elantra Hybrid|2021": null,
   "Hyundai|Elantra Hybrid|2022": null,
   "Hyundai|Elantra Hybrid|2023": null,
+  "Hyundai|Elantra Hybrid|2024": null,
+  "Hyundai|Elantra Hybrid|2025": null,
+  "Hyundai|Elantra Hybrid|2026": null,
   "Hyundai|Elantra|2017": null,
   "Hyundai|Elantra|2018": {
     "score": 76,
@@ -1714,6 +1764,22 @@
     "fuel_cost_min": 1600,
     "fuel_cost_max": 3000
   },
+  "Hyundai|Elantra|2024": {
+    "score": 85,
+    "url": "https://autoreliabilityindex.com/hyundai/elantra/2024",
+    "complaint_rate": 3.7,
+    "repair_cost": 452,
+    "fuel_cost_min": 1650,
+    "fuel_cost_max": 3000
+  },
+  "Hyundai|Elantra|2025": {
+    "score": 87,
+    "url": "https://autoreliabilityindex.com/hyundai/elantra/2025",
+    "complaint_rate": 1.5,
+    "repair_cost": 452,
+    "fuel_cost_min": 1650,
+    "fuel_cost_max": 3000
+  },
   "Hyundai|Genesis|2015": null,
   "Hyundai|Genesis|2016": null,
   "Hyundai|Ioniq 5 (Non-US only)|2022": null,
@@ -1728,10 +1794,15 @@
   "Hyundai|Ioniq 5 (without HDA II)|2022": null,
   "Hyundai|Ioniq 5 (without HDA II)|2023": null,
   "Hyundai|Ioniq 5 (without HDA II)|2024": null,
+  "Hyundai|Ioniq 5 N (with HDA II)|2024": null,
+  "Hyundai|Ioniq 5 PE (with HDA II & LFA2)|2025": null,
+  "Hyundai|Ioniq 5 PE (with HDA II & LFA2)|2026": null,
   "Hyundai|Ioniq 6 (with HDA II)|2023": null,
   "Hyundai|Ioniq 6 (with HDA II)|2024": null,
   "Hyundai|Ioniq 6 (without HDA II)|2023": null,
   "Hyundai|Ioniq 6 (without HDA II)|2024": null,
+  "Hyundai|Ioniq 9 (with HDA II & LFA2)|2025": null,
+  "Hyundai|Ioniq 9 (with HDA II & LFA2)|2026": null,
   "Hyundai|Ioniq Electric|2019": null,
   "Hyundai|Ioniq Electric|2020": null,
   "Hyundai|Ioniq Hybrid|2017": null,
@@ -1744,13 +1815,17 @@
   "Hyundai|Ioniq Plug-in Hybrid|2020": null,
   "Hyundai|Ioniq Plug-in Hybrid|2021": null,
   "Hyundai|Ioniq Plug-in Hybrid|2022": null,
+  "Hyundai|Kona (without HDA II)|2024": null,
+  "Hyundai|Kona (without HDA II)|2025": null,
   "Hyundai|Kona Electric (with HDA II, Korea only)|2023": null,
+  "Hyundai|Kona Electric (without HDA II)|2024": null,
   "Hyundai|Kona Electric|2018": null,
   "Hyundai|Kona Electric|2019": null,
   "Hyundai|Kona Electric|2020": null,
   "Hyundai|Kona Electric|2021": null,
   "Hyundai|Kona Electric|2022": null,
   "Hyundai|Kona Electric|2023": null,
+  "Hyundai|Kona Hybrid (without HDA II)|2024": null,
   "Hyundai|Kona Hybrid|2020": null,
   "Hyundai|Kona|2019": {
     "score": 55,
@@ -1828,6 +1903,7 @@
     "fuel_cost_min": 2700,
     "fuel_cost_max": 2850
   },
+  "Hyundai|Santa Cruz (without HDA II)|2025": null,
   "Hyundai|Santa Cruz|2022": {
     "score": 57,
     "url": "https://autoreliabilityindex.com/hyundai/santa-cruz/2022",
@@ -1852,6 +1928,10 @@
     "fuel_cost_min": 2600,
     "fuel_cost_max": 2700
   },
+  "Hyundai|Santa Fe Hybrid (with HDA II & LFA2)|2024": null,
+  "Hyundai|Santa Fe Hybrid (with HDA II & LFA2)|2025": null,
+  "Hyundai|Santa Fe Hybrid (without HDA II, LFA2)|2025": null,
+  "Hyundai|Santa Fe Hybrid (without HDA II, LFA2)|2026": null,
   "Hyundai|Santa Fe Hybrid|2022": null,
   "Hyundai|Santa Fe Hybrid|2023": null,
   "Hyundai|Santa Fe Plug-in Hybrid|2022": null,
@@ -1896,6 +1976,10 @@
     "fuel_cost_min": 2300,
     "fuel_cost_max": 2500
   },
+  "Hyundai|Sonata (without HDA II)|2024": null,
+  "Hyundai|Sonata (without HDA II)|2025": null,
+  "Hyundai|Sonata Hybrid (without HDA II)|2024": null,
+  "Hyundai|Sonata Hybrid (without HDA II)|2025": null,
   "Hyundai|Sonata Hybrid|2020": null,
   "Hyundai|Sonata Hybrid|2021": null,
   "Hyundai|Sonata Hybrid|2022": null,
@@ -1949,10 +2033,15 @@
     "fuel_cost_max": 2200
   },
   "Hyundai|Staria|2023": null,
+  "Hyundai|Tucson (without HDA II)|2025": null,
+  "Hyundai|Tucson (without HDA II)|2026": null,
   "Hyundai|Tucson Diesel|2019": null,
+  "Hyundai|Tucson Hybrid (without HDA II)|2025": null,
+  "Hyundai|Tucson Hybrid (without HDA II)|2026": null,
   "Hyundai|Tucson Hybrid|2022": null,
   "Hyundai|Tucson Hybrid|2023": null,
   "Hyundai|Tucson Hybrid|2024": null,
+  "Hyundai|Tucson Plug-in Hybrid (without HDA II)|2025": null,
   "Hyundai|Tucson Plug-in Hybrid|2024": null,
   "Hyundai|Tucson|2021": {
     "score": 78,
@@ -1988,6 +2077,7 @@
   },
   "Hyundai|Veloster|2019": null,
   "Hyundai|Veloster|2020": null,
+  "Hyundai|i30 Hybrid|2024": null,
   "Hyundai|i30|2017": null,
   "Hyundai|i30|2018": null,
   "Hyundai|i30|2019": null,
@@ -2086,12 +2176,15 @@
   "Kia|EV6 (Southeast Asia only)|2022": null,
   "Kia|EV6 (Southeast Asia only)|2023": null,
   "Kia|EV6 (Southeast Asia only)|2024": null,
+  "Kia|EV6 (with HDA I)|2025": null,
   "Kia|EV6 (with HDA II)|2022": null,
   "Kia|EV6 (with HDA II)|2023": null,
   "Kia|EV6 (with HDA II)|2024": null,
   "Kia|EV6 (without HDA II)|2022": null,
   "Kia|EV6 (without HDA II)|2023": null,
   "Kia|EV6 (without HDA II)|2024": null,
+  "Kia|EV9|2025": null,
+  "Kia|EV9|2026": null,
   "Kia|Forte|2019": {
     "score": 67,
     "url": "https://autoreliabilityindex.com/kia/forte/2019",
@@ -2132,6 +2225,9 @@
     "fuel_cost_min": 1750,
     "fuel_cost_max": 2300
   },
+  "Kia|K4 (with HDA II)|2025": null,
+  "Kia|K4 (without HDA II)|2025": null,
+  "Kia|K5 (without HDA II)|2025": null,
   "Kia|K5 Hybrid|2020": null,
   "Kia|K5 Hybrid|2021": null,
   "Kia|K5 Hybrid|2022": null,
@@ -2197,9 +2293,12 @@
   "Kia|Seltos|2021": null,
   "Kia|Seltos|2023": null,
   "Kia|Seltos|2024": null,
+  "Kia|Sorento (without HDA II)|2024": null,
+  "Kia|Sorento (without HDA II)|2025": null,
   "Kia|Sorento Hybrid|2021": null,
   "Kia|Sorento Hybrid|2022": null,
   "Kia|Sorento Hybrid|2023": null,
+  "Kia|Sorento Hybrid|2026": null,
   "Kia|Sorento Plug-in Hybrid|2022": null,
   "Kia|Sorento Plug-in Hybrid|2023": null,
   "Kia|Sorento|2018": {
@@ -2242,6 +2341,7 @@
     "fuel_cost_min": 2300,
     "fuel_cost_max": 2500
   },
+  "Kia|Sportage (without HDA II)|2026": null,
   "Kia|Sportage Hybrid|2023": null,
   "Kia|Sportage Hybrid|2026": null,
   "Kia|Sportage|2023": {
@@ -2308,6 +2408,7 @@
     "fuel_cost_min": 2700,
     "fuel_cost_max": 3000
   },
+  "Kia|XCeed Plug-in Hybrid|2021": null,
   "Lexus|CT Hybrid|2017": null,
   "Lexus|CT Hybrid|2018": null,
   "Lexus|ES Hybrid|2017": null,
@@ -2651,6 +2752,30 @@
     "complaint_rate": 11.7,
     "repair_cost": 483,
     "fuel_cost_min": 1850,
+    "fuel_cost_max": 2050
+  },
+  "Nissan|Altima|2021": {
+    "score": 79,
+    "url": "https://autoreliabilityindex.com/nissan/altima/2021",
+    "complaint_rate": 5.1,
+    "repair_cost": 483,
+    "fuel_cost_min": 1850,
+    "fuel_cost_max": 2050
+  },
+  "Nissan|Altima|2022": {
+    "score": 83,
+    "url": "https://autoreliabilityindex.com/nissan/altima/2022",
+    "complaint_rate": 1.4,
+    "repair_cost": 483,
+    "fuel_cost_min": 1850,
+    "fuel_cost_max": 2050
+  },
+  "Nissan|Altima|2023": {
+    "score": 84,
+    "url": "https://autoreliabilityindex.com/nissan/altima/2023",
+    "complaint_rate": 1.9,
+    "repair_cost": 483,
+    "fuel_cost_min": 1950,
     "fuel_cost_max": 2050
   },
   "Nissan|Altima|2024": {
@@ -3431,6 +3556,7 @@
     "fuel_cost_min": 2400,
     "fuel_cost_max": 2500
   },
+  "Toyota|Matrix Retrofit|2005": null,
   "Toyota|Mirai|2021": null,
   "Toyota|Prius Prime|2017": null,
   "Toyota|Prius Prime|2018": null,
@@ -3876,6 +4002,11 @@
   "Volkswagen|Grand California|2022": null,
   "Volkswagen|Grand California|2023": null,
   "Volkswagen|Grand California|2024": null,
+  "Volkswagen|ID.4|2021": null,
+  "Volkswagen|ID.4|2022": null,
+  "Volkswagen|ID.4|2023": null,
+  "Volkswagen|ID.4|2024": null,
+  "Volkswagen|ID.4|2025": null,
   "Volkswagen|Jetta GLI|2021": null,
   "Volkswagen|Jetta GLI|2022": null,
   "Volkswagen|Jetta GLI|2023": null,

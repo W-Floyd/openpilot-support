@@ -735,12 +735,40 @@
   "Buick|Baby Enclave|2021": null,
   "Buick|Baby Enclave|2022": null,
   "Buick|Baby Enclave|2023": null,
+  "Buick|LaCrosse US|2019": null,
+  "Buick|LaCrosse|2017": {
+    "min": 10406,
+    "max": 15855,
+    "score": 82,
+    "mpg_city": "20-21",
+    "url": "https://www.jdpower.com/cars/2017/buick/lacrosse",
+    "lastUpdated": 1784574744.559176
+  },
+  "Buick|LaCrosse|2018": {
+    "min": 10327,
+    "max": 22072,
+    "score": null,
+    "mpg_city": "20-25",
+    "url": "https://www.jdpower.com/cars/2018/buick/lacrosse",
+    "lastUpdated": 1784574744.362276
+  },
+  "Buick|LaCrosse|2019": {
+    "min": 11223,
+    "max": 24386,
+    "score": 85,
+    "mpg_city": "20-25",
+    "url": "https://www.jdpower.com/cars/2019/buick/lacrosse",
+    "lastUpdated": 1784574744.0268302
+  },
   "CUPRA|Ateca|2018": null,
   "CUPRA|Ateca|2019": null,
   "CUPRA|Ateca|2020": null,
   "CUPRA|Ateca|2021": null,
   "CUPRA|Ateca|2022": null,
   "CUPRA|Ateca|2023": null,
+  "CUPRA|Born|2021": null,
+  "CUPRA|Born|2022": null,
+  "CUPRA|Born|2023": null,
   "Cadillac|CT6|2017": {
     "min": 16631,
     "max": 26433,
@@ -757,6 +785,7 @@
     "url": "https://www.jdpower.com/cars/2018/cadillac/ct6",
     "lastUpdated": 1779376094.656496
   },
+  "Cadillac|Escalade ESV Platinum|2019": null,
   "Cadillac|Escalade|2018": {
     "min": 25046,
     "max": 37161,
@@ -1005,6 +1034,7 @@
     "url": "https://www.jdpower.com/cars/2023/chevrolet/malibu",
     "lastUpdated": 1779376094.967169
   },
+  "Chevrolet|Silverado 1500|1500": null,
   "Chevrolet|Silverado 1500|2020": {
     "min": 14913,
     "max": 41579,
@@ -1367,6 +1397,10 @@
     "lastUpdated": 1779376095.3808498
   },
   "Ford|Focus Hybrid|2018": null,
+  "Ford|Focus Hybrid|2019": null,
+  "Ford|Focus Hybrid|2020": null,
+  "Ford|Focus Hybrid|2021": null,
+  "Ford|Focus Hybrid|2022": null,
   "Ford|Focus|2018": {
     "min": 6774,
     "max": 28130,
@@ -1375,6 +1409,10 @@
     "url": "https://www.jdpower.com/cars/2018/ford/focus",
     "lastUpdated": 1779376095.391943
   },
+  "Ford|Focus|2019": null,
+  "Ford|Focus|2020": null,
+  "Ford|Focus|2021": null,
+  "Ford|Focus|2022": null,
   "Ford|Kuga Hybrid|2020": null,
   "Ford|Kuga Hybrid|2021": null,
   "Ford|Kuga Hybrid|2022": null,
@@ -1409,6 +1447,13 @@
     "lastUpdated": 1779376095.412666
   },
   "Ford|Maverick|2024": null,
+  "Ford|Mondeo|2014": null,
+  "Ford|Mondeo|2015": null,
+  "Ford|Mondeo|2016": null,
+  "Ford|Mondeo|2017": null,
+  "Ford|Mondeo|2018": null,
+  "Ford|Mondeo|2019": null,
+  "Ford|Mondeo|2020": null,
   "Ford|Mustang Mach-E|2021": {
     "min": 17853,
     "max": 26810,
@@ -1449,6 +1494,7 @@
     "url": "https://www.jdpower.com/cars/2024/ford/ranger",
     "lastUpdated": 1779376095.471452
   },
+  "Ford|Transit|2025": null,
   "GMC|Acadia|2018": {
     "min": 9298,
     "max": 18540,
@@ -1457,6 +1503,7 @@
     "url": "https://www.jdpower.com/cars/2018/gmc/acadia",
     "lastUpdated": 1779376095.481229
   },
+  "GMC|Sierra 1500|1500": null,
   "GMC|Sierra 1500|2020": {
     "min": 17830,
     "max": 43200,
@@ -1591,6 +1638,9 @@
   "Genesis|GV70 Electrified (Australia Only)|2022": null,
   "Genesis|GV70 Electrified (with HDA II)|2023": null,
   "Genesis|GV70 Electrified (with HDA II)|2024": null,
+  "Genesis|GV70 Electrified|2026": null,
+  "Genesis|GV80 (3.5T Prestige Trim, with HDA II & LFA2)|2025": null,
+  "Genesis|GV80 Coupe (with HDA II & LFA2)|2025": null,
   "Genesis|GV80|2023": {
     "min": 36451,
     "max": 51363,
@@ -1670,6 +1720,14 @@
     "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2025/honda/accord-hybrid",
     "lastUpdated": 1779376095.7575622
+  },
+  "Honda|Accord Hybrid|2026": {
+    "min": 30399,
+    "max": 41096,
+    "score": null,
+    "mpg_city": null,
+    "url": "https://www.jdpower.com/cars/2026/honda/accord-hybrid",
+    "lastUpdated": 1784574746.770198
   },
   "Honda|Accord|2016": {
     "min": 10507,
@@ -2456,6 +2514,7 @@
     "url": "https://www.jdpower.com/cars/2025/honda/prologue",
     "lastUpdated": 1779376096.689172
   },
+  "Honda|Prologue|2026": null,
   "Honda|Ridgeline|2017": {
     "min": 15471,
     "max": 21265,
@@ -2528,7 +2587,16 @@
     "url": "https://www.jdpower.com/cars/2025/honda/ridgeline",
     "lastUpdated": 1779376096.7739031
   },
+  "Honda|Ridgeline|2026": {
+    "min": 37042,
+    "max": 49883,
+    "score": 81,
+    "mpg_city": "18",
+    "url": "https://www.jdpower.com/cars/2026/honda/ridgeline",
+    "lastUpdated": 1784574747.379616
+  },
   "Honda|e|2020": null,
+  "Hyundai|Azera Hybrid (with HDA II & LFA2)|2025": null,
   "Hyundai|Azera Hybrid|2019": null,
   "Hyundai|Azera Hybrid|2020": null,
   "Hyundai|Azera|2022": null,
@@ -2590,6 +2658,30 @@
     "url": "https://www.jdpower.com/cars/2023/hyundai/elantra-hybrid",
     "lastUpdated": 1779376096.833622
   },
+  "Hyundai|Elantra Hybrid|2024": {
+    "min": 18939,
+    "max": 26152,
+    "score": null,
+    "mpg_city": null,
+    "url": "https://www.jdpower.com/cars/2024/hyundai/elantra-hybrid",
+    "lastUpdated": 1784574746.844573
+  },
+  "Hyundai|Elantra Hybrid|2025": {
+    "min": 20828,
+    "max": 30432,
+    "score": null,
+    "mpg_city": null,
+    "url": "https://www.jdpower.com/cars/2025/hyundai/elantra-hybrid",
+    "lastUpdated": 1784574746.711662
+  },
+  "Hyundai|Elantra Hybrid|2026": {
+    "min": 22630,
+    "max": 31355,
+    "score": null,
+    "mpg_city": null,
+    "url": "https://www.jdpower.com/cars/2026/hyundai/elantra-hybrid",
+    "lastUpdated": 1784574747.2855098
+  },
   "Hyundai|Elantra|2017": {
     "min": 7474,
     "max": 9627,
@@ -2638,6 +2730,22 @@
     "url": "https://www.jdpower.com/cars/2023/hyundai/elantra",
     "lastUpdated": 1779376096.895334
   },
+  "Hyundai|Elantra|2024": {
+    "min": 16728,
+    "max": 26266,
+    "score": 83,
+    "mpg_city": "28-32",
+    "url": "https://www.jdpower.com/cars/2024/hyundai/elantra",
+    "lastUpdated": 1784574746.723403
+  },
+  "Hyundai|Elantra|2025": {
+    "min": 18791,
+    "max": 30160,
+    "score": 83,
+    "mpg_city": "28-32",
+    "url": "https://www.jdpower.com/cars/2025/hyundai/elantra",
+    "lastUpdated": 1784574745.9485939
+  },
   "Hyundai|Genesis|2015": {
     "min": 7821,
     "max": 11399,
@@ -2666,10 +2774,15 @@
   "Hyundai|Ioniq 5 (without HDA II)|2022": null,
   "Hyundai|Ioniq 5 (without HDA II)|2023": null,
   "Hyundai|Ioniq 5 (without HDA II)|2024": null,
+  "Hyundai|Ioniq 5 N (with HDA II)|2024": null,
+  "Hyundai|Ioniq 5 PE (with HDA II & LFA2)|2025": null,
+  "Hyundai|Ioniq 5 PE (with HDA II & LFA2)|2026": null,
   "Hyundai|Ioniq 6 (with HDA II)|2023": null,
   "Hyundai|Ioniq 6 (with HDA II)|2024": null,
   "Hyundai|Ioniq 6 (without HDA II)|2023": null,
   "Hyundai|Ioniq 6 (without HDA II)|2024": null,
+  "Hyundai|Ioniq 9 (with HDA II & LFA2)|2025": null,
+  "Hyundai|Ioniq 9 (with HDA II & LFA2)|2026": null,
   "Hyundai|Ioniq Electric|2019": {
     "min": 6265,
     "max": 8305,
@@ -2766,7 +2879,10 @@
     "url": "https://www.jdpower.com/cars/2022/hyundai/ioniq-plug-in-hybrid",
     "lastUpdated": 1779376097.025388
   },
+  "Hyundai|Kona (without HDA II)|2024": null,
+  "Hyundai|Kona (without HDA II)|2025": null,
   "Hyundai|Kona Electric (with HDA II, Korea only)|2023": null,
+  "Hyundai|Kona Electric (without HDA II)|2024": null,
   "Hyundai|Kona Electric|2018": null,
   "Hyundai|Kona Electric|2019": {
     "min": 9620,
@@ -2801,6 +2917,7 @@
     "lastUpdated": 1779376097.0574899
   },
   "Hyundai|Kona Electric|2023": null,
+  "Hyundai|Kona Hybrid (without HDA II)|2024": null,
   "Hyundai|Kona Hybrid|2020": null,
   "Hyundai|Kona|2019": {
     "min": 10661,
@@ -2885,6 +3002,7 @@
     "url": "https://www.jdpower.com/cars/2024/hyundai/palisade",
     "lastUpdated": 1779376097.150313
   },
+  "Hyundai|Santa Cruz (without HDA II)|2025": null,
   "Hyundai|Santa Cruz|2022": {
     "min": 17026,
     "max": 29173,
@@ -2909,6 +3027,10 @@
     "url": "https://www.jdpower.com/cars/2024/hyundai/santa-cruz",
     "lastUpdated": 1779376097.182972
   },
+  "Hyundai|Santa Fe Hybrid (with HDA II & LFA2)|2024": null,
+  "Hyundai|Santa Fe Hybrid (with HDA II & LFA2)|2025": null,
+  "Hyundai|Santa Fe Hybrid (without HDA II, LFA2)|2025": null,
+  "Hyundai|Santa Fe Hybrid (without HDA II, LFA2)|2026": null,
   "Hyundai|Santa Fe Hybrid|2022": {
     "min": 20919,
     "max": 28038,
@@ -2981,6 +3103,10 @@
     "url": "https://www.jdpower.com/cars/2023/hyundai/santa-fe",
     "lastUpdated": 1779376097.240753
   },
+  "Hyundai|Sonata (without HDA II)|2024": null,
+  "Hyundai|Sonata (without HDA II)|2025": null,
+  "Hyundai|Sonata Hybrid (without HDA II)|2024": null,
+  "Hyundai|Sonata Hybrid (without HDA II)|2025": null,
   "Hyundai|Sonata Hybrid|2020": {
     "min": 14806,
     "max": 21030,
@@ -3055,7 +3181,11 @@
     "lastUpdated": 1779376097.335868
   },
   "Hyundai|Staria|2023": null,
+  "Hyundai|Tucson (without HDA II)|2025": null,
+  "Hyundai|Tucson (without HDA II)|2026": null,
   "Hyundai|Tucson Diesel|2019": null,
+  "Hyundai|Tucson Hybrid (without HDA II)|2025": null,
+  "Hyundai|Tucson Hybrid (without HDA II)|2026": null,
   "Hyundai|Tucson Hybrid|2022": {
     "min": 19984,
     "max": 28892,
@@ -3080,6 +3210,7 @@
     "url": "https://www.jdpower.com/cars/2024/hyundai/tucson-hybrid",
     "lastUpdated": 1779376097.374539
   },
+  "Hyundai|Tucson Plug-in Hybrid (without HDA II)|2025": null,
   "Hyundai|Tucson Plug-in Hybrid|2024": {
     "min": 27903,
     "max": 39737,
@@ -3129,6 +3260,7 @@
     "url": "https://www.jdpower.com/cars/2020/hyundai/veloster",
     "lastUpdated": 1779376097.4359329
   },
+  "Hyundai|i30 Hybrid|2024": null,
   "Hyundai|i30|2017": null,
   "Hyundai|i30|2018": null,
   "Hyundai|i30|2019": null,
@@ -3248,12 +3380,29 @@
   "Kia|EV6 (Southeast Asia only)|2022": null,
   "Kia|EV6 (Southeast Asia only)|2023": null,
   "Kia|EV6 (Southeast Asia only)|2024": null,
+  "Kia|EV6 (with HDA I)|2025": null,
   "Kia|EV6 (with HDA II)|2022": null,
   "Kia|EV6 (with HDA II)|2023": null,
   "Kia|EV6 (with HDA II)|2024": null,
   "Kia|EV6 (without HDA II)|2022": null,
   "Kia|EV6 (without HDA II)|2023": null,
   "Kia|EV6 (without HDA II)|2024": null,
+  "Kia|EV9|2025": {
+    "min": 52509,
+    "max": 82704,
+    "score": 73,
+    "mpg_city": null,
+    "url": "https://www.jdpower.com/cars/2025/kia/ev9",
+    "lastUpdated": 1784574748.940039
+  },
+  "Kia|EV9|2026": {
+    "min": 51188,
+    "max": 74280,
+    "score": 73,
+    "mpg_city": null,
+    "url": "https://www.jdpower.com/cars/2026/kia/ev9",
+    "lastUpdated": 1784574748.56108
+  },
   "Kia|Forte|2019": {
     "min": 9940,
     "max": 12167,
@@ -3294,6 +3443,9 @@
     "url": "https://www.jdpower.com/cars/2023/kia/forte",
     "lastUpdated": 1779376097.598829
   },
+  "Kia|K4 (with HDA II)|2025": null,
+  "Kia|K4 (without HDA II)|2025": null,
+  "Kia|K5 (without HDA II)|2025": null,
   "Kia|K5 Hybrid|2020": null,
   "Kia|K5 Hybrid|2021": null,
   "Kia|K5 Hybrid|2022": null,
@@ -3485,6 +3637,8 @@
     "url": "https://www.jdpower.com/cars/2024/kia/seltos",
     "lastUpdated": 1779376097.806619
   },
+  "Kia|Sorento (without HDA II)|2024": null,
+  "Kia|Sorento (without HDA II)|2025": null,
   "Kia|Sorento Hybrid|2021": {
     "min": 18865,
     "max": 22947,
@@ -3508,6 +3662,14 @@
     "mpg_city": null,
     "url": "https://www.jdpower.com/cars/2023/kia/sorento-hybrid",
     "lastUpdated": 1779376097.827787
+  },
+  "Kia|Sorento Hybrid|2026": {
+    "min": 37953,
+    "max": 49171,
+    "score": null,
+    "mpg_city": null,
+    "url": "https://www.jdpower.com/cars/2026/kia/sorento-hybrid",
+    "lastUpdated": 1784574749.032257
   },
   "Kia|Sorento Plug-in Hybrid|2022": {
     "min": 27661,
@@ -3565,6 +3727,7 @@
     "url": "https://www.jdpower.com/cars/2023/kia/sorento",
     "lastUpdated": 1779376097.8988469
   },
+  "Kia|Sportage (without HDA II)|2026": null,
   "Kia|Sportage Hybrid|2023": {
     "min": 20737,
     "max": 34287,
@@ -3673,6 +3836,7 @@
     "lastUpdated": 1779376098.02243
   },
   "Kia|Telluride|2024": null,
+  "Kia|XCeed Plug-in Hybrid|2021": null,
   "Lexus|CT Hybrid|2017": null,
   "Lexus|CT Hybrid|2018": null,
   "Lexus|ES Hybrid|2017": null,
@@ -4157,6 +4321,30 @@
     "mpg_city": "25-28",
     "url": "https://www.jdpower.com/cars/2020/nissan/altima",
     "lastUpdated": 1779376098.2380521
+  },
+  "Nissan|Altima|2021": {
+    "min": 16255,
+    "max": 22619,
+    "score": 81,
+    "mpg_city": "25-28",
+    "url": "https://www.jdpower.com/cars/2021/nissan/altima",
+    "lastUpdated": 1784574749.50656
+  },
+  "Nissan|Altima|2022": {
+    "min": 16016,
+    "max": 25319,
+    "score": 84,
+    "mpg_city": "25-28",
+    "url": "https://www.jdpower.com/cars/2022/nissan/altima",
+    "lastUpdated": 1784574749.593843
+  },
+  "Nissan|Altima|2023": {
+    "min": 17632,
+    "max": 28838,
+    "score": 82,
+    "mpg_city": "25-27",
+    "url": "https://www.jdpower.com/cars/2023/nissan/altima",
+    "lastUpdated": 1784574749.354412
   },
   "Nissan|Altima|2024": {
     "min": 18623,
@@ -5279,6 +5467,7 @@
     "url": "https://www.jdpower.com/cars/2025/toyota/highlander",
     "lastUpdated": 1779376098.629499
   },
+  "Toyota|Matrix Retrofit|2005": null,
   "Toyota|Mirai|2021": {
     "min": 9179,
     "max": 12211,
@@ -6039,6 +6228,46 @@
   "Volkswagen|Grand California|2022": null,
   "Volkswagen|Grand California|2023": null,
   "Volkswagen|Grand California|2024": null,
+  "Volkswagen|ID.4|2021": {
+    "min": 13796,
+    "max": 19445,
+    "score": null,
+    "mpg_city": null,
+    "url": "https://www.jdpower.com/cars/2021/volkswagen/id-4",
+    "lastUpdated": 1784574750.1504571
+  },
+  "Volkswagen|ID.4|2022": {
+    "min": 14215,
+    "max": 21264,
+    "score": null,
+    "mpg_city": null,
+    "url": "https://www.jdpower.com/cars/2022/volkswagen/id-4",
+    "lastUpdated": 1784574749.9436312
+  },
+  "Volkswagen|ID.4|2023": {
+    "min": 16764,
+    "max": 28410,
+    "score": 68,
+    "mpg_city": null,
+    "url": "https://www.jdpower.com/cars/2023/volkswagen/id-4",
+    "lastUpdated": 1784574749.968318
+  },
+  "Volkswagen|ID.4|2024": {
+    "min": 18403,
+    "max": 32425,
+    "score": null,
+    "mpg_city": null,
+    "url": "https://www.jdpower.com/cars/2024/volkswagen/id-4",
+    "lastUpdated": 1784574750.32894
+  },
+  "Volkswagen|ID.4|2025": {
+    "min": 33871,
+    "max": 59648,
+    "score": null,
+    "mpg_city": null,
+    "url": "https://www.jdpower.com/cars/2025/volkswagen/id-4",
+    "lastUpdated": 1784574750.3323488
+  },
   "Volkswagen|Jetta GLI|2021": {
     "min": 16569,
     "max": 20396,
