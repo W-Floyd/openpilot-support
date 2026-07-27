@@ -329,12 +329,19 @@ async def _fetch_edmunds_cache_async(
     from playwright.async_api import async_playwright
 
     MAX_RETRIES = 3
+    MAX_HOMEPAGE_BLOCKS = 5
+    MAX_LAUNCH_FAILURES = 5
+    MAX_DRIVER_RESTARTS = 5
     total = len(pending)
     idx = 0
     iter_times: list[float] = []
     retries: dict[int, int] = {}
     blacklist: set[str] = _load_proxy_blacklist()
     proxy: object = None
+    homepage_blocks = 0
+    launch_failures = 0
+    driver_restarts = 0
+    give_up = False
 
     async def _make_page(browser):
         ctx_kwargs: dict = {
@@ -351,7 +358,7 @@ async def _fetch_edmunds_cache_async(
         return ctx, page
 
     # Outer loop restarts the playwright driver when it crashes.
-    while idx < total:
+    while idx < total and not give_up:
         async with async_playwright() as p:
             if proxy is None:
                 proxy = await asyncio.to_thread(_find_next_proxy, blacklist) if _ACTIVE_PROXIES else None
@@ -406,12 +413,35 @@ async def _fetch_edmunds_cache_async(
                     except Exception as e:
                         err = str(e)
                         if "Connection closed" in err:
-                            print(f"  Playwright driver died ({e}) — restarting", file=sys.stderr)
+                            driver_restarts += 1
                             playwright_alive = False
+                            if driver_restarts >= MAX_DRIVER_RESTARTS:
+                                print(
+                                    f"  Playwright driver died {driver_restarts} times in a row ({e})"
+                                    f" — giving up, {total - idx} entries left unfetched",
+                                    file=sys.stderr,
+                                )
+                                give_up = True
+                            else:
+                                print(
+                                    f"  Playwright driver died ({e}) — restarting"
+                                    f" ({driver_restarts}/{MAX_DRIVER_RESTARTS})",
+                                    file=sys.stderr,
+                                )
+                            break
+                        launch_failures += 1
+                        if launch_failures >= MAX_LAUNCH_FAILURES:
+                            print(
+                                f"  Browser launch failed {launch_failures} times in a row ({e})"
+                                f" — giving up, {total - idx} entries left unfetched",
+                                file=sys.stderr,
+                            )
+                            give_up = True
                             break
                         print(f"  Browser launch failed ({e}) — rotating", file=sys.stderr)
                         await _rotate(_ProxyBlocked(blacklist=True))
                         continue
+                    launch_failures = 0
                     ctx, page = await _make_page(browser)
 
                     print(
@@ -435,8 +465,25 @@ async def _fetch_edmunds_cache_async(
                         print(f"  Homepage failed ({e}) — rotating", file=sys.stderr)
                         homepage_ok = False
                     if not homepage_ok:
+                        homepage_blocks += 1
+                        if homepage_blocks >= MAX_HOMEPAGE_BLOCKS:
+                            print(
+                                f"  Edmunds blocked the homepage {homepage_blocks} times in a row"
+                                f" — giving up, {total - idx} entries left unfetched",
+                                file=sys.stderr,
+                            )
+                            give_up = True
+                            break
+                        backoff = min(60.0, 5.0 * 2 ** (homepage_blocks - 1))
+                        print(
+                            f"  Homepage retry {homepage_blocks}/{MAX_HOMEPAGE_BLOCKS}"
+                            f" — waiting {backoff:.0f}s",
+                            file=sys.stderr,
+                        )
                         await _rotate()
+                        await asyncio.sleep(backoff)
                         continue
+                    homepage_blocks = 0
 
                 make, model, year = pending[idx]
                 i = idx + 1
@@ -462,6 +509,7 @@ async def _fetch_edmunds_cache_async(
                         await asyncio.sleep(delay)
                     iter_times.append(asyncio.get_event_loop().time() - t0)
                     idx += 1
+                    driver_restarts = 0
                 except _ProxyBlocked as exc:
                     await _rotate(exc)
                 except _BrowserDied:
